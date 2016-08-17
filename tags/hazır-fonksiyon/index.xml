@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hazır Fonksiyon on Pythonistan</title>
+    <link>https://fiyakasiz.github.io/tags/haz%C4%B1r-fonksiyon/</link>
+    <description>Recent content in Hazır Fonksiyon on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Wed, 10 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="https://fiyakasiz.github.io/tags/haz%C4%B1r-fonksiyon/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python&#39;da &#39;.find&#39; hazır metodu</title>
+      <link>https://fiyakasiz.github.io/blog/pythonda-find-metodu/</link>
+      <pubDate>Wed, 10 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>https://fiyakasiz.github.io/blog/pythonda-find-metodu/</guid>
+      <description>
+
+&lt;p&gt;Blogda en son 9 Ağustos&amp;rsquo;ta &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program&#34;&gt;palindrom yazısı&lt;/a&gt; yayınlamıştım.&lt;/p&gt;
+
+&lt;p&gt;Sonrasında evime geri taşınma işlemleri ve araya giren bayram tatili nedeni ile uzun bir ara verdim. Bu uzuuuuuun ara  nedeniyle hepinizden özür diliyorum.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-da-find-metodu-hazır-fonksiyon&#34;&gt;Python&amp;rsquo;da &lt;code&gt;find&lt;/code&gt; Metodu (Hazır Fonksiyon)&lt;/h2&gt;
+
+&lt;p&gt;Payton&amp;rsquo;un içinde hazır gelen &lt;code&gt;find&lt;/code&gt; fonksiyonu ile aramak istediğimiz bir karakter dizisini başka bir karakter dizisi içinde aratabiliyoruz.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;.find&lt;/code&gt; çıktı olarak bize karakterin &lt;strong&gt;ilk&lt;/strong&gt; bulunduğu pozisyonu verir. Herhangi bir karakter dizisi bulunamazsa çıktı bu kez &lt;code&gt;-1&lt;/code&gt; olur.&lt;/p&gt;
+
+&lt;h2 id=&#34;find-metodu-örneğimiz&#34;&gt;&lt;code&gt;find&lt;/code&gt; Metodu Örneğimiz&lt;/h2&gt;
+
+&lt;p&gt;Aşağıdaki ifadeyi inceleyelim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+ozluSoz =u&amp;quot;&amp;quot;&amp;quot;Büyük beyinler fikirleri, ortɑ beyinler olɑylɑrı,
+küçük beyinler ise kişileri konuşur.&amp;quot;&amp;quot;&amp;quot;
+bul = &amp;quot;beyinler&amp;quot;
+bulunan_pozisyon = ozluSoz.find(bul)
+print bulunan_pozisyon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;find&lt;/code&gt; hazır fonksiyonunu kullanırken ilk olarak içinde arama yapacağımız karakter dizisini yazıyoruz. &lt;strong&gt;&amp;lsquo;ozluSoz&amp;rsquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sonra yanına bir nokta &lt;code&gt;.&lt;/code&gt; koyup &lt;code&gt;find&lt;/code&gt; yazıyoruz. &lt;strong&gt;&amp;lsquo;ozluSoz.find&amp;rsquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find&lt;/code&gt;&amp;lsquo;ın ardına bir parantez &lt;code&gt;()&lt;/code&gt; açıp içine aranacak karakter dizisini yazıyoruz. &lt;strong&gt;&amp;lsquo;ozluSoz.find(bul)&amp;rsquo;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Biz yukarıda kolaylık olsun diye karakter dizilerini temsil eden değişkenleri kullandık.(Değişkenler konusunu detaylı inceleyeceğiz. Şimdilik &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#fn:degisken&#34;&gt;bkz&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Yukarıdaki ifadeyi şu şekilde yazabilirdik:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+print u&amp;quot;&amp;quot;&amp;quot;Büyük beyinler fikirleri, ortɑ beyinler olɑylɑrı, 
+küçük beyinler ise kişileri konuşur.&amp;quot;&amp;quot;&amp;quot;.find(&amp;quot;beyinler&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bu ifade &lt;code&gt;bulunan_pozisyon&lt;/code&gt; değişkenimizin vereceği sonuç olan &amp;ldquo;6&amp;rdquo;. pozisyonu aynen verecektir.&lt;/p&gt;
+
+&lt;p&gt;Yani &lt;code&gt;&amp;quot;beyinler&amp;quot;&lt;/code&gt; karakter dizisi &lt;code&gt;ozluSoz&lt;/code&gt; değişkeninin içerdiği karakter dizisinde &lt;strong&gt;ilk olarak&lt;/strong&gt; 6. pozisyonda bulunur.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Üç tırnak &lt;code&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/code&gt; kullanımına dikkat ettiniz mi? Üç tırnak ile birden fazla satırda devam eden karakter dizileri oluşturabilirsiniz. Karakter dizisi uzunsa birden fazla satıra bölmek kullanışlıdır.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#trke-karakter-azizlii&#34;&gt;NEDEN &amp;lsquo;u&amp;rsquo; KARAKTERİ VAR:&lt;/a&gt;&lt;/strong&gt; Yukarıda u(unicode) şerhini koymazsanız maalesef Sublime Text bulunan pozisyonu Türkçe ü karakterlerinden dolayı 8 olarak veriyor. Ayrıntılı bilgi için linkteki açıklamama bakın lütfen.&lt;/p&gt;
+
+&lt;h2 id=&#34;find-metodunun-tek-argümanı-d-b-i-dib-parametresi&#34;&gt;&lt;code&gt;find&lt;/code&gt; Metodunun Tek Argümanı (d.b.i&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:dib&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:dib&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Parametresi)&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;find&lt;/code&gt; metodu ile ilgili bilmemiz gereken bir diğer şey aldığı argümandır.(parametre)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;.find&lt;/code&gt;&amp;lsquo;dan sonra gelen parantezde aranan ifadeden hemen sonra bir virgül koyup arama yapmaya başlayacağımız pozisyonu &lt;code&gt;.find&lt;/code&gt;&amp;lsquo;a söyleyebiliriz.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;.find&lt;/code&gt; böyle bir durumda arama yapmaya verdiğimiz pozisyondan itibaren başlar.&lt;/p&gt;
+
+&lt;p&gt;Örneğin; &lt;code&gt;bulunan_pozisyon = ozluSoz.find(bul, 7)&lt;/code&gt; ifadesinde aramaya &amp;lsquo;7.&amp;rsquo; pozisyondan başlanır ve bu pozisyondan sonraki ilk &lt;code&gt;&amp;quot;beyinler&amp;quot;&lt;/code&gt; ifadesi bulunur. (bu örnekte ikinci bulunma 32. pozisyonda gerçekleşti.)&lt;/p&gt;
+
+&lt;p&gt;Şimdi ikisini bir görelim.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+ozluSoz =&amp;quot;&amp;quot;&amp;quot;Buyuk beyinler fikirleri, ortɑ beyinler olɑylɑri,
+kucuk beyinler ise kisileri konusur.&amp;quot;&amp;quot;&amp;quot; #  birden fazla satır kullanacaksanız
+bul = &amp;quot;beyinler&amp;quot;                    # üç tırnak kullanabilirsiniz.
+bulunan_ilk_pozisyon = ozluSoz.find(bul) # ilk bulunan pozisyon
+print bulunan_ilk_pozisyon 
+print ozluSoz[7:]      # 7. pozisyondan başlayarak sona kadar yazdır
+bulunan_ikinci_pozisyon = ozluSoz.find(bul, 7) # ikinci bulunan pozisyon
+print bulunan_ikinci_pozisyon
+print ozluSoz[33:]  # 33. pozisyondan başlayarak sona kadar yazdır
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümansız Kullanımı&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümanlı Kullanımı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aşağıdaki örnekte &lt;code&gt;.find&lt;/code&gt; metodunun parametre ile kullanımının değişik örneklerini göreceksiniz. Ekran görüntüsü için en üstteki ana imaja bakabilirsiniz:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+ozluSoz =&amp;quot;&amp;quot;&amp;quot;Buyuk beyinler fikirleri, ortɑ beyinler olɑylɑri,
+            kucuk beyinler ise kisileri konusur.&amp;quot;&amp;quot;&amp;quot;
+
+print ozluSoz.find(&amp;quot;beyinler&amp;quot;)     # 6 -&amp;gt; argumansiz kullanim 
+print ozluSoz.find(&amp;quot;beyinler&amp;quot;, 0)  # 6 -&amp;gt; en bastan başlar
+print ozluSoz.find(&amp;quot;beyinler&amp;quot;, 6)  # 6 -&amp;gt; yine buldu
+print ozluSoz.find(&amp;quot;beyinler&amp;quot;, 7)  # 32 -&amp;gt; bir sonrakini buldu
+print ozluSoz.find(&amp;quot;beyinler&amp;quot;, 32) # 32 -&amp;gt; bir sonrakini buldu
+print ozluSoz.find(&amp;quot;beyinler&amp;quot;, 33) # 62 -&amp;gt; en sonuncusunu buldu
+print ozluSoz.find(&amp;quot;beyinler&amp;quot;, 63) # -1 -&amp;gt; hiçbirşey bulamadı
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;find-metodu-ile-palindrom-bulma&#34;&gt;&lt;code&gt;find&lt;/code&gt; Metodu ile Palindrom Bulma&lt;/h2&gt;
+
+&lt;p&gt;Palindrom bulma programımızı tekrar &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program/&#34;&gt;hatırlayalım&lt;/a&gt;. Palindrom bulmada bizden istenen sonuç, kelime yada cümle palindrom ise &lt;code&gt;0&lt;/code&gt; değilse &lt;code&gt;-1&lt;/code&gt; vermesi idi.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;find&lt;/code&gt; metodu ile palindrom bulurken şöyle bir mantık güdeceğiz. Eğer bir kelime(yada cümle) palindromsa kelimeyi kendisinin tersinin hemen ilk (0.) pozisyonunda bulmuş olacağız. Yok değilse zaten kelimenin tamamı tersinde yoktur, o halde sonuç -1 verecek.&lt;/p&gt;
+
+&lt;p&gt;Hadi bunu görelim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+kelime = &amp;quot;madam&amp;quot; # test kelimemiz
+palindrom_mu = kelime.find(kelime[::-1]) # madam&#39;ın tersinden başla, madam&#39;ı ara
+        #eğer varsa find bulacak, sonuç 0. Yoksa bulamayacak, sonuç -1
+print palindrom_mu # sonucu ekrana yaz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Burada ne yaptım? &lt;code&gt;kelime&lt;/code&gt; değişkeninde verilen karakter dizisinin içinde kendisini aradım.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodu Örnek Kullanımlar&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;.find Metodu ile Kelimenin Palindrom Olup Olmadığını Anlama&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Arama işlemini tersinden(&lt;strong&gt;&amp;lsquo;kelime[::-1] ile&amp;rsquo;&lt;/strong&gt;) yaptım, daha önceki yazımda bu ifadenin tersten karakter dizisi okuma anlamına geldiğini öğrenmiştik.(Geniş bilgi için bkz. &lt;a href=&#34;https://fiyakasiz.github.io/blog/bir-kere-daha-karakter-dizileri/&#34;&gt;Bir Kere Daha Karakter Dizileri ve Indexing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Python aranan ifadeyi bulursa &lt;code&gt;.find&lt;/code&gt; metodunun bulunan ilk pozisyonu getireceğini biliyoruz, ki o pozisyon palindrom için &lt;code&gt;0&lt;/code&gt;&amp;lsquo;dır. Bulunamazsa &lt;code&gt;.find&lt;/code&gt; metodu sonuç olarak &lt;code&gt;-1&lt;/code&gt; verir.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Evet dostlar, &lt;code&gt;find&lt;/code&gt; metodu ile işimiz bitti. Esasında bir sonraki yazımda Değişkenler konusuna geçiş yapmayı düşünüyordum. Ancak karakter dizilerinin önemine binaen son bir defa daha bu konuyu işleyeceğim. Zira bu konu çok kritik.&lt;/p&gt;
+
+&lt;p&gt;Bu yazımda iyi anlaşılmayan bir taraf varsa lütfen bana &lt;a href=&#34;mailto:pythonistan@gmail.com&#34;&gt;bildirin&lt;/a&gt;. Yazımı paylaşmak için sol üstte linkler var. Çekinmeden kullanabilirsiniz :)&lt;/p&gt;
+
+&lt;h2 id=&#34;dipnotlar&#34;&gt;DipNotlar&lt;/h2&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:dib&#34;&gt;&amp;ldquo;diğer bir ifadeyle&amp;rdquo;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:dib&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

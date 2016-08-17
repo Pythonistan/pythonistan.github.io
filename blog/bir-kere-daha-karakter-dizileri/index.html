@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Bir Kere Daha Karakter Dizileri // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Python&#39;da String Indexing">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="og:title" content="Bir Kere Daha Karakter Dizileri" />
+<meta property="og:description" content="Python&#39;da String Indexing" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://fiyakasiz.github.io/blog/bir-kere-daha-karakter-dizileri/" />
+
+<meta property="og:image" content="/img/blog/bir-kere-daha-karakter-dizileri/bir_kere_daha_stringler_featured.png" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://fiyakasiz.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fiyakasiz.github.io//css/lightbox.css">
+  <script src="https://fiyakasiz.github.io//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://fiyakasiz.github.io/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="http://www.instagram.com/pyhonistan" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.youtube.com/pythonistan" target="_blank"><i class='fa fa-youtube'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/bir-kere-daha-karakter-dizileri/bir_kere_daha_stringler_featured.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#karakter-dizileri">Karakter Dizileri</a>
+<ul>
+<li><a href="#karakter-dizilerinden-alt-dizi-seçmek">Karakter Dizilerinden Alt Dizi Seçmek</a></li>
+<li><a href="#karakter-dizi-sırası-string-index">Karakter Dizi Sırası (String Index)</a></li>
+</ul></li>
+<li><a href="#karakter-dizi-sırasının-ekstra-argümanı-adım">Karakter Dizi Sırasının Ekstra Argümanı: Adım</a></li>
+<li><a href="#boş-karakter">Boş Karakter</a></li>
+<li><a href="#yaygın-bir-hata-string-index-out-of-range">Yaygın Bir Hata:  String Index Out Of Range</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/bir-kere-daha-karakter-dizileri/">Bir Kere Daha Karakter Dizileri</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>11</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-string-index" href="https://fiyakasiz.github.io//categories/string-index">string index</a>
+				
+					<a class="post-category post-category-stringler" href="https://fiyakasiz.github.io//categories/stringler">stringler</a>
+				
+					<a class="post-category post-category-karakter-dizileri" href="https://fiyakasiz.github.io//categories/karakter-dizileri">karakter dizileri</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fbir-kere-daha-karakter-dizileri%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fbir-kere-daha-karakter-dizileri%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Bir%20Kere%20Daha%20Karakter%20Dizileri&url=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fbir-kere-daha-karakter-dizileri%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<p><em>Değişkenler</em> konusuna çoktan girmemiz gerekirdi lakin <a href="/blog/pythonda-stringleri-ogreniyoruz-1">karakter dizileri</a> gerçekten önemli bir konu olduğu için son bir kez daha bu konuyu işlemeye karar verdim.</p>
+
+<p>Ettekraru Ahsen Velev Kane Yüzseksen demişler.</p>
+
+<h2 id="karakter-dizileri">Karakter Dizileri</h2>
+
+<h3 id="karakter-dizilerinden-alt-dizi-seçmek">Karakter Dizilerinden Alt Dizi Seçmek</h3>
+
+<p>Daha önce <a href="/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index"><em>Stringler 1. Bölüm</em></a> yazımda değindiğim karakter dizilerinden alt dizi seçmek (<strong>substring extracting</strong>) mevzuuna bugün daha yakından bakalım.</p>
+
+<h3 id="karakter-dizi-sırası-string-index">Karakter Dizi Sırası (String Index)</h3>
+
+<p><a href="/blog/pythonda-stringleri-ogreniyoruz-1/"><em>Stringler 1. Bölüm</em></a> ve <a href="/blog/pythonda-stringleri-ogreniyoruz-2/"><em>Stringler 2. Bölüm</em></a> yazılarımı okuduysanız karakter dizileri sırası hakkında belli bir fikir elde etmişsinizdir.</p>
+
+<p><strong>Hatırlayalım</strong>: <code>kelime</code> değişkeni ile gösterilen bir karakter dizimiz olsun. <code>kelime[ i : j ]</code> şeklinde bir ifade, <code>i</code>&lsquo;nin dahil, <code>j</code>&lsquo;nin hariç olduğu kelime dizisinden bir parçayı (<a href="/blog/pythonda-find-metodu/#fn:dib">d.b.i.</a> alt diziyi) gösterir.</p>
+
+<blockquote>
+<p>i = bis: baş indeks sırasını gösteren sayısal değer</p>
+
+<p>j = sis: son indeks sırasını gösteren sayısal değer</p>
+</blockquote>
+
+<p><cite>bis</cite> ve/veya <cite>sis</cite> değerleri verilmezse, varsayılan olarak <em>sonlu değerler (end values)</em> kabul edilir. Yani <code>kelime[:]</code> ifadesi <code>kelime</code>&lsquo;nin kendisine eşittir. Test edelim:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+kelime = &quot;Panorama&quot;
+print kelime[:] == kelime # eşit mi  -&gt; True, yani eşit
+print &quot;Panorama&quot;[:] == &quot;Panorama&quot; # değişken kullanmadan yapabilirsiniz.
+</code></pre>
+
+<h2 id="karakter-dizi-sırasının-ekstra-argümanı-adım">Karakter Dizi Sırasının Ekstra Argümanı: Adım</h2>
+
+<p><a href="/blog/pythonda-palindrome-bulan-program/#gelelim-orjinal-kodlara">Palindrom programımızı yazarken</a> dizi sırasını gösteren söz diziminin(syntax) üçüncü bir argüman aldığını görmüştük.</p>
+
+<pre><code>s[::-1] -&gt; -1
+</code></pre>
+
+<p><cite>Adım değeri (ad)</cite>; <cite>bis</cite> ve <cite>sis&rsquo;e</cite> ek olarak dizi sırasının adımını ve yönünü interpreter&rsquo;a söyleyebileceğimiz bir argümandır.</p>
+
+<p><code>kelime[ i : j : k]</code> ifadesinde <code>k</code> adım değerimizi ifade eder. Yani <code>kelime</code>&lsquo;nin <code>i</code>&lsquo;den(dahil), <code>j</code>&lsquo;ye kadar(hariç) olan kısmını <code>k</code> adımla seçip alarak yeni bir alt karakter dizisi (substring) oluşturabiliriz.</p>
+
+<blockquote>
+<p>k = ad: index sırasının yönünü ve adım sayısını gösteren sayısal değer</p>
+</blockquote>
+
+<p>Başka bir deyişle <code>kelime</code> dizisi; <code>i</code> den başlayıp(dahil), <code>i+k</code>, <code>i+2k</code>, <code>i+3k</code> v.s. <code>j</code>&lsquo;ye kadar (j dahil edilmeyecek) değerler alınarak yeni bir alt dizi oluşturacaktır.</p>
+
+<p><code>k</code> <cite>adım değeri(ad)</cite> verilmezse varsayılan değer <code>1</code> olarak kabul edilir.</p>
+
+<p><strong>Örnek:</strong></p>
+
+<pre><code>|P   |  a  |  n  |  o  |  r  |  a  |  m  |  a  |    -&gt; karakter dizimiz
+|0   |  1  |  2  |  3  |  4  |  5  |  6  |  7  | 8  |   -&gt; pozitif index değerleri
+|-8  | -7  | -6  | -5  | -4  | -3  | -2  | -1  |    |   -&gt; negatif index değerleri
+</code></pre>
+
+<p>Şimdi <cite>adım değeri(ad)</cite> argümanını da kullanarak örnek karakter dizimizden bazı alt diziler(substring) elde edelim:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+kelime = &quot;Panorama&quot;
+
+print kelime[0:8:1]   # varsayılan değerleri kullan     -&gt; &quot;Panorama&quot; 
+print kelime[::]      # üsttekiyle aynı                 -&gt; &quot;Panorama&quot; 
+print kelime[::-1]    # varsayılan değer ancak tersten  -&gt; &quot;amaronaP&quot;
+print kelime[:-2:-1]  # son karakteri al tersten        -&gt; &quot;a&quot;
+print kelime[:-3:-1]  # son iki karakteri al tersten    -&gt; &quot;am&quot;
+print kelime[:-4:-1]  # son üç karakteri al tersten     -&gt; &quot;ama&quot;
+print kelime[::-2]    # her iki karakteri al tersten    -&gt; &quot;aaoa&quot;
+print kelime[5:1:-2]  # 5 ile 1 arasında iki iki al tst -&gt; &quot;ao&quot;
+print kelime[5:0:-2]  # 5 ile 0 arasında iki iki al tst -&gt; &quot;aoa&quot;
+print kelime[2:38:1]  # 2 ile 38 arasında substring al  -&gt; &quot;norama&quot;
+print kelime[7:-1:-2] # 7 ile -1 arasında iki iki al t. -&gt; &quot;&quot; boş karakter
+print kelime[2:8:-2]  # 2 ile 8 arasında iki iki al t. -&gt; &quot;&quot; boş karakter
+</code></pre>
+
+<p><cite>bis</cite> ve/veya <cite>sis</cite> değerleri verilmemişse varsayılanın <em>sonlu değerler</em> olduğunu yukarıda belirtmiştik(end values). Örneklerimizde bu durumu tekrar görüyoruz.</p>
+
+<figure>
+    <a href="/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png"><img src="/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png" alt="Python'da Karakter Dizilerinin Sırası ve Yönü"></a>
+    <figcaption>Python'da Karakter Dizilerinin Sırası ve Yönü (String Index and Step Argument) </figcaption>
+</figure>
+
+<h2 id="boş-karakter">Boş Karakter</h2>
+
+<p>Sondan bir önceki kod satırımıza dikkat edin lütfen. <code>kelime[7:-1:-2]</code> ifadesinde <code>7.</code> ve <code>-1.</code> indexler eşittir ve dolayısıyla alınacak bir karakter yoktur (<a href="{{ site.baseurl }}/blog/pythonda-find-metodu/#fn:dib">d.b.i.</a> &lsquo;0&rsquo; karakter vardır), elde edeceğimiz sadece boş karakterdir. <code>''</code></p>
+
+<p>Sonuncu satırdaki <code>kelime[2:8:-2]</code> ifadesinde ise <code>8.</code> sıra <code>2.</code> sıranın sağında bulunduğundan ve sayma adımı <code>-2</code> değeri ile negatif bir değer olduğundan (sayma yönü yanlış) sonuç yine boş karakterdir. <code>''</code></p>
+
+<p>Yine, karakter dizisi sırasını gösterdiğimiz üstteki tablomuzda pozitif index değeri olarak gösterilen <code>8.</code> karakter indexinin aslında olmayan bir karaktere referans verdiğini görmüş olmalısınız.</p>
+
+<p>Gerçektende <code>print kelime[8]</code> gibi bir kod bize hata döndürecektir. İsterseniz deneyin. <em>(string index out of range hatası)</em> Çünkü kelimenin atıf yaptığı <code>&quot;Panorama&quot;</code> karakter dizisinin bir 8. karakteri bulunmamaktadır.</p>
+
+<p>Ancak <code>8.</code> yada <code>38.</code> karakter değerini bir <cite>bis</cite> ve/veya <cite>sis</cite> değeri ile beraber kullandığımızda Payton&rsquo;un bu kez hata vermediğini ve o noktaya kadar bulabildiği alt diziyi verdiğini görüyoruz. Yukarıda 1. örneğimizdeki <code>kelime[0:8:1]</code>nin -&gt; &ldquo;Panorama&rdquo; ve 10. örneğimizdeki <code>kelime[2:38:1]</code> nin -&gt; &ldquo;norama&rdquo; vermesi gibi.</p>
+
+<p>Boş karakterin değerlendirilmesindeki bu farklılık Payton&rsquo;un orjinal tasarımından kaynaklanmaktadır ve bilinçli bir tercihi yansıtmaktadır.
+{:.notice}</p>
+
+<h2 id="yaygın-bir-hata-string-index-out-of-range">Yaygın Bir Hata:  String Index Out Of Range</h2>
+
+<p><a href="/blog/pythonda-stringleri-ogreniyoruz-1/">Karakter dizileri</a> ile ilgili açıklamalarımı gereksiz bulmuş ve çok detaylı olduğunu düşünmüş olabilirsiniz.</p>
+
+<p>Özellikle döngüleri kullanırken string uzunluğunun yanlış hesaplanmasından dolayı pek çok <strong>String Index Out of Range</strong> (Türkçe: &ldquo;aralık dışında dizi endeksi&rdquo;??) hatası ile karşılaşabilmekteyiz.</p>
+
+<figure>
+    <img src="/img/blog/bir-kere-daha-karakter-dizileri/string_index_out_of_range.png" alt="Python'da Sık Rastlanan String Out of Range Hatası">
+    <figcaption>Python'da Sık Rastlanan String Index Out of Range Hatası </figcaption>
+</figure>
+
+<p>Bu tür hataların önüne geçme adına <em>karakter dizisi sırası</em> (string indexing) konusunu iyi bellemeli ve Python&rsquo;da bol örnek çözmeliyiz.</p>
+
+<hr>
+
+<p>Yazımı paylaşırsanız diğerlerinin de yazımdan faydalanmasını sağlamış olur ve beni çok memnun edersiniz, şimdiden çok teşekkürler! Sağlıcakla kalın&hellip;</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fbir-kere-daha-karakter-dizileri%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fbir-kere-daha-karakter-dizileri%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Bir%20Kere%20Daha%20Karakter%20Dizileri&url=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fbir-kere-daha-karakter-dizileri%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-python" href="https://fiyakasiz.github.io//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-stringler" href="https://fiyakasiz.github.io//tags/stringler">stringler</a>,
+	                
+	                <a class="post-tag post-tag-karakter-dizileri" href="https://fiyakasiz.github.io//tags/karakter-dizileri">karakter dizileri</a>,
+	                
+	                <a class="post-tag post-tag-substring" href="https://fiyakasiz.github.io//tags/substring">substring</a>,
+	                
+	                <a class="post-tag post-tag-alt-dizi" href="https://fiyakasiz.github.io//tags/alt-dizi">alt dizi</a>,
+	                
+	                <a class="post-tag post-tag-string-index" href="https://fiyakasiz.github.io//tags/string-index">string index</a>,
+	                
+	                <a class="post-tag post-tag-karakter-dizi-s%C4%B1ras%C4%B1" href="https://fiyakasiz.github.io//tags/karakter-dizi-s%C4%B1ras%C4%B1">karakter dizi sırası</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/python-felsefesi/">Python Felsefesi (Zen of Python)</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/pythonda-find-metodu/">Python&#39;da &#39;.find&#39; hazır metodu</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'https:\/\/fiyakasiz.github.io\/blog\/bir-kere-daha-karakter-dizileri\/';
+    var disqus_title = 'Bir Kere Daha Karakter Dizileri';
+    var disqus_url = 'https:\/\/fiyakasiz.github.io\/blog\/bir-kere-daha-karakter-dizileri\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

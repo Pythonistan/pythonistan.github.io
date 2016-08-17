@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index Değeri on Pythonistan</title>
+    <link>https://fiyakasiz.github.io/tags/index-de%C4%9Feri/</link>
+    <description>Recent content in Index Değeri on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Sun, 07 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fiyakasiz.github.io/tags/index-de%C4%9Feri/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python&#39;da Stringleri Öğreniyoruz - 2</title>
+      <link>https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</link>
+      <pubDate>Sun, 07 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</guid>
+      <description>
+
+&lt;h2 id=&#34;python-da-stringler-2-bölüm&#34;&gt;Python&amp;rsquo;da Stringler - 2. Bölüm&lt;/h2&gt;
+
+&lt;p&gt;Dün &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;ilk bölümünü&lt;/a&gt; yayınladığımız karakter dizileri (stringler) konusuna devam ediyoruz.&lt;/p&gt;
+
+&lt;p&gt;İkinci bölümde pratiğe yönelik bazı uygulamalar yapalım. Sizlere sürpriz sorularım olacak.&lt;/p&gt;
+
+&lt;h2 id=&#34;eğlenceli-bir-deneme&#34;&gt;Eğlenceli Bir Deneme&lt;/h2&gt;
+
+&lt;p&gt;Elimizde iki adet değişken var. Değişkenlerimiz &lt;code&gt;a = &amp;quot;Garanti&amp;quot;&lt;/code&gt; ve &lt;code&gt;b = &amp;quot;töre&amp;quot;&lt;/code&gt; olsun.&lt;/p&gt;
+
+&lt;p&gt;Bu iki değişkeni kullanarak -burası önemli!!!- &lt;strong&gt;index değerlerini tek tek saymadan&lt;/strong&gt; nasıl &lt;code&gt;&amp;quot;Garantör&amp;quot;&lt;/code&gt; isimli bir karakter dizisi oluşturup ekrana yazdırabiliriz?&lt;/p&gt;
+
+&lt;p&gt;Cevaba göz atmadan lütfen bir kaç dakika &lt;strong&gt;düşünün&lt;/strong&gt;. Bu sorunun cevabını kolaylıkla bulabileceğinizi sanıyorum.&lt;/p&gt;
+
+&lt;p&gt;İpucu: İki karakter dizisini birleştirmek için &lt;code&gt;+&lt;/code&gt; operatörünü kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Sorumuzun cevabı sayfanın altında. Hemen alttaki bölümde ise ev ödeviniz var.&lt;/p&gt;
+
+&lt;h2 id=&#34;ev-ödeviniz&#34;&gt;Ev Ödeviniz&lt;/h2&gt;
+
+&lt;p&gt;Bir sonraki blog yazıma kadar çözmeniz için bir soru soracağım. Python interpreter&amp;rsquo;ı bu sorunun cevabını bulmak için kullanabilirsiniz. İnternetten cevabı araştırmak serbest.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Stringler - 1. bölümde&lt;/a&gt; geçen &lt;code&gt;selam&lt;/code&gt; adlı değişkenin &amp;ldquo;baştan 7. / sondan -15.&amp;rdquo; index değerine haiz olan karakterinin ismi nedir?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;stringler-toplanır-mı&#34;&gt;Stringler Toplanır mı?&lt;/h2&gt;
+
+&lt;p&gt;Üstteki sorudaki ipucunda belirtildiği gibi karakter dizilerini birbirleri ile birleştirip yeni karakter dizileri oluşturabilirsiniz. Bunun için &lt;code&gt;+&lt;/code&gt; operatörünü kullanmalısınız. Burada yapılan işleme, birleştirme (concatenatination) denir.&lt;/p&gt;
+
+&lt;p&gt;Birleştirme yapılırken araya otomatik boşluk girmez, boşluk gerekiyorsa sizin boşluk karakterini birleşen stringlerin arasına koymanız gerekir. (Bkz.aşağıdaki örnek 3.satır &amp;lsquo;merhaba&amp;rsquo;dan sonrası)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Evet boşluk karakteri de diğer herhangi bir karakter gibidir. Basitçe space tuşuna bir kere basmak bir boşluk karakteri vermek demektir.&lt;/p&gt;
+
+&lt;p&gt;Peki bir karakter dizisi ile bir sayı (rakam) birleşebilir mi? Karakter dizilerini bir sayıyla toplamaya kalkarsanız hata alırsınız. Zira sayı ile toplama yada çıkarma tür uyuşmazlığı nedeni ile yapılamaz. Ancak ilginç bir durum olarak karakter dizisini çarpı &lt;code&gt;*&lt;/code&gt; operatörü ile kullanıp aynı karakter dizisini çarpıldığı değer kadar artırabilirsiniz. Bir örnek görelim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+
+print &#39;merhaba &#39; + &amp;quot;Fatih&amp;quot; + &amp;quot;!&amp;quot; * 15 # üç adet karakter dizisini birleştir
+        # ünlem karakterini 15 ile çarp, yani 15 adet yap
+        # çıktıyı aşağıda soldaki ekran görüntüsünde görebilirsiniz.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;türkçe-karakter-azizliği&#34;&gt;Türkçe Karakter Azizliği&lt;/h2&gt;
+
+&lt;p&gt;Belki farketmişsinizdir. Bugüne kadarki yazılarımdaki kodlarda Türkçe karakterleri pek kullanmamıştım.(yorum satırları hariç) Stringleri işlediğim iki bölümdeki tüm örnek kodlarda Türkçe kullanmaya çalıştım.&lt;/p&gt;
+
+&lt;p&gt;Python 2 versiyonunun üniversal UTF-8 kümesi ile irtibatı maalesef pek sağlam değil. Birçok kez interpreter(yorumlayıcı)&amp;lsquo;da sürpriz hatalarla karşılaşabiliyorsunuz.&lt;/p&gt;
+
+&lt;p&gt;Örneğin &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;bir önceki yazıda&lt;/a&gt; geçen &lt;code&gt;len&lt;/code&gt; built-in (hazır) fonksiyona bakalım. &lt;code&gt;print len &amp;quot;tesadüfi&amp;quot;&lt;/code&gt; komutunu verdiğinizde çok şaşırtıcı bir biçimde &lt;code&gt;9&lt;/code&gt; sonucunu alıyorsunuz. Kelimemizde 8 karakter olduğu aşikar! UTF-8, &amp;ldquo;ü&amp;rdquo; gibi özel karakter setleri için birden fazla byte kullandığı için karakter dizimizin değeri Python&amp;rsquo;ca yanlış hesaplanıyor.&lt;/p&gt;
+
+&lt;p&gt;Allahtan bunu önlemenin nispeten kolay bir yolu var. Karakterimizi unicode&amp;rsquo;a göre decode etmek(çözmek) ve o şekilde &lt;code&gt;len&lt;/code&gt; fonksiyonunu çalıştırmak. &lt;code&gt;print len (u&amp;quot;tesadüfi&amp;quot;)&lt;/code&gt; şeklinde kullandığımızda doğru sonuç olan &lt;code&gt;8&lt;/code&gt; döndürülüyor. Burada &lt;code&gt;u&lt;/code&gt; karakter dizimizi unicode&amp;rsquo;a çeviriyor.&lt;/p&gt;
+
+&lt;p&gt;Tuhaf olan yukarıdaki aynı kodu Windows&amp;rsquo;da Komut Satırı &amp;gt; Python yazarak açtığımız Python kabuğunda(Shell) çalıştırdığınızda herhangi bir hata almadan doğru sonucu(8) veriyor. Kafa karıştıran bir durum!&lt;/p&gt;
+
+&lt;p&gt;Yine aynı şekilde &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;bir önceki bölümde&lt;/a&gt; &lt;code&gt;print selam[-5:-1]  # 5. örnek -&amp;gt; &amp;quot;lsın&amp;quot; olmalı&lt;/code&gt; kodu Sublime&amp;rsquo;da Python tarafından yanlış sonuç döndürüyor. Bu kez yine &amp;ldquo;ı&amp;rdquo; karakteri interpreter tarafından işlenirken hata oluşuyor.&lt;/p&gt;
+
+&lt;p&gt;Gördüğünüz gibi Python&amp;rsquo;da bazen Türkçe karakterlerle yada standart latin harfleri dışındaki bazı özel karakter setleri ile problemler yaşayabilirsiniz. Bu tür durumlarda önerim Google&amp;rsquo;dan probleminizi (tercihen ingilizce olarak) yazıp aratmanız. Google sizi genelde &lt;a target=&#34;blank&#34; href=&#34;http://stackoverflow.com/&#34;&gt;stackoverflow&lt;/a&gt; gibi sitelere yönlendiriyor ve bir şekilde probleminizi çözüyorsunuz. Tabi her zaman için ilk kural: Panik yapmayın!&lt;/p&gt;
+
+&lt;h2 id=&#34;eğlenceli-bir-deneme-çözümü&#34;&gt;Eğlenceli Bir Deneme Çözümü&lt;/h2&gt;
+
+&lt;p&gt;Eksi (-) indeks değerlerini kullanarak karakter dizisinde istemediğimiz kısımları çıkartıp istediğimiz alt dizileri oluşturarak bu soruyu çözebiliriz.&lt;/p&gt;
+
+&lt;p&gt;İlk karakter dizimiz &lt;code&gt;&amp;quot;Garanti&amp;quot;&lt;/code&gt;idi. Burada istemediğimiz karakterler son iki karakter: &lt;code&gt;&amp;quot;ti&amp;quot;&lt;/code&gt;.Son iki karakteri istemediğimizi bildiğimizden basitçe a[:-2] bize &lt;code&gt;&amp;quot;Garan&amp;quot;&lt;/code&gt; alt dizisini verir.&lt;/p&gt;
+
+&lt;p&gt;İkinci karakter dizimiz &lt;code&gt;&amp;quot;töre&amp;quot;&lt;/code&gt; idi. Burada istemediğimiz karakter sadece en son karakter: &lt;code&gt;&amp;quot;e&amp;quot;&lt;/code&gt; Yine aynı şekilde b[:-1] kullanımı bize &lt;code&gt;&amp;quot;tör&amp;quot;&lt;/code&gt; alt dizisini (substring) verecektir.&lt;/p&gt;
+
+&lt;p&gt;Artı &lt;code&gt;(+)&lt;/code&gt; operatörünün stringler için kullanıldığında birleştirmeye (concetination) yaradığını biliyoruz. Bu iki karakter dizisini birleştirmek için şimdi bu operatörü kullanalım. &lt;code&gt;a[:-2] + b[:-1]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Son olarak ekrana yazdırma komutumuzu biliyorsunuz. &lt;code&gt;print a[:-2] + b[:-1]&lt;/code&gt; -&amp;gt; Bize &lt;code&gt;&amp;quot;Garantör&amp;quot;&lt;/code&gt;  çıktısını verecektir.&lt;/p&gt;
+
+&lt;p&gt;Programımızın toplu görünüşü:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+a = &amp;quot;Garanti&amp;quot;
+b = &amp;quot;töre&amp;quot;
+
+print a[0:-2] + b[0:-1]  # print a[:-2] + b[:-1] kullanımı da geçerlidir
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Alternatif Kullanım:&lt;/strong&gt; Yukarıda son yorum satırında değinildiği gibi başlangıç indexinde 0 kullanmayabilirsiniz. Değer yazılmadığında Python varsayılan değer olarak 0 kullanır.&lt;/p&gt;
+
+&lt;figure class=&#34;half&#34;&gt;
+    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34; alt=&#34;Paytonda karakter dizileri çarpılabilir&#34;&gt;&lt;/a&gt;
+    &lt;figcaption&gt;Paytonda karakter dizileri çarpılabilir&lt;/figcaption&gt;
+
+    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34; alt=&#34;Birebir index değeri saymadan substring alt dizi oluşturma&#34;&gt;&lt;/a&gt;
+    &lt;figcaption&gt;Birebir İndex Değeri Saymadan Substring Alt Dizi Oluşturma&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;web-sitesi-adreslerini-python-la-ayıklama&#34;&gt;Web Sitesi Adreslerini Python&amp;rsquo;la Ayıklama&lt;/h2&gt;
+
+&lt;p&gt;Hepiniz şimdiye değin muhakkak bir website kodu ile karşılaşmışsınızdır. Web tarayıcısında bir websitenin içindeyken sağ tıklayıp açılan menüden &amp;ldquo;Kaynağı Göster&amp;rdquo;e tıkladığımızda gelen source(kaynak) kodlarında en sık görülen kod satırlarından biri hyperlink gösterimidir.&lt;/p&gt;
+
+&lt;p&gt;Web demek zaten hiper linklerin bir toplamı değil mi? O yüzden hemen her sayfa onlarca hyperlink barındırmaktadır.&lt;/p&gt;
+
+&lt;p&gt;Bahsettiğimiz linklerin web sitelerinin kaynak kodlarında genel gösterimi şu şekildedir: &lt;code&gt;&amp;lt;a href = &amp;quot; http://www.ornekwebsitesi.com &amp;quot; &amp;gt;&lt;/code&gt; Şimdi diyelim ki biz bu koddan sadece &lt;code&gt;http://www.ornekwebsitesi.com&lt;/code&gt; olan kısmı çekip almak (extract) istiyoruz. Şu ana kadar öğrendiğimiz metodlarla bunu çok kolay gerçekleştirebileceğimizi biliyorsunuz.&lt;/p&gt;
+
+&lt;p&gt;Öğrenmiş olduğumuz baş ve son (diğer bir ifadeyle pozitif ve negatif) index değerlerini kullanarak bu problemi çözelim.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;http://www.ornekwebsitesi.com&amp;quot;&amp;gt;&lt;/code&gt; ifadesinde http&amp;rsquo;nin ilk harfi olan &amp;ldquo;h&amp;rdquo; karakterinin pozitif index değeri ne olursa olsun değişmeyecek: &lt;code&gt;9&lt;/code&gt;. (Bkz. Aşağıda Soldaki Ekran Görüntüsü)&lt;/p&gt;
+
+&lt;p&gt;Aynı şekilde linkin sonuna bakarsak linkin uzunluğu ne olursa olsun son iki karakterin (çift tırnak ve büyüktür karakterleri) dışarıda bırakacağımızı görebiliyoruz. Dolayısıyla linkimizin son karakterinin pozitif indeks değeri değişse bile negatif indeks değeri hiç bir zaman değişmez.&lt;/p&gt;
+
+&lt;p&gt;Negatif index değeri linkin son karakterine kadar her zaman için -2 dir. (Üstteki örneğimizi hatırlayın, son 2 karakteri almak istemiyoruz. -2.inci karakter (bu durumda &amp;lsquo;&amp;ldquo;&amp;rsquo;) alınacak alt diziye dahil olmayacaktır, unutmayın.) Aşağıda soldaki ekran alıntısında bu durumu detaylı görebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Dolayısıyla bizim istediğimiz kısım [9&amp;rsquo;dan:-2&amp;rsquo;ye] kadar olan kısımdır.(-2. dahil değil) Şimdi bunu kodumuzda görelim.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+link_1 = &#39;&amp;lt;a href=&amp;quot;http://www.python.org&amp;quot;&amp;gt;&#39; # dışarıda tek tırnak kullanımına dikkat
+link_2 = &#39;&amp;lt;a href=&amp;quot;http://www.pythonistan.net&amp;quot;&amp;gt;&#39; #çünkü içeride çift tırnak var...
+link_3 = &#39;&amp;lt;a href=&amp;quot;http://www.pythoncentral.io&amp;quot;&amp;gt;&#39;
+
+print link_1[9:-2]  # gördüğünüz gibi karakter dizilerimizin uzunluğu
+print link_2[9:-2]  # farklı olsa bile hepsi için aynı index değerleri
+print link_3[9:-2]  # kullanarak istediğimiz bölümü seçebildik.
+# programın çıktısını (output) hemen alt sağdaki ekran görüntüsünde görebilirsiniz.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda hiper link görece string index pozisyon tablo karşılaştırması&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Karakter dizileri üzerine dün ve bugün yaptığımız detaylı açıklamalardan sonra artık &lt;a href=&#34;https://fiyakasiz.github.io/blog/palindrome-programi/&#34;&gt;palindrom&lt;/a&gt; programımıza geçebiliriz. Bekleyin beni anacım!&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Her türlü görüş ve önerileriniz için lütfen sayfa altındaki yorumlar bölümünü kullanın. Yazımı paylaşmak için sosyal medya linkleri aşağıdaki menüde mevcut. Teşekkürler.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python&#39;da Stringleri Öğreniyoruz - 1</title>
+      <link>https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/</link>
+      <pubDate>Sat, 06 Aug 2016 00:00:00 +0300</pubDate>
+      
+      <guid>https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;payton-da-stringler-1-bölüm&#34;&gt;Payton&amp;rsquo;da Stringler  - 1. Bölüm&lt;/h2&gt;
+
+&lt;p&gt;Hatırlarsanız bugün &lt;a href=&#34;https://fiyakasiz.github.io/blog/sublime-text-kurulum/&#34;&gt;bir önceki makalemde&lt;/a&gt; gösterdiğim palindrome programının detaylı incelemesini yapacaktım. Lakin o örneği daha iyi anlayabilmeniz açısından ilk olarak Python’da stringler (karakter dizileri) konusunu işlemeye karar verdim.&lt;/p&gt;
+
+&lt;p&gt;Bu yazı iki bölümden oluşacak. Bu birincisi. Yarın &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;ikinci ve son bölümü&lt;/a&gt; yayınlamayı planlıyorum.&lt;/p&gt;
+
+&lt;p&gt;Python’da stringler konusu &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/&#34;&gt;daha önceki yazılarımda&lt;/a&gt; birkaç kez geçmişti. Bugün konuyu en baştan ele alalım.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Karakter dizileri&lt;/em&gt; ile ilgili bilmeniz gereken en önemli şey şu: &lt;em&gt;Karakter dizileri&lt;/em&gt; &lt;strong&gt;tırnak işaretleri arasında&lt;/strong&gt; gösterilmek zorundadır. (Tek Tırnak/ Çift Tırnak/Üçlü Tırnak kullanımlarının hepsi geçerlidir.)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:tirnak&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:tirnak&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Bilmeniz gereken diğer önemli şey ise tırnak kullanımında tutarlı olma mecburiyetidir. Yani karakter dizisine tek tırnak ile başlamışsanız tek tırnak ile sonlandırmanız gerekir. Çift ile başladıysanız çift ile&amp;hellip;v.b.&lt;/p&gt;
+
+&lt;p&gt;Son olarak tırnak içerisinde görülen &lt;strong&gt;her şey&lt;/strong&gt; karakter dizisidir. Karakter deyince sadece yazı harflerini düşünmeyin, o tırnak işaretleri arasına giren herşey ama herşey bir karakter dizisidir. &lt;code&gt;&amp;quot;5*-|[\}?=)&amp;amp;/%+½$#],.&amp;quot;1é!&amp;quot;&lt;/code&gt; gibi&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;string-karakter-dizisi-örnekleri&#34;&gt;String (Karakter Dizisi) Örnekleri&lt;/h2&gt;
+
+&lt;p&gt;Şimdi artık aşağıda bir kaç tane karakter dizisi yazabiliriz:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+print &amp;quot;Ben bir karakter dizisiyim, tamam mı?&amp;quot; # çift tırnak k.dizi örneği
+print &#39;Anlaşıldı, tamam&#39;        # tek tırnak k.dizi örneği
+print &#39;&#39;&#39;İlk ikisinin aksine üç tırnak ile yazıldığımda bir sonraki satırda 
+hata vermeden devam edebilirim&#39;&#39;&#39;   # birden fazla satırlı üç tırnak k.dizi örneği
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bu da hatalı kullanıma bir örnek:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+print  &amp;quot;Bakın bu mesela çalışmaz, isterseniz deneyin. Python hata verecek.&#39;
+
+ File &amp;quot;C:\Users\Fatih\Desktop\selam.py&amp;quot;, line 2
+    print  &amp;quot;Bakın bu mesela çalışmaz, isterseniz deneyin. Python hata verecek.&#39;
+                                                                                     ^
+SyntaxError: EOL while scanning string literal
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Not:&lt;/strong&gt; Python baştaki çift tırnaktan sonra karakter dizisini bitirme emaresi olarak ikinci bir çift tırnak aradı, bulamayınca üstteki hatayı verdi. EOL = End of Line = Satır Sonu demektir.
+{:.notice}&lt;/p&gt;
+
+&lt;figure class=&#34;half&#34;&gt;
+    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatasiz_ornekler.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatasiz_ornekler.png&#34; alt=&#34;Python&#39;da Hatasız Karakter Dizisi Örnekleri&#34;&gt;&lt;/a&gt;
+    &lt;figcaption&gt;Python&#39;da Hatasız Karakter Dizisi Örnekleri&lt;/figcaption&gt;
+
+    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatali_ornek.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatali_ornek.png&#34; alt=&#34;Python&#39;da Hatalı Karakter Dizisi Örneği&#34;&gt;&lt;/a&gt;
+    &lt;figcaption&gt;Python&#39;da Hatalı Karakter Dizisi Örnekleri&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;karakter-dizisi-sırası-string-index&#34;&gt;Karakter Dizisi Sırası (String Index)&lt;/h2&gt;
+
+&lt;p&gt;Buraya kadar zaten bildiğiniz şeylerden bahsettik. Şimdi yeni bir konsepte geçelim. Karakter dizisi sırası, yani string indexi. Daha açık ifadeyle &lt;strong&gt;String Index&lt;/strong&gt;, dizideki her bir karakterin sırasını veren değerdir. Bu değer baştan 0, sondan -1 ile başlar.(En üstteki büyük fotoya bakın)&lt;/p&gt;
+
+&lt;p&gt;*Karakter dizileri*nin sayılarda olmayan bu çok önemli özelliğini kullanarak bir karakter dizisinden istediğiniz bölümü seçip alabilir ve ayrıca yeni karakter dizileri (alt dizi – substring) oluşturabilirsiniz. Bu seçim yapılırken köşeli parantez kullanılır: karakter_dizisi[index] yada karakter_dizisi[baslangic_index:bitis_index] şeklinde. İkinci örnek birden fazla karakter içeren alt dizi oluşturmak için kullanılır.&lt;/p&gt;
+
+&lt;p&gt;Adından anlaşılacağı üzere “diziler”, alt diziler içerir ve biz bu alt dizilere &lt;em&gt;index pozisyonlarını kullanarak&lt;/em&gt; ulaşıyoruz.&lt;/p&gt;
+
+&lt;p&gt;Pratik bir örnek yapalım. Karakter dizimize ulaşmada kolaylık olsun diye ilk önce &lt;code&gt;selam&lt;/code&gt; adında bir değişken oluşturalım. Değişken konusunu daha sonraki yazılarımızda işleyeceğimiz için şimdilik buna kafa yormayın lütfen.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:degisken&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:degisken&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;selam = “Merhaba Ali!, nasılsın?”&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                            &amp;lt;----- PYTHON&#39;DA KARAKTER DİZİLERİNİN SONDAN İNDEKS DEĞERİ                                              
+-22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12 -11 -10 -9  -8  -7  -6  -5  -4  -3  -2  -1
+__  _   _   _   _   _   _       __  _   _   _   _   _   _   _   _   _   _   _   _   _
+M   e   r   h   a   b   a       A   l   i   !   ,   n   a   s   ı  l   s   ı  n   ?
+__  _   _   _   _   _   _       __  _   _   _   _   _   _   _   _   _   _   _   _   _
+0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  20  21
+PYTHON&#39;DA KARAKTER DİZİLERİNİN BAŞTAN İNDEKS DEĞERİ ------&amp;gt;                                                                                    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;selam&lt;/code&gt; isimli değişkenimize &lt;code&gt;Merhaba Ali!, nasılsın?&lt;/code&gt; karakter dizimizi atadık. Bundan sonra &lt;code&gt;selam&lt;/code&gt;değişkenimizden alt diziler oluşturmayı görelim.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+selam = &amp;quot;Merhaba Ali!, nasılsın?&amp;quot;
+
+print selam[0]      # 1. örnek -&amp;gt; &amp;quot;M&amp;quot;
+print selam[2+2]    # 2. örnek -&amp;gt; &amp;quot;a&amp;quot; , (2+2 = 4. karakter)
+print selam[0:4]    # 3. örnek -&amp;gt; &amp;quot;Merh&amp;quot; , son index karakteri(4) dahil değil!
+print selam[-2]     # 4. örnek -&amp;gt; &amp;quot;n&amp;quot; 
+print selam[-5:-1]  # 5. örnek -&amp;gt; &amp;quot;lsın&amp;quot; olmalı, ancak türkçe karakter
+            # kaynaklı bir hatayı aşağıda ekran çıktısında görebilirsiniz.
+            # bkz. stringler - 2. Türkçenin Azizliği bölümü 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Karakter dizimizin bizzat kendisini kullanarak alt dizi oluşturabiliriz. &amp;ldquo;Merhaba Ali!, nasılsın?&amp;rdquo;[0] -&amp;gt; &amp;ldquo;M&amp;rdquo; çıktısını verir. Aynen yukarıdaki birinci örnekteki gibi. Ancak değişken kullanımı daha rahat ve yaygındır.
+{:.notice}&lt;/p&gt;
+
+&lt;h2 id=&#34;öğrenmemiz-gereken-hususlar&#34;&gt;Öğrenmemiz Gereken Hususlar&lt;/h2&gt;
+
+&lt;p&gt;Burada bilmemiz gereken belli başlı şeyler var. Tek tek bakalım.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Python’da karakter sıralaması sağ veya soldan başlanarak kullanılabilir. Soldan yani baştan başlanıldığında ilk karakter indeks 0&amp;rsquo;dan başlar ve artarak devam eder. (Bkz. En üstteki büyük foto). Sağdan(yani dizinin en sonundan) başlanıldığında ise ilk karakter indeks -1 ile başlar ve azalarak devam eder. Yukarıda ilk örnekte Python, &lt;code&gt;selam&lt;/code&gt; adlı değişkene atanan değer olan &amp;ldquo;Merhaba Ali!, nasılsın?&amp;rdquo; karakter dizisinin 0’ıncı karakterini soldan saymaya başladı ve hemen &amp;ldquo;M&amp;rdquo; karakterini(alt diziyi) daha ilk saymada buldu. 4.örnekte ise bu kez eksi (–) 2 index istendi, en son karakter -1 ve onun index değeri karşılığı &amp;ldquo;?&amp;rdquo;&amp;lsquo;dır. Bir sol yanındaki index değeri -2 olacağı için sonuç olarak bize “n” karakter (dizi)ini getirdi.&lt;/li&gt;
+&lt;li&gt;Tek bir karakter(dizisi)i seçmek (yani tek karakterli bir altdiziyi seçmek) için sayı değerli tek bir index değeri kullanılırken [tek_index_değeri], diziden belli aralığı seçmek (yani birden fazla karakterli bir altdizi seçmek için) [baslangic_index:bitis_index] kullanılır. Bkz. yukarıdaki 3 ve 5 no.lu örnekler&lt;/li&gt;
+&lt;li&gt;İndex değeri için kullanılan ifade aritmetik bir ifade olabileceği gibi (yukarıda 2 no.lu örnek) bir fonksiyon da olabilir. Mesela;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+selam = &amp;quot;Merhaba Ali!, nasılsın?&amp;quot;
+sayi = &amp;quot;sekiz_erli&amp;quot; # sekiz_erli kelimesi kaç karakter uzunluğunda? 10
+print selam[len(sayi)] # -&amp;gt; &amp;quot;i&amp;quot;,  karakter dizisinin 10. karakteri.
+print len(sayi) # Gerçekten de 10 karakter olduğunu teyit edelim.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Fonksiyon:&lt;/strong&gt; &lt;a href=&#34;{{ site.baseurl }}/blog/python-notepad-ile-program-yazma/&#34;&gt;Notepad ile program yazma&lt;/a&gt; makalemde belirttiğim &lt;code&gt;def&lt;/code&gt; ile başlayan prosedürleri hatırladınız mı? Buradaki &lt;code&gt;len&lt;/code&gt; fonksiyonunun tek farkı Python&amp;rsquo;un içinde hazır gelen bir fonksiyon/prosedür olmasıdır.(built-in) &lt;code&gt;len&lt;/code&gt; bize türü &amp;ldquo;dizi&amp;rdquo; olan veri tiplerinin uzunluğunu(length) verir ve her zaman sayısal bir değer üretir.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:diziler&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:diziler&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;
+{:.notice}&lt;/p&gt;
+
+&lt;p&gt;Burada &lt;code&gt;len(sayi)&lt;/code&gt; ile yaptığımız şey şudur: &lt;code&gt;sayi&lt;/code&gt; değişkenin değeri olan “sekiz_erli” karakter dizisinin uzunluğunu &lt;code&gt;len&lt;/code&gt; fonksiyonu ile hesaplıyoruz. Bu değer &lt;code&gt;10&lt;/code&gt;&amp;lsquo;dur. Daha sonra bunu karakter indeksinin değeri olarak kullanıyoruz.&lt;/p&gt;
+
+&lt;p&gt;Yani &lt;code&gt;selam&lt;/code&gt; isimli değişkenin belirttiği karakter dizisinin 10 no.lu index pozisyonunda bulunan karakteri alıyoruz. Bu da bize &lt;code&gt;&amp;quot;i&amp;quot;&lt;/code&gt; harfini veriyor. &lt;strong&gt;(Unutmayın, index değeri baştan her zaman 0&amp;rsquo;la başlar, 1&amp;rsquo;le değil&amp;hellip;)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/pythonda_karakter_dizileri_altdizi_secme.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda Karakter Dizilerinden Alt Dizi Seçme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/pythonda_karakter_dizileri_altdizi_secme_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/paytonda_len_fonksiyonu_ile_altdizi_secme.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda &#39;len&#39; Hazır Fonksiyonu İle Alt Dizi Seçme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/paytonda_len_fonksiyonu_ile_altdizi_secme_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Serimizin &lt;a href=&#34;{{ site.baseurl }}/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;ikinci ve son bölümünde&lt;/a&gt; yine örnek uygulamalar yapıp Python&amp;rsquo;da stringler konusunu ele almaya çalışacağız. Bu kez sizler için bazı test sorularımız olacak. Takipte kalın!&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Yazımla ilgili beğenilerinizi/yapıcı eleştirilerinizi yandaki sosyal medya butonları ile paylaşabilirsiniz. Sayfa altında bu yazıyı ve soruları tartışabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;dipnotlar&#34;&gt;DipNotlar&lt;/h2&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:tirnak&#34;&gt;Tek tırnak : &amp;lsquo; &amp;rsquo; , Çift Tırnak : &amp;ldquo; &amp;ldquo;, Üçlü Tırnak : &amp;ldquo;&amp;rdquo;&amp;rdquo; &amp;ldquo;&amp;rdquo;&amp;rdquo; yada &amp;ldquo;&amp;rsquo; &amp;ldquo;&amp;rsquo; .
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:tirnak&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:degisken&#34;&gt;Değişkeni içinde her türlü bilgi tutabildiğimiz bir nevi kutuya benzetebiliriz. Burada o uzun karakter dizisini içinde tutan &lt;code&gt;selam&lt;/code&gt; adlı değişkendir.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:degisken&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:diziler&#34;&gt;Dizi türüne sahip Payton veri tipleri: Karakter Dizileri, Listeler, Demetler, Sözlükler, v.s. Bu konuları ileriki zamanlarda göreceğiz.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:diziler&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

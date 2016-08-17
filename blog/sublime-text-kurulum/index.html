@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Sublime Text Kuruyoruz // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Okunuşu çok güzel bir kod editörü Sablaym">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="og:title" content="Sublime Text Kuruyoruz" />
+<meta property="og:description" content="Okunuşu çok güzel bir kod editörü Sablaym" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://fiyakasiz.github.io/blog/sublime-text-kurulum/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://fiyakasiz.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fiyakasiz.github.io//css/lightbox.css">
+  <script src="https://fiyakasiz.github.io//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://fiyakasiz.github.io/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="http://www.instagram.com/pyhonistan" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.youtube.com/pythonistan" target="_blank"><i class='fa fa-youtube'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/sublime-install/sublime_kurulum.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#okunuşuna-değer">Okunuşuna Değer</a></li>
+<li><a href="#becerikli-editör-sublime-text">Becerikli Editör Sublime Text</a></li>
+<li><a href="#metin-editörleri">Metin Editörleri</a></li>
+<li><a href="#sublime-ile-program-yazmaya-hazırlık">Sublime İle Program Yazmaya Hazırlık</a></li>
+<li><a href="#kodumuzun-programda-görüntüsü">Kodumuzun Programda Görüntüsü</a></li>
+<li><a href="#sublime-text-sablaym-tekst-özellikleri">Sublime Text (Sablaym Tekst) Özellikleri</a></li>
+<li><a href="#diğer-özellikler">Diğer Özellikler</a></li>
+<li><a href="#programın-maliyeti">Programın Maliyeti</a></li>
+<li><a href="#dipnotlar">DipNotlar</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/sublime-text-kurulum/">Sublime Text Kuruyoruz</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>8</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-kurulum" href="https://fiyakasiz.github.io//categories/kurulum">kurulum</a>
+				
+					<a class="post-category post-category-program" href="https://fiyakasiz.github.io//categories/program">program</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fsublime-text-kurulum%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fsublime-text-kurulum%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Sublime%20Text%20Kuruyoruz&url=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fsublime-text-kurulum%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<h2 id="okunuşuna-değer">Okunuşuna Değer</h2>
+
+<p>Nihayet Sublime Text&rsquo;i kurmaya geldi sıra. Şu programın okunuşuna bakın hele: (Sablaym). Bu okunuş için bile kurulabilecek bir program. :)</p>
+
+<h2 id="becerikli-editör-sublime-text">Becerikli Editör Sublime Text</h2>
+
+<p>Şakası bir yana Sublime oldukça becerikli bir editör. Kendisinden ilk defa bir kaç gün önceki <a href="/blog/python-kabukta-ilk-program/">blog yazımda</a> bahsetmiştim. Nasip bugüneymiş. Şimdi ilk önce programımızı kuralım. Hemen <a target="blank" href="https://www.sublimetext.com/" class="btn">Sublime Text Sitesi</a>&lsquo;ne gidin. Üstteki Download kısmına girin ve sisteminize uygun olan versiyonu bilgisayarınıza indirin.(Windows için 32 ve 64 bit versiyonları var.) Daha sonra indirdiğiniz yerden çift tıklayarak kurulumu başlatın ve onay kutularına onay vererek kurulumu tamamlayın.</p>
+
+<p><strong>Önemli:</strong> Programımızın Başlat Menüsü ve Masaüstü kısayollarını oluşturmasına izin verin! Bu programa devamlı ihtiyaç duyacağız.
+{:.notice}</p>
+
+<h2 id="metin-editörleri">Metin Editörleri</h2>
+
+<p>Adından anlaşılacağı gibi metin editörleri metin yazma ve işleme için kullanılıyor. Metin editörleri deyince aklımıza tabi hemen Ms Word gelir. Bu alanın en bilinenidir. Word son kullanıcı dostu ve çok gelişmiş bir editör olsa da kod yazma için geliştirilmemiştir. Kod dünyasında editör olarak kullanılan oldukça fazla sayıda program var. Başlıcaları ise bugün kurduğumuz Sublime, Notepad++, TextMate, Emacs, Atom ve Vim (bu sonuncusu üst düzey coderlar tarafından tercih edilir) gibi programlardır. Tabi bu araçların hiçbirini kullanmadan kod yazabileceğinizi siz <a href="/blog/python-notepad-ile-program-yazma/">bir önceki yazımdan</a> biliyorsunuz.</p>
+
+<h2 id="sublime-ile-program-yazmaya-hazırlık">Sublime İle Program Yazmaya Hazırlık</h2>
+
+<p>Daha fazla vakit kaybetmeden Sublime ile bir program yazalım.</p>
+
+<ol>
+<li>Sublime Text programını açın.</li>
+<li>Üstteki tabların yanına tıklayıp yeni bir boş dosya oluşturun.</li>
+<li>Boş dosya bizim hangi dilde yazdığımızı bilemeyeceği için gerekli ayarları otomatikman sağlamaz.<sup class="footnote-ref" id="fnref:default"><a rel="footnote" href="#fn:default">1</a></sup> Sablaym&rsquo;a hangi dille yazacağımızı belirtelim. Üstteki menüden View &gt; Syntax &gt; Python &gt; Python seçerek programa seçimimizi belirtelim. (<strong>Altta Soldaki Foto</strong>) Şimdi artık Python&rsquo;a özel syntax highlighting (kod renklendirme) ve Indentation (koda otomatik tab eklenmesi) özellikleri aktif olacaktır.</li>
+<li>Aşağıdaki kodu programa <u>yazın</u>.</li>
+</ol>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+# üstteki satırın neden devamlı orada olduğunu merak ediyor olabilirsiniz
+# maalesef Python2'de &quot;yorum satırlarında bile&quot; Türkçe karakter kullanmak
+# için utf-8 desteği ibaresinin konulması şart, aksi halde hata veriyor.
+
+def palindrome(s):
+    return 0 if s == s[::-1] else -1
+
+text = 'ey edip adanada pide ye'
+
+print palindrome(text)
+</code></pre>
+
+<p><strong>Önemli:</strong> Kodları <strong>yazın</strong> demiş miydim?</p>
+
+<h2 id="kodumuzun-programda-görüntüsü">Kodumuzun Programda Görüntüsü</h2>
+
+<p>Yukarıda gördüğünüz program bir metnin palindrom (yani tersten okunduğunda da aynı olan metin parçası) olup olmadığını kontrol ediyor, eğer metin palindrome ise <code>0</code>, değilse <code>-1</code> döndürüyor. Makalemin uzamaması için programımızın değerlendirmesini bir sonraki blog yazımda yapacağım. Biz şimdi bu kodun Sablaym&rsquo;da nasıl göründüğüne bakalım.<sup class="footnote-ref" id="fnref:buyutme"><a rel="footnote" href="#fn:buyutme">2</a></sup></p>
+
+<p><img src="/img/blog/sublime-install/program_goruntusu.png" alt="Programımızın Sublime Görüntüsü" /></p>
+
+<h2 id="sublime-text-sablaym-tekst-özellikleri">Sublime Text (Sablaym Tekst) Özellikleri</h2>
+
+<p>Eğer bu kodu Sublime&rsquo;da satır satır yazdıysanız (ki <em>yazmalısınız</em>, bkz. bir önceki <a href="/blog/python-notepad-ile-program-yazma/">blog yazımdaki</a> uyarım) birinci satırın sonuna geldiğinizde (:) işaretini yazdıktan sonra <code>Enter</code>&lsquo;a bastığınızda programın alt satıra geçip otomatik olarak bir içeri satıra gittiğini (yani tab oluşturduğunu) görmüş olmalısınız. İşte bu özellik kod yazarken sık karşılaşılan hatalardan olan <em>indentation</em> (tab oluşturma) türü hataları azaltmaktadır.</p>
+
+<p>Sublime gördüğünüz üzere Python&rsquo;a has <code>def</code>, <code>return</code>, <code>else</code> gibi kelimeleri özel olarak renklendirdi ve bu durum kodu okumayı kolaylaştırdı. Takdir ettiğinizi sanıyorum. Bendeki renklerden hoşlanmadıysanız değişik renk kombinasyon seçeneklerini Preferences &gt; Color Scheme kısmında bulup size uygun olanını seçin.</p>
+
+<p>Ancak en önemli ve en güzel özelliği sona sakladım: Artık Python programımızı çalıştırmak için Payton kabuğa (Shell) yada komut satırına gidip komut yazarak programımızı çalıştırmamız <strong>gerekmiyor</strong>. Sublime otomatik olarak Python&rsquo;u kendi içerisinden çalıştırma fırsatı sunuyor.<strong>(Tabi, Python&rsquo;u bilgisayarınıza çoktan <a href="/blog/python-kurulum/">kurdunuz</a>, öyle değil mi???)</strong> Kodunuzu yazdıktan sonra çalıştırmak için tek yapmanız gereken <code>Ctrl + B</code> tuşlarına basmak. (yada Tools &gt; Build &lsquo;e tıklamak ) Python Interpreter açılıyor ve aşağıdaki bölmede bize programın çıktısı(output) veriliyor. (<strong>Hemen Altta Sağdaki Fotoya bakın</strong>) <cite>Mükemmel!</cite></p>
+
+<p><a href="/img/blog/sublime-install/sublime_python_ayar.png" title="" data-lightbox="set1" data-title="Sublime'da Python ayarlarını Yapma"><img src="/img/blog/sublime-install/sublime_python_ayar_thumb.png" alt=""></a>
+<a href="/img/blog/sublime-install/sublime_run_screen.png" title="" data-lightbox="set1" data-title="Python Interpreter'i Sublime'da Çalıştırma"><img src="/img/blog/sublime-install/sublime_run_screen_thumb.png" alt=""></a></p>
+
+<h2 id="diğer-özellikler">Diğer Özellikler</h2>
+
+<p>Sublime, Python dışında onlarca programlama dilinin söz dizimi(syntax-sinteks) için destek sunan ve kendine has komutları olan bir program. Preferences (Tercihler) dosyasını ihtiyaçlarınıza göre düzenleyip zevkinize uygun özelleştirilmiş bir kodlama deneyimi oluşturabilirsiniz. Bu konuda detaylı bilgiye aşağıda verdiğim kaynaklardan ulaşabilirsiniz.<sup class="footnote-ref" id="fnref:kaynak"><a rel="footnote" href="#fn:kaynak">3</a></sup></p>
+
+<p>Sublime&rsquo;da <strong>Html</strong>, <strong>JavaScript</strong>, ve diğer scripting dillerindeki dosyalarınızı açabilir, statik web sitelerinde kullanılan ve son dönemde bir hayli popülerleşen <strong>markdown</strong>(.md) dosyaları oluşturup düzenleme yapabilirsiniz. Kısacası karakterlerden oluşan her türlü dosyayı marifetle işleyebilen bir programdan bahsediyoruz. Gerçekten &ldquo;karakterli&rdquo; bir program Sublime!</p>
+
+<h2 id="programın-maliyeti">Programın Maliyeti</h2>
+
+<p>Sublime ücretli bir program.(Bugün itibarı ile 70 usd) Gerçi kullanımını kısıtlayan herhangi bir durum yok. Kayıt olmadan (Unregistered) kullanabilirsiniz. Yaklaşık 40-50 editte bir (kaydetme / <code>Ctrl + S</code> yapma) ekrana Register(kayıt) olmamız için bir uyarı veriyor. Kullanıcı açısından büyük bir sıkıntı oluşturmuyor. Yinede bu işten para kazanıyor olsam almakta tereddüt etmeyeceğim bir program. Bana göre karşılığını fazlasıyla veriyor. Biz amatörler için satın almak şimdilik gereksiz ve pahalı sayılabilir, zira ücretsiz alternatifleri var. Umarım bir gün Sublime&rsquo;ı satın almaya değecek ölçüde bir coder olmayı başarabilirim.(Siz de!) Bu yazıyı okuyan herkes amin dese oldu bu iş! Her şeye rağmen programları Unregistered olarak kullanmayı vicdanen sıkıntılı görenler için tamamıyla bedava Notepad++ ve Atom alternatifleri mevcut.</p>
+
+<hr>
+
+<p>Bugünlük bu kadar. Yazımı beğendiyseniz lütfen aşağıdaki sosyal medya linklerini kullanarak paylaşın. Sayfam hakkında öneri / eleştirilerinizi alttaki yorumlarda paylaşabilir, <a href="mailto:pythonistan@gmail.com">mail</a> yoluyla bana her zaman ulaşabilirsiniz.</p>
+
+<h2 id="dipnotlar">DipNotlar</h2>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:default">Bundan sonra yazacağınız her programda otomatik olarak Python syntax(söz dizimi) ayarlarının geçerli olmasını isterseniz yapmanız gereken şey: View &gt; Syntax &gt; Open all with current extension as &gt; Python &gt; Python seçmek.
+ <a class="footnote-return" href="#fnref:default"><sup>[return]</sup></a></li>
+<li id="fn:buyutme">Fotodaki gibi karakterleri büyütmek için Ctrl + <strong>+</strong> tuş kombinasyonunu kullanın. Küçültmek için ise tersi Ctrl + <strong>-</strong> kullanın.
+ <a class="footnote-return" href="#fnref:buyutme"><sup>[return]</sup></a></li>
+<li id="fn:kaynak"><a href="http://www.granneman.com/webdev/editors/sublime-text/configuring-sublime-text/">Granneman</a> - <a href="http://docs.sublimetext.info/en/latest/customization/settings.html">Sublime Unofficial</a>
+ <a class="footnote-return" href="#fnref:kaynak"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fsublime-text-kurulum%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fsublime-text-kurulum%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Sublime%20Text%20Kuruyoruz&url=https%3a%2f%2ffiyakasiz.github.io%2fblog%2fsublime-text-kurulum%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-sublime-text" href="https://fiyakasiz.github.io//tags/sublime-text">sublime text</a>,
+	                
+	                <a class="post-tag post-tag-metin-edit%C3%B6r" href="https://fiyakasiz.github.io//tags/metin-edit%C3%B6r">metin editör</a>,
+	                
+	                <a class="post-tag post-tag-kodlama" href="https://fiyakasiz.github.io//tags/kodlama">kodlama</a>,
+	                
+	                <a class="post-tag post-tag-syntax-highlighting" href="https://fiyakasiz.github.io//tags/syntax-highlighting">syntax highlighting</a>,
+	                
+	                <a class="post-tag post-tag-indentation" href="https://fiyakasiz.github.io//tags/indentation">indentation</a>,
+	                
+	                <a class="post-tag post-tag-tabland%C4%B1rma" href="https://fiyakasiz.github.io//tags/tabland%C4%B1rma">tablandırma</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/pythonda-palindrome-bulan-program/">Palindrome Programımız</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/pythonda-stringleri-ogreniyoruz-2/">Python&#39;da Stringleri Öğreniyoruz - 2</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'https:\/\/fiyakasiz.github.io\/blog\/sublime-text-kurulum\/';
+    var disqus_title = 'Sublime Text Kuruyoruz';
+    var disqus_url = 'https:\/\/fiyakasiz.github.io\/blog\/sublime-text-kurulum\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

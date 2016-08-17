@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Başlangıç on Pythonistan</title>
+    <link>https://fiyakasiz.github.io/tags/ba%C5%9Flang%C4%B1%C3%A7/</link>
+    <description>Recent content in Başlangıç on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Mon, 01 Aug 2016 00:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fiyakasiz.github.io/tags/ba%C5%9Flang%C4%B1%C3%A7/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Merhaba Dünya!</title>
+      <link>https://fiyakasiz.github.io/blog/merhaba-dunya/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0300</pubDate>
+      
+      <guid>https://fiyakasiz.github.io/blog/merhaba-dunya/</guid>
+      <description>
+
+&lt;h2 id=&#34;bismillah&#34;&gt;Bismillah;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Pythonistan&lt;/strong&gt;&amp;lsquo;dan &lt;em&gt;(okunuşu: Paytonistan&lt;/em&gt;) herkese merhaba. Bismillah dedik, başladık&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Bu blogda esas olarak &lt;strong&gt;Python&lt;/strong&gt; olmak üzere &lt;strong&gt;Büyük Veri&lt;/strong&gt; (Big Data) ve Payton&amp;rsquo;da &lt;strong&gt;Veri Analizi&lt;/strong&gt; ve &lt;strong&gt;Veri Madenciliği&lt;/strong&gt; gibi konuları işlemeye çalışacağız.&lt;/p&gt;
+
+&lt;p&gt;Bu bloğun yazarı &lt;em&gt;amatör&lt;/em&gt; bir programcılık meraklısıdır, yazdıklarını değişik kaynaklardan derler ve Türk Paytoncularının hizmetine sunar. Programcılık konusunda herhangi bir iddiası yoktur.&lt;/p&gt;
+
+&lt;p&gt;Blogumuz tecrübeli Paytoncuların ve diğer programcıların katkılarına açıktır. Bloğumuzda hayatımızı şekillendiren teknolojideki devasa gelişmelere de yer vermeyi düşünüyoruz.&lt;/p&gt;
+
+&lt;h2 id=&#34;blogun-doğuşu&#34;&gt;Blogun doğuşu&lt;/h2&gt;
+
+&lt;p&gt;Bu blogu oluşturma kararını &lt;a href=&#34;http://www.simpleprogrammer.com&#34;&gt;Simple Programmer&lt;/a&gt; John Sonmez’in blog oluşturma kursuna katıldıktan sonra verdim. Kendisine verdiği ilham ve gösterdiği vizyon için teşekkür ediyorum.
+​&lt;a href=&#34;http://simpleprogrammer.com/2015/03/02/my-free-blogging-course-is-getting-unbelievable-results/&#34;&gt;&lt;img src=&#34;http://simpleprogrammer.com/wp-content/uploads/2015/04/badge.png&#34; align = &#34;right&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Şimdilik esenlikle kalın.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

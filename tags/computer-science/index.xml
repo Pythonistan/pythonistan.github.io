@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Science on Pythonistan</title>
+    <link>https://fiyakasiz.github.io/tags/computer-science/</link>
+    <description>Recent content in Computer Science on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Tue, 02 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fiyakasiz.github.io/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Peki Nedir Python</title>
+      <link>https://fiyakasiz.github.io/blog/peki-nedir-python/</link>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://fiyakasiz.github.io/blog/peki-nedir-python/</guid>
+      <description>
+
+&lt;h2 id=&#34;python-hakkında&#34;&gt;Python Hakkında&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt; bir programlama dilidir. Programlama, Bilgisayar Biliminin (&lt;strong&gt;Computer Science&lt;/strong&gt;) temelidir. Programlama dili ise &lt;a href=&#34;https://tr.wikipedia.org/wiki/Programlama_dili&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;&amp;lsquo;ya göre,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;yazılımcının bir algoritmayı ifade etmek amacıyla, bir bilgisayara ne yapmasını istediğini anlatmasının tektipleştirilmiş yoludur.&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;programlama-dili&#34;&gt;Programlama Dili&lt;/h2&gt;
+
+&lt;p&gt;Yani basitçe bilgisayara istediğimizi yaptırmak için ilettiğimiz komutların dilidir diyebiliriz. Yüksek düzeyli bir dil olan Python&amp;rsquo;un komutları İngilizce diline oldukça yakındır. Dilin düzeyi yükseldikçe komutlar doğal dillere (genelde İngilizce) yakın duruma gelmektedir, tersi durumda ise makina diline yakın hale gelmektedir.&lt;/p&gt;
+
+&lt;h2 id=&#34;neden-yeni-bir-dil&#34;&gt;Neden Yeni Bir Dil?&lt;/h2&gt;
+
+&lt;p&gt;Burada aklınıza &amp;ldquo;Bilgisayarla iletişim için madem bir dil kullanıyoruz, o halde neden yeni bir dile gerek var? Türkçe yada İngilizce kullansak olmaz mı?&amp;rdquo; şeklinde bir soru gelebilir. Maalesef bilgisayarlar biz insanlar kadar zeki (!) olmadığı için söylenilen şeyi tamı tamına algılamak ve işleme dökmek zorundadır. Bilgisayar bir makina olduğu için mekanik bir kesinlik gerektirmektedir. Net olmayan (muğlak) ve birden çok anlam içeren kelimelere sahip doğal diller için bu kesinlik mümkün olamamaktadır.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-interpreter-yorumlayıcı&#34;&gt;Python Interpreter(Yorumlayıcı)&lt;/h2&gt;
+
+&lt;p&gt;Python&amp;rsquo;da yazdığımız programlar otomatik olarak bilgisayarda çalışmaz. Bunun için yazdığımız programı bilgisayarın anlayabileceği makina diline çevirmek için Python yorumlayıcısını (interpreter) kullanacağız. Bir sonraki &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kurulum&#34;&gt;makalemizde&lt;/a&gt; Python interpreter&amp;rsquo;ı bilgisayarımıza nasıl kuracağımızı adım adım anlatmaya çalışacağım. Pek tavsiye etmiyorum ancak Payton&amp;rsquo;u bilgisayarınıza kurmadan da kullanabilirsiniz. Yazacağımız programları çalıştırabileceğiniz online Python yorumlayıcılarının web adreslerini aşağıda veriyorum:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://repl.it/languages/python&#34; target=&#34;_blank&#34;&gt;repl.it sitesi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://trinket.io/&#34; target=&#34;_blank&#34;&gt;trinket.io sitesi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tutorialspoint.com/execute_python_online.php&#34; target=&#34;_blank&#34;&gt;tutorialspoint sitesi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pythontutor.com/visualize.html#mode=edit&#34; target=&#34;_blank&#34;&gt;pythontutor sitesi&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;cloud-ides-online-uygulama-geliştirici-ortamları&#34;&gt;Cloud IDEs (Online Uygulama Geliştirici Ortamları)&lt;/h2&gt;
+
+&lt;p&gt;Bu üsttekilerin dışında tam kapasiteli ve çok daha profesyonel olarak yazılım geliştirmeyi sağlayan online servisler var.&lt;/p&gt;
+
+&lt;p&gt;Adları Cloud IDE (Bulut Uygulama Geliştirici Ortamı) olan bu servisler bulut ortamında online olarak kod yazmaya ve çalıştırıp sonuçları görmeye yarıyor. (deploy and run) Örnek olarak aşağıdaki servislerinden birini ücretsiz olarak deneyebilirsiniz:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://codio.com/&#34; target=&#34;_blank&#34;&gt;Codio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nitrous.io/&#34; target=&#34;_blank&#34;&gt;Nitrous&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://koding.com/&#34; target=&#34;_blank&#34;&gt;Koding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://codiad.com/&#34; target=&#34;_blank&#34;&gt;Codiad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://c9.io/&#34; target=&#34;_blank&#34;&gt;Cloud9&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(Not: Üstteki yorumlayıcıları ve IDE&amp;rsquo;leri kullanırken internet bağlantınız aktif olmalıdır)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
