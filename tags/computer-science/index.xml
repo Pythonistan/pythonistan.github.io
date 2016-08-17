@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Science on Pythonistan</title>
-    <link>https://fiyakasiz.github.io/tags/computer-science/</link>
+    <link>https://pythonistan.github.io/tags/computer-science/</link>
     <description>Recent content in Computer Science on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Tue, 02 Aug 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://fiyakasiz.github.io/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pythonistan.github.io/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Peki Nedir Python</title>
-      <link>https://fiyakasiz.github.io/blog/peki-nedir-python/</link>
+      <link>https://pythonistan.github.io/blog/peki-nedir-python/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/peki-nedir-python/</guid>
+      <guid>https://pythonistan.github.io/blog/peki-nedir-python/</guid>
       <description>
 
 &lt;h2 id=&#34;python-hakkında&#34;&gt;Python Hakkında&lt;/h2&gt;
@@ -33,7 +33,7 @@
 
 &lt;h2 id=&#34;python-interpreter-yorumlayıcı&#34;&gt;Python Interpreter(Yorumlayıcı)&lt;/h2&gt;
 
-&lt;p&gt;Python&amp;rsquo;da yazdığımız programlar otomatik olarak bilgisayarda çalışmaz. Bunun için yazdığımız programı bilgisayarın anlayabileceği makina diline çevirmek için Python yorumlayıcısını (interpreter) kullanacağız. Bir sonraki &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kurulum&#34;&gt;makalemizde&lt;/a&gt; Python interpreter&amp;rsquo;ı bilgisayarımıza nasıl kuracağımızı adım adım anlatmaya çalışacağım. Pek tavsiye etmiyorum ancak Payton&amp;rsquo;u bilgisayarınıza kurmadan da kullanabilirsiniz. Yazacağımız programları çalıştırabileceğiniz online Python yorumlayıcılarının web adreslerini aşağıda veriyorum:&lt;/p&gt;
+&lt;p&gt;Python&amp;rsquo;da yazdığımız programlar otomatik olarak bilgisayarda çalışmaz. Bunun için yazdığımız programı bilgisayarın anlayabileceği makina diline çevirmek için Python yorumlayıcısını (interpreter) kullanacağız. Bir sonraki &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum&#34;&gt;makalemizde&lt;/a&gt; Python interpreter&amp;rsquo;ı bilgisayarımıza nasıl kuracağımızı adım adım anlatmaya çalışacağım. Pek tavsiye etmiyorum ancak Payton&amp;rsquo;u bilgisayarınıza kurmadan da kullanabilirsiniz. Yazacağımız programları çalıştırabileceğiniz online Python yorumlayıcılarının web adreslerini aşağıda veriyorum:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://repl.it/languages/python&#34; target=&#34;_blank&#34;&gt;repl.it sitesi&lt;/a&gt;&lt;/li&gt;

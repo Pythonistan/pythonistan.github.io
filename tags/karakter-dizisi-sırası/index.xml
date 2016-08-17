@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Karakter Dizisi Sırası on Pythonistan</title>
-    <link>https://fiyakasiz.github.io/tags/karakter-dizisi-s%C4%B1ras%C4%B1/</link>
+    <link>https://pythonistan.github.io/tags/karakter-dizisi-s%C4%B1ras%C4%B1/</link>
     <description>Recent content in Karakter Dizisi Sırası on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Sun, 07 Aug 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://fiyakasiz.github.io/tags/karakter-dizisi-s%C4%B1ras%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pythonistan.github.io/tags/karakter-dizisi-s%C4%B1ras%C4%B1/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python&#39;da Stringleri Öğreniyoruz - 2</title>
-      <link>https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</link>
+      <link>https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</link>
       <pubDate>Sun, 07 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</guid>
+      <guid>https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</guid>
       <description>
 
 &lt;h2 id=&#34;python-da-stringler-2-bölüm&#34;&gt;Python&amp;rsquo;da Stringler - 2. Bölüm&lt;/h2&gt;
 
-&lt;p&gt;Dün &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;ilk bölümünü&lt;/a&gt; yayınladığımız karakter dizileri (stringler) konusuna devam ediyoruz.&lt;/p&gt;
+&lt;p&gt;Dün &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;ilk bölümünü&lt;/a&gt; yayınladığımız karakter dizileri (stringler) konusuna devam ediyoruz.&lt;/p&gt;
 
 &lt;p&gt;İkinci bölümde pratiğe yönelik bazı uygulamalar yapalım. Sizlere sürpriz sorularım olacak.&lt;/p&gt;
 
@@ -40,7 +40,7 @@
 &lt;p&gt;Bir sonraki blog yazıma kadar çözmeniz için bir soru soracağım. Python interpreter&amp;rsquo;ı bu sorunun cevabını bulmak için kullanabilirsiniz. İnternetten cevabı araştırmak serbest.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Stringler - 1. bölümde&lt;/a&gt; geçen &lt;code&gt;selam&lt;/code&gt; adlı değişkenin &amp;ldquo;baştan 7. / sondan -15.&amp;rdquo; index değerine haiz olan karakterinin ismi nedir?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Stringler - 1. bölümde&lt;/a&gt; geçen &lt;code&gt;selam&lt;/code&gt; adlı değişkenin &amp;ldquo;baştan 7. / sondan -15.&amp;rdquo; index değerine haiz olan karakterinin ismi nedir?&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&#34;stringler-toplanır-mı&#34;&gt;Stringler Toplanır mı?&lt;/h2&gt;
@@ -66,13 +66,13 @@ print &#39;merhaba &#39; + &amp;quot;Fatih&amp;quot; + &amp;quot;!&amp;quot; * 1
 
 &lt;p&gt;Python 2 versiyonunun üniversal UTF-8 kümesi ile irtibatı maalesef pek sağlam değil. Birçok kez interpreter(yorumlayıcı)&amp;lsquo;da sürpriz hatalarla karşılaşabiliyorsunuz.&lt;/p&gt;
 
-&lt;p&gt;Örneğin &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;bir önceki yazıda&lt;/a&gt; geçen &lt;code&gt;len&lt;/code&gt; built-in (hazır) fonksiyona bakalım. &lt;code&gt;print len &amp;quot;tesadüfi&amp;quot;&lt;/code&gt; komutunu verdiğinizde çok şaşırtıcı bir biçimde &lt;code&gt;9&lt;/code&gt; sonucunu alıyorsunuz. Kelimemizde 8 karakter olduğu aşikar! UTF-8, &amp;ldquo;ü&amp;rdquo; gibi özel karakter setleri için birden fazla byte kullandığı için karakter dizimizin değeri Python&amp;rsquo;ca yanlış hesaplanıyor.&lt;/p&gt;
+&lt;p&gt;Örneğin &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;bir önceki yazıda&lt;/a&gt; geçen &lt;code&gt;len&lt;/code&gt; built-in (hazır) fonksiyona bakalım. &lt;code&gt;print len &amp;quot;tesadüfi&amp;quot;&lt;/code&gt; komutunu verdiğinizde çok şaşırtıcı bir biçimde &lt;code&gt;9&lt;/code&gt; sonucunu alıyorsunuz. Kelimemizde 8 karakter olduğu aşikar! UTF-8, &amp;ldquo;ü&amp;rdquo; gibi özel karakter setleri için birden fazla byte kullandığı için karakter dizimizin değeri Python&amp;rsquo;ca yanlış hesaplanıyor.&lt;/p&gt;
 
 &lt;p&gt;Allahtan bunu önlemenin nispeten kolay bir yolu var. Karakterimizi unicode&amp;rsquo;a göre decode etmek(çözmek) ve o şekilde &lt;code&gt;len&lt;/code&gt; fonksiyonunu çalıştırmak. &lt;code&gt;print len (u&amp;quot;tesadüfi&amp;quot;)&lt;/code&gt; şeklinde kullandığımızda doğru sonuç olan &lt;code&gt;8&lt;/code&gt; döndürülüyor. Burada &lt;code&gt;u&lt;/code&gt; karakter dizimizi unicode&amp;rsquo;a çeviriyor.&lt;/p&gt;
 
 &lt;p&gt;Tuhaf olan yukarıdaki aynı kodu Windows&amp;rsquo;da Komut Satırı &amp;gt; Python yazarak açtığımız Python kabuğunda(Shell) çalıştırdığınızda herhangi bir hata almadan doğru sonucu(8) veriyor. Kafa karıştıran bir durum!&lt;/p&gt;
 
-&lt;p&gt;Yine aynı şekilde &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;bir önceki bölümde&lt;/a&gt; &lt;code&gt;print selam[-5:-1]  # 5. örnek -&amp;gt; &amp;quot;lsın&amp;quot; olmalı&lt;/code&gt; kodu Sublime&amp;rsquo;da Python tarafından yanlış sonuç döndürüyor. Bu kez yine &amp;ldquo;ı&amp;rdquo; karakteri interpreter tarafından işlenirken hata oluşuyor.&lt;/p&gt;
+&lt;p&gt;Yine aynı şekilde &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;bir önceki bölümde&lt;/a&gt; &lt;code&gt;print selam[-5:-1]  # 5. örnek -&amp;gt; &amp;quot;lsın&amp;quot; olmalı&lt;/code&gt; kodu Sublime&amp;rsquo;da Python tarafından yanlış sonuç döndürüyor. Bu kez yine &amp;ldquo;ı&amp;rdquo; karakteri interpreter tarafından işlenirken hata oluşuyor.&lt;/p&gt;
 
 &lt;p&gt;Gördüğünüz gibi Python&amp;rsquo;da bazen Türkçe karakterlerle yada standart latin harfleri dışındaki bazı özel karakter setleri ile problemler yaşayabilirsiniz. Bu tür durumlarda önerim Google&amp;rsquo;dan probleminizi (tercihen ingilizce olarak) yazıp aratmanız. Google sizi genelde &lt;a target=&#34;blank&#34; href=&#34;http://stackoverflow.com/&#34;&gt;stackoverflow&lt;/a&gt; gibi sitelere yönlendiriyor ve bir şekilde probleminizi çözüyorsunuz. Tabi her zaman için ilk kural: Panik yapmayın!&lt;/p&gt;
 
@@ -100,10 +100,10 @@ print a[0:-2] + b[0:-1]  # print a[:-2] + b[:-1] kullanımı da geçerlidir
 &lt;p&gt;&lt;strong&gt;Alternatif Kullanım:&lt;/strong&gt; Yukarıda son yorum satırında değinildiği gibi başlangıç indexinde 0 kullanmayabilirsiniz. Değer yazılmadığında Python varsayılan değer olarak 0 kullanır.&lt;/p&gt;
 
 &lt;figure class=&#34;half&#34;&gt;
-    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34; alt=&#34;Paytonda karakter dizileri çarpılabilir&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34; alt=&#34;Paytonda karakter dizileri çarpılabilir&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Paytonda karakter dizileri çarpılabilir&lt;/figcaption&gt;
 
-    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34; alt=&#34;Birebir index değeri saymadan substring alt dizi oluşturma&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34; alt=&#34;Birebir index değeri saymadan substring alt dizi oluşturma&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Birebir İndex Değeri Saymadan Substring Alt Dizi Oluşturma&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -136,10 +136,10 @@ print link_3[9:-2]  # kullanarak istediğimiz bölümü seçebildik.
 # programın çıktısını (output) hemen alt sağdaki ekran görüntüsünde görebilirsiniz.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda hiper link görece string index pozisyon tablo karşılaştırması&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda hiper link görece string index pozisyon tablo karşılaştırması&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Karakter dizileri üzerine dün ve bugün yaptığımız detaylı açıklamalardan sonra artık &lt;a href=&#34;https://fiyakasiz.github.io/blog/palindrome-programi/&#34;&gt;palindrom&lt;/a&gt; programımıza geçebiliriz. Bekleyin beni anacım!&lt;/p&gt;
+&lt;p&gt;Karakter dizileri üzerine dün ve bugün yaptığımız detaylı açıklamalardan sonra artık &lt;a href=&#34;https://pythonistan.github.io/blog/palindrome-programi/&#34;&gt;palindrom&lt;/a&gt; programımıza geçebiliriz. Bekleyin beni anacım!&lt;/p&gt;
 
 &lt;hr&gt;
 

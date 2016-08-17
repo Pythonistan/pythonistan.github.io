@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prosedür on Pythonistan</title>
-    <link>https://fiyakasiz.github.io/tags/prosed%C3%BCr/</link>
+    <link>https://pythonistan.github.io/tags/prosed%C3%BCr/</link>
     <description>Recent content in Prosedür on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Tue, 09 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="https://fiyakasiz.github.io/tags/prosed%C3%BCr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pythonistan.github.io/tags/prosed%C3%BCr/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Palindrome Programımız</title>
-      <link>https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program/</link>
+      <link>https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/</link>
       <pubDate>Tue, 09 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program/</guid>
+      <guid>https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/</guid>
       <description>
 
-&lt;p&gt;Nihayet bir kaç gün önceki &lt;a href=&#34;https://fiyakasiz.github.io/blog/sublime-text-kurulum/#kodumuzun-programda-grnts&#34;&gt;yazımda&lt;/a&gt; geçen Palindrome programımızı bugün ele alma şansımız olacak.&lt;/p&gt;
+&lt;p&gt;Nihayet bir kaç gün önceki &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/#kodumuzun-programda-grnts&#34;&gt;yazımda&lt;/a&gt; geçen Palindrome programımızı bugün ele alma şansımız olacak.&lt;/p&gt;
 
 &lt;h2 id=&#34;tersten-okunduğunda-aynı-olan-metin-palindrom&#34;&gt;Tersten Okunduğunda Aynı Olan Metin Palindrom&lt;/h2&gt;
 
@@ -36,7 +36,7 @@ print palindrome(text)
 
 &lt;h2 id=&#34;masaüstüne-kayıt&#34;&gt;Masaüstüne Kayıt&lt;/h2&gt;
 
-&lt;p&gt;Bu programı &lt;a href=&#34;https://fiyakasiz.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime kurulum makalemi&lt;/a&gt; okurken satır satır yazmıştınız, değil mi? :)) Sitemizi yeni takip etmeye başlayanlar buradaki kodları &lt;em&gt;satır satır&lt;/em&gt; yazmayı unutmasınlar.&lt;/p&gt;
+&lt;p&gt;Bu programı &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime kurulum makalemi&lt;/a&gt; okurken satır satır yazmıştınız, değil mi? :)) Sitemizi yeni takip etmeye başlayanlar buradaki kodları &lt;em&gt;satır satır&lt;/em&gt; yazmayı unutmasınlar.&lt;/p&gt;
 
 &lt;p&gt;Arkadaşlar, kod ancak böyle öğreniliyor. O yüzden lütfen es geçmeyin.&lt;/p&gt;
 
@@ -47,7 +47,7 @@ print palindrome(text)
 
 &lt;h2 id=&#34;prosedürler&#34;&gt;Prosedürler&lt;/h2&gt;
 
-&lt;p&gt;Prosedürler konusuna Notepad ile ilk programımızı yazarken biraz &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/#programmzn-levi&#34;&gt;değinmiştim&lt;/a&gt;. Prosedürler bir programı genel bir çerçeve haline getirmek için en elverişli araç.&lt;/p&gt;
+&lt;p&gt;Prosedürler konusuna Notepad ile ilk programımızı yazarken biraz &lt;a href=&#34;https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/#programmzn-levi&#34;&gt;değinmiştim&lt;/a&gt;. Prosedürler bir programı genel bir çerçeve haline getirmek için en elverişli araç.&lt;/p&gt;
 
 &lt;p&gt;Programımın sadece belli bir karakter dizisi için değil bütün karakter dizileri için geçerli olmasını istediğim için bir prosedür oluşturdum. Burada prosedürün parametresi olan &lt;code&gt;(s)&lt;/code&gt; herhangi bir stringi ifade ediyor.&lt;/p&gt;
 
@@ -86,8 +86,8 @@ print 0 if s == s[::-1] else -1
 &lt;li&gt;Normalde eşitlik ifadesi &lt;code&gt;if else&lt;/code&gt; bloğunu hiç kullanmadan karşılaştırma yapmaya olanak sağlıyor. Böyle bir kullanımı 3. varyasyonda göstereceğim.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Ekrana Rakam Sonucu Veren Palindrome Programı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Ekrana Rakam Sonucu Veren Palindrome Programı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;daha-anlaşılır-ve-uzun-if-else-bloklu-2-varyasyonumuz&#34;&gt;Daha Anlaşılır ve Uzun If Else Bloklu 2. Varyasyonumuz&lt;/h2&gt;
 
@@ -120,7 +120,7 @@ else:                           # karşılaştırma aynı değilse
 
 &lt;p&gt;Son olarak &lt;code&gt;if&lt;/code&gt; ve &lt;code&gt;else&lt;/code&gt; satırlarından sonra gelen satırlardaki tablara (indentation) dikkat edin lütfen! Tablama yapmazsanız hata alırsınız.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_if_else_uzun.png&#34; alt=&#34;If_else&#34; title=&#34;Palindrom Test Örneklerimiz&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_if_else_uzun.png&#34; alt=&#34;If_else&#34; title=&#34;Palindrom Test Örneklerimiz&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;if-else-bloku-içermeyen-3-varyasyonumuz&#34;&gt;If Else Bloku İçermeyen 3. Varyasyonumuz&lt;/h2&gt;
 
@@ -146,8 +146,8 @@ print palindrom_mu(metin3)
 
 &lt;p&gt;Normalde &lt;code&gt;(s==s[::-1])&lt;/code&gt; ifadesinin bir karşılaştırma olduğunu ve &lt;code&gt;True(1)&lt;/code&gt; yada &lt;code&gt;False(0)&lt;/code&gt; döndürdüğünü biliyoruz. Bu ifadeyi sayısal bir operatör ile beraber kullandığımızda (burada &amp;ldquo;- 1&amp;rdquo;) &lt;code&gt;True&lt;/code&gt;  değeri &lt;code&gt;1&lt;/code&gt; ifadesi, &lt;code&gt;False&lt;/code&gt; değeri &lt;code&gt;0&lt;/code&gt; ifadesini alır.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean Değerlerin Normal Metin Kullanımı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean[^bool] Değerleri Sayısal Değere Dönüştürme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean Değerlerin Normal Metin Kullanımı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean[^bool] Değerleri Sayısal Değere Dönüştürme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;İsterseniz yukarıdaki işlemde en sonraki &amp;ldquo;-1&amp;rdquo; ifadesini silip sonucu deneyin. &lt;code&gt;(sonuc = (s==s[::-1])&lt;/code&gt; olarak) Python interpreter size herhangi bir sayısal değer vermeden direkt &lt;code&gt;True&lt;/code&gt; yada &lt;code&gt;False&lt;/code&gt; çıktısını döndürecektir. (Üstte Solda Boolean Değeri Normal Kullanma Örneği Ekran Görüntüsü)&lt;/p&gt;
 
@@ -157,7 +157,7 @@ print palindrom_mu(metin3)
 
 &lt;p&gt;Normalde 4. ve sonuncu çözüm olarak &lt;code&gt;.find&lt;/code&gt; hazır (built-in) fonksiyonunu (d.b.i. metodunu)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:dib&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:dib&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; kullanarak palindrom programını yazacaktım. Ancak bu yazı çok uzadığı için onu bir sonraki yazı konusu olarak kullanmaya karar verdim.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#ev-deviniz&#34;&gt;BİR ÖNCEKİ YAZIMDAKİ EV ÖDEVİ CEVAP:&lt;/a&gt;&lt;/strong&gt; &lt;strong&gt;Sorumuzun cevabı &amp;ldquo;boşluk karakteri&amp;rdquo; olacaktı. Sorunun cevabına &amp;ldquo;Boş karakter&amp;rdquo; dediyseniz maalesef yanıldınız. Neden mi? &lt;a href=&#34;https://fiyakasiz.github.io/blog/bir-kere-daha-karakter-dizileri/#bo-karakter&#34;&gt;İki sonraki yazımı&lt;/a&gt; bu konuya ayırdım. Orada görüşmek üzere!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#ev-deviniz&#34;&gt;BİR ÖNCEKİ YAZIMDAKİ EV ÖDEVİ CEVAP:&lt;/a&gt;&lt;/strong&gt; &lt;strong&gt;Sorumuzun cevabı &amp;ldquo;boşluk karakteri&amp;rdquo; olacaktı. Sorunun cevabına &amp;ldquo;Boş karakter&amp;rdquo; dediyseniz maalesef yanıldınız. Neden mi? &lt;a href=&#34;https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/#bo-karakter&#34;&gt;İki sonraki yazımı&lt;/a&gt; bu konuya ayırdım. Orada görüşmek üzere!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -182,23 +182,23 @@ print palindrom_mu(metin3)
     
     <item>
       <title>Notepad Kullanarak Python Programı Yazalım</title>
-      <link>https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/</link>
+      <link>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</link>
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/</guid>
+      <guid>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</guid>
       <description>
 
 &lt;h2 id=&#34;herhangi-bir-metin-editörü&#34;&gt;Herhangi Bir Metin Editörü&lt;/h2&gt;
 
-&lt;p&gt;Evvelsi günkü &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
+&lt;p&gt;Evvelsi günkü &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
 &lt;code&gt;python program_adi.py&lt;/code&gt; &lt;em&gt;.py&lt;/em&gt; uzantısı bize bu dosyanın Python komut dosyası olduğunu belirtmektedir.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;adım-adım-uygulama&#34;&gt;Adım Adım Uygulama&lt;/h2&gt;
 
@@ -235,7 +235,7 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 
 &lt;p&gt;Programımız basit olmasına rağmen yine de öğrenecek bir çok şey sunuyor. İsterseniz programdaki &lt;code&gt;sayi&lt;/code&gt; değişkenine farklı bir değer verip bu sayının yine 10 ile toplanacağını teyit edebilirsiniz. Yada toplanacak değeri 10&amp;rsquo;dan farklı bir değer yapıp prosedürümüzün ismini değiştirerek deneyebilirsiniz. (Örneğin eklenecek sayıyı 20 yapıp prosedür ismini &lt;code&gt;yirmiEkle&lt;/code&gt; olarak değiştirin.)&lt;/p&gt;
 
-&lt;p&gt;Ayrıca &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
+&lt;p&gt;Ayrıca &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
 
 &lt;hr&gt;
 

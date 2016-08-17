@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Pythonistan</title>
-    <link>https://fiyakasiz.github.io/tags/python/</link>
+    <link>https://pythonistan.github.io/tags/python/</link>
     <description>Recent content in Python on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Sat, 13 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="https://fiyakasiz.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pythonistan.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python Felsefesi (Zen of Python)</title>
-      <link>https://fiyakasiz.github.io/blog/python-felsefesi/</link>
+      <link>https://pythonistan.github.io/blog/python-felsefesi/</link>
       <pubDate>Sat, 13 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/python-felsefesi/</guid>
+      <guid>https://pythonistan.github.io/blog/python-felsefesi/</guid>
       <description>
 
 &lt;p&gt;Bugün teknik konulara biraz ara verip sizlere Python&amp;rsquo;un kullanımı ve kodlaması ile ilgili genel prensiplerden bahsetmek istiyorum.&lt;/p&gt;
 
 &lt;h2 id=&#34;python-felsefesi-the-zen-of-python&#34;&gt;Python Felsefesi (The Zen of Python)&lt;/h2&gt;
 
-&lt;p&gt;Tercümesini vereceğim aforizmalar &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-gelistirici-tarihi-okunuslari/&#34;&gt;BDFL&lt;/a&gt;&amp;lsquo;nin Python&amp;rsquo;u geliştirirken dikkate aldığı ana prensipleri özetlemek adına Python camiasına uzun yıllar emek vermiş bir Pythonista (Paytoncu) olan &lt;a target=&#34;blank&#34; href=&#34;http://stackoverflow.com/users/2705542/tim-peters&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Tim Peters&lt;/em&gt;&lt;/a&gt; tarafından ortaya konmuş.&lt;/p&gt;
+&lt;p&gt;Tercümesini vereceğim aforizmalar &lt;a href=&#34;https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/&#34;&gt;BDFL&lt;/a&gt;&amp;lsquo;nin Python&amp;rsquo;u geliştirirken dikkate aldığı ana prensipleri özetlemek adına Python camiasına uzun yıllar emek vermiş bir Pythonista (Paytoncu) olan &lt;a target=&#34;blank&#34; href=&#34;http://stackoverflow.com/users/2705542/tim-peters&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Tim Peters&lt;/em&gt;&lt;/a&gt; tarafından ortaya konmuş.&lt;/p&gt;
 
 &lt;p&gt;Toplam sayısı 20 olan aforizmaların halihazırda &lt;em&gt;19&lt;/em&gt;&amp;lsquo;u bilinmekte.&lt;/p&gt;
 
@@ -78,11 +78,11 @@ print &amp;quot;Merhaba Dunya!&amp;quot;
 
 &lt;h2 id=&#34;sürpriz-yumurta&#34;&gt;Sürpriz Yumurta&lt;/h2&gt;
 
-&lt;p&gt;Tercümelerini (yaklaşık anlamları diyelim) verdiğimiz yukarıdaki &lt;em&gt;19&lt;/em&gt; Python prensibine &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/&#34;&gt;yorumlayıdan (interpreter)&lt;/a&gt;  ulaşmanız mümkün.&lt;/p&gt;
+&lt;p&gt;Tercümelerini (yaklaşık anlamları diyelim) verdiğimiz yukarıdaki &lt;em&gt;19&lt;/em&gt; Python prensibine &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;yorumlayıdan (interpreter)&lt;/a&gt;  ulaşmanız mümkün.&lt;/p&gt;
 
-&lt;p&gt;Python &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/&#34;&gt;Kabukta (Shell)&lt;/a&gt; bu aforizmalara ulaşmak için yapmanız gereken tek şey: &lt;code&gt;import this&lt;/code&gt; komutunu vermek. ve tata&amp;hellip; karşınızda..&lt;/p&gt;
+&lt;p&gt;Python &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;Kabukta (Shell)&lt;/a&gt; bu aforizmalara ulaşmak için yapmanız gereken tek şey: &lt;code&gt;import this&lt;/code&gt; komutunu vermek. ve tata&amp;hellip; karşınızda..&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/zen-of-python/python_aforizmalar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Aforizmalarını Shell&#39;de Görelim&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/zen-of-python/python_aforizmalar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/zen-of-python/python_aforizmalar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Aforizmalarını Shell&#39;de Görelim&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/zen-of-python/python_aforizmalar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -96,13 +96,13 @@ print &amp;quot;Merhaba Dunya!&amp;quot;
     
     <item>
       <title>Bir Kere Daha Karakter Dizileri</title>
-      <link>https://fiyakasiz.github.io/blog/bir-kere-daha-karakter-dizileri/</link>
+      <link>https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/</link>
       <pubDate>Thu, 11 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/bir-kere-daha-karakter-dizileri/</guid>
+      <guid>https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/</guid>
       <description>
 
-&lt;p&gt;&lt;em&gt;Değişkenler&lt;/em&gt; konusuna çoktan girmemiz gerekirdi lakin &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1&#34;&gt;karakter dizileri&lt;/a&gt; gerçekten önemli bir konu olduğu için son bir kez daha bu konuyu işlemeye karar verdim.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Değişkenler&lt;/em&gt; konusuna çoktan girmemiz gerekirdi lakin &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1&#34;&gt;karakter dizileri&lt;/a&gt; gerçekten önemli bir konu olduğu için son bir kez daha bu konuyu işlemeye karar verdim.&lt;/p&gt;
 
 &lt;p&gt;Ettekraru Ahsen Velev Kane Yüzseksen demişler.&lt;/p&gt;
 
@@ -110,13 +110,13 @@ print &amp;quot;Merhaba Dunya!&amp;quot;
 
 &lt;h3 id=&#34;karakter-dizilerinden-alt-dizi-seçmek&#34;&gt;Karakter Dizilerinden Alt Dizi Seçmek&lt;/h3&gt;
 
-&lt;p&gt;Daha önce &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; yazımda değindiğim karakter dizilerinden alt dizi seçmek (&lt;strong&gt;substring extracting&lt;/strong&gt;) mevzuuna bugün daha yakından bakalım.&lt;/p&gt;
+&lt;p&gt;Daha önce &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; yazımda değindiğim karakter dizilerinden alt dizi seçmek (&lt;strong&gt;substring extracting&lt;/strong&gt;) mevzuuna bugün daha yakından bakalım.&lt;/p&gt;
 
 &lt;h3 id=&#34;karakter-dizi-sırası-string-index&#34;&gt;Karakter Dizi Sırası (String Index)&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; ve &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;&lt;em&gt;Stringler 2. Bölüm&lt;/em&gt;&lt;/a&gt; yazılarımı okuduysanız karakter dizileri sırası hakkında belli bir fikir elde etmişsinizdir.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; ve &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;&lt;em&gt;Stringler 2. Bölüm&lt;/em&gt;&lt;/a&gt; yazılarımı okuduysanız karakter dizileri sırası hakkında belli bir fikir elde etmişsinizdir.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Hatırlayalım&lt;/strong&gt;: &lt;code&gt;kelime&lt;/code&gt; değişkeni ile gösterilen bir karakter dizimiz olsun. &lt;code&gt;kelime[ i : j ]&lt;/code&gt; şeklinde bir ifade, &lt;code&gt;i&lt;/code&gt;&amp;lsquo;nin dahil, &lt;code&gt;j&lt;/code&gt;&amp;lsquo;nin hariç olduğu kelime dizisinden bir parçayı (&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-find-metodu/#fn:dib&#34;&gt;d.b.i.&lt;/a&gt; alt diziyi) gösterir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hatırlayalım&lt;/strong&gt;: &lt;code&gt;kelime&lt;/code&gt; değişkeni ile gösterilen bir karakter dizimiz olsun. &lt;code&gt;kelime[ i : j ]&lt;/code&gt; şeklinde bir ifade, &lt;code&gt;i&lt;/code&gt;&amp;lsquo;nin dahil, &lt;code&gt;j&lt;/code&gt;&amp;lsquo;nin hariç olduğu kelime dizisinden bir parçayı (&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-find-metodu/#fn:dib&#34;&gt;d.b.i.&lt;/a&gt; alt diziyi) gösterir.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;i = bis: baş indeks sırasını gösteren sayısal değer&lt;/p&gt;
@@ -134,7 +134,7 @@ print &amp;quot;Panorama&amp;quot;[:] == &amp;quot;Panorama&amp;quot; # değişk
 
 &lt;h2 id=&#34;karakter-dizi-sırasının-ekstra-argümanı-adım&#34;&gt;Karakter Dizi Sırasının Ekstra Argümanı: Adım&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program/#gelelim-orjinal-kodlara&#34;&gt;Palindrom programımızı yazarken&lt;/a&gt; dizi sırasını gösteren söz diziminin(syntax) üçüncü bir argüman aldığını görmüştük.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/#gelelim-orjinal-kodlara&#34;&gt;Palindrom programımızı yazarken&lt;/a&gt; dizi sırasını gösteren söz diziminin(syntax) üçüncü bir argüman aldığını görmüştük.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;s[::-1] -&amp;gt; -1
 &lt;/code&gt;&lt;/pre&gt;
@@ -180,7 +180,7 @@ print kelime[2:8:-2]  # 2 ile 8 arasında iki iki al t. -&amp;gt; &amp;quot;&amp
 &lt;p&gt;&lt;cite&gt;bis&lt;/cite&gt; ve/veya &lt;cite&gt;sis&lt;/cite&gt; değerleri verilmemişse varsayılanın &lt;em&gt;sonlu değerler&lt;/em&gt; olduğunu yukarıda belirtmiştik(end values). Örneklerimizde bu durumu tekrar görüyoruz.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34; alt=&#34;Python&#39;da Karakter Dizilerinin Sırası ve Yönü&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34; alt=&#34;Python&#39;da Karakter Dizilerinin Sırası ve Yönü&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Python&#39;da Karakter Dizilerinin Sırası ve Yönü (String Index and Step Argument) &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -201,12 +201,12 @@ print kelime[2:8:-2]  # 2 ile 8 arasında iki iki al t. -&amp;gt; &amp;quot;&amp
 
 &lt;h2 id=&#34;yaygın-bir-hata-string-index-out-of-range&#34;&gt;Yaygın Bir Hata:  String Index Out Of Range&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Karakter dizileri&lt;/a&gt; ile ilgili açıklamalarımı gereksiz bulmuş ve çok detaylı olduğunu düşünmüş olabilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Karakter dizileri&lt;/a&gt; ile ilgili açıklamalarımı gereksiz bulmuş ve çok detaylı olduğunu düşünmüş olabilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;Özellikle döngüleri kullanırken string uzunluğunun yanlış hesaplanmasından dolayı pek çok &lt;strong&gt;String Index Out of Range&lt;/strong&gt; (Türkçe: &amp;ldquo;aralık dışında dizi endeksi&amp;rdquo;??) hatası ile karşılaşabilmekteyiz.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;https://fiyakasiz.github.io/img/blog/bir-kere-daha-karakter-dizileri/string_index_out_of_range.png&#34; alt=&#34;Python&#39;da Sık Rastlanan String Out of Range Hatası&#34;&gt;
+    &lt;img src=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/string_index_out_of_range.png&#34; alt=&#34;Python&#39;da Sık Rastlanan String Out of Range Hatası&#34;&gt;
     &lt;figcaption&gt;Python&#39;da Sık Rastlanan String Index Out of Range Hatası &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -220,13 +220,13 @@ print kelime[2:8:-2]  # 2 ile 8 arasında iki iki al t. -&amp;gt; &amp;quot;&amp
     
     <item>
       <title>Python&#39;da &#39;.find&#39; hazır metodu</title>
-      <link>https://fiyakasiz.github.io/blog/pythonda-find-metodu/</link>
+      <link>https://pythonistan.github.io/blog/pythonda-find-metodu/</link>
       <pubDate>Wed, 10 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/pythonda-find-metodu/</guid>
+      <guid>https://pythonistan.github.io/blog/pythonda-find-metodu/</guid>
       <description>
 
-&lt;p&gt;Blogda en son 9 Ağustos&amp;rsquo;ta &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program&#34;&gt;palindrom yazısı&lt;/a&gt; yayınlamıştım.&lt;/p&gt;
+&lt;p&gt;Blogda en son 9 Ağustos&amp;rsquo;ta &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program&#34;&gt;palindrom yazısı&lt;/a&gt; yayınlamıştım.&lt;/p&gt;
 
 &lt;p&gt;Sonrasında evime geri taşınma işlemleri ve araya giren bayram tatili nedeni ile uzun bir ara verdim. Bu uzuuuuuun ara  nedeniyle hepinizden özür diliyorum.&lt;/p&gt;
 
@@ -254,7 +254,7 @@ print bulunan_pozisyon
 
 &lt;p&gt;&lt;code&gt;find&lt;/code&gt;&amp;lsquo;ın ardına bir parantez &lt;code&gt;()&lt;/code&gt; açıp içine aranacak karakter dizisini yazıyoruz. &lt;strong&gt;&amp;lsquo;ozluSoz.find(bul)&amp;rsquo;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Biz yukarıda kolaylık olsun diye karakter dizilerini temsil eden değişkenleri kullandık.(Değişkenler konusunu detaylı inceleyeceğiz. Şimdilik &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#fn:degisken&#34;&gt;bkz&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Biz yukarıda kolaylık olsun diye karakter dizilerini temsil eden değişkenleri kullandık.(Değişkenler konusunu detaylı inceleyeceğiz. Şimdilik &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#fn:degisken&#34;&gt;bkz&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;Yukarıdaki ifadeyi şu şekilde yazabilirdik:&lt;/p&gt;
 
@@ -269,7 +269,7 @@ küçük beyinler ise kişileri konuşur.&amp;quot;&amp;quot;&amp;quot;.find(&am
 
 &lt;p&gt;&lt;em&gt;Üç tırnak &lt;code&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/code&gt; kullanımına dikkat ettiniz mi? Üç tırnak ile birden fazla satırda devam eden karakter dizileri oluşturabilirsiniz. Karakter dizisi uzunsa birden fazla satıra bölmek kullanışlıdır.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#trke-karakter-azizlii&#34;&gt;NEDEN &amp;lsquo;u&amp;rsquo; KARAKTERİ VAR:&lt;/a&gt;&lt;/strong&gt; Yukarıda u(unicode) şerhini koymazsanız maalesef Sublime Text bulunan pozisyonu Türkçe ü karakterlerinden dolayı 8 olarak veriyor. Ayrıntılı bilgi için linkteki açıklamama bakın lütfen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#trke-karakter-azizlii&#34;&gt;NEDEN &amp;lsquo;u&amp;rsquo; KARAKTERİ VAR:&lt;/a&gt;&lt;/strong&gt; Yukarıda u(unicode) şerhini koymazsanız maalesef Sublime Text bulunan pozisyonu Türkçe ü karakterlerinden dolayı 8 olarak veriyor. Ayrıntılı bilgi için linkteki açıklamama bakın lütfen.&lt;/p&gt;
 
 &lt;h2 id=&#34;find-metodunun-tek-argümanı-d-b-i-dib-parametresi&#34;&gt;&lt;code&gt;find&lt;/code&gt; Metodunun Tek Argümanı (d.b.i&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:dib&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:dib&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Parametresi)&lt;/h2&gt;
 
@@ -295,8 +295,8 @@ print bulunan_ikinci_pozisyon
 print ozluSoz[33:]  # 33. pozisyondan başlayarak sona kadar yazdır
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümansız Kullanımı&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümanlı Kullanımı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümansız Kullanımı&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümanlı Kullanımı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Aşağıdaki örnekte &lt;code&gt;.find&lt;/code&gt; metodunun parametre ile kullanımının değişik örneklerini göreceksiniz. Ekran görüntüsü için en üstteki ana imaja bakabilirsiniz:&lt;/p&gt;
 
@@ -315,7 +315,7 @@ print ozluSoz.find(&amp;quot;beyinler&amp;quot;, 63) # -1 -&amp;gt; hiçbirşey 
 
 &lt;h2 id=&#34;find-metodu-ile-palindrom-bulma&#34;&gt;&lt;code&gt;find&lt;/code&gt; Metodu ile Palindrom Bulma&lt;/h2&gt;
 
-&lt;p&gt;Palindrom bulma programımızı tekrar &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program/&#34;&gt;hatırlayalım&lt;/a&gt;. Palindrom bulmada bizden istenen sonuç, kelime yada cümle palindrom ise &lt;code&gt;0&lt;/code&gt; değilse &lt;code&gt;-1&lt;/code&gt; vermesi idi.&lt;/p&gt;
+&lt;p&gt;Palindrom bulma programımızı tekrar &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/&#34;&gt;hatırlayalım&lt;/a&gt;. Palindrom bulmada bizden istenen sonuç, kelime yada cümle palindrom ise &lt;code&gt;0&lt;/code&gt; değilse &lt;code&gt;-1&lt;/code&gt; vermesi idi.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;find&lt;/code&gt; metodu ile palindrom bulurken şöyle bir mantık güdeceğiz. Eğer bir kelime(yada cümle) palindromsa kelimeyi kendisinin tersinin hemen ilk (0.) pozisyonunda bulmuş olacağız. Yok değilse zaten kelimenin tamamı tersinde yoktur, o halde sonuç -1 verecek.&lt;/p&gt;
 
@@ -330,10 +330,10 @@ print palindrom_mu # sonucu ekrana yaz
 
 &lt;p&gt;Burada ne yaptım? &lt;code&gt;kelime&lt;/code&gt; değişkeninde verilen karakter dizisinin içinde kendisini aradım.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodu Örnek Kullanımlar&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;.find Metodu ile Kelimenin Palindrom Olup Olmadığını Anlama&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodu Örnek Kullanımlar&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;.find Metodu ile Kelimenin Palindrom Olup Olmadığını Anlama&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Arama işlemini tersinden(&lt;strong&gt;&amp;lsquo;kelime[::-1] ile&amp;rsquo;&lt;/strong&gt;) yaptım, daha önceki yazımda bu ifadenin tersten karakter dizisi okuma anlamına geldiğini öğrenmiştik.(Geniş bilgi için bkz. &lt;a href=&#34;https://fiyakasiz.github.io/blog/bir-kere-daha-karakter-dizileri/&#34;&gt;Bir Kere Daha Karakter Dizileri ve Indexing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Arama işlemini tersinden(&lt;strong&gt;&amp;lsquo;kelime[::-1] ile&amp;rsquo;&lt;/strong&gt;) yaptım, daha önceki yazımda bu ifadenin tersten karakter dizisi okuma anlamına geldiğini öğrenmiştik.(Geniş bilgi için bkz. &lt;a href=&#34;https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/&#34;&gt;Bir Kere Daha Karakter Dizileri ve Indexing&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Python aranan ifadeyi bulursa &lt;code&gt;.find&lt;/code&gt; metodunun bulunan ilk pozisyonu getireceğini biliyoruz, ki o pozisyon palindrom için &lt;code&gt;0&lt;/code&gt;&amp;lsquo;dır. Bulunamazsa &lt;code&gt;.find&lt;/code&gt; metodu sonuç olarak &lt;code&gt;-1&lt;/code&gt; verir.&lt;/p&gt;
 
@@ -358,13 +358,13 @@ print palindrom_mu # sonucu ekrana yaz
     
     <item>
       <title>Palindrome Programımız</title>
-      <link>https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program/</link>
+      <link>https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/</link>
       <pubDate>Tue, 09 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program/</guid>
+      <guid>https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/</guid>
       <description>
 
-&lt;p&gt;Nihayet bir kaç gün önceki &lt;a href=&#34;https://fiyakasiz.github.io/blog/sublime-text-kurulum/#kodumuzun-programda-grnts&#34;&gt;yazımda&lt;/a&gt; geçen Palindrome programımızı bugün ele alma şansımız olacak.&lt;/p&gt;
+&lt;p&gt;Nihayet bir kaç gün önceki &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/#kodumuzun-programda-grnts&#34;&gt;yazımda&lt;/a&gt; geçen Palindrome programımızı bugün ele alma şansımız olacak.&lt;/p&gt;
 
 &lt;h2 id=&#34;tersten-okunduğunda-aynı-olan-metin-palindrom&#34;&gt;Tersten Okunduğunda Aynı Olan Metin Palindrom&lt;/h2&gt;
 
@@ -383,7 +383,7 @@ print palindrome(text)
 
 &lt;h2 id=&#34;masaüstüne-kayıt&#34;&gt;Masaüstüne Kayıt&lt;/h2&gt;
 
-&lt;p&gt;Bu programı &lt;a href=&#34;https://fiyakasiz.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime kurulum makalemi&lt;/a&gt; okurken satır satır yazmıştınız, değil mi? :)) Sitemizi yeni takip etmeye başlayanlar buradaki kodları &lt;em&gt;satır satır&lt;/em&gt; yazmayı unutmasınlar.&lt;/p&gt;
+&lt;p&gt;Bu programı &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime kurulum makalemi&lt;/a&gt; okurken satır satır yazmıştınız, değil mi? :)) Sitemizi yeni takip etmeye başlayanlar buradaki kodları &lt;em&gt;satır satır&lt;/em&gt; yazmayı unutmasınlar.&lt;/p&gt;
 
 &lt;p&gt;Arkadaşlar, kod ancak böyle öğreniliyor. O yüzden lütfen es geçmeyin.&lt;/p&gt;
 
@@ -394,7 +394,7 @@ print palindrome(text)
 
 &lt;h2 id=&#34;prosedürler&#34;&gt;Prosedürler&lt;/h2&gt;
 
-&lt;p&gt;Prosedürler konusuna Notepad ile ilk programımızı yazarken biraz &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/#programmzn-levi&#34;&gt;değinmiştim&lt;/a&gt;. Prosedürler bir programı genel bir çerçeve haline getirmek için en elverişli araç.&lt;/p&gt;
+&lt;p&gt;Prosedürler konusuna Notepad ile ilk programımızı yazarken biraz &lt;a href=&#34;https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/#programmzn-levi&#34;&gt;değinmiştim&lt;/a&gt;. Prosedürler bir programı genel bir çerçeve haline getirmek için en elverişli araç.&lt;/p&gt;
 
 &lt;p&gt;Programımın sadece belli bir karakter dizisi için değil bütün karakter dizileri için geçerli olmasını istediğim için bir prosedür oluşturdum. Burada prosedürün parametresi olan &lt;code&gt;(s)&lt;/code&gt; herhangi bir stringi ifade ediyor.&lt;/p&gt;
 
@@ -433,8 +433,8 @@ print 0 if s == s[::-1] else -1
 &lt;li&gt;Normalde eşitlik ifadesi &lt;code&gt;if else&lt;/code&gt; bloğunu hiç kullanmadan karşılaştırma yapmaya olanak sağlıyor. Böyle bir kullanımı 3. varyasyonda göstereceğim.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Ekrana Rakam Sonucu Veren Palindrome Programı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Ekrana Rakam Sonucu Veren Palindrome Programı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;daha-anlaşılır-ve-uzun-if-else-bloklu-2-varyasyonumuz&#34;&gt;Daha Anlaşılır ve Uzun If Else Bloklu 2. Varyasyonumuz&lt;/h2&gt;
 
@@ -467,7 +467,7 @@ else:                           # karşılaştırma aynı değilse
 
 &lt;p&gt;Son olarak &lt;code&gt;if&lt;/code&gt; ve &lt;code&gt;else&lt;/code&gt; satırlarından sonra gelen satırlardaki tablara (indentation) dikkat edin lütfen! Tablama yapmazsanız hata alırsınız.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_if_else_uzun.png&#34; alt=&#34;If_else&#34; title=&#34;Palindrom Test Örneklerimiz&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_if_else_uzun.png&#34; alt=&#34;If_else&#34; title=&#34;Palindrom Test Örneklerimiz&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;if-else-bloku-içermeyen-3-varyasyonumuz&#34;&gt;If Else Bloku İçermeyen 3. Varyasyonumuz&lt;/h2&gt;
 
@@ -493,8 +493,8 @@ print palindrom_mu(metin3)
 
 &lt;p&gt;Normalde &lt;code&gt;(s==s[::-1])&lt;/code&gt; ifadesinin bir karşılaştırma olduğunu ve &lt;code&gt;True(1)&lt;/code&gt; yada &lt;code&gt;False(0)&lt;/code&gt; döndürdüğünü biliyoruz. Bu ifadeyi sayısal bir operatör ile beraber kullandığımızda (burada &amp;ldquo;- 1&amp;rdquo;) &lt;code&gt;True&lt;/code&gt;  değeri &lt;code&gt;1&lt;/code&gt; ifadesi, &lt;code&gt;False&lt;/code&gt; değeri &lt;code&gt;0&lt;/code&gt; ifadesini alır.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean Değerlerin Normal Metin Kullanımı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean[^bool] Değerleri Sayısal Değere Dönüştürme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean Değerlerin Normal Metin Kullanımı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean[^bool] Değerleri Sayısal Değere Dönüştürme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;İsterseniz yukarıdaki işlemde en sonraki &amp;ldquo;-1&amp;rdquo; ifadesini silip sonucu deneyin. &lt;code&gt;(sonuc = (s==s[::-1])&lt;/code&gt; olarak) Python interpreter size herhangi bir sayısal değer vermeden direkt &lt;code&gt;True&lt;/code&gt; yada &lt;code&gt;False&lt;/code&gt; çıktısını döndürecektir. (Üstte Solda Boolean Değeri Normal Kullanma Örneği Ekran Görüntüsü)&lt;/p&gt;
 
@@ -504,7 +504,7 @@ print palindrom_mu(metin3)
 
 &lt;p&gt;Normalde 4. ve sonuncu çözüm olarak &lt;code&gt;.find&lt;/code&gt; hazır (built-in) fonksiyonunu (d.b.i. metodunu)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:dib&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:dib&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; kullanarak palindrom programını yazacaktım. Ancak bu yazı çok uzadığı için onu bir sonraki yazı konusu olarak kullanmaya karar verdim.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#ev-deviniz&#34;&gt;BİR ÖNCEKİ YAZIMDAKİ EV ÖDEVİ CEVAP:&lt;/a&gt;&lt;/strong&gt; &lt;strong&gt;Sorumuzun cevabı &amp;ldquo;boşluk karakteri&amp;rdquo; olacaktı. Sorunun cevabına &amp;ldquo;Boş karakter&amp;rdquo; dediyseniz maalesef yanıldınız. Neden mi? &lt;a href=&#34;https://fiyakasiz.github.io/blog/bir-kere-daha-karakter-dizileri/#bo-karakter&#34;&gt;İki sonraki yazımı&lt;/a&gt; bu konuya ayırdım. Orada görüşmek üzere!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#ev-deviniz&#34;&gt;BİR ÖNCEKİ YAZIMDAKİ EV ÖDEVİ CEVAP:&lt;/a&gt;&lt;/strong&gt; &lt;strong&gt;Sorumuzun cevabı &amp;ldquo;boşluk karakteri&amp;rdquo; olacaktı. Sorunun cevabına &amp;ldquo;Boş karakter&amp;rdquo; dediyseniz maalesef yanıldınız. Neden mi? &lt;a href=&#34;https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/#bo-karakter&#34;&gt;İki sonraki yazımı&lt;/a&gt; bu konuya ayırdım. Orada görüşmek üzere!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -529,15 +529,15 @@ print palindrom_mu(metin3)
     
     <item>
       <title>Python&#39;da Stringleri Öğreniyoruz - 2</title>
-      <link>https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</link>
+      <link>https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</link>
       <pubDate>Sun, 07 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</guid>
+      <guid>https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/</guid>
       <description>
 
 &lt;h2 id=&#34;python-da-stringler-2-bölüm&#34;&gt;Python&amp;rsquo;da Stringler - 2. Bölüm&lt;/h2&gt;
 
-&lt;p&gt;Dün &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;ilk bölümünü&lt;/a&gt; yayınladığımız karakter dizileri (stringler) konusuna devam ediyoruz.&lt;/p&gt;
+&lt;p&gt;Dün &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;ilk bölümünü&lt;/a&gt; yayınladığımız karakter dizileri (stringler) konusuna devam ediyoruz.&lt;/p&gt;
 
 &lt;p&gt;İkinci bölümde pratiğe yönelik bazı uygulamalar yapalım. Sizlere sürpriz sorularım olacak.&lt;/p&gt;
 
@@ -558,7 +558,7 @@ print palindrom_mu(metin3)
 &lt;p&gt;Bir sonraki blog yazıma kadar çözmeniz için bir soru soracağım. Python interpreter&amp;rsquo;ı bu sorunun cevabını bulmak için kullanabilirsiniz. İnternetten cevabı araştırmak serbest.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Stringler - 1. bölümde&lt;/a&gt; geçen &lt;code&gt;selam&lt;/code&gt; adlı değişkenin &amp;ldquo;baştan 7. / sondan -15.&amp;rdquo; index değerine haiz olan karakterinin ismi nedir?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Stringler - 1. bölümde&lt;/a&gt; geçen &lt;code&gt;selam&lt;/code&gt; adlı değişkenin &amp;ldquo;baştan 7. / sondan -15.&amp;rdquo; index değerine haiz olan karakterinin ismi nedir?&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&#34;stringler-toplanır-mı&#34;&gt;Stringler Toplanır mı?&lt;/h2&gt;
@@ -584,13 +584,13 @@ print &#39;merhaba &#39; + &amp;quot;Fatih&amp;quot; + &amp;quot;!&amp;quot; * 1
 
 &lt;p&gt;Python 2 versiyonunun üniversal UTF-8 kümesi ile irtibatı maalesef pek sağlam değil. Birçok kez interpreter(yorumlayıcı)&amp;lsquo;da sürpriz hatalarla karşılaşabiliyorsunuz.&lt;/p&gt;
 
-&lt;p&gt;Örneğin &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;bir önceki yazıda&lt;/a&gt; geçen &lt;code&gt;len&lt;/code&gt; built-in (hazır) fonksiyona bakalım. &lt;code&gt;print len &amp;quot;tesadüfi&amp;quot;&lt;/code&gt; komutunu verdiğinizde çok şaşırtıcı bir biçimde &lt;code&gt;9&lt;/code&gt; sonucunu alıyorsunuz. Kelimemizde 8 karakter olduğu aşikar! UTF-8, &amp;ldquo;ü&amp;rdquo; gibi özel karakter setleri için birden fazla byte kullandığı için karakter dizimizin değeri Python&amp;rsquo;ca yanlış hesaplanıyor.&lt;/p&gt;
+&lt;p&gt;Örneğin &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;bir önceki yazıda&lt;/a&gt; geçen &lt;code&gt;len&lt;/code&gt; built-in (hazır) fonksiyona bakalım. &lt;code&gt;print len &amp;quot;tesadüfi&amp;quot;&lt;/code&gt; komutunu verdiğinizde çok şaşırtıcı bir biçimde &lt;code&gt;9&lt;/code&gt; sonucunu alıyorsunuz. Kelimemizde 8 karakter olduğu aşikar! UTF-8, &amp;ldquo;ü&amp;rdquo; gibi özel karakter setleri için birden fazla byte kullandığı için karakter dizimizin değeri Python&amp;rsquo;ca yanlış hesaplanıyor.&lt;/p&gt;
 
 &lt;p&gt;Allahtan bunu önlemenin nispeten kolay bir yolu var. Karakterimizi unicode&amp;rsquo;a göre decode etmek(çözmek) ve o şekilde &lt;code&gt;len&lt;/code&gt; fonksiyonunu çalıştırmak. &lt;code&gt;print len (u&amp;quot;tesadüfi&amp;quot;)&lt;/code&gt; şeklinde kullandığımızda doğru sonuç olan &lt;code&gt;8&lt;/code&gt; döndürülüyor. Burada &lt;code&gt;u&lt;/code&gt; karakter dizimizi unicode&amp;rsquo;a çeviriyor.&lt;/p&gt;
 
 &lt;p&gt;Tuhaf olan yukarıdaki aynı kodu Windows&amp;rsquo;da Komut Satırı &amp;gt; Python yazarak açtığımız Python kabuğunda(Shell) çalıştırdığınızda herhangi bir hata almadan doğru sonucu(8) veriyor. Kafa karıştıran bir durum!&lt;/p&gt;
 
-&lt;p&gt;Yine aynı şekilde &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;bir önceki bölümde&lt;/a&gt; &lt;code&gt;print selam[-5:-1]  # 5. örnek -&amp;gt; &amp;quot;lsın&amp;quot; olmalı&lt;/code&gt; kodu Sublime&amp;rsquo;da Python tarafından yanlış sonuç döndürüyor. Bu kez yine &amp;ldquo;ı&amp;rdquo; karakteri interpreter tarafından işlenirken hata oluşuyor.&lt;/p&gt;
+&lt;p&gt;Yine aynı şekilde &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;bir önceki bölümde&lt;/a&gt; &lt;code&gt;print selam[-5:-1]  # 5. örnek -&amp;gt; &amp;quot;lsın&amp;quot; olmalı&lt;/code&gt; kodu Sublime&amp;rsquo;da Python tarafından yanlış sonuç döndürüyor. Bu kez yine &amp;ldquo;ı&amp;rdquo; karakteri interpreter tarafından işlenirken hata oluşuyor.&lt;/p&gt;
 
 &lt;p&gt;Gördüğünüz gibi Python&amp;rsquo;da bazen Türkçe karakterlerle yada standart latin harfleri dışındaki bazı özel karakter setleri ile problemler yaşayabilirsiniz. Bu tür durumlarda önerim Google&amp;rsquo;dan probleminizi (tercihen ingilizce olarak) yazıp aratmanız. Google sizi genelde &lt;a target=&#34;blank&#34; href=&#34;http://stackoverflow.com/&#34;&gt;stackoverflow&lt;/a&gt; gibi sitelere yönlendiriyor ve bir şekilde probleminizi çözüyorsunuz. Tabi her zaman için ilk kural: Panik yapmayın!&lt;/p&gt;
 
@@ -618,10 +618,10 @@ print a[0:-2] + b[0:-1]  # print a[:-2] + b[:-1] kullanımı da geçerlidir
 &lt;p&gt;&lt;strong&gt;Alternatif Kullanım:&lt;/strong&gt; Yukarıda son yorum satırında değinildiği gibi başlangıç indexinde 0 kullanmayabilirsiniz. Değer yazılmadığında Python varsayılan değer olarak 0 kullanır.&lt;/p&gt;
 
 &lt;figure class=&#34;half&#34;&gt;
-    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34; alt=&#34;Paytonda karakter dizileri çarpılabilir&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34; alt=&#34;Paytonda karakter dizileri çarpılabilir&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Paytonda karakter dizileri çarpılabilir&lt;/figcaption&gt;
 
-    &lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34; alt=&#34;Birebir index değeri saymadan substring alt dizi oluşturma&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34; alt=&#34;Birebir index değeri saymadan substring alt dizi oluşturma&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Birebir İndex Değeri Saymadan Substring Alt Dizi Oluşturma&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -654,10 +654,10 @@ print link_3[9:-2]  # kullanarak istediğimiz bölümü seçebildik.
 # programın çıktısını (output) hemen alt sağdaki ekran görüntüsünde görebilirsiniz.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda hiper link görece string index pozisyon tablo karşılaştırması&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda hiper link görece string index pozisyon tablo karşılaştırması&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Karakter dizileri üzerine dün ve bugün yaptığımız detaylı açıklamalardan sonra artık &lt;a href=&#34;https://fiyakasiz.github.io/blog/palindrome-programi/&#34;&gt;palindrom&lt;/a&gt; programımıza geçebiliriz. Bekleyin beni anacım!&lt;/p&gt;
+&lt;p&gt;Karakter dizileri üzerine dün ve bugün yaptığımız detaylı açıklamalardan sonra artık &lt;a href=&#34;https://pythonistan.github.io/blog/palindrome-programi/&#34;&gt;palindrom&lt;/a&gt; programımıza geçebiliriz. Bekleyin beni anacım!&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -667,23 +667,23 @@ print link_3[9:-2]  # kullanarak istediğimiz bölümü seçebildik.
     
     <item>
       <title>Notepad Kullanarak Python Programı Yazalım</title>
-      <link>https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/</link>
+      <link>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</link>
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/</guid>
+      <guid>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</guid>
       <description>
 
 &lt;h2 id=&#34;herhangi-bir-metin-editörü&#34;&gt;Herhangi Bir Metin Editörü&lt;/h2&gt;
 
-&lt;p&gt;Evvelsi günkü &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
+&lt;p&gt;Evvelsi günkü &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
 &lt;code&gt;python program_adi.py&lt;/code&gt; &lt;em&gt;.py&lt;/em&gt; uzantısı bize bu dosyanın Python komut dosyası olduğunu belirtmektedir.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;adım-adım-uygulama&#34;&gt;Adım Adım Uygulama&lt;/h2&gt;
 
@@ -720,7 +720,7 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 
 &lt;p&gt;Programımız basit olmasına rağmen yine de öğrenecek bir çok şey sunuyor. İsterseniz programdaki &lt;code&gt;sayi&lt;/code&gt; değişkenine farklı bir değer verip bu sayının yine 10 ile toplanacağını teyit edebilirsiniz. Yada toplanacak değeri 10&amp;rsquo;dan farklı bir değer yapıp prosedürümüzün ismini değiştirerek deneyebilirsiniz. (Örneğin eklenecek sayıyı 20 yapıp prosedür ismini &lt;code&gt;yirmiEkle&lt;/code&gt; olarak değiştirin.)&lt;/p&gt;
 
-&lt;p&gt;Ayrıca &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
+&lt;p&gt;Ayrıca &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -745,13 +745,13 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
     
     <item>
       <title>Windows&#39;ta Python Kurulumu</title>
-      <link>https://fiyakasiz.github.io/blog/python-kurulum/</link>
+      <link>https://pythonistan.github.io/blog/python-kurulum/</link>
       <pubDate>Wed, 03 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/python-kurulum/</guid>
+      <guid>https://pythonistan.github.io/blog/python-kurulum/</guid>
       <description>
 
-&lt;p&gt;Bir önceki &lt;a href=&#34;https://fiyakasiz.github.io/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
+&lt;p&gt;Bir önceki &lt;a href=&#34;https://pythonistan.github.io/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
 
 &lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için komut satırı (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
 
@@ -767,10 +767,10 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 &lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse komut satırında (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -780,10 +780,10 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
     
     <item>
       <title>Peki Nedir Python</title>
-      <link>https://fiyakasiz.github.io/blog/peki-nedir-python/</link>
+      <link>https://pythonistan.github.io/blog/peki-nedir-python/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/peki-nedir-python/</guid>
+      <guid>https://pythonistan.github.io/blog/peki-nedir-python/</guid>
       <description>
 
 &lt;h2 id=&#34;python-hakkında&#34;&gt;Python Hakkında&lt;/h2&gt;
@@ -802,7 +802,7 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 
 &lt;h2 id=&#34;python-interpreter-yorumlayıcı&#34;&gt;Python Interpreter(Yorumlayıcı)&lt;/h2&gt;
 
-&lt;p&gt;Python&amp;rsquo;da yazdığımız programlar otomatik olarak bilgisayarda çalışmaz. Bunun için yazdığımız programı bilgisayarın anlayabileceği makina diline çevirmek için Python yorumlayıcısını (interpreter) kullanacağız. Bir sonraki &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kurulum&#34;&gt;makalemizde&lt;/a&gt; Python interpreter&amp;rsquo;ı bilgisayarımıza nasıl kuracağımızı adım adım anlatmaya çalışacağım. Pek tavsiye etmiyorum ancak Payton&amp;rsquo;u bilgisayarınıza kurmadan da kullanabilirsiniz. Yazacağımız programları çalıştırabileceğiniz online Python yorumlayıcılarının web adreslerini aşağıda veriyorum:&lt;/p&gt;
+&lt;p&gt;Python&amp;rsquo;da yazdığımız programlar otomatik olarak bilgisayarda çalışmaz. Bunun için yazdığımız programı bilgisayarın anlayabileceği makina diline çevirmek için Python yorumlayıcısını (interpreter) kullanacağız. Bir sonraki &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum&#34;&gt;makalemizde&lt;/a&gt; Python interpreter&amp;rsquo;ı bilgisayarımıza nasıl kuracağımızı adım adım anlatmaya çalışacağım. Pek tavsiye etmiyorum ancak Payton&amp;rsquo;u bilgisayarınıza kurmadan da kullanabilirsiniz. Yazacağımız programları çalıştırabileceğiniz online Python yorumlayıcılarının web adreslerini aşağıda veriyorum:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://repl.it/languages/python&#34; target=&#34;_blank&#34;&gt;repl.it sitesi&lt;/a&gt;&lt;/li&gt;

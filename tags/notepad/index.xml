@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notepad on Pythonistan</title>
-    <link>https://fiyakasiz.github.io/tags/notepad/</link>
+    <link>https://pythonistan.github.io/tags/notepad/</link>
     <description>Recent content in Notepad on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Fri, 05 Aug 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://fiyakasiz.github.io/tags/notepad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pythonistan.github.io/tags/notepad/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Notepad Kullanarak Python Programı Yazalım</title>
-      <link>https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/</link>
+      <link>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</link>
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/</guid>
+      <guid>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</guid>
       <description>
 
 &lt;h2 id=&#34;herhangi-bir-metin-editörü&#34;&gt;Herhangi Bir Metin Editörü&lt;/h2&gt;
 
-&lt;p&gt;Evvelsi günkü &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
+&lt;p&gt;Evvelsi günkü &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
 &lt;code&gt;python program_adi.py&lt;/code&gt; &lt;em&gt;.py&lt;/em&gt; uzantısı bize bu dosyanın Python komut dosyası olduğunu belirtmektedir.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;adım-adım-uygulama&#34;&gt;Adım Adım Uygulama&lt;/h2&gt;
 
@@ -64,7 +64,7 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 
 &lt;p&gt;Programımız basit olmasına rağmen yine de öğrenecek bir çok şey sunuyor. İsterseniz programdaki &lt;code&gt;sayi&lt;/code&gt; değişkenine farklı bir değer verip bu sayının yine 10 ile toplanacağını teyit edebilirsiniz. Yada toplanacak değeri 10&amp;rsquo;dan farklı bir değer yapıp prosedürümüzün ismini değiştirerek deneyebilirsiniz. (Örneğin eklenecek sayıyı 20 yapıp prosedür ismini &lt;code&gt;yirmiEkle&lt;/code&gt; olarak değiştirin.)&lt;/p&gt;
 
-&lt;p&gt;Ayrıca &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
+&lt;p&gt;Ayrıca &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
 
 &lt;hr&gt;
 

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Find Metodu on Pythonistan</title>
-    <link>https://fiyakasiz.github.io/tags/find-metodu/</link>
+    <link>https://pythonistan.github.io/tags/find-metodu/</link>
     <description>Recent content in Find Metodu on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Wed, 10 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="https://fiyakasiz.github.io/tags/find-metodu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pythonistan.github.io/tags/find-metodu/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python&#39;da &#39;.find&#39; hazır metodu</title>
-      <link>https://fiyakasiz.github.io/blog/pythonda-find-metodu/</link>
+      <link>https://pythonistan.github.io/blog/pythonda-find-metodu/</link>
       <pubDate>Wed, 10 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/pythonda-find-metodu/</guid>
+      <guid>https://pythonistan.github.io/blog/pythonda-find-metodu/</guid>
       <description>
 
-&lt;p&gt;Blogda en son 9 Ağustos&amp;rsquo;ta &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program&#34;&gt;palindrom yazısı&lt;/a&gt; yayınlamıştım.&lt;/p&gt;
+&lt;p&gt;Blogda en son 9 Ağustos&amp;rsquo;ta &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program&#34;&gt;palindrom yazısı&lt;/a&gt; yayınlamıştım.&lt;/p&gt;
 
 &lt;p&gt;Sonrasında evime geri taşınma işlemleri ve araya giren bayram tatili nedeni ile uzun bir ara verdim. Bu uzuuuuuun ara  nedeniyle hepinizden özür diliyorum.&lt;/p&gt;
 
@@ -45,7 +45,7 @@ print bulunan_pozisyon
 
 &lt;p&gt;&lt;code&gt;find&lt;/code&gt;&amp;lsquo;ın ardına bir parantez &lt;code&gt;()&lt;/code&gt; açıp içine aranacak karakter dizisini yazıyoruz. &lt;strong&gt;&amp;lsquo;ozluSoz.find(bul)&amp;rsquo;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Biz yukarıda kolaylık olsun diye karakter dizilerini temsil eden değişkenleri kullandık.(Değişkenler konusunu detaylı inceleyeceğiz. Şimdilik &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#fn:degisken&#34;&gt;bkz&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Biz yukarıda kolaylık olsun diye karakter dizilerini temsil eden değişkenleri kullandık.(Değişkenler konusunu detaylı inceleyeceğiz. Şimdilik &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#fn:degisken&#34;&gt;bkz&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;Yukarıdaki ifadeyi şu şekilde yazabilirdik:&lt;/p&gt;
 
@@ -60,7 +60,7 @@ küçük beyinler ise kişileri konuşur.&amp;quot;&amp;quot;&amp;quot;.find(&am
 
 &lt;p&gt;&lt;em&gt;Üç tırnak &lt;code&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/code&gt; kullanımına dikkat ettiniz mi? Üç tırnak ile birden fazla satırda devam eden karakter dizileri oluşturabilirsiniz. Karakter dizisi uzunsa birden fazla satıra bölmek kullanışlıdır.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#trke-karakter-azizlii&#34;&gt;NEDEN &amp;lsquo;u&amp;rsquo; KARAKTERİ VAR:&lt;/a&gt;&lt;/strong&gt; Yukarıda u(unicode) şerhini koymazsanız maalesef Sublime Text bulunan pozisyonu Türkçe ü karakterlerinden dolayı 8 olarak veriyor. Ayrıntılı bilgi için linkteki açıklamama bakın lütfen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#trke-karakter-azizlii&#34;&gt;NEDEN &amp;lsquo;u&amp;rsquo; KARAKTERİ VAR:&lt;/a&gt;&lt;/strong&gt; Yukarıda u(unicode) şerhini koymazsanız maalesef Sublime Text bulunan pozisyonu Türkçe ü karakterlerinden dolayı 8 olarak veriyor. Ayrıntılı bilgi için linkteki açıklamama bakın lütfen.&lt;/p&gt;
 
 &lt;h2 id=&#34;find-metodunun-tek-argümanı-d-b-i-dib-parametresi&#34;&gt;&lt;code&gt;find&lt;/code&gt; Metodunun Tek Argümanı (d.b.i&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:dib&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:dib&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Parametresi)&lt;/h2&gt;
 
@@ -86,8 +86,8 @@ print bulunan_ikinci_pozisyon
 print ozluSoz[33:]  # 33. pozisyondan başlayarak sona kadar yazdır
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümansız Kullanımı&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümanlı Kullanımı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümansız Kullanımı&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_argumansiz_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodunun Argümanlı Kullanımı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_argumanli_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Aşağıdaki örnekte &lt;code&gt;.find&lt;/code&gt; metodunun parametre ile kullanımının değişik örneklerini göreceksiniz. Ekran görüntüsü için en üstteki ana imaja bakabilirsiniz:&lt;/p&gt;
 
@@ -106,7 +106,7 @@ print ozluSoz.find(&amp;quot;beyinler&amp;quot;, 63) # -1 -&amp;gt; hiçbirşey 
 
 &lt;h2 id=&#34;find-metodu-ile-palindrom-bulma&#34;&gt;&lt;code&gt;find&lt;/code&gt; Metodu ile Palindrom Bulma&lt;/h2&gt;
 
-&lt;p&gt;Palindrom bulma programımızı tekrar &lt;a href=&#34;https://fiyakasiz.github.io/blog/pythonda-palindrome-bulan-program/&#34;&gt;hatırlayalım&lt;/a&gt;. Palindrom bulmada bizden istenen sonuç, kelime yada cümle palindrom ise &lt;code&gt;0&lt;/code&gt; değilse &lt;code&gt;-1&lt;/code&gt; vermesi idi.&lt;/p&gt;
+&lt;p&gt;Palindrom bulma programımızı tekrar &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/&#34;&gt;hatırlayalım&lt;/a&gt;. Palindrom bulmada bizden istenen sonuç, kelime yada cümle palindrom ise &lt;code&gt;0&lt;/code&gt; değilse &lt;code&gt;-1&lt;/code&gt; vermesi idi.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;find&lt;/code&gt; metodu ile palindrom bulurken şöyle bir mantık güdeceğiz. Eğer bir kelime(yada cümle) palindromsa kelimeyi kendisinin tersinin hemen ilk (0.) pozisyonunda bulmuş olacağız. Yok değilse zaten kelimenin tamamı tersinde yoktur, o halde sonuç -1 verecek.&lt;/p&gt;
 
@@ -121,10 +121,10 @@ print palindrom_mu # sonucu ekrana yaz
 
 &lt;p&gt;Burada ne yaptım? &lt;code&gt;kelime&lt;/code&gt; değişkeninde verilen karakter dizisinin içinde kendisini aradım.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodu Örnek Kullanımlar&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;.find Metodu ile Kelimenin Palindrom Olup Olmadığını Anlama&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da find Metodu Örnek Kullanımlar&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_ornek_kullanimlar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;.find Metodu ile Kelimenin Palindrom Olup Olmadığını Anlama&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/find-metodu/find_metodu_ile_palindrom_bulma_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Arama işlemini tersinden(&lt;strong&gt;&amp;lsquo;kelime[::-1] ile&amp;rsquo;&lt;/strong&gt;) yaptım, daha önceki yazımda bu ifadenin tersten karakter dizisi okuma anlamına geldiğini öğrenmiştik.(Geniş bilgi için bkz. &lt;a href=&#34;https://fiyakasiz.github.io/blog/bir-kere-daha-karakter-dizileri/&#34;&gt;Bir Kere Daha Karakter Dizileri ve Indexing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Arama işlemini tersinden(&lt;strong&gt;&amp;lsquo;kelime[::-1] ile&amp;rsquo;&lt;/strong&gt;) yaptım, daha önceki yazımda bu ifadenin tersten karakter dizisi okuma anlamına geldiğini öğrenmiştik.(Geniş bilgi için bkz. &lt;a href=&#34;https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/&#34;&gt;Bir Kere Daha Karakter Dizileri ve Indexing&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Python aranan ifadeyi bulursa &lt;code&gt;.find&lt;/code&gt; metodunun bulunan ilk pozisyonu getireceğini biliyoruz, ki o pozisyon palindrom için &lt;code&gt;0&lt;/code&gt;&amp;lsquo;dır. Bulunamazsa &lt;code&gt;.find&lt;/code&gt; metodu sonuç olarak &lt;code&gt;-1&lt;/code&gt; verir.&lt;/p&gt;
 

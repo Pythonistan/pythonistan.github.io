@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Program on Pythonistan</title>
-    <link>https://fiyakasiz.github.io/categories/program/</link>
+    <link>https://pythonistan.github.io/categories/program/</link>
     <description>Recent content in Program on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Mon, 08 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="https://fiyakasiz.github.io/categories/program/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pythonistan.github.io/categories/program/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Sublime Text Kuruyoruz</title>
-      <link>https://fiyakasiz.github.io/blog/sublime-text-kurulum/</link>
+      <link>https://pythonistan.github.io/blog/sublime-text-kurulum/</link>
       <pubDate>Mon, 08 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/sublime-text-kurulum/</guid>
+      <guid>https://pythonistan.github.io/blog/sublime-text-kurulum/</guid>
       <description>
 
 &lt;h2 id=&#34;okunuşuna-değer&#34;&gt;Okunuşuna Değer&lt;/h2&gt;
@@ -23,14 +23,14 @@
 
 &lt;h2 id=&#34;becerikli-editör-sublime-text&#34;&gt;Becerikli Editör Sublime Text&lt;/h2&gt;
 
-&lt;p&gt;Şakası bir yana Sublime oldukça becerikli bir editör. Kendisinden ilk defa bir kaç gün önceki &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/&#34;&gt;blog yazımda&lt;/a&gt; bahsetmiştim. Nasip bugüneymiş. Şimdi ilk önce programımızı kuralım. Hemen &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34; class=&#34;btn&#34;&gt;Sublime Text Sitesi&lt;/a&gt;&amp;lsquo;ne gidin. Üstteki Download kısmına girin ve sisteminize uygun olan versiyonu bilgisayarınıza indirin.(Windows için 32 ve 64 bit versiyonları var.) Daha sonra indirdiğiniz yerden çift tıklayarak kurulumu başlatın ve onay kutularına onay vererek kurulumu tamamlayın.&lt;/p&gt;
+&lt;p&gt;Şakası bir yana Sublime oldukça becerikli bir editör. Kendisinden ilk defa bir kaç gün önceki &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;blog yazımda&lt;/a&gt; bahsetmiştim. Nasip bugüneymiş. Şimdi ilk önce programımızı kuralım. Hemen &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34; class=&#34;btn&#34;&gt;Sublime Text Sitesi&lt;/a&gt;&amp;lsquo;ne gidin. Üstteki Download kısmına girin ve sisteminize uygun olan versiyonu bilgisayarınıza indirin.(Windows için 32 ve 64 bit versiyonları var.) Daha sonra indirdiğiniz yerden çift tıklayarak kurulumu başlatın ve onay kutularına onay vererek kurulumu tamamlayın.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programımızın Başlat Menüsü ve Masaüstü kısayollarını oluşturmasına izin verin! Bu programa devamlı ihtiyaç duyacağız.
 {:.notice}&lt;/p&gt;
 
 &lt;h2 id=&#34;metin-editörleri&#34;&gt;Metin Editörleri&lt;/h2&gt;
 
-&lt;p&gt;Adından anlaşılacağı gibi metin editörleri metin yazma ve işleme için kullanılıyor. Metin editörleri deyince aklımıza tabi hemen Ms Word gelir. Bu alanın en bilinenidir. Word son kullanıcı dostu ve çok gelişmiş bir editör olsa da kod yazma için geliştirilmemiştir. Kod dünyasında editör olarak kullanılan oldukça fazla sayıda program var. Başlıcaları ise bugün kurduğumuz Sublime, Notepad++, TextMate, Emacs, Atom ve Vim (bu sonuncusu üst düzey coderlar tarafından tercih edilir) gibi programlardır. Tabi bu araçların hiçbirini kullanmadan kod yazabileceğinizi siz &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/&#34;&gt;bir önceki yazımdan&lt;/a&gt; biliyorsunuz.&lt;/p&gt;
+&lt;p&gt;Adından anlaşılacağı gibi metin editörleri metin yazma ve işleme için kullanılıyor. Metin editörleri deyince aklımıza tabi hemen Ms Word gelir. Bu alanın en bilinenidir. Word son kullanıcı dostu ve çok gelişmiş bir editör olsa da kod yazma için geliştirilmemiştir. Kod dünyasında editör olarak kullanılan oldukça fazla sayıda program var. Başlıcaları ise bugün kurduğumuz Sublime, Notepad++, TextMate, Emacs, Atom ve Vim (bu sonuncusu üst düzey coderlar tarafından tercih edilir) gibi programlardır. Tabi bu araçların hiçbirini kullanmadan kod yazabileceğinizi siz &lt;a href=&#34;https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/&#34;&gt;bir önceki yazımdan&lt;/a&gt; biliyorsunuz.&lt;/p&gt;
 
 &lt;h2 id=&#34;sublime-ile-program-yazmaya-hazırlık&#34;&gt;Sublime İle Program Yazmaya Hazırlık&lt;/h2&gt;
 
@@ -62,18 +62,18 @@ print palindrome(text)
 
 &lt;p&gt;Yukarıda gördüğünüz program bir metnin palindrom (yani tersten okunduğunda da aynı olan metin parçası) olup olmadığını kontrol ediyor, eğer metin palindrome ise &lt;code&gt;0&lt;/code&gt;, değilse &lt;code&gt;-1&lt;/code&gt; döndürüyor. Makalemin uzamaması için programımızın değerlendirmesini bir sonraki blog yazımda yapacağım. Biz şimdi bu kodun Sablaym&amp;rsquo;da nasıl göründüğüne bakalım.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:buyutme&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:buyutme&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/sublime-install/program_goruntusu.png&#34; alt=&#34;Programımızın Sublime Görüntüsü&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/sublime-install/program_goruntusu.png&#34; alt=&#34;Programımızın Sublime Görüntüsü&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;sublime-text-sablaym-tekst-özellikleri&#34;&gt;Sublime Text (Sablaym Tekst) Özellikleri&lt;/h2&gt;
 
-&lt;p&gt;Eğer bu kodu Sublime&amp;rsquo;da satır satır yazdıysanız (ki &lt;em&gt;yazmalısınız&lt;/em&gt;, bkz. bir önceki &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/&#34;&gt;blog yazımdaki&lt;/a&gt; uyarım) birinci satırın sonuna geldiğinizde (:) işaretini yazdıktan sonra &lt;code&gt;Enter&lt;/code&gt;&amp;lsquo;a bastığınızda programın alt satıra geçip otomatik olarak bir içeri satıra gittiğini (yani tab oluşturduğunu) görmüş olmalısınız. İşte bu özellik kod yazarken sık karşılaşılan hatalardan olan &lt;em&gt;indentation&lt;/em&gt; (tab oluşturma) türü hataları azaltmaktadır.&lt;/p&gt;
+&lt;p&gt;Eğer bu kodu Sublime&amp;rsquo;da satır satır yazdıysanız (ki &lt;em&gt;yazmalısınız&lt;/em&gt;, bkz. bir önceki &lt;a href=&#34;https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/&#34;&gt;blog yazımdaki&lt;/a&gt; uyarım) birinci satırın sonuna geldiğinizde (:) işaretini yazdıktan sonra &lt;code&gt;Enter&lt;/code&gt;&amp;lsquo;a bastığınızda programın alt satıra geçip otomatik olarak bir içeri satıra gittiğini (yani tab oluşturduğunu) görmüş olmalısınız. İşte bu özellik kod yazarken sık karşılaşılan hatalardan olan &lt;em&gt;indentation&lt;/em&gt; (tab oluşturma) türü hataları azaltmaktadır.&lt;/p&gt;
 
 &lt;p&gt;Sublime gördüğünüz üzere Python&amp;rsquo;a has &lt;code&gt;def&lt;/code&gt;, &lt;code&gt;return&lt;/code&gt;, &lt;code&gt;else&lt;/code&gt; gibi kelimeleri özel olarak renklendirdi ve bu durum kodu okumayı kolaylaştırdı. Takdir ettiğinizi sanıyorum. Bendeki renklerden hoşlanmadıysanız değişik renk kombinasyon seçeneklerini Preferences &amp;gt; Color Scheme kısmında bulup size uygun olanını seçin.&lt;/p&gt;
 
-&lt;p&gt;Ancak en önemli ve en güzel özelliği sona sakladım: Artık Python programımızı çalıştırmak için Payton kabuğa (Shell) yada komut satırına gidip komut yazarak programımızı çalıştırmamız &lt;strong&gt;gerekmiyor&lt;/strong&gt;. Sublime otomatik olarak Python&amp;rsquo;u kendi içerisinden çalıştırma fırsatı sunuyor.&lt;strong&gt;(Tabi, Python&amp;rsquo;u bilgisayarınıza çoktan &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kurulum/&#34;&gt;kurdunuz&lt;/a&gt;, öyle değil mi???)&lt;/strong&gt; Kodunuzu yazdıktan sonra çalıştırmak için tek yapmanız gereken &lt;code&gt;Ctrl + B&lt;/code&gt; tuşlarına basmak. (yada Tools &amp;gt; Build &amp;lsquo;e tıklamak ) Python Interpreter açılıyor ve aşağıdaki bölmede bize programın çıktısı(output) veriliyor. (&lt;strong&gt;Hemen Altta Sağdaki Fotoya bakın&lt;/strong&gt;) &lt;cite&gt;Mükemmel!&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Ancak en önemli ve en güzel özelliği sona sakladım: Artık Python programımızı çalıştırmak için Payton kabuğa (Shell) yada komut satırına gidip komut yazarak programımızı çalıştırmamız &lt;strong&gt;gerekmiyor&lt;/strong&gt;. Sublime otomatik olarak Python&amp;rsquo;u kendi içerisinden çalıştırma fırsatı sunuyor.&lt;strong&gt;(Tabi, Python&amp;rsquo;u bilgisayarınıza çoktan &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum/&#34;&gt;kurdunuz&lt;/a&gt;, öyle değil mi???)&lt;/strong&gt; Kodunuzu yazdıktan sonra çalıştırmak için tek yapmanız gereken &lt;code&gt;Ctrl + B&lt;/code&gt; tuşlarına basmak. (yada Tools &amp;gt; Build &amp;lsquo;e tıklamak ) Python Interpreter açılıyor ve aşağıdaki bölmede bize programın çıktısı(output) veriliyor. (&lt;strong&gt;Hemen Altta Sağdaki Fotoya bakın&lt;/strong&gt;) &lt;cite&gt;Mükemmel!&lt;/cite&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/sublime-install/sublime_python_ayar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Sublime&#39;da Python ayarlarını Yapma&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/sublime-install/sublime_python_ayar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/sublime-install/sublime_run_screen.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Interpreter&#39;i Sublime&#39;da Çalıştırma&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/sublime-install/sublime_run_screen_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/sublime-install/sublime_python_ayar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Sublime&#39;da Python ayarlarını Yapma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/sublime-install/sublime_python_ayar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/sublime-install/sublime_run_screen.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Interpreter&#39;i Sublime&#39;da Çalıştırma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/sublime-install/sublime_run_screen_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;diğer-özellikler&#34;&gt;Diğer Özellikler&lt;/h2&gt;
 
@@ -108,17 +108,17 @@ print palindrome(text)
     
     <item>
       <title>Python Kabukta (Shell) İlk Programımız</title>
-      <link>https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/</link>
+      <link>https://pythonistan.github.io/blog/python-kabukta-ilk-program/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/python-kabukta-ilk-program/</guid>
+      <guid>https://pythonistan.github.io/blog/python-kabukta-ilk-program/</guid>
       <description>
 
 &lt;h2 id=&#34;karakter-dizisi-yazdırıyoruz&#34;&gt;Karakter Dizisi Yazdırıyoruz&lt;/h2&gt;
 
 &lt;h3 id=&#34;ilk-önce-kurulum-kontrolü&#34;&gt;İlk Önce Kurulum Kontrolü&lt;/h3&gt;
 
-&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
+&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
 
 &lt;h3 id=&#34;karakter-dizilerine-giriş&#34;&gt;Karakter Dizilerine Giriş&lt;/h3&gt;
 
@@ -126,10 +126,10 @@ print palindrome(text)
 
 &lt;p&gt;Payton&amp;rsquo;da karakter dizileri(string) ya çift tırnak yada tek tırnak işaretleri arasında yer alırlar. Eğer çift tırnak ile başladıysanız çift, tek tırnak ile başladıysanız tek tırnak ile bitirmelisiniz. Karakter dizileri (stringler) çok önemli bir konu olduğu için daha sonra geniş olarak bu konu üzerinde duracağız. Şimdilik alışma amaçlı kabukta değişik karakter dizileri yazdırın. (Foto 2)&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kabuk/python_version.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Payton kurulumunu teyit edelim.&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kabuk/python_version_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kabuk/python_shell_strings.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Karakter Dizileri Kullanımı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kabuk/python_shell_strings_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kabuk/python_aritmetik_ornekleri.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Aritmetik İşlemlerini Gösteren Ekran&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kabuk/python_aritmetik_ornekleri_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kabuk/python_shell_help.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python kabukta yardım menülerini açalım&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kabuk/python_shell_help_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_version.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Payton kurulumunu teyit edelim.&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_version_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_shell_strings.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Karakter Dizileri Kullanımı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_shell_strings_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_aritmetik_ornekleri.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Aritmetik İşlemlerini Gösteren Ekran&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_aritmetik_ornekleri_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_shell_help.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python kabukta yardım menülerini açalım&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_shell_help_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;payton-kabukta-print-siz-yazdırma-ve-hesap-makinası&#34;&gt;Payton Kabukta Print&amp;rsquo;siz Yazdırma ve Hesap Makinası&lt;/h2&gt;
 
@@ -145,7 +145,7 @@ print palindrome(text)
 
 &lt;h2 id=&#34;payton-kabuk-kısıtlılıkları-ve-dezavantajları&#34;&gt;Payton Kabuk Kısıtlılıkları ve Dezavantajları&lt;/h2&gt;
 
-&lt;p&gt;Payton Şel(kabuk) hoş olsa da uzun satırlı kodlar için yeterli değildir. Ayrıca Syntax Highlighting(kod renklendirme)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; ve Indentation(kod tablandırma) içermez. Bir sonraki makalemde sizlere Payton ile beraber kullanabileceğimiz &lt;a href=&#34;https://fiyakasiz.github.io/blog/python-notepad-ile-program-yazma/&#34;&gt;metin editörlerini&lt;/a&gt; tanıtacağım. Favorim &lt;a href=&#34;https://fiyakasiz.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime Text programı&lt;/a&gt; ile beraberce az biraz daha uzun bir kod yazacağız. Bizi izlemeye devam edin!&lt;/p&gt;
+&lt;p&gt;Payton Şel(kabuk) hoş olsa da uzun satırlı kodlar için yeterli değildir. Ayrıca Syntax Highlighting(kod renklendirme)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; ve Indentation(kod tablandırma) içermez. Bir sonraki makalemde sizlere Payton ile beraber kullanabileceğimiz &lt;a href=&#34;https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/&#34;&gt;metin editörlerini&lt;/a&gt; tanıtacağım. Favorim &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime Text programı&lt;/a&gt; ile beraberce az biraz daha uzun bir kod yazacağız. Bizi izlemeye devam edin!&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 
 &lt;hr /&gt;
@@ -160,13 +160,13 @@ print palindrome(text)
     
     <item>
       <title>Windows&#39;ta Python Kurulumu</title>
-      <link>https://fiyakasiz.github.io/blog/python-kurulum/</link>
+      <link>https://pythonistan.github.io/blog/python-kurulum/</link>
       <pubDate>Wed, 03 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/python-kurulum/</guid>
+      <guid>https://pythonistan.github.io/blog/python-kurulum/</guid>
       <description>
 
-&lt;p&gt;Bir önceki &lt;a href=&#34;https://fiyakasiz.github.io/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
+&lt;p&gt;Bir önceki &lt;a href=&#34;https://pythonistan.github.io/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
 
 &lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için komut satırı (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
 
@@ -182,10 +182,10 @@ print palindrome(text)
 &lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse komut satırında (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Install on Pythonistan</title>
-    <link>https://fiyakasiz.github.io/tags/install/</link>
+    <link>https://pythonistan.github.io/tags/install/</link>
     <description>Recent content in Install on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Wed, 03 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="https://fiyakasiz.github.io/tags/install/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pythonistan.github.io/tags/install/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Windows&#39;ta Python Kurulumu</title>
-      <link>https://fiyakasiz.github.io/blog/python-kurulum/</link>
+      <link>https://pythonistan.github.io/blog/python-kurulum/</link>
       <pubDate>Wed, 03 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://fiyakasiz.github.io/blog/python-kurulum/</guid>
+      <guid>https://pythonistan.github.io/blog/python-kurulum/</guid>
       <description>
 
-&lt;p&gt;Bir önceki &lt;a href=&#34;https://fiyakasiz.github.io/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
+&lt;p&gt;Bir önceki &lt;a href=&#34;https://pythonistan.github.io/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
 
 &lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için komut satırı (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
 
@@ -33,10 +33,10 @@
 &lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse komut satırında (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;https://fiyakasiz.github.io/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
