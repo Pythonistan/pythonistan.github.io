@@ -6,8 +6,139 @@
     <description>Recent content on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Sat, 13 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 18 Aug 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="https://pythonistan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Jekyll&#39;dan Hugo&#39;ya Geçiş</title>
+      <link>https://pythonistan.github.io/blog/Jekylldan-Hugoya-gecis/</link>
+      <pubDate>Thu, 18 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/Jekylldan-Hugoya-gecis/</guid>
+      <description>
+
+&lt;p&gt;Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmişsinizdir.&lt;/p&gt;
+
+&lt;p&gt;Eski siteyi Jekyll ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&amp;rsquo;ı değiştirmeye karar verdim.&lt;/p&gt;
+
+&lt;p&gt;Evet, blogumda baştan beri Jekyll ile olan maceram bugün itibarı ile sona erdi. Onun yerine Hugo statik site geliştiricisine (static site generator) geçiyorum.&lt;/p&gt;
+
+&lt;h2 id=&#34;statik-site-geliştiricileri&#34;&gt;Statik Site Geliştiricileri&lt;/h2&gt;
+
+&lt;p&gt;Web sitesi oluşturmak için birden fazla yöntem var. Son yıllarda en yaygın olarak kullanılan blog oluşturma aracı ise şüphesiz Wordpress. Lakin gerek yavaşlığı gerekse plug-inlerin kurulumundaki bazı sıkıntılar nedeniyle blogcular Wordpress tercihlerini yavaş yavaş sorgular hale geldiler.&lt;/p&gt;
+
+&lt;p&gt;İşte tam bu sıralarda devreye statik site oluşturucuları girdi. SSG&amp;rsquo;ler özellikle sitesinde dinamik içeriğe ihtiyaç duymayan, sitelerini hızlı bir şekilde hazırlamak ve sunucuya yüklemek isteyen bloggerlar tarafından tercih ediliyor.&lt;/p&gt;
+
+&lt;p&gt;Statik site oluşturucularında site önceden oluşturulduğundan (generate) http (web) server&amp;rsquo;a gereksiz yere yük binmiyor (Sebep: istemci isteklerinde her seferinde aynı sayfa render edilmiyor).&lt;/p&gt;
+
+&lt;p&gt;Blog sayfaları doğası itibarı ile büyük oranda statik olduğu için Wordpress gibi sistemlerde atıl şekilde duran onca plug in v.s. uygulamasının boşu boşuna çalışmasına ihtiyaç kalmıyor.&lt;/p&gt;
+
+&lt;h2 id=&#34;başlıca-statik-site-geliştiricileri&#34;&gt;Başlıca Statik Site Geliştiricileri&lt;/h2&gt;
+
+&lt;p&gt;Şu anda en gözde statik site oluşturucu ortamı Jekyll. Jekyll gerek kullanım kolaylığı gerekse dökümantasyonundaki ayrıntılı bilgiler ve topluluğunun güçlülüğü ile dikkat çekiyor.&lt;/p&gt;
+
+&lt;p&gt;Statik site geliştiricileri ile yeni tanışanlar için kolay anlayıp kullanılabilecek bir sistem.&lt;/p&gt;
+
+&lt;p&gt;Bunun yanında en büyük sıkıntısı ise diğer SSG&amp;rsquo;lerine göre oldukça yavaş olması. Özellikle karşılaştırma kriteri olarak biraz sonra değineceğim Hugo&amp;rsquo;ya göre neredeyse 10&amp;rsquo;da 1 oranında yavaş.&lt;/p&gt;
+
+&lt;p&gt;Hugo ise dökümantasyon ve topluluk desteği gibi konularda Jekyll&amp;rsquo;ın oldukça gerilerinde olsa bile hız konusunda süper güçlü. Jekyll&amp;rsquo;a göre bir üstünlüğü de çalıştırılması için herhangi bir dependency&amp;rsquo;e (ek paketler) ihtiyaç duymaması.&lt;/p&gt;
+
+&lt;p&gt;Yani Jekyll&amp;rsquo;da kurulum ve farklı bir özellik (feature) kullanmak için değişik paketler yüklemek zorunda olmamıza karşın Hugo tek bir binary (windows için .exe dosyası) dosya kullanarak sisteminize kurulup kullanılabiliyor.&lt;/p&gt;
+
+&lt;p&gt;Ayrıyeten Hugo çok kullanışlı bir özellik olan &lt;code&gt;live&lt;/code&gt; reload özelliğine öntanımlı olarak sahip. (Sitenizde yaptığınız bir değişikliği browserda anında görebiliyorsunuz. Sunucuyu yada tarayıcıyı kapatıp açmanıza gerek yok.)&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo&#34;&gt;Hugo&lt;/h2&gt;
+
+&lt;p&gt;İleride kurulum ve kullanım yönünden Hugo ve Jekyll&amp;rsquo;dan detaylı olarak bahsetmeyi ve ikisini karşılaştırmayı planlıyorum.&lt;/p&gt;
+
+&lt;p&gt;Şimdilik size Hugo ile ilgili kısa bazı bilgiler vereyim.&lt;/p&gt;
+
+&lt;p&gt;Hugo Go diliyle yazılmış bir statik site oluşturucusu. Birçok insanın destek verdiği açık kaynak kodlu bir özgür yazılım olan Hugo&amp;rsquo;nun ilk yaratıcısı Steve Francia. Hugo bugün itibarı ile 0,16 stabil sürümüne sahip ve Windows, Mac ve Linux ortamında çalışabiliyor.&lt;/p&gt;
+
+&lt;p&gt;Kullanmak için tek yapmanız gereken Github&amp;rsquo;daki Hugo dağıtım sayfasında kendi işletim sisteminize uygun paketi indirip bilgisayarınıza kurmak. Dosyayı bilgisayara indirip herhangi bir klasöre yerleştirdikten sonra klasör yolunu (mesela &lt;code&gt;c:\Hugo\Bin&lt;/code&gt; gibi) ortam değişkenine (PATH) eklemeniz gerekiyor. Bu kadar.&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-ile-bir-site-yapalım&#34;&gt;Hugo ile Bir Site Yapalım&lt;/h2&gt;
+
+&lt;p&gt;Hugo ile hemen bir deneme site yapalım. Hugoyu indirin ve kurun. Şimdi komut satırında &lt;code&gt;hugo new site yeni&lt;/code&gt; komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yeni adında bir klasör oluşturuldu. Hemen kontrol edin.&lt;/p&gt;
+
+&lt;p&gt;Sitemizde yeni bir dosya oluşturalım. hugo new hakkimizda.md komutu vererek sitemize bir hakkımızda dosyası oluşturalım.&lt;/p&gt;
+
+&lt;p&gt;Site ana klasörünüzün (yeni) altındaki content klasörünün içine bakarsanız Hugo&amp;rsquo;nun hakkimizda.md adında bir dosya oluşturduğunu görmüş olacaksınız.&lt;/p&gt;
+
+&lt;p&gt;Şimdi hakkimizda.md dosyasını çift tıklayarak açın. (bilgisayarınızda sublime text programı yüklü, değil mi?) Dosyanın içinde şu şekilde satırlar görüyor olmalısınız:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
+date = &amp;quot;2016-05-25T11:45:50-07:00&amp;quot;
+draft = true
+title = &amp;quot;hakkimizda&amp;quot;
+
++++
+
+buraya içeriğimizi ekleyelim.  
+
+herhangi bir içerik..... ![herhangi bir resim](/resim_yolu/resim_ismi.jpg)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yukarıdaki üç (3) adet artı işareti arasında gördüğünüz satırlara Hugo front matter (ön bilgi) adını veriyor.&lt;/p&gt;
+
+&lt;p&gt;Bu bölüm bize dosyanın bir markup (burada toml- ancak yaml yada json da olabilirdi) dilinde yazıldığını söylüyor. Artı karakter işaretleri içinde, kullandığımız temanın ve Hugonun bize sağladığı diğer olanaklar çerçevesinde dosyamızı şekillendirebiliriz.&lt;/p&gt;
+
+&lt;p&gt;İki örnek vereyim. Mesela üzerinde çalıştığımız sayfada sosyal medya ikonlarının çıkmasını istersek front matter&amp;rsquo;a &amp;ldquo;socialsharing = true&amp;rdquo; satırını ekleyerek sayfaya sosyal medya butonlarını ekleyebiliriz.&lt;/p&gt;
+
+&lt;p&gt;Yada sitemizdeki yorum seçeneğinin açık olduğunu varsayarak üzerinde çalıştığım sayfada yorum seçeneğini kaldırmak istediğimizi varsalalım. O halde &amp;ldquo;nocomment = true&amp;rdquo; şeklinde bir satır ile bu isteğimi gerçekleştirebilirim.&lt;/p&gt;
+
+&lt;p&gt;```markdown
++++
+date = &amp;ldquo;2016-05-25T11:45:50-07:00&amp;rdquo;
+draft = true
+title = &amp;ldquo;hakkimizda&amp;rdquo;
+socialsharing = true
+nocomment = true
++++&lt;/p&gt;
+
+&lt;p&gt;Burada bilmeniz gereken önemli bir nokta; yukarıda kullandığımız argümanları ve değerlerini, kullandığınız temadan yada Hugonun genel dökümantasyonundan öğrenmeniz gerektiği. Çünkü bu argümanlar temadan temaya değişiklik gösterebilmektedir. En önemli başvuru kaynağımız temanın readme.md (okubeni) dosyası olacaktır.&lt;/p&gt;
+
+&lt;p&gt;Son olarak markdown dilinin olağan yani spesifik bir temaya bağlı olmayan komutlarını öğrenmemiz gerekiyor. Markdown için google&amp;rsquo;da bir çok kaynak bulup kullanabilirsiniz. Basit bir örnek verirsek bir sayfada bir foto göstermek (eklemek) için kullanılan komut: &lt;code&gt;![resmi_tanımlayan_text](/resim_yolu/resim_ismi.jpg)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;sayfa-içeriği&#34;&gt;Sayfa İçeriği&lt;/h2&gt;
+
+&lt;p&gt;Artı işaretlerinden sonra artık dosyamızın browserda görünecek kısmına geldik. Bu bölümde her türlü yazı ve imajımızı markdown edit kuralları çerçevesinde dökümanımıza ekleyebilir, temamızın bize sağladığı diğer taglerden faydalanabiliriz.&lt;/p&gt;
+
+&lt;p&gt;Örneğin temamız bize üzerine tıklandığında açılan türden bir imaj galerisi imkanı sunuyorsa bunu normal html imaj taginin içine &amp;ldquo;lightbox&amp;rdquo; özelliğini ekleyerek gerçekleştirebilirsiniz. Tabi dediğim gibi bu özellik temada tanımlı olmalı.&lt;/p&gt;
+
+&lt;h2 id=&#34;temalar&#34;&gt;Temalar&lt;/h2&gt;
+
+&lt;p&gt;Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altına themes adlı bir klasör oluşturup onun içine ekleyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Temanızı sitede kullanmak için config.toml dosyanızın içine &amp;ldquo;theme = tema adiniz&amp;rdquo; şeklinde bir satır eklemeniz yeterli.&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-da-dosya-düzeni&#34;&gt;Hugo&amp;rsquo;da Dosya Düzeni&lt;/h2&gt;
+
+&lt;p&gt;Hugo varsayılan olarak sayfalar ve postlar düzenini kullanıyor. Yani bağımsız sayfalara page(sayfa), bir bölümün(section) altında olacak sayfalara ise post deniyor.&lt;/p&gt;
+
+&lt;p&gt;Mesela yukarıda oluşturduğumuz hakkimizda.md bir sayfa olarak değerlendirilip content klasörünün hemen altına yerleştiriliyor. Bu sayfalar şablon biçimlerimizden single.html şablonuna uyduruluyor.&lt;/p&gt;
+
+&lt;p&gt;Bölüm oluşturmak içinse content klasörünüzün içinde yeni klasörler oluşturun. Mesela (blog), (post), (yazilar), (arşiv) v.d. gibi. Bu klasörlerin içinde oluşturacağınız her dosya (mesela dosya1.md, dosya3.md) post olarak algılanacaktır.&lt;/p&gt;
+
+&lt;h2 id=&#34;sitemizi-oluşturma&#34;&gt;Sitemizi Oluşturma&lt;/h2&gt;
+
+&lt;p&gt;Şimdi sitemizi oluşturalım. Aşağıdaki siteye gidin ve herhangi bir temayı indirin. &lt;a href=&#34;https://github.com/spf13/hugoThemes&#34;&gt;https://github.com/spf13/hugoThemes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;İndirdiğiniz temayı ana dizinin altında themes klasörünün içine kopyalayın.&lt;/p&gt;
+
+&lt;p&gt;Şimdi ana klasörün içindeyken şu komutu verin. hugo server &amp;ndash;theme=tema-ismi &amp;ndash;buildDrafts&lt;/p&gt;
+
+&lt;p&gt;Şu anda siteniz oluşturuldu ve lokal sunucunuzda hazır. Test etmek için browserınızı açın ve &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt; adresini adres çubuğunda yazarak Enter&amp;rsquo;a basın. Sitenizi görüyor olmalısınız.&lt;/p&gt;
+
+&lt;p&gt;Yukarıda sadece siteyi lokal sunucuda test amaçlı görüntüledik. Sitemiz henüz oluşturulmadı. Oluşturmak için görüntü modundan ctrl+c yaparak çıkın ve şu komutu verin. &amp;ldquo;Hugo&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Şimdi ana menünün içinde &amp;ldquo;public&amp;rdquo; adlı bir klasör oluşturulduğunu göreceksiniz. İşte bu klasör bizim sunucumuza yükleyeceğimiz ve içinde web sitemizi barındıran klasördür.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Daha detaylı bir Hugo ve Jekyll kullanım klavuzunu hemen yakın zamanda hazırlayıp seri olarak hizmetinize sunmayı düşünüyorum. Sağlıcakla kalın&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Python Felsefesi (Zen of Python)</title>
@@ -1199,63 +1330,6 @@ merhaba_size(&#39;Millet&#39;)
 &lt;h3 id=&#34;her-türlü-soru-ve-görüşünüz-için&#34;&gt;| Her türlü Soru ve Görüşünüz İçin |&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;mailto:pythonistan@gmail.com&#34;&gt;pythonistan@gmail.com&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bize Yazın</title>
-      <link>https://pythonistan.github.io/contact/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://pythonistan.github.io/contact/</guid>
-      <description>&lt;form class=&#34;pure-form pure-form-stacked&#34; action=&#34;https://formspree.io/pythonistan@gmail.com&#34; method=&#34;POST&#34;&gt;
-  &lt;fieldset&gt;
-    &lt;div class=&#34;pure-g&#34;&gt;
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;first-name&#34;&gt;Adınız&lt;/label&gt;
-        &lt;input id=&#34;first-name&#34; class=&#34;pure-u-23-24&#34; type=&#34;text&#34; name=&#34;ad&#34;&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;last-name&#34;&gt;Soyadınız&lt;/label&gt;
-        &lt;input id=&#34;last-name&#34; class=&#34;pure-u-23-24&#34; type=&#34;text&#34; name=&#34;soyad&#34;&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;email&#34;&gt;E-Postanız&lt;/label&gt;
-        &lt;input id=&#34;email&#34; name=&#34;_replyto&#34; class=&#34;pure-u-23-24&#34; type=&#34;email&#34; required&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;city&#34;&gt;İlçeniz&lt;/label&gt;
-        &lt;input id=&#34;city&#34; class=&#34;pure-u-23-24&#34; type=&#34;text&#34; name=&#34;sehir&#34;&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;state&#34;&gt;İliniz&lt;/label&gt;
-        &lt;select id=&#34;state&#34; class=&#34;pure-input-1-2&#34; name=&#34;il&#34;&gt;
-          &lt;option&gt;İSTANBUL&lt;/option&gt;
-          &lt;option&gt;ANKARA&lt;/option&gt;
-          &lt;option&gt;İZMİR&lt;/option&gt;
-          &lt;option&gt;BURSA&lt;/option&gt;
-          &lt;option&gt;ESKİŞEHİR&lt;/option&gt;
-          &lt;option&gt;KAYSERİ&lt;/option&gt;
-          &lt;option&gt;SAMSUN&lt;/option&gt;
-          &lt;option&gt;KOCAELİ&lt;/option&gt;
-          &lt;option&gt;TEKİRDAĞ&lt;/option&gt;
-          &lt;option&gt;ANTALYA&lt;/option&gt;
-          &lt;option&gt;GAZİANTEP&lt;/option&gt;
-          &lt;option&gt;DİĞER&lt;/option&gt;
-        &lt;/select&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;fieldset class=&#34;pure-group&#34;&gt;
-      &lt;input type=&#34;text&#34; class=&#34;pure-input-1-2&#34; placeholder=&#34;Konu&#34; name=&#34;konu&#34;&gt;
-      &lt;textarea class=&#34;pure-input-1-2&#34; placeholder=&#34;Mesajınız&#34; name=&#34;mesaj&#34; required&gt;&lt;/textarea&gt;
-    &lt;/fieldset&gt;
-    &lt;button type=&#34;submit&#34; class=&#34;pure-button pure-button-primary&#34; value=&#34;Send&#34;&gt;Gönder&lt;/button&gt;
-  &lt;/fieldset&gt;
-&lt;/form&gt;
 </description>
     </item>
     

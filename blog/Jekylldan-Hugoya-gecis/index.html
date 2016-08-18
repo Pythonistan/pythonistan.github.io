@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Jekyll&#39;dan Hugo&#39;ya Geçiş // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Statik Site Oluşturucuları Tercihi">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="og:title" content="Jekyll&#39;dan Hugo&#39;ya Geçiş" />
+<meta property="og:description" content="Statik Site Oluşturucuları Tercihi" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://pythonistan.github.io/blog/Jekylldan-Hugoya-gecis/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://pythonistan.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pythonistan.github.io//css/lightbox.css">
+  <script src="https://pythonistan.github.io//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://pythonistan.github.io/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="http://www.instagram.com/pyhonistan" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.youtube.com/pythonistan" target="_blank"><i class='fa fa-youtube'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/pythonda-stringler/yanlis_index_baslangici.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#statik-site-geliştiricileri">Statik Site Geliştiricileri</a></li>
+<li><a href="#başlıca-statik-site-geliştiricileri">Başlıca Statik Site Geliştiricileri</a></li>
+<li><a href="#hugo">Hugo</a></li>
+<li><a href="#hugo-ile-bir-site-yapalım">Hugo ile Bir Site Yapalım</a></li>
+<li><a href="#sayfa-içeriği">Sayfa İçeriği</a></li>
+<li><a href="#temalar">Temalar</a></li>
+<li><a href="#hugo-da-dosya-düzeni">Hugo&rsquo;da Dosya Düzeni</a></li>
+<li><a href="#sitemizi-oluşturma">Sitemizi Oluşturma</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/Jekylldan-Hugoya-gecis/">Jekyll&#39;dan Hugo&#39;ya Geçiş</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>18</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-statik-site-geli%C5%9Ftiriciler" href="https://pythonistan.github.io//categories/statik-site-geli%C5%9Ftiriciler">statik site geliştiriciler</a>
+				
+					<a class="post-category post-category-hugo" href="https://pythonistan.github.io//categories/hugo">hugo</a>
+				
+					<a class="post-category post-category-jekyll" href="https://pythonistan.github.io//categories/jekyll">jekyll</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fJekylldan-Hugoya-gecis%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fJekylldan-Hugoya-gecis%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Jekyll%27dan%20Hugo%27ya%20Ge%c3%a7i%c5%9f&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fJekylldan-Hugoya-gecis%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/pythonda-stringler/p.png" class="pure-img content-banner-image-inline"
+                                     style="
+                                            " />
+			
+
+            
+
+<p>Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmişsinizdir.</p>
+
+<p>Eski siteyi Jekyll ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&rsquo;ı değiştirmeye karar verdim.</p>
+
+<p>Evet, blogumda baştan beri Jekyll ile olan maceram bugün itibarı ile sona erdi. Onun yerine Hugo statik site geliştiricisine (static site generator) geçiyorum.</p>
+
+<h2 id="statik-site-geliştiricileri">Statik Site Geliştiricileri</h2>
+
+<p>Web sitesi oluşturmak için birden fazla yöntem var. Son yıllarda en yaygın olarak kullanılan blog oluşturma aracı ise şüphesiz Wordpress. Lakin gerek yavaşlığı gerekse plug-inlerin kurulumundaki bazı sıkıntılar nedeniyle blogcular Wordpress tercihlerini yavaş yavaş sorgular hale geldiler.</p>
+
+<p>İşte tam bu sıralarda devreye statik site oluşturucuları girdi. SSG&rsquo;ler özellikle sitesinde dinamik içeriğe ihtiyaç duymayan, sitelerini hızlı bir şekilde hazırlamak ve sunucuya yüklemek isteyen bloggerlar tarafından tercih ediliyor.</p>
+
+<p>Statik site oluşturucularında site önceden oluşturulduğundan (generate) http (web) server&rsquo;a gereksiz yere yük binmiyor (Sebep: istemci isteklerinde her seferinde aynı sayfa render edilmiyor).</p>
+
+<p>Blog sayfaları doğası itibarı ile büyük oranda statik olduğu için Wordpress gibi sistemlerde atıl şekilde duran onca plug in v.s. uygulamasının boşu boşuna çalışmasına ihtiyaç kalmıyor.</p>
+
+<h2 id="başlıca-statik-site-geliştiricileri">Başlıca Statik Site Geliştiricileri</h2>
+
+<p>Şu anda en gözde statik site oluşturucu ortamı Jekyll. Jekyll gerek kullanım kolaylığı gerekse dökümantasyonundaki ayrıntılı bilgiler ve topluluğunun güçlülüğü ile dikkat çekiyor.</p>
+
+<p>Statik site geliştiricileri ile yeni tanışanlar için kolay anlayıp kullanılabilecek bir sistem.</p>
+
+<p>Bunun yanında en büyük sıkıntısı ise diğer SSG&rsquo;lerine göre oldukça yavaş olması. Özellikle karşılaştırma kriteri olarak biraz sonra değineceğim Hugo&rsquo;ya göre neredeyse 10&rsquo;da 1 oranında yavaş.</p>
+
+<p>Hugo ise dökümantasyon ve topluluk desteği gibi konularda Jekyll&rsquo;ın oldukça gerilerinde olsa bile hız konusunda süper güçlü. Jekyll&rsquo;a göre bir üstünlüğü de çalıştırılması için herhangi bir dependency&rsquo;e (ek paketler) ihtiyaç duymaması.</p>
+
+<p>Yani Jekyll&rsquo;da kurulum ve farklı bir özellik (feature) kullanmak için değişik paketler yüklemek zorunda olmamıza karşın Hugo tek bir binary (windows için .exe dosyası) dosya kullanarak sisteminize kurulup kullanılabiliyor.</p>
+
+<p>Ayrıyeten Hugo çok kullanışlı bir özellik olan <code>live</code> reload özelliğine öntanımlı olarak sahip. (Sitenizde yaptığınız bir değişikliği browserda anında görebiliyorsunuz. Sunucuyu yada tarayıcıyı kapatıp açmanıza gerek yok.)</p>
+
+<h2 id="hugo">Hugo</h2>
+
+<p>İleride kurulum ve kullanım yönünden Hugo ve Jekyll&rsquo;dan detaylı olarak bahsetmeyi ve ikisini karşılaştırmayı planlıyorum.</p>
+
+<p>Şimdilik size Hugo ile ilgili kısa bazı bilgiler vereyim.</p>
+
+<p>Hugo Go diliyle yazılmış bir statik site oluşturucusu. Birçok insanın destek verdiği açık kaynak kodlu bir özgür yazılım olan Hugo&rsquo;nun ilk yaratıcısı Steve Francia. Hugo bugün itibarı ile 0,16 stabil sürümüne sahip ve Windows, Mac ve Linux ortamında çalışabiliyor.</p>
+
+<p>Kullanmak için tek yapmanız gereken Github&rsquo;daki Hugo dağıtım sayfasında kendi işletim sisteminize uygun paketi indirip bilgisayarınıza kurmak. Dosyayı bilgisayara indirip herhangi bir klasöre yerleştirdikten sonra klasör yolunu (mesela <code>c:\Hugo\Bin</code> gibi) ortam değişkenine (PATH) eklemeniz gerekiyor. Bu kadar.</p>
+
+<h2 id="hugo-ile-bir-site-yapalım">Hugo ile Bir Site Yapalım</h2>
+
+<p>Hugo ile hemen bir deneme site yapalım. Hugoyu indirin ve kurun. Şimdi komut satırında <code>hugo new site yeni</code> komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yeni adında bir klasör oluşturuldu. Hemen kontrol edin.</p>
+
+<p>Sitemizde yeni bir dosya oluşturalım. hugo new hakkimizda.md komutu vererek sitemize bir hakkımızda dosyası oluşturalım.</p>
+
+<p>Site ana klasörünüzün (yeni) altındaki content klasörünün içine bakarsanız Hugo&rsquo;nun hakkimizda.md adında bir dosya oluşturduğunu görmüş olacaksınız.</p>
+
+<p>Şimdi hakkimizda.md dosyasını çift tıklayarak açın. (bilgisayarınızda sublime text programı yüklü, değil mi?) Dosyanın içinde şu şekilde satırlar görüyor olmalısınız:</p>
+
+<pre><code class="language-markdown">+++
+date = &quot;2016-05-25T11:45:50-07:00&quot;
+draft = true
+title = &quot;hakkimizda&quot;
+
++++
+
+buraya içeriğimizi ekleyelim.  
+
+herhangi bir içerik..... ![herhangi bir resim](/resim_yolu/resim_ismi.jpg)
+</code></pre>
+
+<p>Yukarıdaki üç (3) adet artı işareti arasında gördüğünüz satırlara Hugo front matter (ön bilgi) adını veriyor.</p>
+
+<p>Bu bölüm bize dosyanın bir markup (burada toml- ancak yaml yada json da olabilirdi) dilinde yazıldığını söylüyor. Artı karakter işaretleri içinde, kullandığımız temanın ve Hugonun bize sağladığı diğer olanaklar çerçevesinde dosyamızı şekillendirebiliriz.</p>
+
+<p>İki örnek vereyim. Mesela üzerinde çalıştığımız sayfada sosyal medya ikonlarının çıkmasını istersek front matter&rsquo;a &ldquo;socialsharing = true&rdquo; satırını ekleyerek sayfaya sosyal medya butonlarını ekleyebiliriz.</p>
+
+<p>Yada sitemizdeki yorum seçeneğinin açık olduğunu varsayarak üzerinde çalıştığım sayfada yorum seçeneğini kaldırmak istediğimizi varsalalım. O halde &ldquo;nocomment = true&rdquo; şeklinde bir satır ile bu isteğimi gerçekleştirebilirim.</p>
+
+<p>```markdown
++++
+date = &ldquo;2016-05-25T11:45:50-07:00&rdquo;
+draft = true
+title = &ldquo;hakkimizda&rdquo;
+socialsharing = true
+nocomment = true
++++</p>
+
+<p>Burada bilmeniz gereken önemli bir nokta; yukarıda kullandığımız argümanları ve değerlerini, kullandığınız temadan yada Hugonun genel dökümantasyonundan öğrenmeniz gerektiği. Çünkü bu argümanlar temadan temaya değişiklik gösterebilmektedir. En önemli başvuru kaynağımız temanın readme.md (okubeni) dosyası olacaktır.</p>
+
+<p>Son olarak markdown dilinin olağan yani spesifik bir temaya bağlı olmayan komutlarını öğrenmemiz gerekiyor. Markdown için google&rsquo;da bir çok kaynak bulup kullanabilirsiniz. Basit bir örnek verirsek bir sayfada bir foto göstermek (eklemek) için kullanılan komut: <code>![resmi_tanımlayan_text](/resim_yolu/resim_ismi.jpg)</code></p>
+
+<h2 id="sayfa-içeriği">Sayfa İçeriği</h2>
+
+<p>Artı işaretlerinden sonra artık dosyamızın browserda görünecek kısmına geldik. Bu bölümde her türlü yazı ve imajımızı markdown edit kuralları çerçevesinde dökümanımıza ekleyebilir, temamızın bize sağladığı diğer taglerden faydalanabiliriz.</p>
+
+<p>Örneğin temamız bize üzerine tıklandığında açılan türden bir imaj galerisi imkanı sunuyorsa bunu normal html imaj taginin içine &ldquo;lightbox&rdquo; özelliğini ekleyerek gerçekleştirebilirsiniz. Tabi dediğim gibi bu özellik temada tanımlı olmalı.</p>
+
+<h2 id="temalar">Temalar</h2>
+
+<p>Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altına themes adlı bir klasör oluşturup onun içine ekleyebilirsiniz.</p>
+
+<p>Temanızı sitede kullanmak için config.toml dosyanızın içine &ldquo;theme = tema adiniz&rdquo; şeklinde bir satır eklemeniz yeterli.</p>
+
+<h2 id="hugo-da-dosya-düzeni">Hugo&rsquo;da Dosya Düzeni</h2>
+
+<p>Hugo varsayılan olarak sayfalar ve postlar düzenini kullanıyor. Yani bağımsız sayfalara page(sayfa), bir bölümün(section) altında olacak sayfalara ise post deniyor.</p>
+
+<p>Mesela yukarıda oluşturduğumuz hakkimizda.md bir sayfa olarak değerlendirilip content klasörünün hemen altına yerleştiriliyor. Bu sayfalar şablon biçimlerimizden single.html şablonuna uyduruluyor.</p>
+
+<p>Bölüm oluşturmak içinse content klasörünüzün içinde yeni klasörler oluşturun. Mesela (blog), (post), (yazilar), (arşiv) v.d. gibi. Bu klasörlerin içinde oluşturacağınız her dosya (mesela dosya1.md, dosya3.md) post olarak algılanacaktır.</p>
+
+<h2 id="sitemizi-oluşturma">Sitemizi Oluşturma</h2>
+
+<p>Şimdi sitemizi oluşturalım. Aşağıdaki siteye gidin ve herhangi bir temayı indirin. <a href="https://github.com/spf13/hugoThemes">https://github.com/spf13/hugoThemes</a></p>
+
+<p>İndirdiğiniz temayı ana dizinin altında themes klasörünün içine kopyalayın.</p>
+
+<p>Şimdi ana klasörün içindeyken şu komutu verin. hugo server &ndash;theme=tema-ismi &ndash;buildDrafts</p>
+
+<p>Şu anda siteniz oluşturuldu ve lokal sunucunuzda hazır. Test etmek için browserınızı açın ve <a href="http://localhost:1313">http://localhost:1313</a> adresini adres çubuğunda yazarak Enter&rsquo;a basın. Sitenizi görüyor olmalısınız.</p>
+
+<p>Yukarıda sadece siteyi lokal sunucuda test amaçlı görüntüledik. Sitemiz henüz oluşturulmadı. Oluşturmak için görüntü modundan ctrl+c yaparak çıkın ve şu komutu verin. &ldquo;Hugo&rdquo;</p>
+
+<p>Şimdi ana menünün içinde &ldquo;public&rdquo; adlı bir klasör oluşturulduğunu göreceksiniz. İşte bu klasör bizim sunucumuza yükleyeceğimiz ve içinde web sitemizi barındıran klasördür.</p>
+
+<hr>
+
+<p>Daha detaylı bir Hugo ve Jekyll kullanım klavuzunu hemen yakın zamanda hazırlayıp seri olarak hizmetinize sunmayı düşünüyorum. Sağlıcakla kalın&hellip;</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fJekylldan-Hugoya-gecis%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fJekylldan-Hugoya-gecis%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Jekyll%27dan%20Hugo%27ya%20Ge%c3%a7i%c5%9f&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fJekylldan-Hugoya-gecis%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-jekyll" href="https://pythonistan.github.io//tags/jekyll">jekyll</a>,
+	                
+	                <a class="post-tag post-tag-hugo" href="https://pythonistan.github.io//tags/hugo">hugo</a>,
+	                
+	                <a class="post-tag post-tag-statik-site-geli%C5%9Ftiriciler" href="https://pythonistan.github.io//tags/statik-site-geli%C5%9Ftiriciler">statik site geliştiriciler</a>,
+	                
+	                <a class="post-tag post-tag-pythonistan" href="https://pythonistan.github.io//tags/pythonistan">pythonistan</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/python-felsefesi/">Python Felsefesi (Zen of Python)</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'https:\/\/pythonistan.github.io\/blog\/Jekylldan-Hugoya-gecis\/';
+    var disqus_title = 'Jekyll\x27dan Hugo\x27ya Geçiş';
+    var disqus_url = 'https:\/\/pythonistan.github.io\/blog\/Jekylldan-Hugoya-gecis\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>
