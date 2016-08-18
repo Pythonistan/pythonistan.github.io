@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Pythonistan</title>
+    <link>https://pythonistan.github.io/categories/python/</link>
+    <description>Recent content in Python on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Sat, 13 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="https://pythonistan.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python Felsefesi (Zen of Python)</title>
+      <link>https://pythonistan.github.io/blog/python-felsefesi/</link>
+      <pubDate>Sat, 13 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/python-felsefesi/</guid>
+      <description>
+
+&lt;p&gt;Bugün teknik konulara biraz ara verip sizlere Python&amp;rsquo;un kullanımı ve kodlaması ile ilgili genel prensiplerden bahsetmek istiyorum.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-felsefesi-the-zen-of-python&#34;&gt;Python Felsefesi (The Zen of Python)&lt;/h2&gt;
+
+&lt;p&gt;Tercümesini vereceğim aforizmalar &lt;a href=&#34;https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/&#34;&gt;BDFL&lt;/a&gt;&amp;lsquo;nin Python&amp;rsquo;u geliştirirken dikkate aldığı ana prensipleri özetlemek adına Python camiasına uzun yıllar emek vermiş bir Pythonista (Paytoncu) olan &lt;a target=&#34;blank&#34; href=&#34;http://stackoverflow.com/users/2705542/tim-peters&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Tim Peters&lt;/em&gt;&lt;/a&gt; tarafından ortaya konmuş.&lt;/p&gt;
+
+&lt;p&gt;Toplam sayısı 20 olan aforizmaların halihazırda &lt;em&gt;19&lt;/em&gt;&amp;lsquo;u bilinmekte.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-geliştirme-prensipleri-yada-aforizmalar&#34;&gt;Python Geliştirme Prensipleri yada Aforizmalar&lt;/h2&gt;
+
+&lt;p&gt;Buradaki prensip yada aforizmalara &lt;strong&gt;&amp;ldquo;Zen of Python&amp;rdquo;&lt;/strong&gt; deniyor. En doğru tercüme &lt;strong&gt;&amp;ldquo;Python Felsefesi&amp;rdquo;&lt;/strong&gt; olsa gerek.&lt;/p&gt;
+
+&lt;p&gt;Daha fazla vakit kaybetmeden bu &lt;strong&gt;19&lt;/strong&gt; maddeyi sıralayalım:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Güzel olan çirkinden evladır. (Beautiful is better than ugly.)&lt;/li&gt;
+&lt;li&gt;Aşikar olan üstü kapalıdan evladır. (Explicit is better than implicit.)&lt;/li&gt;
+&lt;li&gt;Basit olan karmaşıktan evladır. (Simple is better than complex.)&lt;/li&gt;
+&lt;li&gt;Karmaşık olan çapraşıktan evladır. (Complex is better than complicated.)&lt;/li&gt;
+&lt;li&gt;Düz olan iç içeden evladır. (Flat is better than nested.)&lt;/li&gt;
+&lt;li&gt;Seyrek olan yoğundan evladır. (Sparse is better than dense.)&lt;/li&gt;
+&lt;li&gt;Okunabilirlik önemlidir. (Readability counts.)&lt;/li&gt;
+&lt;li&gt;Özel durumlar kuralları çiğnemeyi gerektirecek kadar özel olamazlar. (Special cases aren&amp;rsquo;t special enough to break the rules.)&lt;/li&gt;
+&lt;li&gt;Pratiklik saflığa galip gelse bile&amp;hellip;(Although practicality beats purity.)&lt;/li&gt;
+&lt;li&gt;Hatalar sessizce geçiştirilemezler. (Errors should never pass silently.)&lt;/li&gt;
+&lt;li&gt;Açık olarak üstlerinden gelinene kadar&amp;hellip; (Unless explicitly silenced.)&lt;/li&gt;
+&lt;li&gt;Muğlaklık karşısında ne olabileceğini kestirmeyi bırakın. (In the face of ambiguity, refuse the temptation to guess.)&lt;/li&gt;
+&lt;li&gt;Bir şeyi yapmanın apaçık bir, tercihen sadece tek bir yolu olmalı. (There should be one&amp;ndash; and preferably only one &amp;ndash;obvious way to do it.)&lt;/li&gt;
+&lt;li&gt;Tabi Hollandalı değilseniz o yol ilk başta size hemen açılmayabilir. (Although that way may not be obvious at first unless you&amp;rsquo;re Dutch.)&lt;/li&gt;
+&lt;li&gt;Şimdi olan hiç olmayacakdan evladır. (Now is better than never.)&lt;/li&gt;
+&lt;li&gt;Hiç olmayacak olan hiç gelmeyecek bir &amp;ldquo;doğru zaman&amp;rdquo;dan evladır. (Although never is often better than &amp;ldquo;right&amp;rdquo; now.)&lt;/li&gt;
+&lt;li&gt;Uygulamanın açıklaması zorsa, kötü bir fikirdir. (If the implementation is hard to explain, it&amp;rsquo;s a bad idea.)&lt;/li&gt;
+&lt;li&gt;Uygulamanın açıklaması kolaysa, iyi bir fikir olabilir. (If the implementation is easy to explain, it may be a good idea.)&lt;/li&gt;
+&lt;li&gt;İsim Uzayları müthiş bir fikir, daha fazla kullanalım! (Namespaces are one honking great idea &amp;ndash; let&amp;rsquo;s do more of those!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;python-felsefesi-açıklamaları&#34;&gt;Python Felsefesi Açıklamaları&lt;/h2&gt;
+
+&lt;p&gt;19 aforizmanın her birini genişçe açıklamak ve örnek vermek mümkün. İleride bunu yapmayı planlıyorum. Şimdilik açıklaması en kolay olan (5.) beşinci ile iktifa edelim:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Okunabilirlik önemlidir. (Readability counts.)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Örnek olarak aşağıda artık klasikleşmiş bir kod öbeği olan &amp;ldquo;Hello World!&amp;rdquo;, &lt;strong&gt;Python&lt;/strong&gt; ve &lt;strong&gt;C&lt;/strong&gt; dilleri ile ayrı ayrı ekrana yazdırılıyor. Farkı sanırım farkettiniz.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;// c ile merhaba dünya kodumuz
+
+#include &amp;lt;stdio.h&amp;gt; 
+int main(void) 
+{ 
+    printf(&amp;quot;Merhaba, Dunya!\n&amp;quot;); 
+    return(0); 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Python ile merhaba dünya kodumuz
+
+print &amp;quot;Merhaba Dunya!&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;sürpriz-yumurta&#34;&gt;Sürpriz Yumurta&lt;/h2&gt;
+
+&lt;p&gt;Tercümelerini (yaklaşık anlamları diyelim) verdiğimiz yukarıdaki &lt;em&gt;19&lt;/em&gt; Python prensibine &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;yorumlayıdan (interpreter)&lt;/a&gt;  ulaşmanız mümkün.&lt;/p&gt;
+
+&lt;p&gt;Python &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;Kabukta (Shell)&lt;/a&gt; bu aforizmalara ulaşmak için yapmanız gereken tek şey: &lt;code&gt;import this&lt;/code&gt; komutunu vermek. ve tata&amp;hellip; karşınızda..&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/zen-of-python/python_aforizmalar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Aforizmalarını Shell&#39;de Görelim&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/zen-of-python/python_aforizmalar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Bugünlük bu kadar.&lt;/p&gt;
+
+&lt;p&gt;Blogumda yer almasını en çok istediğiniz konuları lütfen bana yazın. Elimden geldiğince isteklerinize yer vermeye çalışacağım.&lt;/p&gt;
+
+&lt;p&gt;Bu yazımı beğendiyseniz paylaşmayı unutmayın. Sağlıcakla!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notepad Kullanarak Python Programı Yazalım</title>
+      <link>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</guid>
+      <description>
+
+&lt;h2 id=&#34;herhangi-bir-metin-editörü&#34;&gt;Herhangi Bir Metin Editörü&lt;/h2&gt;
+
+&lt;p&gt;Evvelsi günkü &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
+&lt;code&gt;python program_adi.py&lt;/code&gt; &lt;em&gt;.py&lt;/em&gt; uzantısı bize bu dosyanın Python komut dosyası olduğunu belirtmektedir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;adım-adım-uygulama&#34;&gt;Adım Adım Uygulama&lt;/h2&gt;
+
+&lt;p&gt;Şimdi yukarıda görülen işlemleri adım adım gerçekleştirelim.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Notepad’inizi açın ve aşağıdaki kodları notepad’e &lt;strong&gt;yazın&lt;/strong&gt;. (Lütfen kodları kendiniz klavyeden yazın, kopyala yapıştır yapmayın, ayrıca indentation (tab kullanımına) dikkat edin. &lt;em&gt;#&lt;/em&gt; işaretinden sonrakiler yorumlardır&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:hash&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:hash&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Dosya&lt;/strong&gt; menüsünden *Farklı Kaydet*’ e tıklayıp aşağıda &lt;cite&gt;Tüm Dosyalar( &amp;#042;  .   &amp;#042;  )&lt;/cite&gt; seçeneğini aktif hale getirerek dosyayı onEkle.&lt;strong&gt;py&lt;/strong&gt; isim ve uzantısıyla (dosya uzantısına dikkat!!!) masaüstünüze kaydedin.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Şimdi komut satırı programınızı çalıştırın.(Cmd, PowerShell yada Terminal) Masaüstünüzün bulunduğu klasör olan &lt;strong&gt;desktop&lt;/strong&gt; klasörüne gidin. Windows’ta dizin(klasör) değiştirmek için &lt;code&gt;cd..&lt;/code&gt; / &lt;code&gt;cd klasör_adı&lt;/code&gt; komutlarını verdiğimizi biliyor olmalısınız. Artık dosyamızı &lt;code&gt;python onEkle.py&lt;/code&gt; yazarak çalıştırabiliriz. 45 sonucunu başarıyla aldınız, değil mi? Almadıysanız lütfen hata mesajınızı kontrol edin ve hatanın nedenini tespit etmeye çalışın&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:hata&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:hata&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Kodunuzu Python Tutor websitesindeki &lt;a href=&#34;http://pythontutor.com/visualize.html#mode=edit&#34;&gt;interaktif kod görüntüleyisi&lt;/a&gt;&amp;lsquo;ne yapıştırıp görsel olarak test edebilirsiniz. Bu sitede bir hata alırsanız lütfen yorum satırlarını kaldırın. Payton 2.x versiyonu Türkçe karakterler ile maalesef hala problem yaşıyor.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-     # türkçe karakterler için utf-8 desteği
+def onEkle(sayi):           # onEkle isminde bir prosedur tanımla.
+    sayi = sayi + 10        # 10 fazlasını al ve değişkene ata.
+    return sayi             # Değişkeni döndür.
+print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;programımızın-işlevi&#34;&gt;Programımızın İşlevi&lt;/h2&gt;
+
+&lt;p&gt;Gördüğünüz gibi Payton yazdığımız programı çalıştırarak hesaplamayı yaptı. Programımızda iki bölüm var. Birinci bölüm argüman olarak verilen sayıyı (bu sayı henüz belli olmadığı için &lt;code&gt;sayi&lt;/code&gt; isimli değişkenle gösteriyoruz) 10 ile toplayıp sonucu bize döndüren prosedürümüz. &lt;em&gt;Programa hangi sayıyı verirsek verelim yapacağı iş o sayıyı 10 ile toplamak&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prosedürler&lt;/strong&gt;, Python programının en alt birimidir. Genelde bir program birden fazla prosedürün bir araya getirilmesi ile oluşur. Bu konuya sonra genişçe yine döneceğiz. Şimdilik Paytonda prosedür oluştururken &lt;code&gt;def&lt;/code&gt; (&lt;strong&gt;define&lt;/strong&gt;-okunuşu&amp;rdquo;difayn&amp;rdquo;-ing., Türkçe karşılığı: tanımla) kelimesi ile başlanıldığını bilmeniz yeterli.&lt;/p&gt;
+
+&lt;p&gt;Programın ikinci kısmında yazdığımız prosedürü ekrana getirmek için &lt;code&gt;print&lt;/code&gt; komutunu kullanıyoruz. Burada prosedürümüzün tamamı &lt;code&gt;print&lt;/code&gt; fonksiyonun bir argümanı olarak kullanılıyor. Prosedürümüzün parametresi ise verilen sayı yani &lt;code&gt;35&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Prosedürümüz çalıştığında yapılan işlem &lt;code&gt;35 + 10&lt;/code&gt; oluyor ve sonra bu sayı &lt;code&gt;sayi&lt;/code&gt; değişkenine tekrar atanıyor. Prosedürümüzün sonunda &lt;code&gt;sayi&lt;/code&gt; değişkenimizin değeri &lt;code&gt;45&lt;/code&gt; oluyor. Ve bu değer ekrana &lt;code&gt;print&lt;/code&gt; fonksiyonu sayesinde yazdırılıyor.&lt;/p&gt;
+
+&lt;h2 id=&#34;dikkat-edilecek-hususlar&#34;&gt;Dikkat Edilecek Hususlar&lt;/h2&gt;
+
+&lt;p&gt;Programımız basit olmasına rağmen yine de öğrenecek bir çok şey sunuyor. İsterseniz programdaki &lt;code&gt;sayi&lt;/code&gt; değişkenine farklı bir değer verip bu sayının yine 10 ile toplanacağını teyit edebilirsiniz. Yada toplanacak değeri 10&amp;rsquo;dan farklı bir değer yapıp prosedürümüzün ismini değiştirerek deneyebilirsiniz. (Örneğin eklenecek sayıyı 20 yapıp prosedür ismini &lt;code&gt;yirmiEkle&lt;/code&gt; olarak değiştirin.)&lt;/p&gt;
+
+&lt;p&gt;Ayrıca &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Bir sonraki yazımızda detaylı başka bir Payton programını beraberce yazmak dileğiyle şimdilik sağlıcakla kalın. Yazımı beğendiyseniz lütfen sosyal medyada paylaşın ve/veya sayfa altında yorum yapın.&lt;/p&gt;
+
+&lt;h2 id=&#34;dipnotlar&#34;&gt;DipNotlar&lt;/h2&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:hash&#34;&gt;# Hash (heş) işareti olarak bilinen bu işaret, Python&amp;rsquo;da özel bir yere sahip olup bu işaret sonrası interpreter tarafından dikkate alınmaz, yürütülmez.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:hash&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:hata&#34;&gt;İlk olarak heş işaretinden sonrasını silmeyi deneyin. Zira bu versiyonda halen Türkçe karakter sorunları oluşabilmektedir.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:hata&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:kabuk&#34;&gt;Bu programı kabukta denemek isterseniz komut satırını(PowerShell, Terminal) çalıştırın. &lt;code&gt;python&lt;/code&gt; yazıp &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; işaretini gördükten sonra 1. &lt;code&gt;def onEkle(sayi):&lt;/code&gt; yazın. 2. &lt;code&gt;enter&lt;/code&gt; tuşuna basın. 3. &lt;code&gt;tab&lt;/code&gt; tuşuna basın 4. &lt;code&gt;sayi = sayi + 10&lt;/code&gt; yazın. 5. &lt;code&gt;enter&lt;/code&gt; tuşuna basın. 6. &lt;code&gt;tab&lt;/code&gt; tuşuna basın. 7. &lt;code&gt;return sayi&lt;/code&gt; yazın. 8. &lt;code&gt;enter&lt;/code&gt; tuşuna basın. 9. &lt;code&gt;onEkle(35)&lt;/code&gt; yazarak programı çalıştırın. Gördüğünüz gibi print kullanmaya gerek kalmadan programımızın sonucunu görebiliyoruz. (sonuç: 45)
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:kabuk&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python: Kurucusu - Tarihi - Okunuşu</title>
+      <link>https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/</link>
+      <pubDate>Wed, 03 Aug 2016 00:17:54 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/</guid>
+      <description>
+
+&lt;h2 id=&#34;python-un-ilk-geliştiricisi-ve-kısa-tarihi&#34;&gt;Python&amp;rsquo;un İlk Geliştiricisi ve Kısa Tarihi&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href = &#34;http://www.python.org/&#34; target =&#34;_blank&#34;&gt;Python&lt;/a&gt; programlama dilinin ilk geliştiricisi Hollandalı &lt;a href = &#34;https://en.wikipedia.org/wiki/Guido_van_Rossum&#34; target =&#34;_blank&#34;&gt;Guido van Rossum&lt;/a&gt;’dur. Kendisi Python camiasında “&lt;strong&gt;Ebedi Müşfik Diktatör&lt;/strong&gt;” (&lt;em&gt;Benevolent Dictator For Life-BDFL&lt;/em&gt;) olarak bilinir. Rossum Python hakkında şöyle diyor:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Python’u 1989’da Unix/C hackerlarının hoşuna gidecek ve ABC dilinin izlerini taşıyacak bir hobi projesi olarak tasarladım.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;2000’li yıllardan itibaren internetin hızlı gelişimi ve açık kaynak kodlu yazılımlara yazılımcıların verdiği büyük destekle Python çok geniş bir geliştirici ve kullanıcı tabanına sahip olmuştur.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-isminin-ortaya-çıkışı&#34;&gt;Python İsminin Ortaya Çıkışı&lt;/h2&gt;
+
+&lt;p&gt;İnternette bazı Python sitelerinde piton yılanı simgesi görmüş olabilirsiniz. Sanılanın aksine bu programlama dilinin ismi bir yılan cinsi olan Piton’dan değil, Rossum’un çok sevdiği bir İngiliz radyo tiyatrosu oyunu &lt;a href=&#34;https://en.wikipedia.org/wiki/Monty_Python&#34;&gt;&amp;ldquo;Monty Python’s Flying Circus&amp;rdquo;&lt;/a&gt;&amp;lsquo;dan gelmektedir.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-kelimesinin-muhtelif-okunuşları&#34;&gt;Python Kelimesinin Muhtelif Okunuşları&lt;/h2&gt;
+
+&lt;p&gt;Türkiye’de Python programlama diline orijinal okunuşuna benzer şekilde “Paytın” denildiği gibi belli bir kitle Türkçede kullanılan yılan ismi “Piton”u kullanıyor. Payton kullanımı zaten mevcut. Blogumda Türkçe&amp;rsquo;nin fonetiğine en fazla uyduğunu düşündüğüm “Payton” kullanımını tercih ediyorum.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows&#39;ta Python Kurulumu</title>
+      <link>https://pythonistan.github.io/blog/python-kurulum/</link>
+      <pubDate>Mon, 03 Aug 2015 00:17:50 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/python-kurulum/</guid>
+      <description>
+
+&lt;p&gt;Bir önceki &lt;a href=&#34;https://pythonistan.github.io/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
+
+&lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için komut satırı (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
+
+&lt;p&gt;Ben sitede Payton&amp;rsquo;un 2.x versiyonunu kullanacağım. Zira Payton 3 versiyonunda bariz söz dizimi(syntax) değişiklikleri var, ayrıca bu versiyon henüz tam olarak yaygınlaşmadı. Dolayısıyla 2.x versiyonunu indirmenizi tavsiye ediyorum.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-2-7&#34;&gt;Python 2.7&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Python.org sitesine gidin -&amp;gt; &lt;a target=&#34;_blank&#34; href=&#34;http://www.python.org&#34; class=&#34;btn&#34;&gt;Python Org&lt;/a&gt; ve Downloads kısmına girin. (Foto 1)&lt;/li&gt;
+&lt;li&gt;Python 2.7.x versiyonunu _(yada yeni bir 2.x versiyonu çıktıysa onu) bilgisayarınıza indirin. (Foto 2)&lt;/li&gt;
+&lt;li&gt;İndirdiğiniz dosyayı çift tıklayarak kurmaya başlayın.&lt;/li&gt;
+&lt;li&gt;Kurulumda çeşitli ekranlar gelecek. Bu ekranları &lt;strong&gt;Next&lt;/strong&gt; diyerek geçebilirsiniz. Ancak Python&amp;rsquo;u ortam değişkenlerine kaydedeceğimiz ekranı hızlı geçmeyin, Python&amp;rsquo;u Path(Ortam) değişkenine eklemeyi unutmayın. Sizdeki ekran farklı olabilir, &lt;strong&gt;PATH&lt;/strong&gt; kelimesine dikkat edin.(Foto 3)&lt;/li&gt;
+&lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse komut satırında (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Şimdi artık bilgisayarımızda &lt;strong&gt;Python&lt;/strong&gt;&amp;lsquo;u kullanabiliriz. Bir sonraki blog postumda sizinle beraber komut satırından çok basit bir program yazacağız. O zamana kadar hoşçakalın.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Peki Nedir Python</title>
+      <link>https://pythonistan.github.io/blog/peki-nedir-python/</link>
+      <pubDate>Sun, 02 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/peki-nedir-python/</guid>
+      <description>
+
+&lt;h2 id=&#34;python-hakkında&#34;&gt;Python Hakkında&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt; bir programlama dilidir. Programlama, Bilgisayar Biliminin (&lt;strong&gt;Computer Science&lt;/strong&gt;) temelidir. Programlama dili ise &lt;a href=&#34;https://tr.wikipedia.org/wiki/Programlama_dili&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;&amp;lsquo;ya göre,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;yazılımcının bir algoritmayı ifade etmek amacıyla, bir bilgisayara ne yapmasını istediğini anlatmasının tektipleştirilmiş yoludur.&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;programlama-dili&#34;&gt;Programlama Dili&lt;/h2&gt;
+
+&lt;p&gt;Yani basitçe bilgisayara istediğimizi yaptırmak için ilettiğimiz komutların dilidir diyebiliriz. Yüksek düzeyli bir dil olan Python&amp;rsquo;un komutları İngilizce diline oldukça yakındır. Dilin düzeyi yükseldikçe komutlar doğal dillere (genelde İngilizce) yakın duruma gelmektedir, tersi durumda ise makina diline yakın hale gelmektedir.&lt;/p&gt;
+
+&lt;h2 id=&#34;neden-yeni-bir-dil&#34;&gt;Neden Yeni Bir Dil?&lt;/h2&gt;
+
+&lt;p&gt;Burada aklınıza &amp;ldquo;Bilgisayarla iletişim için madem bir dil kullanıyoruz, o halde neden yeni bir dile gerek var? Türkçe yada İngilizce kullansak olmaz mı?&amp;rdquo; şeklinde bir soru gelebilir. Maalesef bilgisayarlar biz insanlar kadar zeki (!) olmadığı için söylenilen şeyi tamı tamına algılamak ve işleme dökmek zorundadır. Bilgisayar bir makina olduğu için mekanik bir kesinlik gerektirmektedir. Net olmayan (muğlak) ve birden çok anlam içeren kelimelere sahip doğal diller için bu kesinlik mümkün olamamaktadır.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-interpreter-yorumlayıcı&#34;&gt;Python Interpreter(Yorumlayıcı)&lt;/h2&gt;
+
+&lt;p&gt;Python&amp;rsquo;da yazdığımız programlar otomatik olarak bilgisayarda çalışmaz. Bunun için yazdığımız programı bilgisayarın anlayabileceği makina diline çevirmek için Python yorumlayıcısını (interpreter) kullanacağız. Bir sonraki &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum&#34;&gt;makalemizde&lt;/a&gt; Python interpreter&amp;rsquo;ı bilgisayarımıza nasıl kuracağımızı adım adım anlatmaya çalışacağım. Pek tavsiye etmiyorum ancak Payton&amp;rsquo;u bilgisayarınıza kurmadan da kullanabilirsiniz. Yazacağımız programları çalıştırabileceğiniz online Python yorumlayıcılarının web adreslerini aşağıda veriyorum:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://repl.it/languages/python&#34; target=&#34;_blank&#34;&gt;repl.it sitesi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://trinket.io/&#34; target=&#34;_blank&#34;&gt;trinket.io sitesi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tutorialspoint.com/execute_python_online.php&#34; target=&#34;_blank&#34;&gt;tutorialspoint sitesi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pythontutor.com/visualize.html#mode=edit&#34; target=&#34;_blank&#34;&gt;pythontutor sitesi&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;cloud-ides-online-uygulama-geliştirici-ortamları&#34;&gt;Cloud IDEs (Online Uygulama Geliştirici Ortamları)&lt;/h2&gt;
+
+&lt;p&gt;Bu üsttekilerin dışında tam kapasiteli ve çok daha profesyonel olarak yazılım geliştirmeyi sağlayan online servisler var.&lt;/p&gt;
+
+&lt;p&gt;Adları Cloud IDE (Bulut Uygulama Geliştirici Ortamı) olan bu servisler bulut ortamında online olarak kod yazmaya ve çalıştırıp sonuçları görmeye yarıyor. (deploy and run) Örnek olarak aşağıdaki servislerinden birini ücretsiz olarak deneyebilirsiniz:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://codio.com/&#34; target=&#34;_blank&#34;&gt;Codio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nitrous.io/&#34; target=&#34;_blank&#34;&gt;Nitrous&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://koding.com/&#34; target=&#34;_blank&#34;&gt;Koding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://codiad.com/&#34; target=&#34;_blank&#34;&gt;Codiad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://c9.io/&#34; target=&#34;_blank&#34;&gt;Cloud9&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(Not: Üstteki yorumlayıcıları ve IDE&amp;rsquo;leri kullanırken internet bağlantınız aktif olmalıdır)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pythonista on Pythonistan</title>
+    <link>https://pythonistan.github.io/tags/pythonista/</link>
+    <description>Recent content in Pythonista on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Sat, 13 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="https://pythonistan.github.io/tags/pythonista/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python Felsefesi (Zen of Python)</title>
+      <link>https://pythonistan.github.io/blog/python-felsefesi/</link>
+      <pubDate>Sat, 13 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/python-felsefesi/</guid>
+      <description>
+
+&lt;p&gt;Bugün teknik konulara biraz ara verip sizlere Python&amp;rsquo;un kullanımı ve kodlaması ile ilgili genel prensiplerden bahsetmek istiyorum.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-felsefesi-the-zen-of-python&#34;&gt;Python Felsefesi (The Zen of Python)&lt;/h2&gt;
+
+&lt;p&gt;Tercümesini vereceğim aforizmalar &lt;a href=&#34;https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/&#34;&gt;BDFL&lt;/a&gt;&amp;lsquo;nin Python&amp;rsquo;u geliştirirken dikkate aldığı ana prensipleri özetlemek adına Python camiasına uzun yıllar emek vermiş bir Pythonista (Paytoncu) olan &lt;a target=&#34;blank&#34; href=&#34;http://stackoverflow.com/users/2705542/tim-peters&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Tim Peters&lt;/em&gt;&lt;/a&gt; tarafından ortaya konmuş.&lt;/p&gt;
+
+&lt;p&gt;Toplam sayısı 20 olan aforizmaların halihazırda &lt;em&gt;19&lt;/em&gt;&amp;lsquo;u bilinmekte.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-geliştirme-prensipleri-yada-aforizmalar&#34;&gt;Python Geliştirme Prensipleri yada Aforizmalar&lt;/h2&gt;
+
+&lt;p&gt;Buradaki prensip yada aforizmalara &lt;strong&gt;&amp;ldquo;Zen of Python&amp;rdquo;&lt;/strong&gt; deniyor. En doğru tercüme &lt;strong&gt;&amp;ldquo;Python Felsefesi&amp;rdquo;&lt;/strong&gt; olsa gerek.&lt;/p&gt;
+
+&lt;p&gt;Daha fazla vakit kaybetmeden bu &lt;strong&gt;19&lt;/strong&gt; maddeyi sıralayalım:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Güzel olan çirkinden evladır. (Beautiful is better than ugly.)&lt;/li&gt;
+&lt;li&gt;Aşikar olan üstü kapalıdan evladır. (Explicit is better than implicit.)&lt;/li&gt;
+&lt;li&gt;Basit olan karmaşıktan evladır. (Simple is better than complex.)&lt;/li&gt;
+&lt;li&gt;Karmaşık olan çapraşıktan evladır. (Complex is better than complicated.)&lt;/li&gt;
+&lt;li&gt;Düz olan iç içeden evladır. (Flat is better than nested.)&lt;/li&gt;
+&lt;li&gt;Seyrek olan yoğundan evladır. (Sparse is better than dense.)&lt;/li&gt;
+&lt;li&gt;Okunabilirlik önemlidir. (Readability counts.)&lt;/li&gt;
+&lt;li&gt;Özel durumlar kuralları çiğnemeyi gerektirecek kadar özel olamazlar. (Special cases aren&amp;rsquo;t special enough to break the rules.)&lt;/li&gt;
+&lt;li&gt;Pratiklik saflığa galip gelse bile&amp;hellip;(Although practicality beats purity.)&lt;/li&gt;
+&lt;li&gt;Hatalar sessizce geçiştirilemezler. (Errors should never pass silently.)&lt;/li&gt;
+&lt;li&gt;Açık olarak üstlerinden gelinene kadar&amp;hellip; (Unless explicitly silenced.)&lt;/li&gt;
+&lt;li&gt;Muğlaklık karşısında ne olabileceğini kestirmeyi bırakın. (In the face of ambiguity, refuse the temptation to guess.)&lt;/li&gt;
+&lt;li&gt;Bir şeyi yapmanın apaçık bir, tercihen sadece tek bir yolu olmalı. (There should be one&amp;ndash; and preferably only one &amp;ndash;obvious way to do it.)&lt;/li&gt;
+&lt;li&gt;Tabi Hollandalı değilseniz o yol ilk başta size hemen açılmayabilir. (Although that way may not be obvious at first unless you&amp;rsquo;re Dutch.)&lt;/li&gt;
+&lt;li&gt;Şimdi olan hiç olmayacakdan evladır. (Now is better than never.)&lt;/li&gt;
+&lt;li&gt;Hiç olmayacak olan hiç gelmeyecek bir &amp;ldquo;doğru zaman&amp;rdquo;dan evladır. (Although never is often better than &amp;ldquo;right&amp;rdquo; now.)&lt;/li&gt;
+&lt;li&gt;Uygulamanın açıklaması zorsa, kötü bir fikirdir. (If the implementation is hard to explain, it&amp;rsquo;s a bad idea.)&lt;/li&gt;
+&lt;li&gt;Uygulamanın açıklaması kolaysa, iyi bir fikir olabilir. (If the implementation is easy to explain, it may be a good idea.)&lt;/li&gt;
+&lt;li&gt;İsim Uzayları müthiş bir fikir, daha fazla kullanalım! (Namespaces are one honking great idea &amp;ndash; let&amp;rsquo;s do more of those!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;python-felsefesi-açıklamaları&#34;&gt;Python Felsefesi Açıklamaları&lt;/h2&gt;
+
+&lt;p&gt;19 aforizmanın her birini genişçe açıklamak ve örnek vermek mümkün. İleride bunu yapmayı planlıyorum. Şimdilik açıklaması en kolay olan (5.) beşinci ile iktifa edelim:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Okunabilirlik önemlidir. (Readability counts.)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Örnek olarak aşağıda artık klasikleşmiş bir kod öbeği olan &amp;ldquo;Hello World!&amp;rdquo;, &lt;strong&gt;Python&lt;/strong&gt; ve &lt;strong&gt;C&lt;/strong&gt; dilleri ile ayrı ayrı ekrana yazdırılıyor. Farkı sanırım farkettiniz.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;// c ile merhaba dünya kodumuz
+
+#include &amp;lt;stdio.h&amp;gt; 
+int main(void) 
+{ 
+    printf(&amp;quot;Merhaba, Dunya!\n&amp;quot;); 
+    return(0); 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Python ile merhaba dünya kodumuz
+
+print &amp;quot;Merhaba Dunya!&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;sürpriz-yumurta&#34;&gt;Sürpriz Yumurta&lt;/h2&gt;
+
+&lt;p&gt;Tercümelerini (yaklaşık anlamları diyelim) verdiğimiz yukarıdaki &lt;em&gt;19&lt;/em&gt; Python prensibine &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;yorumlayıdan (interpreter)&lt;/a&gt;  ulaşmanız mümkün.&lt;/p&gt;
+
+&lt;p&gt;Python &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;Kabukta (Shell)&lt;/a&gt; bu aforizmalara ulaşmak için yapmanız gereken tek şey: &lt;code&gt;import this&lt;/code&gt; komutunu vermek. ve tata&amp;hellip; karşınızda..&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/zen-of-python/python_aforizmalar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Aforizmalarını Shell&#39;de Görelim&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/zen-of-python/python_aforizmalar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Bugünlük bu kadar.&lt;/p&gt;
+
+&lt;p&gt;Blogumda yer almasını en çok istediğiniz konuları lütfen bana yazın. Elimden geldiğince isteklerinize yer vermeye çalışacağım.&lt;/p&gt;
+
+&lt;p&gt;Bu yazımı beğendiyseniz paylaşmayı unutmayın. Sağlıcakla!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

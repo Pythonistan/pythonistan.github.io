@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kurulum on Pythonistan</title>
+    <link>https://pythonistan.github.io/tags/kurulum/</link>
+    <description>Recent content in Kurulum on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Mon, 03 Aug 2015 00:17:50 -0400</lastBuildDate>
+    <atom:link href="https://pythonistan.github.io/tags/kurulum/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Windows&#39;ta Python Kurulumu</title>
+      <link>https://pythonistan.github.io/blog/python-kurulum/</link>
+      <pubDate>Mon, 03 Aug 2015 00:17:50 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/python-kurulum/</guid>
+      <description>
+
+&lt;p&gt;Bir önceki &lt;a href=&#34;https://pythonistan.github.io/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
+
+&lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için komut satırı (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
+
+&lt;p&gt;Ben sitede Payton&amp;rsquo;un 2.x versiyonunu kullanacağım. Zira Payton 3 versiyonunda bariz söz dizimi(syntax) değişiklikleri var, ayrıca bu versiyon henüz tam olarak yaygınlaşmadı. Dolayısıyla 2.x versiyonunu indirmenizi tavsiye ediyorum.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-2-7&#34;&gt;Python 2.7&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Python.org sitesine gidin -&amp;gt; &lt;a target=&#34;_blank&#34; href=&#34;http://www.python.org&#34; class=&#34;btn&#34;&gt;Python Org&lt;/a&gt; ve Downloads kısmına girin. (Foto 1)&lt;/li&gt;
+&lt;li&gt;Python 2.7.x versiyonunu _(yada yeni bir 2.x versiyonu çıktıysa onu) bilgisayarınıza indirin. (Foto 2)&lt;/li&gt;
+&lt;li&gt;İndirdiğiniz dosyayı çift tıklayarak kurmaya başlayın.&lt;/li&gt;
+&lt;li&gt;Kurulumda çeşitli ekranlar gelecek. Bu ekranları &lt;strong&gt;Next&lt;/strong&gt; diyerek geçebilirsiniz. Ancak Python&amp;rsquo;u ortam değişkenlerine kaydedeceğimiz ekranı hızlı geçmeyin, Python&amp;rsquo;u Path(Ortam) değişkenine eklemeyi unutmayın. Sizdeki ekran farklı olabilir, &lt;strong&gt;PATH&lt;/strong&gt; kelimesine dikkat edin.(Foto 3)&lt;/li&gt;
+&lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse komut satırında (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Şimdi artık bilgisayarımızda &lt;strong&gt;Python&lt;/strong&gt;&amp;lsquo;u kullanabiliriz. Bir sonraki blog postumda sizinle beraber komut satırından çok basit bir program yazacağız. O zamana kadar hoşçakalın.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

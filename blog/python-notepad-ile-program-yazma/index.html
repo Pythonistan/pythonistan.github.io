@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Notepad Kullanarak Python Programı Yazalım // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content=".py python dosya uzantısıdır">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="og:title" content="Notepad Kullanarak Python Programı Yazalım" />
+<meta property="og:description" content=".py python dosya uzantısıdır" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://pythonistan.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pythonistan.github.io//css/lightbox.css">
+  <script src="https://pythonistan.github.io//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://pythonistan.github.io/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="http://www.instagram.com/pyhonistan" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.youtube.com/pythonistan" target="_blank"><i class='fa fa-youtube'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/python-notepad/python_notepad.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#herhangi-bir-metin-editörü">Herhangi Bir Metin Editörü</a></li>
+<li><a href="#adım-adım-uygulama">Adım Adım Uygulama</a></li>
+<li><a href="#programımızın-işlevi">Programımızın İşlevi</a></li>
+<li><a href="#dikkat-edilecek-hususlar">Dikkat Edilecek Hususlar</a></li>
+<li><a href="#dipnotlar">DipNotlar</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/python-notepad-ile-program-yazma/">Notepad Kullanarak Python Programı Yazalım</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>5</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-software" href="https://pythonistan.github.io//categories/software">software</a>
+				
+					<a class="post-category post-category-programlama-dili" href="https://pythonistan.github.io//categories/programlama-dili">programlama dili</a>
+				
+					<a class="post-category post-category-python" href="https://pythonistan.github.io//categories/python">python</a>
+				
+					<a class="post-category post-category-diller" href="https://pythonistan.github.io//categories/diller">diller</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fpython-notepad-ile-program-yazma%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpython-notepad-ile-program-yazma%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Notepad%20Kullanarak%20Python%20Program%c4%b1%20Yazal%c4%b1m&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpython-notepad-ile-program-yazma%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<h2 id="herhangi-bir-metin-editörü">Herhangi Bir Metin Editörü</h2>
+
+<p>Evvelsi günkü <a href="/blog/python-kabukta-ilk-program">blog yazımda</a> bugün için <a target="blank" href="https://www.sublimetext.com/">Sublime Text</a> (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: <strong>Aslında Sablaym&rsquo;a hiç ihtiyacınız yok!</strong> :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
+<code>python program_adi.py</code> <em>.py</em> uzantısı bize bu dosyanın Python komut dosyası olduğunu belirtmektedir.</p>
+
+<p><strong>Önemli:</strong> Programın çalışabilmesi için; Python sisteminizde <a href="/blog/python-kurulum/">kurulu olmalı</a> ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım</p>
+
+<p><a href="/img/blog/python-notepad/1_notepad_kod.png" title="" data-lightbox="set1" data-title="Notepad ile Program Yazma"><img src="/img/blog/python-notepad/1_notepad_kod_thumb.png" alt=""></a>
+<a href="/img/blog/python-notepad/2_notepad_kayit.png" title="" data-lightbox="set1" data-title="Notepad ile Programı Masaüstüne Kaydetme"><img src="/img/blog/python-notepad/2_notepad_kayit_thumb.png" alt=""></a>
+<a href="/img/blog/python-notepad/3_komut_satiri_run.png" title="" data-lightbox="set1" data-title="Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma"><img src="/img/blog/python-notepad/3_komut_satiri_run_thumb.png" alt=""></a>
+<a href="/img/blog/python-notepad/4_python_tutor.png" title="" data-lightbox="set1" data-title="Python Tutorla Programımızı Test Edelim"><img src="/img/blog/python-notepad/4_python_tutor_thumb.png" alt=""></a></p>
+
+<h2 id="adım-adım-uygulama">Adım Adım Uygulama</h2>
+
+<p>Şimdi yukarıda görülen işlemleri adım adım gerçekleştirelim.</p>
+
+<ol>
+<li><p>Notepad’inizi açın ve aşağıdaki kodları notepad’e <strong>yazın</strong>. (Lütfen kodları kendiniz klavyeden yazın, kopyala yapıştır yapmayın, ayrıca indentation (tab kullanımına) dikkat edin. <em>#</em> işaretinden sonrakiler yorumlardır<sup class="footnote-ref" id="fnref:hash"><a rel="footnote" href="#fn:hash">1</a></sup>.</p></li>
+
+<li><p><strong>Dosya</strong> menüsünden *Farklı Kaydet*’ e tıklayıp aşağıda <cite>Tüm Dosyalar( &#042;  .   &#042;  )</cite> seçeneğini aktif hale getirerek dosyayı onEkle.<strong>py</strong> isim ve uzantısıyla (dosya uzantısına dikkat!!!) masaüstünüze kaydedin.</p></li>
+
+<li><p>Şimdi komut satırı programınızı çalıştırın.(Cmd, PowerShell yada Terminal) Masaüstünüzün bulunduğu klasör olan <strong>desktop</strong> klasörüne gidin. Windows’ta dizin(klasör) değiştirmek için <code>cd..</code> / <code>cd klasör_adı</code> komutlarını verdiğimizi biliyor olmalısınız. Artık dosyamızı <code>python onEkle.py</code> yazarak çalıştırabiliriz. 45 sonucunu başarıyla aldınız, değil mi? Almadıysanız lütfen hata mesajınızı kontrol edin ve hatanın nedenini tespit etmeye çalışın<sup class="footnote-ref" id="fnref:hata"><a rel="footnote" href="#fn:hata">2</a></sup>.</p></li>
+
+<li><p>Kodunuzu Python Tutor websitesindeki <a href="http://pythontutor.com/visualize.html#mode=edit">interaktif kod görüntüleyisi</a>&lsquo;ne yapıştırıp görsel olarak test edebilirsiniz. Bu sitede bir hata alırsanız lütfen yorum satırlarını kaldırın. Payton 2.x versiyonu Türkçe karakterler ile maalesef hala problem yaşıyor.</p></li>
+</ol>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*-     # türkçe karakterler için utf-8 desteği
+def onEkle(sayi):           # onEkle isminde bir prosedur tanımla.
+    sayi = sayi + 10        # 10 fazlasını al ve değişkene ata.
+    return sayi             # Değişkeni döndür.
+print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır.
+</code></pre>
+
+<h2 id="programımızın-işlevi">Programımızın İşlevi</h2>
+
+<p>Gördüğünüz gibi Payton yazdığımız programı çalıştırarak hesaplamayı yaptı. Programımızda iki bölüm var. Birinci bölüm argüman olarak verilen sayıyı (bu sayı henüz belli olmadığı için <code>sayi</code> isimli değişkenle gösteriyoruz) 10 ile toplayıp sonucu bize döndüren prosedürümüz. <em>Programa hangi sayıyı verirsek verelim yapacağı iş o sayıyı 10 ile toplamak</em>.</p>
+
+<p><strong>Prosedürler</strong>, Python programının en alt birimidir. Genelde bir program birden fazla prosedürün bir araya getirilmesi ile oluşur. Bu konuya sonra genişçe yine döneceğiz. Şimdilik Paytonda prosedür oluştururken <code>def</code> (<strong>define</strong>-okunuşu&rdquo;difayn&rdquo;-ing., Türkçe karşılığı: tanımla) kelimesi ile başlanıldığını bilmeniz yeterli.</p>
+
+<p>Programın ikinci kısmında yazdığımız prosedürü ekrana getirmek için <code>print</code> komutunu kullanıyoruz. Burada prosedürümüzün tamamı <code>print</code> fonksiyonun bir argümanı olarak kullanılıyor. Prosedürümüzün parametresi ise verilen sayı yani <code>35</code>.</p>
+
+<p>Prosedürümüz çalıştığında yapılan işlem <code>35 + 10</code> oluyor ve sonra bu sayı <code>sayi</code> değişkenine tekrar atanıyor. Prosedürümüzün sonunda <code>sayi</code> değişkenimizin değeri <code>45</code> oluyor. Ve bu değer ekrana <code>print</code> fonksiyonu sayesinde yazdırılıyor.</p>
+
+<h2 id="dikkat-edilecek-hususlar">Dikkat Edilecek Hususlar</h2>
+
+<p>Programımız basit olmasına rağmen yine de öğrenecek bir çok şey sunuyor. İsterseniz programdaki <code>sayi</code> değişkenine farklı bir değer verip bu sayının yine 10 ile toplanacağını teyit edebilirsiniz. Yada toplanacak değeri 10&rsquo;dan farklı bir değer yapıp prosedürümüzün ismini değiştirerek deneyebilirsiniz. (Örneğin eklenecek sayıyı 20 yapıp prosedür ismini <code>yirmiEkle</code> olarak değiştirin.)</p>
+
+<p>Ayrıca <a href="/blog/python-kabukta-ilk-program/">bir önceki blog yazımda</a> değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak <code>print</code> fonksiyonu ile gerçekleştiğine lütfen dikkat edin.<sup class="footnote-ref" id="fnref:kabuk"><a rel="footnote" href="#fn:kabuk">3</a></sup> Yukarıda Notepad&rsquo;e yazdığımız kodda <code>print</code> olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda <code>onEkle</code>prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.</p>
+
+<hr>
+
+<p>Bir sonraki yazımızda detaylı başka bir Payton programını beraberce yazmak dileğiyle şimdilik sağlıcakla kalın. Yazımı beğendiyseniz lütfen sosyal medyada paylaşın ve/veya sayfa altında yorum yapın.</p>
+
+<h2 id="dipnotlar">DipNotlar</h2>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:hash"># Hash (heş) işareti olarak bilinen bu işaret, Python&rsquo;da özel bir yere sahip olup bu işaret sonrası interpreter tarafından dikkate alınmaz, yürütülmez.
+ <a class="footnote-return" href="#fnref:hash"><sup>[return]</sup></a></li>
+<li id="fn:hata">İlk olarak heş işaretinden sonrasını silmeyi deneyin. Zira bu versiyonda halen Türkçe karakter sorunları oluşabilmektedir.
+ <a class="footnote-return" href="#fnref:hata"><sup>[return]</sup></a></li>
+<li id="fn:kabuk">Bu programı kabukta denemek isterseniz komut satırını(PowerShell, Terminal) çalıştırın. <code>python</code> yazıp <code>&gt;&gt;&gt;</code> işaretini gördükten sonra 1. <code>def onEkle(sayi):</code> yazın. 2. <code>enter</code> tuşuna basın. 3. <code>tab</code> tuşuna basın 4. <code>sayi = sayi + 10</code> yazın. 5. <code>enter</code> tuşuna basın. 6. <code>tab</code> tuşuna basın. 7. <code>return sayi</code> yazın. 8. <code>enter</code> tuşuna basın. 9. <code>onEkle(35)</code> yazarak programı çalıştırın. Gördüğünüz gibi print kullanmaya gerek kalmadan programımızın sonucunu görebiliyoruz. (sonuç: 45)
+ <a class="footnote-return" href="#fnref:kabuk"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fpython-notepad-ile-program-yazma%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpython-notepad-ile-program-yazma%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Notepad%20Kullanarak%20Python%20Program%c4%b1%20Yazal%c4%b1m&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpython-notepad-ile-program-yazma%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-notepad" href="https://pythonistan.github.io//tags/notepad">notepad</a>,
+	                
+	                <a class="post-tag post-tag-python" href="https://pythonistan.github.io//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-kodlama" href="https://pythonistan.github.io//tags/kodlama">kodlama</a>,
+	                
+	                <a class="post-tag post-tag-programlama" href="https://pythonistan.github.io//tags/programlama">programlama</a>,
+	                
+	                <a class="post-tag post-tag-prosed%C3%BCr" href="https://pythonistan.github.io//tags/prosed%C3%BCr">prosedür</a>,
+	                
+	                <a class="post-tag post-tag-def" href="https://pythonistan.github.io//tags/def">def</a>,
+	                
+	                <a class="post-tag post-tag-py-uzant%C4%B1s%C4%B1" href="https://pythonistan.github.io//tags/py-uzant%C4%B1s%C4%B1">py uzantısı</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/pythonda-stringleri-ogreniyoruz-1/">Python&#39;da Stringleri Öğreniyoruz - 1</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/python-kabukta-ilk-program/">Python Kabukta (Shell) İlk Programımız</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'https:\/\/pythonistan.github.io\/blog\/python-notepad-ile-program-yazma\/';
+    var disqus_title = 'Notepad Kullanarak Python Programı Yazalım';
+    var disqus_url = 'https:\/\/pythonistan.github.io\/blog\/python-notepad-ile-program-yazma\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

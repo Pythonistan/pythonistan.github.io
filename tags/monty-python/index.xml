@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monty Python on Pythonistan</title>
+    <link>https://pythonistan.github.io/tags/monty-python/</link>
+    <description>Recent content in Monty Python on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Wed, 03 Aug 2016 00:17:54 -0400</lastBuildDate>
+    <atom:link href="https://pythonistan.github.io/tags/monty-python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python: Kurucusu - Tarihi - Okunuşu</title>
+      <link>https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/</link>
+      <pubDate>Wed, 03 Aug 2016 00:17:54 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/</guid>
+      <description>
+
+&lt;h2 id=&#34;python-un-ilk-geliştiricisi-ve-kısa-tarihi&#34;&gt;Python&amp;rsquo;un İlk Geliştiricisi ve Kısa Tarihi&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href = &#34;http://www.python.org/&#34; target =&#34;_blank&#34;&gt;Python&lt;/a&gt; programlama dilinin ilk geliştiricisi Hollandalı &lt;a href = &#34;https://en.wikipedia.org/wiki/Guido_van_Rossum&#34; target =&#34;_blank&#34;&gt;Guido van Rossum&lt;/a&gt;’dur. Kendisi Python camiasında “&lt;strong&gt;Ebedi Müşfik Diktatör&lt;/strong&gt;” (&lt;em&gt;Benevolent Dictator For Life-BDFL&lt;/em&gt;) olarak bilinir. Rossum Python hakkında şöyle diyor:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Python’u 1989’da Unix/C hackerlarının hoşuna gidecek ve ABC dilinin izlerini taşıyacak bir hobi projesi olarak tasarladım.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;2000’li yıllardan itibaren internetin hızlı gelişimi ve açık kaynak kodlu yazılımlara yazılımcıların verdiği büyük destekle Python çok geniş bir geliştirici ve kullanıcı tabanına sahip olmuştur.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-isminin-ortaya-çıkışı&#34;&gt;Python İsminin Ortaya Çıkışı&lt;/h2&gt;
+
+&lt;p&gt;İnternette bazı Python sitelerinde piton yılanı simgesi görmüş olabilirsiniz. Sanılanın aksine bu programlama dilinin ismi bir yılan cinsi olan Piton’dan değil, Rossum’un çok sevdiği bir İngiliz radyo tiyatrosu oyunu &lt;a href=&#34;https://en.wikipedia.org/wiki/Monty_Python&#34;&gt;&amp;ldquo;Monty Python’s Flying Circus&amp;rdquo;&lt;/a&gt;&amp;lsquo;dan gelmektedir.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-kelimesinin-muhtelif-okunuşları&#34;&gt;Python Kelimesinin Muhtelif Okunuşları&lt;/h2&gt;
+
+&lt;p&gt;Türkiye’de Python programlama diline orijinal okunuşuna benzer şekilde “Paytın” denildiği gibi belli bir kitle Türkçede kullanılan yılan ismi “Piton”u kullanıyor. Payton kullanımı zaten mevcut. Blogumda Türkçe&amp;rsquo;nin fonetiğine en fazla uyduğunu düşündüğüm “Payton” kullanımını tercih ediyorum.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

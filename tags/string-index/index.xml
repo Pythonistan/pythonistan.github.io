@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>String Index on Pythonistan</title>
+    <link>https://pythonistan.github.io/tags/string-index/</link>
+    <description>Recent content in String Index on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Thu, 11 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="https://pythonistan.github.io/tags/string-index/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bir Kere Daha Karakter Dizileri</title>
+      <link>https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/</link>
+      <pubDate>Thu, 11 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Değişkenler&lt;/em&gt; konusuna çoktan girmemiz gerekirdi lakin &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1&#34;&gt;karakter dizileri&lt;/a&gt; gerçekten önemli bir konu olduğu için son bir kez daha bu konuyu işlemeye karar verdim.&lt;/p&gt;
+
+&lt;p&gt;Ettekraru Ahsen Velev Kane Yüzseksen demişler.&lt;/p&gt;
+
+&lt;h2 id=&#34;karakter-dizileri&#34;&gt;Karakter Dizileri&lt;/h2&gt;
+
+&lt;h3 id=&#34;karakter-dizilerinden-alt-dizi-seçmek&#34;&gt;Karakter Dizilerinden Alt Dizi Seçmek&lt;/h3&gt;
+
+&lt;p&gt;Daha önce &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; yazımda değindiğim karakter dizilerinden alt dizi seçmek (&lt;strong&gt;substring extracting&lt;/strong&gt;) mevzuuna bugün daha yakından bakalım.&lt;/p&gt;
+
+&lt;h3 id=&#34;karakter-dizi-sırası-string-index&#34;&gt;Karakter Dizi Sırası (String Index)&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; ve &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;&lt;em&gt;Stringler 2. Bölüm&lt;/em&gt;&lt;/a&gt; yazılarımı okuduysanız karakter dizileri sırası hakkında belli bir fikir elde etmişsinizdir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hatırlayalım&lt;/strong&gt;: &lt;code&gt;kelime&lt;/code&gt; değişkeni ile gösterilen bir karakter dizimiz olsun. &lt;code&gt;kelime[ i : j ]&lt;/code&gt; şeklinde bir ifade, &lt;code&gt;i&lt;/code&gt;&amp;lsquo;nin dahil, &lt;code&gt;j&lt;/code&gt;&amp;lsquo;nin hariç olduğu kelime dizisinden bir parçayı (&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-find-metodu/#fn:dib&#34;&gt;d.b.i.&lt;/a&gt; alt diziyi) gösterir.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;i = bis: baş indeks sırasını gösteren sayısal değer&lt;/p&gt;
+
+&lt;p&gt;j = sis: son indeks sırasını gösteren sayısal değer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;cite&gt;bis&lt;/cite&gt; ve/veya &lt;cite&gt;sis&lt;/cite&gt; değerleri verilmezse, varsayılan olarak &lt;em&gt;sonlu değerler (end values)&lt;/em&gt; kabul edilir. Yani &lt;code&gt;kelime[:]&lt;/code&gt; ifadesi &lt;code&gt;kelime&lt;/code&gt;&amp;lsquo;nin kendisine eşittir. Test edelim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+kelime = &amp;quot;Panorama&amp;quot;
+print kelime[:] == kelime # eşit mi  -&amp;gt; True, yani eşit
+print &amp;quot;Panorama&amp;quot;[:] == &amp;quot;Panorama&amp;quot; # değişken kullanmadan yapabilirsiniz.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;karakter-dizi-sırasının-ekstra-argümanı-adım&#34;&gt;Karakter Dizi Sırasının Ekstra Argümanı: Adım&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/#gelelim-orjinal-kodlara&#34;&gt;Palindrom programımızı yazarken&lt;/a&gt; dizi sırasını gösteren söz diziminin(syntax) üçüncü bir argüman aldığını görmüştük.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;s[::-1] -&amp;gt; -1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;cite&gt;Adım değeri (ad)&lt;/cite&gt;; &lt;cite&gt;bis&lt;/cite&gt; ve &lt;cite&gt;sis&amp;rsquo;e&lt;/cite&gt; ek olarak dizi sırasının adımını ve yönünü interpreter&amp;rsquo;a söyleyebileceğimiz bir argümandır.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;kelime[ i : j : k]&lt;/code&gt; ifadesinde &lt;code&gt;k&lt;/code&gt; adım değerimizi ifade eder. Yani &lt;code&gt;kelime&lt;/code&gt;&amp;lsquo;nin &lt;code&gt;i&lt;/code&gt;&amp;lsquo;den(dahil), &lt;code&gt;j&lt;/code&gt;&amp;lsquo;ye kadar(hariç) olan kısmını &lt;code&gt;k&lt;/code&gt; adımla seçip alarak yeni bir alt karakter dizisi (substring) oluşturabiliriz.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;k = ad: index sırasının yönünü ve adım sayısını gösteren sayısal değer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Başka bir deyişle &lt;code&gt;kelime&lt;/code&gt; dizisi; &lt;code&gt;i&lt;/code&gt; den başlayıp(dahil), &lt;code&gt;i+k&lt;/code&gt;, &lt;code&gt;i+2k&lt;/code&gt;, &lt;code&gt;i+3k&lt;/code&gt; v.s. &lt;code&gt;j&lt;/code&gt;&amp;lsquo;ye kadar (j dahil edilmeyecek) değerler alınarak yeni bir alt dizi oluşturacaktır.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;k&lt;/code&gt; &lt;cite&gt;adım değeri(ad)&lt;/cite&gt; verilmezse varsayılan değer &lt;code&gt;1&lt;/code&gt; olarak kabul edilir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Örnek:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;|P   |  a  |  n  |  o  |  r  |  a  |  m  |  a  |    -&amp;gt; karakter dizimiz
+|0   |  1  |  2  |  3  |  4  |  5  |  6  |  7  | 8  |   -&amp;gt; pozitif index değerleri
+|-8  | -7  | -6  | -5  | -4  | -3  | -2  | -1  |    |   -&amp;gt; negatif index değerleri
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Şimdi &lt;cite&gt;adım değeri(ad)&lt;/cite&gt; argümanını da kullanarak örnek karakter dizimizden bazı alt diziler(substring) elde edelim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+kelime = &amp;quot;Panorama&amp;quot;
+
+print kelime[0:8:1]   # varsayılan değerleri kullan     -&amp;gt; &amp;quot;Panorama&amp;quot; 
+print kelime[::]      # üsttekiyle aynı                 -&amp;gt; &amp;quot;Panorama&amp;quot; 
+print kelime[::-1]    # varsayılan değer ancak tersten  -&amp;gt; &amp;quot;amaronaP&amp;quot;
+print kelime[:-2:-1]  # son karakteri al tersten        -&amp;gt; &amp;quot;a&amp;quot;
+print kelime[:-3:-1]  # son iki karakteri al tersten    -&amp;gt; &amp;quot;am&amp;quot;
+print kelime[:-4:-1]  # son üç karakteri al tersten     -&amp;gt; &amp;quot;ama&amp;quot;
+print kelime[::-2]    # her iki karakteri al tersten    -&amp;gt; &amp;quot;aaoa&amp;quot;
+print kelime[5:1:-2]  # 5 ile 1 arasında iki iki al tst -&amp;gt; &amp;quot;ao&amp;quot;
+print kelime[5:0:-2]  # 5 ile 0 arasında iki iki al tst -&amp;gt; &amp;quot;aoa&amp;quot;
+print kelime[2:38:1]  # 2 ile 38 arasında substring al  -&amp;gt; &amp;quot;norama&amp;quot;
+print kelime[7:-1:-2] # 7 ile -1 arasında iki iki al t. -&amp;gt; &amp;quot;&amp;quot; boş karakter
+print kelime[2:8:-2]  # 2 ile 8 arasında iki iki al t. -&amp;gt; &amp;quot;&amp;quot; boş karakter
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;cite&gt;bis&lt;/cite&gt; ve/veya &lt;cite&gt;sis&lt;/cite&gt; değerleri verilmemişse varsayılanın &lt;em&gt;sonlu değerler&lt;/em&gt; olduğunu yukarıda belirtmiştik(end values). Örneklerimizde bu durumu tekrar görüyoruz.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;a href=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34; alt=&#34;Python&#39;da Karakter Dizilerinin Sırası ve Yönü&#34;&gt;&lt;/a&gt;
+    &lt;figcaption&gt;Python&#39;da Karakter Dizilerinin Sırası ve Yönü (String Index and Step Argument) &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;boş-karakter&#34;&gt;Boş Karakter&lt;/h2&gt;
+
+&lt;p&gt;Sondan bir önceki kod satırımıza dikkat edin lütfen. &lt;code&gt;kelime[7:-1:-2]&lt;/code&gt; ifadesinde &lt;code&gt;7.&lt;/code&gt; ve &lt;code&gt;-1.&lt;/code&gt; indexler eşittir ve dolayısıyla alınacak bir karakter yoktur (&lt;a href=&#34;{{ site.baseurl }}/blog/pythonda-find-metodu/#fn:dib&#34;&gt;d.b.i.&lt;/a&gt; &amp;lsquo;0&amp;rsquo; karakter vardır), elde edeceğimiz sadece boş karakterdir. &lt;code&gt;&#39;&#39;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Sonuncu satırdaki &lt;code&gt;kelime[2:8:-2]&lt;/code&gt; ifadesinde ise &lt;code&gt;8.&lt;/code&gt; sıra &lt;code&gt;2.&lt;/code&gt; sıranın sağında bulunduğundan ve sayma adımı &lt;code&gt;-2&lt;/code&gt; değeri ile negatif bir değer olduğundan (sayma yönü yanlış) sonuç yine boş karakterdir. &lt;code&gt;&#39;&#39;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Yine, karakter dizisi sırasını gösterdiğimiz üstteki tablomuzda pozitif index değeri olarak gösterilen &lt;code&gt;8.&lt;/code&gt; karakter indexinin aslında olmayan bir karaktere referans verdiğini görmüş olmalısınız.&lt;/p&gt;
+
+&lt;p&gt;Gerçektende &lt;code&gt;print kelime[8]&lt;/code&gt; gibi bir kod bize hata döndürecektir. İsterseniz deneyin. &lt;em&gt;(string index out of range hatası)&lt;/em&gt; Çünkü kelimenin atıf yaptığı &lt;code&gt;&amp;quot;Panorama&amp;quot;&lt;/code&gt; karakter dizisinin bir 8. karakteri bulunmamaktadır.&lt;/p&gt;
+
+&lt;p&gt;Ancak &lt;code&gt;8.&lt;/code&gt; yada &lt;code&gt;38.&lt;/code&gt; karakter değerini bir &lt;cite&gt;bis&lt;/cite&gt; ve/veya &lt;cite&gt;sis&lt;/cite&gt; değeri ile beraber kullandığımızda Payton&amp;rsquo;un bu kez hata vermediğini ve o noktaya kadar bulabildiği alt diziyi verdiğini görüyoruz. Yukarıda 1. örneğimizdeki &lt;code&gt;kelime[0:8:1]&lt;/code&gt;nin -&amp;gt; &amp;ldquo;Panorama&amp;rdquo; ve 10. örneğimizdeki &lt;code&gt;kelime[2:38:1]&lt;/code&gt; nin -&amp;gt; &amp;ldquo;norama&amp;rdquo; vermesi gibi.&lt;/p&gt;
+
+&lt;p&gt;Boş karakterin değerlendirilmesindeki bu farklılık Payton&amp;rsquo;un orjinal tasarımından kaynaklanmaktadır ve bilinçli bir tercihi yansıtmaktadır.
+{:.notice}&lt;/p&gt;
+
+&lt;h2 id=&#34;yaygın-bir-hata-string-index-out-of-range&#34;&gt;Yaygın Bir Hata:  String Index Out Of Range&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Karakter dizileri&lt;/a&gt; ile ilgili açıklamalarımı gereksiz bulmuş ve çok detaylı olduğunu düşünmüş olabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Özellikle döngüleri kullanırken string uzunluğunun yanlış hesaplanmasından dolayı pek çok &lt;strong&gt;String Index Out of Range&lt;/strong&gt; (Türkçe: &amp;ldquo;aralık dışında dizi endeksi&amp;rdquo;??) hatası ile karşılaşabilmekteyiz.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/string_index_out_of_range.png&#34; alt=&#34;Python&#39;da Sık Rastlanan String Out of Range Hatası&#34;&gt;
+    &lt;figcaption&gt;Python&#39;da Sık Rastlanan String Index Out of Range Hatası &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Bu tür hataların önüne geçme adına &lt;em&gt;karakter dizisi sırası&lt;/em&gt; (string indexing) konusunu iyi bellemeli ve Python&amp;rsquo;da bol örnek çözmeliyiz.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Yazımı paylaşırsanız diğerlerinin de yazımdan faydalanmasını sağlamış olur ve beni çok memnun edersiniz, şimdiden çok teşekkürler! Sağlıcakla kalın&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

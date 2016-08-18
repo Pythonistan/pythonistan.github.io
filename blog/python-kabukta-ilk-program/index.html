@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Python Kabukta (Shell) İlk Programımız // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Payton Şeli Öğreniyoruz">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="og:title" content="Python Kabukta (Shell) İlk Programımız" />
+<meta property="og:description" content="Payton Şeli Öğreniyoruz" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://pythonistan.github.io/blog/python-kabukta-ilk-program/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://pythonistan.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pythonistan.github.io//css/lightbox.css">
+  <script src="https://pythonistan.github.io//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://pythonistan.github.io/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="http://www.instagram.com/pyhonistan" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.youtube.com/pythonistan" target="_blank"><i class='fa fa-youtube'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/python-kabuk/python_shell.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#karakter-dizisi-yazdırıyoruz">Karakter Dizisi Yazdırıyoruz</a>
+<ul>
+<li><a href="#ilk-önce-kurulum-kontrolü">İlk Önce Kurulum Kontrolü</a></li>
+<li><a href="#karakter-dizilerine-giriş">Karakter Dizilerine Giriş</a></li>
+</ul></li>
+<li><a href="#payton-kabukta-print-siz-yazdırma-ve-hesap-makinası">Payton Kabukta Print&rsquo;siz Yazdırma ve Hesap Makinası</a></li>
+<li><a href="#payton-yardım-menüsü">Payton Yardım Menüsü</a></li>
+<li><a href="#payton-kabuk-kısıtlılıkları-ve-dezavantajları">Payton Kabuk Kısıtlılıkları ve Dezavantajları</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/python-kabukta-ilk-program/">Python Kabukta (Shell) İlk Programımız</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>4</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-kodlama" href="https://pythonistan.github.io//categories/kodlama">kodlama</a>
+				
+					<a class="post-category post-category-program" href="https://pythonistan.github.io//categories/program">program</a>
+				
+					<a class="post-category post-category-programlama" href="https://pythonistan.github.io//categories/programlama">programlama</a>
+				
+				</div>
+			
+
+			
+
+			
+
+            
+
+<h2 id="karakter-dizisi-yazdırıyoruz">Karakter Dizisi Yazdırıyoruz</h2>
+
+<h3 id="ilk-önce-kurulum-kontrolü">İlk Önce Kurulum Kontrolü</h3>
+
+<p>Evet, bugün Python&rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki <a href="/blog/python-kurulum/">makalemde</a> verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi <code>python</code> komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)</p>
+
+<h3 id="karakter-dizilerine-giriş">Karakter Dizilerine Giriş</h3>
+
+<p>Tamam, o halde şimdi klavyeden şunu yazın ve enter&rsquo;a basın: <code>&quot;Python'u seviyorum&quot;</code>. (Foto 2) Başta ve sonda <strong>çift tırnak</strong> sembollerine dikkat edin. Zira onlarsız karakter dizimizi ekrana yazdıramayız.</p>
+
+<p>Payton&rsquo;da karakter dizileri(string) ya çift tırnak yada tek tırnak işaretleri arasında yer alırlar. Eğer çift tırnak ile başladıysanız çift, tek tırnak ile başladıysanız tek tırnak ile bitirmelisiniz. Karakter dizileri (stringler) çok önemli bir konu olduğu için daha sonra geniş olarak bu konu üzerinde duracağız. Şimdilik alışma amaçlı kabukta değişik karakter dizileri yazdırın. (Foto 2)</p>
+
+<p><a href="/img/blog/python-kabuk/python_version.png" title="" data-lightbox="set1" data-title="Payton kurulumunu teyit edelim."><img src="/img/blog/python-kabuk/python_version_thumb.png" alt=""></a>
+<a href="/img/blog/python-kabuk/python_shell_strings.png" title="" data-lightbox="set1" data-title="Python Kabukta Karakter Dizileri Kullanımı"><img src="/img/blog/python-kabuk/python_shell_strings_thumb.png" alt=""></a>
+<a href="/img/blog/python-kabuk/python_aritmetik_ornekleri.png" title="" data-lightbox="set1" data-title="Python Kabukta Aritmetik İşlemlerini Gösteren Ekran"><img src="/img/blog/python-kabuk/python_aritmetik_ornekleri_thumb.png" alt=""></a>
+<a href="/img/blog/python-kabuk/python_shell_help.png" title="" data-lightbox="set1" data-title="Python kabukta yardım menülerini açalım"><img src="/img/blog/python-kabuk/python_shell_help_thumb.png" alt=""></a></p>
+
+<h2 id="payton-kabukta-print-siz-yazdırma-ve-hesap-makinası">Payton Kabukta Print&rsquo;siz Yazdırma ve Hesap Makinası</h2>
+
+<p>Yukarıda 2 no.lu fotoda ne yaptık? Bir karakter dizisini ekrana yazdırdık. Normalde bu işlemi yaptırmak için Payton&rsquo;da özel bir komut olan <code>print</code> komutuna ihtiyacımız vardı. Etkileşimli kabuk (shell) <code>print</code> komutuna ihtiyaç bırakmadan ekrana yazdırmayı sağladı.</p>
+
+<p>Şimdi yeni bir komut verelim. Eminim, meseleyi daha iyi anlayacaksınız. Ekrana <code>5 * 2</code> yazıp enter&rsquo;a basın. Sonuç çıktısının <code>10</code> olarak Payton tarafından bize verildiğini göreceksiniz. Python aritmetik operatörleri kolayca tanıdı ve işlemi gerçekleştirdi. Matematikten bildiğimiz basit aritmetik operatörleri (<code>+-*/</code>) etkileşimli kabukta kolayca deneyebilirsiniz. (Foto 3) Böylece Paytonu hesap makinası olarak kullanabileceğinizi artık biliyorsunuz.</p>
+
+<p>Liseden bildiğimiz işlem önceliği özelliği Paytonda yer almaktadır. (Foto 3)</p>
+
+<h2 id="payton-yardım-menüsü">Payton Yardım Menüsü</h2>
+
+<p>Payton Shell aynı zamanda Python yardım sistemini içerir. Yardıma ulaşmak için kabuk ekranında <code>help()</code> yazın. (Foto 4)  Daha sonra yardım almak istediğiniz konuları öğrenmek için <code>topics</code>, <code>modules</code> yada <code>keywords</code> yazabilirsiniz. Örneğin help ekranındayken karakter dizileri ile ilgili yardım almak için kullanacağınız komut <code>STRINGS</code>dir. (Foto 4)</p>
+
+<h2 id="payton-kabuk-kısıtlılıkları-ve-dezavantajları">Payton Kabuk Kısıtlılıkları ve Dezavantajları</h2>
+
+<p>Payton Şel(kabuk) hoş olsa da uzun satırlı kodlar için yeterli değildir. Ayrıca Syntax Highlighting(kod renklendirme)<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup> ve Indentation(kod tablandırma) içermez. Bir sonraki makalemde sizlere Payton ile beraber kullanabileceğimiz <a href="/blog/python-notepad-ile-program-yazma/">metin editörlerini</a> tanıtacağım. Favorim <a href="/blog/sublime-text-kurulum/">Sublime Text programı</a> ile beraberce az biraz daha uzun bir kod yazacağız. Bizi izlemeye devam edin!</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="http://en.wikipedia.org/wiki/Syntax_highlighting">http://en.wikipedia.org/wiki/Syntax_highlighting</a>
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-payton" href="https://pythonistan.github.io//tags/payton">payton</a>,
+	                
+	                <a class="post-tag post-tag-kabuk" href="https://pythonistan.github.io//tags/kabuk">kabuk</a>,
+	                
+	                <a class="post-tag post-tag-shell" href="https://pythonistan.github.io//tags/shell">shell</a>,
+	                
+	                <a class="post-tag post-tag-ilk-program" href="https://pythonistan.github.io//tags/ilk-program">ilk program</a>,
+	                
+	                <a class="post-tag post-tag-komut-sat%C4%B1r%C4%B1" href="https://pythonistan.github.io//tags/komut-sat%C4%B1r%C4%B1">komut satırı</a>,
+	                
+	                <a class="post-tag post-tag-komut" href="https://pythonistan.github.io//tags/komut">komut</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/python-notepad-ile-program-yazma/">Notepad Kullanarak Python Programı Yazalım</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/python-gelistirici-tarihi-okunuslari/">Python: Kurucusu - Tarihi - Okunuşu</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'https:\/\/pythonistan.github.io\/blog\/python-kabukta-ilk-program\/';
+    var disqus_title = 'Python Kabukta (Shell) İlk Programımız';
+    var disqus_url = 'https:\/\/pythonistan.github.io\/blog\/python-kabukta-ilk-program\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

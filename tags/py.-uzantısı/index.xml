@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Py. Uzantısı on Pythonistan</title>
+    <link>https://pythonistan.github.io/tags/py/index.-uzant%C4%B1s%C4%B1/</link>
+    <description>Recent content in Py. Uzantısı on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Tue, 09 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="https://pythonistan.github.io/tags/py.-uzant%C4%B1s%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Palindrome Programımız</title>
+      <link>https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/</link>
+      <pubDate>Tue, 09 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/</guid>
+      <description>
+
+&lt;p&gt;Nihayet bir kaç gün önceki &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/#kodumuzun-programda-grnts&#34;&gt;yazımda&lt;/a&gt; geçen Palindrome programımızı bugün ele alma şansımız olacak.&lt;/p&gt;
+
+&lt;h2 id=&#34;tersten-okunduğunda-aynı-olan-metin-palindrom&#34;&gt;Tersten Okunduğunda Aynı Olan Metin Palindrom&lt;/h2&gt;
+
+&lt;p&gt;Orjinal kodumuzu ve programımızın özetini tekrar hatırlayalım:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+def palindrome(s):
+    return 0 if s == s[::-1] else -1
+
+text = &#39;ey edip adanada pide ye&#39;
+
+print palindrome(text)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yukarıda gördüğünüz program bir metnin palindrom olup olmadığını kontrol ediyor, eğer metin palindrome ise ekrana &lt;code&gt;0&lt;/code&gt;(pozitif), değilse &lt;code&gt;-1&lt;/code&gt;(negatif) yazdırıyor.&lt;/p&gt;
+
+&lt;h2 id=&#34;masaüstüne-kayıt&#34;&gt;Masaüstüne Kayıt&lt;/h2&gt;
+
+&lt;p&gt;Bu programı &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime kurulum makalemi&lt;/a&gt; okurken satır satır yazmıştınız, değil mi? :)) Sitemizi yeni takip etmeye başlayanlar buradaki kodları &lt;em&gt;satır satır&lt;/em&gt; yazmayı unutmasınlar.&lt;/p&gt;
+
+&lt;p&gt;Arkadaşlar, kod ancak böyle öğreniliyor. O yüzden lütfen es geçmeyin.&lt;/p&gt;
+
+&lt;p&gt;Kodları yazdıktan sonra Masaüstüne yada kolay ulaşabildiğiniz bir konuma &lt;code&gt;palindrom.py&lt;/code&gt; olarak kaydedin.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hatırlatma:&lt;/strong&gt; &lt;em&gt;.py&lt;/em&gt; uzantısı Python program(kod) dosyası uzantısıdır.
+{:.notice}&lt;/p&gt;
+
+&lt;h2 id=&#34;prosedürler&#34;&gt;Prosedürler&lt;/h2&gt;
+
+&lt;p&gt;Prosedürler konusuna Notepad ile ilk programımızı yazarken biraz &lt;a href=&#34;https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/#programmzn-levi&#34;&gt;değinmiştim&lt;/a&gt;. Prosedürler bir programı genel bir çerçeve haline getirmek için en elverişli araç.&lt;/p&gt;
+
+&lt;p&gt;Programımın sadece belli bir karakter dizisi için değil bütün karakter dizileri için geçerli olmasını istediğim için bir prosedür oluşturdum. Burada prosedürün parametresi olan &lt;code&gt;(s)&lt;/code&gt; herhangi bir stringi ifade ediyor.&lt;/p&gt;
+
+&lt;p&gt;Test etmek istediğimiz herhangi bir karakter dizisini prosedürümüzle birlikte şu şekilde kullanabiliyoruz. &lt;code&gt;print palindrome(&amp;quot;karakter dizisi&amp;quot;)&lt;/code&gt; yada &lt;code&gt;print palindrome(metin)&lt;/code&gt; Burada &lt;code&gt;metin&lt;/code&gt; karakter dizimizi tutan(içeren) bir değişkendir.&lt;/p&gt;
+
+&lt;p&gt;Tersi olsaydı yani sadece belli bir karakter dizisinin palindrome olup olmadığını anlamak için aşağıdaki gibi prosedür içermeyen bir program yazabilirdim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*- 
+s = &#39;ey edip adanada pide ye&#39;
+print 0 if s == s[::-1] else -1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aralarınızdan bazılarının &amp;ldquo;yahu bu daha kolay ve kısaymış&amp;rdquo; dediğinizi duyuyor gibiyim.&lt;/p&gt;
+
+&lt;p&gt;Arkadaşlar, bizim amacımız istediğimiz iş için genel bir çerçeve oluşturmak. Bu örnek kolay olduğu için prosedür kullanma yada kullanmama pek fark etmemiş olabilir. Ancak ileride çok daha karmaşık problemleri çözen kodlarda prosedür kullanmaktan başka çare kalmayacak.&lt;/p&gt;
+
+&lt;p&gt;Ayrıca yukarıdaki kodları birden fazla karakter dizisi için denemeye çalışın. Prosedür kullandığımızda metin1, metin2, metin3 gibi bir çok karakter dizisi oluşturup hepsini basitçe &lt;code&gt;print palindrome(metin1)&lt;/code&gt; v.s. şeklinde test edip kullanabilirim. (Bkz. Aşağıda Test Örnekleri Ekran Görüntüleri)&lt;/p&gt;
+
+&lt;p&gt;Diğer seçenekte ise her seferinde &lt;code&gt;s&lt;/code&gt; değerini silmek ve yeni değeri girmek zorunda kalacağım.&lt;/p&gt;
+
+&lt;h2 id=&#34;gelelim-orjinal-kodlara&#34;&gt;Gelelim Orjinal Kodlara&lt;/h2&gt;
+
+&lt;p&gt;Prosedürümüzdeki kodlara yakından bakalım.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;İlk satırda prosedürümüzün ismini belirliyor ve prosedürü tanımlıyoruz.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;def&lt;/code&gt; kelimesi ingilizce define kelimesinin kısaltılmışıdır ve define tanımla demektir. Prosedür tanımlarken her zaman ilk olarak &lt;code&gt;def&lt;/code&gt; kelimesi, sonra prosedürümüzün ismi ve daha sonra parantez, varsa içinde parametre(ler) ve en son iki nokta üst üstüste &amp;ldquo;:&amp;rdquo; gelir. Örnek: &lt;code&gt;def prosedur_ismi(_parametreler_):&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Parantez içine prosedürümüzün parametre(ler)si gelecek. Tüm prosedürler parametre almak zorunda mıdır? Hayır almak zorunda değil, ancak almasa bile prosedürün isminden sonra gelen parantezleri koymak zorundasınız. Aksi halde Python hata verir.&lt;/li&gt;
+&lt;li&gt;İkinci satırımızda hemen &lt;code&gt;return&lt;/code&gt; ile prosedürümüze &lt;code&gt;return&lt;/code&gt;&amp;lsquo;den sonraki bölümü yürüt ve bunu &lt;code&gt;return&lt;/code&gt; ile döndür diyoruz.&lt;/li&gt;
+&lt;li&gt;Prosedürler genelde hep bir şeyler döndürürler (return) ve biz döndürülen değeri görmek istiyorsak &lt;code&gt;print&lt;/code&gt; ile ekrana yazdırma gerçekleştiririz.&lt;/li&gt;
+&lt;li&gt;Döndürülen değer ekrana yazdırılmayacak başka bir prosedürde/programda kullanılacaksa o halde diğer prosedürün parametresi olarak kullanılır.&lt;/li&gt;
+&lt;li&gt;Sıra geldi &lt;code&gt;return&lt;/code&gt;&amp;lsquo;den sonraki kısma. Burada artık programımızın işlevi açığa çıkıyor. Program karakter dizisini temsil eden değişkeni &lt;code&gt;(s)&lt;/code&gt; kendisinin tersi ile &lt;code&gt;(s[::-1])&lt;/code&gt; karşılaştırıyor. Buradaki &lt;code&gt;==&lt;/code&gt; operatörü &amp;ldquo;eşitlik&amp;rdquo; anlamındadır.&lt;/li&gt;
+&lt;li&gt;Herhangi bir karakter dizisini &lt;code&gt;[::-1]&lt;/code&gt; ile kullanarak tersten okutabilirsiniz. Burada &amp;ldquo;-1&amp;rdquo; bir adım geri git anlamına gelmektedir.&lt;/li&gt;
+&lt;li&gt;Bu karşılaştırmanın kendisi bir boolean (True/False) değer ürettiği için karşılaştırmanın sonucunu hemen return fonksiyonuna döndürdük. Gelen değer eğer &lt;code&gt;True (Doğru)&lt;/code&gt; ise ekrana &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;Yanlış (False)&lt;/code&gt; ise ekrana &lt;code&gt;-1&lt;/code&gt; yazdırılacak. &lt;code&gt;If&lt;/code&gt; kelimesi &amp;ldquo;eğer &amp;hellip; ise&amp;rdquo;, &lt;code&gt;else&lt;/code&gt; &amp;ldquo;değil ise&amp;rdquo; anlamındadır. (Bkz. Aşağıdaki Test Örnekleri - Rakamlı Örnek)&lt;/li&gt;
+&lt;li&gt;Karşılaştırmanın sonucunda ekrana &lt;code&gt;0&lt;/code&gt; ve &lt;code&gt;1&lt;/code&gt; değerleri yazdırma yerine daha detaylı bir şey yazdırabiliriz. Kodumuzu şu hale çevirmemiz mümkün: &lt;code&gt;return &amp;quot;Evet, bu bir palindrom.&amp;quot; if s == s[::-1] else &amp;quot;Hayır, bu bir palindrom değil.&amp;quot;&lt;/code&gt;  (Bkz. Aşağıdaki Test Örnekleri - Yazılı Örnek)&lt;/li&gt;
+&lt;li&gt;Normalde eşitlik ifadesi &lt;code&gt;if else&lt;/code&gt; bloğunu hiç kullanmadan karşılaştırma yapmaya olanak sağlıyor. Böyle bir kullanımı 3. varyasyonda göstereceğim.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Ekrana Rakam Sonucu Veren Palindrome Programı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;daha-anlaşılır-ve-uzun-if-else-bloklu-2-varyasyonumuz&#34;&gt;Daha Anlaşılır ve Uzun If Else Bloklu 2. Varyasyonumuz&lt;/h2&gt;
+
+&lt;p&gt;Şimdi aşağıda &lt;code&gt;if else&lt;/code&gt; bloğunun daha açık yazıldığı bir varyasyon yazalım.&lt;/p&gt;
+
+&lt;p&gt;Bu kez kodumuz biraz uzayacak, ancak ziyan  yok, bazen kodda açıklık kısalıktan evladır.&lt;/p&gt;
+
+&lt;p&gt;Yazacağımız kod bir prosedür içermesin. &lt;code&gt;If else&lt;/code&gt; bloklarından hangisinin daha iyi olduğunun kararını size bırakıyorum. (Bkz. Aşağıda Solda Test Örnekleri - If Else Örneği)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cumle = &#39;ey edip adanada pide ye&#39; # test cumlesi
+
+palindrom_mu = 2  # gecici degisken ve başlangıç değeri
+if cumle[0:] == cumle[::-1]:        # karşılaştırma yap
+    palindrom_mu = 0                # aynıysa değ. değerini 0 yap
+    print palindrom_mu              # değeri ekrana yaz
+else:                           # karşılaştırma aynı değilse
+    palindrom_mu = -1               # değişken değerini -1 yap
+    print palindrom_mu              # değeri ekrana yaz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Burada ne mi yaptık? &lt;code&gt;palindrom_mu&lt;/code&gt; adlı geçici bir değişken oluşturup ona bir ilk değer atadık. Bu ilk değer &lt;code&gt;(2)&lt;/code&gt; önemli değil. Siz kendinize göre başka bir değer verebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Daha sonra &lt;code&gt;if&lt;/code&gt; karşılaştırma operatörü ile &lt;code&gt;cumle&lt;/code&gt; değişkenine atanan karakter dizisi ile bu karakter dizisinin sondan okunuşunu karşılaştırdık.&lt;/p&gt;
+
+&lt;p&gt;Eğer bu karşılaştırmanın sonucu evet ise (yani True) o halde &lt;code&gt;if&lt;/code&gt;&amp;lsquo;den hemen sonra gelen blok yürütülecek. &lt;code&gt;palindrom_mu&lt;/code&gt; değişkeninin değeri &lt;code&gt;0&lt;/code&gt; olacak ve ekrana yazdırılacak.&lt;/p&gt;
+
+&lt;p&gt;Yok eğer yukarıda &lt;code&gt;if&lt;/code&gt; bloğundaki karşılaştırma sonucu hayır ise (yani False) o halde else den sonra gelen blok yürütülecek. &lt;code&gt;palindrom_mu&lt;/code&gt; değişkeninin değeri &lt;code&gt;-1&lt;/code&gt;&amp;lsquo;e eşitlenecek ve bu değer ekrana yazdırılacak.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;palindrom_mu&lt;/code&gt; değişkenine başlangıçta (initial) atanan &lt;code&gt;2&lt;/code&gt; değerinin programın hiç bir aşamasında çalışma fırsatı bul(a)madığına dikkat edin lütfen. O yüzden yukarıda önemli değil dedim.&lt;/p&gt;
+
+&lt;p&gt;Son olarak &lt;code&gt;if&lt;/code&gt; ve &lt;code&gt;else&lt;/code&gt; satırlarından sonra gelen satırlardaki tablara (indentation) dikkat edin lütfen! Tablama yapmazsanız hata alırsınız.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/palindrome_test_ornekleri_if_else_uzun.png&#34; alt=&#34;If_else&#34; title=&#34;Palindrom Test Örneklerimiz&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;if-else-bloku-içermeyen-3-varyasyonumuz&#34;&gt;If Else Bloku İçermeyen 3. Varyasyonumuz&lt;/h2&gt;
+
+&lt;p&gt;Yukarıdaki kodlarda gördüğünüz &lt;code&gt;(==)&lt;/code&gt; operatör &amp;ldquo;eşit mi?&amp;rdquo; anlamını doğal olarak içinde taşır ve bu yüzden aslında &lt;code&gt;if else&lt;/code&gt; bloğunu hiç kullanmadan karşılaştırma yapmaya imkan tanır.&lt;/p&gt;
+
+&lt;p&gt;Lütfen aşağıdaki kodlara bir göz atın ve yine lütfen &lt;strong&gt;kendiniz yazarak&lt;/strong&gt; kodları deneyin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: cp1254 -*-
+def palindrom_mu(s):
+    sonuc = (s==s[::-1]) - 1 # Boolean ifadeyi sayısal bir
+    return sonuc             # değişken değere atama
+
+metin1 = &#39;ey edip adanada pide ye&#39;
+metin2 = &amp;quot;mazdam&amp;quot;
+metin3 = &amp;quot;madam&amp;quot;
+
+print palindrom_mu(metin1)
+print palindrom_mu(metin2)
+print palindrom_mu(metin3)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yukarıdaki çözüm oldukça önemli bir konsepti ifade ediyor. (Altta Sağda Boolean&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:bool&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:bool&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Değeri Sayısal Değere Dönüştürme Örneği Ekran Görüntüsü)&lt;/p&gt;
+
+&lt;p&gt;Normalde &lt;code&gt;(s==s[::-1])&lt;/code&gt; ifadesinin bir karşılaştırma olduğunu ve &lt;code&gt;True(1)&lt;/code&gt; yada &lt;code&gt;False(0)&lt;/code&gt; döndürdüğünü biliyoruz. Bu ifadeyi sayısal bir operatör ile beraber kullandığımızda (burada &amp;ldquo;- 1&amp;rdquo;) &lt;code&gt;True&lt;/code&gt;  değeri &lt;code&gt;1&lt;/code&gt; ifadesi, &lt;code&gt;False&lt;/code&gt; değeri &lt;code&gt;0&lt;/code&gt; ifadesini alır.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean Değerlerin Normal Metin Kullanımı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_operator_normal_kullanim_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Boolean[^bool] Değerleri Sayısal Değere Dönüştürme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;İsterseniz yukarıdaki işlemde en sonraki &amp;ldquo;-1&amp;rdquo; ifadesini silip sonucu deneyin. &lt;code&gt;(sonuc = (s==s[::-1])&lt;/code&gt; olarak) Python interpreter size herhangi bir sayısal değer vermeden direkt &lt;code&gt;True&lt;/code&gt; yada &lt;code&gt;False&lt;/code&gt; çıktısını döndürecektir. (Üstte Solda Boolean Değeri Normal Kullanma Örneği Ekran Görüntüsü)&lt;/p&gt;
+
+&lt;p&gt;Dolayısıyla yapılan işlem şu: &lt;code&gt;sonuc&lt;/code&gt; adlı değişkene atanacak değer karşılaştırma doğruysa 1 - 1 = &lt;code&gt;0&lt;/code&gt;, yanlışsa 0 - 1 = &lt;code&gt;-1&lt;/code&gt; olacak. Zaten bu da bizim almayı istediğiz sonuçtu. Yapmayı istediğimiz şeyi başardık.&lt;/p&gt;
+
+&lt;h2 id=&#34;find-fonksiyonu-kullanarak-4-varyasyon&#34;&gt;.find Fonksiyonu Kullanarak 4. Varyasyon&lt;/h2&gt;
+
+&lt;p&gt;Normalde 4. ve sonuncu çözüm olarak &lt;code&gt;.find&lt;/code&gt; hazır (built-in) fonksiyonunu (d.b.i. metodunu)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:dib&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:dib&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; kullanarak palindrom programını yazacaktım. Ancak bu yazı çok uzadığı için onu bir sonraki yazı konusu olarak kullanmaya karar verdim.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/#ev-deviniz&#34;&gt;BİR ÖNCEKİ YAZIMDAKİ EV ÖDEVİ CEVAP:&lt;/a&gt;&lt;/strong&gt; &lt;strong&gt;Sorumuzun cevabı &amp;ldquo;boşluk karakteri&amp;rdquo; olacaktı. Sorunun cevabına &amp;ldquo;Boş karakter&amp;rdquo; dediyseniz maalesef yanıldınız. Neden mi? &lt;a href=&#34;https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/#bo-karakter&#34;&gt;İki sonraki yazımı&lt;/a&gt; bu konuya ayırdım. Orada görüşmek üzere!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Siz şimdilik buradaki örnekleri detaylı inceleyin, yazın ve Payton&amp;rsquo;da çalıştırın. Bir sonraki yazıda &lt;code&gt;.find&lt;/code&gt; fonksiyonunun tüm özelliklerini incelerken bu soruyu beraberinde çözeceğim.&lt;/p&gt;
+
+&lt;p&gt;Yazımı beğenmeyi unutmayın lütfen!&lt;/p&gt;
+
+&lt;h2 id=&#34;dipnotlar&#34;&gt;DipNotlar&lt;/h2&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:bool&#34;&gt;Programlama dillerinde Boolean veri tipi True (Doğru) ve False (Yanlış) olmak üzere sadece iki değer o/a/labilen bir değer tipidir. Boolean kelimesi matematikçi &lt;a href=&#34;https://en.wikipedia.org/wiki/George_Boole&#34;&gt;George Boole&lt;/a&gt;&amp;lsquo;un adına izafe edildiğinden bu ismi almıştır.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:bool&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:dib&#34;&gt;İng. a.k.a. (also known as= başka bir deyişle) ifadesinden mülhem d.b.i. &amp;ldquo;Diğer Bir İfadeyle&amp;rdquo; şeklinde düşündüm.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:dib&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

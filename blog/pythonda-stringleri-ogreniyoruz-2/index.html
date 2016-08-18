@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Python&#39;da Stringleri Öğreniyoruz - 2 // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Karakter Dizileri Pratiğine Devam">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="og:title" content="Python&#39;da Stringleri Öğreniyoruz - 2" />
+<meta property="og:description" content="Karakter Dizileri Pratiğine Devam" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://pythonistan.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pythonistan.github.io//css/lightbox.css">
+  <script src="https://pythonistan.github.io//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://pythonistan.github.io/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="http://www.instagram.com/pyhonistan" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.youtube.com/pythonistan" target="_blank"><i class='fa fa-youtube'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/pythonda-stringler/yanlis_index_baslangici.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#python-da-stringler-2-bölüm">Python&rsquo;da Stringler - 2. Bölüm</a></li>
+<li><a href="#eğlenceli-bir-deneme">Eğlenceli Bir Deneme</a></li>
+<li><a href="#ev-ödeviniz">Ev Ödeviniz</a></li>
+<li><a href="#stringler-toplanır-mı">Stringler Toplanır mı?</a></li>
+<li><a href="#türkçe-karakter-azizliği">Türkçe Karakter Azizliği</a></li>
+<li><a href="#eğlenceli-bir-deneme-çözümü">Eğlenceli Bir Deneme Çözümü</a></li>
+<li><a href="#web-sitesi-adreslerini-python-la-ayıklama">Web Sitesi Adreslerini Python&rsquo;la Ayıklama</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/pythonda-stringleri-ogreniyoruz-2/">Python&#39;da Stringleri Öğreniyoruz - 2</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>7</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-karakter-dizileri" href="https://pythonistan.github.io//categories/karakter-dizileri">karakter dizileri</a>
+				
+					<a class="post-category post-category-stringler" href="https://pythonistan.github.io//categories/stringler">stringler</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-stringleri-ogreniyoruz-2%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-stringleri-ogreniyoruz-2%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Python%27da%20Stringleri%20%c3%96%c4%9freniyoruz%20-%202&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-stringleri-ogreniyoruz-2%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/pythonda-stringler/p.png" class="pure-img content-banner-image-inline"
+                                     style="
+                                            " />
+			
+
+            
+
+<h2 id="python-da-stringler-2-bölüm">Python&rsquo;da Stringler - 2. Bölüm</h2>
+
+<p>Dün <a href="/blog/pythonda-stringleri-ogreniyoruz-1/">ilk bölümünü</a> yayınladığımız karakter dizileri (stringler) konusuna devam ediyoruz.</p>
+
+<p>İkinci bölümde pratiğe yönelik bazı uygulamalar yapalım. Sizlere sürpriz sorularım olacak.</p>
+
+<h2 id="eğlenceli-bir-deneme">Eğlenceli Bir Deneme</h2>
+
+<p>Elimizde iki adet değişken var. Değişkenlerimiz <code>a = &quot;Garanti&quot;</code> ve <code>b = &quot;töre&quot;</code> olsun.</p>
+
+<p>Bu iki değişkeni kullanarak -burası önemli!!!- <strong>index değerlerini tek tek saymadan</strong> nasıl <code>&quot;Garantör&quot;</code> isimli bir karakter dizisi oluşturup ekrana yazdırabiliriz?</p>
+
+<p>Cevaba göz atmadan lütfen bir kaç dakika <strong>düşünün</strong>. Bu sorunun cevabını kolaylıkla bulabileceğinizi sanıyorum.</p>
+
+<p>İpucu: İki karakter dizisini birleştirmek için <code>+</code> operatörünü kullanabilirsiniz.</p>
+
+<p>Sorumuzun cevabı sayfanın altında. Hemen alttaki bölümde ise ev ödeviniz var.</p>
+
+<h2 id="ev-ödeviniz">Ev Ödeviniz</h2>
+
+<p>Bir sonraki blog yazıma kadar çözmeniz için bir soru soracağım. Python interpreter&rsquo;ı bu sorunun cevabını bulmak için kullanabilirsiniz. İnternetten cevabı araştırmak serbest.</p>
+
+<blockquote>
+<p><a href="/blog/pythonda-stringleri-ogreniyoruz-1/">Stringler - 1. bölümde</a> geçen <code>selam</code> adlı değişkenin &ldquo;baştan 7. / sondan -15.&rdquo; index değerine haiz olan karakterinin ismi nedir?</p>
+</blockquote>
+
+<h2 id="stringler-toplanır-mı">Stringler Toplanır mı?</h2>
+
+<p>Üstteki sorudaki ipucunda belirtildiği gibi karakter dizilerini birbirleri ile birleştirip yeni karakter dizileri oluşturabilirsiniz. Bunun için <code>+</code> operatörünü kullanmalısınız. Burada yapılan işleme, birleştirme (concatenatination) denir.</p>
+
+<p>Birleştirme yapılırken araya otomatik boşluk girmez, boşluk gerekiyorsa sizin boşluk karakterini birleşen stringlerin arasına koymanız gerekir. (Bkz.aşağıdaki örnek 3.satır &lsquo;merhaba&rsquo;dan sonrası)</p>
+
+<p><strong>Önemli:</strong> Evet boşluk karakteri de diğer herhangi bir karakter gibidir. Basitçe space tuşuna bir kere basmak bir boşluk karakteri vermek demektir.</p>
+
+<p>Peki bir karakter dizisi ile bir sayı (rakam) birleşebilir mi? Karakter dizilerini bir sayıyla toplamaya kalkarsanız hata alırsınız. Zira sayı ile toplama yada çıkarma tür uyuşmazlığı nedeni ile yapılamaz. Ancak ilginç bir durum olarak karakter dizisini çarpı <code>*</code> operatörü ile kullanıp aynı karakter dizisini çarpıldığı değer kadar artırabilirsiniz. Bir örnek görelim:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+
+print 'merhaba ' + &quot;Fatih&quot; + &quot;!&quot; * 15 # üç adet karakter dizisini birleştir
+        # ünlem karakterini 15 ile çarp, yani 15 adet yap
+        # çıktıyı aşağıda soldaki ekran görüntüsünde görebilirsiniz.
+</code></pre>
+
+<h2 id="türkçe-karakter-azizliği">Türkçe Karakter Azizliği</h2>
+
+<p>Belki farketmişsinizdir. Bugüne kadarki yazılarımdaki kodlarda Türkçe karakterleri pek kullanmamıştım.(yorum satırları hariç) Stringleri işlediğim iki bölümdeki tüm örnek kodlarda Türkçe kullanmaya çalıştım.</p>
+
+<p>Python 2 versiyonunun üniversal UTF-8 kümesi ile irtibatı maalesef pek sağlam değil. Birçok kez interpreter(yorumlayıcı)&lsquo;da sürpriz hatalarla karşılaşabiliyorsunuz.</p>
+
+<p>Örneğin <a href="/blog/pythonda-stringleri-ogreniyoruz-1/">bir önceki yazıda</a> geçen <code>len</code> built-in (hazır) fonksiyona bakalım. <code>print len &quot;tesadüfi&quot;</code> komutunu verdiğinizde çok şaşırtıcı bir biçimde <code>9</code> sonucunu alıyorsunuz. Kelimemizde 8 karakter olduğu aşikar! UTF-8, &ldquo;ü&rdquo; gibi özel karakter setleri için birden fazla byte kullandığı için karakter dizimizin değeri Python&rsquo;ca yanlış hesaplanıyor.</p>
+
+<p>Allahtan bunu önlemenin nispeten kolay bir yolu var. Karakterimizi unicode&rsquo;a göre decode etmek(çözmek) ve o şekilde <code>len</code> fonksiyonunu çalıştırmak. <code>print len (u&quot;tesadüfi&quot;)</code> şeklinde kullandığımızda doğru sonuç olan <code>8</code> döndürülüyor. Burada <code>u</code> karakter dizimizi unicode&rsquo;a çeviriyor.</p>
+
+<p>Tuhaf olan yukarıdaki aynı kodu Windows&rsquo;da Komut Satırı &gt; Python yazarak açtığımız Python kabuğunda(Shell) çalıştırdığınızda herhangi bir hata almadan doğru sonucu(8) veriyor. Kafa karıştıran bir durum!</p>
+
+<p>Yine aynı şekilde <a href="/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index">bir önceki bölümde</a> <code>print selam[-5:-1]  # 5. örnek -&gt; &quot;lsın&quot; olmalı</code> kodu Sublime&rsquo;da Python tarafından yanlış sonuç döndürüyor. Bu kez yine &ldquo;ı&rdquo; karakteri interpreter tarafından işlenirken hata oluşuyor.</p>
+
+<p>Gördüğünüz gibi Python&rsquo;da bazen Türkçe karakterlerle yada standart latin harfleri dışındaki bazı özel karakter setleri ile problemler yaşayabilirsiniz. Bu tür durumlarda önerim Google&rsquo;dan probleminizi (tercihen ingilizce olarak) yazıp aratmanız. Google sizi genelde <a target="blank" href="http://stackoverflow.com/">stackoverflow</a> gibi sitelere yönlendiriyor ve bir şekilde probleminizi çözüyorsunuz. Tabi her zaman için ilk kural: Panik yapmayın!</p>
+
+<h2 id="eğlenceli-bir-deneme-çözümü">Eğlenceli Bir Deneme Çözümü</h2>
+
+<p>Eksi (-) indeks değerlerini kullanarak karakter dizisinde istemediğimiz kısımları çıkartıp istediğimiz alt dizileri oluşturarak bu soruyu çözebiliriz.</p>
+
+<p>İlk karakter dizimiz <code>&quot;Garanti&quot;</code>idi. Burada istemediğimiz karakterler son iki karakter: <code>&quot;ti&quot;</code>.Son iki karakteri istemediğimizi bildiğimizden basitçe a[:-2] bize <code>&quot;Garan&quot;</code> alt dizisini verir.</p>
+
+<p>İkinci karakter dizimiz <code>&quot;töre&quot;</code> idi. Burada istemediğimiz karakter sadece en son karakter: <code>&quot;e&quot;</code> Yine aynı şekilde b[:-1] kullanımı bize <code>&quot;tör&quot;</code> alt dizisini (substring) verecektir.</p>
+
+<p>Artı <code>(+)</code> operatörünün stringler için kullanıldığında birleştirmeye (concetination) yaradığını biliyoruz. Bu iki karakter dizisini birleştirmek için şimdi bu operatörü kullanalım. <code>a[:-2] + b[:-1]</code></p>
+
+<p>Son olarak ekrana yazdırma komutumuzu biliyorsunuz. <code>print a[:-2] + b[:-1]</code> -&gt; Bize <code>&quot;Garantör&quot;</code>  çıktısını verecektir.</p>
+
+<p>Programımızın toplu görünüşü:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+a = &quot;Garanti&quot;
+b = &quot;töre&quot;
+
+print a[0:-2] + b[0:-1]  # print a[:-2] + b[:-1] kullanımı da geçerlidir
+</code></pre>
+
+<p><strong>Alternatif Kullanım:</strong> Yukarıda son yorum satırında değinildiği gibi başlangıç indexinde 0 kullanmayabilirsiniz. Değer yazılmadığında Python varsayılan değer olarak 0 kullanır.</p>
+
+<figure class="half">
+    <a href="/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png"><img src="/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png" alt="Paytonda karakter dizileri çarpılabilir"></a>
+    <figcaption>Paytonda karakter dizileri çarpılabilir</figcaption>
+
+    <a href="/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png"><img src="/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png" alt="Birebir index değeri saymadan substring alt dizi oluşturma"></a>
+    <figcaption>Birebir İndex Değeri Saymadan Substring Alt Dizi Oluşturma</figcaption>
+</figure>
+
+<h2 id="web-sitesi-adreslerini-python-la-ayıklama">Web Sitesi Adreslerini Python&rsquo;la Ayıklama</h2>
+
+<p>Hepiniz şimdiye değin muhakkak bir website kodu ile karşılaşmışsınızdır. Web tarayıcısında bir websitenin içindeyken sağ tıklayıp açılan menüden &ldquo;Kaynağı Göster&rdquo;e tıkladığımızda gelen source(kaynak) kodlarında en sık görülen kod satırlarından biri hyperlink gösterimidir.</p>
+
+<p>Web demek zaten hiper linklerin bir toplamı değil mi? O yüzden hemen her sayfa onlarca hyperlink barındırmaktadır.</p>
+
+<p>Bahsettiğimiz linklerin web sitelerinin kaynak kodlarında genel gösterimi şu şekildedir: <code>&lt;a href = &quot; http://www.ornekwebsitesi.com &quot; &gt;</code> Şimdi diyelim ki biz bu koddan sadece <code>http://www.ornekwebsitesi.com</code> olan kısmı çekip almak (extract) istiyoruz. Şu ana kadar öğrendiğimiz metodlarla bunu çok kolay gerçekleştirebileceğimizi biliyorsunuz.</p>
+
+<p>Öğrenmiş olduğumuz baş ve son (diğer bir ifadeyle pozitif ve negatif) index değerlerini kullanarak bu problemi çözelim.</p>
+
+<p><code>&lt;a href=&quot;http://www.ornekwebsitesi.com&quot;&gt;</code> ifadesinde http&rsquo;nin ilk harfi olan &ldquo;h&rdquo; karakterinin pozitif index değeri ne olursa olsun değişmeyecek: <code>9</code>. (Bkz. Aşağıda Soldaki Ekran Görüntüsü)</p>
+
+<p>Aynı şekilde linkin sonuna bakarsak linkin uzunluğu ne olursa olsun son iki karakterin (çift tırnak ve büyüktür karakterleri) dışarıda bırakacağımızı görebiliyoruz. Dolayısıyla linkimizin son karakterinin pozitif indeks değeri değişse bile negatif indeks değeri hiç bir zaman değişmez.</p>
+
+<p>Negatif index değeri linkin son karakterine kadar her zaman için -2 dir. (Üstteki örneğimizi hatırlayın, son 2 karakteri almak istemiyoruz. -2.inci karakter (bu durumda &lsquo;&ldquo;&rsquo;) alınacak alt diziye dahil olmayacaktır, unutmayın.) Aşağıda soldaki ekran alıntısında bu durumu detaylı görebilirsiniz.</p>
+
+<p>Dolayısıyla bizim istediğimiz kısım [9&rsquo;dan:-2&rsquo;ye] kadar olan kısımdır.(-2. dahil değil) Şimdi bunu kodumuzda görelim.</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
+link_1 = '&lt;a href=&quot;http://www.python.org&quot;&gt;' # dışarıda tek tırnak kullanımına dikkat
+link_2 = '&lt;a href=&quot;http://www.pythonistan.net&quot;&gt;' #çünkü içeride çift tırnak var...
+link_3 = '&lt;a href=&quot;http://www.pythoncentral.io&quot;&gt;'
+
+print link_1[9:-2]  # gördüğünüz gibi karakter dizilerimizin uzunluğu
+print link_2[9:-2]  # farklı olsa bile hepsi için aynı index değerleri
+print link_3[9:-2]  # kullanarak istediğimiz bölümü seçebildik.
+# programın çıktısını (output) hemen alt sağdaki ekran görüntüsünde görebilirsiniz.
+</code></pre>
+
+<p><a href="/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu.png" title="" data-lightbox="set1" data-title="Paytonda hiper link görece string index pozisyon tablo karşılaştırması"><img src="/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu_thumb.png" alt=""></a>
+<a href="/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak.png" title="" data-lightbox="set1" data-title="Python'da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz"><img src="/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak_thumb.png" alt=""></a></p>
+
+<p>Karakter dizileri üzerine dün ve bugün yaptığımız detaylı açıklamalardan sonra artık <a href="/blog/palindrome-programi/">palindrom</a> programımıza geçebiliriz. Bekleyin beni anacım!</p>
+
+<hr>
+
+<p>Her türlü görüş ve önerileriniz için lütfen sayfa altındaki yorumlar bölümünü kullanın. Yazımı paylaşmak için sosyal medya linkleri aşağıdaki menüde mevcut. Teşekkürler.</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-stringleri-ogreniyoruz-2%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-stringleri-ogreniyoruz-2%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Python%27da%20Stringleri%20%c3%96%c4%9freniyoruz%20-%202&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-stringleri-ogreniyoruz-2%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-python" href="https://pythonistan.github.io//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-string" href="https://pythonistan.github.io//tags/string">string</a>,
+	                
+	                <a class="post-tag post-tag-karakter-dizileri" href="https://pythonistan.github.io//tags/karakter-dizileri">karakter dizileri</a>,
+	                
+	                <a class="post-tag post-tag-stringler" href="https://pythonistan.github.io//tags/stringler">stringler</a>,
+	                
+	                <a class="post-tag post-tag-index-de%C4%9Feri" href="https://pythonistan.github.io//tags/index-de%C4%9Feri">index değeri</a>,
+	                
+	                <a class="post-tag post-tag-karakter-dizisi-s%C4%B1ras%C4%B1" href="https://pythonistan.github.io//tags/karakter-dizisi-s%C4%B1ras%C4%B1">karakter dizisi sırası</a>,
+	                
+	                <a class="post-tag post-tag-substring" href="https://pythonistan.github.io//tags/substring">substring</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/sublime-text-kurulum/">Sublime Text Kuruyoruz</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/pythonda-stringleri-ogreniyoruz-1/">Python&#39;da Stringleri Öğreniyoruz - 1</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'https:\/\/pythonistan.github.io\/blog\/pythonda-stringleri-ogreniyoruz-2\/';
+    var disqus_title = 'Python\x27da Stringleri Öğreniyoruz - 2';
+    var disqus_url = 'https:\/\/pythonistan.github.io\/blog\/pythonda-stringleri-ogreniyoruz-2\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

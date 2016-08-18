@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Palindrome Programımız // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Tersten Okunuşu Aynı Olan Metin Palindrom">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="og:title" content="Palindrome Programımız" />
+<meta property="og:description" content="Tersten Okunuşu Aynı Olan Metin Palindrom" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://pythonistan.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pythonistan.github.io//css/lightbox.css">
+  <script src="https://pythonistan.github.io//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://pythonistan.github.io/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="http://www.instagram.com/pyhonistan" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.youtube.com/pythonistan" target="_blank"><i class='fa fa-youtube'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/palindrom-programi/featured.gif" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#tersten-okunduğunda-aynı-olan-metin-palindrom">Tersten Okunduğunda Aynı Olan Metin Palindrom</a></li>
+<li><a href="#masaüstüne-kayıt">Masaüstüne Kayıt</a></li>
+<li><a href="#prosedürler">Prosedürler</a></li>
+<li><a href="#gelelim-orjinal-kodlara">Gelelim Orjinal Kodlara</a></li>
+<li><a href="#daha-anlaşılır-ve-uzun-if-else-bloklu-2-varyasyonumuz">Daha Anlaşılır ve Uzun If Else Bloklu 2. Varyasyonumuz</a></li>
+<li><a href="#if-else-bloku-içermeyen-3-varyasyonumuz">If Else Bloku İçermeyen 3. Varyasyonumuz</a></li>
+<li><a href="#find-fonksiyonu-kullanarak-4-varyasyon">.find Fonksiyonu Kullanarak 4. Varyasyon</a></li>
+<li><a href="#dipnotlar">DipNotlar</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/pythonda-palindrome-bulan-program/">Palindrome Programımız</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>9</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-karakter-dizileri" href="https://pythonistan.github.io//categories/karakter-dizileri">karakter dizileri</a>
+				
+					<a class="post-category post-category-stringler" href="https://pythonistan.github.io//categories/stringler">stringler</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-palindrome-bulan-program%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-palindrome-bulan-program%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Palindrome%20Program%c4%b1m%c4%b1z&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-palindrome-bulan-program%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/palindrom-programi/palindromes.jpg" class="pure-img content-banner-image-inline"
+                                     style="
+                                            " />
+			
+
+            
+
+<p>Nihayet bir kaç gün önceki <a href="/blog/sublime-text-kurulum/#kodumuzun-programda-grnts">yazımda</a> geçen Palindrome programımızı bugün ele alma şansımız olacak.</p>
+
+<h2 id="tersten-okunduğunda-aynı-olan-metin-palindrom">Tersten Okunduğunda Aynı Olan Metin Palindrom</h2>
+
+<p>Orjinal kodumuzu ve programımızın özetini tekrar hatırlayalım:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+def palindrome(s):
+    return 0 if s == s[::-1] else -1
+
+text = 'ey edip adanada pide ye'
+
+print palindrome(text)
+</code></pre>
+
+<p>Yukarıda gördüğünüz program bir metnin palindrom olup olmadığını kontrol ediyor, eğer metin palindrome ise ekrana <code>0</code>(pozitif), değilse <code>-1</code>(negatif) yazdırıyor.</p>
+
+<h2 id="masaüstüne-kayıt">Masaüstüne Kayıt</h2>
+
+<p>Bu programı <a href="/blog/sublime-text-kurulum/">Sublime kurulum makalemi</a> okurken satır satır yazmıştınız, değil mi? :)) Sitemizi yeni takip etmeye başlayanlar buradaki kodları <em>satır satır</em> yazmayı unutmasınlar.</p>
+
+<p>Arkadaşlar, kod ancak böyle öğreniliyor. O yüzden lütfen es geçmeyin.</p>
+
+<p>Kodları yazdıktan sonra Masaüstüne yada kolay ulaşabildiğiniz bir konuma <code>palindrom.py</code> olarak kaydedin.</p>
+
+<p><strong>Hatırlatma:</strong> <em>.py</em> uzantısı Python program(kod) dosyası uzantısıdır.
+{:.notice}</p>
+
+<h2 id="prosedürler">Prosedürler</h2>
+
+<p>Prosedürler konusuna Notepad ile ilk programımızı yazarken biraz <a href="/blog/python-notepad-ile-program-yazma/#programmzn-levi">değinmiştim</a>. Prosedürler bir programı genel bir çerçeve haline getirmek için en elverişli araç.</p>
+
+<p>Programımın sadece belli bir karakter dizisi için değil bütün karakter dizileri için geçerli olmasını istediğim için bir prosedür oluşturdum. Burada prosedürün parametresi olan <code>(s)</code> herhangi bir stringi ifade ediyor.</p>
+
+<p>Test etmek istediğimiz herhangi bir karakter dizisini prosedürümüzle birlikte şu şekilde kullanabiliyoruz. <code>print palindrome(&quot;karakter dizisi&quot;)</code> yada <code>print palindrome(metin)</code> Burada <code>metin</code> karakter dizimizi tutan(içeren) bir değişkendir.</p>
+
+<p>Tersi olsaydı yani sadece belli bir karakter dizisinin palindrome olup olmadığını anlamak için aşağıdaki gibi prosedür içermeyen bir program yazabilirdim:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+s = 'ey edip adanada pide ye'
+print 0 if s == s[::-1] else -1
+</code></pre>
+
+<p>Aralarınızdan bazılarının &ldquo;yahu bu daha kolay ve kısaymış&rdquo; dediğinizi duyuyor gibiyim.</p>
+
+<p>Arkadaşlar, bizim amacımız istediğimiz iş için genel bir çerçeve oluşturmak. Bu örnek kolay olduğu için prosedür kullanma yada kullanmama pek fark etmemiş olabilir. Ancak ileride çok daha karmaşık problemleri çözen kodlarda prosedür kullanmaktan başka çare kalmayacak.</p>
+
+<p>Ayrıca yukarıdaki kodları birden fazla karakter dizisi için denemeye çalışın. Prosedür kullandığımızda metin1, metin2, metin3 gibi bir çok karakter dizisi oluşturup hepsini basitçe <code>print palindrome(metin1)</code> v.s. şeklinde test edip kullanabilirim. (Bkz. Aşağıda Test Örnekleri Ekran Görüntüleri)</p>
+
+<p>Diğer seçenekte ise her seferinde <code>s</code> değerini silmek ve yeni değeri girmek zorunda kalacağım.</p>
+
+<h2 id="gelelim-orjinal-kodlara">Gelelim Orjinal Kodlara</h2>
+
+<p>Prosedürümüzdeki kodlara yakından bakalım.</p>
+
+<ul>
+<li>İlk satırda prosedürümüzün ismini belirliyor ve prosedürü tanımlıyoruz.</li>
+<li><code>def</code> kelimesi ingilizce define kelimesinin kısaltılmışıdır ve define tanımla demektir. Prosedür tanımlarken her zaman ilk olarak <code>def</code> kelimesi, sonra prosedürümüzün ismi ve daha sonra parantez, varsa içinde parametre(ler) ve en son iki nokta üst üstüste &ldquo;:&rdquo; gelir. Örnek: <code>def prosedur_ismi(_parametreler_):</code></li>
+<li>Parantez içine prosedürümüzün parametre(ler)si gelecek. Tüm prosedürler parametre almak zorunda mıdır? Hayır almak zorunda değil, ancak almasa bile prosedürün isminden sonra gelen parantezleri koymak zorundasınız. Aksi halde Python hata verir.</li>
+<li>İkinci satırımızda hemen <code>return</code> ile prosedürümüze <code>return</code>&lsquo;den sonraki bölümü yürüt ve bunu <code>return</code> ile döndür diyoruz.</li>
+<li>Prosedürler genelde hep bir şeyler döndürürler (return) ve biz döndürülen değeri görmek istiyorsak <code>print</code> ile ekrana yazdırma gerçekleştiririz.</li>
+<li>Döndürülen değer ekrana yazdırılmayacak başka bir prosedürde/programda kullanılacaksa o halde diğer prosedürün parametresi olarak kullanılır.</li>
+<li>Sıra geldi <code>return</code>&lsquo;den sonraki kısma. Burada artık programımızın işlevi açığa çıkıyor. Program karakter dizisini temsil eden değişkeni <code>(s)</code> kendisinin tersi ile <code>(s[::-1])</code> karşılaştırıyor. Buradaki <code>==</code> operatörü &ldquo;eşitlik&rdquo; anlamındadır.</li>
+<li>Herhangi bir karakter dizisini <code>[::-1]</code> ile kullanarak tersten okutabilirsiniz. Burada &ldquo;-1&rdquo; bir adım geri git anlamına gelmektedir.</li>
+<li>Bu karşılaştırmanın kendisi bir boolean (True/False) değer ürettiği için karşılaştırmanın sonucunu hemen return fonksiyonuna döndürdük. Gelen değer eğer <code>True (Doğru)</code> ise ekrana <code>0</code>, <code>Yanlış (False)</code> ise ekrana <code>-1</code> yazdırılacak. <code>If</code> kelimesi &ldquo;eğer &hellip; ise&rdquo;, <code>else</code> &ldquo;değil ise&rdquo; anlamındadır. (Bkz. Aşağıdaki Test Örnekleri - Rakamlı Örnek)</li>
+<li>Karşılaştırmanın sonucunda ekrana <code>0</code> ve <code>1</code> değerleri yazdırma yerine daha detaylı bir şey yazdırabiliriz. Kodumuzu şu hale çevirmemiz mümkün: <code>return &quot;Evet, bu bir palindrom.&quot; if s == s[::-1] else &quot;Hayır, bu bir palindrom değil.&quot;</code>  (Bkz. Aşağıdaki Test Örnekleri - Yazılı Örnek)</li>
+<li>Normalde eşitlik ifadesi <code>if else</code> bloğunu hiç kullanmadan karşılaştırma yapmaya olanak sağlıyor. Böyle bir kullanımı 3. varyasyonda göstereceğim.</li>
+</ul>
+
+<p><a href="/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli.png" title="" data-lightbox="set1" data-title="Ekrana Rakam Sonucu Veren Palindrome Programı"><img src="/img/blog/palindrom-programi/palindrome_test_ornekleri_rakamli_thumb.png" alt=""></a>
+<a href="/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali.png" title="" data-lightbox="set1" data-title="Python'da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz"><img src="/img/blog/palindrom-programi/palindrome_test_ornekleri_yazi_aciklamali_thumb.png" alt=""></a></p>
+
+<h2 id="daha-anlaşılır-ve-uzun-if-else-bloklu-2-varyasyonumuz">Daha Anlaşılır ve Uzun If Else Bloklu 2. Varyasyonumuz</h2>
+
+<p>Şimdi aşağıda <code>if else</code> bloğunun daha açık yazıldığı bir varyasyon yazalım.</p>
+
+<p>Bu kez kodumuz biraz uzayacak, ancak ziyan  yok, bazen kodda açıklık kısalıktan evladır.</p>
+
+<p>Yazacağımız kod bir prosedür içermesin. <code>If else</code> bloklarından hangisinin daha iyi olduğunun kararını size bırakıyorum. (Bkz. Aşağıda Solda Test Örnekleri - If Else Örneği)</p>
+
+<pre><code class="language-python">cumle = 'ey edip adanada pide ye' # test cumlesi
+
+palindrom_mu = 2  # gecici degisken ve başlangıç değeri
+if cumle[0:] == cumle[::-1]:        # karşılaştırma yap
+    palindrom_mu = 0                # aynıysa değ. değerini 0 yap
+    print palindrom_mu              # değeri ekrana yaz
+else:                           # karşılaştırma aynı değilse
+    palindrom_mu = -1               # değişken değerini -1 yap
+    print palindrom_mu              # değeri ekrana yaz
+</code></pre>
+
+<p>Burada ne mi yaptık? <code>palindrom_mu</code> adlı geçici bir değişken oluşturup ona bir ilk değer atadık. Bu ilk değer <code>(2)</code> önemli değil. Siz kendinize göre başka bir değer verebilirsiniz.</p>
+
+<p>Daha sonra <code>if</code> karşılaştırma operatörü ile <code>cumle</code> değişkenine atanan karakter dizisi ile bu karakter dizisinin sondan okunuşunu karşılaştırdık.</p>
+
+<p>Eğer bu karşılaştırmanın sonucu evet ise (yani True) o halde <code>if</code>&lsquo;den hemen sonra gelen blok yürütülecek. <code>palindrom_mu</code> değişkeninin değeri <code>0</code> olacak ve ekrana yazdırılacak.</p>
+
+<p>Yok eğer yukarıda <code>if</code> bloğundaki karşılaştırma sonucu hayır ise (yani False) o halde else den sonra gelen blok yürütülecek. <code>palindrom_mu</code> değişkeninin değeri <code>-1</code>&lsquo;e eşitlenecek ve bu değer ekrana yazdırılacak.</p>
+
+<p><code>palindrom_mu</code> değişkenine başlangıçta (initial) atanan <code>2</code> değerinin programın hiç bir aşamasında çalışma fırsatı bul(a)madığına dikkat edin lütfen. O yüzden yukarıda önemli değil dedim.</p>
+
+<p>Son olarak <code>if</code> ve <code>else</code> satırlarından sonra gelen satırlardaki tablara (indentation) dikkat edin lütfen! Tablama yapmazsanız hata alırsınız.</p>
+
+<p><img src="/img/blog/palindrom-programi/palindrome_test_ornekleri_if_else_uzun.png" alt="If_else" title="Palindrom Test Örneklerimiz" /></p>
+
+<h2 id="if-else-bloku-içermeyen-3-varyasyonumuz">If Else Bloku İçermeyen 3. Varyasyonumuz</h2>
+
+<p>Yukarıdaki kodlarda gördüğünüz <code>(==)</code> operatör &ldquo;eşit mi?&rdquo; anlamını doğal olarak içinde taşır ve bu yüzden aslında <code>if else</code> bloğunu hiç kullanmadan karşılaştırma yapmaya imkan tanır.</p>
+
+<p>Lütfen aşağıdaki kodlara bir göz atın ve yine lütfen <strong>kendiniz yazarak</strong> kodları deneyin.</p>
+
+<pre><code class="language-python"># -*- coding: cp1254 -*-
+def palindrom_mu(s):
+    sonuc = (s==s[::-1]) - 1 # Boolean ifadeyi sayısal bir
+    return sonuc             # değişken değere atama
+
+metin1 = 'ey edip adanada pide ye'
+metin2 = &quot;mazdam&quot;
+metin3 = &quot;madam&quot;
+
+print palindrom_mu(metin1)
+print palindrom_mu(metin2)
+print palindrom_mu(metin3)
+</code></pre>
+
+<p>Yukarıdaki çözüm oldukça önemli bir konsepti ifade ediyor. (Altta Sağda Boolean<sup class="footnote-ref" id="fnref:bool"><a rel="footnote" href="#fn:bool">1</a></sup> Değeri Sayısal Değere Dönüştürme Örneği Ekran Görüntüsü)</p>
+
+<p>Normalde <code>(s==s[::-1])</code> ifadesinin bir karşılaştırma olduğunu ve <code>True(1)</code> yada <code>False(0)</code> döndürdüğünü biliyoruz. Bu ifadeyi sayısal bir operatör ile beraber kullandığımızda (burada &ldquo;- 1&rdquo;) <code>True</code>  değeri <code>1</code> ifadesi, <code>False</code> değeri <code>0</code> ifadesini alır.</p>
+
+<p><a href="/img/blog/palindrom-programi/boolean_operator_normal_kullanim.png" title="" data-lightbox="set1" data-title="Boolean Değerlerin Normal Metin Kullanımı"><img src="/img/blog/palindrom-programi/boolean_operator_normal_kullanim_thumb.png" alt=""></a>
+<a href="/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi.png" title="" data-lightbox="set1" data-title="Boolean[^bool] Değerleri Sayısal Değere Dönüştürme"><img src="/img/blog/palindrom-programi/boolean_sayisal_degere_atama_ornegi_thumb.png" alt=""></a></p>
+
+<p>İsterseniz yukarıdaki işlemde en sonraki &ldquo;-1&rdquo; ifadesini silip sonucu deneyin. <code>(sonuc = (s==s[::-1])</code> olarak) Python interpreter size herhangi bir sayısal değer vermeden direkt <code>True</code> yada <code>False</code> çıktısını döndürecektir. (Üstte Solda Boolean Değeri Normal Kullanma Örneği Ekran Görüntüsü)</p>
+
+<p>Dolayısıyla yapılan işlem şu: <code>sonuc</code> adlı değişkene atanacak değer karşılaştırma doğruysa 1 - 1 = <code>0</code>, yanlışsa 0 - 1 = <code>-1</code> olacak. Zaten bu da bizim almayı istediğiz sonuçtu. Yapmayı istediğimiz şeyi başardık.</p>
+
+<h2 id="find-fonksiyonu-kullanarak-4-varyasyon">.find Fonksiyonu Kullanarak 4. Varyasyon</h2>
+
+<p>Normalde 4. ve sonuncu çözüm olarak <code>.find</code> hazır (built-in) fonksiyonunu (d.b.i. metodunu)<sup class="footnote-ref" id="fnref:dib"><a rel="footnote" href="#fn:dib">2</a></sup> kullanarak palindrom programını yazacaktım. Ancak bu yazı çok uzadığı için onu bir sonraki yazı konusu olarak kullanmaya karar verdim.</p>
+
+<p><strong><a href="/blog/pythonda-stringleri-ogreniyoruz-2/#ev-deviniz">BİR ÖNCEKİ YAZIMDAKİ EV ÖDEVİ CEVAP:</a></strong> <strong>Sorumuzun cevabı &ldquo;boşluk karakteri&rdquo; olacaktı. Sorunun cevabına &ldquo;Boş karakter&rdquo; dediyseniz maalesef yanıldınız. Neden mi? <a href="/blog/bir-kere-daha-karakter-dizileri/#bo-karakter">İki sonraki yazımı</a> bu konuya ayırdım. Orada görüşmek üzere!</strong></p>
+
+<hr>
+
+<p>Siz şimdilik buradaki örnekleri detaylı inceleyin, yazın ve Payton&rsquo;da çalıştırın. Bir sonraki yazıda <code>.find</code> fonksiyonunun tüm özelliklerini incelerken bu soruyu beraberinde çözeceğim.</p>
+
+<p>Yazımı beğenmeyi unutmayın lütfen!</p>
+
+<h2 id="dipnotlar">DipNotlar</h2>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:bool">Programlama dillerinde Boolean veri tipi True (Doğru) ve False (Yanlış) olmak üzere sadece iki değer o/a/labilen bir değer tipidir. Boolean kelimesi matematikçi <a href="https://en.wikipedia.org/wiki/George_Boole">George Boole</a>&lsquo;un adına izafe edildiğinden bu ismi almıştır.
+ <a class="footnote-return" href="#fnref:bool"><sup>[return]</sup></a></li>
+<li id="fn:dib">İng. a.k.a. (also known as= başka bir deyişle) ifadesinden mülhem d.b.i. &ldquo;Diğer Bir İfadeyle&rdquo; şeklinde düşündüm.
+ <a class="footnote-return" href="#fnref:dib"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-palindrome-bulan-program%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-palindrome-bulan-program%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Palindrome%20Program%c4%b1m%c4%b1z&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-palindrome-bulan-program%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-python" href="https://pythonistan.github.io//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-prosed%C3%BCr" href="https://pythonistan.github.io//tags/prosed%C3%BCr">prosedür</a>,
+	                
+	                <a class="post-tag post-tag-palindrom" href="https://pythonistan.github.io//tags/palindrom">palindrom</a>,
+	                
+	                <a class="post-tag post-tag-kod" href="https://pythonistan.github.io//tags/kod">kod</a>,
+	                
+	                <a class="post-tag post-tag-stringler" href="https://pythonistan.github.io//tags/stringler">stringler</a>,
+	                
+	                <a class="post-tag post-tag-py.-uzant%C4%B1s%C4%B1" href="https://pythonistan.github.io//tags/py.-uzant%C4%B1s%C4%B1">py. uzantısı</a>,
+	                
+	                <a class="post-tag post-tag-def" href="https://pythonistan.github.io//tags/def">def</a>,
+	                
+	                <a class="post-tag post-tag-return" href="https://pythonistan.github.io//tags/return">return</a>,
+	                
+	                <a class="post-tag post-tag-if" href="https://pythonistan.github.io//tags/if">if</a>,
+	                
+	                <a class="post-tag post-tag-else" href="https://pythonistan.github.io//tags/else">else</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/pythonda-find-metodu/">Python&#39;da &#39;.find&#39; hazır metodu</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/sublime-text-kurulum/">Sublime Text Kuruyoruz</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'https:\/\/pythonistan.github.io\/blog\/pythonda-palindrome-bulan-program\/';
+    var disqus_title = 'Palindrome Programımız';
+    var disqus_url = 'https:\/\/pythonistan.github.io\/blog\/pythonda-palindrome-bulan-program\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

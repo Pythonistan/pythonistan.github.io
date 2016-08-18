@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Python&#39;da &#39;.find&#39; hazır metodu // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Karakter Dizilerini Bulma">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="og:title" content="Python&#39;da &#39;.find&#39; hazır metodu" />
+<meta property="og:description" content="Karakter Dizilerini Bulma" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://pythonistan.github.io/blog/pythonda-find-metodu/" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="https://pythonistan.github.io//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pythonistan.github.io//css/lightbox.css">
+  <script src="https://pythonistan.github.io//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="https://pythonistan.github.io/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="http://www.instagram.com/pyhonistan" target="_blank"><i class='fa fa-instagram'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+        <a href="http://www.youtube.com/pythonistan" target="_blank"><i class='fa fa-youtube'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/find-metodu/find_metodu_featured.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#python-da-find-metodu-hazır-fonksiyon">Python&rsquo;da <code>find</code> Metodu (Hazır Fonksiyon)</a></li>
+<li><a href="#find-metodu-örneğimiz"><code>find</code> Metodu Örneğimiz</a></li>
+<li><a href="#find-metodunun-tek-argümanı-d-b-i-dib-parametresi"><code>find</code> Metodunun Tek Argümanı (d.b.i<sup class="footnote-ref" id="fnref:dib"><a rel="footnote" href="#fn:dib">1</a></sup> Parametresi)</a></li>
+<li><a href="#find-metodu-ile-palindrom-bulma"><code>find</code> Metodu ile Palindrom Bulma</a></li>
+<li><a href="#dipnotlar">DipNotlar</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/pythonda-find-metodu/">Python&#39;da &#39;.find&#39; hazır metodu</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>10</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-string-index" href="https://pythonistan.github.io//categories/string-index">string index</a>
+				
+					<a class="post-category post-category-stringler" href="https://pythonistan.github.io//categories/stringler">stringler</a>
+				
+					<a class="post-category post-category-karakter-dizileri" href="https://pythonistan.github.io//categories/karakter-dizileri">karakter dizileri</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-find-metodu%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-find-metodu%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Python%27da%20%27.find%27%20haz%c4%b1r%20metodu&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-find-metodu%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/find-metodu/find.png" class="pure-img content-banner-image-inline"
+                                     style="
+                                            " />
+			
+
+            
+
+<p>Blogda en son 9 Ağustos&rsquo;ta <a href="/blog/pythonda-palindrome-bulan-program">palindrom yazısı</a> yayınlamıştım.</p>
+
+<p>Sonrasında evime geri taşınma işlemleri ve araya giren bayram tatili nedeni ile uzun bir ara verdim. Bu uzuuuuuun ara  nedeniyle hepinizden özür diliyorum.</p>
+
+<h2 id="python-da-find-metodu-hazır-fonksiyon">Python&rsquo;da <code>find</code> Metodu (Hazır Fonksiyon)</h2>
+
+<p>Payton&rsquo;un içinde hazır gelen <code>find</code> fonksiyonu ile aramak istediğimiz bir karakter dizisini başka bir karakter dizisi içinde aratabiliyoruz.</p>
+
+<p><code>.find</code> çıktı olarak bize karakterin <strong>ilk</strong> bulunduğu pozisyonu verir. Herhangi bir karakter dizisi bulunamazsa çıktı bu kez <code>-1</code> olur.</p>
+
+<h2 id="find-metodu-örneğimiz"><code>find</code> Metodu Örneğimiz</h2>
+
+<p>Aşağıdaki ifadeyi inceleyelim:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+ozluSoz =u&quot;&quot;&quot;Büyük beyinler fikirleri, ortɑ beyinler olɑylɑrı,
+küçük beyinler ise kişileri konuşur.&quot;&quot;&quot;
+bul = &quot;beyinler&quot;
+bulunan_pozisyon = ozluSoz.find(bul)
+print bulunan_pozisyon
+</code></pre>
+
+<p><code>find</code> hazır fonksiyonunu kullanırken ilk olarak içinde arama yapacağımız karakter dizisini yazıyoruz. <strong>&lsquo;ozluSoz&rsquo;</strong></p>
+
+<p>Sonra yanına bir nokta <code>.</code> koyup <code>find</code> yazıyoruz. <strong>&lsquo;ozluSoz.find&rsquo;</strong></p>
+
+<p><code>find</code>&lsquo;ın ardına bir parantez <code>()</code> açıp içine aranacak karakter dizisini yazıyoruz. <strong>&lsquo;ozluSoz.find(bul)&rsquo;</strong></p>
+
+<p>Biz yukarıda kolaylık olsun diye karakter dizilerini temsil eden değişkenleri kullandık.(Değişkenler konusunu detaylı inceleyeceğiz. Şimdilik <a href="/blog/pythonda-stringleri-ogreniyoruz-1/#fn:degisken">bkz</a>)</p>
+
+<p>Yukarıdaki ifadeyi şu şekilde yazabilirdik:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+print u&quot;&quot;&quot;Büyük beyinler fikirleri, ortɑ beyinler olɑylɑrı, 
+küçük beyinler ise kişileri konuşur.&quot;&quot;&quot;.find(&quot;beyinler&quot;)
+</code></pre>
+
+<p>Bu ifade <code>bulunan_pozisyon</code> değişkenimizin vereceği sonuç olan &ldquo;6&rdquo;. pozisyonu aynen verecektir.</p>
+
+<p>Yani <code>&quot;beyinler&quot;</code> karakter dizisi <code>ozluSoz</code> değişkeninin içerdiği karakter dizisinde <strong>ilk olarak</strong> 6. pozisyonda bulunur.</p>
+
+<p><em>Üç tırnak <code>&quot;&quot;&quot;</code> kullanımına dikkat ettiniz mi? Üç tırnak ile birden fazla satırda devam eden karakter dizileri oluşturabilirsiniz. Karakter dizisi uzunsa birden fazla satıra bölmek kullanışlıdır.</em></p>
+
+<p><strong><a href="/blog/pythonda-stringleri-ogreniyoruz-2/#trke-karakter-azizlii">NEDEN &lsquo;u&rsquo; KARAKTERİ VAR:</a></strong> Yukarıda u(unicode) şerhini koymazsanız maalesef Sublime Text bulunan pozisyonu Türkçe ü karakterlerinden dolayı 8 olarak veriyor. Ayrıntılı bilgi için linkteki açıklamama bakın lütfen.</p>
+
+<h2 id="find-metodunun-tek-argümanı-d-b-i-dib-parametresi"><code>find</code> Metodunun Tek Argümanı (d.b.i<sup class="footnote-ref" id="fnref:dib"><a rel="footnote" href="#fn:dib">1</a></sup> Parametresi)</h2>
+
+<p><code>find</code> metodu ile ilgili bilmemiz gereken bir diğer şey aldığı argümandır.(parametre)</p>
+
+<p><code>.find</code>&lsquo;dan sonra gelen parantezde aranan ifadeden hemen sonra bir virgül koyup arama yapmaya başlayacağımız pozisyonu <code>.find</code>&lsquo;a söyleyebiliriz.</p>
+
+<p><code>.find</code> böyle bir durumda arama yapmaya verdiğimiz pozisyondan itibaren başlar.</p>
+
+<p>Örneğin; <code>bulunan_pozisyon = ozluSoz.find(bul, 7)</code> ifadesinde aramaya &lsquo;7.&rsquo; pozisyondan başlanır ve bu pozisyondan sonraki ilk <code>&quot;beyinler&quot;</code> ifadesi bulunur. (bu örnekte ikinci bulunma 32. pozisyonda gerçekleşti.)</p>
+
+<p>Şimdi ikisini bir görelim.</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+ozluSoz =&quot;&quot;&quot;Buyuk beyinler fikirleri, ortɑ beyinler olɑylɑri,
+kucuk beyinler ise kisileri konusur.&quot;&quot;&quot; #  birden fazla satır kullanacaksanız
+bul = &quot;beyinler&quot;                    # üç tırnak kullanabilirsiniz.
+bulunan_ilk_pozisyon = ozluSoz.find(bul) # ilk bulunan pozisyon
+print bulunan_ilk_pozisyon 
+print ozluSoz[7:]      # 7. pozisyondan başlayarak sona kadar yazdır
+bulunan_ikinci_pozisyon = ozluSoz.find(bul, 7) # ikinci bulunan pozisyon
+print bulunan_ikinci_pozisyon
+print ozluSoz[33:]  # 33. pozisyondan başlayarak sona kadar yazdır
+</code></pre>
+
+<p><a href="/img/blog/find-metodu/find_metodu_argumansiz_kullanim.png" title="" data-lightbox="set1" data-title="Python'da find Metodunun Argümansız Kullanımı" alt=""><img src="/img/blog/find-metodu/find_metodu_argumansiz_kullanim_thumb.png" alt=""></a>
+<a href="/img/blog/find-metodu/find_metodu_argumanli_kullanim.png" title="" data-lightbox="set1" data-title="Python'da find Metodunun Argümanlı Kullanımı"><img src="/img/blog/find-metodu/find_metodu_argumanli_kullanim_thumb.png" alt=""></a></p>
+
+<p>Aşağıdaki örnekte <code>.find</code> metodunun parametre ile kullanımının değişik örneklerini göreceksiniz. Ekran görüntüsü için en üstteki ana imaja bakabilirsiniz:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+ozluSoz =&quot;&quot;&quot;Buyuk beyinler fikirleri, ortɑ beyinler olɑylɑri,
+            kucuk beyinler ise kisileri konusur.&quot;&quot;&quot;
+
+print ozluSoz.find(&quot;beyinler&quot;)     # 6 -&gt; argumansiz kullanim 
+print ozluSoz.find(&quot;beyinler&quot;, 0)  # 6 -&gt; en bastan başlar
+print ozluSoz.find(&quot;beyinler&quot;, 6)  # 6 -&gt; yine buldu
+print ozluSoz.find(&quot;beyinler&quot;, 7)  # 32 -&gt; bir sonrakini buldu
+print ozluSoz.find(&quot;beyinler&quot;, 32) # 32 -&gt; bir sonrakini buldu
+print ozluSoz.find(&quot;beyinler&quot;, 33) # 62 -&gt; en sonuncusunu buldu
+print ozluSoz.find(&quot;beyinler&quot;, 63) # -1 -&gt; hiçbirşey bulamadı
+</code></pre>
+
+<h2 id="find-metodu-ile-palindrom-bulma"><code>find</code> Metodu ile Palindrom Bulma</h2>
+
+<p>Palindrom bulma programımızı tekrar <a href="/blog/pythonda-palindrome-bulan-program/">hatırlayalım</a>. Palindrom bulmada bizden istenen sonuç, kelime yada cümle palindrom ise <code>0</code> değilse <code>-1</code> vermesi idi.</p>
+
+<p><code>find</code> metodu ile palindrom bulurken şöyle bir mantık güdeceğiz. Eğer bir kelime(yada cümle) palindromsa kelimeyi kendisinin tersinin hemen ilk (0.) pozisyonunda bulmuş olacağız. Yok değilse zaten kelimenin tamamı tersinde yoktur, o halde sonuç -1 verecek.</p>
+
+<p>Hadi bunu görelim:</p>
+
+<pre><code class="language-python"># -*- coding: utf-8 -*- 
+kelime = &quot;madam&quot; # test kelimemiz
+palindrom_mu = kelime.find(kelime[::-1]) # madam'ın tersinden başla, madam'ı ara
+        #eğer varsa find bulacak, sonuç 0. Yoksa bulamayacak, sonuç -1
+print palindrom_mu # sonucu ekrana yaz
+</code></pre>
+
+<p>Burada ne yaptım? <code>kelime</code> değişkeninde verilen karakter dizisinin içinde kendisini aradım.</p>
+
+<p><a href="/img/blog/find-metodu/find_metodu_ornek_kullanimlar.png" title="" data-lightbox="set1" data-title="Python'da find Metodu Örnek Kullanımlar" alt=""><img src="/img/blog/find-metodu/find_metodu_ornek_kullanimlar_thumb.png" alt=""></a>
+<a href="/img/blog/find-metodu/find_metodu_ile_palindrom_bulma.png" title="" data-lightbox="set1" data-title=".find Metodu ile Kelimenin Palindrom Olup Olmadığını Anlama"><img src="/img/blog/find-metodu/find_metodu_ile_palindrom_bulma_thumb.png" alt=""></a></p>
+
+<p>Arama işlemini tersinden(<strong>&lsquo;kelime[::-1] ile&rsquo;</strong>) yaptım, daha önceki yazımda bu ifadenin tersten karakter dizisi okuma anlamına geldiğini öğrenmiştik.(Geniş bilgi için bkz. <a href="/blog/bir-kere-daha-karakter-dizileri/">Bir Kere Daha Karakter Dizileri ve Indexing</a></p>
+
+<p>Python aranan ifadeyi bulursa <code>.find</code> metodunun bulunan ilk pozisyonu getireceğini biliyoruz, ki o pozisyon palindrom için <code>0</code>&lsquo;dır. Bulunamazsa <code>.find</code> metodu sonuç olarak <code>-1</code> verir.</p>
+
+<hr>
+
+<p>Evet dostlar, <code>find</code> metodu ile işimiz bitti. Esasında bir sonraki yazımda Değişkenler konusuna geçiş yapmayı düşünüyordum. Ancak karakter dizilerinin önemine binaen son bir defa daha bu konuyu işleyeceğim. Zira bu konu çok kritik.</p>
+
+<p>Bu yazımda iyi anlaşılmayan bir taraf varsa lütfen bana <a href="mailto:pythonistan@gmail.com">bildirin</a>. Yazımı paylaşmak için sol üstte linkler var. Çekinmeden kullanabilirsiniz :)</p>
+
+<h2 id="dipnotlar">DipNotlar</h2>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:dib">&ldquo;diğer bir ifadeyle&rdquo;
+ <a class="footnote-return" href="#fnref:dib"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-find-metodu%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-find-metodu%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Python%27da%20%27.find%27%20haz%c4%b1r%20metodu&url=https%3a%2f%2fpythonistan.github.io%2fblog%2fpythonda-find-metodu%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-python" href="https://pythonistan.github.io//tags/python">python</a>,
+	                
+	                <a class="post-tag post-tag-find-metodu" href="https://pythonistan.github.io//tags/find-metodu">find metodu</a>,
+	                
+	                <a class="post-tag post-tag-haz%C4%B1r-fonksiyon" href="https://pythonistan.github.io//tags/haz%C4%B1r-fonksiyon">hazır fonksiyon</a>,
+	                
+	                <a class="post-tag post-tag-string" href="https://pythonistan.github.io//tags/string">string</a>,
+	                
+	                <a class="post-tag post-tag-karakter-dizileri" href="https://pythonistan.github.io//tags/karakter-dizileri">karakter dizileri</a>,
+	                
+	                <a class="post-tag post-tag-bulma" href="https://pythonistan.github.io//tags/bulma">bulma</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/bir-kere-daha-karakter-dizileri/">Bir Kere Daha Karakter Dizileri</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/pythonda-palindrome-bulan-program/">Palindrome Programımız</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'https:\/\/pythonistan.github.io\/blog\/pythonda-find-metodu\/';
+    var disqus_title = 'Python\x27da \x27.find\x27 hazır metodu';
+    var disqus_url = 'https:\/\/pythonistan.github.io\/blog\/pythonda-find-metodu\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>
