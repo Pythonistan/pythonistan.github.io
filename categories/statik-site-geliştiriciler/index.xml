@@ -23,6 +23,8 @@
 
 &lt;p&gt;Evet, blogumda baştan beri Jekyll ile olan maceram bugün itibarı ile sona erdi. Onun yerine Hugo statik site geliştiricisine (static site generator) geçiyorum.&lt;/p&gt;
 
+&lt;p&gt;Bu yazının yazıldığı 18 Ağustos 2016 itibarı ile StaticGen&amp;rsquo;den SSG&amp;rsquo;lerin kullanım istatistikleri&amp;hellip;&lt;/p&gt;
+
 &lt;h2 id=&#34;statik-site-geliştiricileri&#34;&gt;Statik Site Geliştiricileri&lt;/h2&gt;
 
 &lt;p&gt;Web sitesi oluşturmak için birden fazla yöntem var. Son yıllarda en yaygın olarak kullanılan blog oluşturma aracı ise şüphesiz Wordpress. Lakin gerek yavaşlığı gerekse plug-inlerin kurulumundaki bazı sıkıntılar nedeniyle blogcular Wordpress tercihlerini yavaş yavaş sorgular hale geldiler.&lt;/p&gt;
@@ -85,16 +87,16 @@ herhangi bir içerik..... ![herhangi bir resim](/resim_yolu/resim_ismi.jpg)
 
 &lt;p&gt;İki örnek vereyim. Mesela üzerinde çalıştığımız sayfada sosyal medya ikonlarının çıkmasını istersek front matter&amp;rsquo;a &amp;ldquo;socialsharing = true&amp;rdquo; satırını ekleyerek sayfaya sosyal medya butonlarını ekleyebiliriz.&lt;/p&gt;
 
-&lt;p&gt;Yada sitemizdeki yorum seçeneğinin açık olduğunu varsayarak üzerinde çalıştığım sayfada yorum seçeneğini kaldırmak istediğimizi varsalalım. O halde &amp;ldquo;nocomment = true&amp;rdquo; şeklinde bir satır ile bu isteğimi gerçekleştirebilirim.&lt;/p&gt;
+&lt;p&gt;Yada sitemizdeki yorum seçeneğinin açık olduğunu varsayarak üzerinde çalıştığım sayfada yorum seçeneğini kaldırmak istediğimizi varsayalım. O halde &amp;ldquo;nocomment = true&amp;rdquo; şeklinde bir satır ile bu isteğimi gerçekleştirebilirim.&lt;/p&gt;
 
-&lt;p&gt;```markdown
-+++
-date = &amp;ldquo;2016-05-25T11:45:50-07:00&amp;rdquo;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
+date = &amp;quot;2016-05-25T11:45:50-07:00&amp;quot;
 draft = true
-title = &amp;ldquo;hakkimizda&amp;rdquo;
+title = &amp;quot;hakkimizda&amp;quot;
 socialsharing = true
 nocomment = true
-+++&lt;/p&gt;
++++
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Burada bilmeniz gereken önemli bir nokta; yukarıda kullandığımız argümanları ve değerlerini, kullandığınız temadan yada Hugonun genel dökümantasyonundan öğrenmeniz gerektiği. Çünkü bu argümanlar temadan temaya değişiklik gösterebilmektedir. En önemli başvuru kaynağımız temanın readme.md (okubeni) dosyası olacaktır.&lt;/p&gt;
 
@@ -136,7 +138,7 @@ nocomment = true
 
 &lt;hr&gt;
 
-&lt;p&gt;Daha detaylı bir Hugo ve Jekyll kullanım klavuzunu hemen yakın zamanda hazırlayıp seri olarak hizmetinize sunmayı düşünüyorum. Sağlıcakla kalın&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Adımlar karışık geldiyse üzülmeyin. Daha detaylı ve &lt;strong&gt;adım adım&lt;/strong&gt; bir Hugo ve Jekyll kullanım klavuzunu hemen çok yakın zamanda hazırlayıp seri olarak hizmetinize sunacağım inşallah. Sağlıcakla kalın&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
