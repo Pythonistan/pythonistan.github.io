@@ -25,9 +25,9 @@
 
 &lt;p&gt;Bu yazının yazıldığı 18 Ağustos 2016 itibarı ile StaticGen&amp;rsquo;den SSG&amp;rsquo;lerin kullanım istatistikleri aşağıdaki gibi:&lt;/p&gt;
 
-&lt;p&gt;Web sitesi oluşturmak için birden fazla yöntem var. Son yıllarda en yaygın olarak kullanılan blog oluşturma aracı ise şüphesiz &lt;a href = &#34;https://tr.wordpress.org&#34; target =&#34;_blank&#34;&gt;Wordpress&lt;/a&gt;.&lt;/p&gt;
-
 &lt;h2 id=&#34;wordpress-ve-ssg-lere-duyulan-ihtiyaç&#34;&gt;Wordpress ve SSG&amp;rsquo;lere Duyulan İhtiyaç&lt;/h2&gt;
+
+&lt;p&gt;Web sitesi oluşturmak için birden fazla yöntem var. Son yıllarda en yaygın olarak kullanılan blog oluşturma aracı ise şüphesiz &lt;a href = &#34;https://tr.wordpress.org&#34; target =&#34;_blank&#34;&gt;Wordpress&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Gerek yavaşlığı gerekse plug-inlerin kurulumundaki bazı sıkıntılar nedeniyle son dönemde blogcular Wordpress tercihlerini sorgular hale geldiler.&lt;/p&gt;
 
@@ -114,7 +114,10 @@ nocomment = true
 
 &lt;p&gt;Artı işaretleri bittikden sonra artık dosyamızın tarayıcıda görünecek kısmına geldik. Bu bölümde her türlü yazı ve imajımızı markdown edit kuralları çerçevesinde dökümanımıza ekleyebilir, temamızın bize sağladığı diğer taglerden faydalanabiliriz.&lt;/p&gt;
 
-&lt;p&gt;Örneğin temamız bize üzerine tıklandığında açılan türden bir imaj galerisi imkanı sunuyorsa bunu normal html imaj taginin içine &amp;ldquo;lightbox&amp;rdquo; özelliğini ekleyerek gerçekleştirebilirsiniz. Tabi dediğim gibi bu özellik temada tanımlı olmalı.&lt;/p&gt;
+&lt;p&gt;Örneğin temamız bize üzerine tıklandığında açılan türden bir imaj galerisi imkanı sunuyorsa bunu normal html imaj taginin içine &amp;ldquo;lightbox&amp;rdquo; özelliğini ekleyerek gerçekleştirebilirsiniz. Tabi dediğim gibi bu özellik temada tanımlı olmalı. Aşağıdaki gibi:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/ssg/lightbox_html_frontmatter.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Markdown&#39;da Spesifik Bir Özelliği Kullanma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/ssg/lightbox_html_frontmatter_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://pythonistan.github.io/img/blog/ssg/lightbox_html_markdown.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Markdown&#39;da Spesifik Bir Özelliği Kullanma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/ssg/lightbox_html_markdown_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Markdown dilinin olağan komutlarını öğrenmek Hugo yada Jekyll gibi SSG&amp;rsquo;leri kullanmak için bir zorunluluk. Google&amp;rsquo;da bu konuda bir çok kaynak bulabilirsiniz. Basit bir örnek verirsek bir sayfada bir foto göstermek (eklemek) için kullanılan komut: &lt;code&gt;![resmi_tanımlayan_text](/resim_yolu/resim_ismi.jpg)&lt;/code&gt;&lt;/p&gt;
 
