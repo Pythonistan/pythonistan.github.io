@@ -22,6 +22,18 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:url" content="https://pythonistan.github.io/blog/Jekylldan-Hugoya-gecis/" />
 
+<meta property="og:image" content="/img/blog/ssg/jekyll-hugo.png" />
+
+
+  
+  
+  
+  <meta name="twitter:title" content="Jekyll&#39;dan Hugo&#39;ya Geçiş"/>
+  <meta name="twitter:description" content="Statik Site Oluşturucuları Tercihi"/>
+  
+  
+  
+
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
@@ -52,10 +64,6 @@
   <script>hljs.initHighlightingOnLoad();</script>
 
 
-  
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://pythonistan.github.io//css/lightbox.css">
-  <script src="https://pythonistan.github.io//js/lightbox.min.js"></script>
   
 
   
@@ -144,10 +152,11 @@
 <ul>
 <li>
 <ul>
-<li><a href="#statik-site-geliştiricileri">Statik Site Geliştiricileri</a></li>
+<li><a href="#wordpress-ve-ssg-lere-duyulan-ihtiyaç">Wordpress ve SSG&rsquo;lere Duyulan İhtiyaç</a></li>
 <li><a href="#başlıca-statik-site-geliştiricileri">Başlıca Statik Site Geliştiricileri</a></li>
 <li><a href="#hugo">Hugo</a></li>
-<li><a href="#hugo-ile-bir-site-yapalım">Hugo ile Bir Site Yapalım</a></li>
+<li><a href="#hugo-ile-bir-site-yapalım-windows-için">Hugo ile Bir Site Yapalım (Windows İçin)</a></li>
+<li><a href="#hugo-front-matter">Hugo Front Matter</a></li>
 <li><a href="#sayfa-içeriği">Sayfa İçeriği</a></li>
 <li><a href="#temalar">Temalar</a></li>
 <li><a href="#hugo-da-dosya-düzeni">Hugo&rsquo;da Dosya Düzeni</a></li>
@@ -178,11 +187,13 @@
 			
 				<div class="post-categories">
 				
-					<a class="post-category post-category-statik-site-geli%C5%9Ftiriciler" href="https://pythonistan.github.io//categories/statik-site-geli%C5%9Ftiriciler">statik site geliştiriciler</a>
+					<a class="post-category post-category-statik-site-gelistiriciler" href="https://pythonistan.github.io//categories/statik-site-gelistiriciler">statik site gelistiriciler</a>
 				
 					<a class="post-category post-category-hugo" href="https://pythonistan.github.io//categories/hugo">hugo</a>
 				
 					<a class="post-category post-category-jekyll" href="https://pythonistan.github.io//categories/jekyll">jekyll</a>
+				
+					<a class="post-category post-category-websitem" href="https://pythonistan.github.io//categories/websitem">websitem</a>
 				
 				</div>
 			
@@ -205,35 +216,39 @@
 
 <p>Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmişsinizdir.</p>
 
-<p>Eski siteyi Jekyll ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&rsquo;ı değiştirmeye karar verdim.</p>
+<p>Eski siteyi Jekyll ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&rsquo;ı Hugo ile değiştirmeye karar verdim.</p>
 
 <p>Evet, blogumda baştan beri Jekyll ile olan maceram bugün itibarı ile sona erdi. Onun yerine Hugo statik site geliştiricisine (static site generator) geçiyorum.</p>
 
-<p>Bu yazının yazıldığı 18 Ağustos 2016 itibarı ile StaticGen&rsquo;den SSG&rsquo;lerin kullanım istatistikleri&hellip;</p>
+<p>Bu yazının yazıldığı 18 Ağustos 2016 itibarı ile StaticGen&rsquo;den SSG&rsquo;lerin kullanım istatistikleri aşağıdaki gibi:</p>
 
-<h2 id="statik-site-geliştiricileri">Statik Site Geliştiricileri</h2>
+<p>Web sitesi oluşturmak için birden fazla yöntem var. Son yıllarda en yaygın olarak kullanılan blog oluşturma aracı ise şüphesiz <a href = "https://tr.wordpress.org" target ="_blank">Wordpress</a>.</p>
 
-<p>Web sitesi oluşturmak için birden fazla yöntem var. Son yıllarda en yaygın olarak kullanılan blog oluşturma aracı ise şüphesiz Wordpress. Lakin gerek yavaşlığı gerekse plug-inlerin kurulumundaki bazı sıkıntılar nedeniyle blogcular Wordpress tercihlerini yavaş yavaş sorgular hale geldiler.</p>
+<h2 id="wordpress-ve-ssg-lere-duyulan-ihtiyaç">Wordpress ve SSG&rsquo;lere Duyulan İhtiyaç</h2>
+
+<p>Gerek yavaşlığı gerekse plug-inlerin kurulumundaki bazı sıkıntılar nedeniyle son dönemde blogcular Wordpress tercihlerini sorgular hale geldiler.</p>
 
 <p>İşte tam bu sıralarda devreye statik site oluşturucuları girdi. SSG&rsquo;ler özellikle sitesinde dinamik içeriğe ihtiyaç duymayan, sitelerini hızlı bir şekilde hazırlamak ve sunucuya yüklemek isteyen bloggerlar tarafından tercih ediliyor.</p>
 
-<p>Statik site oluşturucularında site önceden oluşturulduğundan (generate) http (web) server&rsquo;a gereksiz yere yük binmiyor (Sebep: istemci isteklerinde her seferinde aynı sayfa render edilmiyor).</p>
+<p>Statik site oluşturucularında site önceden oluşturulduğundan (generate) http sunucusuna (yani web servera) gereksiz yere yük binmiyor.</p>
 
-<p>Blog sayfaları doğası itibarı ile büyük oranda statik olduğu için Wordpress gibi sistemlerde atıl şekilde duran onca plug in v.s. uygulamasının boşu boşuna çalışmasına ihtiyaç kalmıyor.</p>
+<p>Wordpress gibi uygulamalarda her bir istemcinin her isteğinde aynı sayfa tekrar tekrar render edilip sunucu tarafından bize gönderilir. Bu da sunucuya ciddi bir yük demektir.</p>
+
+<p>Blog sayfaları doğası itibarı ile büyük oranda zaten statik içerikli olduğu için Wordpress gibi sistemlerde atıl şekilde duran onca plug in v.s. uygulamasının boşu boşuna çalışmasına ihtiyaç kalmıyor.</p>
 
 <h2 id="başlıca-statik-site-geliştiricileri">Başlıca Statik Site Geliştiricileri</h2>
 
-<p>Şu anda en gözde statik site oluşturucu ortamı Jekyll. Jekyll gerek kullanım kolaylığı gerekse dökümantasyonundaki ayrıntılı bilgiler ve topluluğunun güçlülüğü ile dikkat çekiyor.</p>
+<p>Şu anda en gözde statik site oluşturucu ortamı Jekyll. Jekyll gerek kullanım kolaylığı gerekse dökümantasyonundaki detaylı bilgiler ve topluluğunun güçlülüğü ile dikkat çekiyor.</p>
 
-<p>Statik site geliştiricileri ile yeni tanışanlar için kolay anlayıp kullanılabilecek bir sistem.</p>
+<p>Statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.</p>
 
-<p>Bunun yanında en büyük sıkıntısı ise diğer SSG&rsquo;lerine göre oldukça yavaş olması. Özellikle karşılaştırma kriteri olarak biraz sonra değineceğim Hugo&rsquo;ya göre neredeyse 10&rsquo;da 1 oranında yavaş.</p>
+<p>Dezavantajı ise diğer SSG&rsquo;lerine göre oldukça yavaş olması. Özellikle karşılaştırma kriteri olarak biraz sonra değineceğim Hugo&rsquo;ya göre neredeyse 10&rsquo;da 1 oranında yavaş.</p>
 
-<p>Hugo ise dökümantasyon ve topluluk desteği gibi konularda Jekyll&rsquo;ın oldukça gerilerinde olsa bile hız konusunda süper güçlü. Jekyll&rsquo;a göre bir üstünlüğü de çalıştırılması için herhangi bir dependency&rsquo;e (ek paketler) ihtiyaç duymaması.</p>
+<p>Hugo&rsquo;nun hız dışında Jekyll&rsquo;a üstünlük sağladığı bir yerde çalıştırılması için herhangi bir dependency&rsquo;e (ek paketler) ihtiyaç duymaması.</p>
 
-<p>Yani Jekyll&rsquo;da kurulum ve farklı bir özellik (feature) kullanmak için değişik paketler yüklemek zorunda olmamıza karşın Hugo tek bir binary (windows için .exe dosyası) dosya kullanarak sisteminize kurulup kullanılabiliyor.</p>
+<p>Yani Jekyll&rsquo;da kurulum ve ekstra her bir özellik (feature) kullanmak için değişik paketler yüklemek zorunda olmamıza karşın Hugo tek bir binary dosya  (windows için .exe dosyası)kullanarak sisteminize kurulup kullanılabiliyor.</p>
 
-<p>Ayrıyeten Hugo çok kullanışlı bir özellik olan <code>live</code> reload özelliğine öntanımlı olarak sahip. (Sitenizde yaptığınız bir değişikliği browserda anında görebiliyorsunuz. Sunucuyu yada tarayıcıyı kapatıp açmanıza gerek yok.)</p>
+<p>Ayrıyeten Hugo çok kullanışlı bir özellik olan <code>live reload</code> özelliğine öntanımlı olarak sahip. (Sitenizde yaptığınız bir değişikliği browserda anında görebiliyorsunuz. Sunucuyu yada tarayıcıyı kapatıp açmanıza gerek yok.)</p>
 
 <h2 id="hugo">Hugo</h2>
 
@@ -243,20 +258,24 @@
 
 <p>Hugo Go diliyle yazılmış bir statik site oluşturucusu. Birçok insanın destek verdiği açık kaynak kodlu bir özgür yazılım olan Hugo&rsquo;nun ilk yaratıcısı Steve Francia. Hugo bugün itibarı ile 0,16 stabil sürümüne sahip ve Windows, Mac ve Linux ortamında çalışabiliyor.</p>
 
-<p>Kullanmak için tek yapmanız gereken Github&rsquo;daki Hugo dağıtım sayfasında kendi işletim sisteminize uygun paketi indirip bilgisayarınıza kurmak. Dosyayı bilgisayara indirip herhangi bir klasöre yerleştirdikten sonra klasör yolunu (mesela <code>c:\Hugo\Bin</code> gibi) ortam değişkenine (PATH) eklemeniz gerekiyor. Bu kadar.</p>
+<p>Kullanmak için tek yapmanız gereken <a href = "https://gohugo.io/" target = "_blank"> Hugo websitesinden </a>kendi işletim sisteminize uygun paketi indirmek. Dosyayı bilgisayara indirip herhangi bir klasöre yerleştirdikten sonra klasör yolunu (mesela <code>c:\Hugo</code> gibi) ortam değişkenine (PATH) eklemeniz gerekiyor. Bu kadar.</p>
 
-<h2 id="hugo-ile-bir-site-yapalım">Hugo ile Bir Site Yapalım</h2>
+<h2 id="hugo-ile-bir-site-yapalım-windows-için">Hugo ile Bir Site Yapalım (Windows İçin)</h2>
 
-<p>Hugo ile hemen bir deneme site yapalım. Hugoyu indirin ve kurun. Şimdi komut satırında <code>hugo new site yeni</code> komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yeni adında bir klasör oluşturuldu. Hemen kontrol edin.</p>
+<p>Hugo ile hemen bir deneme sitesi yapalım. Hugoyu indirin ve ortam değişkenine ekleyin.</p>
 
-<p>Sitemizde yeni bir dosya oluşturalım. hugo new hakkimizda.md komutu vererek sitemize bir hakkımızda dosyası oluşturalım.</p>
+<p>Şimdi komut satırında (Powershell) <code>hugo new site yenisite</code> komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yenisite adında bir klasör oluşturuldu.Hemen kontrol edin.</p>
 
-<p>Site ana klasörünüzün (yeni) altındaki content klasörünün içine bakarsanız Hugo&rsquo;nun hakkimizda.md adında bir dosya oluşturduğunu görmüş olacaksınız.</p>
+<p><img src="/img/blog/ssg/hugo_yeni_site_olusturma.png" alt="Hugo ile yeni bir site oluşturma" /></p>
 
-<p>Şimdi hakkimizda.md dosyasını çift tıklayarak açın. (bilgisayarınızda sublime text programı yüklü, değil mi?) Dosyanın içinde şu şekilde satırlar görüyor olmalısınız:</p>
+<p>Sitemizde yeni bir dosya oluşturalım. <code>hugo new hakkimizda.md</code> komutu vererek sitemize bir hakkımızda dosyası oluşturalım.</p>
 
-<pre><code class="language-markdown">+++
-date = &quot;2016-05-25T11:45:50-07:00&quot;
+<p>Site ana klasörünüzün (yeni) altındaki content klasörünün içine bakarsanız Hugo&rsquo;nun <strong>hakkimizda.md</strong> adında bir dosya oluşturduğunu görmüş olacaksınız.</p>
+
+<p>Şimdi <strong>hakkimizda.md</strong> dosyasını çift tıklayarak açın. (bilgisayarınızda <a href="/blog/sublime-text-kurulum/">Sublime Text</a> programı yüklü, değil mi?) Dosyanın içinde şu satırları görüyor olmalısınız:</p>
+
+<pre><code class="language-toml">+++
+date = &quot;2016-05-25&quot;
 draft = true
 title = &quot;hakkimizda&quot;
 
@@ -267,16 +286,18 @@ buraya içeriğimizi ekleyelim.
 herhangi bir içerik..... ![herhangi bir resim](/resim_yolu/resim_ismi.jpg)
 </code></pre>
 
-<p>Yukarıdaki üç (3) adet artı işareti arasında gördüğünüz satırlara Hugo front matter (ön bilgi) adını veriyor.</p>
+<h2 id="hugo-front-matter">Hugo Front Matter</h2>
 
-<p>Bu bölüm bize dosyanın bir markup (burada toml- ancak yaml yada json da olabilirdi) dilinde yazıldığını söylüyor. Artı karakter işaretleri içinde, kullandığımız temanın ve Hugonun bize sağladığı diğer olanaklar çerçevesinde dosyamızı şekillendirebiliriz.</p>
+<p>Yukarıdaki <strong>üç (3)</strong> adet artı işareti arasında gördüğünüz satırlara Hugo <strong>front matter</strong> (ön bilgi) adını veriyor.</p>
 
-<p>İki örnek vereyim. Mesela üzerinde çalıştığımız sayfada sosyal medya ikonlarının çıkmasını istersek front matter&rsquo;a &ldquo;socialsharing = true&rdquo; satırını ekleyerek sayfaya sosyal medya butonlarını ekleyebiliriz.</p>
+<p>Bu bölüm bize dosyanın bir markup (burada toml- ancak yaml yada json da olabilirdi) dilinde yazıldığını söylüyor. <strong>(+++)</strong> karakterlerinin içinde, kullandığımız temanın ve Hugonun bize sağladığı diğer olanaklar çerçevesinde dosyamızı şekillendirebiliriz.</p>
 
-<p>Yada sitemizdeki yorum seçeneğinin açık olduğunu varsayarak üzerinde çalıştığım sayfada yorum seçeneğini kaldırmak istediğimizi varsayalım. O halde &ldquo;nocomment = true&rdquo; şeklinde bir satır ile bu isteğimi gerçekleştirebilirim.</p>
+<p>İki örnek vereyim. Mesela üzerinde çalıştığımız sayfada sosyal medya ikonlarının çıkmasını istersek front matter&rsquo;a <strong>&ldquo;socialsharing = true&rdquo;</strong> satırını ekleyerek sayfaya sosyal medya butonlarını ekleyebiliriz.</p>
 
-<pre><code class="language-markdown">+++
-date = &quot;2016-05-25T11:45:50-07:00&quot;
+<p>Yada sitemizdeki yorum seçeneğinin açık olduğunu varsayarak üzerinde çalıştığım sayfada yorum seçeneğini kaldırmak istediğimizi varsayalım. O halde <strong>&ldquo;nocomment = true&rdquo;</strong> şeklinde bir satır ile bu isteğimi gerçekleştirebilirim.</p>
+
+<pre><code class="language-toml">+++
+date = &quot;2016-05-25&quot;
 draft = true
 title = &quot;hakkimizda&quot;
 socialsharing = true
@@ -284,47 +305,51 @@ nocomment = true
 +++
 </code></pre>
 
-<p>Burada bilmeniz gereken önemli bir nokta; yukarıda kullandığımız argümanları ve değerlerini, kullandığınız temadan yada Hugonun genel dökümantasyonundan öğrenmeniz gerektiği. Çünkü bu argümanlar temadan temaya değişiklik gösterebilmektedir. En önemli başvuru kaynağımız temanın readme.md (okubeni) dosyası olacaktır.</p>
-
-<p>Son olarak markdown dilinin olağan yani spesifik bir temaya bağlı olmayan komutlarını öğrenmemiz gerekiyor. Markdown için google&rsquo;da bir çok kaynak bulup kullanabilirsiniz. Basit bir örnek verirsek bir sayfada bir foto göstermek (eklemek) için kullanılan komut: <code>![resmi_tanımlayan_text](/resim_yolu/resim_ismi.jpg)</code></p>
+<p>Burada bilmeniz gereken <strong>önemli bir nokta</strong>; yukarıda kullandığımız argümanları ve değerlerini, kullandığınız temadan yada Hugonun genel dökümantasyonundan öğrenmeniz gerektiği. Çünkü bu argümanlar temadan temaya değişiklik gösterebilmektedir. En önemli başvuru kaynağımız temanın readme.md (okubeni) dosyası olacaktır.</p>
 
 <h2 id="sayfa-içeriği">Sayfa İçeriği</h2>
 
-<p>Artı işaretlerinden sonra artık dosyamızın browserda görünecek kısmına geldik. Bu bölümde her türlü yazı ve imajımızı markdown edit kuralları çerçevesinde dökümanımıza ekleyebilir, temamızın bize sağladığı diğer taglerden faydalanabiliriz.</p>
+<p>Artı işaretleri bittikden sonra artık dosyamızın tarayıcıda görünecek kısmına geldik. Bu bölümde her türlü yazı ve imajımızı markdown edit kuralları çerçevesinde dökümanımıza ekleyebilir, temamızın bize sağladığı diğer taglerden faydalanabiliriz.</p>
 
 <p>Örneğin temamız bize üzerine tıklandığında açılan türden bir imaj galerisi imkanı sunuyorsa bunu normal html imaj taginin içine &ldquo;lightbox&rdquo; özelliğini ekleyerek gerçekleştirebilirsiniz. Tabi dediğim gibi bu özellik temada tanımlı olmalı.</p>
+
+<p>Markdown dilinin olağan komutlarını öğrenmek Hugo yada Jekyll gibi SSG&rsquo;leri kullanmak için bir zorunluluk. Google&rsquo;da bu konuda bir çok kaynak bulabilirsiniz. Basit bir örnek verirsek bir sayfada bir foto göstermek (eklemek) için kullanılan komut: <code>![resmi_tanımlayan_text](/resim_yolu/resim_ismi.jpg)</code></p>
 
 <h2 id="temalar">Temalar</h2>
 
 <p>Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altına themes adlı bir klasör oluşturup onun içine ekleyebilirsiniz.</p>
 
-<p>Temanızı sitede kullanmak için config.toml dosyanızın içine &ldquo;theme = tema adiniz&rdquo; şeklinde bir satır eklemeniz yeterli.</p>
+<p>Temanızı sitede kullanmak için <strong>config.toml</strong> dosyanızın içine <strong>&ldquo;theme = tema-adiniz&rdquo;</strong> şeklinde bir satır eklemeniz yeterli.</p>
 
 <h2 id="hugo-da-dosya-düzeni">Hugo&rsquo;da Dosya Düzeni</h2>
 
-<p>Hugo varsayılan olarak sayfalar ve postlar düzenini kullanıyor. Yani bağımsız sayfalara page(sayfa), bir bölümün(section) altında olacak sayfalara ise post deniyor.</p>
+<p>Hugo varsayılan olarak sayfalar ve postlar düzenini kullanıyor. Yani bağımsız sayfalara <strong>page</strong> (sayfa), bir bölümün(section) altında olacak sayfalara ise <strong>post</strong> deniyor.</p>
 
-<p>Mesela yukarıda oluşturduğumuz hakkimizda.md bir sayfa olarak değerlendirilip content klasörünün hemen altına yerleştiriliyor. Bu sayfalar şablon biçimlerimizden single.html şablonuna uyduruluyor.</p>
+<p>Mesela yukarıda oluşturduğumuz <strong>hakkimizda.md</strong> bağımsız bir sayfa olarak değerlendirilip content klasörünün hemen altına yerleştiriliyor. Bu sayfalar şablon biçimlerimizden single.html şablonuna uyduruluyor.</p>
 
-<p>Bölüm oluşturmak içinse content klasörünüzün içinde yeni klasörler oluşturun. Mesela (blog), (post), (yazilar), (arşiv) v.d. gibi. Bu klasörlerin içinde oluşturacağınız her dosya (mesela dosya1.md, dosya3.md) post olarak algılanacaktır.</p>
+<p>Bölüm oluşturmak içinse content klasörünüzün içinde yeni klasörler oluşturun. Mesela (blog), (post), (yazilar), (arşiv) v.d. gibi. Bu klasörlerin içinde oluşturacağınız her dosya (mesela dosya1.md, dosya2.md, v.b.) <strong>post</strong> olarak algılanacaktır.</p>
+
+<p>Dolayısıyla <strong>page</strong> (sayfalar) ve her bir bölümün <strong>postları</strong> için ayrı sayfa ve renk düzenleri oluşturabilirsiniz.</p>
 
 <h2 id="sitemizi-oluşturma">Sitemizi Oluşturma</h2>
 
-<p>Şimdi sitemizi oluşturalım. Aşağıdaki siteye gidin ve herhangi bir temayı indirin. <a href="https://github.com/spf13/hugoThemes">https://github.com/spf13/hugoThemes</a></p>
+<p>Şimdi sitemizi oluşturalım. Aşağıdaki siteden herhangi bir tema indirdiğinizi varsayıyorum. <a href = "http://themes.gohugo.io/" target="_blank"> Hugo Themes </a></p>
 
 <p>İndirdiğiniz temayı ana dizinin altında themes klasörünün içine kopyalayın.</p>
 
-<p>Şimdi ana klasörün içindeyken şu komutu verin. hugo server &ndash;theme=tema-ismi &ndash;buildDrafts</p>
+<p>Şimdi ana klasörün içindeyken şu komutu verin. <code>hugo server --theme = tema-ismi --buildDrafts</code></p>
 
-<p>Şu anda siteniz oluşturuldu ve lokal sunucunuzda hazır. Test etmek için browserınızı açın ve <a href="http://localhost:1313">http://localhost:1313</a> adresini adres çubuğunda yazarak Enter&rsquo;a basın. Sitenizi görüyor olmalısınız.</p>
+<p>Şu anda siteniz oluşturuldu ve lokal sunucunuzda hazır. Test etmek için tarayıcınızı açın ve <strong><a href="http://localhost:1313">http://localhost:1313</a></strong> adresini adres çubuğunda yazarak Enter&rsquo;a basın. Sitenizi görüyor olmalısınız.</p>
 
-<p>Yukarıda sadece siteyi lokal sunucuda test amaçlı görüntüledik. Sitemiz henüz oluşturulmadı. Oluşturmak için görüntü modundan ctrl+c yaparak çıkın ve şu komutu verin. &ldquo;Hugo&rdquo;</p>
+<p>Yukarıda sadece siteyi lokal sunucuda test amaçlı görüntüledik. Sitemiz henüz oluşturulmadı. Oluşturmak için görüntü modundan <code>ctrl+c</code> yaparak çıkın ve şu komutu verin. <code>hugo</code></p>
 
-<p>Şimdi ana menünün içinde &ldquo;public&rdquo; adlı bir klasör oluşturulduğunu göreceksiniz. İşte bu klasör bizim sunucumuza yükleyeceğimiz ve içinde web sitemizi barındıran klasördür.</p>
+<p>Şimdi ana menünün içinde <strong>&ldquo;public&rdquo;</strong> adlı bir klasör oluşturulduğunu göreceksiniz. İşte bu klasör bizim sunucumuza yükleyeceğimiz ve içinde web sitemizi barındıran klasördür.</p>
 
 <hr>
 
-<p>Adımlar karışık geldiyse üzülmeyin. Daha detaylı ve <strong>adım adım</strong> bir Hugo ve Jekyll kullanım klavuzunu hemen çok yakın zamanda hazırlayıp seri olarak hizmetinize sunacağım inşallah. Sağlıcakla kalın&hellip;</p>
+<p>Adımlar karışık geldiyse ve anlamadıysanız üzülmeyin.</p>
+
+<p>Daha detaylı ve <strong>adım adım</strong> bir Hugo ve Jekyll kullanım klavuzunu hemen çok yakın zamanda hazırlayıp seri olarak hizmetinize sunacağım inşallah. Şimdilik sağlıcakla&hellip;</p>
 
 	
 			

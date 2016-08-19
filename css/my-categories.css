@@ -1,4 +1,4 @@
-.post-category-diller {
+.post-category-jekyll {
     margin: 0 0.1rem;
     padding: 0.2rem 0.5rem;
     color: #FFFFFF;
@@ -47,13 +47,6 @@
     background: #E89A30;
     font-size: 0.85rem;
 }
-.post-category-programlama-dili {
-    margin: 0 0.1rem;
-    padding: 0.2rem 0.5rem;
-    color: #FFFFFF;
-    background: #16B092;
-    font-size: 0.85rem;
-}
 .post-category-kurulum {
     margin: 0 0.1rem;
     padding: 0.2rem 0.5rem;
@@ -79,10 +72,10 @@
     margin: 0 0.1rem;
     padding: 0.2rem 0.5rem;
     color: #FFFFFF;
-    background: #8DC492;
+    background: #16B092;
     font-size: 0.85rem;
 }
-.post-category-software {
+.post-category-hugo {
     margin: 0 0.1rem;
     padding: 0.2rem 0.5rem;
     color: #FFFFFF;
@@ -115,5 +108,12 @@
     padding: 0.2rem 0.5rem;
     color: #FFFFFF;
     background: #240D8A;
+    font-size: 0.85rem;
+}
+.post-category-statik-site-gelistiriciler {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #FFFFFF;
+    background: #BB0F33;
     font-size: 0.85rem;
 }
