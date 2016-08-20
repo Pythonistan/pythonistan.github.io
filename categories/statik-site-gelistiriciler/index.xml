@@ -17,7 +17,7 @@
       <guid>http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/</guid>
       <description>
 
-&lt;p&gt;Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmişsinizdir.&lt;/p&gt;
+&lt;p&gt;Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmiş olmalısınız.&lt;/p&gt;
 
 &lt;p&gt;Eski siteyi Jekyll ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&amp;rsquo;ı Hugo ile değiştirmeye karar verdim.&lt;/p&gt;
 
@@ -51,7 +51,9 @@
 
 &lt;p&gt;Yani Jekyll&amp;rsquo;da kurulum ve ekstra her bir özellik (feature) kullanmak için değişik paketler yüklemek zorunda olmamıza karşın Hugo tek bir binary dosya  (windows için .exe dosyası) kullanarak sisteminize kurulup kullanılabiliyor.&lt;/p&gt;
 
-&lt;p&gt;Ayrıyeten &lt;strong&gt;Hugo&lt;/strong&gt; çok kullanışlı bir özellik olan &lt;code&gt;live reload&lt;/code&gt; özelliğine öntanımlı olarak sahip. (Sitenizde yaptığınız bir değişikliği browserda anında görebiliyorsunuz. Sunucuyu yada tarayıcıyı kapatıp açmanıza gerek yok.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/jekyll_site_eski_dizayn.png&#34; alt=&#34;Jekyll ile Yaptığım Sitenin Eski Dizaynı&#34; /&gt; &lt;br&gt;&amp;ldquo;Pythonistan.net&amp;rsquo;in Jekyll ile Oluşturulan 17 Ağustos 2016 tarihli Anasayfa Görüntüsü&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Şimdilik son olarak şunu söyleyeyim: &lt;strong&gt;Hugo&lt;/strong&gt; çok kullanışlı bir özellik olan &lt;code&gt;live reload&lt;/code&gt;&amp;lsquo;a öntanımlı olarak sahip. (Sitenizde yaptığınız bir değişikliği tarayıcıda anında görebiliyorsunuz. Sunucuyu yada tarayıcıyı kapatıp açmanıza gerek yok.)&lt;/p&gt;
 
 &lt;h2 id=&#34;hugo-hakkında&#34;&gt;Hugo Hakkında&lt;/h2&gt;
 
@@ -73,7 +75,7 @@
 
 &lt;p&gt;Sitemizde yeni bir dosya oluşturalım. &lt;code&gt;hugo new hakkimizda.md&lt;/code&gt; komutu vererek sitemize bir hakkımızda dosyası oluşturalım.&lt;/p&gt;
 
-&lt;p&gt;Site ana klasörünüzün (yeni) altındaki content klasörünün içine bakarsanız Hugo&amp;rsquo;nun &lt;strong&gt;hakkimizda.md&lt;/strong&gt; adında bir dosya oluşturduğunu görmüş olacaksınız.&lt;/p&gt;
+&lt;p&gt;Site ana klasörünüzün &lt;code&gt;(yenisite)&lt;/code&gt; altındaki content klasörünün içine bakarsanız Hugo&amp;rsquo;nun &lt;strong&gt;hakkimizda.md&lt;/strong&gt; adında bir dosya oluşturduğunu görmüş olacaksınız.&lt;/p&gt;
 
 &lt;p&gt;Şimdi &lt;strong&gt;hakkimizda.md&lt;/strong&gt; dosyasını çift tıklayarak açın. (bilgisayarınızda &lt;a href=&#34;http://pythonistan.net/blog/sublime-text-kurulum/&#34;&gt;Sublime Text&lt;/a&gt; programı yüklü, değil mi?) Dosyanın içinde şu satırları görüyor olmalısınız:&lt;/p&gt;
 
@@ -116,10 +118,10 @@ nocomment = true
 
 &lt;p&gt;Örneğin temamız bize üzerine tıklandığında açılan türden bir imaj galerisi imkanı sunuyorsa bunu normal html imaj taginin içine &amp;ldquo;lightbox&amp;rdquo; özelliğini ekleyerek gerçekleştirebilirsiniz. Tabi dediğim gibi bu özellik temada tanımlı olmalı. Aşağıdaki gibi:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_frontmatter.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Markdown&#39;da Spesifik Bir Özelliği Kullanma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_frontmatter_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_markdown.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Markdown&#39;da Spesifik Bir Özelliği Kullanma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_markdown_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_frontmatter.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Spesifik Bir Özelliği Markdown Front Matter&#39;da Tanımlama&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_frontmatter_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_markdown.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Tanımladığımız Özelliği Markdown İçeriğinde Kullanma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_markdown_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Markdown dilinin olağan komutlarını öğrenmek Hugo yada Jekyll gibi SSG&amp;rsquo;leri kullanmak için bir zorunluluk. Google&amp;rsquo;da bu konuda bir çok kaynak bulabilirsiniz. Basit bir örnek verirsek bir sayfada bir foto göstermek (eklemek) için kullanılan komut: &lt;code&gt;![resmi_tanımlayan_text](/resim_yolu/resim_ismi.jpg)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Markdown dilinin genel komutlarını öğrenmek Hugo yada Jekyll gibi SSG&amp;rsquo;leri kullanmak için bir zorunluluk. Google&amp;rsquo;da bu konuda çok sayıda &lt;a href = &#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34; target=&#34;_blank&#34;&gt;kaynak&lt;/a&gt; bulabilirsiniz. Basit bir örnek verirsek bir sayfada bir foto göstermek (eklemek) için kullanılan komut: &lt;code&gt;![resmi_tanımlayan_text](/resim_yolu/resim_ismi.jpg)&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;temalar&#34;&gt;Temalar&lt;/h2&gt;
 
@@ -153,9 +155,13 @@ nocomment = true
 
 &lt;hr&gt;
 
-&lt;p&gt;Adımlar karışık geldiyse ve anlamadıysanız üzülmeyin.&lt;/p&gt;
+&lt;p&gt;Adımlar karışık geldiyse ve anlamadıysanız &lt;strong&gt;hiç merak etmeyin!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Daha detaylı ve &lt;strong&gt;adım adım&lt;/strong&gt; bir Hugo ve Jekyll kullanım klavuzunu hemen çok yakın zamanda hazırlayıp seri olarak hizmetinize sunacağım inşallah. Şimdilik sağlıcakla&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Bizim gibi tam amatörler için hazırlamakta olduğum &lt;strong&gt;adım adım Hugo ve Jekyll kullanım klavuzunu&lt;/strong&gt; çok yakın zamanda bu sitede bulacaksınız inşallah.&lt;/p&gt;
+
+&lt;p&gt;Tek başımıza bir websitesi oluşturup git komutları vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
+
+&lt;p&gt;Tüm bunlar ve fazlası için lütfen &lt;a href=&#34;http://pythonistan.net/&#34;&gt;blogumu&lt;/a&gt; düzenli olarak takip edin&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
