@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Konular on Pythonistan</title>
-    <link>https://pythonistan.github.io/categories/konular/</link>
+    <link>http://pythonistan.net/categories/konular/</link>
     <description>Recent content in Konular on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Mon, 01 Sep 2014 00:00:00 +0300</lastBuildDate>
-    <atom:link href="https://pythonistan.github.io/categories/konular/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Apr 2015 00:00:00 +0300</lastBuildDate>
+    <atom:link href="http://pythonistan.net/categories/konular/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Merhaba Dünya!</title>
-      <link>https://pythonistan.github.io/blog/merhaba-dunya/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0300</pubDate>
+      <link>http://pythonistan.net/blog/merhaba-dunya/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0300</pubDate>
       
-      <guid>https://pythonistan.github.io/blog/merhaba-dunya/</guid>
+      <guid>http://pythonistan.net/blog/merhaba-dunya/</guid>
       <description>
 
 &lt;h2 id=&#34;bismillah&#34;&gt;Bismillah;&lt;/h2&gt;

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programlama on Pythonistan</title>
-    <link>https://pythonistan.github.io/categories/programlama/</link>
+    <link>http://pythonistan.net/categories/programlama/</link>
     <description>Recent content in Programlama on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Fri, 05 Aug 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pythonistan.github.io/categories/programlama/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pythonistan.net/categories/programlama/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Notepad Kullanarak Python Programı Yazalım</title>
-      <link>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</link>
+      <link>http://pythonistan.net/blog/python-notepad-ile-program-yazma/</link>
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/</guid>
+      <guid>http://pythonistan.net/blog/python-notepad-ile-program-yazma/</guid>
       <description>
 
 &lt;h2 id=&#34;herhangi-bir-metin-editörü&#34;&gt;Herhangi Bir Metin Editörü&lt;/h2&gt;
 
-&lt;p&gt;Evvelsi günkü &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
+&lt;p&gt;Evvelsi günkü &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
 &lt;code&gt;python program_adi.py&lt;/code&gt; &lt;em&gt;.py&lt;/em&gt; uzantısı bize bu dosyanın Python komut dosyası olduğunu belirtmektedir.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;adım-adım-uygulama&#34;&gt;Adım Adım Uygulama&lt;/h2&gt;
 
@@ -64,7 +64,7 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 
 &lt;p&gt;Programımız basit olmasına rağmen yine de öğrenecek bir çok şey sunuyor. İsterseniz programdaki &lt;code&gt;sayi&lt;/code&gt; değişkenine farklı bir değer verip bu sayının yine 10 ile toplanacağını teyit edebilirsiniz. Yada toplanacak değeri 10&amp;rsquo;dan farklı bir değer yapıp prosedürümüzün ismini değiştirerek deneyebilirsiniz. (Örneğin eklenecek sayıyı 20 yapıp prosedür ismini &lt;code&gt;yirmiEkle&lt;/code&gt; olarak değiştirin.)&lt;/p&gt;
 
-&lt;p&gt;Ayrıca &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
+&lt;p&gt;Ayrıca &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -89,17 +89,17 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
     
     <item>
       <title>Python Kabukta (Shell) İlk Programımız</title>
-      <link>https://pythonistan.github.io/blog/python-kabukta-ilk-program/</link>
+      <link>http://pythonistan.net/blog/python-kabukta-ilk-program/</link>
       <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://pythonistan.github.io/blog/python-kabukta-ilk-program/</guid>
+      <guid>http://pythonistan.net/blog/python-kabukta-ilk-program/</guid>
       <description>
 
 &lt;h2 id=&#34;karakter-dizisi-yazdırıyoruz&#34;&gt;Karakter Dizisi Yazdırıyoruz&lt;/h2&gt;
 
 &lt;h3 id=&#34;ilk-önce-kurulum-kontrolü&#34;&gt;İlk Önce Kurulum Kontrolü&lt;/h3&gt;
 
-&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
+&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
 
 &lt;h3 id=&#34;karakter-dizilerine-giriş&#34;&gt;Karakter Dizilerine Giriş&lt;/h3&gt;
 
@@ -107,10 +107,10 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 
 &lt;p&gt;Payton&amp;rsquo;da karakter dizileri(string) ya çift tırnak yada tek tırnak işaretleri arasında yer alırlar. Eğer çift tırnak ile başladıysanız çift, tek tırnak ile başladıysanız tek tırnak ile bitirmelisiniz. Karakter dizileri (stringler) çok önemli bir konu olduğu için daha sonra geniş olarak bu konu üzerinde duracağız. Şimdilik alışma amaçlı kabukta değişik karakter dizileri yazdırın. (Foto 2)&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_version.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Payton kurulumunu teyit edelim.&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_version_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_shell_strings.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Karakter Dizileri Kullanımı&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_shell_strings_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_aritmetik_ornekleri.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Aritmetik İşlemlerini Gösteren Ekran&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_aritmetik_ornekleri_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_shell_help.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python kabukta yardım menülerini açalım&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/python-kabuk/python_shell_help_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/python-kabuk/python_version.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Payton kurulumunu teyit edelim.&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kabuk/python_version_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-kabuk/python_shell_strings.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Karakter Dizileri Kullanımı&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kabuk/python_shell_strings_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-kabuk/python_aritmetik_ornekleri.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Aritmetik İşlemlerini Gösteren Ekran&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kabuk/python_aritmetik_ornekleri_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-kabuk/python_shell_help.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python kabukta yardım menülerini açalım&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kabuk/python_shell_help_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;payton-kabukta-print-siz-yazdırma-ve-hesap-makinası&#34;&gt;Payton Kabukta Print&amp;rsquo;siz Yazdırma ve Hesap Makinası&lt;/h2&gt;
 
@@ -126,7 +126,7 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 
 &lt;h2 id=&#34;payton-kabuk-kısıtlılıkları-ve-dezavantajları&#34;&gt;Payton Kabuk Kısıtlılıkları ve Dezavantajları&lt;/h2&gt;
 
-&lt;p&gt;Payton Şel(kabuk) hoş olsa da uzun satırlı kodlar için yeterli değildir. Ayrıca Syntax Highlighting(kod renklendirme)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; ve Indentation(kod tablandırma) içermez. Bir sonraki makalemde sizlere Payton ile beraber kullanabileceğimiz &lt;a href=&#34;https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/&#34;&gt;metin editörlerini&lt;/a&gt; tanıtacağım. Favorim &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime Text programı&lt;/a&gt; ile beraberce az biraz daha uzun bir kod yazacağız. Bizi izlemeye devam edin!&lt;/p&gt;
+&lt;p&gt;Payton Şel(kabuk) hoş olsa da uzun satırlı kodlar için yeterli değildir. Ayrıca Syntax Highlighting(kod renklendirme)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; ve Indentation(kod tablandırma) içermez. Bir sonraki makalemde sizlere Payton ile beraber kullanabileceğimiz &lt;a href=&#34;http://pythonistan.net/blog/python-notepad-ile-program-yazma/&#34;&gt;metin editörlerini&lt;/a&gt; tanıtacağım. Favorim &lt;a href=&#34;http://pythonistan.net/blog/sublime-text-kurulum/&#34;&gt;Sublime Text programı&lt;/a&gt; ile beraberce az biraz daha uzun bir kod yazacağız. Bizi izlemeye devam edin!&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 
 &lt;hr /&gt;
@@ -141,10 +141,10 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
     
     <item>
       <title>Peki Nedir Python</title>
-      <link>https://pythonistan.github.io/blog/peki-nedir-python/</link>
+      <link>http://pythonistan.net/blog/peki-nedir-python/</link>
       <pubDate>Sun, 02 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://pythonistan.github.io/blog/peki-nedir-python/</guid>
+      <guid>http://pythonistan.net/blog/peki-nedir-python/</guid>
       <description>
 
 &lt;h2 id=&#34;python-hakkında&#34;&gt;Python Hakkında&lt;/h2&gt;
@@ -163,7 +163,7 @@ print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır
 
 &lt;h2 id=&#34;python-interpreter-yorumlayıcı&#34;&gt;Python Interpreter(Yorumlayıcı)&lt;/h2&gt;
 
-&lt;p&gt;Python&amp;rsquo;da yazdığımız programlar otomatik olarak bilgisayarda çalışmaz. Bunun için yazdığımız programı bilgisayarın anlayabileceği makina diline çevirmek için Python yorumlayıcısını (interpreter) kullanacağız. Bir sonraki &lt;a href=&#34;https://pythonistan.github.io/blog/python-kurulum&#34;&gt;makalemizde&lt;/a&gt; Python interpreter&amp;rsquo;ı bilgisayarımıza nasıl kuracağımızı adım adım anlatmaya çalışacağım. Pek tavsiye etmiyorum ancak Payton&amp;rsquo;u bilgisayarınıza kurmadan da kullanabilirsiniz. Yazacağımız programları çalıştırabileceğiniz online Python yorumlayıcılarının web adreslerini aşağıda veriyorum:&lt;/p&gt;
+&lt;p&gt;Python&amp;rsquo;da yazdığımız programlar otomatik olarak bilgisayarda çalışmaz. Bunun için yazdığımız programı bilgisayarın anlayabileceği makina diline çevirmek için Python yorumlayıcısını (interpreter) kullanacağız. Bir sonraki &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum&#34;&gt;makalemizde&lt;/a&gt; Python interpreter&amp;rsquo;ı bilgisayarımıza nasıl kuracağımızı adım adım anlatmaya çalışacağım. Pek tavsiye etmiyorum ancak Payton&amp;rsquo;u bilgisayarınıza kurmadan da kullanabilirsiniz. Yazacağımız programları çalıştırabileceğiniz online Python yorumlayıcılarının web adreslerini aşağıda veriyorum:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://repl.it/languages/python&#34; target=&#34;_blank&#34;&gt;repl.it sitesi&lt;/a&gt;&lt;/li&gt;

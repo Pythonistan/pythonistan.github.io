@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alt Dizi on Pythonistan</title>
-    <link>https://pythonistan.github.io/tags/alt-dizi/</link>
+    <link>http://pythonistan.net/tags/alt-dizi/</link>
     <description>Recent content in Alt Dizi on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Thu, 11 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="https://pythonistan.github.io/tags/alt-dizi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pythonistan.net/tags/alt-dizi/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Bir Kere Daha Karakter Dizileri</title>
-      <link>https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/</link>
+      <link>http://pythonistan.net/blog/bir-kere-daha-karakter-dizileri/</link>
       <pubDate>Thu, 11 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://pythonistan.github.io/blog/bir-kere-daha-karakter-dizileri/</guid>
+      <guid>http://pythonistan.net/blog/bir-kere-daha-karakter-dizileri/</guid>
       <description>
 
-&lt;p&gt;&lt;em&gt;Değişkenler&lt;/em&gt; konusuna çoktan girmemiz gerekirdi lakin &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1&#34;&gt;karakter dizileri&lt;/a&gt; gerçekten önemli bir konu olduğu için son bir kez daha bu konuyu işlemeye karar verdim.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Değişkenler&lt;/em&gt; konusuna çoktan girmemiz gerekirdi lakin &lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1&#34;&gt;karakter dizileri&lt;/a&gt; gerçekten önemli bir konu olduğu için son bir kez daha bu konuyu işlemeye karar verdim.&lt;/p&gt;
 
 &lt;p&gt;Ettekraru Ahsen Velev Kane Yüzseksen demişler.&lt;/p&gt;
 
@@ -25,13 +25,13 @@
 
 &lt;h3 id=&#34;karakter-dizilerinden-alt-dizi-seçmek&#34;&gt;Karakter Dizilerinden Alt Dizi Seçmek&lt;/h3&gt;
 
-&lt;p&gt;Daha önce &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; yazımda değindiğim karakter dizilerinden alt dizi seçmek (&lt;strong&gt;substring extracting&lt;/strong&gt;) mevzuuna bugün daha yakından bakalım.&lt;/p&gt;
+&lt;p&gt;Daha önce &lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; yazımda değindiğim karakter dizilerinden alt dizi seçmek (&lt;strong&gt;substring extracting&lt;/strong&gt;) mevzuuna bugün daha yakından bakalım.&lt;/p&gt;
 
 &lt;h3 id=&#34;karakter-dizi-sırası-string-index&#34;&gt;Karakter Dizi Sırası (String Index)&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; ve &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;&lt;em&gt;Stringler 2. Bölüm&lt;/em&gt;&lt;/a&gt; yazılarımı okuduysanız karakter dizileri sırası hakkında belli bir fikir elde etmişsinizdir.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;&lt;em&gt;Stringler 1. Bölüm&lt;/em&gt;&lt;/a&gt; ve &lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;&lt;em&gt;Stringler 2. Bölüm&lt;/em&gt;&lt;/a&gt; yazılarımı okuduysanız karakter dizileri sırası hakkında belli bir fikir elde etmişsinizdir.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Hatırlayalım&lt;/strong&gt;: &lt;code&gt;kelime&lt;/code&gt; değişkeni ile gösterilen bir karakter dizimiz olsun. &lt;code&gt;kelime[ i : j ]&lt;/code&gt; şeklinde bir ifade, &lt;code&gt;i&lt;/code&gt;&amp;lsquo;nin dahil, &lt;code&gt;j&lt;/code&gt;&amp;lsquo;nin hariç olduğu kelime dizisinden bir parçayı (&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-find-metodu/#fn:dib&#34;&gt;d.b.i.&lt;/a&gt; alt diziyi) gösterir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hatırlayalım&lt;/strong&gt;: &lt;code&gt;kelime&lt;/code&gt; değişkeni ile gösterilen bir karakter dizimiz olsun. &lt;code&gt;kelime[ i : j ]&lt;/code&gt; şeklinde bir ifade, &lt;code&gt;i&lt;/code&gt;&amp;lsquo;nin dahil, &lt;code&gt;j&lt;/code&gt;&amp;lsquo;nin hariç olduğu kelime dizisinden bir parçayı (&lt;a href=&#34;http://pythonistan.net/blog/pythonda-find-metodu/#fn:dib&#34;&gt;d.b.i.&lt;/a&gt; alt diziyi) gösterir.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;i = bis: baş indeks sırasını gösteren sayısal değer&lt;/p&gt;
@@ -49,7 +49,7 @@ print &amp;quot;Panorama&amp;quot;[:] == &amp;quot;Panorama&amp;quot; # değişk
 
 &lt;h2 id=&#34;karakter-dizi-sırasının-ekstra-argümanı-adım&#34;&gt;Karakter Dizi Sırasının Ekstra Argümanı: Adım&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-palindrome-bulan-program/#gelelim-orjinal-kodlara&#34;&gt;Palindrom programımızı yazarken&lt;/a&gt; dizi sırasını gösteren söz diziminin(syntax) üçüncü bir argüman aldığını görmüştük.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/blog/pythonda-palindrome-bulan-program/#gelelim-orjinal-kodlara&#34;&gt;Palindrom programımızı yazarken&lt;/a&gt; dizi sırasını gösteren söz diziminin(syntax) üçüncü bir argüman aldığını görmüştük.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;s[::-1] -&amp;gt; -1
 &lt;/code&gt;&lt;/pre&gt;
@@ -95,7 +95,7 @@ print kelime[2:8:-2]  # 2 ile 8 arasında iki iki al t. -&amp;gt; &amp;quot;&amp
 &lt;p&gt;&lt;cite&gt;bis&lt;/cite&gt; ve/veya &lt;cite&gt;sis&lt;/cite&gt; değerleri verilmemişse varsayılanın &lt;em&gt;sonlu değerler&lt;/em&gt; olduğunu yukarıda belirtmiştik(end values). Örneklerimizde bu durumu tekrar görüyoruz.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;a href=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34; alt=&#34;Python&#39;da Karakter Dizilerinin Sırası ve Yönü&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;http://pythonistan.net/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/bir-kere-daha-karakter-dizileri/argumanli_alt_dizi_secmek.png&#34; alt=&#34;Python&#39;da Karakter Dizilerinin Sırası ve Yönü&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Python&#39;da Karakter Dizilerinin Sırası ve Yönü (String Index and Step Argument) &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -116,12 +116,12 @@ print kelime[2:8:-2]  # 2 ile 8 arasında iki iki al t. -&amp;gt; &amp;quot;&amp
 
 &lt;h2 id=&#34;yaygın-bir-hata-string-index-out-of-range&#34;&gt;Yaygın Bir Hata:  String Index Out Of Range&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Karakter dizileri&lt;/a&gt; ile ilgili açıklamalarımı gereksiz bulmuş ve çok detaylı olduğunu düşünmüş olabilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Karakter dizileri&lt;/a&gt; ile ilgili açıklamalarımı gereksiz bulmuş ve çok detaylı olduğunu düşünmüş olabilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;Özellikle döngüleri kullanırken string uzunluğunun yanlış hesaplanmasından dolayı pek çok &lt;strong&gt;String Index Out of Range&lt;/strong&gt; (Türkçe: &amp;ldquo;aralık dışında dizi endeksi&amp;rdquo;??) hatası ile karşılaşabilmekteyiz.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;https://pythonistan.github.io/img/blog/bir-kere-daha-karakter-dizileri/string_index_out_of_range.png&#34; alt=&#34;Python&#39;da Sık Rastlanan String Out of Range Hatası&#34;&gt;
+    &lt;img src=&#34;http://pythonistan.net/img/blog/bir-kere-daha-karakter-dizileri/string_index_out_of_range.png&#34; alt=&#34;Python&#39;da Sık Rastlanan String Out of Range Hatası&#34;&gt;
     &lt;figcaption&gt;Python&#39;da Sık Rastlanan String Index Out of Range Hatası &lt;/figcaption&gt;
 &lt;/figure&gt;
 

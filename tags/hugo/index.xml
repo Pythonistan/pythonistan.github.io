@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Pythonistan</title>
-    <link>https://pythonistan.github.io/tags/hugo/</link>
+    <link>http://pythonistan.net/tags/hugo/</link>
     <description>Recent content in Hugo on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Thu, 18 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="https://pythonistan.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pythonistan.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Jekyll&#39;dan Hugo&#39;ya Geçiş</title>
-      <link>https://pythonistan.github.io/blog/Jekylldan-Hugoya-gecis/</link>
+      <link>http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/</link>
       <pubDate>Thu, 18 Aug 2016 00:17:50 -0400</pubDate>
       
-      <guid>https://pythonistan.github.io/blog/Jekylldan-Hugoya-gecis/</guid>
+      <guid>http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/</guid>
       <description>
 
 &lt;p&gt;Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmişsinizdir.&lt;/p&gt;
@@ -23,7 +23,7 @@
 
 &lt;p&gt;Evet, blogumda baştan beri Jekyll ile olan maceram bugün itibarı ile sona erdi. Onun yerine Hugo statik site geliştiricisine (static site generator) geçiyorum.&lt;/p&gt;
 
-&lt;p&gt;Bu yazının yazıldığı 18 Ağustos 2016 itibarı ile StaticGen&amp;rsquo;den SSG&amp;rsquo;lerin kullanım istatistikleri aşağıdaki gibi:&lt;/p&gt;
+&lt;p&gt;Bu yazının yazıldığı 18 Ağustos 2016 itibarı ile &lt;a href = &#34;https://www.staticgen.com/&#34; target = &#34;_blank&#34;&gt; StaticGen &lt;/a&gt;&amp;lsquo;den SSG&amp;rsquo;lerin kullanım istatistikleri aşağıdaki gibi:&lt;/p&gt;
 
 &lt;h2 id=&#34;wordpress-ve-ssg-lere-duyulan-ihtiyaç&#34;&gt;Wordpress ve SSG&amp;rsquo;lere Duyulan İhtiyaç&lt;/h2&gt;
 
@@ -43,23 +43,23 @@
 
 &lt;p&gt;Şu anda en gözde statik site oluşturucu ortamı Jekyll. Jekyll gerek kullanım kolaylığı gerekse dökümantasyonundaki detaylı bilgiler ve topluluğunun güçlülüğü ile dikkat çekiyor.&lt;/p&gt;
 
-&lt;p&gt;Statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;, statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.&lt;/p&gt;
 
 &lt;p&gt;Dezavantajı ise diğer SSG&amp;rsquo;lerine göre oldukça yavaş olması. Özellikle karşılaştırma kriteri olarak biraz sonra değineceğim Hugo&amp;rsquo;ya göre neredeyse 10&amp;rsquo;da 1 oranında yavaş.&lt;/p&gt;
 
-&lt;p&gt;Hugo&amp;rsquo;nun hız dışında Jekyll&amp;rsquo;a üstünlük sağladığı bir yerde çalıştırılması için herhangi bir dependency&amp;rsquo;e (ek paketler) ihtiyaç duymaması.&lt;/p&gt;
+&lt;p&gt;Hugo&amp;rsquo;nun hız dışında Jekyll&amp;rsquo;a üstünlük sağladığı bir diğer alan çalıştırılması için herhangi bir dependency&amp;rsquo;e (ek paketler) ihtiyaç duymaması.&lt;/p&gt;
 
-&lt;p&gt;Yani Jekyll&amp;rsquo;da kurulum ve ekstra her bir özellik (feature) kullanmak için değişik paketler yüklemek zorunda olmamıza karşın Hugo tek bir binary dosya  (windows için .exe dosyası)kullanarak sisteminize kurulup kullanılabiliyor.&lt;/p&gt;
+&lt;p&gt;Yani Jekyll&amp;rsquo;da kurulum ve ekstra her bir özellik (feature) kullanmak için değişik paketler yüklemek zorunda olmamıza karşın Hugo tek bir binary dosya  (windows için .exe dosyası) kullanarak sisteminize kurulup kullanılabiliyor.&lt;/p&gt;
 
-&lt;p&gt;Ayrıyeten Hugo çok kullanışlı bir özellik olan &lt;code&gt;live reload&lt;/code&gt; özelliğine öntanımlı olarak sahip. (Sitenizde yaptığınız bir değişikliği browserda anında görebiliyorsunuz. Sunucuyu yada tarayıcıyı kapatıp açmanıza gerek yok.)&lt;/p&gt;
+&lt;p&gt;Ayrıyeten &lt;strong&gt;Hugo&lt;/strong&gt; çok kullanışlı bir özellik olan &lt;code&gt;live reload&lt;/code&gt; özelliğine öntanımlı olarak sahip. (Sitenizde yaptığınız bir değişikliği browserda anında görebiliyorsunuz. Sunucuyu yada tarayıcıyı kapatıp açmanıza gerek yok.)&lt;/p&gt;
 
-&lt;h2 id=&#34;hugo&#34;&gt;Hugo&lt;/h2&gt;
+&lt;h2 id=&#34;hugo-hakkında&#34;&gt;Hugo Hakkında&lt;/h2&gt;
 
 &lt;p&gt;İleride kurulum ve kullanım yönünden Hugo ve Jekyll&amp;rsquo;dan detaylı olarak bahsetmeyi ve ikisini karşılaştırmayı planlıyorum.&lt;/p&gt;
 
-&lt;p&gt;Şimdilik size Hugo ile ilgili kısa bazı bilgiler vereyim.&lt;/p&gt;
+&lt;p&gt;Şimdilik size &lt;strong&gt;Hugo&lt;/strong&gt; ile ilgili kısa bazı bilgiler vereyim.&lt;/p&gt;
 
-&lt;p&gt;Hugo Go diliyle yazılmış bir statik site oluşturucusu. Birçok insanın destek verdiği açık kaynak kodlu bir özgür yazılım olan Hugo&amp;rsquo;nun ilk yaratıcısı Steve Francia. Hugo bugün itibarı ile 0,16 stabil sürümüne sahip ve Windows, Mac ve Linux ortamında çalışabiliyor.&lt;/p&gt;
+&lt;p&gt;Hugo &lt;a href = &#34;https://en.wikipedia.org/wiki/Go_(programming_language)&#34; target = &#34;_blank&#34;&gt; &lt;strong&gt;Go&lt;/strong&gt; &lt;/a&gt; diliyle yazılmış bir statik site oluşturucusu. Birçok insanın destek verdiği açık kaynak kodlu bir özgür yazılım olan Hugo&amp;rsquo;nun ilk yaratıcısı &lt;a href = &#34;https://twitter.com/spf13&#34; target = &#34;_blank&#34;&gt; Steve Francia &lt;/a&gt;. &lt;strong&gt;Hugo&lt;/strong&gt; bugün itibarı ile 0,16 stabil sürümüne sahip ve Windows, Mac ve Linux ortamında çalışabiliyor.&lt;/p&gt;
 
 &lt;p&gt;Kullanmak için tek yapmanız gereken &lt;a href = &#34;https://gohugo.io/&#34; target = &#34;_blank&#34;&gt; Hugo websitesinden &lt;/a&gt;kendi işletim sisteminize uygun paketi indirmek. Dosyayı bilgisayara indirip herhangi bir klasöre yerleştirdikten sonra klasör yolunu (mesela &lt;code&gt;c:\Hugo&lt;/code&gt; gibi) ortam değişkenine (PATH) eklemeniz gerekiyor. Bu kadar.&lt;/p&gt;
 
@@ -67,15 +67,15 @@
 
 &lt;p&gt;Hugo ile hemen bir deneme sitesi yapalım. Hugoyu indirin ve ortam değişkenine ekleyin.&lt;/p&gt;
 
-&lt;p&gt;Şimdi komut satırında (Powershell) &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yenisite adında bir klasör oluşturuldu.Hemen kontrol edin.&lt;/p&gt;
+&lt;p&gt;Şimdi komut satırında &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;(Powershell)&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yenisite adında bir klasör oluşturuldu.Hemen kontrol edin.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/ssg/hugo_yeni_site_olusturma.png&#34; alt=&#34;Hugo ile yeni bir site oluşturma&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/hugo_yeni_site_olusturma.png&#34; alt=&#34;Hugo ile yeni bir site oluşturma&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Sitemizde yeni bir dosya oluşturalım. &lt;code&gt;hugo new hakkimizda.md&lt;/code&gt; komutu vererek sitemize bir hakkımızda dosyası oluşturalım.&lt;/p&gt;
 
 &lt;p&gt;Site ana klasörünüzün (yeni) altındaki content klasörünün içine bakarsanız Hugo&amp;rsquo;nun &lt;strong&gt;hakkimizda.md&lt;/strong&gt; adında bir dosya oluşturduğunu görmüş olacaksınız.&lt;/p&gt;
 
-&lt;p&gt;Şimdi &lt;strong&gt;hakkimizda.md&lt;/strong&gt; dosyasını çift tıklayarak açın. (bilgisayarınızda &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/&#34;&gt;Sublime Text&lt;/a&gt; programı yüklü, değil mi?) Dosyanın içinde şu satırları görüyor olmalısınız:&lt;/p&gt;
+&lt;p&gt;Şimdi &lt;strong&gt;hakkimizda.md&lt;/strong&gt; dosyasını çift tıklayarak açın. (bilgisayarınızda &lt;a href=&#34;http://pythonistan.net/blog/sublime-text-kurulum/&#34;&gt;Sublime Text&lt;/a&gt; programı yüklü, değil mi?) Dosyanın içinde şu satırları görüyor olmalısınız:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
 date = &amp;quot;2016-05-25&amp;quot;
@@ -89,7 +89,7 @@ buraya içeriğimizi ekleyelim.
 herhangi bir içerik..... ![herhangi bir resim](/resim_yolu/resim_ismi.jpg)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;hugo-front-matter&#34;&gt;Hugo Front Matter&lt;/h2&gt;
+&lt;h2 id=&#34;front-matter&#34;&gt;Front Matter&lt;/h2&gt;
 
 &lt;p&gt;Yukarıdaki &lt;strong&gt;üç (3)&lt;/strong&gt; adet artı işareti arasında gördüğünüz satırlara Hugo &lt;strong&gt;front matter&lt;/strong&gt; (ön bilgi) adını veriyor.&lt;/p&gt;
 
@@ -97,7 +97,7 @@ herhangi bir içerik..... ![herhangi bir resim](/resim_yolu/resim_ismi.jpg)
 
 &lt;p&gt;İki örnek vereyim. Mesela üzerinde çalıştığımız sayfada sosyal medya ikonlarının çıkmasını istersek front matter&amp;rsquo;a &lt;strong&gt;&amp;ldquo;socialsharing = true&amp;rdquo;&lt;/strong&gt; satırını ekleyerek sayfaya sosyal medya butonlarını ekleyebiliriz.&lt;/p&gt;
 
-&lt;p&gt;Yada sitemizdeki yorum seçeneğinin açık olduğunu varsayarak üzerinde çalıştığım sayfada yorum seçeneğini kaldırmak istediğimizi varsayalım. O halde &lt;strong&gt;&amp;ldquo;nocomment = true&amp;rdquo;&lt;/strong&gt; şeklinde bir satır ile bu isteğimi gerçekleştirebilirim.&lt;/p&gt;
+&lt;p&gt;Yada diyelim sitemizde yorum seçeneği varsayılan olarak açık. Spesifik bir sayfada yorum özelliğini kapatmak istersem o sayfanın front matter&amp;rsquo;ında &lt;strong&gt;&amp;ldquo;nocomment = true&amp;rdquo;&lt;/strong&gt; şeklinde bir satır eklemem yeterli olacaktır.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
 date = &amp;quot;2016-05-25&amp;quot;
@@ -116,8 +116,8 @@ nocomment = true
 
 &lt;p&gt;Örneğin temamız bize üzerine tıklandığında açılan türden bir imaj galerisi imkanı sunuyorsa bunu normal html imaj taginin içine &amp;ldquo;lightbox&amp;rdquo; özelliğini ekleyerek gerçekleştirebilirsiniz. Tabi dediğim gibi bu özellik temada tanımlı olmalı. Aşağıdaki gibi:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/ssg/lightbox_html_frontmatter.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Markdown&#39;da Spesifik Bir Özelliği Kullanma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/ssg/lightbox_html_frontmatter_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://pythonistan.github.io/img/blog/ssg/lightbox_html_markdown.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Markdown&#39;da Spesifik Bir Özelliği Kullanma&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/ssg/lightbox_html_markdown_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_frontmatter.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Markdown&#39;da Spesifik Bir Özelliği Kullanma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_frontmatter_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_markdown.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Markdown&#39;da Spesifik Bir Özelliği Kullanma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/lightbox_html_markdown_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Markdown dilinin olağan komutlarını öğrenmek Hugo yada Jekyll gibi SSG&amp;rsquo;leri kullanmak için bir zorunluluk. Google&amp;rsquo;da bu konuda bir çok kaynak bulabilirsiniz. Basit bir örnek verirsek bir sayfada bir foto göstermek (eklemek) için kullanılan komut: &lt;code&gt;![resmi_tanımlayan_text](/resim_yolu/resim_ismi.jpg)&lt;/code&gt;&lt;/p&gt;
 

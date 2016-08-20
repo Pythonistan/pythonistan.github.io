@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Altdizi on Pythonistan</title>
-    <link>https://pythonistan.github.io/tags/altdizi/</link>
+    <link>http://pythonistan.net/tags/altdizi/</link>
     <description>Recent content in Altdizi on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Sat, 06 Aug 2016 00:00:00 +0300</lastBuildDate>
-    <atom:link href="https://pythonistan.github.io/tags/altdizi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pythonistan.net/tags/altdizi/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python&#39;da Stringleri Öğreniyoruz - 1</title>
-      <link>https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/</link>
+      <link>http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/</link>
       <pubDate>Sat, 06 Aug 2016 00:00:00 +0300</pubDate>
       
-      <guid>https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-1/</guid>
+      <guid>http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/</guid>
       <description>
 
 &lt;h2 id=&#34;payton-da-stringler-1-bölüm&#34;&gt;Payton&amp;rsquo;da Stringler  - 1. Bölüm&lt;/h2&gt;
 
-&lt;p&gt;Hatırlarsanız bugün &lt;a href=&#34;https://pythonistan.github.io/blog/sublime-text-kurulum/&#34;&gt;bir önceki makalemde&lt;/a&gt; gösterdiğim palindrome programının detaylı incelemesini yapacaktım. Lakin o örneği daha iyi anlayabilmeniz açısından ilk olarak Python’da stringler (karakter dizileri) konusunu işlemeye karar verdim.&lt;/p&gt;
+&lt;p&gt;Hatırlarsanız bugün &lt;a href=&#34;http://pythonistan.net/blog/sublime-text-kurulum/&#34;&gt;bir önceki makalemde&lt;/a&gt; gösterdiğim palindrome programının detaylı incelemesini yapacaktım. Lakin o örneği daha iyi anlayabilmeniz açısından ilk olarak Python’da stringler (karakter dizileri) konusunu işlemeye karar verdim.&lt;/p&gt;
 
-&lt;p&gt;Bu yazı iki bölümden oluşacak. Bu birincisi. Yarın &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;ikinci ve son bölümü&lt;/a&gt; yayınlamayı planlıyorum.&lt;/p&gt;
+&lt;p&gt;Bu yazı iki bölümden oluşacak. Bu birincisi. Yarın &lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;ikinci ve son bölümü&lt;/a&gt; yayınlamayı planlıyorum.&lt;/p&gt;
 
-&lt;p&gt;Python’da stringler konusu &lt;a href=&#34;https://pythonistan.github.io/blog/python-kabukta-ilk-program/&#34;&gt;daha önceki yazılarımda&lt;/a&gt; birkaç kez geçmişti. Bugün konuyu en baştan ele alalım.&lt;/p&gt;
+&lt;p&gt;Python’da stringler konusu &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program/&#34;&gt;daha önceki yazılarımda&lt;/a&gt; birkaç kez geçmişti. Bugün konuyu en baştan ele alalım.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Karakter dizileri&lt;/em&gt; ile ilgili bilmeniz gereken en önemli şey şu: &lt;em&gt;Karakter dizileri&lt;/em&gt; &lt;strong&gt;tırnak işaretleri arasında&lt;/strong&gt; gösterilmek zorundadır. (Tek Tırnak/ Çift Tırnak/Üçlü Tırnak kullanımlarının hepsi geçerlidir.)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:tirnak&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:tirnak&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
@@ -57,10 +57,10 @@ SyntaxError: EOL while scanning string literal
 {:.notice}&lt;/p&gt;
 
 &lt;figure class=&#34;half&#34;&gt;
-    &lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatasiz_ornekler.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatasiz_ornekler.png&#34; alt=&#34;Python&#39;da Hatasız Karakter Dizisi Örnekleri&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;http://pythonistan.net/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatasiz_ornekler.png&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatasiz_ornekler.png&#34; alt=&#34;Python&#39;da Hatasız Karakter Dizisi Örnekleri&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Python&#39;da Hatasız Karakter Dizisi Örnekleri&lt;/figcaption&gt;
 
-    &lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatali_ornek.png&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatali_ornek.png&#34; alt=&#34;Python&#39;da Hatalı Karakter Dizisi Örneği&#34;&gt;&lt;/a&gt;
+    &lt;a href=&#34;http://pythonistan.net/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatali_ornek.png&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/pythonda-stringler/sublimeda_karakter_dizileri_hatali_ornek.png&#34; alt=&#34;Python&#39;da Hatalı Karakter Dizisi Örneği&#34;&gt;&lt;/a&gt;
     &lt;figcaption&gt;Python&#39;da Hatalı Karakter Dizisi Örnekleri&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -119,19 +119,19 @@ print selam[len(sayi)] # -&amp;gt; &amp;quot;i&amp;quot;,  karakter dizisinin 10
 print len(sayi) # Gerçekten de 10 karakter olduğunu teyit edelim.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;Fonksiyon:&lt;/strong&gt; &lt;a href=&#34;https://pythonistan.github.io/blog/python-notepad-ile-program-yazma/&#34;&gt;Notepad ile program yazma&lt;/a&gt; makalemde belirttiğim &lt;code&gt;def&lt;/code&gt; ile başlayan prosedürleri hatırladınız mı? Buradaki &lt;code&gt;len&lt;/code&gt; fonksiyonunun tek farkı Python&amp;rsquo;un içinde hazır gelen bir fonksiyon/prosedür olmasıdır.(built-in) &lt;code&gt;len&lt;/code&gt; bize türü &amp;ldquo;dizi&amp;rdquo; olan veri tiplerinin uzunluğunu(length) verir ve her zaman sayısal bir değer üretir.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:diziler&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:diziler&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;
+&lt;p&gt;&lt;strong&gt;Fonksiyon:&lt;/strong&gt; &lt;a href=&#34;http://pythonistan.net/blog/python-notepad-ile-program-yazma/&#34;&gt;Notepad ile program yazma&lt;/a&gt; makalemde belirttiğim &lt;code&gt;def&lt;/code&gt; ile başlayan prosedürleri hatırladınız mı? Buradaki &lt;code&gt;len&lt;/code&gt; fonksiyonunun tek farkı Python&amp;rsquo;un içinde hazır gelen bir fonksiyon/prosedür olmasıdır.(built-in) &lt;code&gt;len&lt;/code&gt; bize türü &amp;ldquo;dizi&amp;rdquo; olan veri tiplerinin uzunluğunu(length) verir ve her zaman sayısal bir değer üretir.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:diziler&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:diziler&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;
 {:.notice}&lt;/p&gt;
 
 &lt;p&gt;Burada &lt;code&gt;len(sayi)&lt;/code&gt; ile yaptığımız şey şudur: &lt;code&gt;sayi&lt;/code&gt; değişkenin değeri olan “sekiz_erli” karakter dizisinin uzunluğunu &lt;code&gt;len&lt;/code&gt; fonksiyonu ile hesaplıyoruz. Bu değer &lt;code&gt;10&lt;/code&gt;&amp;lsquo;dur. Daha sonra bunu karakter indeksinin değeri olarak kullanıyoruz.&lt;/p&gt;
 
 &lt;p&gt;Yani &lt;code&gt;selam&lt;/code&gt; isimli değişkenin belirttiği karakter dizisinin 10 no.lu index pozisyonunda bulunan karakteri alıyoruz. Bu da bize &lt;code&gt;&amp;quot;i&amp;quot;&lt;/code&gt; harfini veriyor. &lt;strong&gt;(Unutmayın, index değeri baştan her zaman 0&amp;rsquo;la başlar, 1&amp;rsquo;le değil&amp;hellip;)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/pythonda_karakter_dizileri_altdizi_secme.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda Karakter Dizilerinden Alt Dizi Seçme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/pythonda_karakter_dizileri_altdizi_secme_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/paytonda_len_fonksiyonu_ile_altdizi_secme.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda &#39;len&#39; Hazır Fonksiyonu İle Alt Dizi Seçme&#34;&gt;&lt;img src=&#34;https://pythonistan.github.io/img/blog/pythonda-stringler/paytonda_len_fonksiyonu_ile_altdizi_secme_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/pythonda-stringler/pythonda_karakter_dizileri_altdizi_secme.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda Karakter Dizilerinden Alt Dizi Seçme&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/pythonda-stringler/pythonda_karakter_dizileri_altdizi_secme_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/pythonda-stringler/paytonda_len_fonksiyonu_ile_altdizi_secme.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda &#39;len&#39; Hazır Fonksiyonu İle Alt Dizi Seçme&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/pythonda-stringler/paytonda_len_fonksiyonu_ile_altdizi_secme_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
-&lt;p&gt;Serimizin &lt;a href=&#34;https://pythonistan.github.io/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;ikinci ve son bölümünde&lt;/a&gt; yine örnek uygulamalar yapıp Python&amp;rsquo;da stringler konusunu ele almaya çalışacağız. Bu kez sizler için bazı test sorularımız olacak. Takipte kalın!&lt;/p&gt;
+&lt;p&gt;Serimizin &lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-2/&#34;&gt;ikinci ve son bölümünde&lt;/a&gt; yine örnek uygulamalar yapıp Python&amp;rsquo;da stringler konusunu ele almaya çalışacağız. Bu kez sizler için bazı test sorularımız olacak. Takipte kalın!&lt;/p&gt;
 
 &lt;hr&gt;
 

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Piton on Pythonistan</title>
-    <link>https://pythonistan.github.io/tags/piton/</link>
+    <link>http://pythonistan.net/tags/piton/</link>
     <description>Recent content in Piton on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Wed, 03 Aug 2016 00:17:54 -0400</lastBuildDate>
-    <atom:link href="https://pythonistan.github.io/tags/piton/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pythonistan.net/tags/piton/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python: Kurucusu - Tarihi - Okunuşu</title>
-      <link>https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/</link>
+      <link>http://pythonistan.net/blog/python-gelistirici-tarihi-okunuslari/</link>
       <pubDate>Wed, 03 Aug 2016 00:17:54 -0400</pubDate>
       
-      <guid>https://pythonistan.github.io/blog/python-gelistirici-tarihi-okunuslari/</guid>
+      <guid>http://pythonistan.net/blog/python-gelistirici-tarihi-okunuslari/</guid>
       <description>
 
 &lt;h2 id=&#34;python-un-ilk-geliştiricisi-ve-kısa-tarihi&#34;&gt;Python&amp;rsquo;un İlk Geliştiricisi ve Kısa Tarihi&lt;/h2&gt;
