@@ -12,7 +12,7 @@
     background: #11527A;
     font-size: 0.85rem;
 }
-.post-category-websitem {
+.post-category-website {
     margin: 0 0.1rem;
     padding: 0.2rem 0.5rem;
     color: #FFFFFF;
@@ -115,5 +115,19 @@
     padding: 0.2rem 0.5rem;
     color: #FFFFFF;
     background: #BB0F33;
+    font-size: 0.85rem;
+}
+.post-category-git {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #FFFFFF;
+    background: #311E37;
+    font-size: 0.85rem;
+}
+.post-category-github {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #FFFFFF;
+    background: #863DA0;
     font-size: 0.85rem;
 }

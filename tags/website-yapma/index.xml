@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statik Site Geliştiriciler on Pythonistan</title>
-    <link>http://pythonistan.net/tags/statik-site-geli%C5%9Ftiriciler/</link>
-    <description>Recent content in Statik Site Geliştiriciler on Pythonistan</description>
+    <title>Website Yapma on Pythonistan</title>
+    <link>http://pythonistan.net/tags/website-yapma/</link>
+    <description>Recent content in Website Yapma on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Thu, 18 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="http://pythonistan.net/tags/statik-site-geli%C5%9Ftiriciler/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pythonistan.net/tags/website-yapma/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Jekyll&#39;dan Hugo&#39;ya Geçiş</title>

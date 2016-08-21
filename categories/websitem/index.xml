@@ -19,7 +19,7 @@
 
 &lt;p&gt;Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmiş olmalısınız.&lt;/p&gt;
 
-&lt;p&gt;Eski siteyi Jekyll ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&amp;rsquo;ı Hugo ile değiştirmeye karar verdim.&lt;/p&gt;
+&lt;p&gt;Eski siteyi &lt;a href = &#34;https://jekyllrb.com/&#34; target = &#34;_blank&#34;&gt; Jekyll &lt;/a&gt; ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&amp;rsquo;ı Hugo ile değiştirmeye karar verdim.&lt;/p&gt;
 
 &lt;p&gt;Evet, blogumda baştan beri Jekyll ile olan maceram bugün itibarı ile sona erdi. Onun yerine Hugo statik site geliştiricisine (static site generator) geçiyorum.&lt;/p&gt;
 
@@ -43,7 +43,7 @@
 
 &lt;p&gt;Şu anda en gözde statik site oluşturucu ortamı Jekyll. Jekyll gerek kullanım kolaylığı gerekse dökümantasyonundaki detaylı bilgiler ve topluluğunun güçlülüğü ile dikkat çekiyor.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;, statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.&lt;/p&gt;
+&lt;p&gt;&lt;a href = &#34;https://jekyllrb.com/&#34; target = &#34;_blank&#34;&gt; &lt;strong&gt;Jekyll&lt;/strong&gt; &lt;/a&gt;, statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.&lt;/p&gt;
 
 &lt;p&gt;Dezavantajı ise diğer SSG&amp;rsquo;lerine göre oldukça yavaş olması. Özellikle karşılaştırma kriteri olarak biraz sonra değineceğim Hugo&amp;rsquo;ya göre neredeyse 10&amp;rsquo;da 1 oranında yavaş.&lt;/p&gt;
 
@@ -159,36 +159,9 @@ nocomment = true
 
 &lt;p&gt;Bizim gibi tam amatörler için hazırlamakta olduğum &lt;strong&gt;adım adım Hugo ve Jekyll kullanım klavuzunu&lt;/strong&gt; çok yakın zamanda bu sitede bulacaksınız inşallah.&lt;/p&gt;
 
-&lt;p&gt;Tek başımıza bir websitesi oluşturup git komutları vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
+&lt;p&gt;Tek başımıza bir websitesi oluşturup &lt;a href=&#34;http://pythonistan.net/blog/Git-ve-github/&#34;&gt;git komutları&lt;/a&gt; vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
 
 &lt;p&gt;Tüm bunlar ve fazlası için lütfen &lt;a href=&#34;http://pythonistan.net/&#34;&gt;blogumu&lt;/a&gt; düzenli olarak takip edin&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Merhaba Dünya!</title>
-      <link>http://pythonistan.net/blog/merhaba-dunya/</link>
-      <pubDate>Wed, 01 Apr 2015 00:00:00 +0300</pubDate>
-      
-      <guid>http://pythonistan.net/blog/merhaba-dunya/</guid>
-      <description>
-
-&lt;h2 id=&#34;bismillah&#34;&gt;Bismillah;&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Pythonistan&lt;/strong&gt;&amp;lsquo;dan &lt;em&gt;(okunuşu: Paytonistan&lt;/em&gt;) herkese merhaba. Bismillah dedik, başladık&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Bu blogda esas olarak &lt;strong&gt;Python&lt;/strong&gt; olmak üzere &lt;strong&gt;Büyük Veri&lt;/strong&gt; (Big Data) ve Payton&amp;rsquo;da &lt;strong&gt;Veri Analizi&lt;/strong&gt; ve &lt;strong&gt;Veri Madenciliği&lt;/strong&gt; gibi konuları işlemeye çalışacağız.&lt;/p&gt;
-
-&lt;p&gt;Bu bloğun yazarı &lt;em&gt;amatör&lt;/em&gt; bir programcılık meraklısıdır, yazdıklarını değişik kaynaklardan derler ve Türk Paytoncularının hizmetine sunar. Programcılık konusunda herhangi bir iddiası yoktur.&lt;/p&gt;
-
-&lt;p&gt;Blogumuz tecrübeli Paytoncuların ve diğer programcıların katkılarına açıktır. Bloğumuzda hayatımızı şekillendiren teknolojideki devasa gelişmelere de yer vermeyi düşünüyoruz.&lt;/p&gt;
-
-&lt;h2 id=&#34;blogun-doğuşu&#34;&gt;Blogun doğuşu&lt;/h2&gt;
-
-&lt;p&gt;Bu blogu oluşturma kararını &lt;a href=&#34;http://www.simpleprogrammer.com&#34;&gt;Simple Programmer&lt;/a&gt; John Sonmez’in blog oluşturma kursuna katıldıktan sonra verdim. Kendisine verdiği ilham ve gösterdiği vizyon için teşekkür ediyorum.
-​&lt;a href=&#34;http://simpleprogrammer.com/2015/03/02/my-free-blogging-course-is-getting-unbelievable-results/&#34;&gt;&lt;img src=&#34;http://simpleprogrammer.com/wp-content/uploads/2015/04/badge.png&#34; align = &#34;right&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Şimdilik esenlikle kalın.&lt;/p&gt;
 </description>
     </item>
     

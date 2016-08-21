@@ -19,7 +19,7 @@
 
 &lt;p&gt;Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmiş olmalısınız.&lt;/p&gt;
 
-&lt;p&gt;Eski siteyi Jekyll ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&amp;rsquo;ı Hugo ile değiştirmeye karar verdim.&lt;/p&gt;
+&lt;p&gt;Eski siteyi &lt;a href = &#34;https://jekyllrb.com/&#34; target = &#34;_blank&#34;&gt; Jekyll &lt;/a&gt; ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&amp;rsquo;ı Hugo ile değiştirmeye karar verdim.&lt;/p&gt;
 
 &lt;p&gt;Evet, blogumda baştan beri Jekyll ile olan maceram bugün itibarı ile sona erdi. Onun yerine Hugo statik site geliştiricisine (static site generator) geçiyorum.&lt;/p&gt;
 
@@ -43,7 +43,7 @@
 
 &lt;p&gt;Şu anda en gözde statik site oluşturucu ortamı Jekyll. Jekyll gerek kullanım kolaylığı gerekse dökümantasyonundaki detaylı bilgiler ve topluluğunun güçlülüğü ile dikkat çekiyor.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;, statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.&lt;/p&gt;
+&lt;p&gt;&lt;a href = &#34;https://jekyllrb.com/&#34; target = &#34;_blank&#34;&gt; &lt;strong&gt;Jekyll&lt;/strong&gt; &lt;/a&gt;, statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.&lt;/p&gt;
 
 &lt;p&gt;Dezavantajı ise diğer SSG&amp;rsquo;lerine göre oldukça yavaş olması. Özellikle karşılaştırma kriteri olarak biraz sonra değineceğim Hugo&amp;rsquo;ya göre neredeyse 10&amp;rsquo;da 1 oranında yavaş.&lt;/p&gt;
 
@@ -159,7 +159,7 @@ nocomment = true
 
 &lt;p&gt;Bizim gibi tam amatörler için hazırlamakta olduğum &lt;strong&gt;adım adım Hugo ve Jekyll kullanım klavuzunu&lt;/strong&gt; çok yakın zamanda bu sitede bulacaksınız inşallah.&lt;/p&gt;
 
-&lt;p&gt;Tek başımıza bir websitesi oluşturup git komutları vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
+&lt;p&gt;Tek başımıza bir websitesi oluşturup &lt;a href=&#34;http://pythonistan.net/blog/Git-ve-github/&#34;&gt;git komutları&lt;/a&gt; vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
 
 &lt;p&gt;Tüm bunlar ve fazlası için lütfen &lt;a href=&#34;http://pythonistan.net/&#34;&gt;blogumu&lt;/a&gt; düzenli olarak takip edin&amp;hellip;&lt;/p&gt;
 </description>

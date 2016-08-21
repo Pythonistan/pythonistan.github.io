@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Komut Satırı on Pythonistan</title>
-    <link>http://pythonistan.net/tags/komut-sat%C4%B1r%C4%B1/</link>
-    <description>Recent content in Komut Satırı on Pythonistan</description>
+    <title>Githubda Ücretsiz Web Hosting on Pythonistan</title>
+    <link>http://pythonistan.net/tags/githubda-%C3%BCcretsiz-web-hosting/</link>
+    <description>Recent content in Githubda Ücretsiz Web Hosting on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Sat, 20 Aug 2016 00:17:50 -0400</lastBuildDate>
-    <atom:link href="http://pythonistan.net/tags/komut-sat%C4%B1r%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://pythonistan.net/tags/githubda-%C3%BCcretsiz-web-hosting/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Git Nedir? Nerede ve Nasıl Kullanılır?</title>
@@ -133,93 +133,6 @@
 &lt;hr&gt;
 
 &lt;p&gt;Hugo ile site yapımına yarın başlıyoruz. Öyleyse, &lt;strong&gt;hazır mıyız!!!?&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Python Kabukta (Shell) İlk Programımız</title>
-      <link>http://pythonistan.net/blog/python-kabukta-ilk-program/</link>
-      <pubDate>Thu, 04 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://pythonistan.net/blog/python-kabukta-ilk-program/</guid>
-      <description>
-
-&lt;h2 id=&#34;karakter-dizisi-yazdırıyoruz&#34;&gt;Karakter Dizisi Yazdırıyoruz&lt;/h2&gt;
-
-&lt;h3 id=&#34;ilk-önce-kurulum-kontrolü&#34;&gt;İlk Önce Kurulum Kontrolü&lt;/h3&gt;
-
-&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
-
-&lt;h3 id=&#34;karakter-dizilerine-giriş&#34;&gt;Karakter Dizilerine Giriş&lt;/h3&gt;
-
-&lt;p&gt;Tamam, o halde şimdi klavyeden şunu yazın ve enter&amp;rsquo;a basın: &lt;code&gt;&amp;quot;Python&#39;u seviyorum&amp;quot;&lt;/code&gt;. (Foto 2) Başta ve sonda &lt;strong&gt;çift tırnak&lt;/strong&gt; sembollerine dikkat edin. Zira onlarsız karakter dizimizi ekrana yazdıramayız.&lt;/p&gt;
-
-&lt;p&gt;Payton&amp;rsquo;da karakter dizileri(string) ya çift tırnak yada tek tırnak işaretleri arasında yer alırlar. Eğer çift tırnak ile başladıysanız çift, tek tırnak ile başladıysanız tek tırnak ile bitirmelisiniz. Karakter dizileri (stringler) çok önemli bir konu olduğu için daha sonra geniş olarak bu konu üzerinde duracağız. Şimdilik alışma amaçlı kabukta değişik karakter dizileri yazdırın. (Foto 2)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/python-kabuk/python_version.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Payton kurulumunu teyit edelim.&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kabuk/python_version_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-kabuk/python_shell_strings.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Karakter Dizileri Kullanımı&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kabuk/python_shell_strings_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-kabuk/python_aritmetik_ornekleri.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Aritmetik İşlemlerini Gösteren Ekran&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kabuk/python_aritmetik_ornekleri_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-kabuk/python_shell_help.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python kabukta yardım menülerini açalım&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kabuk/python_shell_help_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;payton-kabukta-print-siz-yazdırma-ve-hesap-makinası&#34;&gt;Payton Kabukta Print&amp;rsquo;siz Yazdırma ve Hesap Makinası&lt;/h2&gt;
-
-&lt;p&gt;Yukarıda 2 no.lu fotoda ne yaptık? Bir karakter dizisini ekrana yazdırdık. Normalde bu işlemi yaptırmak için Payton&amp;rsquo;da özel bir komut olan &lt;code&gt;print&lt;/code&gt; komutuna ihtiyacımız vardı. Etkileşimli kabuk (shell) &lt;code&gt;print&lt;/code&gt; komutuna ihtiyaç bırakmadan ekrana yazdırmayı sağladı.&lt;/p&gt;
-
-&lt;p&gt;Şimdi yeni bir komut verelim. Eminim, meseleyi daha iyi anlayacaksınız. Ekrana &lt;code&gt;5 * 2&lt;/code&gt; yazıp enter&amp;rsquo;a basın. Sonuç çıktısının &lt;code&gt;10&lt;/code&gt; olarak Payton tarafından bize verildiğini göreceksiniz. Python aritmetik operatörleri kolayca tanıdı ve işlemi gerçekleştirdi. Matematikten bildiğimiz basit aritmetik operatörleri (&lt;code&gt;+-*/&lt;/code&gt;) etkileşimli kabukta kolayca deneyebilirsiniz. (Foto 3) Böylece Paytonu hesap makinası olarak kullanabileceğinizi artık biliyorsunuz.&lt;/p&gt;
-
-&lt;p&gt;Liseden bildiğimiz işlem önceliği özelliği Paytonda yer almaktadır. (Foto 3)&lt;/p&gt;
-
-&lt;h2 id=&#34;payton-yardım-menüsü&#34;&gt;Payton Yardım Menüsü&lt;/h2&gt;
-
-&lt;p&gt;Payton Shell aynı zamanda Python yardım sistemini içerir. Yardıma ulaşmak için kabuk ekranında &lt;code&gt;help()&lt;/code&gt; yazın. (Foto 4)  Daha sonra yardım almak istediğiniz konuları öğrenmek için &lt;code&gt;topics&lt;/code&gt;, &lt;code&gt;modules&lt;/code&gt; yada &lt;code&gt;keywords&lt;/code&gt; yazabilirsiniz. Örneğin help ekranındayken karakter dizileri ile ilgili yardım almak için kullanacağınız komut &lt;code&gt;STRINGS&lt;/code&gt;dir. (Foto 4)&lt;/p&gt;
-
-&lt;h2 id=&#34;payton-kabuk-kısıtlılıkları-ve-dezavantajları&#34;&gt;Payton Kabuk Kısıtlılıkları ve Dezavantajları&lt;/h2&gt;
-
-&lt;p&gt;Payton Şel(kabuk) hoş olsa da uzun satırlı kodlar için yeterli değildir. Ayrıca Syntax Highlighting(kod renklendirme)&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; ve Indentation(kod tablandırma) içermez. Bir sonraki makalemde sizlere Payton ile beraber kullanabileceğimiz &lt;a href=&#34;http://pythonistan.net/blog/python-notepad-ile-program-yazma/&#34;&gt;metin editörlerini&lt;/a&gt; tanıtacağım. Favorim &lt;a href=&#34;http://pythonistan.net/blog/sublime-text-kurulum/&#34;&gt;Sublime Text programı&lt;/a&gt; ile beraberce az biraz daha uzun bir kod yazacağız. Bizi izlemeye devam edin!&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Syntax_highlighting&#34;&gt;http://en.wikipedia.org/wiki/Syntax_highlighting&lt;/a&gt;
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Windows&#39;ta Python Kurulumu</title>
-      <link>http://pythonistan.net/blog/python-kurulum/</link>
-      <pubDate>Mon, 03 Aug 2015 00:17:50 -0400</pubDate>
-      
-      <guid>http://pythonistan.net/blog/python-kurulum/</guid>
-      <description>
-
-&lt;p&gt;Bir önceki &lt;a href=&#34;http://pythonistan.net/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
-
-&lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için komut satırı (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
-
-&lt;p&gt;Ben sitede Payton&amp;rsquo;un 2.x versiyonunu kullanacağım. Zira Payton 3 versiyonunda bariz söz dizimi(syntax) değişiklikleri var, ayrıca bu versiyon henüz tam olarak yaygınlaşmadı. Dolayısıyla 2.x versiyonunu indirmenizi tavsiye ediyorum.&lt;/p&gt;
-
-&lt;h2 id=&#34;python-2-7&#34;&gt;Python 2.7&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Python.org sitesine gidin -&amp;gt; &lt;a target=&#34;_blank&#34; href=&#34;http://www.python.org&#34; class=&#34;btn&#34;&gt;Python Org&lt;/a&gt; ve Downloads kısmına girin. (Foto 1)&lt;/li&gt;
-&lt;li&gt;Python 2.7.x versiyonunu _(yada yeni bir 2.x versiyonu çıktıysa onu) bilgisayarınıza indirin. (Foto 2)&lt;/li&gt;
-&lt;li&gt;İndirdiğiniz dosyayı çift tıklayarak kurmaya başlayın.&lt;/li&gt;
-&lt;li&gt;Kurulumda çeşitli ekranlar gelecek. Bu ekranları &lt;strong&gt;Next&lt;/strong&gt; diyerek geçebilirsiniz. Ancak Python&amp;rsquo;u ortam değişkenlerine kaydedeceğimiz ekranı hızlı geçmeyin, Python&amp;rsquo;u Path(Ortam) değişkenine eklemeyi unutmayın. Sizdeki ekran farklı olabilir, &lt;strong&gt;PATH&lt;/strong&gt; kelimesine dikkat edin.(Foto 3)&lt;/li&gt;
-&lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse komut satırında (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Şimdi artık bilgisayarımızda &lt;strong&gt;Python&lt;/strong&gt;&amp;lsquo;u kullanabiliriz. Bir sonraki blog postumda sizinle beraber komut satırından çok basit bir program yazacağız. O zamana kadar hoşçakalın.&lt;/p&gt;
 </description>
     </item>
     

@@ -6,8 +6,135 @@
     <description>Recent content in Blogs on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Thu, 18 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 20 Aug 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="http://pythonistan.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Git Nedir? Nerede ve Nasıl Kullanılır?</title>
+      <link>http://pythonistan.net/blog/Git-ve-github/</link>
+      <pubDate>Sat, 20 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Git-ve-github/</guid>
+      <description>
+
+&lt;h2 id=&#34;git-ile-tanışma&#34;&gt;Git ile Tanışma&lt;/h2&gt;
+
+&lt;p&gt;Bir önceki yazımda bahsettiğim &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;Hugo ve Jekyll&lt;/a&gt; ile web sitesi yapma olayına girişmeden önce üzerinde durmamız gereken bir konu var: &lt;strong&gt;Git&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bazı temel &lt;code&gt;git&lt;/code&gt; komutlarını öğrenmemiz gerekiyor zira web sitemizi oluştururken dosya indirme ve siteyi oluşturduktan sonra ise sitemizi web server&amp;rsquo;a yüklemek için bu komutları kullanacağız.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; bizim için sadece dosyalarımızı yedeklemek yada güncellemeleri tutmakla kalmayıp dosyaları web&amp;rsquo;e transfer etmede kullanacağımız bir yol olacak. Eskiden bu iş için ftp protokolu ve ftp programları kullanılırdı.&lt;/p&gt;
+
+&lt;h3 id=&#34;git-versiyon-kontrol-sistemi&#34;&gt;Git : Versiyon Kontrol Sistemi&lt;/h3&gt;
+
+&lt;p&gt;Git yazılımlar için kullanılan bir çeşit versiyon kontrol sistemidir. Yazılımcılar bu tür sistemlerle kaynak kodunda zaman içinde yapılan değişimleri görüp yönetebilirler.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href = &#34;https://tr.wikipedia.org/wiki/S%C3%BCr%C3%BCm_kontrol_sistemi&#34; target = &#34;_blank&#34;&gt; Versiyon kontrol sistemleri&lt;/a&gt; bir yazılımda herhangi bir anda yada herhangi bir kişi tarafından yapılan her türlü değişikliğin hepsinin kaydını tutar. Herhangi bir hata durumunda kolaylıkla eski stabil duruma dönüş olanağı verir.&lt;/p&gt;
+
+&lt;p&gt;Bu şekilde çok değerli olan kaynak kodumuza gelecek zararları önleneyebiliriz.&lt;/p&gt;
+
+&lt;p&gt;Git&amp;rsquo;in mucidi Linux&amp;rsquo;un da ilk geliştiricisi olan Linus Torvalds.&lt;/p&gt;
+
+&lt;h3 id=&#34;git-bizim-için-anlamı&#34;&gt;Git : Bizim İçin Anlamı&lt;/h3&gt;
+
+&lt;p&gt;Yukarıda &lt;strong&gt;Git&lt;/strong&gt;&amp;lsquo;i tanımlayan ifadeler fazla soyut kalmış olabilir. Yada kendinize &amp;ldquo;Benim büyük yazılım projeleri ile ilgim yok, o halde neden &lt;code&gt;git&lt;/code&gt;&amp;lsquo;e ihtiyaç duyayım?&amp;rdquo; sorusunu soruyor olabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt;, üzerinde yüzlerce kişinin aynı anda çalıştığı ve katkı verdiği büyük yazılım projeleri (Linux, v.d.) yada milyarlık firmaların üzerinde çalıştığı envai çeşit projeler (mesela kitap revizyonu, v.d.) için değil, her tür boyuttaki kişisel projelerde kullanabilecek imkanlar sağlıyor.&lt;/p&gt;
+
+&lt;p&gt;Bu sistemi anlamak adına basit bir örnek verelim: Üzerinde çalıştığımız bir word dosyamız olsun. Mesela uzunca bir doküman yazıyoruz. Dosyamızı her gün açıp bir şeyler ekleyip, çıkardığımızı varsayalım.&lt;/p&gt;
+
+&lt;p&gt;Böyle bir çalışmayı şu ana kadar yaptıysanız bazen yapmamanız gereken bir hata yaptığınızı, eklememeniz gereken bir şeyi eklediğinizi bazen de tersini yaptığınızı görmüşsünüzdür. Dolayısıyla kaçırdığınız bir şeyler hep olur.&lt;/p&gt;
+
+&lt;p&gt;Bazen de ana dosyanın üzerine kaydetmeyip farklı kaydet seçeneğini kullanarak birbirinin benzeri onlarca dosya oluşturduğunuzu şaşkınlıkla görür, hangisini en son oluşturduğunuzu anlamak için bir sürü zahmet çekersiniz.&lt;/p&gt;
+
+&lt;p&gt;Bazen bir dosyada bulunan bir bilgi diğerinde bulunmaz, o dosyadan diğer dosyaya taşımanız gerekir. Kısaca büyük bir zahmettir.&lt;/p&gt;
+
+&lt;h3 id=&#34;git-master-ve-branch&#34;&gt;Git : Master ve Branch&lt;/h3&gt;
+
+&lt;p&gt;Git bu tür durumlar için dosyanın ana kopyası (master) ve yukarıdaki örnekteki gibi kaydedilen diğer versiyonlar için branş kopyası (branch) konseptini sunuyor. Bir ana dal ve yüzlerce katkı verenin oluşturduğu yüzlerce dallardan oluşan bir ağaç gibi düşünün.&lt;/p&gt;
+
+&lt;p&gt;Branşda oluşan değişikliklerden memnunsanız branşı ana dala bağlayabilirsiniz. (merge)&lt;/p&gt;
+
+&lt;p&gt;Memnun değilseniz iptal edip ana kopyadan yeni bir dal oluşturabilir, kullanmadığınız dalları iptal edebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Dosyalarımız &lt;code&gt;git&lt;/code&gt; sisteminde otomatik olarak yedeklenir. Herhangi bir anda dosya üzerinde o ana kadar yapılan düzeltmeleri (commit) görebilir (&lt;code&gt;git status&lt;/code&gt;) ve herhangi bir andaki duruma (statüye) dönebilirsiniz. (&lt;code&gt;git reset --hard statü.nosu&lt;/code&gt;)&lt;/p&gt;
+
+&lt;h3 id=&#34;git-repository-depo&#34;&gt;Git : Repository (Depo)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; sisteminde oluşturduğumuz her bağımsız proje birimine repository deniyor. Repo&amp;rsquo;nun içeriği dosya, klasör, foto, video, excel tablosu, ve her tür veri seti olabilir.&lt;/p&gt;
+
+&lt;p&gt;Herhangi bir repo oluşturduğumuzda onun master (ana) kopyası hemen oluşturulur. Üzerinde çalışabileceğimiz branş kopyalarını biz oluşturacağız. Branş kopyaları üzerinde denediğimiz ve memnun kaldığımız değişiklikleri ana kopyayla birleştiriyoruz. (merge)&lt;/p&gt;
+
+&lt;h2 id=&#34;git-bizi-asıl-ilgilendiren-komutlar&#34;&gt;Git : Bizi Asıl İlgilendiren Komutlar&lt;/h2&gt;
+
+&lt;p&gt;Git sistemi gerçekten çook geniş ve başlı başına uzmanlaşılabilecek bir alan. Biz asıl olarak &lt;code&gt;git&lt;/code&gt; ile bir web server&amp;rsquo;a ulaşmak ve oradan birşeyler indirmek (pull - clone), Git sistemini kullanan en önemli sitelerden biri olan Github&amp;rsquo;a dosya yüklemek (push), repo oluşturup (init), repoya yapacağımız son değişiklikleri güncelleyip düzeltmek (commit) gibi işlemler yapacağız.&lt;/p&gt;
+
+&lt;p&gt;Hadi başlayalım.&lt;/p&gt;
+
+&lt;h3 id=&#34;git-kuruyoruz&#34;&gt;Git kuruyoruz.&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; kurmak için &lt;a href = &#34;https://git-scm.com/downloads&#34; target = &#34;_blank&#34;&gt; Git websitesine&lt;/a&gt; gidip sisteminize uygun olan versiyonu indirin ve kurun.&lt;/p&gt;
+
+&lt;p&gt;Önemli: Kurulum sırasında ortam değişkenine (PATH) ekleme seçeneğini ikinci seçenek olarak seçin. Yani &amp;ldquo;Use Git from the Windows Command Prompt&amp;rdquo;. (hemen altta resim 1) Bu şekilde &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;(Powershell)&lt;/a&gt;&amp;lsquo;den sıkıntısız olarak &lt;code&gt;git&lt;/code&gt; komutlarını çalıştıracağız. Diğer seçenekleri varsayılanlar olarak bırakın.&lt;/p&gt;
+
+&lt;p&gt;Git&amp;rsquo;i komut satırından çalıştıracağımız için daha önceki yazılardan aşina olduğunuz &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;(Powershell)&lt;/a&gt;&amp;lsquo;i yine çalıştırın. Kurulumun doğru olup olmadığını anlamak için herhangi bir klasör içinde &lt;code&gt;git&lt;/code&gt; yazıp gelen cevaba bakabilirsiniz. (hemen altta resim 2)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/git/git_windows_path_option.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Git&#39;i Powershell&#39;de Kullanmak İçin Ortam Değişkenine Ekliyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/git/git_windows_path_option_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/git/git_kurulum_kontrolu.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Git&#39;in Windows&#39;taki Kurulumunu Kontrol Ediyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/git/git_kurulum_kontrolu_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;bir-repo-oluşturalım&#34;&gt;Bir Repo Oluşturalım&lt;/h3&gt;
+
+&lt;p&gt;Şimdi bilgisayarınızın içinde herhangi bir klasöre gidin ve şu komutu verin: &lt;code&gt;git init&lt;/code&gt;. Klasörünüzün içinde bir kaç dosya bulunsun. Bu komut git&amp;rsquo;e bu klasörün içinde bir repo oluşturulacağını ve &lt;code&gt;git&lt;/code&gt; sisteminin bu repoyu takibe başlayacağını söylüyor.&lt;/p&gt;
+
+&lt;p&gt;Daha sonra &lt;code&gt;git add .&lt;/code&gt; komutunu vererek klasörümüzün içinde bulunan her şeyin (her tür dosya) repoya eklenmesini istiyoruz.&lt;/p&gt;
+
+&lt;p&gt;Şimdi &lt;code&gt;git commit -m &amp;quot;dosyaları repoya ilk kez bagliyoruz&amp;quot;&lt;/code&gt; yazıp Enter&amp;rsquo;a basarak repoya eklediğimiz dosyaları tam o andaki haliyle ve durumuyla (son düzeltme durumu-last commit) repomuza bağlanması işlemini gerçekleştiriyoruz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/git/git_ilk_komutlar_1.png&#34; alt=&#34;Git ile Bazı Temel Komutlar&#34; /&gt; &lt;br&gt;&amp;ldquo;Git ile Yukarıdaki Komutları Deneyelim&amp;rdquo;&lt;/p&gt;
+
+&lt;h2 id=&#34;sıra-uzak-sunucu-olan-github-a-geldi&#34;&gt;Sıra Uzak Sunucu Olan Github&amp;rsquo;a Geldi&lt;/h2&gt;
+
+&lt;p&gt;Lokalda (yerel bilgisayar) yapacağımız işlemler bitti. Şimdi sıra ekleyip repoya bağladığımız dosyalarımızı git vasıtasıyla &lt;strong&gt;Github&lt;/strong&gt;&amp;lsquo;a (yada Gitlab/Bitbucket, hangisini kullanıyorsanız ona) yüklemek.&lt;/p&gt;
+
+&lt;p&gt;İlk olarak &lt;a href = &#34;https://github.com/&#34; target =&#34;_blank&#34;&gt; Github&lt;/a&gt; sitesine gidin ve kayıt olun. (Ana ekranda sağ üstteki yeşil Sign up düğmesi) Kendinize kısa bir kullanıcı ismi belirleyin.&lt;/p&gt;
+
+&lt;p&gt;Kayıttan sonra kayıt sırasında verdiğiniz mail adresinize bir teyit maili gelecektir, onu teyit edin.&lt;/p&gt;
+
+&lt;p&gt;Kayıt işlemi tamamlandıysa şimdi ana ekranda Start a project düğmesine tıklayın. Reponuza test adını verin ve Create Repository düğmesine tıklayarak reponuzu oluşturun. (üstteki büyük resim)&lt;/p&gt;
+
+&lt;h3 id=&#34;github-a-yükleme-yapalım&#34;&gt;Github&amp;rsquo;a Yükleme Yapalım&lt;/h3&gt;
+
+&lt;p&gt;Şimdi Lokalde oluşturduğumuz repomuzu web&amp;rsquo;e yükleyelim. Komut satırı Powershell&amp;rsquo;de vereceğimiz komut: &lt;code&gt;git remote add origin https://github.com/kullaniciadiniz/test.git&lt;/code&gt; (bu komutu &lt;code&gt;git init&lt;/code&gt; komutunu verdiğiniz aynı klasörün içinden çalıştıracaksınız)&lt;/p&gt;
+
+&lt;p&gt;Son olarak aşağıdaki komutu girin: &lt;code&gt;git push -u origin master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; size şimdi kullanıcı adınızı ve parolanızı soracak. Kullanıcı adınızı girin ve Enter&amp;rsquo;a basın. Şifreniz istendiğinde yine aynı şekilde girin (şifreniz ekranda görülmeyecektir) ve Enter&amp;rsquo;a basın. Dosyalarınız webdeki alanınıza yüklenecek.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/git/git_ile_githuba_dosya_push_yapma.png&#34; alt=&#34;Git ile Github&#39;a Dosyaları Push Yapma&#34; /&gt; &lt;br&gt;&amp;ldquo;Git ile Github&amp;rsquo;a Dosyaları Yüklüyoruz&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Bir - iki saniye sonra Github websitesini kontrol edin. Yüklediğiniz dosyaların test isimli reponuzun altında olduğunu göreceksiniz.&lt;/p&gt;
+
+&lt;p&gt;Şu andan itibaren takip edilen klasörünüzün içindeki dosyalarda yaptığınız her değişikliğin kaydı tutulacak ve commit (düzeltme) yaptığınız anda bu değişiklikler repo ile güncellenmek amacıyla tutulacaktır.&lt;/p&gt;
+
+&lt;p&gt;Tersi de geçerli. Yani uzak sürücüdeki (web) dosyalarda herhangi bir değişiklik düzeltmesi yaptıysanız bu düzeltmeler lokaldeki kopyasıyla eşitlenecektir. (Bunun için verilen komut: &lt;code&gt;git pull origin master&lt;/code&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;komut-satırı-sistemlerinin-yaşattığı-duygular&#34;&gt;Komut Satırı Sistemlerinin Yaşattığı Duygular&lt;/h2&gt;
+
+&lt;p&gt;Bizim gibi acemiler için komut satırı kendisinden saygı ile karışık korku beslenen, anlaşılmaz ve hatta biraz mistik bir konu gibi.&lt;/p&gt;
+
+&lt;p&gt;Her an bir yanlış yapıp sistemi mahvedeceğim duygusu komut satırını kullanırken çok kere aklıma gelmiştir.&lt;/p&gt;
+
+&lt;p&gt;İşletim sistemi olarak Windows ve Mac kullandıysanız siz de bu yazımda bahsettiğim şeylere biraz öyle bakmış olabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Ancak meraklanmayın, burada sisteminize zarar verebilecek herhangi bir şey anlatmadım. Bizim için son derece yararlı olacak temel &lt;code&gt;git&lt;/code&gt; komutlarını ele aldık.&lt;/p&gt;
+
+&lt;p&gt;Buradaki 5-6 &lt;code&gt;git&lt;/code&gt; komutunu değişik klasörlerde tekrar edin, iyi anladığınıza emin olun. Çok yararını göreceğinize sizi temin ederim.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Hugo ile site yapımına yarın başlıyoruz. Öyleyse, &lt;strong&gt;hazır mıyız!!!?&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Jekyll&#39;dan Hugo&#39;ya Geçiş</title>
@@ -19,7 +146,7 @@
 
 &lt;p&gt;Birkaç günlük aradan sonra tekrar merhaba! Sitemdeki makyaj değişikliğini fark etmiş olmalısınız.&lt;/p&gt;
 
-&lt;p&gt;Eski siteyi Jekyll ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&amp;rsquo;ı Hugo ile değiştirmeye karar verdim.&lt;/p&gt;
+&lt;p&gt;Eski siteyi &lt;a href = &#34;https://jekyllrb.com/&#34; target = &#34;_blank&#34;&gt; Jekyll &lt;/a&gt; ile tasarlamıştım, özellikle build (siteyi oluşturma süresi) süresinden hoşnut olmadığımdan Jekyll&amp;rsquo;ı Hugo ile değiştirmeye karar verdim.&lt;/p&gt;
 
 &lt;p&gt;Evet, blogumda baştan beri Jekyll ile olan maceram bugün itibarı ile sona erdi. Onun yerine Hugo statik site geliştiricisine (static site generator) geçiyorum.&lt;/p&gt;
 
@@ -43,7 +170,7 @@
 
 &lt;p&gt;Şu anda en gözde statik site oluşturucu ortamı Jekyll. Jekyll gerek kullanım kolaylığı gerekse dökümantasyonundaki detaylı bilgiler ve topluluğunun güçlülüğü ile dikkat çekiyor.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Jekyll&lt;/strong&gt;, statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.&lt;/p&gt;
+&lt;p&gt;&lt;a href = &#34;https://jekyllrb.com/&#34; target = &#34;_blank&#34;&gt; &lt;strong&gt;Jekyll&lt;/strong&gt; &lt;/a&gt;, statik site geliştiricileri ile yeni tanışanlar için nisbeten kolay addedilebilir.&lt;/p&gt;
 
 &lt;p&gt;Dezavantajı ise diğer SSG&amp;rsquo;lerine göre oldukça yavaş olması. Özellikle karşılaştırma kriteri olarak biraz sonra değineceğim Hugo&amp;rsquo;ya göre neredeyse 10&amp;rsquo;da 1 oranında yavaş.&lt;/p&gt;
 
@@ -159,7 +286,7 @@ nocomment = true
 
 &lt;p&gt;Bizim gibi tam amatörler için hazırlamakta olduğum &lt;strong&gt;adım adım Hugo ve Jekyll kullanım klavuzunu&lt;/strong&gt; çok yakın zamanda bu sitede bulacaksınız inşallah.&lt;/p&gt;
 
-&lt;p&gt;Tek başımıza bir websitesi oluşturup git komutları vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
+&lt;p&gt;Tek başımıza bir websitesi oluşturup &lt;a href=&#34;http://pythonistan.net/blog/Git-ve-github/&#34;&gt;git komutları&lt;/a&gt; vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
 
 &lt;p&gt;Tüm bunlar ve fazlası için lütfen &lt;a href=&#34;http://pythonistan.net/&#34;&gt;blogumu&lt;/a&gt; düzenli olarak takip edin&amp;hellip;&lt;/p&gt;
 </description>
