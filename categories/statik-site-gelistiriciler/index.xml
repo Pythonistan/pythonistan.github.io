@@ -6,8 +6,112 @@
     <description>Recent content in Statik Site Gelistiriciler on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Thu, 18 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 22 Aug 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="http://pythonistan.net/categories/statik-site-gelistiriciler/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm</title>
+      <link>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/</link>
+      <pubDate>Mon, 22 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;web-teknolojileri&#34;&gt;Web Teknolojileri&lt;/h2&gt;
+
+&lt;p&gt;Sitemi yayınlamaya başladığımda ele almayı planladığım konulardan biri &lt;a href=&#34;http://pythonistan.net/blog/merhaba-dunya/&#34;&gt;web teknolojileri&lt;/a&gt; idi.&lt;/p&gt;
+
+&lt;h3 id=&#34;django-python-temelli-bir-web-framework&#34;&gt;Django : Python Temelli Bir Web Framework&lt;/h3&gt;
+
+&lt;p&gt;Amatör bir Paytonsever olarak web teknolojileri konusunu işlerken konumun &lt;a href = &#34;https://www.djangoproject.com/&#34; target = &#34;_blank&#34; &gt; &lt;strong&gt;Django&lt;/strong&gt; Web Framework&lt;/a&gt; olmasını arzu ederdim. Henüz kendimi Django&amp;rsquo;yu (Jango olarak okunuyor) size arz etmek için yetkin görmüyorum.&lt;/p&gt;
+
+&lt;p&gt;Yine de madem &lt;em&gt;web teknolojileri&lt;/em&gt; dedik, bu konuda karınca kararınca işinize yarayacağına inandığım bilgileri paylaşmaya çalışacağım.&lt;/p&gt;
+
+&lt;h3 id=&#34;hugo-statik-site-geliştiricisi-ssg&#34;&gt;Hugo Statik Site Geliştiricisi (SSG)&lt;/h3&gt;
+
+&lt;p&gt;Statik bir web sitesini &lt;a href = &#34;https://gohugo.io/&#34; target = &#34;_blank&#34; &gt; Hugo&lt;/a&gt; ve &lt;a href = &#34;https://github.com/&#34; target = &#34;_blank&#34; &gt; Github&lt;/a&gt; yardımı ile &lt;strong&gt;0&lt;/strong&gt; (evet, yanlış duymadınız. Sıfır) masraf ile kurabilir, sözünüzü Dünya ile paylaşabilirsiniz. Bu meyanda size herhangi bir katkı sağlayabilirsem bu benim için büyük bir kıvanç olur.&lt;/p&gt;
+
+&lt;p&gt;Evet, gelelim Hugo&amp;rsquo;ya ve faydalarına! Geçen yazımda Hugo&amp;rsquo;dan ve faydalarından biraz &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;bahsetmiştim&lt;/a&gt;. Arzu edenler o yazıya bir göz atabilirler.&lt;/p&gt;
+
+&lt;p&gt;Bu yazıda SSG&amp;rsquo;miz Hugo&amp;rsquo;yu bilgisayarımıza nasıl kuracağımızı herkesin anlayabileceği bir şekilde bebek adımlarıyla anlatmaya çalışacağım.&lt;/p&gt;
+
+&lt;p&gt;Geçen haftaki yazıda aslında &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;Hugo kurulumundan&lt;/a&gt; azıcık bahsetmiştim, ama o makale istediğim netlikte olmadı, bu sefer çok daha detaylı bir &lt;strong&gt;nasıl yapılır klavuzu&lt;/strong&gt; hazırlamaya karar verdim.&lt;/p&gt;
+
+&lt;p&gt;Üç bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimin huzurunuzdaki ilk &lt;strong&gt;(1.)&lt;/strong&gt; bölümü &lt;a href = &#34;#hugokur&#34;&gt; Hugo kurulumuna&lt;/a&gt; ayrıldı. Diğer adımlar ise şöyle: &lt;strong&gt;2.&lt;/strong&gt;: Hugo ile Siteyi Lokal Bilgisayarda Geliştirme, &lt;strong&gt;3.&lt;/strong&gt;:Geliştirdiğimiz Web Sitesini Github ile Web&amp;rsquo;de Ücretsiz Barındırma (Hosting)&lt;/p&gt;
+
+&lt;p&gt;Evet, fazla uzattık, şimdi hemen aksiyona geçelim&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;windows-için-hugo-kurulumu&#34;&gt;Windows İçin Hugo Kurulumu&lt;/h2&gt;
+
+&lt;p&gt;Windows versiyonunuz ne olursa olsun (Win10/8/7/Xp) (&lt;em&gt;&amp;ldquo;Xp kullanan var mı hala ya???&amp;rdquo; :)&lt;/em&gt; ) aşağıda gösterildiği gibi Hugo&amp;rsquo;yu kurabilirsiniz.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-sistem-mimarisini-tespit-ve-hugo-yu-indirme&#34;&gt;1. Sistem Mimarisini Tespit ve Hugo&amp;rsquo;yu İndirme&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;İlk iş olarak Windows&amp;rsquo;unuzun hangi bit mimarisi ile çalıştığını belirleyin. Zira 32 ve 64 Bit mimari için farklı Hugo sürümleri var.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;a)&lt;/strong&gt; Masaüstü&amp;rsquo;nüzdeki Bilgisayar simgesine sağ tıklayıp açılan menüden &lt;code&gt;Özellikler&lt;/code&gt;&amp;lsquo;i seçin.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;b)&lt;/strong&gt; Açılacak pencerede &lt;strong&gt;Sistem Türü&lt;/strong&gt; bilgisinin karşısında sisteminizin mimarisini öğrenebilirsiniz. (Bkz. Üstteki Ekran Görüntüsü)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mimarinizi öğrendiğize göre size uygun olan &lt;strong&gt;Hugo&lt;/strong&gt; sürümünü indirelim.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;a)&lt;/strong&gt; Hugo &lt;a href = &#34;https://github.com/spf13/hugo/releases&#34; target = &#34;_blank&#34; &gt; download sayfasına&lt;/a&gt; gidin.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;b)&lt;/strong&gt; Bugün itibarı ile (&lt;strong&gt;22 Ağustos 2016&lt;/strong&gt;) Hugo&amp;rsquo;nun stabil sürüm no.su &lt;strong&gt;0.16&lt;/strong&gt;. Aşağıdaki resimde görülen Windows dosyalarından size uygun olanı indirin. (download)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_windows_uygun_surum.png&#34; alt=&#34;Windows&#39;umuz İçin Hugo&#39;nun Uygun Versiyonunu İndiriyoruz&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Windows&amp;rsquo;umuz İçin Hugo&amp;rsquo;nun Uygun Sürümünü İndiriyoruz&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;2-hugo-zip-dosyasını-açma-ve-sürücüye-kopyalama&#34;&gt;2. Hugo Zip Dosyasını Açma ve Sürücüye Kopyalama&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; executable (.exe) dosyasını bilgisayarımıza indirdikten sonra kolay ulaşım için daha uygun bir yere koyacağız.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;a)&lt;/strong&gt; Bilgisayarımızın &lt;code&gt;C:\&lt;/code&gt; klasörünün hemen altına &lt;code&gt;hugo&lt;/code&gt; isimli yeni bir boş klasör oluşturun.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;b)&lt;/strong&gt; Zip dosyasının içinde bulunan &lt;code&gt;hugo.exe&lt;/code&gt; dosyasını oluşturduğumuz yeni klasörün içine kopyalayın. (yada taşıyın, fark etmez.) [Alt solda ilk resim&amp;#8595;]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;c)&lt;/strong&gt; Zip dosyasını ve gereksiz diğer dosyaları (readme,copyright v.s.) silebilirsiniz. İhtiyacımız olan tek dosya &lt;code&gt;hugo.exe&lt;/code&gt; çünkü.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;3. Hugo&amp;rsquo;yu Ortam Değişkenine (PATH) Ekleme&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Şimdi Hugo&amp;rsquo;yu PATH&amp;rsquo;a ekleyeceğiz, zira öyle yapmazsak &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya komut satırından (Yeni versiyon Windows&amp;rsquo;lar için &lt;strong&gt;Powershell&lt;/strong&gt;, Xp&amp;rsquo;ciler içinse &lt;strong&gt;Cmd&lt;/strong&gt;) rahatlıkla ulaşamayız. Path&amp;rsquo;a ekledikten sonra herhangi bir klasör içinden &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya hemen ulaşabileceğiz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;a)&lt;/strong&gt; Yukarıdaki gibi Masaüstü&amp;rsquo;nüzdeki Bilgisayar simgesine sağ tıklayıp &lt;code&gt;Özellikler&lt;/code&gt; menüsünü tıklayarak açılan pencereden &lt;code&gt;Gelişmiş Sistem Ayarları&lt;/code&gt;&amp;lsquo;nı seçin. [Altta ilk baştaki resim&amp;#8595;]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;b)&lt;/strong&gt; &lt;code&gt;Sistem Özellikleri&lt;/code&gt; penceresinin üçüncü sayfası (tabı) olan &lt;code&gt;Gelişmiş&lt;/code&gt; sayfasını açarak en alttaki &lt;code&gt;Ortam Değişkenleri&lt;/code&gt; düğmesine tıklayın. [Alt ortadaki resim&amp;#8595;]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;c)&lt;/strong&gt; &lt;code&gt;Ortam Değişkenleri&lt;/code&gt; penceresinde üstteki ilk &lt;code&gt;Yeni...&lt;/code&gt; düğmesine tıklayın. Açılacak &lt;code&gt;Yeni Kullanıcı Değişkeni&lt;/code&gt; küçük penceresinde &lt;code&gt;Değişken Adı:&lt;/code&gt; bölümünün karşısına &amp;ldquo;&lt;strong&gt;PATH&lt;/strong&gt;&amp;rdquo; değerini girin. &lt;code&gt;Değişken Değeri&lt;/code&gt; bölümünün karşısına &amp;ldquo;&lt;strong&gt;C:\hugo&lt;/strong&gt;&amp;rdquo; değerini yazın. (Tırnak işaretleri girilmeyecek.)&lt;/p&gt;
+
+&lt;p&gt;(ÖNEMLİ NOT: Son değeri &lt;code&gt;C:\hugo&lt;/code&gt; kendiniz klavyeden girebileceğiniz gibi &lt;code&gt;Dizine Gözat...&lt;/code&gt; seçeneği ile gözatma penceresinden gösterebilirsiniz.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DİKKAT!!!&lt;/strong&gt; Dosyayı değil, dizini hedef olarak gösteriyoruz. Burası önemli! [Alt en sağdaki resim&amp;#8595;]&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Bilgisayarım - Özellikler - Gelişmiş Sistem Ayarları Penceresine Ulaşma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_2.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Gelişmiş Tab Sayfasındaki Ortam Değişkenleri Düğmesine Tıklıyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_2_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_3.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Kullanıcı Değişkenine (PATH) Hugo&#39;yu Ekliyoruz.&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_3_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;4-hugo-kurulumu-neredeyse-bitti-kontrol-zamanı&#34;&gt;4. Hugo Kurulumu: Neredeyse Bitti, Kontrol Zamanı!&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Şimdi bilgisayarınızı yeniden başlatın. Herşeyin istediğimiz gibi olup olmadığını kontrol edelim.&lt;/p&gt;
+
+&lt;p&gt;a) Powershell&amp;rsquo;i yada Cmd&amp;rsquo;yi açın. Herhangi bir klasör içinde &lt;code&gt;hugo&lt;/code&gt; komutunu yazın ve Enter&amp;rsquo;a basın. Cevap olarak &amp;ldquo;unable to locate config file&amp;rdquo; şeklinde bir mesaj alıyorsak &lt;a name=&#34;hugokur&#34;&gt;Hugo kurulumu başarı ile gerçekleştirildi&lt;/a&gt; demektir.&lt;/p&gt;
+
+&lt;p&gt;b) Üstteki hatayı alıyoruz zira henüz hiç bir site oluşturmadık. Site oluşturulduğunda config dosyamız otomatik olarak oluşturulacaktır. Site oluşturmayı bir önceki yazımdan hatırlıyor olmalısınız. Hatırlarsanız, &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;orada&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutunu vererek bir site oluşturmuştuk.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_basarili_kurulum.jpg&#34; alt=&#34;Windows&#39;umuz İçin Hugo&#39;nun Uygun Versiyonunu İndiriyoruz&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo&amp;rsquo;nun Başarı ile Kurulduğunu Gösteren Ekran Görüntüsü&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Hugo&amp;rsquo;yu sistemimize kurmayı başardık. Şimdi sıra &lt;a href=&#34;http://pythonistan.net/blog/hugo-website-yapma-2/&#34;&gt;Hugo ile basit ama güzel bir websitesi&lt;/a&gt; yapmaya geldi. Sizi çok bekletmeyeceğim umarım.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Jekyll&#39;dan Hugo&#39;ya Geçiş</title>
@@ -133,7 +237,7 @@ nocomment = true
 
 &lt;p&gt;Hugo varsayılan olarak sayfalar ve postlar düzenini kullanıyor. Yani bağımsız sayfalara &lt;strong&gt;page&lt;/strong&gt; (sayfa), bir bölümün(section) altında olacak sayfalara ise &lt;strong&gt;post&lt;/strong&gt; deniyor.&lt;/p&gt;
 
-&lt;p&gt;Mesela yukarıda oluşturduğumuz &lt;strong&gt;hakkimizda.md&lt;/strong&gt; bağımsız bir sayfa olarak değerlendirilip content klasörünün hemen altına yerleştiriliyor. Bu sayfalar şablon biçimlerimizden single.html şablonuna uyduruluyor.&lt;/p&gt;
+&lt;p&gt;Mesela yukarıda oluşturduğumuz &lt;strong&gt;hakkimizda.md&lt;/strong&gt; bağımsız bir sayfa (page) olarak değerlendirilip content klasörünün hemen altına yerleştiriliyor. Bu sayfalar şablon biçimlerimizden single.html şablonuna uyduruluyor.&lt;/p&gt;
 
 &lt;p&gt;Bölüm oluşturmak içinse content klasörünüzün içinde yeni klasörler oluşturun. Mesela (blog), (post), (yazilar), (arşiv) v.d. gibi. Bu klasörlerin içinde oluşturacağınız her dosya (mesela dosya1.md, dosya2.md, v.b.) &lt;strong&gt;post&lt;/strong&gt; olarak algılanacaktır.&lt;/p&gt;
 

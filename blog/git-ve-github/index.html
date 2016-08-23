@@ -197,6 +197,8 @@
 				
 					<a class="post-category post-category-website" href="http://pythonistan.net//categories/website">website</a>
 				
+					<a class="post-category post-category-kurulum" href="http://pythonistan.net//categories/kurulum">kurulum</a>
+				
 				</div>
 			
 
@@ -248,9 +250,13 @@
 
 <p>Bazen bir dosyada bulunan bir bilgi diğerinde bulunmaz, o dosyadan diğer dosyaya taşımanız gerekir. Kısaca büyük bir zahmettir.</p>
 
+<p>Hele bir de bu işlemi iki ayrı lokasyonda (aynı lokasyonda iki ayrı bilgisayarda olabilir) gerçekleştiriyorsanız işlem içinden çıkılmaz bir hal alır.</p>
+
 <h3 id="git-master-ve-branch">Git : Master ve Branch</h3>
 
-<p>Git bu tür durumlar için dosyanın ana kopyası (master) ve yukarıdaki örnekteki gibi kaydedilen diğer versiyonlar için branş kopyası (branch) konseptini sunuyor. Bir ana dal ve yüzlerce katkı verenin oluşturduğu yüzlerce dallardan oluşan bir ağaç gibi düşünün.</p>
+<p>Git bu tür durumlar için dosyanın ana kopyası (master) ve yukarıdaki örnekteki gibi kaydedilen diğer versiyonlar için branş kopyası (branch) konseptini sunuyor.</p>
+
+<p>Bir ana dal ve yüzlerce farklı noktadan onlarca katkı verenin oluşturduğu dallardan oluşan bir ağaç gibi düşünün.</p>
 
 <p>Branşda oluşan değişikliklerden memnunsanız branşı ana dala bağlayabilirsiniz. (merge)</p>
 
@@ -272,7 +278,7 @@
 
 <h3 id="git-kuruyoruz">Git kuruyoruz.</h3>
 
-<p><strong>Git</strong> kurmak için <a href = "https://git-scm.com/downloads" target = "_blank"> Git websitesine</a> gidip sisteminize uygun olan versiyonu indirin ve kurun.</p>
+<p><strong>Git</strong> kurmak için <a href = "https://git-scm.com/downloads" target = "_blank"> Git websitesine</a> gidip sisteminize uygun olan versiyonu indirin ve kurun. <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1">(32 Bit / 64 Bit)</a></p>
 
 <p>Önemli: Kurulum sırasında ortam değişkenine (PATH) ekleme seçeneğini ikinci seçenek olarak seçin. Yani &ldquo;Use Git from the Windows Command Prompt&rdquo;. (hemen altta resim 1) Bu şekilde <a href="/blog/python-kabukta-ilk-program">(Powershell)</a>&lsquo;den sıkıntısız olarak <code>git</code> komutlarını çalıştıracağız. Diğer seçenekleri varsayılanlar olarak bırakın.</p>
 
@@ -289,7 +295,7 @@
 
 <p>Şimdi <code>git commit -m &quot;dosyaları repoya ilk kez bagliyoruz&quot;</code> yazıp Enter&rsquo;a basarak repoya eklediğimiz dosyaları tam o andaki haliyle ve durumuyla (son düzeltme durumu-last commit) repomuza bağlanması işlemini gerçekleştiriyoruz.</p>
 
-<p><img src="/img/blog/git/git_ilk_komutlar_1.png" alt="Git ile Bazı Temel Komutlar" /> <br>&ldquo;Git ile Yukarıdaki Komutları Deneyelim&rdquo;</p>
+<p><img src="/img/blog/git/git_ilk_komutlar_1.png" alt="Git ile Bazı Temel Komutlar" /> <br>&ldquo;Git ile Bazı Temel Komutları Deneyelim&rdquo;</p>
 
 <h2 id="sıra-uzak-sunucu-olan-github-a-geldi">Sıra Uzak Sunucu Olan Github&rsquo;a Geldi</h2>
 
@@ -303,7 +309,7 @@
 
 <h3 id="github-a-yükleme-yapalım">Github&rsquo;a Yükleme Yapalım</h3>
 
-<p>Şimdi Lokalde oluşturduğumuz repomuzu web&rsquo;e yükleyelim. Komut satırı Powershell&rsquo;de vereceğimiz komut: <code>git remote add origin https://github.com/kullaniciadiniz/test.git</code> (bu komutu <code>git init</code> komutunu verdiğiniz aynı klasörün içinden çalıştıracaksınız)</p>
+<p>Şimdi Lokalde başlattığımız repomuzun içeriğindeki dosyaları web&rsquo;e yükleyelim. Komut satırı Powershell&rsquo;de vereceğimiz komut: <code>git remote add origin https://github.com/kullaniciadiniz/test.git</code> (bu komutu <code>git init</code> komutunu verdiğiniz aynı klasörün içinden çalıştıracaksınız)</p>
 
 <p>Son olarak aşağıdaki komutu girin: <code>git push -u origin master</code></p>
 
@@ -331,7 +337,7 @@
 
 <hr>
 
-<p>Hugo ile site yapımına yarın başlıyoruz. Öyleyse, <strong>hazır mıyız!!!?</strong></p>
+<p><a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1">Hugo ile website yapımına</a> yarın başlıyoruz. Öyleyse, <strong>hazır mıyız!!!?</strong></p>
 
 	
 			
@@ -363,6 +369,11 @@
 				<div class="paging">
 					<span class="paging-label">More Reading</span>
 					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/">Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm</a>
+		            </div>
+		            
 
 					
 					<div class="paging-older">

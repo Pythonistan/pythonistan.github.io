@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@pyhtonistan">
+<meta property="twitter:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm">
+<meta property="twitter:image" content="/img/blog/hugo-website-yapma-1/sistem_mimarisi.png">
+<meta property="twitter:description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz">
+
+  <meta property="og:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm" />
+<meta property="og:description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/" />
+
+<meta property="og:image" content="/img/blog/hugo-website-yapma-1/sistem_mimarisi.png" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://pythonistan.net//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://pythonistan.net//css/lightbox.css">
+  <script src="http://pythonistan.net//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://pythonistan.net/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/hugo-website-yapma-1/hugo_logo.jpg" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#web-teknolojileri">Web Teknolojileri</a>
+<ul>
+<li><a href="#django-python-temelli-bir-web-framework">Django : Python Temelli Bir Web Framework</a></li>
+<li><a href="#hugo-statik-site-geliştiricisi-ssg">Hugo Statik Site Geliştiricisi (SSG)</a></li>
+</ul></li>
+<li><a href="#windows-için-hugo-kurulumu">Windows İçin Hugo Kurulumu</a>
+<ul>
+<li><a href="#1-sistem-mimarisini-tespit-ve-hugo-yu-indirme">1. Sistem Mimarisini Tespit ve Hugo&rsquo;yu İndirme</a></li>
+<li><a href="#2-hugo-zip-dosyasını-açma-ve-sürücüye-kopyalama">2. Hugo Zip Dosyasını Açma ve Sürücüye Kopyalama</a></li>
+<li><a href="#3-hugo-yu-ortam-değişkenine-path-ekleme">3. Hugo&rsquo;yu Ortam Değişkenine (PATH) Ekleme</a></li>
+<li><a href="#4-hugo-kurulumu-neredeyse-bitti-kontrol-zamanı">4. Hugo Kurulumu: Neredeyse Bitti, Kontrol Zamanı!</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/">Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>22</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-hugo" href="http://pythonistan.net//categories/hugo">Hugo</a>
+				
+					<a class="post-category post-category-website" href="http://pythonistan.net//categories/website">website</a>
+				
+					<a class="post-category post-category-kurulum" href="http://pythonistan.net//categories/kurulum">kurulum</a>
+				
+					<a class="post-category post-category-statik-site-gelistiriciler" href="http://pythonistan.net//categories/statik-site-gelistiriciler">statik site gelistiriciler</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-1%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-1%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Hugo%20ile%20Statik%20Bir%20Websitesi%20Nas%c4%b1l%20Yap%c4%b1l%c4%b1r%3f%20-%20Birinci%20B%c3%b6l%c3%bcm&url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-1%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/hugo-website-yapma-1/sistem_mimarisi.png" class="pure-img content-banner-image-inline"
+                                     style="
+                                            " />
+			
+
+            
+
+<h2 id="web-teknolojileri">Web Teknolojileri</h2>
+
+<p>Sitemi yayınlamaya başladığımda ele almayı planladığım konulardan biri <a href="/blog/merhaba-dunya/">web teknolojileri</a> idi.</p>
+
+<h3 id="django-python-temelli-bir-web-framework">Django : Python Temelli Bir Web Framework</h3>
+
+<p>Amatör bir Paytonsever olarak web teknolojileri konusunu işlerken konumun <a href = "https://www.djangoproject.com/" target = "_blank" > <strong>Django</strong> Web Framework</a> olmasını arzu ederdim. Henüz kendimi Django&rsquo;yu (Jango olarak okunuyor) size arz etmek için yetkin görmüyorum.</p>
+
+<p>Yine de madem <em>web teknolojileri</em> dedik, bu konuda karınca kararınca işinize yarayacağına inandığım bilgileri paylaşmaya çalışacağım.</p>
+
+<h3 id="hugo-statik-site-geliştiricisi-ssg">Hugo Statik Site Geliştiricisi (SSG)</h3>
+
+<p>Statik bir web sitesini <a href = "https://gohugo.io/" target = "_blank" > Hugo</a> ve <a href = "https://github.com/" target = "_blank" > Github</a> yardımı ile <strong>0</strong> (evet, yanlış duymadınız. Sıfır) masraf ile kurabilir, sözünüzü Dünya ile paylaşabilirsiniz. Bu meyanda size herhangi bir katkı sağlayabilirsem bu benim için büyük bir kıvanç olur.</p>
+
+<p>Evet, gelelim Hugo&rsquo;ya ve faydalarına! Geçen yazımda Hugo&rsquo;dan ve faydalarından biraz <a href="/blog/Jekylldan-Hugoya-gecis/">bahsetmiştim</a>. Arzu edenler o yazıya bir göz atabilirler.</p>
+
+<p>Bu yazıda SSG&rsquo;miz Hugo&rsquo;yu bilgisayarımıza nasıl kuracağımızı herkesin anlayabileceği bir şekilde bebek adımlarıyla anlatmaya çalışacağım.</p>
+
+<p>Geçen haftaki yazıda aslında <a href="/blog/Jekylldan-Hugoya-gecis/">Hugo kurulumundan</a> azıcık bahsetmiştim, ama o makale istediğim netlikte olmadı, bu sefer çok daha detaylı bir <strong>nasıl yapılır klavuzu</strong> hazırlamaya karar verdim.</p>
+
+<p>Üç bölümlük <strong>Hugo ile statik bir websitesi nasıl yapılır</strong> serimin huzurunuzdaki ilk <strong>(1.)</strong> bölümü <a href = "#hugokur"> Hugo kurulumuna</a> ayrıldı. Diğer adımlar ise şöyle: <strong>2.</strong>: Hugo ile Siteyi Lokal Bilgisayarda Geliştirme, <strong>3.</strong>:Geliştirdiğimiz Web Sitesini Github ile Web&rsquo;de Ücretsiz Barındırma (Hosting)</p>
+
+<p>Evet, fazla uzattık, şimdi hemen aksiyona geçelim&hellip;</p>
+
+<h2 id="windows-için-hugo-kurulumu">Windows İçin Hugo Kurulumu</h2>
+
+<p>Windows versiyonunuz ne olursa olsun (Win10/8/7/Xp) (<em>&ldquo;Xp kullanan var mı hala ya???&rdquo; :)</em> ) aşağıda gösterildiği gibi Hugo&rsquo;yu kurabilirsiniz.</p>
+
+<h3 id="1-sistem-mimarisini-tespit-ve-hugo-yu-indirme">1. Sistem Mimarisini Tespit ve Hugo&rsquo;yu İndirme</h3>
+
+<ol>
+<li><p>İlk iş olarak Windows&rsquo;unuzun hangi bit mimarisi ile çalıştığını belirleyin. Zira 32 ve 64 Bit mimari için farklı Hugo sürümleri var.</p>
+
+<p><strong>a)</strong> Masaüstü&rsquo;nüzdeki Bilgisayar simgesine sağ tıklayıp açılan menüden <code>Özellikler</code>&lsquo;i seçin.</p>
+
+<p><strong>b)</strong> Açılacak pencerede <strong>Sistem Türü</strong> bilgisinin karşısında sisteminizin mimarisini öğrenebilirsiniz. (Bkz. Üstteki Ekran Görüntüsü)</p></li>
+
+<li><p>Mimarinizi öğrendiğize göre size uygun olan <strong>Hugo</strong> sürümünü indirelim.</p>
+
+<p><strong>a)</strong> Hugo <a href = "https://github.com/spf13/hugo/releases" target = "_blank" > download sayfasına</a> gidin.</p>
+
+<p><strong>b)</strong> Bugün itibarı ile (<strong>22 Ağustos 2016</strong>) Hugo&rsquo;nun stabil sürüm no.su <strong>0.16</strong>. Aşağıdaki resimde görülen Windows dosyalarından size uygun olanı indirin. (download)</p></li>
+</ol>
+
+<p><img src="/img/blog/hugo-website-yapma-1/hugo_windows_uygun_surum.png" alt="Windows'umuz İçin Hugo'nun Uygun Versiyonunu İndiriyoruz" /> <br><em>&ldquo;Windows&rsquo;umuz İçin Hugo&rsquo;nun Uygun Sürümünü İndiriyoruz&rdquo;</em></p>
+
+<h3 id="2-hugo-zip-dosyasını-açma-ve-sürücüye-kopyalama">2. Hugo Zip Dosyasını Açma ve Sürücüye Kopyalama</h3>
+
+<ol>
+<li><p><strong>Hugo</strong> executable (.exe) dosyasını bilgisayarımıza indirdikten sonra kolay ulaşım için daha uygun bir yere koyacağız.</p>
+
+<p><strong>a)</strong> Bilgisayarımızın <code>C:\</code> klasörünün hemen altına <code>hugo</code> isimli yeni bir boş klasör oluşturun.</p>
+
+<p><strong>b)</strong> Zip dosyasının içinde bulunan <code>hugo.exe</code> dosyasını oluşturduğumuz yeni klasörün içine kopyalayın. (yada taşıyın, fark etmez.) [Alt solda ilk resim&#8595;]</p>
+
+<p><strong>c)</strong> Zip dosyasını ve gereksiz diğer dosyaları (readme,copyright v.s.) silebilirsiniz. İhtiyacımız olan tek dosya <code>hugo.exe</code> çünkü.</p></li>
+</ol>
+
+<h3 id="3-hugo-yu-ortam-değişkenine-path-ekleme">3. Hugo&rsquo;yu Ortam Değişkenine (PATH) Ekleme</h3>
+
+<ol>
+<li><p>Şimdi Hugo&rsquo;yu PATH&rsquo;a ekleyeceğiz, zira öyle yapmazsak <strong>Hugo</strong>&lsquo;ya komut satırından (Yeni versiyon Windows&rsquo;lar için <strong>Powershell</strong>, Xp&rsquo;ciler içinse <strong>Cmd</strong>) rahatlıkla ulaşamayız. Path&rsquo;a ekledikten sonra herhangi bir klasör içinden <strong>Hugo</strong>&lsquo;ya hemen ulaşabileceğiz.</p>
+
+<p><strong>a)</strong> Yukarıdaki gibi Masaüstü&rsquo;nüzdeki Bilgisayar simgesine sağ tıklayıp <code>Özellikler</code> menüsünü tıklayarak açılan pencereden <code>Gelişmiş Sistem Ayarları</code>&lsquo;nı seçin. [Altta ilk baştaki resim&#8595;]</p>
+
+<p><strong>b)</strong> <code>Sistem Özellikleri</code> penceresinin üçüncü sayfası (tabı) olan <code>Gelişmiş</code> sayfasını açarak en alttaki <code>Ortam Değişkenleri</code> düğmesine tıklayın. [Alt ortadaki resim&#8595;]</p>
+
+<p><strong>c)</strong> <code>Ortam Değişkenleri</code> penceresinde üstteki ilk <code>Yeni...</code> düğmesine tıklayın. Açılacak <code>Yeni Kullanıcı Değişkeni</code> küçük penceresinde <code>Değişken Adı:</code> bölümünün karşısına &ldquo;<strong>PATH</strong>&rdquo; değerini girin. <code>Değişken Değeri</code> bölümünün karşısına &ldquo;<strong>C:\hugo</strong>&rdquo; değerini yazın. (Tırnak işaretleri girilmeyecek.)</p>
+
+<p>(ÖNEMLİ NOT: Son değeri <code>C:\hugo</code> kendiniz klavyeden girebileceğiniz gibi <code>Dizine Gözat...</code> seçeneği ile gözatma penceresinden gösterebilirsiniz.)</p>
+
+<p><strong>DİKKAT!!!</strong> Dosyayı değil, dizini hedef olarak gösteriyoruz. Burası önemli! [Alt en sağdaki resim&#8595;]</p></li>
+</ol>
+
+<p><a href="/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_1.jpg" title="" data-lightbox="set1" data-title="Bilgisayarım - Özellikler - Gelişmiş Sistem Ayarları Penceresine Ulaşma"><img src="/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_1_thumb.jpg" alt=""></a>
+<a href="/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_2.png" title="" data-lightbox="set1" data-title="Gelişmiş Tab Sayfasındaki Ortam Değişkenleri Düğmesine Tıklıyoruz"><img src="/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_2_thumb.png" alt=""></a>
+<a href="/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_3.jpg" title="" data-lightbox="set1" data-title="Kullanıcı Değişkenine (PATH) Hugo'yu Ekliyoruz."><img src="/img/blog/hugo-website-yapma-1/hugo_path_a_ekleme_3_thumb.jpg" alt=""></a></p>
+
+<h3 id="4-hugo-kurulumu-neredeyse-bitti-kontrol-zamanı">4. Hugo Kurulumu: Neredeyse Bitti, Kontrol Zamanı!</h3>
+
+<ol>
+<li><p>Şimdi bilgisayarınızı yeniden başlatın. Herşeyin istediğimiz gibi olup olmadığını kontrol edelim.</p>
+
+<p>a) Powershell&rsquo;i yada Cmd&rsquo;yi açın. Herhangi bir klasör içinde <code>hugo</code> komutunu yazın ve Enter&rsquo;a basın. Cevap olarak &ldquo;unable to locate config file&rdquo; şeklinde bir mesaj alıyorsak <a name="hugokur">Hugo kurulumu başarı ile gerçekleştirildi</a> demektir.</p>
+
+<p>b) Üstteki hatayı alıyoruz zira henüz hiç bir site oluşturmadık. Site oluşturulduğunda config dosyamız otomatik olarak oluşturulacaktır. Site oluşturmayı bir önceki yazımdan hatırlıyor olmalısınız. Hatırlarsanız, <a href="/blog/Jekylldan-Hugoya-gecis/">orada</a> <code>hugo new site yenisite</code> komutunu vererek bir site oluşturmuştuk.</p></li>
+</ol>
+
+<p><img src="/img/blog/hugo-website-yapma-1/hugo_basarili_kurulum.jpg" alt="Windows'umuz İçin Hugo'nun Uygun Versiyonunu İndiriyoruz" /> <br><em>&ldquo;Hugo&rsquo;nun Başarı ile Kurulduğunu Gösteren Ekran Görüntüsü&rdquo;</em></p>
+
+<hr>
+
+<p>Hugo&rsquo;yu sistemimize kurmayı başardık. Şimdi sıra <a href="/blog/hugo-website-yapma-2/">Hugo ile basit ama güzel bir websitesi</a> yapmaya geldi. Sizi çok bekletmeyeceğim umarım.</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-1%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-1%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Hugo%20ile%20Statik%20Bir%20Websitesi%20Nas%c4%b1l%20Yap%c4%b1l%c4%b1r%3f%20-%20Birinci%20B%c3%b6l%c3%bcm&url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-1%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-hugo" href="http://pythonistan.net//tags/hugo">Hugo</a>,
+	                
+	                <a class="post-tag post-tag-django" href="http://pythonistan.net//tags/django">Django</a>,
+	                
+	                <a class="post-tag post-tag-website" href="http://pythonistan.net//tags/website">website</a>,
+	                
+	                <a class="post-tag post-tag-ssg" href="http://pythonistan.net//tags/ssg">ssg</a>,
+	                
+	                <a class="post-tag post-tag-hugo-kurulum" href="http://pythonistan.net//tags/hugo-kurulum">hugo kurulum</a>,
+	                
+	                <a class="post-tag post-tag-github" href="http://pythonistan.net//tags/github">github</a>,
+	                
+	                <a class="post-tag post-tag-statik-site-geli%C5%9Ftiricisi" href="http://pythonistan.net//tags/statik-site-geli%C5%9Ftiricisi">statik site geliştiricisi</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/git-ve-github/">Git Nedir? Nerede ve Nasıl Kullanılır?</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'http:\/\/pythonistan.net\/blog\/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1\/';
+    var disqus_title = 'Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm';
+    var disqus_url = 'http:\/\/pythonistan.net\/blog\/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

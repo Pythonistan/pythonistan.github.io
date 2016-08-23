@@ -133,7 +133,7 @@ nocomment = true
 
 &lt;p&gt;Hugo varsayılan olarak sayfalar ve postlar düzenini kullanıyor. Yani bağımsız sayfalara &lt;strong&gt;page&lt;/strong&gt; (sayfa), bir bölümün(section) altında olacak sayfalara ise &lt;strong&gt;post&lt;/strong&gt; deniyor.&lt;/p&gt;
 
-&lt;p&gt;Mesela yukarıda oluşturduğumuz &lt;strong&gt;hakkimizda.md&lt;/strong&gt; bağımsız bir sayfa olarak değerlendirilip content klasörünün hemen altına yerleştiriliyor. Bu sayfalar şablon biçimlerimizden single.html şablonuna uyduruluyor.&lt;/p&gt;
+&lt;p&gt;Mesela yukarıda oluşturduğumuz &lt;strong&gt;hakkimizda.md&lt;/strong&gt; bağımsız bir sayfa (page) olarak değerlendirilip content klasörünün hemen altına yerleştiriliyor. Bu sayfalar şablon biçimlerimizden single.html şablonuna uyduruluyor.&lt;/p&gt;
 
 &lt;p&gt;Bölüm oluşturmak içinse content klasörünüzün içinde yeni klasörler oluşturun. Mesela (blog), (post), (yazilar), (arşiv) v.d. gibi. Bu klasörlerin içinde oluşturacağınız her dosya (mesela dosya1.md, dosya2.md, v.b.) &lt;strong&gt;post&lt;/strong&gt; olarak algılanacaktır.&lt;/p&gt;
 
@@ -177,7 +177,7 @@ nocomment = true
 
 &lt;p&gt;&lt;strong&gt;Pythonistan&lt;/strong&gt;&amp;lsquo;dan &lt;em&gt;(okunuşu: Paytonistan&lt;/em&gt;) herkese merhaba. Bismillah dedik, başladık&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;Bu blogda esas olarak &lt;strong&gt;Python&lt;/strong&gt; olmak üzere &lt;strong&gt;Büyük Veri&lt;/strong&gt; (Big Data) ve Payton&amp;rsquo;da &lt;strong&gt;Veri Analizi&lt;/strong&gt; ve &lt;strong&gt;Veri Madenciliği&lt;/strong&gt; gibi konuları işlemeye çalışacağız.&lt;/p&gt;
+&lt;p&gt;Bu blogda esas olarak &lt;strong&gt;Python&lt;/strong&gt; olmak üzere &lt;strong&gt;Web Teknolojileri&lt;/strong&gt;, &lt;strong&gt;Büyük Veri&lt;/strong&gt; (Big Data) ve Payton&amp;rsquo;da &lt;strong&gt;Veri Analizi&lt;/strong&gt; ve &lt;strong&gt;Veri Madenciliği&lt;/strong&gt; gibi konuları işlemeye çalışacağız.&lt;/p&gt;
 
 &lt;p&gt;Bu bloğun yazarı &lt;em&gt;amatör&lt;/em&gt; bir programcılık meraklısıdır, yazdıklarını değişik kaynaklardan derler ve Türk Paytoncularının hizmetine sunar. Programcılık konusunda herhangi bir iddiası yoktur.&lt;/p&gt;
 
