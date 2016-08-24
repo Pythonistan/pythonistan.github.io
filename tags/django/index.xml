@@ -21,7 +21,7 @@
 
 &lt;p&gt;Sitemi yayınlamaya başladığımda ele almayı planladığım konulardan biri &lt;a href=&#34;http://pythonistan.net/blog/merhaba-dunya/&#34;&gt;web teknolojileri&lt;/a&gt; idi.&lt;/p&gt;
 
-&lt;h3 id=&#34;django-python-temelli-bir-web-framework&#34;&gt;Django : Python Temelli Bir Web Framework&lt;/h3&gt;
+&lt;h3 id=&#34;django-python-temelli-bir-web-framework&#34;&gt;Django: Python Temelli Bir Web Framework&lt;/h3&gt;
 
 &lt;p&gt;Amatör bir Paytonsever olarak web teknolojileri konusunu işlerken konumun &lt;a href = &#34;https://www.djangoproject.com/&#34; target = &#34;_blank&#34; &gt; &lt;strong&gt;Django&lt;/strong&gt; Web Framework&lt;/a&gt; olmasını arzu ederdim. Henüz kendimi Django&amp;rsquo;yu (Jango olarak okunuyor) size arz etmek için yetkin görmüyorum.&lt;/p&gt;
 
@@ -74,6 +74,8 @@
 
 &lt;p&gt;&lt;strong&gt;c)&lt;/strong&gt; Zip dosyasını ve gereksiz diğer dosyaları (readme,copyright v.s.) silebilirsiniz. İhtiyacımız olan tek dosya &lt;code&gt;hugo.exe&lt;/code&gt; çünkü.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugoyu_windowsa_koyma.gif&#34; alt=&#34;Hugo&#39;yu Yerel Diskimizde Uygun Bir Yere Koyuyoruz&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo&amp;rsquo;yu Yerel Diskimizde Uygun Bir Yere Koyuyoruz&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;3. Hugo&amp;rsquo;yu Ortam Değişkenine (PATH) Ekleme&lt;/h3&gt;
 
