@@ -125,7 +125,7 @@ nocomment = true
 
 &lt;h2 id=&#34;temalar&#34;&gt;Temalar&lt;/h2&gt;
 
-&lt;p&gt;Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altına themes adlı bir klasör oluşturup onun içine ekleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altında yer alan themes adlı klasöre ekleyebilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;Temanızı sitede kullanmak için &lt;strong&gt;config.toml&lt;/strong&gt; dosyanızın içine &lt;strong&gt;&amp;ldquo;theme = tema-adiniz&amp;rdquo;&lt;/strong&gt; şeklinde bir satır eklemeniz yeterli.&lt;/p&gt;
 

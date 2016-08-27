@@ -10,7 +10,7 @@
     <atom:link href="http://pythonistan.net/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm</title>
+      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm : Hugo Kurulumu</title>
       <link>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/</link>
       <pubDate>Mon, 22 Aug 2016 00:17:50 -0400</pubDate>
       
@@ -37,7 +37,7 @@
 
 &lt;p&gt;Geçen haftaki yazıda aslında &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;Hugo kurulumundan&lt;/a&gt; azıcık bahsetmiştim, ama o makale istediğim netlikte olmadı, bu sefer çok daha detaylı bir &lt;strong&gt;nasıl yapılır klavuzu&lt;/strong&gt; hazırlamaya karar verdim.&lt;/p&gt;
 
-&lt;p&gt;Üç bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimin huzurunuzdaki ilk &lt;strong&gt;(1.)&lt;/strong&gt; bölümü &lt;a href = &#34;#hugokur&#34;&gt; Hugo kurulumuna&lt;/a&gt; ayrıldı. Diğer adımlar ise şöyle: &lt;strong&gt;2.&lt;/strong&gt;: Hugo ile Siteyi Lokal Bilgisayarda Geliştirme, &lt;strong&gt;3.&lt;/strong&gt;:Geliştirdiğimiz Web Sitesini Github ile Web&amp;rsquo;de Ücretsiz Barındırma (Hosting)&lt;/p&gt;
+&lt;p&gt;Dört bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimin huzurunuzdaki ilk &lt;strong&gt;(1.)&lt;/strong&gt; bölümü &lt;a href = &#34;#hugokur&#34;&gt; Hugo kurulumuna&lt;/a&gt; ayrıldı. Diğer adımlar ise şöyle: &lt;strong&gt;2.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile Siteyi Lokal Bilgisayarda Geliştirme&lt;/a&gt;, &lt;strong&gt;3.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;Geliştirdiğimiz Web Sitesini ve Temayı Özelleştirme&lt;/a&gt;, &lt;strong&gt;4.&lt;/strong&gt;: Geliştirdiğimiz Web Sitesini Github ile Web&amp;rsquo;de Ücretsiz Barındırma (Hosting)&lt;/p&gt;
 
 &lt;p&gt;Evet, fazla uzattık, şimdi hemen aksiyona geçelim&amp;hellip;&lt;/p&gt;
 
@@ -231,7 +231,7 @@ nocomment = true
 
 &lt;h2 id=&#34;temalar&#34;&gt;Temalar&lt;/h2&gt;
 
-&lt;p&gt;Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altına themes adlı bir klasör oluşturup onun içine ekleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altında yer alan themes adlı klasöre ekleyebilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;Temanızı sitede kullanmak için &lt;strong&gt;config.toml&lt;/strong&gt; dosyanızın içine &lt;strong&gt;&amp;ldquo;theme = tema-adiniz&amp;rdquo;&lt;/strong&gt; şeklinde bir satır eklemeniz yeterli.&lt;/p&gt;
 

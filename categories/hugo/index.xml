@@ -6,11 +6,257 @@
     <description>Recent content in Hugo on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Mon, 22 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 26 Aug 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="http://pythonistan.net/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm</title>
+      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme</title>
+      <link>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/</link>
+      <pubDate>Fri, 26 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/</guid>
+      <description>
+
+&lt;p&gt;Dört bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimizin &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;üçüncü bölümüne&lt;/a&gt; gelebildik.&lt;/p&gt;
+
+&lt;p&gt;Birinci bölümde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Hugo kurulumunu&lt;/a&gt;, ikinci bölümde ise &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile Siteyi Lokal Bilgisayarda Oluşturma&lt;/a&gt; konusunu işlemiştik.&lt;/p&gt;
+
+&lt;p&gt;Dördüncü ve son bölümü Git üzerinden &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;sitemizi Github&amp;rsquo;a yükleme&lt;/a&gt; konusu teşkil edeceğinden şu anki üçüncü bölüm serinin en can alıcı kısmını teşkil ediyor.&lt;/p&gt;
+
+&lt;p&gt;Bu bölümde sitemizin konfigürasyon dosyasını (&lt;strong&gt;config.toml&lt;/strong&gt;) tamamıyla değiştirip düzeltecek, sitemize yeni sayfalar ekleyecek ve varolan sayfaları modifiye edeceğiz.&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-temalarının-genel-kullanımı&#34;&gt;Hugo Temalarının Genel Kullanımı&lt;/h2&gt;
+
+&lt;p&gt;Hugo temalarını &lt;strong&gt;Hugo&lt;/strong&gt; sitemizin ana klasörü içindeki themes klasörünün altında bulunduğundan bahsetmiştik. &lt;em&gt;(D:\siteler\deneme\themes)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Şimdi tema klasörümüzden ilgili dosyaları ana klasöre taşımaya / değiştirmeye başlayalım.&lt;/p&gt;
+
+&lt;h3 id=&#34;temanın-dosyalarını-varolan-dosyaların-üzerine-yazma&#34;&gt;Temanın Dosyalarını Varolan Dosyaların Üzerine Yazma&lt;/h3&gt;
+
+&lt;p&gt;Temamızın örnek websitesi (&lt;strong&gt;config.toml&lt;/strong&gt; dahil) ya temanın ana klasörü içinde &lt;em&gt;(D: \ siteler \ deneme \ herhangibirtema )&lt;/em&gt; yada &amp;ldquo;exampleSite&amp;rdquo; klasörünün içindedir. &lt;em&gt;(D:\siteler\deneme\herhangibirtema\exampleSite)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu her tür tema için aynı şekildedir. Bazı sitelerde exampleSite klasörü bulunmayabilir. O halde temanın ana klasöründeki dosyaları kopyalayacaksınız.&lt;/p&gt;
+
+&lt;p&gt;Spesifik örneğimizdeki &amp;ldquo;blackburn&amp;rdquo; temamız bize içinde &lt;strong&gt;config.toml&lt;/strong&gt; dosyası da bulunan tam bir website örneği (exampleSite- &lt;em&gt;deneme\themes\blackburn\exampleSite&lt;/em&gt;) sunuyor. Bu klasörde örnek bazı sayfalar da var. (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;Konfigürasyon dosyasını ve diğer dosyaları bulunduğu yerden &lt;code&gt;kopyala(Ctrl+C)&lt;/code&gt;yıp websitemizin ana klasörünün içine &lt;em&gt;(D:\siteler\deneme)&lt;/em&gt; yapıştırın&lt;code&gt;(Ctrl+V)&lt;/code&gt;. (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;Ana klasörün içinde bulunan dosyalar ile değiştirmek isteyip istemediğinizi soracak. &amp;ldquo;Hedefteki Dosyayı Değiştir&amp;rdquo;&amp;lsquo;i seçerek işlemi teyit edin. (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-3/tema_dosyalarini_tasimak_uzere_sec.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Tema Dosyalarını Taşımak Üzere Seçiyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-3/tema_dosyalarini_tasimak_uzere_sec_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-3/tema_dosyalarini_ana_klasore_tasi.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Tema Dosyalarını Taşıyarak Ana Site Klasörüne Yapıştırıyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-3/tema_dosyalarini_ana_klasore_tasi_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-3/dosyalari_degistirmek_icin_onay.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Taşıma için Gerekli Teyidi Veriyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-3/dosyalari_degistirmek_icin_onay_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;hugo-sitemizin-ilk-görüntüsü&#34;&gt;Hugo Sitemizin İlk Görüntüsü&lt;/h3&gt;
+
+&lt;p&gt;Ok, herşey istediğimiz gibi gittiyse şimdi &lt;code&gt;hugo server -w&lt;/code&gt; komutunu verip tarayıcıda &lt;code&gt;http://localhost:1313/&lt;/code&gt; adresini yazdığınızda yukarıdaki gibi bir anasayfa görüntüsü ile karşılaşacaksınız. (&amp;#8593;)&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-tema-modifikasyonu&#34;&gt;Hugo Tema Modifikasyonu&lt;/h2&gt;
+
+&lt;p&gt;Hugo sitemizi hazırlarken her zaman için ilk bakmamız gereken dosya &lt;strong&gt;config.toml&lt;/strong&gt; dosyası. Bu dosya web projemizin bir nevi kalbi gibi.&lt;/p&gt;
+
+&lt;p&gt;Config.toml bize websitemizin ana özellikleri (konfigürasyonu) ve sahiplikleri hakkında fikir veriyor.&lt;/p&gt;
+
+&lt;p&gt;O halde Hugo tema modifikasyonuna &lt;strong&gt;config.toml&lt;/strong&gt; dosyasından başlayalım. Bu dosyayı &lt;em&gt;(D:\siteler\deneme\config.toml)&lt;/em&gt; &lt;a href=&#34;http://pythonistan.net/blog/sublime-text-kurulum/&#34;&gt;Sublime Text programı&lt;/a&gt; ile açalım ve içindeki değerleri değiştirelim:&lt;/p&gt;
+
+&lt;p&gt;(&lt;strong&gt;Not&lt;/strong&gt;: Bu işlemi ilk kez yaparken dosyanın üstüne sağ tıklayıp &lt;code&gt;Birlikte Aç&lt;/code&gt; komutunu seçebiliriz. .toml dosyalarının daima Sublime ile açılmasını sağlamak için dosya uzantısını Sublime ile ilişkilendirebilirsiniz.)&lt;/p&gt;
+
+&lt;h3 id=&#34;config-toml-dosyası&#34;&gt;Config.toml Dosyası&lt;/h3&gt;
+
+&lt;p&gt;Dosyayı açtığımızda sitemizin bir çok özelliğini bulabiliyoruz. Birkaç örnek vereyim, siz gerisini kendiniz keşfedersiniz zaten.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Title = &amp;quot;Blackburn Theme Demo&amp;quot;&lt;/code&gt; yazan ve anasayfamızdaki en büyük başlık olan yazıyı &amp;ldquo;İlk ve En Yeni Hugo Sitemiz&amp;rdquo; şeklinde değiştirin.&lt;/p&gt;
+
+&lt;p&gt;Sayfayı kaydeder kaydetmez (&lt;code&gt;Ctrl + S&lt;/code&gt; ile kaydedebilirsiniz) tarayıcınızı kontrol ettiğinizde yaptığımız değişikliğin uygulandığını göreceksiniz.&lt;/p&gt;
+
+&lt;p&gt;Aşağıda ben bir kaç değişiklik yaptım, siz de bu değişiklikleri &lt;em&gt;config.toml&lt;/em&gt; dosyasında yapın ve sonucunu tarayıcıda hemen görün.&lt;/p&gt;
+
+&lt;p&gt;Temanın orjinal hali:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://replace-this-with-your-hugo-site.com/&amp;quot;
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;Blackburn Theme Demo&amp;quot;
+theme = &amp;quot;blackburn&amp;quot;
+author = &amp;quot;Yoshiharu Yamashita&amp;quot;
+copyright = &amp;quot;&amp;amp;copy; 2016. All rights reserved.&amp;quot;
+canonifyurls = true
+paginate = 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yapılan Değişikliklerden Sonra:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://websiteniz.github.io/&amp;quot;
+languageCode = &amp;quot;tr-TR&amp;quot;
+title = &amp;quot;İlk ve En Yeni Hugo Sitemiz&amp;quot;
+theme = &amp;quot;blackburn&amp;quot;
+author = &amp;quot;İsim ve Soyisminiz&amp;quot;
+copyright = &amp;quot;&amp;amp;copy; Sitenizin_İsmi 2016. Tüm Hakkı Saklıdır&amp;quot;
+canonifyurls = true
+paginate = 8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Parametre değişikliklerini de benzer şekilde yapabiliriz.&lt;/p&gt;
+
+&lt;h3 id=&#34;yenilenmiş-site-ana-parametreleri&#34;&gt;Yenilenmiş Site Ana Parametreleri&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;subtitle = &amp;quot;Harika Muhteşem Bir Site&amp;quot;
+brand = &amp;quot;fiyakali&amp;quot;
+googleAnalytics = &amp;quot;Buraya Google Analytics izleme ID&#39;niz yazılacak&amp;quot;
+disqus = &amp;quot;Disqus hesabınız yazılacak&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Gördüğünüz gibi bu tema disqus yorum servisi kurulu geliyor. &lt;a href = &#34;https://disqus.com/ &#34; target = &#34;_blank&#34; &gt; Disqus&lt;/a&gt;&amp;lsquo;a üye olup yukarıdaki alana üye olduğunuz ismi yazdığınızda yorum özelliği sitenize otomatik eklenmiş olur.&lt;/p&gt;
+
+&lt;h3 id=&#34;ana-menüyü-türkçe-ye-çevirelim&#34;&gt;Ana Menüyü Türkçe&amp;rsquo;ye Çevirelim&lt;/h3&gt;
+
+&lt;p&gt;[[menu.main]] kısmında ingilizceleri aşağıdaki şekilde çevirelim:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;name = &amp;quot;Home&amp;quot; --&amp;gt; &amp;quot;Anasayfa&amp;quot;
+name = &amp;quot;Posts&amp;quot; --&amp;gt; &amp;quot;Yazılar&amp;quot;
+name = &amp;quot;About&amp;quot; --&amp;gt; &amp;quot;Hakkında&amp;quot;
+name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;olarak değiştirelim.&lt;/p&gt;
+
+&lt;p&gt;Eğer &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo Server&lt;/a&gt;&amp;lsquo;ı kapatmadıysanız (Ctrl+C) bu yaptığınız değişikliklerin herbirini aynı anda canlı olarak görüyor olmalısınız.&lt;/p&gt;
+
+&lt;h3 id=&#34;site-gelişmiş-özellikler&#34;&gt;Site Gelişmiş Özellikler&lt;/h3&gt;
+
+&lt;p&gt;Son olarak temanın daha gelişmiş bir özelliğini nasıl değiştirebileceğimizi görelim:&lt;/p&gt;
+
+&lt;p&gt;Blackburn teması ikon kütüphanesi olarak &lt;a href = &#34;http://fontawesome.io/icons/ &#34; target = &#34;_blank&#34; &gt; Font Awesome kütüphanesini&lt;/a&gt; kullanıyor.(&lt;em&gt;temadan temaya değişiklik gösterebilir&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;Menü başlıklarının yanındaki küçük resimleri değiştirmek isterseniz Font Awesome kütüphanesinden bir başka ikon seçmek çok kolay.&lt;/p&gt;
+
+&lt;p&gt;Yukarıda verilen linke gidin ve beğendiğiniz bir ikon seçin. Diyelim, &amp;ldquo;Anasayfa&amp;rdquo; ikonumu uçak olarak değiştirmek istiyorum. Yukarıdaki sayfada uçak ikonunu buluyorum, isminin &amp;ldquo;plane&amp;rdquo; olduğunu görüyorum.&lt;/p&gt;
+
+&lt;p&gt;Şimdi anasayfa menümün altındaki &lt;code&gt;pre = &amp;quot;&amp;lt;i class=&#39;fa fa-home fa-fw&#39;&amp;gt;&amp;lt;/i&amp;gt;&amp;quot;&lt;/code&gt; satırındaki &lt;em&gt;home&lt;/em&gt; kelimesini &lt;em&gt;plane&lt;/em&gt; olarak değiştiriyorum. Bu kadar. Yani &lt;code&gt;pre = &amp;quot;&amp;lt;i class=&#39;fa fa-plane fa-fw&#39;&amp;gt;&amp;lt;/i&amp;gt;&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;anasayfa-değişiklikleri&#34;&gt;Anasayfa Değişiklikleri&lt;/h2&gt;
+
+&lt;p&gt;Blackburn temasının orjinal anasayfa görüntüsünü en üstteki resimde görebilirsiniz. Yaptığımız değişikliklerin tamamını aşağıda görebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Bu örnekte anasayfamızı (index.html) daha çok konfigürasyon dosyası (&lt;em&gt;config.toml&lt;/em&gt;) üzerinden değiştirdik.&lt;/p&gt;
+
+&lt;p&gt;Hemen hemen tüm Hugo şablonlarında uygulama bu şekilde. Nadiren config.toml&amp;rsquo;de bulamadığınız bazı ayarlar için tema şablonunun layout (anahat) dosyalarına başvurmak zorunda kalabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Anahat dosyaları layout klasörünün içinde saklanır ve .html uzantısı taşır..&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-3/tema_degisiklikleri_uygulama.jpg&#34; alt=&#34;Hugo Sitesinde Tema Değişikliği Sonrası Anasayfa Görüntüsü&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Sonra: Hugo Sitemizde Config.toml Değişiklikleri Sonrası Anasayfa Görüntüsü&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gelelim-diğer-sayfalara&#34;&gt;Gelelim Diğer Sayfalara&lt;/h2&gt;
+
+&lt;p&gt;Hugo&amp;rsquo;da sayfalara content klasörünün içinden ulaşıldığını &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;daha önce söylemiştik&lt;/a&gt;. Hugo&amp;rsquo;da bağımsız sayfalar content klasörünün hemen altında bulunur, post (yazı) olarak adlandırılan belli bir kategoriye bağlı yazılar ise content klasörünün altındaki post klasöründe saklanır.&lt;/p&gt;
+
+&lt;p&gt;Şimdi post klasörünün içine girelim (D:\siteler\deneme\content\post) ve anasayfada en üstte görünen (Hu)go Template Primer başlıklı dosyayı bulup açalım (goforlovers.md dosyası). Bu dosyayı da yine Sublime ile açacağız.&lt;/p&gt;
+
+&lt;p&gt;Dosyanın hemen başında + işaretleri içinde bulunan kısma front matter denildiğini ve dosyanın özelliklerini belirlediğini daha önce belirtmiştim. Dosyanın başlığını &amp;ldquo;Hugo ile Çalışıyorum&amp;rdquo; şeklinde değiştirelim. Tarih yılını (date) ise 2016 yapalım.&lt;/p&gt;
+
+&lt;p&gt;Yaptığımız değişiklikleri an be an tarayıcımızdan takip edebiliriz. Arada bir browser&amp;rsquo;a bakmayı unutmayın.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Esasında bu yazımda tüm modifikasyonları bitirmeyi düşünüyordum. Ancak yazı çok uzadı. O yüzden 4. Adım olarak sayfaları editlemeyi göstermek istiyorum. Github&amp;rsquo;a yüklemek 5. adıma kaldı. Takipte kalın lütfen&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - İkinci Bölüm : Sitemizi Oluşturma</title>
+      <link>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/</link>
+      <pubDate>Thu, 25 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/</guid>
+      <description>
+
+&lt;p&gt;İlk bölümü detaylı bir &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Hugo kurulumunu&lt;/a&gt; içeren &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; klavuzumuzun &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;ikinci bölümü&lt;/a&gt;, &amp;ldquo;lokal bilgisayarda sitemizi oluşturma&amp;rdquo;, karşınızda&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-lokal-sunucu&#34;&gt;Hugo Lokal Sunucu&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href = &#34;https://gohugo.io/&#34; target = &#34;_blank&#34; &gt; Hugo&lt;/a&gt; kendiliğinden bir web sunucu ile makinamıza geliyor.&lt;/p&gt;
+
+&lt;p&gt;Bu şu demek: Herhangi bir websitesi geliştirdiğimizde onu çalıştırmak için uzak bir sunucu aramak zorunda değiliz.&lt;/p&gt;
+
+&lt;p&gt;Geliştirdiğimiz siteyi hemen aynı anda tarayıcımız vasıtası ile sunucumuza bağlanarak görme ve düzeltme (edit) şansına sahibiz.&lt;/p&gt;
+
+&lt;p&gt;Daha da güzeli çoğu web geliştirme aracında olmayan &lt;strong&gt;Live Reload&lt;/strong&gt; (Canlı Önizleme) özelliği &lt;strong&gt;Hugo&lt;/strong&gt; ile varsayılan olarak geliyor. Ekstra bir paket kurmanıza gerek yok.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Live Reload&lt;/strong&gt; ile tarayıcınızda &lt;code&gt;Refresh&lt;/code&gt;&amp;lsquo;e (Yenile / F5) bile basmaya gerek kalmadan yaptığınız değişikliklerin hepsini görebiliyorsunuz.&lt;/p&gt;
+
+&lt;h2 id=&#34;yeni-bir-site-için-klasör-düzeni&#34;&gt;Yeni Bir Site İçin Klasör Düzeni&lt;/h2&gt;
+
+&lt;p&gt;Şimdi daha ilk Hugo yazımda &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;bahsettiğim gibi&lt;/a&gt; yeni bir site yapacağız.&lt;/p&gt;
+
+&lt;p&gt;Hugo ile sitelerimizi kolay ulaşabileceğimiz bir yerde, mesela &lt;em&gt;D:&lt;/em&gt; klasörünün hemen altında oluşturalım.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Zaten, Hugo&amp;rsquo;yu &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Path&lt;/a&gt;&amp;lsquo;a eklediğimiz için herhangi bir konumdan &lt;code&gt;hugo&lt;/code&gt; yazıp &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya ulaşabiliyorduk. O halde;&lt;/p&gt;
+
+&lt;p&gt;a. Komut satırını açın. (Powershell / Cmd )&lt;/p&gt;
+
+&lt;p&gt;b. &lt;em&gt;D&lt;/em&gt; sürücümüzün altında siteler adlı bir klasör oluşturalım. Bulunduğunuz konumda &lt;em&gt;D&lt;/em&gt; klasörüne geçmek için &lt;em&gt;D:&lt;/em&gt; yazıp Enter&amp;rsquo;a basın(&amp;#8595;).&lt;/p&gt;
+
+&lt;p&gt;c. Daha sonra &lt;code&gt;md siteler&lt;/code&gt; komutunu vererek yeni bir klasör oluşturalım. (&lt;em&gt;md: make directory - klasör yarat&lt;/em&gt;) (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;d. Son olarak &lt;code&gt;cd siteler&lt;/code&gt; diyerek &lt;em&gt;siteler&lt;/em&gt; klasörünün içine girin. Bu konumda bir website oluşturacağız. (&amp;#8595;)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-2/hugo_site_olusturma.png&#34; alt=&#34;Hugo&#39;da Web Sitesi Oluşturma ve Web Sunucuyu Çalıştırma&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo&amp;rsquo;da Web Sitesi Oluşturma ve Web Sunucuyu Çalıştırma&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;yeni-bir-site-yaratalım-ve-web-sunucumuzun-çalıştığını-görelim&#34;&gt;Yeni Bir Site Yaratalım ve Web Sunucumuzun Çalıştığını Görelim&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Şimdi &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;nun web sunucusunu bir kontrol edelim. Peki sunucumuza nasıl ulaşacağız? Çok basit: Hugo&amp;rsquo;nun sunucuyu çalıştırma komutu &lt;code&gt;hugo server&lt;/code&gt;. Bu komutu &lt;code&gt;-w&lt;/code&gt; parametresi ile kullanırsanız yaptığınız değişiklikleri aynı zamanda komut satırından da izleyebilirsiniz. Dolayısıyla tam komutumuz şöyle olacak: &lt;code&gt;hugo server -w&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;a. Klasörümüzün içinde &lt;code&gt;hugo new site deneme&lt;/code&gt; komutunu verin. &lt;strong&gt;Hugo&lt;/strong&gt; &lt;em&gt;deneme&lt;/em&gt; adlı bir klasör, yani &lt;strong&gt;deneme websitesini&lt;/strong&gt; oluşturdu. (&amp;#8593;)&lt;/p&gt;
+
+&lt;p&gt;b. &lt;em&gt;deneme&lt;/em&gt; klasörünüzün içine &lt;code&gt;cd deneme&lt;/code&gt; komutu ile girin.  (&amp;#8593;)&lt;/p&gt;
+
+&lt;p&gt;c. Şimdi yukarıda öğrendiğimiz &lt;code&gt;hugo server -w&lt;/code&gt; komutumuzu vererek sitemizi tarayıcıda görüntülemek üzere sunucuda çalıştıralım. (&amp;#8593;)&lt;/p&gt;
+
+&lt;p&gt;d. Şu anda sitemiz sunucuda çalışıyor, zaten bunu &lt;code&gt;Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)&lt;/code&gt;   mesajından anlıyoruz. Ancak websitemiz halen tamamıyla boş olduğu için tarayıcıda görebileceğimiz bir şey yok. (&amp;#8593;)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;İsterseniz tarayıcınızı açıp &lt;code&gt;http://localhost:1313/&lt;/code&gt; yazarak Enter yapıp kontrol edebilirsiniz. Herhangi bir hata almayacak, boş bir sayfa ile karşılaşacaksınız.&lt;/p&gt;
+
+&lt;h3 id=&#34;sitemize-sayfa-ekleme&#34;&gt;Sitemize Sayfa Ekleme&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;İlk Hugo yazımda bahsettiğim&lt;/a&gt; kendi kendimize siteye sayfa ekleme yoluna gitmeden bu kez hazır bir tema indirip o temanın sayfa şablonlarını kullanalım.&lt;/p&gt;
+
+&lt;p&gt;Hugo&amp;rsquo;nun yeni siteyi oluşturmasından sonra site klasörünü kontrol ettiyseniz temaların yükleneceği klasörü &lt;em&gt;(themes)&lt;/em&gt; görmüş olabilirsiniz. Görmediyseniz lütfen yeni oluşturduğumuz deneme klasörünün içine bakın.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-2/hugo_tema_klasoru.png&#34; alt=&#34;Hugo Tema Klasörünü Tespit&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo Temaları Themes Adlı Klasörde Tutuyor&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-temaları&#34;&gt;Hugo Temaları&lt;/h2&gt;
+
+&lt;p&gt;Hugo temalarını galeri halinde bulacağımız adres &lt;a href = &#34;http://themes.gohugo.io/&#34; target = &#34;_blank&#34; &gt; themes.gohugo.io&lt;/a&gt; adresi. Buradan herhangi bir tema indirebiliriz.&lt;/p&gt;
+
+&lt;p&gt;Ben örnek olarak &amp;ldquo;Blackburn&amp;rdquo; temasını seçiyorum ancak siz istediğiniz herhangi birini seçip benim örneği takip ederek temayı özelleştirebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Üstteki adresteki sayfada &lt;a href = &#34;http://themes.gohugo.io/blackburn/&#34; target = &#34;_blank&#34; &gt; temamı&lt;/a&gt; buldum, tema sayfasındaki indirme kısayolunu - &lt;code&gt;git clone https://github.com/yoshiharuyamashita/blackburn.git&lt;/code&gt; - sağ tıklamayla seçip kopyaladım (Ctrl + C).&lt;/p&gt;
+
+&lt;h3 id=&#34;temaları-hugo-tema-klasörüne-yüklemek&#34;&gt;Temaları Hugo Tema Klasörüne Yüklemek&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Temamızı şimdi yerel diskimizdeki tema klasörüne indirip web projemizde kullanabileceğiz. (&lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;Git&lt;/a&gt;&amp;lsquo;i bilgisayarınıza yüklemiştiniz, değil mi?)&lt;/p&gt;
+
+&lt;p&gt;a. Komut satırından &lt;em&gt;themes&lt;/em&gt; adlı klasöre giriş yapın. (&lt;em&gt;D:&lt;/em&gt; klasöründeyken &lt;code&gt;cd siteler&lt;/code&gt; - &lt;code&gt;cd deneme&lt;/code&gt; - &lt;code&gt;cd themes&lt;/code&gt;) (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;b. Kopyaladığımız yukarıdaki komutu komut satırına yapıştırın. (Ctrl + V) Tam komutumuz şöyle idi: &lt;code&gt;git clone https://github.com/yoshiharuyamashita/blackburn.git&lt;/code&gt; ve Enter&amp;rsquo;a basın. (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;c. İndirmenin başarılı olup olmadığını anlamak için &amp;ldquo;themes&amp;rdquo; klasörünün içini kontrol edebiliriz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-2/hugo_tema_yukleme.png&#34; alt=&#34;Hugo&#39;ya Tema Yükleme&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo&amp;rsquo;ya Tema Yüklendi&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Bugünlük bu kadar.. Yarın indirdiğimiz &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;temanın özelleştirmesini&lt;/a&gt; ve artık web sunucumuzda yaptığımız değişikliklerin yansımalarını göreceğiz. O zamana kadar hoşçakalın&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Birinci Bölüm : Hugo Kurulumu</title>
       <link>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/</link>
       <pubDate>Mon, 22 Aug 2016 00:17:50 -0400</pubDate>
       
@@ -37,7 +283,7 @@
 
 &lt;p&gt;Geçen haftaki yazıda aslında &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;Hugo kurulumundan&lt;/a&gt; azıcık bahsetmiştim, ama o makale istediğim netlikte olmadı, bu sefer çok daha detaylı bir &lt;strong&gt;nasıl yapılır klavuzu&lt;/strong&gt; hazırlamaya karar verdim.&lt;/p&gt;
 
-&lt;p&gt;Üç bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimin huzurunuzdaki ilk &lt;strong&gt;(1.)&lt;/strong&gt; bölümü &lt;a href = &#34;#hugokur&#34;&gt; Hugo kurulumuna&lt;/a&gt; ayrıldı. Diğer adımlar ise şöyle: &lt;strong&gt;2.&lt;/strong&gt;: Hugo ile Siteyi Lokal Bilgisayarda Geliştirme, &lt;strong&gt;3.&lt;/strong&gt;:Geliştirdiğimiz Web Sitesini Github ile Web&amp;rsquo;de Ücretsiz Barındırma (Hosting)&lt;/p&gt;
+&lt;p&gt;Dört bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimin huzurunuzdaki ilk &lt;strong&gt;(1.)&lt;/strong&gt; bölümü &lt;a href = &#34;#hugokur&#34;&gt; Hugo kurulumuna&lt;/a&gt; ayrıldı. Diğer adımlar ise şöyle: &lt;strong&gt;2.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile Siteyi Lokal Bilgisayarda Geliştirme&lt;/a&gt;, &lt;strong&gt;3.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;Geliştirdiğimiz Web Sitesini ve Temayı Özelleştirme&lt;/a&gt;, &lt;strong&gt;4.&lt;/strong&gt;: Geliştirdiğimiz Web Sitesini Github ile Web&amp;rsquo;de Ücretsiz Barındırma (Hosting)&lt;/p&gt;
 
 &lt;p&gt;Evet, fazla uzattık, şimdi hemen aksiyona geçelim&amp;hellip;&lt;/p&gt;
 
@@ -231,7 +477,7 @@ nocomment = true
 
 &lt;h2 id=&#34;temalar&#34;&gt;Temalar&lt;/h2&gt;
 
-&lt;p&gt;Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altına themes adlı bir klasör oluşturup onun içine ekleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Hugo varsayılan olarak bir tema ile gelmiyor. Temaları yine Hugo Tema sitesinden indirebilir ve ana klasörünüzün altında yer alan themes adlı klasöre ekleyebilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;Temanızı sitede kullanmak için &lt;strong&gt;config.toml&lt;/strong&gt; dosyanızın içine &lt;strong&gt;&amp;ldquo;theme = tema-adiniz&amp;rdquo;&lt;/strong&gt; şeklinde bir satır eklemeniz yeterli.&lt;/p&gt;
 

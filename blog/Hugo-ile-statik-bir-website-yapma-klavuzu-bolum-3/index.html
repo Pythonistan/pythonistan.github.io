@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz-2">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@pyhtonistan">
+<meta property="twitter:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme">
+<meta property="twitter:image" content="/img/blog/hugo-website-yapma-1/sistem_mimarisi.png">
+<meta property="twitter:description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz-2">
+
+  <meta property="og:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme" />
+<meta property="og:description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz-2" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/" />
+
+<meta property="og:image" content="/img/blog/hugo-website-yapma-1/sistem_mimarisi.png" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://pythonistan.net//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://pythonistan.net//css/lightbox.css">
+  <script src="http://pythonistan.net//js/lightbox.min.js"></script>
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://pythonistan.net/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/hugo-website-yapma-3/website_made_by_hugo.jpg" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#hugo-temalarının-genel-kullanımı">Hugo Temalarının Genel Kullanımı</a>
+<ul>
+<li><a href="#temanın-dosyalarını-varolan-dosyaların-üzerine-yazma">Temanın Dosyalarını Varolan Dosyaların Üzerine Yazma</a></li>
+<li><a href="#hugo-sitemizin-ilk-görüntüsü">Hugo Sitemizin İlk Görüntüsü</a></li>
+</ul></li>
+<li><a href="#hugo-tema-modifikasyonu">Hugo Tema Modifikasyonu</a>
+<ul>
+<li><a href="#config-toml-dosyası">Config.toml Dosyası</a></li>
+<li><a href="#yenilenmiş-site-ana-parametreleri">Yenilenmiş Site Ana Parametreleri</a></li>
+<li><a href="#ana-menüyü-türkçe-ye-çevirelim">Ana Menüyü Türkçe&rsquo;ye Çevirelim</a></li>
+<li><a href="#site-gelişmiş-özellikler">Site Gelişmiş Özellikler</a></li>
+</ul></li>
+<li><a href="#anasayfa-değişiklikleri">Anasayfa Değişiklikleri</a></li>
+<li><a href="#gelelim-diğer-sayfalara">Gelelim Diğer Sayfalara</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/">Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>26</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-hugo" href="http://pythonistan.net//categories/hugo">Hugo</a>
+				
+					<a class="post-category post-category-website" href="http://pythonistan.net//categories/website">website</a>
+				
+					<a class="post-category post-category-statik-site-gelistiriciler" href="http://pythonistan.net//categories/statik-site-gelistiriciler">statik site gelistiriciler</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-3%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-3%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Hugo%20ile%20Statik%20Bir%20Websitesi%20Nas%c4%b1l%20Yap%c4%b1l%c4%b1r%3f%20-%20%c3%9c%c3%a7%c3%bcnc%c3%bc%20B%c3%b6l%c3%bcm%20%3a%20Temam%c4%b1z%c4%b1%20%c3%96zelle%c5%9ftirme&url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-3%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/hugo-website-yapma-3/site_anasayfa_ekran.jpg" class="pure-img content-banner-image-inline"
+                                     style="
+                                            " />
+			
+
+            
+
+<p>Dört bölümlük <strong>Hugo ile statik bir websitesi nasıl yapılır</strong> serimizin <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/">üçüncü bölümüne</a> gelebildik.</p>
+
+<p>Birinci bölümde <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/">Hugo kurulumunu</a>, ikinci bölümde ise <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/">Hugo ile Siteyi Lokal Bilgisayarda Oluşturma</a> konusunu işlemiştik.</p>
+
+<p>Dördüncü ve son bölümü Git üzerinden <a href="/blog/git-ve-github/">sitemizi Github&rsquo;a yükleme</a> konusu teşkil edeceğinden şu anki üçüncü bölüm serinin en can alıcı kısmını teşkil ediyor.</p>
+
+<p>Bu bölümde sitemizin konfigürasyon dosyasını (<strong>config.toml</strong>) tamamıyla değiştirip düzeltecek, sitemize yeni sayfalar ekleyecek ve varolan sayfaları modifiye edeceğiz.</p>
+
+<h2 id="hugo-temalarının-genel-kullanımı">Hugo Temalarının Genel Kullanımı</h2>
+
+<p>Hugo temalarını <strong>Hugo</strong> sitemizin ana klasörü içindeki themes klasörünün altında bulunduğundan bahsetmiştik. <em>(D:\siteler\deneme\themes)</em></p>
+
+<p>Şimdi tema klasörümüzden ilgili dosyaları ana klasöre taşımaya / değiştirmeye başlayalım.</p>
+
+<h3 id="temanın-dosyalarını-varolan-dosyaların-üzerine-yazma">Temanın Dosyalarını Varolan Dosyaların Üzerine Yazma</h3>
+
+<p>Temamızın örnek websitesi (<strong>config.toml</strong> dahil) ya temanın ana klasörü içinde <em>(D: \ siteler \ deneme \ herhangibirtema )</em> yada &ldquo;exampleSite&rdquo; klasörünün içindedir. <em>(D:\siteler\deneme\herhangibirtema\exampleSite)</em></p>
+
+<p>Bu her tür tema için aynı şekildedir. Bazı sitelerde exampleSite klasörü bulunmayabilir. O halde temanın ana klasöründeki dosyaları kopyalayacaksınız.</p>
+
+<p>Spesifik örneğimizdeki &ldquo;blackburn&rdquo; temamız bize içinde <strong>config.toml</strong> dosyası da bulunan tam bir website örneği (exampleSite- <em>deneme\themes\blackburn\exampleSite</em>) sunuyor. Bu klasörde örnek bazı sayfalar da var. (&#8595;)</p>
+
+<p>Konfigürasyon dosyasını ve diğer dosyaları bulunduğu yerden <code>kopyala(Ctrl+C)</code>yıp websitemizin ana klasörünün içine <em>(D:\siteler\deneme)</em> yapıştırın<code>(Ctrl+V)</code>. (&#8595;)</p>
+
+<p>Ana klasörün içinde bulunan dosyalar ile değiştirmek isteyip istemediğinizi soracak. &ldquo;Hedefteki Dosyayı Değiştir&rdquo;&lsquo;i seçerek işlemi teyit edin. (&#8595;)</p>
+
+<p><a href="/img/blog/hugo-website-yapma-3/tema_dosyalarini_tasimak_uzere_sec.png" title="" data-lightbox="set1" data-title="Tema Dosyalarını Taşımak Üzere Seçiyoruz"><img src="/img/blog/hugo-website-yapma-3/tema_dosyalarini_tasimak_uzere_sec_thumb.png" alt=""></a>
+<a href="/img/blog/hugo-website-yapma-3/tema_dosyalarini_ana_klasore_tasi.png" title="" data-lightbox="set1" data-title="Tema Dosyalarını Taşıyarak Ana Site Klasörüne Yapıştırıyoruz"><img src="/img/blog/hugo-website-yapma-3/tema_dosyalarini_ana_klasore_tasi_thumb.png" alt=""></a>
+<a href="/img/blog/hugo-website-yapma-3/dosyalari_degistirmek_icin_onay.png" title="" data-lightbox="set1" data-title="Taşıma için Gerekli Teyidi Veriyoruz"><img src="/img/blog/hugo-website-yapma-3/dosyalari_degistirmek_icin_onay_thumb.jpg" alt=""></a></p>
+
+<h3 id="hugo-sitemizin-ilk-görüntüsü">Hugo Sitemizin İlk Görüntüsü</h3>
+
+<p>Ok, herşey istediğimiz gibi gittiyse şimdi <code>hugo server -w</code> komutunu verip tarayıcıda <code>http://localhost:1313/</code> adresini yazdığınızda yukarıdaki gibi bir anasayfa görüntüsü ile karşılaşacaksınız. (&#8593;)</p>
+
+<h2 id="hugo-tema-modifikasyonu">Hugo Tema Modifikasyonu</h2>
+
+<p>Hugo sitemizi hazırlarken her zaman için ilk bakmamız gereken dosya <strong>config.toml</strong> dosyası. Bu dosya web projemizin bir nevi kalbi gibi.</p>
+
+<p>Config.toml bize websitemizin ana özellikleri (konfigürasyonu) ve sahiplikleri hakkında fikir veriyor.</p>
+
+<p>O halde Hugo tema modifikasyonuna <strong>config.toml</strong> dosyasından başlayalım. Bu dosyayı <em>(D:\siteler\deneme\config.toml)</em> <a href="/blog/sublime-text-kurulum/">Sublime Text programı</a> ile açalım ve içindeki değerleri değiştirelim:</p>
+
+<p>(<strong>Not</strong>: Bu işlemi ilk kez yaparken dosyanın üstüne sağ tıklayıp <code>Birlikte Aç</code> komutunu seçebiliriz. .toml dosyalarının daima Sublime ile açılmasını sağlamak için dosya uzantısını Sublime ile ilişkilendirebilirsiniz.)</p>
+
+<h3 id="config-toml-dosyası">Config.toml Dosyası</h3>
+
+<p>Dosyayı açtığımızda sitemizin bir çok özelliğini bulabiliyoruz. Birkaç örnek vereyim, siz gerisini kendiniz keşfedersiniz zaten.</p>
+
+<p><code>Title = &quot;Blackburn Theme Demo&quot;</code> yazan ve anasayfamızdaki en büyük başlık olan yazıyı &ldquo;İlk ve En Yeni Hugo Sitemiz&rdquo; şeklinde değiştirin.</p>
+
+<p>Sayfayı kaydeder kaydetmez (<code>Ctrl + S</code> ile kaydedebilirsiniz) tarayıcınızı kontrol ettiğinizde yaptığımız değişikliğin uygulandığını göreceksiniz.</p>
+
+<p>Aşağıda ben bir kaç değişiklik yaptım, siz de bu değişiklikleri <em>config.toml</em> dosyasında yapın ve sonucunu tarayıcıda hemen görün.</p>
+
+<p>Temanın orjinal hali:</p>
+
+<pre><code>baseurl = &quot;http://replace-this-with-your-hugo-site.com/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Blackburn Theme Demo&quot;
+theme = &quot;blackburn&quot;
+author = &quot;Yoshiharu Yamashita&quot;
+copyright = &quot;&amp;copy; 2016. All rights reserved.&quot;
+canonifyurls = true
+paginate = 10
+</code></pre>
+
+<p>Yapılan Değişikliklerden Sonra:</p>
+
+<pre><code>baseurl = &quot;http://websiteniz.github.io/&quot;
+languageCode = &quot;tr-TR&quot;
+title = &quot;İlk ve En Yeni Hugo Sitemiz&quot;
+theme = &quot;blackburn&quot;
+author = &quot;İsim ve Soyisminiz&quot;
+copyright = &quot;&amp;copy; Sitenizin_İsmi 2016. Tüm Hakkı Saklıdır&quot;
+canonifyurls = true
+paginate = 8
+</code></pre>
+
+<p>Parametre değişikliklerini de benzer şekilde yapabiliriz.</p>
+
+<h3 id="yenilenmiş-site-ana-parametreleri">Yenilenmiş Site Ana Parametreleri</h3>
+
+<pre><code>subtitle = &quot;Harika Muhteşem Bir Site&quot;
+brand = &quot;fiyakali&quot;
+googleAnalytics = &quot;Buraya Google Analytics izleme ID'niz yazılacak&quot;
+disqus = &quot;Disqus hesabınız yazılacak&quot;
+</code></pre>
+
+<p>Gördüğünüz gibi bu tema disqus yorum servisi kurulu geliyor. <a href = "https://disqus.com/ " target = "_blank" > Disqus</a>&lsquo;a üye olup yukarıdaki alana üye olduğunuz ismi yazdığınızda yorum özelliği sitenize otomatik eklenmiş olur.</p>
+
+<h3 id="ana-menüyü-türkçe-ye-çevirelim">Ana Menüyü Türkçe&rsquo;ye Çevirelim</h3>
+
+<p>[[menu.main]] kısmında ingilizceleri aşağıdaki şekilde çevirelim:</p>
+
+<pre><code>name = &quot;Home&quot; --&gt; &quot;Anasayfa&quot;
+name = &quot;Posts&quot; --&gt; &quot;Yazılar&quot;
+name = &quot;About&quot; --&gt; &quot;Hakkında&quot;
+name = &quot;Contact&quot; --&gt; &quot;İletişim&quot;
+</code></pre>
+
+<p>olarak değiştirelim.</p>
+
+<p>Eğer <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/">Hugo Server</a>&lsquo;ı kapatmadıysanız (Ctrl+C) bu yaptığınız değişikliklerin herbirini aynı anda canlı olarak görüyor olmalısınız.</p>
+
+<h3 id="site-gelişmiş-özellikler">Site Gelişmiş Özellikler</h3>
+
+<p>Son olarak temanın daha gelişmiş bir özelliğini nasıl değiştirebileceğimizi görelim:</p>
+
+<p>Blackburn teması ikon kütüphanesi olarak <a href = "http://fontawesome.io/icons/ " target = "_blank" > Font Awesome kütüphanesini</a> kullanıyor.(<em>temadan temaya değişiklik gösterebilir</em>)</p>
+
+<p>Menü başlıklarının yanındaki küçük resimleri değiştirmek isterseniz Font Awesome kütüphanesinden bir başka ikon seçmek çok kolay.</p>
+
+<p>Yukarıda verilen linke gidin ve beğendiğiniz bir ikon seçin. Diyelim, &ldquo;Anasayfa&rdquo; ikonumu uçak olarak değiştirmek istiyorum. Yukarıdaki sayfada uçak ikonunu buluyorum, isminin &ldquo;plane&rdquo; olduğunu görüyorum.</p>
+
+<p>Şimdi anasayfa menümün altındaki <code>pre = &quot;&lt;i class='fa fa-home fa-fw'&gt;&lt;/i&gt;&quot;</code> satırındaki <em>home</em> kelimesini <em>plane</em> olarak değiştiriyorum. Bu kadar. Yani <code>pre = &quot;&lt;i class='fa fa-plane fa-fw'&gt;&lt;/i&gt;&quot;</code></p>
+
+<h2 id="anasayfa-değişiklikleri">Anasayfa Değişiklikleri</h2>
+
+<p>Blackburn temasının orjinal anasayfa görüntüsünü en üstteki resimde görebilirsiniz. Yaptığımız değişikliklerin tamamını aşağıda görebilirsiniz.</p>
+
+<p>Bu örnekte anasayfamızı (index.html) daha çok konfigürasyon dosyası (<em>config.toml</em>) üzerinden değiştirdik.</p>
+
+<p>Hemen hemen tüm Hugo şablonlarında uygulama bu şekilde. Nadiren config.toml&rsquo;de bulamadığınız bazı ayarlar için tema şablonunun layout (anahat) dosyalarına başvurmak zorunda kalabilirsiniz.</p>
+
+<p>Anahat dosyaları layout klasörünün içinde saklanır ve .html uzantısı taşır..</p>
+
+<p><img src="/img/blog/hugo-website-yapma-3/tema_degisiklikleri_uygulama.jpg" alt="Hugo Sitesinde Tema Değişikliği Sonrası Anasayfa Görüntüsü" /> <br><em>&ldquo;Sonra: Hugo Sitemizde Config.toml Değişiklikleri Sonrası Anasayfa Görüntüsü&rdquo;</em></p>
+
+<h2 id="gelelim-diğer-sayfalara">Gelelim Diğer Sayfalara</h2>
+
+<p>Hugo&rsquo;da sayfalara content klasörünün içinden ulaşıldığını <a href="/blog/Jekylldan-Hugoya-gecis/">daha önce söylemiştik</a>. Hugo&rsquo;da bağımsız sayfalar content klasörünün hemen altında bulunur, post (yazı) olarak adlandırılan belli bir kategoriye bağlı yazılar ise content klasörünün altındaki post klasöründe saklanır.</p>
+
+<p>Şimdi post klasörünün içine girelim (D:\siteler\deneme\content\post) ve anasayfada en üstte görünen (Hu)go Template Primer başlıklı dosyayı bulup açalım (goforlovers.md dosyası). Bu dosyayı da yine Sublime ile açacağız.</p>
+
+<p>Dosyanın hemen başında + işaretleri içinde bulunan kısma front matter denildiğini ve dosyanın özelliklerini belirlediğini daha önce belirtmiştim. Dosyanın başlığını &ldquo;Hugo ile Çalışıyorum&rdquo; şeklinde değiştirelim. Tarih yılını (date) ise 2016 yapalım.</p>
+
+<p>Yaptığımız değişiklikleri an be an tarayıcımızdan takip edebiliriz. Arada bir browser&rsquo;a bakmayı unutmayın.</p>
+
+<hr>
+
+<p>Esasında bu yazımda tüm modifikasyonları bitirmeyi düşünüyordum. Ancak yazı çok uzadı. O yüzden 4. Adım olarak sayfaları editlemeyi göstermek istiyorum. Github&rsquo;a yüklemek 5. adıma kaldı. Takipte kalın lütfen&hellip;</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-3%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-3%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Hugo%20ile%20Statik%20Bir%20Websitesi%20Nas%c4%b1l%20Yap%c4%b1l%c4%b1r%3f%20-%20%c3%9c%c3%a7%c3%bcnc%c3%bc%20B%c3%b6l%c3%bcm%20%3a%20Temam%c4%b1z%c4%b1%20%c3%96zelle%c5%9ftirme&url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-3%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-hugo-ile-website-yapma" href="http://pythonistan.net//tags/hugo-ile-website-yapma">Hugo ile website yapma</a>,
+	                
+	                <a class="post-tag post-tag-ssg" href="http://pythonistan.net//tags/ssg">ssg</a>,
+	                
+	                <a class="post-tag post-tag-kolay-ve-%C3%BCcretsiz-website-yapma" href="http://pythonistan.net//tags/kolay-ve-%C3%BCcretsiz-website-yapma">kolay ve ücretsiz website yapma</a>,
+	                
+	                <a class="post-tag post-tag-statik-site-geli%C5%9Ftiricisi" href="http://pythonistan.net//tags/statik-site-geli%C5%9Ftiricisi">statik site geliştiricisi</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/">Hugo ile Statik Bir Websitesi Nasıl Yapılır? - İkinci Bölüm : Sitemizi Oluşturma</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'http:\/\/pythonistan.net\/blog\/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3\/';
+    var disqus_title = 'Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme';
+    var disqus_url = 'http:\/\/pythonistan.net\/blog\/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

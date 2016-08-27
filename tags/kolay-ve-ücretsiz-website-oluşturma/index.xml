@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kolay Ve Ücretsiz Website Oluşturma on Pythonistan</title>
+    <link>http://pythonistan.net/tags/kolay-ve-%C3%BCcretsiz-website-olu%C5%9Fturma/</link>
+    <description>Recent content in Kolay Ve Ücretsiz Website Oluşturma on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Thu, 25 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="http://pythonistan.net/tags/kolay-ve-%C3%BCcretsiz-website-olu%C5%9Fturma/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - İkinci Bölüm : Sitemizi Oluşturma</title>
+      <link>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/</link>
+      <pubDate>Thu, 25 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/</guid>
+      <description>
+
+&lt;p&gt;İlk bölümü detaylı bir &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Hugo kurulumunu&lt;/a&gt; içeren &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; klavuzumuzun &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;ikinci bölümü&lt;/a&gt;, &amp;ldquo;lokal bilgisayarda sitemizi oluşturma&amp;rdquo;, karşınızda&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-lokal-sunucu&#34;&gt;Hugo Lokal Sunucu&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href = &#34;https://gohugo.io/&#34; target = &#34;_blank&#34; &gt; Hugo&lt;/a&gt; kendiliğinden bir web sunucu ile makinamıza geliyor.&lt;/p&gt;
+
+&lt;p&gt;Bu şu demek: Herhangi bir websitesi geliştirdiğimizde onu çalıştırmak için uzak bir sunucu aramak zorunda değiliz.&lt;/p&gt;
+
+&lt;p&gt;Geliştirdiğimiz siteyi hemen aynı anda tarayıcımız vasıtası ile sunucumuza bağlanarak görme ve düzeltme (edit) şansına sahibiz.&lt;/p&gt;
+
+&lt;p&gt;Daha da güzeli çoğu web geliştirme aracında olmayan &lt;strong&gt;Live Reload&lt;/strong&gt; (Canlı Önizleme) özelliği &lt;strong&gt;Hugo&lt;/strong&gt; ile varsayılan olarak geliyor. Ekstra bir paket kurmanıza gerek yok.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Live Reload&lt;/strong&gt; ile tarayıcınızda &lt;code&gt;Refresh&lt;/code&gt;&amp;lsquo;e (Yenile / F5) bile basmaya gerek kalmadan yaptığınız değişikliklerin hepsini görebiliyorsunuz.&lt;/p&gt;
+
+&lt;h2 id=&#34;yeni-bir-site-için-klasör-düzeni&#34;&gt;Yeni Bir Site İçin Klasör Düzeni&lt;/h2&gt;
+
+&lt;p&gt;Şimdi daha ilk Hugo yazımda &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;bahsettiğim gibi&lt;/a&gt; yeni bir site yapacağız.&lt;/p&gt;
+
+&lt;p&gt;Hugo ile sitelerimizi kolay ulaşabileceğimiz bir yerde, mesela &lt;em&gt;D:&lt;/em&gt; klasörünün hemen altında oluşturalım.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Zaten, Hugo&amp;rsquo;yu &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Path&lt;/a&gt;&amp;lsquo;a eklediğimiz için herhangi bir konumdan &lt;code&gt;hugo&lt;/code&gt; yazıp &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya ulaşabiliyorduk. O halde;&lt;/p&gt;
+
+&lt;p&gt;a. Komut satırını açın. (Powershell / Cmd )&lt;/p&gt;
+
+&lt;p&gt;b. &lt;em&gt;D&lt;/em&gt; sürücümüzün altında siteler adlı bir klasör oluşturalım. Bulunduğunuz konumda &lt;em&gt;D&lt;/em&gt; klasörüne geçmek için &lt;em&gt;D:&lt;/em&gt; yazıp Enter&amp;rsquo;a basın(&amp;#8595;).&lt;/p&gt;
+
+&lt;p&gt;c. Daha sonra &lt;code&gt;md siteler&lt;/code&gt; komutunu vererek yeni bir klasör oluşturalım. (&lt;em&gt;md: make directory - klasör yarat&lt;/em&gt;) (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;d. Son olarak &lt;code&gt;cd siteler&lt;/code&gt; diyerek &lt;em&gt;siteler&lt;/em&gt; klasörünün içine girin. Bu konumda bir website oluşturacağız. (&amp;#8595;)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-2/hugo_site_olusturma.png&#34; alt=&#34;Hugo&#39;da Web Sitesi Oluşturma ve Web Sunucuyu Çalıştırma&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo&amp;rsquo;da Web Sitesi Oluşturma ve Web Sunucuyu Çalıştırma&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;yeni-bir-site-yaratalım-ve-web-sunucumuzun-çalıştığını-görelim&#34;&gt;Yeni Bir Site Yaratalım ve Web Sunucumuzun Çalıştığını Görelim&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Şimdi &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;nun web sunucusunu bir kontrol edelim. Peki sunucumuza nasıl ulaşacağız? Çok basit: Hugo&amp;rsquo;nun sunucuyu çalıştırma komutu &lt;code&gt;hugo server&lt;/code&gt;. Bu komutu &lt;code&gt;-w&lt;/code&gt; parametresi ile kullanırsanız yaptığınız değişiklikleri aynı zamanda komut satırından da izleyebilirsiniz. Dolayısıyla tam komutumuz şöyle olacak: &lt;code&gt;hugo server -w&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;a. Klasörümüzün içinde &lt;code&gt;hugo new site deneme&lt;/code&gt; komutunu verin. &lt;strong&gt;Hugo&lt;/strong&gt; &lt;em&gt;deneme&lt;/em&gt; adlı bir klasör, yani &lt;strong&gt;deneme websitesini&lt;/strong&gt; oluşturdu. (&amp;#8593;)&lt;/p&gt;
+
+&lt;p&gt;b. &lt;em&gt;deneme&lt;/em&gt; klasörünüzün içine &lt;code&gt;cd deneme&lt;/code&gt; komutu ile girin.  (&amp;#8593;)&lt;/p&gt;
+
+&lt;p&gt;c. Şimdi yukarıda öğrendiğimiz &lt;code&gt;hugo server -w&lt;/code&gt; komutumuzu vererek sitemizi tarayıcıda görüntülemek üzere sunucuda çalıştıralım. (&amp;#8593;)&lt;/p&gt;
+
+&lt;p&gt;d. Şu anda sitemiz sunucuda çalışıyor, zaten bunu &lt;code&gt;Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)&lt;/code&gt;   mesajından anlıyoruz. Ancak websitemiz halen tamamıyla boş olduğu için tarayıcıda görebileceğimiz bir şey yok. (&amp;#8593;)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;İsterseniz tarayıcınızı açıp &lt;code&gt;http://localhost:1313/&lt;/code&gt; yazarak Enter yapıp kontrol edebilirsiniz. Herhangi bir hata almayacak, boş bir sayfa ile karşılaşacaksınız.&lt;/p&gt;
+
+&lt;h3 id=&#34;sitemize-sayfa-ekleme&#34;&gt;Sitemize Sayfa Ekleme&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;İlk Hugo yazımda bahsettiğim&lt;/a&gt; kendi kendimize siteye sayfa ekleme yoluna gitmeden bu kez hazır bir tema indirip o temanın sayfa şablonlarını kullanalım.&lt;/p&gt;
+
+&lt;p&gt;Hugo&amp;rsquo;nun yeni siteyi oluşturmasından sonra site klasörünü kontrol ettiyseniz temaların yükleneceği klasörü &lt;em&gt;(themes)&lt;/em&gt; görmüş olabilirsiniz. Görmediyseniz lütfen yeni oluşturduğumuz deneme klasörünün içine bakın.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-2/hugo_tema_klasoru.png&#34; alt=&#34;Hugo Tema Klasörünü Tespit&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo Temaları Themes Adlı Klasörde Tutuyor&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-temaları&#34;&gt;Hugo Temaları&lt;/h2&gt;
+
+&lt;p&gt;Hugo temalarını galeri halinde bulacağımız adres &lt;a href = &#34;http://themes.gohugo.io/&#34; target = &#34;_blank&#34; &gt; themes.gohugo.io&lt;/a&gt; adresi. Buradan herhangi bir tema indirebiliriz.&lt;/p&gt;
+
+&lt;p&gt;Ben örnek olarak &amp;ldquo;Blackburn&amp;rdquo; temasını seçiyorum ancak siz istediğiniz herhangi birini seçip benim örneği takip ederek temayı özelleştirebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Üstteki adresteki sayfada &lt;a href = &#34;http://themes.gohugo.io/blackburn/&#34; target = &#34;_blank&#34; &gt; temamı&lt;/a&gt; buldum, tema sayfasındaki indirme kısayolunu - &lt;code&gt;git clone https://github.com/yoshiharuyamashita/blackburn.git&lt;/code&gt; - sağ tıklamayla seçip kopyaladım (Ctrl + C).&lt;/p&gt;
+
+&lt;h3 id=&#34;temaları-hugo-tema-klasörüne-yüklemek&#34;&gt;Temaları Hugo Tema Klasörüne Yüklemek&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Temamızı şimdi yerel diskimizdeki tema klasörüne indirip web projemizde kullanabileceğiz. (&lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;Git&lt;/a&gt;&amp;lsquo;i bilgisayarınıza yüklemiştiniz, değil mi?)&lt;/p&gt;
+
+&lt;p&gt;a. Komut satırından &lt;em&gt;themes&lt;/em&gt; adlı klasöre giriş yapın. (&lt;em&gt;D:&lt;/em&gt; klasöründeyken &lt;code&gt;cd siteler&lt;/code&gt; - &lt;code&gt;cd deneme&lt;/code&gt; - &lt;code&gt;cd themes&lt;/code&gt;) (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;b. Kopyaladığımız yukarıdaki komutu komut satırına yapıştırın. (Ctrl + V) Tam komutumuz şöyle idi: &lt;code&gt;git clone https://github.com/yoshiharuyamashita/blackburn.git&lt;/code&gt; ve Enter&amp;rsquo;a basın. (&amp;#8595;)&lt;/p&gt;
+
+&lt;p&gt;c. İndirmenin başarılı olup olmadığını anlamak için &amp;ldquo;themes&amp;rdquo; klasörünün içini kontrol edebiliriz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-2/hugo_tema_yukleme.png&#34; alt=&#34;Hugo&#39;ya Tema Yükleme&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo&amp;rsquo;ya Tema Yüklendi&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Bugünlük bu kadar.. Yarın indirdiğimiz &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;temanın özelleştirmesini&lt;/a&gt; ve artık web sunucumuzda yaptığımız değişikliklerin yansımalarını göreceğiz. O zamana kadar hoşçakalın&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
