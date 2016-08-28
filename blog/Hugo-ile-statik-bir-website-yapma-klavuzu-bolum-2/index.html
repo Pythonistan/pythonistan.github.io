@@ -77,6 +77,10 @@
 
 <body>
 	
+		<div id="nav-to-top">
+			<span class="decorative-marker">//</span><a href="#top">Başa Dön</a>
+		</div>
+	
 
 	<div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
@@ -362,6 +366,22 @@
 </div>
     </div>
   </div>
+	
+		<script type="text/javascript">
+			onscroll = function() {
+			  var toTopVisible = false;
+			  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			  if (scrollTop > 1000) {
+			    if (!toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'block';
+			    }
+			  } else {
+			    if (scrollTop < 1000 || toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'none';
+			    }
+			  }
+			};
+		</script>
 	
 
 	

@@ -11,7 +11,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta name="description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz-2">
+<meta name="description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-3">
 <meta name="keywords" content="">
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.16" />
@@ -19,16 +19,16 @@
   <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:site" content="@pyhtonistan">
 <meta property="twitter:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme">
-<meta property="twitter:image" content="/img/blog/hugo-website-yapma-1/sistem_mimarisi.png">
-<meta property="twitter:description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz-2">
+<meta property="twitter:image" content="/img/blog/hugo-website-yapma-3/site_anasayfa_ekran.jpg">
+<meta property="twitter:description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-3">
 
   <meta property="og:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme" />
-<meta property="og:description" content="Hugo Statik Site Geliştiricisi ile Website Yapıyoruz-2" />
+<meta property="og:description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-3" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:url" content="http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/" />
 
-<meta property="og:image" content="/img/blog/hugo-website-yapma-1/sistem_mimarisi.png" />
+<meta property="og:image" content="/img/blog/hugo-website-yapma-3/site_anasayfa_ekran.jpg" />
 
 
   
@@ -76,6 +76,10 @@
 </head>
 
 <body>
+	
+		<div id="nav-to-top">
+			<span class="decorative-marker">//</span><a href="#top">Başa Dön</a>
+		</div>
 	
 
 	<div id="layout" class="pure-g">
@@ -161,7 +165,6 @@
 <li><a href="#site-gelişmiş-özellikler">Site Gelişmiş Özellikler</a></li>
 </ul></li>
 <li><a href="#anasayfa-değişiklikleri">Anasayfa Değişiklikleri</a></li>
-<li><a href="#gelelim-diğer-sayfalara">Gelelim Diğer Sayfalara</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -217,8 +220,6 @@
 
 <p>Birinci bölümde <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/">Hugo kurulumunu</a>, ikinci bölümde ise <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/">Hugo ile Siteyi Lokal Bilgisayarda Oluşturma</a> konusunu işlemiştik.</p>
 
-<p>Dördüncü ve son bölümü Git üzerinden <a href="/blog/git-ve-github/">sitemizi Github&rsquo;a yükleme</a> konusu teşkil edeceğinden şu anki üçüncü bölüm serinin en can alıcı kısmını teşkil ediyor.</p>
-
 <p>Bu bölümde sitemizin konfigürasyon dosyasını (<strong>config.toml</strong>) tamamıyla değiştirip düzeltecek, sitemize yeni sayfalar ekleyecek ve varolan sayfaları modifiye edeceğiz.</p>
 
 <h2 id="hugo-temalarının-genel-kullanımı">Hugo Temalarının Genel Kullanımı</h2>
@@ -241,11 +242,11 @@
 
 <p><a href="/img/blog/hugo-website-yapma-3/tema_dosyalarini_tasimak_uzere_sec.png" title="" data-lightbox="set1" data-title="Tema Dosyalarını Taşımak Üzere Seçiyoruz"><img src="/img/blog/hugo-website-yapma-3/tema_dosyalarini_tasimak_uzere_sec_thumb.png" alt=""></a>
 <a href="/img/blog/hugo-website-yapma-3/tema_dosyalarini_ana_klasore_tasi.png" title="" data-lightbox="set1" data-title="Tema Dosyalarını Taşıyarak Ana Site Klasörüne Yapıştırıyoruz"><img src="/img/blog/hugo-website-yapma-3/tema_dosyalarini_ana_klasore_tasi_thumb.png" alt=""></a>
-<a href="/img/blog/hugo-website-yapma-3/dosyalari_degistirmek_icin_onay.png" title="" data-lightbox="set1" data-title="Taşıma için Gerekli Teyidi Veriyoruz"><img src="/img/blog/hugo-website-yapma-3/dosyalari_degistirmek_icin_onay_thumb.jpg" alt=""></a></p>
+<a href="/img/blog/hugo-website-yapma-3/dosyalari_degistirmek_icin_onay.png" title="" data-lightbox="set1" data-title="Taşıma için Gerekli Teyidi Veriyoruz"><img src="/img/blog/hugo-website-yapma-3/dosyalari_degistirmek_icin_onay_thumb.png" alt=""></a></p>
 
 <h3 id="hugo-sitemizin-ilk-görüntüsü">Hugo Sitemizin İlk Görüntüsü</h3>
 
-<p>Ok, herşey istediğimiz gibi gittiyse şimdi <code>hugo server -w</code> komutunu verip tarayıcıda <code>http://localhost:1313/</code> adresini yazdığınızda yukarıdaki gibi bir anasayfa görüntüsü ile karşılaşacaksınız. (&#8593;)</p>
+<p>Ok, herşey istediğimiz gibi gittiyse şimdi <code>hugo server -w</code> komutunu verip tarayıcıda <code>http://localhost:1313/</code> adresini yazdığınızda yukarıdaki büyük imajda görülen anasayfa görüntüsü ile karşılaşacaksınız. (&#8593;)</p>
 
 <h2 id="hugo-tema-modifikasyonu">Hugo Tema Modifikasyonu</h2>
 
@@ -331,25 +332,13 @@ name = &quot;Contact&quot; --&gt; &quot;İletişim&quot;
 
 <h2 id="anasayfa-değişiklikleri">Anasayfa Değişiklikleri</h2>
 
-<p>Blackburn temasının orjinal anasayfa görüntüsünü en üstteki resimde görebilirsiniz. Yaptığımız değişikliklerin tamamını aşağıda görebilirsiniz.</p>
-
-<p>Bu örnekte anasayfamızı (index.html) daha çok konfigürasyon dosyası (<em>config.toml</em>) üzerinden değiştirdik.</p>
+<p>Bu örnekte anasayfamızı (index.html) daha çok konfigürasyon dosyası (<em>config.toml</em>) üzerinden değiştirdik. Yaptığımız değişikliklerin tamamını aşağıdaki imaj görüntüsünde görebilirsiniz.</p>
 
 <p>Hemen hemen tüm Hugo şablonlarında uygulama bu şekilde. Nadiren config.toml&rsquo;de bulamadığınız bazı ayarlar için tema şablonunun layout (anahat) dosyalarına başvurmak zorunda kalabilirsiniz.</p>
 
-<p>Anahat dosyaları layout klasörünün içinde saklanır ve .html uzantısı taşır..</p>
+<p>Anahat dosyaları layout klasörünün içinde saklanır ve <code>.html</code> uzantısı taşır..</p>
 
 <p><img src="/img/blog/hugo-website-yapma-3/tema_degisiklikleri_uygulama.jpg" alt="Hugo Sitesinde Tema Değişikliği Sonrası Anasayfa Görüntüsü" /> <br><em>&ldquo;Sonra: Hugo Sitemizde Config.toml Değişiklikleri Sonrası Anasayfa Görüntüsü&rdquo;</em></p>
-
-<h2 id="gelelim-diğer-sayfalara">Gelelim Diğer Sayfalara</h2>
-
-<p>Hugo&rsquo;da sayfalara content klasörünün içinden ulaşıldığını <a href="/blog/Jekylldan-Hugoya-gecis/">daha önce söylemiştik</a>. Hugo&rsquo;da bağımsız sayfalar content klasörünün hemen altında bulunur, post (yazı) olarak adlandırılan belli bir kategoriye bağlı yazılar ise content klasörünün altındaki post klasöründe saklanır.</p>
-
-<p>Şimdi post klasörünün içine girelim (D:\siteler\deneme\content\post) ve anasayfada en üstte görünen (Hu)go Template Primer başlıklı dosyayı bulup açalım (goforlovers.md dosyası). Bu dosyayı da yine Sublime ile açacağız.</p>
-
-<p>Dosyanın hemen başında + işaretleri içinde bulunan kısma front matter denildiğini ve dosyanın özelliklerini belirlediğini daha önce belirtmiştim. Dosyanın başlığını &ldquo;Hugo ile Çalışıyorum&rdquo; şeklinde değiştirelim. Tarih yılını (date) ise 2016 yapalım.</p>
-
-<p>Yaptığımız değişiklikleri an be an tarayıcımızdan takip edebiliriz. Arada bir browser&rsquo;a bakmayı unutmayın.</p>
 
 <hr>
 
@@ -423,6 +412,22 @@ name = &quot;Contact&quot; --&gt; &quot;İletişim&quot;
 </div>
     </div>
   </div>
+	
+		<script type="text/javascript">
+			onscroll = function() {
+			  var toTopVisible = false;
+			  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			  if (scrollTop > 1000) {
+			    if (!toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'block';
+			    }
+			  } else {
+			    if (scrollTop < 1000 || toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'none';
+			    }
+			  }
+			};
+		</script>
 	
 
 	
