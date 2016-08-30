@@ -104,14 +104,14 @@
 
 &lt;p&gt;a) Powershell&amp;rsquo;i yada Cmd&amp;rsquo;yi açın. Herhangi bir klasör içinde &lt;code&gt;hugo&lt;/code&gt; komutunu yazın ve Enter&amp;rsquo;a basın. Cevap olarak &amp;ldquo;unable to locate config file&amp;rdquo; şeklinde bir mesaj alıyorsak &lt;a name=&#34;hugokur&#34;&gt;Hugo kurulumu başarı ile gerçekleştirildi&lt;/a&gt; demektir.&lt;/p&gt;
 
-&lt;p&gt;b) Üstteki hatayı alıyoruz zira henüz hiç bir site oluşturmadık. Site oluşturulduğunda config dosyamız otomatik olarak oluşturulacaktır. Site oluşturmayı bir önceki yazımdan hatırlıyor olmalısınız. Hatırlarsanız, &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;orada&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutunu vererek bir site oluşturmuştuk.&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;b) Üstteki hatayı alıyoruz zira henüz hiç bir site oluşturmadık. Site oluşturulduğunda config dosyamız otomatik olarak oluşturulacaktır. Site oluşturmayı bir önceki yazımdan hatırlıyor olmalısınız. Hatırlarsanız, &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#hugo-ile-bir-site-yapalım-windows-için&#34;&gt;orada&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutunu vererek bir site oluşturmuştuk.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_basarili_kurulum.jpg&#34; alt=&#34;Windows&#39;umuz İçin Hugo&#39;nun Uygun Versiyonunu İndiriyoruz&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo&amp;rsquo;nun Başarı ile Kurulduğunu Gösteren Ekran Görüntüsü&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
-&lt;p&gt;Hugo&amp;rsquo;yu sistemimize kurmayı başardık. Şimdi sıra &lt;a href=&#34;http://pythonistan.net/blog/hugo-website-yapma-2/&#34;&gt;Hugo ile basit ama güzel bir websitesi&lt;/a&gt; yapmaya geldi. Sizi çok bekletmeyeceğim umarım.&lt;/p&gt;
+&lt;p&gt;Hugo&amp;rsquo;yu sistemimize kurmayı başardık. Şimdi sıra &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile basit ama güzel bir websitesi&lt;/a&gt; yapmaya geldi. Sizi çok bekletmeyeceğim umarım.&lt;/p&gt;
 </description>
     </item>
     

@@ -93,9 +93,7 @@ canonifyurls = true
 paginate = 8
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Parametre değişikliklerini de benzer şekilde yapabiliriz.&lt;/p&gt;
-
-&lt;h3 id=&#34;yenilenmiş-site-ana-parametreleri&#34;&gt;Yenilenmiş Site Ana Parametreleri&lt;/h3&gt;
+&lt;h3 id=&#34;diğer-site-parametrelerini-de-değiştirelim&#34;&gt;Diğer Site Parametrelerini de Değiştirelim&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;subtitle = &amp;quot;Harika Muhteşem Bir Site&amp;quot;
 brand = &amp;quot;fiyakali&amp;quot;
@@ -115,9 +113,7 @@ name = &amp;quot;About&amp;quot; --&amp;gt; &amp;quot;Hakkında&amp;quot;
 name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;olarak değiştirelim.&lt;/p&gt;
-
-&lt;p&gt;Eğer &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo Server&lt;/a&gt;&amp;lsquo;ı kapatmadıysanız (Ctrl+C) bu yaptığınız değişikliklerin herbirini aynı anda canlı olarak görüyor olmalısınız.&lt;/p&gt;
+&lt;p&gt;Eğer &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/#yeni-bir-site-yaratalım-ve-web-sunucumuzun-çalıştığını-görelim&#34;&gt;Hugo Server&lt;/a&gt;&amp;lsquo;ı kapatmadıysanız (Ctrl+C) bu yaptığınız değişikliklerin herbirini aynı anda canlı olarak görüyor olmalısınız.&lt;/p&gt;
 
 &lt;h3 id=&#34;site-gelişmiş-özellikler&#34;&gt;Site Gelişmiş Özellikler&lt;/h3&gt;
 
@@ -143,7 +139,9 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;hr&gt;
 
-&lt;p&gt;Esasında bu yazımda tüm modifikasyonları bitirmeyi düşünüyordum. Ancak yazı çok uzadı. O yüzden 4. Adım olarak sayfaları editlemeyi göstermek istiyorum. Github&amp;rsquo;a yüklemek 5. adıma kaldı. Takipte kalın lütfen&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Esasında bu yazımda tüm modifikasyonları bitirmeyi düşünüyordum. Ancak yazı çok uzadı.&lt;/p&gt;
+
+&lt;p&gt;O nedenle &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/&#34;&gt;4. Bölüm&lt;/a&gt;&amp;lsquo;de sayfaları (post) düzenlemeyi göstermek istiyorum. Sitemizi Github&amp;rsquo;a yüklemek 5. ve son Bölümümüz olacak.&lt;/p&gt;
 </description>
     </item>
     

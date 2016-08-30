@@ -93,9 +93,7 @@ canonifyurls = true
 paginate = 8
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Parametre değişikliklerini de benzer şekilde yapabiliriz.&lt;/p&gt;
-
-&lt;h3 id=&#34;yenilenmiş-site-ana-parametreleri&#34;&gt;Yenilenmiş Site Ana Parametreleri&lt;/h3&gt;
+&lt;h3 id=&#34;diğer-site-parametrelerini-de-değiştirelim&#34;&gt;Diğer Site Parametrelerini de Değiştirelim&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;subtitle = &amp;quot;Harika Muhteşem Bir Site&amp;quot;
 brand = &amp;quot;fiyakali&amp;quot;
@@ -115,9 +113,7 @@ name = &amp;quot;About&amp;quot; --&amp;gt; &amp;quot;Hakkında&amp;quot;
 name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;olarak değiştirelim.&lt;/p&gt;
-
-&lt;p&gt;Eğer &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo Server&lt;/a&gt;&amp;lsquo;ı kapatmadıysanız (Ctrl+C) bu yaptığınız değişikliklerin herbirini aynı anda canlı olarak görüyor olmalısınız.&lt;/p&gt;
+&lt;p&gt;Eğer &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/#yeni-bir-site-yaratalım-ve-web-sunucumuzun-çalıştığını-görelim&#34;&gt;Hugo Server&lt;/a&gt;&amp;lsquo;ı kapatmadıysanız (Ctrl+C) bu yaptığınız değişikliklerin herbirini aynı anda canlı olarak görüyor olmalısınız.&lt;/p&gt;
 
 &lt;h3 id=&#34;site-gelişmiş-özellikler&#34;&gt;Site Gelişmiş Özellikler&lt;/h3&gt;
 
@@ -143,7 +139,9 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;hr&gt;
 
-&lt;p&gt;Esasında bu yazımda tüm modifikasyonları bitirmeyi düşünüyordum. Ancak yazı çok uzadı. O yüzden 4. Adım olarak sayfaları editlemeyi göstermek istiyorum. Github&amp;rsquo;a yüklemek 5. adıma kaldı. Takipte kalın lütfen&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Esasında bu yazımda tüm modifikasyonları bitirmeyi düşünüyordum. Ancak yazı çok uzadı.&lt;/p&gt;
+
+&lt;p&gt;O nedenle &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/&#34;&gt;4. Bölüm&lt;/a&gt;&amp;lsquo;de sayfaları (post) düzenlemeyi göstermek istiyorum. Sitemizi Github&amp;rsquo;a yüklemek 5. ve son Bölümümüz olacak.&lt;/p&gt;
 </description>
     </item>
     
@@ -171,12 +169,12 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;h2 id=&#34;yeni-bir-site-için-klasör-düzeni&#34;&gt;Yeni Bir Site İçin Klasör Düzeni&lt;/h2&gt;
 
-&lt;p&gt;Şimdi daha ilk Hugo yazımda &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;bahsettiğim gibi&lt;/a&gt; yeni bir site yapacağız.&lt;/p&gt;
+&lt;p&gt;Şimdi daha ilk Hugo yazımda &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#hugo-ile-bir-site-yapalım-windows-için&#34;&gt;bahsettiğim gibi&lt;/a&gt; yeni bir site yapacağız.&lt;/p&gt;
 
 &lt;p&gt;Hugo ile sitelerimizi kolay ulaşabileceğimiz bir yerde, mesela &lt;em&gt;D:&lt;/em&gt; klasörünün hemen altında oluşturalım.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Zaten, Hugo&amp;rsquo;yu &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Path&lt;/a&gt;&amp;lsquo;a eklediğimiz için herhangi bir konumdan &lt;code&gt;hugo&lt;/code&gt; yazıp &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya ulaşabiliyorduk. O halde;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Zaten, Hugo&amp;rsquo;yu &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/#3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;Path&lt;/a&gt;&amp;lsquo;a eklediğimiz için herhangi bir konumdan &lt;code&gt;hugo&lt;/code&gt; yazıp &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya ulaşabiliyorduk. O halde;&lt;/p&gt;
 
 &lt;p&gt;a. Komut satırını açın. (Powershell / Cmd )&lt;/p&gt;
 
@@ -192,7 +190,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 &lt;h2 id=&#34;yeni-bir-site-yaratalım-ve-web-sunucumuzun-çalıştığını-görelim&#34;&gt;Yeni Bir Site Yaratalım ve Web Sunucumuzun Çalıştığını Görelim&lt;/h2&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Şimdi &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;nun web sunucusunu bir kontrol edelim. Peki sunucumuza nasıl ulaşacağız? Çok basit: Hugo&amp;rsquo;nun sunucuyu çalıştırma komutu &lt;code&gt;hugo server&lt;/code&gt;. Bu komutu &lt;code&gt;-w&lt;/code&gt; parametresi ile kullanırsanız yaptığınız değişiklikleri aynı zamanda komut satırından da izleyebilirsiniz. Dolayısıyla tam komutumuz şöyle olacak: &lt;code&gt;hugo server -w&lt;/code&gt;.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Şimdi &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;da site oluşturuyoruz ve kontrol ediyoruz. Sitemizdeki değişiklikleri tarayıcı da olduğu kadar komut satırından da izlemek için vereceğimiz komut: &lt;code&gt;hugo server -w&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;a. Klasörümüzün içinde &lt;code&gt;hugo new site deneme&lt;/code&gt; komutunu verin. &lt;strong&gt;Hugo&lt;/strong&gt; &lt;em&gt;deneme&lt;/em&gt; adlı bir klasör, yani &lt;strong&gt;deneme websitesini&lt;/strong&gt; oluşturdu. (&amp;#8593;)&lt;/p&gt;
 
@@ -336,14 +334,14 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;p&gt;a) Powershell&amp;rsquo;i yada Cmd&amp;rsquo;yi açın. Herhangi bir klasör içinde &lt;code&gt;hugo&lt;/code&gt; komutunu yazın ve Enter&amp;rsquo;a basın. Cevap olarak &amp;ldquo;unable to locate config file&amp;rdquo; şeklinde bir mesaj alıyorsak &lt;a name=&#34;hugokur&#34;&gt;Hugo kurulumu başarı ile gerçekleştirildi&lt;/a&gt; demektir.&lt;/p&gt;
 
-&lt;p&gt;b) Üstteki hatayı alıyoruz zira henüz hiç bir site oluşturmadık. Site oluşturulduğunda config dosyamız otomatik olarak oluşturulacaktır. Site oluşturmayı bir önceki yazımdan hatırlıyor olmalısınız. Hatırlarsanız, &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;orada&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutunu vererek bir site oluşturmuştuk.&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;b) Üstteki hatayı alıyoruz zira henüz hiç bir site oluşturmadık. Site oluşturulduğunda config dosyamız otomatik olarak oluşturulacaktır. Site oluşturmayı bir önceki yazımdan hatırlıyor olmalısınız. Hatırlarsanız, &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#hugo-ile-bir-site-yapalım-windows-için&#34;&gt;orada&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutunu vererek bir site oluşturmuştuk.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-1/hugo_basarili_kurulum.jpg&#34; alt=&#34;Windows&#39;umuz İçin Hugo&#39;nun Uygun Versiyonunu İndiriyoruz&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Hugo&amp;rsquo;nun Başarı ile Kurulduğunu Gösteren Ekran Görüntüsü&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 
-&lt;p&gt;Hugo&amp;rsquo;yu sistemimize kurmayı başardık. Şimdi sıra &lt;a href=&#34;http://pythonistan.net/blog/hugo-website-yapma-2/&#34;&gt;Hugo ile basit ama güzel bir websitesi&lt;/a&gt; yapmaya geldi. Sizi çok bekletmeyeceğim umarım.&lt;/p&gt;
+&lt;p&gt;Hugo&amp;rsquo;yu sistemimize kurmayı başardık. Şimdi sıra &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile basit ama güzel bir websitesi&lt;/a&gt; yapmaya geldi. Sizi çok bekletmeyeceğim umarım.&lt;/p&gt;
 </description>
     </item>
     
