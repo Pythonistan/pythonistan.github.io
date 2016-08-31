@@ -6,8 +6,140 @@
     <description>Recent content in Statik Site Gelistiriciler on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Fri, 26 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 31 Aug 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="http://pythonistan.net/categories/statik-site-gelistiriciler/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Dördüncü Bölüm : Post Değişiklikleri</title>
+      <link>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/</link>
+      <pubDate>Wed, 31 Aug 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Hugo ile Statik Bir Website Nasıl Yapılır?&lt;/strong&gt; yazı dizimizde son olarak Üçüncü Bölüm, &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;Temamızı Özelleştirme&lt;/a&gt;&amp;lsquo;yi yayımlamıştık.&lt;/p&gt;
+
+&lt;p&gt;Bu yazımızda sitemizin temasıyla hazır gelen &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#hugo-da-dosya-düzeni&#34;&gt;post sayfalarını&lt;/a&gt; (&lt;em&gt;yani belirli bir kategori yada bölümün altında yer alan sayfalar&lt;/em&gt;) düzenleyecek ve yeni sayfalar ekleyeceğiz.&lt;/p&gt;
+
+&lt;p&gt;Bu yazıyla edit (düzeltme) işlemlerini bitirmeyi planlıyorum.&lt;/p&gt;
+
+&lt;h2 id=&#34;sayfaların-sınıflandırılması-ve-kategoriler&#34;&gt;Sayfaların Sınıflandırılması ve Kategoriler&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; da bölüm sayfaları genelde &lt;em&gt;content&lt;/em&gt; klasörünün altındaki &lt;em&gt;post&lt;/em&gt; klasörünün içinde bulunuyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;post&lt;/em&gt; klasörünün ismini değiştirebilir (örn. &lt;em&gt;blog&lt;/em&gt;), &lt;em&gt;post&lt;/em&gt; klasörünün altına yeni klasörler ekleyip dosyalarınızı alt klasörlerin içine yerleştirebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Gerçi Hugo&amp;rsquo;da &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#front-matter&#34;&gt;Front Matter&lt;/a&gt;&amp;lsquo;a eklediğiniz &lt;strong&gt;kategoriler&lt;/strong&gt; (categories) ve &lt;strong&gt;etiketler&lt;/strong&gt; (tags) ile dosyalarınızı istediğiniz şekilde gruplayabilir, sınıflandırabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Örneğin şu anda okumakta olduğunuz &lt;strong&gt;&lt;a href=&#34;http://pythonistan.net/categories/hugo/&#34;&gt;Hugo&lt;/a&gt; ile statik bir website nasıl yapılır&lt;/strong&gt; yazı dizisinin tüm yazılarını bulmak için bu sayfanın en üstünde yer alan &lt;strong&gt;renkli&lt;/strong&gt; üç kategoriden birine tıklayabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-4/sayfa_kategoriler.png&#34; alt=&#34;Sayfamın Kategorileri&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo&lt;/strong&gt; aynı &lt;strong&gt;kategori&lt;/strong&gt; özelliği taşıyan tüm sayfaları bir araya getirip otomatik olarak size sunacak.&lt;/p&gt;
+
+&lt;h2 id=&#34;bölüm-sayfaları&#34;&gt;Bölüm Sayfaları&lt;/h2&gt;
+
+&lt;p&gt;Spesifik tema örneğimize geri dönebiliriz. Blackburn temamız varsayılan olarak &lt;em&gt;post&lt;/em&gt; klasörünün içinde 4 adet .md (markdown) dosyası ile geliyor. Tek tek dosyalarla oynayalım.&lt;/p&gt;
+
+&lt;p&gt;Birinci dosyamız: &lt;em&gt;creating-a-new-theme.md&lt;/em&gt; dosyası. Dosyanın adını &lt;em&gt;birinci_blog_yazisi.md&lt;/em&gt; olarak değiştirin. Daha sonra iki kez tıklayarak içini açın.&lt;/p&gt;
+
+&lt;p&gt;Dosyanın hemen başında &lt;strong&gt;(&amp;mdash;)&lt;/strong&gt; (bazen +++) işaretleri içinde bulunan kısma &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#front-matter&#34;&gt;Front Matter&lt;/a&gt; denildiğini ve dosyanın özelliklerini belirlediğini daha önce belirtmiştim.&lt;/p&gt;
+
+&lt;p&gt;Dosyanın başlığını &lt;em&gt;&amp;ldquo;Hugo Aşktır&amp;rdquo;&lt;/em&gt; şeklinde değiştirelim. Tarihini (date) ise &lt;strong&gt;&amp;ldquo;2015-01-09&amp;rdquo;&lt;/strong&gt; yapalım.&lt;/p&gt;
+
+&lt;p&gt;Son olarak &lt;strong&gt;(&amp;mdash;)&lt;/strong&gt; kısmı bittikten sonra ekranda görünecek kısım için keyfinize göre bir paragraf ekleyin.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;İkinci dosyamız &lt;em&gt;goisforlovers.md&lt;/em&gt;&amp;lsquo;nin adını &lt;em&gt;ikinci_blog_yazisi.md&lt;/em&gt; olarak değiştirin. Açtıktan sonra &lt;strong&gt;title = &amp;ldquo;Hugo Aşktır&amp;rdquo;&lt;/strong&gt; ve **tags = [&amp;ldquo;aşk&amp;rdquo;, &amp;ldquo;sevgi&amp;rdquo;, &amp;ldquo;muhabbet&amp;rdquo;] ** değişikliklerini girin.&lt;/p&gt;
+
+&lt;p&gt;Paragraf olarak aşağıdaki gibi link içeren bir metin girin:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;Merhabalar bu bizim websitemiz. Yaptığımız birinci degisiklik sayfası [burada](/blog/birinci_blog_yazisi/). Hugo ile ilgili daha fazla bilgi [Hugo] websitesinde [hugo]: (&amp;lt;https://gohugo.io/)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Üçüncü ve son olarak &lt;em&gt;hugoisforlovers.md&lt;/em&gt; dosyasını değiştireceğiz. Dosyanın ismini &lt;em&gt;ucuncu_blog_yazisi.md&lt;/em&gt; olarak değiştirip &lt;strong&gt;Front Matter&lt;/strong&gt;&amp;lsquo;da bazı değişiklikler yapın. Etiket (tag) isimlerinden birini birinci dosya ile ortak belirleyin. Mesela &lt;strong&gt;&amp;ldquo;hugo sevgisi&amp;rdquo;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sonraki kısımda aşağıdaki paragrafı ekleyin:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;imaj koymak için imaj alt metninden sonra imaj yolunu ekleyelim.
+
+![guzel bir imaj](/ornek.png)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Not: Tabi şimdi ana klasör altında &lt;em&gt;static&lt;/em&gt; klasörünün içine herhangi bir png dosyası koymalı ve adını &lt;em&gt;ornek&lt;/em&gt; vermelisiniz.)&lt;/p&gt;
+
+&lt;h2 id=&#34;dosya-üretme-ekleme&#34;&gt;Dosya Üretme (Ekleme)&lt;/h2&gt;
+
+&lt;p&gt;Evet, sayfalarımızı birbirimize bağladık, sayfalarımıza resim ekledik. Başlıklarını değiştirdik. Tarihlerini makale sıralarını etkileyecek şekilde düzenledik. En yeni makale en üstte yer alır.&lt;/p&gt;
+
+&lt;p&gt;Dosya eklemek için en kısa yol varolan bir dosyayı kopyalayıp aynı yere yapıştırmak. Daha sonra adını değiştirip içini açabilir ve arzunuz doğrultusunda paragraflar ekleyebilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;anahat-değişiklikleri&#34;&gt;Anahat Değişiklikleri&lt;/h2&gt;
+
+&lt;p&gt;Bitirmeden anahat değişikliklerinden örnekler verelim. Anasayfada makale özetlerinden sonra gelen &lt;strong&gt;Read More&lt;/strong&gt; yazısını görmüş olmalısınız. bu yazıyı &lt;strong&gt;Daha Fazla&amp;hellip;&lt;/strong&gt; şeklinde Türkçeleştirelim.&lt;/p&gt;
+
+&lt;h3 id=&#34;multi-language-desteği&#34;&gt;Multi Language Desteği&lt;/h3&gt;
+
+&lt;p&gt;Şimdilik sadece bazı &lt;strong&gt;Hugo&lt;/strong&gt; temaları birden çok dil özelliğini destekliyor. Blackburn maalesef bunlardan biri değil. Öyle olsaydı basitçe ana klasör altında &lt;em&gt;data&lt;/em&gt; klasörüne girip içindeki &lt;strong&gt;i110&lt;/strong&gt; dosyasını &lt;strong&gt;Sublime&lt;/strong&gt; ile açarak tercümeleri girebilirdik.&lt;/p&gt;
+
+&lt;p&gt;Şimdi durum biraz daha karmaşık sayılır. Bu kez &lt;em&gt;themes&lt;/em&gt; klasörümüzün içinde bulunan &lt;em&gt;layout&lt;/em&gt; dosyalarımızda (tam olarak: &lt;code&gt;D:\siteler\deneme\themes\blackburn\layouts&lt;/code&gt;) &lt;strong&gt;Read More&lt;/strong&gt; metninin nerde bulunduğunu anlamaya çalışacağız.&lt;/p&gt;
+
+&lt;p&gt;Aramalarımızda metni &lt;em&gt;layouts&lt;/em&gt; altındaki &lt;em&gt;_default&lt;/em&gt; klasörünün içindeki &lt;code&gt;summary.html&lt;/code&gt; şablonunun (layout) içinde buluyoruz. Bu metni &lt;strong&gt;Daha Fazla&amp;hellip;&lt;/strong&gt; ile değiştiriyoruz.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt; {{ if .Truncated }}
+  &amp;lt;footer&amp;gt;
+    &amp;lt;a href=&amp;quot;{{ .RelPermalink }}&amp;quot;&amp;gt;Daha Fazla...&amp;lt;i class=&amp;quot;fa fa-angle-double-right fa-fw&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;/footer&amp;gt;
+  {{ end }}
+&amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bu şablon (layout) dosyasında da bir Font Awesome kütüphanesi &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/#site-gelişmiş-özellikler&#34;&gt;ikonu kullanıldığını&lt;/a&gt; ve bunu değiştirebileceğinizi fark ettiniz mi?&lt;/p&gt;
+
+&lt;h3 id=&#34;telif-bilgisi&#34;&gt;Telif Bilgisi&lt;/h3&gt;
+
+&lt;p&gt;Temalarda bu bilgi genelde &lt;code&gt;copyright.html&lt;/code&gt;, yada &lt;code&gt;footer.html&lt;/code&gt; altında bulunur. Blackburn temasında bu bilgi &lt;code&gt;copyright.html&lt;/code&gt;&amp;lsquo;de. (&lt;code&gt;D:\siteler\deneme\themes\blackburn\layouts\partials&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;Dosyayı açın ve en alttaki satırlardan üstte olanını &lt;strong&gt;Made with Love&lt;/strong&gt; yapın, diğer satırı ise silin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div&amp;gt;
+  &amp;lt;div class=&amp;quot;small-print&amp;quot;&amp;gt;
+    &amp;lt;small&amp;gt;{{ .Site.Copyright | safeHTML }}&amp;lt;/small&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;small-print&amp;quot;&amp;gt;
+    &amp;lt;small&amp;gt;Built with&amp;amp;nbsp;&amp;lt;a href=&amp;quot;https://gohugo.io/&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;Love&amp;lt;/a&amp;gt;&amp;lt;/small&amp;gt;
+
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;sosyal-medya&#34;&gt;Sosyal Medya&lt;/h3&gt;
+
+&lt;p&gt;Ana ekranda solda bulunan sosyal medya butonlarına bir ekleme yapalım. Twitter ve Facebook dışındakileri konfigurasyon dosyasından silin ve google = &amp;ldquo;google kullanıcı adınız&amp;rdquo; şeklinde bir satır girin.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[social]
+  # Link your social networking accouns to the side menu
+  # by entering your username or ID.
+  twitter = &amp;quot;twitter_kullanıcı_isminiz&amp;quot;
+  facebook = &amp;quot;facebook_kullanıcı_isminiz&amp;quot;
+  googleplus = &amp;quot;gplus kullanıcı adınız&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Altta Google+ simgesinin otomatik olarak geldiğini göreceksiniz.
+&lt;hr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-4/dosyalar.png&#34; alt=&#34;Hugo Tema Sayfaları&#34; /&gt; &lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-4/ara.png&#34; alt=&#34;Ara&#34; /&gt; &lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-4/sol_menu.png&#34; alt=&#34;Tema Sol Menü&#34; /&gt; &lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-4/ara.png&#34; alt=&#34;Ara&#34; /&gt; &lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-4/sablonlar.png&#34; alt=&#34;Hugo Tema Şablonları&#34; /&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Sanırım belli bir fikir edindiniz. Aslında konu benim anlatmaya çalıştığımdan çok daha kolay. Özellikle kullanım klavuzu biraz ingilizce biliyorsanız size çok daha iyi bir fikir verecektir.&lt;/p&gt;
+
+&lt;p&gt;Yarın son bölüm olarak sitemizi Github&amp;rsquo;a yükleyeceğiz artık.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme</title>

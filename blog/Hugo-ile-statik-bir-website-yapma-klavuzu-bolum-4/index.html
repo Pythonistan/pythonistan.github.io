@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Dördüncü Bölüm : Post Değişiklikleri // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-4">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@pyhtonistan">
+<meta property="twitter:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Dördüncü Bölüm : Post Değişiklikleri">
+<meta property="twitter:image" content="/img/blog/hugo-website-yapma-4/sayfalar_degisiklik.png">
+<meta property="twitter:description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-4">
+
+  <meta property="og:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Dördüncü Bölüm : Post Değişiklikleri" />
+<meta property="og:description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-4" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/" />
+
+<meta property="og:image" content="/img/blog/hugo-website-yapma-4/sayfalar_degisiklik.png" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://pythonistan.net//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+		<div id="nav-to-top">
+			<span class="decorative-marker">//</span><a href="#top">Başa Dön</a>
+		</div>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://pythonistan.net/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/hugo-website-yapma-3/website_made_by_hugo.jpg" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#sayfaların-sınıflandırılması-ve-kategoriler">Sayfaların Sınıflandırılması ve Kategoriler</a></li>
+<li><a href="#bölüm-sayfaları">Bölüm Sayfaları</a></li>
+<li><a href="#dosya-üretme-ekleme">Dosya Üretme (Ekleme)</a></li>
+<li><a href="#anahat-değişiklikleri">Anahat Değişiklikleri</a>
+<ul>
+<li><a href="#multi-language-desteği">Multi Language Desteği</a></li>
+<li><a href="#telif-bilgisi">Telif Bilgisi</a></li>
+<li><a href="#sosyal-medya">Sosyal Medya</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/">Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Dördüncü Bölüm : Post Değişiklikleri</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>31</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Aug</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-hugo" href="http://pythonistan.net//categories/hugo">Hugo</a>
+				
+					<a class="post-category post-category-website" href="http://pythonistan.net//categories/website">website</a>
+				
+					<a class="post-category post-category-statik-site-gelistiriciler" href="http://pythonistan.net//categories/statik-site-gelistiriciler">statik site gelistiriciler</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-4%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-4%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Hugo%20ile%20Statik%20Bir%20Websitesi%20Nas%c4%b1l%20Yap%c4%b1l%c4%b1r%3f%20-%20D%c3%b6rd%c3%bcnc%c3%bc%20B%c3%b6l%c3%bcm%20%3a%20Post%20De%c4%9fi%c5%9fiklikleri&url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-4%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/hugo-website-yapma-4/sayfalar_degisiklik.png" class="pure-img content-banner-image-inline"
+                                     style="
+                                            " />
+			
+
+            
+
+<p><strong>Hugo ile Statik Bir Website Nasıl Yapılır?</strong> yazı dizimizde son olarak Üçüncü Bölüm, <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/">Temamızı Özelleştirme</a>&lsquo;yi yayımlamıştık.</p>
+
+<p>Bu yazımızda sitemizin temasıyla hazır gelen <a href="/blog/Jekylldan-Hugoya-gecis/#hugo-da-dosya-düzeni">post sayfalarını</a> (<em>yani belirli bir kategori yada bölümün altında yer alan sayfalar</em>) düzenleyecek ve yeni sayfalar ekleyeceğiz.</p>
+
+<p>Bu yazıyla edit (düzeltme) işlemlerini bitirmeyi planlıyorum.</p>
+
+<h2 id="sayfaların-sınıflandırılması-ve-kategoriler">Sayfaların Sınıflandırılması ve Kategoriler</h2>
+
+<p><strong>Hugo</strong> da bölüm sayfaları genelde <em>content</em> klasörünün altındaki <em>post</em> klasörünün içinde bulunuyor.</p>
+
+<p><em>post</em> klasörünün ismini değiştirebilir (örn. <em>blog</em>), <em>post</em> klasörünün altına yeni klasörler ekleyip dosyalarınızı alt klasörlerin içine yerleştirebilirsiniz.</p>
+
+<p>Gerçi Hugo&rsquo;da <a href="/blog/Jekylldan-Hugoya-gecis/#front-matter">Front Matter</a>&lsquo;a eklediğiniz <strong>kategoriler</strong> (categories) ve <strong>etiketler</strong> (tags) ile dosyalarınızı istediğiniz şekilde gruplayabilir, sınıflandırabilirsiniz.</p>
+
+<p>Örneğin şu anda okumakta olduğunuz <strong><a href="/categories/hugo/">Hugo</a> ile statik bir website nasıl yapılır</strong> yazı dizisinin tüm yazılarını bulmak için bu sayfanın en üstünde yer alan <strong>renkli</strong> üç kategoriden birine tıklayabilirsiniz.</p>
+
+<p><img src="/img/blog/hugo-website-yapma-4/sayfa_kategoriler.png" alt="Sayfamın Kategorileri" /></p>
+
+<p><strong>Hugo</strong> aynı <strong>kategori</strong> özelliği taşıyan tüm sayfaları bir araya getirip otomatik olarak size sunacak.</p>
+
+<h2 id="bölüm-sayfaları">Bölüm Sayfaları</h2>
+
+<p>Spesifik tema örneğimize geri dönebiliriz. Blackburn temamız varsayılan olarak <em>post</em> klasörünün içinde 4 adet .md (markdown) dosyası ile geliyor. Tek tek dosyalarla oynayalım.</p>
+
+<p>Birinci dosyamız: <em>creating-a-new-theme.md</em> dosyası. Dosyanın adını <em>birinci_blog_yazisi.md</em> olarak değiştirin. Daha sonra iki kez tıklayarak içini açın.</p>
+
+<p>Dosyanın hemen başında <strong>(&mdash;)</strong> (bazen +++) işaretleri içinde bulunan kısma <a href="/blog/Jekylldan-Hugoya-gecis/#front-matter">Front Matter</a> denildiğini ve dosyanın özelliklerini belirlediğini daha önce belirtmiştim.</p>
+
+<p>Dosyanın başlığını <em>&ldquo;Hugo Aşktır&rdquo;</em> şeklinde değiştirelim. Tarihini (date) ise <strong>&ldquo;2015-01-09&rdquo;</strong> yapalım.</p>
+
+<p>Son olarak <strong>(&mdash;)</strong> kısmı bittikten sonra ekranda görünecek kısım için keyfinize göre bir paragraf ekleyin.</p>
+
+<hr>
+
+<p>İkinci dosyamız <em>goisforlovers.md</em>&lsquo;nin adını <em>ikinci_blog_yazisi.md</em> olarak değiştirin. Açtıktan sonra <strong>title = &ldquo;Hugo Aşktır&rdquo;</strong> ve **tags = [&ldquo;aşk&rdquo;, &ldquo;sevgi&rdquo;, &ldquo;muhabbet&rdquo;] ** değişikliklerini girin.</p>
+
+<p>Paragraf olarak aşağıdaki gibi link içeren bir metin girin:</p>
+
+<pre><code class="language-toml">Merhabalar bu bizim websitemiz. Yaptığımız birinci degisiklik sayfası [burada](/blog/birinci_blog_yazisi/). Hugo ile ilgili daha fazla bilgi [Hugo] websitesinde [hugo]: (&lt;https://gohugo.io/)
+</code></pre>
+
+<hr>
+
+<p>Üçüncü ve son olarak <em>hugoisforlovers.md</em> dosyasını değiştireceğiz. Dosyanın ismini <em>ucuncu_blog_yazisi.md</em> olarak değiştirip <strong>Front Matter</strong>&lsquo;da bazı değişiklikler yapın. Etiket (tag) isimlerinden birini birinci dosya ile ortak belirleyin. Mesela <strong>&ldquo;hugo sevgisi&rdquo;</strong>.</p>
+
+<p>Sonraki kısımda aşağıdaki paragrafı ekleyin:</p>
+
+<pre><code>imaj koymak için imaj alt metninden sonra imaj yolunu ekleyelim.
+
+![guzel bir imaj](/ornek.png)
+</code></pre>
+
+<p>(Not: Tabi şimdi ana klasör altında <em>static</em> klasörünün içine herhangi bir png dosyası koymalı ve adını <em>ornek</em> vermelisiniz.)</p>
+
+<h2 id="dosya-üretme-ekleme">Dosya Üretme (Ekleme)</h2>
+
+<p>Evet, sayfalarımızı birbirimize bağladık, sayfalarımıza resim ekledik. Başlıklarını değiştirdik. Tarihlerini makale sıralarını etkileyecek şekilde düzenledik. En yeni makale en üstte yer alır.</p>
+
+<p>Dosya eklemek için en kısa yol varolan bir dosyayı kopyalayıp aynı yere yapıştırmak. Daha sonra adını değiştirip içini açabilir ve arzunuz doğrultusunda paragraflar ekleyebilirsiniz.</p>
+
+<h2 id="anahat-değişiklikleri">Anahat Değişiklikleri</h2>
+
+<p>Bitirmeden anahat değişikliklerinden örnekler verelim. Anasayfada makale özetlerinden sonra gelen <strong>Read More</strong> yazısını görmüş olmalısınız. bu yazıyı <strong>Daha Fazla&hellip;</strong> şeklinde Türkçeleştirelim.</p>
+
+<h3 id="multi-language-desteği">Multi Language Desteği</h3>
+
+<p>Şimdilik sadece bazı <strong>Hugo</strong> temaları birden çok dil özelliğini destekliyor. Blackburn maalesef bunlardan biri değil. Öyle olsaydı basitçe ana klasör altında <em>data</em> klasörüne girip içindeki <strong>i110</strong> dosyasını <strong>Sublime</strong> ile açarak tercümeleri girebilirdik.</p>
+
+<p>Şimdi durum biraz daha karmaşık sayılır. Bu kez <em>themes</em> klasörümüzün içinde bulunan <em>layout</em> dosyalarımızda (tam olarak: <code>D:\siteler\deneme\themes\blackburn\layouts</code>) <strong>Read More</strong> metninin nerde bulunduğunu anlamaya çalışacağız.</p>
+
+<p>Aramalarımızda metni <em>layouts</em> altındaki <em>_default</em> klasörünün içindeki <code>summary.html</code> şablonunun (layout) içinde buluyoruz. Bu metni <strong>Daha Fazla&hellip;</strong> ile değiştiriyoruz.</p>
+
+<pre><code class="language-html"> {{ if .Truncated }}
+  &lt;footer&gt;
+    &lt;a href=&quot;{{ .RelPermalink }}&quot;&gt;Daha Fazla...&lt;i class=&quot;fa fa-angle-double-right fa-fw&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/footer&gt;
+  {{ end }}
+&lt;/article&gt;
+</code></pre>
+
+<p>Bu şablon (layout) dosyasında da bir Font Awesome kütüphanesi <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/#site-gelişmiş-özellikler">ikonu kullanıldığını</a> ve bunu değiştirebileceğinizi fark ettiniz mi?</p>
+
+<h3 id="telif-bilgisi">Telif Bilgisi</h3>
+
+<p>Temalarda bu bilgi genelde <code>copyright.html</code>, yada <code>footer.html</code> altında bulunur. Blackburn temasında bu bilgi <code>copyright.html</code>&lsquo;de. (<code>D:\siteler\deneme\themes\blackburn\layouts\partials</code>)</p>
+
+<p>Dosyayı açın ve en alttaki satırlardan üstte olanını <strong>Made with Love</strong> yapın, diğer satırı ise silin.</p>
+
+<pre><code class="language-html">&lt;div&gt;
+  &lt;div class=&quot;small-print&quot;&gt;
+    &lt;small&gt;{{ .Site.Copyright | safeHTML }}&lt;/small&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;small-print&quot;&gt;
+    &lt;small&gt;Built with&amp;nbsp;&lt;a href=&quot;https://gohugo.io/&quot; target=&quot;_blank&quot;&gt;Love&lt;/a&gt;&lt;/small&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3 id="sosyal-medya">Sosyal Medya</h3>
+
+<p>Ana ekranda solda bulunan sosyal medya butonlarına bir ekleme yapalım. Twitter ve Facebook dışındakileri konfigurasyon dosyasından silin ve google = &ldquo;google kullanıcı adınız&rdquo; şeklinde bir satır girin.</p>
+
+<pre><code class="language-toml">[social]
+  # Link your social networking accouns to the side menu
+  # by entering your username or ID.
+  twitter = &quot;twitter_kullanıcı_isminiz&quot;
+  facebook = &quot;facebook_kullanıcı_isminiz&quot;
+  googleplus = &quot;gplus kullanıcı adınız&quot;
+</code></pre>
+
+<p>Altta Google+ simgesinin otomatik olarak geldiğini göreceksiniz.
+<hr></p>
+
+<p><img src="/img/blog/hugo-website-yapma-4/dosyalar.png" alt="Hugo Tema Sayfaları" /> <img src="/img/blog/hugo-website-yapma-4/ara.png" alt="Ara" /> <img src="/img/blog/hugo-website-yapma-4/sol_menu.png" alt="Tema Sol Menü" /> <img src="/img/blog/hugo-website-yapma-4/ara.png" alt="Ara" /> <img src="/img/blog/hugo-website-yapma-4/sablonlar.png" alt="Hugo Tema Şablonları" /></p>
+
+<hr>
+
+<p>Sanırım belli bir fikir edindiniz. Aslında konu benim anlatmaya çalıştığımdan çok daha kolay. Özellikle kullanım klavuzu biraz ingilizce biliyorsanız size çok daha iyi bir fikir verecektir.</p>
+
+<p>Yarın son bölüm olarak sitemizi Github&rsquo;a yükleyeceğiz artık.</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-4%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-4%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Hugo%20ile%20Statik%20Bir%20Websitesi%20Nas%c4%b1l%20Yap%c4%b1l%c4%b1r%3f%20-%20D%c3%b6rd%c3%bcnc%c3%bc%20B%c3%b6l%c3%bcm%20%3a%20Post%20De%c4%9fi%c5%9fiklikleri&url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-4%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-hugo-ile-website-yapma" href="http://pythonistan.net//tags/hugo-ile-website-yapma">Hugo ile website yapma</a>,
+	                
+	                <a class="post-tag post-tag-website-sayfalar%C4%B1n%C4%B1-%C3%B6zelle%C5%9Ftirme" href="http://pythonistan.net//tags/website-sayfalar%C4%B1n%C4%B1-%C3%B6zelle%C5%9Ftirme">website sayfalarını özelleştirme</a>,
+	                
+	                <a class="post-tag post-tag-kolay-ve-%C3%BCcretsiz-website-yapma" href="http://pythonistan.net//tags/kolay-ve-%C3%BCcretsiz-website-yapma">kolay ve ücretsiz website yapma</a>,
+	                
+	                <a class="post-tag post-tag-statik-site-geli%C5%9Ftiricisi" href="http://pythonistan.net//tags/statik-site-geli%C5%9Ftiricisi">statik site geliştiricisi</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/">Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Üçüncü Bölüm : Temamızı Özelleştirme</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'http:\/\/pythonistan.net\/blog\/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4\/';
+    var disqus_title = 'Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Dördüncü Bölüm : Post Değişiklikleri';
+    var disqus_url = 'http:\/\/pythonistan.net\/blog\/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+		<script type="text/javascript">
+			onscroll = function() {
+			  var toTopVisible = false;
+			  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			  if (scrollTop > 1000) {
+			    if (!toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'block';
+			    }
+			  } else {
+			    if (scrollTop < 1000 || toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'none';
+			    }
+			  }
+			};
+		</script>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>
