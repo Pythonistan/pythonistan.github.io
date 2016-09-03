@@ -43,15 +43,15 @@
 
 &lt;p&gt;Birinci dosyamız: &lt;em&gt;creating-a-new-theme.md&lt;/em&gt; dosyası. Dosyanın adını &lt;em&gt;birinci_blog_yazisi.md&lt;/em&gt; olarak değiştirin. Daha sonra iki kez tıklayarak içini açın.&lt;/p&gt;
 
-&lt;p&gt;Dosyanın hemen başında &lt;strong&gt;(&amp;mdash;)&lt;/strong&gt; (bazen +++) işaretleri içinde bulunan kısma &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#front-matter&#34;&gt;Front Matter&lt;/a&gt; denildiğini ve dosyanın özelliklerini belirlediğini daha önce belirtmiştim.&lt;/p&gt;
+&lt;p&gt;Dosyanın hemen başında &lt;code&gt;(---)&lt;/code&gt; (bazen +++) işaretleri içinde bulunan kısma &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#front-matter&#34;&gt;Front Matter&lt;/a&gt; denildiğini ve dosyanın özelliklerini belirlediğini daha önce belirtmiştim.&lt;/p&gt;
 
 &lt;p&gt;Dosyanın başlığını &lt;em&gt;&amp;ldquo;Hugo Aşktır&amp;rdquo;&lt;/em&gt; şeklinde değiştirelim. Tarihini (date) ise &lt;strong&gt;&amp;ldquo;2015-01-09&amp;rdquo;&lt;/strong&gt; yapalım.&lt;/p&gt;
 
-&lt;p&gt;Son olarak &lt;strong&gt;(&amp;mdash;)&lt;/strong&gt; kısmı bittikten sonra ekranda görünecek kısım için keyfinize göre bir paragraf ekleyin.&lt;/p&gt;
+&lt;p&gt;Son olarak &lt;code&gt;(---)&lt;/code&gt; kısmı bittikten sonra ekranda görünecek kısım için keyfinize göre bir paragraf ekleyin.&lt;/p&gt;
 
 &lt;hr&gt;
 
-&lt;p&gt;İkinci dosyamız &lt;em&gt;goisforlovers.md&lt;/em&gt;&amp;lsquo;nin adını &lt;em&gt;ikinci_blog_yazisi.md&lt;/em&gt; olarak değiştirin. Açtıktan sonra &lt;strong&gt;title = &amp;ldquo;Hugo Aşktır&amp;rdquo;&lt;/strong&gt; ve **tags = [&amp;ldquo;aşk&amp;rdquo;, &amp;ldquo;sevgi&amp;rdquo;, &amp;ldquo;muhabbet&amp;rdquo;] ** değişikliklerini girin.&lt;/p&gt;
+&lt;p&gt;İkinci dosyamız &lt;em&gt;goisforlovers.md&lt;/em&gt;&amp;lsquo;nin adını &lt;em&gt;ikinci_blog_yazisi.md&lt;/em&gt; olarak değiştirin. Açtıktan sonra &lt;strong&gt;title = &amp;ldquo;Hugo Aşktır&amp;rdquo;&lt;/strong&gt; ve &lt;strong&gt;tags = [&amp;ldquo;aşk&amp;rdquo;, &amp;ldquo;sevgi&amp;rdquo;, &amp;ldquo;muhabbet&amp;rdquo;]&lt;/strong&gt; değişikliklerini girin.&lt;/p&gt;
 
 &lt;p&gt;Paragraf olarak aşağıdaki gibi link içeren bir metin girin:&lt;/p&gt;
 
@@ -73,9 +73,9 @@
 
 &lt;h2 id=&#34;dosya-üretme-ekleme&#34;&gt;Dosya Üretme (Ekleme)&lt;/h2&gt;
 
-&lt;p&gt;Evet, sayfalarımızı birbirimize bağladık, sayfalarımıza resim ekledik. Başlıklarını değiştirdik. Tarihlerini makale sıralarını etkileyecek şekilde düzenledik. En yeni makale en üstte yer alır.&lt;/p&gt;
+&lt;p&gt;Evet, sayfalarımızı birbirimize bağladık, sayfalarımıza resim ekledik. Başlıklarını değiştirdik. Tarihlerini makale sıralarını etkileyecek şekilde düzenledik. En yeni makale en üstte yer alır. Yeni dosya üretmeye geldi sıra&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;Dosya eklemek için en kısa yol varolan bir dosyayı kopyalayıp aynı yere yapıştırmak. Daha sonra adını değiştirip içini açabilir ve arzunuz doğrultusunda paragraflar ekleyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Dosya eklemek (üretmek) için en kısa yol varolan bir dosyayı kopyalayıp aynı yere yapıştırmak. Daha sonra dosyanıza yeni bir ad verip içini açabilir ve arzunuz doğrultusunda içeriğini düzenleyebilirsiniz.&lt;/p&gt;
 
 &lt;h2 id=&#34;anahat-değişiklikleri&#34;&gt;Anahat Değişiklikleri&lt;/h2&gt;
 
@@ -85,7 +85,7 @@
 
 &lt;p&gt;Şimdilik sadece bazı &lt;strong&gt;Hugo&lt;/strong&gt; temaları birden çok dil özelliğini destekliyor. Blackburn maalesef bunlardan biri değil. Öyle olsaydı basitçe ana klasör altında &lt;em&gt;data&lt;/em&gt; klasörüne girip içindeki &lt;strong&gt;i110&lt;/strong&gt; dosyasını &lt;strong&gt;Sublime&lt;/strong&gt; ile açarak tercümeleri girebilirdik.&lt;/p&gt;
 
-&lt;p&gt;Şimdi durum biraz daha karmaşık sayılır. Bu kez &lt;em&gt;themes&lt;/em&gt; klasörümüzün içinde bulunan &lt;em&gt;layout&lt;/em&gt; dosyalarımızda (tam olarak: &lt;code&gt;D:\siteler\deneme\themes\blackburn\layouts&lt;/code&gt;) &lt;strong&gt;Read More&lt;/strong&gt; metninin nerde bulunduğunu anlamaya çalışacağız.&lt;/p&gt;
+&lt;p&gt;Şimdi durum biraz daha karmaşık sayılır. Bu kez &lt;em&gt;themes&lt;/em&gt; klasörümüzün içinde bulunan &lt;em&gt;layout&lt;/em&gt; dosyalarımızda (yeri tam olarak şurada: &lt;code&gt;D:\siteler\deneme\themes\blackburn\layouts&lt;/code&gt;) &lt;strong&gt;Read More&lt;/strong&gt; metninin nerde bulunduğunu anlamaya çalışacağız.&lt;/p&gt;
 
 &lt;p&gt;Aramalarımızda metni &lt;em&gt;layouts&lt;/em&gt; altındaki &lt;em&gt;_default&lt;/em&gt; klasörünün içindeki &lt;code&gt;summary.html&lt;/code&gt; şablonunun (layout) içinde buluyoruz. Bu metni &lt;strong&gt;Daha Fazla&amp;hellip;&lt;/strong&gt; ile değiştiriyoruz.&lt;/p&gt;
 
@@ -97,7 +97,7 @@
 &amp;lt;/article&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Bu şablon (layout) dosyasında da bir Font Awesome kütüphanesi &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/#site-gelişmiş-özellikler&#34;&gt;ikonu kullanıldığını&lt;/a&gt; ve bunu değiştirebileceğinizi fark ettiniz mi?&lt;/p&gt;
+&lt;p&gt;Bu şablon (layout) dosyasında da bir Font Awesome kütüphanesi &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/#site-gelişmiş-özellikler&#34;&gt;ikonu kullanıldığını&lt;/a&gt; ve bu ikonu yukarıdaki örnekteki gibi değiştirebileceğinizi fark ettiniz mi?&lt;/p&gt;
 
 &lt;h3 id=&#34;telif-bilgisi&#34;&gt;Telif Bilgisi&lt;/h3&gt;
 
@@ -118,7 +118,7 @@
 
 &lt;h3 id=&#34;sosyal-medya&#34;&gt;Sosyal Medya&lt;/h3&gt;
 
-&lt;p&gt;Ana ekranda solda bulunan sosyal medya butonlarına bir ekleme yapalım. Twitter ve Facebook dışındakileri konfigurasyon dosyasından silin ve google = &amp;ldquo;google kullanıcı adınız&amp;rdquo; şeklinde bir satır girin.&lt;/p&gt;
+&lt;p&gt;Ana ekranda solda bulunan sosyal medya butonlarına bir ekleme yapalım. Twitter ve Facebook dışındakileri konfigurasyon dosyasından &lt;em&gt;(config.toml)&lt;/em&gt; silin ve googleplus = &amp;ldquo;gplus kullanıcı adınız&amp;rdquo; şeklinde bir satır girin. (buraya varsa googleplus kullanıcı ismini gireceksiniz.)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[social]
   # Link your social networking accouns to the side menu

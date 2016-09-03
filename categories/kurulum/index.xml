@@ -139,7 +139,7 @@
 
 &lt;p&gt;Bu şekilde çok değerli olan kaynak kodumuza gelecek zararları önleneyebiliriz.&lt;/p&gt;
 
-&lt;p&gt;Git&amp;rsquo;in mucidi Linux&amp;rsquo;un da ilk geliştiricisi olan Linus Torvalds.&lt;/p&gt;
+&lt;p&gt;Git&amp;rsquo;in mucidi Linux&amp;rsquo;un da ilk geliştiricisi olan &lt;a href = &#34;https://tr.wikipedia.org/wiki/Linus_Torvalds&#34; target = &#34;_blank&#34; &gt; Linus Torvalds&lt;a/&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;git-bizim-için-anlamı&#34;&gt;Git : Bizim İçin Anlamı&lt;/h3&gt;
 
@@ -151,7 +151,7 @@
 
 &lt;p&gt;Böyle bir çalışmayı şu ana kadar yaptıysanız bazen yapmamanız gereken bir hata yaptığınızı, eklememeniz gereken bir şeyi eklediğinizi bazen de tersini yaptığınızı görmüşsünüzdür. Dolayısıyla kaçırdığınız bir şeyler hep olur.&lt;/p&gt;
 
-&lt;p&gt;Bazen de ana dosyanın üzerine kaydetmeyip farklı kaydet seçeneğini kullanarak birbirinin benzeri onlarca dosya oluşturduğunuzu şaşkınlıkla görür, hangisini en son oluşturduğunuzu anlamak için bir sürü zahmet çekersiniz.&lt;/p&gt;
+&lt;p&gt;Bazen de ana dosyanın üzerine kaydetmeyip &lt;code&gt;farklı kaydet&lt;/code&gt; seçeneğini kullanarak birbirinin benzeri onlarca dosya oluşturduğunuzu şaşkınlıkla görür, hangisini en son oluşturduğunuzu anlamak için bir sürü zahmet çekersiniz.&lt;/p&gt;
 
 &lt;p&gt;Bazen bir dosyada bulunan bir bilgi diğerinde bulunmaz, o dosyadan diğer dosyaya taşımanız gerekir. Kısaca büyük bir zahmettir.&lt;/p&gt;
 
@@ -159,15 +159,15 @@
 
 &lt;h3 id=&#34;git-master-ve-branch&#34;&gt;Git : Master ve Branch&lt;/h3&gt;
 
-&lt;p&gt;Git bu tür durumlar için dosyanın ana kopyası (master) ve yukarıdaki örnekteki gibi kaydedilen diğer versiyonlar için branş kopyası (branch) konseptini sunuyor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; bu tür durumlar için dosyanın ana kopyası (&lt;em&gt;master&lt;/em&gt;) ve yukarıdaki örnekteki gibi kaydedilen diğer versiyonlar için branş kopyası (&lt;em&gt;branch&lt;/em&gt;) konseptini sunuyor.&lt;/p&gt;
 
 &lt;p&gt;Bir ana dal ve yüzlerce farklı noktadan onlarca katkı verenin oluşturduğu dallardan oluşan bir ağaç gibi düşünün.&lt;/p&gt;
 
-&lt;p&gt;Branşda oluşan değişikliklerden memnunsanız branşı ana dala bağlayabilirsiniz. (merge)&lt;/p&gt;
+&lt;p&gt;Branşda oluşan değişikliklerden memnunsanız branşı ana dala bağlayabilirsiniz. (&lt;em&gt;merge&lt;/em&gt;)&lt;/p&gt;
 
 &lt;p&gt;Memnun değilseniz iptal edip ana kopyadan yeni bir dal oluşturabilir, kullanmadığınız dalları iptal edebilirsiniz.&lt;/p&gt;
 
-&lt;p&gt;Dosyalarımız &lt;code&gt;git&lt;/code&gt; sisteminde otomatik olarak yedeklenir. Herhangi bir anda dosya üzerinde o ana kadar yapılan düzeltmeleri (commit) görebilir (&lt;code&gt;git status&lt;/code&gt;) ve herhangi bir andaki duruma (statüye) dönebilirsiniz. (&lt;code&gt;git reset --hard statü.nosu&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Dosyalarımız &lt;code&gt;git&lt;/code&gt; sisteminde otomatik olarak yedeklenir. Herhangi bir anda dosya üzerinde o ana kadar yapılan düzeltmeleri (&lt;code&gt;commit&lt;/code&gt;) görebilir (&lt;code&gt;git status&lt;/code&gt;) ve herhangi bir andaki duruma (statüye) dönebilirsiniz. (&lt;code&gt;git reset --hard statü.nosu&lt;/code&gt;)&lt;/p&gt;
 
 &lt;h3 id=&#34;git-repository-depo&#34;&gt;Git : Repository (Depo)&lt;/h3&gt;
 
@@ -177,7 +177,7 @@
 
 &lt;h2 id=&#34;git-bizi-asıl-ilgilendiren-komutlar&#34;&gt;Git : Bizi Asıl İlgilendiren Komutlar&lt;/h2&gt;
 
-&lt;p&gt;Git sistemi gerçekten çook geniş ve başlı başına uzmanlaşılabilecek bir alan. Biz asıl olarak &lt;code&gt;git&lt;/code&gt; ile bir web server&amp;rsquo;a ulaşmak ve oradan birşeyler indirmek (pull - clone), Git sistemini kullanan en önemli sitelerden biri olan Github&amp;rsquo;a dosya yüklemek (push), repo oluşturup (init), repoya yapacağımız son değişiklikleri güncelleyip düzeltmek (commit) gibi işlemler yapacağız.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; sistemi gerçekten çook geniş ve başlı başına uzmanlaşılabilecek bir alan. Biz asıl olarak &lt;code&gt;git&lt;/code&gt; ile bir web server&amp;rsquo;a ulaşmak ve oradan birşeyler indirmek (pull - clone), Git sistemini kullanan en önemli sitelerden biri olan Github&amp;rsquo;a dosya yüklemek (push), repo oluşturup (init), repoya yapacağımız son değişiklikleri güncelleyip düzeltmek (commit) gibi işlemler yapacağız.&lt;/p&gt;
 
 &lt;p&gt;Hadi başlayalım.&lt;/p&gt;
 
@@ -210,7 +210,7 @@
 
 &lt;p&gt;Kayıttan sonra kayıt sırasında verdiğiniz mail adresinize bir teyit maili gelecektir, onu teyit edin.&lt;/p&gt;
 
-&lt;p&gt;Kayıt işlemi tamamlandıysa şimdi ana ekranda Start a project düğmesine tıklayın. Reponuza test adını verin ve Create Repository düğmesine tıklayarak reponuzu oluşturun. (üstteki büyük resim)&lt;/p&gt;
+&lt;p&gt;Kayıt işlemi tamamlandıysa şimdi ana ekranda &lt;code&gt;Start a project&lt;/code&gt; düğmesine tıklayın. Reponuza &lt;em&gt;test&lt;/em&gt; adını verin ve &lt;code&gt;Create Repository&lt;/code&gt; düğmesine tıklayarak reponuzu oluşturun. (üstteki büyük resim)&lt;/p&gt;
 
 &lt;h3 id=&#34;github-a-yükleme-yapalım&#34;&gt;Github&amp;rsquo;a Yükleme Yapalım&lt;/h3&gt;
 

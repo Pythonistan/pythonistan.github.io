@@ -6,8 +6,96 @@
     <description>Recent content in Github on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Sun, 21 Aug 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 01 Sep 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="http://pythonistan.net/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Beşinci Bölüm : Sitemizi Github&#39;da Yayınlayalım</title>
+      <link>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/</link>
+      <pubDate>Thu, 01 Sep 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/</guid>
+      <description>
+
+&lt;p&gt;Nihayet bugün, &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimizi &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/&#34;&gt;beşinci bölümü&lt;/a&gt; ile sonlandırıyoruz.&lt;/p&gt;
+
+&lt;p&gt;Birinci bölümde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Hugo kurulumunu&lt;/a&gt;, ikinci bölümde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile Siteyi Lokal Bilgisayarda Oluşturma&lt;/a&gt;&amp;lsquo;yı, üçüncü bölümde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;Temamızı Özelleştirme&lt;/a&gt;&amp;lsquo;yi, dördüncü bölümde ise &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/&#34;&gt;post sayfalarını editleme&lt;/a&gt; konusunu işlemiştik.&lt;/p&gt;
+
+&lt;p&gt;Bugünkü konumuz, sitemizi ücretsiz olarak &lt;strong&gt;Github&lt;/strong&gt;&amp;lsquo;da barındırma ve bu işlemi &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;git&lt;/a&gt; vasıtası ile nasıl yapacağımız.&lt;/p&gt;
+
+&lt;h2 id=&#34;github-hakkında&#34;&gt;Github Hakkında&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; yazılım geliştiricilerin kullandığı Dünya&amp;rsquo;nın en önemli ortak - paylaşılan sitelerinden biri (hub). Bu site 5 milyondan fazla açık kaynak kodlu yazılıma ev sahipliği yapıyor.&lt;/p&gt;
+
+&lt;p&gt;Özellikle açık kaynak kodlu (&lt;em&gt;open source&lt;/em&gt;) yazılımlar &lt;strong&gt;Github&lt;/strong&gt;&amp;lsquo;a yükleniyor ve Dünyanın her tarafından programcılar bu yazılımları her an geliştirme ve destekleme şansı elde ediyorlar.&lt;/p&gt;
+
+&lt;p&gt;Siz de herhangi bir projeye destek vermek isterseniz yapmanız gereken yazılım projesini bilgisayarınıza indirmek (&lt;code&gt;fork-clone&lt;/code&gt;) ve yazılım üzerinde yaptığınız değişiklikleri tekrar Github&amp;rsquo;a yüklemek. (&lt;code&gt;pull request&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;Yaptığınız değişikliklerin projeye eklenebilmesi için projeyi sürdürenlerin onaylaması gerekiyor.&lt;/p&gt;
+
+&lt;h2 id=&#34;github-ı-ücretsiz-hosting-servisi-olarak-kullanmak&#34;&gt;Github&amp;rsquo;ı Ücretsiz Hosting Servisi Olarak Kullanmak&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; aynı zamanda &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;(Jekyll, Hugo)&lt;/a&gt; v.s. ssgler ile yapılan statik web sitelerine ücretsiz barındırma servisi (hosting) sağlaması ile göz dolduruyor.&lt;/p&gt;
+
+&lt;p&gt;Bu sayede kendi blogunuzu teorik olarak &lt;strong&gt;0&lt;/strong&gt; masrafla hayata geçirmeniz mümkün. (Hosting masrafı dışında bir websitenin tek masrafı -eğer alacaksanız- custom domain ücretidir.)&lt;/p&gt;
+
+&lt;p&gt;Sitenize özel bir domain ismi almak isterseniz &lt;strong&gt;.com&lt;/strong&gt; ve &lt;strong&gt;.net&lt;/strong&gt; gibi çok kullanılanlar dışındaki domainleri bedavaya getirebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; görüp görebileceğiniz en sağlam (stabil) hosting servislerinden, site yüzbinlerce geliştiriciye hizmet verdiğinden 365 gün full hizmete açık. Down (hizmet dışı kalma) istisna süresi 0.0001% seviyesinde.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; hakkında daha önce oldukça bilgi vermiştim zaten. Lütfen o &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;makaleme&lt;/a&gt; bir göz atın.&lt;/p&gt;
+
+&lt;h3 id=&#34;github-a-giriş&#34;&gt;Github&amp;rsquo;a Giriş&lt;/h3&gt;
+
+&lt;p&gt;Github&amp;rsquo;ı kullanmak için üye olmak gerekiyor. &lt;strong&gt;Github&lt;/strong&gt; &lt;a href =&#34;https://github.com/&#34; target = &#34;_blank&#34;&gt; ana sayfasında&lt;/a&gt; üye olun (Sign Up) ve kendinize bir kullanıcı ismi belirleyin.&lt;/p&gt;
+
+&lt;p&gt;Kullanıcı isminiz ile giriş yaptığınızda ana sayfada &lt;code&gt;Start a project&lt;/code&gt; düğmesine basın. Projenize &lt;em&gt;kullanıcıisminiz.github.io&lt;/em&gt; ismini verin ve &lt;code&gt;Create repository&lt;/code&gt; yeşil düğmesine basın. (&amp;#8593;)&lt;/p&gt;
+
+&lt;h2 id=&#34;web-site-dosyalarımızı-hazırlayalım&#34;&gt;Web Site Dosyalarımızı Hazırlayalım&lt;/h2&gt;
+
+&lt;p&gt;Sitemizi &lt;a href=&#34;http://pythonistan.net/categories/hugo/&#34;&gt;yapıp bitirdik&lt;/a&gt;, son olarak sitemizin ana klasöründe &lt;code&gt;hugo&lt;/code&gt; komutunu verdik ve &lt;strong&gt;Github&lt;/strong&gt;&amp;lsquo;a yükleyeceğimiz dosyalar site ana klasörünün altında yeni oluşturulan &lt;em&gt;public&lt;/em&gt; klasörümüzün altında hazır. (Foto 1 ve 2)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-5/hugo_generating_website.png&#34; alt=&#34;Hugo Websiteyi Oluşturdu - Generate&#34; /&gt;
+&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-5/hugo_public_klasoru.png&#34; alt=&#34;Hugo Public Klasörü Görüntüsü&#34; /&gt; &lt;br&gt;&lt;em&gt;&amp;ldquo;Foto1: Hugo Websiteyi Oluşturdu - Generate&amp;rdquo; &amp;mdash; &amp;ldquo;Foto2: Hugo Public Klasörü Görüntüsü&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ÖNEMLİ NOT&lt;/strong&gt;: Siteyi generate etmeden (yani &lt;code&gt;hugo&lt;/code&gt; komutunu vermeden önce) konfigürasyon dosyanızdaki (&lt;em&gt;config.toml&lt;/em&gt;) baseURL kısmının karşısında &amp;ldquo;&lt;a href=&#34;https://kullanıcıadınız.github.io&amp;quot;&#34;&gt;https://kullanıcıadınız.github.io&amp;quot;&lt;/a&gt; yazdığınızdan emin olun.&lt;/p&gt;
+
+&lt;p&gt;Yukarıdaki işlemi yapmadan siteyi oluşturduysanız &lt;em&gt;public&lt;/em&gt; klasörünü silin, bu işlemi yapın ve sonrasında siteyi tekrar oluşturun(&lt;code&gt;hugo&lt;/code&gt;). Aksi halde Github&amp;rsquo;da tema şablonlarını doğru olarak göremeyebilirsiniz.&lt;/p&gt;
+
+&lt;h3 id=&#34;web-sitemize-de-hadi-git-gari-diyoruz&#34;&gt;Web Sitemize &amp;lsquo;de hadi &amp;ldquo;git&amp;rdquo; gari&amp;rsquo; Diyoruz&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Şimdi *public* klasörüne Powershell ile gidin. (D:\siteler\deneme\public)
+2. Github&#39;a yüklemek için bunu bir proje olarak tanıtalım. `git init` komutunu verin.
+3. Klasör içindeki her şeyi komit için eklemek üzere işaretleyin. `git add .`
+4. Dosyaları komitle. `git commit -m &amp;quot;ilk komitimiz&amp;quot;
+5. Şimdi uzak sunucuyu tanıtalım. `git remote add origin https://github.com/kullaniciadiniz/kullaniciadiniz.github.io.git`
+6. Evet, şimdi gidiyoruz: `git push -u origin master`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; bize kullanıcı adımızı ve parolamızı soracak. Onlara cevap verin ve en geç 3 saniye içinde sitemiz yüklenmiş olacak. 1-2 saniye de sitenin kendine gelmesini bekleyin. Sitenizi tarayıcınızda açtığınızda artık sitenizin webde olduğunu göreceksiniz. Vauv!&lt;/p&gt;
+
+&lt;h2 id=&#34;sitenize-custom-özel-domain-ismi-verme&#34;&gt;Sitenize Custom (Özel) Domain İsmi Verme&lt;/h2&gt;
+
+&lt;p&gt;kullanıcıisminiz.github.io ismi herkes için uygun olmayabilir. Siz daha profesyonel görünme adına ornek.net / www.ornek.com gibi bir isim kullanmak isteyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; özel &lt;em&gt;domain&lt;/em&gt; isimleri için destek sağlıyor. İsminizi aldıktan sonra yapmanız gereken &lt;strong&gt;iki&lt;/strong&gt; (2) şey var:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Domaini aldığınız şirketin control panelinde bir &lt;strong&gt;CNAME&lt;/strong&gt; kaydı (duruma göre &lt;strong&gt;A record&lt;/strong&gt;) oluşturup buraya Github&amp;rsquo;ın IP adreslerini vermek.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CNAME&lt;/strong&gt; isimli bir metin dosyası oluşturup bu dosyanın içine &lt;em&gt;domain&lt;/em&gt; isminiz ne ise onu yazarak (örnek: www.domainisminiz.com) dosyayı sitenin &lt;em&gt;static&lt;/em&gt; klasörünün içine atmak.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Detaylı bilgiye &lt;a href = &#34;https://help.github.com/articles/using-a-custom-domain-with-github-pages/&#34; target = &#34;_blank&#34;&gt; Github destek sayfaları&lt;/a&gt;ndan ulaşabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/hugo-website-yapma-5/hugo_sitemiz_githuba_yuklendi.png&#34; alt=&#34;Sitemizin Github&#39;a Yüklenmiş Görüntüsü&#34; /&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Şükür, &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimiz burada bitti. Bitmeyeceğini sanmıştım bir an.&lt;/p&gt;
+
+&lt;p&gt;Umarım faydalı olmuştur. Seride daha detaylı açıklamaya ihtiyaç duyduğunuz konuları sormaktan çekinmeyin lütfen. İyi çalışmalar&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Git Nedir? Nerede ve Nasıl Kullanılır?</title>
@@ -33,7 +121,7 @@
 
 &lt;p&gt;Bu şekilde çok değerli olan kaynak kodumuza gelecek zararları önleneyebiliriz.&lt;/p&gt;
 
-&lt;p&gt;Git&amp;rsquo;in mucidi Linux&amp;rsquo;un da ilk geliştiricisi olan Linus Torvalds.&lt;/p&gt;
+&lt;p&gt;Git&amp;rsquo;in mucidi Linux&amp;rsquo;un da ilk geliştiricisi olan &lt;a href = &#34;https://tr.wikipedia.org/wiki/Linus_Torvalds&#34; target = &#34;_blank&#34; &gt; Linus Torvalds&lt;a/&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;git-bizim-için-anlamı&#34;&gt;Git : Bizim İçin Anlamı&lt;/h3&gt;
 
@@ -45,7 +133,7 @@
 
 &lt;p&gt;Böyle bir çalışmayı şu ana kadar yaptıysanız bazen yapmamanız gereken bir hata yaptığınızı, eklememeniz gereken bir şeyi eklediğinizi bazen de tersini yaptığınızı görmüşsünüzdür. Dolayısıyla kaçırdığınız bir şeyler hep olur.&lt;/p&gt;
 
-&lt;p&gt;Bazen de ana dosyanın üzerine kaydetmeyip farklı kaydet seçeneğini kullanarak birbirinin benzeri onlarca dosya oluşturduğunuzu şaşkınlıkla görür, hangisini en son oluşturduğunuzu anlamak için bir sürü zahmet çekersiniz.&lt;/p&gt;
+&lt;p&gt;Bazen de ana dosyanın üzerine kaydetmeyip &lt;code&gt;farklı kaydet&lt;/code&gt; seçeneğini kullanarak birbirinin benzeri onlarca dosya oluşturduğunuzu şaşkınlıkla görür, hangisini en son oluşturduğunuzu anlamak için bir sürü zahmet çekersiniz.&lt;/p&gt;
 
 &lt;p&gt;Bazen bir dosyada bulunan bir bilgi diğerinde bulunmaz, o dosyadan diğer dosyaya taşımanız gerekir. Kısaca büyük bir zahmettir.&lt;/p&gt;
 
@@ -53,15 +141,15 @@
 
 &lt;h3 id=&#34;git-master-ve-branch&#34;&gt;Git : Master ve Branch&lt;/h3&gt;
 
-&lt;p&gt;Git bu tür durumlar için dosyanın ana kopyası (master) ve yukarıdaki örnekteki gibi kaydedilen diğer versiyonlar için branş kopyası (branch) konseptini sunuyor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; bu tür durumlar için dosyanın ana kopyası (&lt;em&gt;master&lt;/em&gt;) ve yukarıdaki örnekteki gibi kaydedilen diğer versiyonlar için branş kopyası (&lt;em&gt;branch&lt;/em&gt;) konseptini sunuyor.&lt;/p&gt;
 
 &lt;p&gt;Bir ana dal ve yüzlerce farklı noktadan onlarca katkı verenin oluşturduğu dallardan oluşan bir ağaç gibi düşünün.&lt;/p&gt;
 
-&lt;p&gt;Branşda oluşan değişikliklerden memnunsanız branşı ana dala bağlayabilirsiniz. (merge)&lt;/p&gt;
+&lt;p&gt;Branşda oluşan değişikliklerden memnunsanız branşı ana dala bağlayabilirsiniz. (&lt;em&gt;merge&lt;/em&gt;)&lt;/p&gt;
 
 &lt;p&gt;Memnun değilseniz iptal edip ana kopyadan yeni bir dal oluşturabilir, kullanmadığınız dalları iptal edebilirsiniz.&lt;/p&gt;
 
-&lt;p&gt;Dosyalarımız &lt;code&gt;git&lt;/code&gt; sisteminde otomatik olarak yedeklenir. Herhangi bir anda dosya üzerinde o ana kadar yapılan düzeltmeleri (commit) görebilir (&lt;code&gt;git status&lt;/code&gt;) ve herhangi bir andaki duruma (statüye) dönebilirsiniz. (&lt;code&gt;git reset --hard statü.nosu&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Dosyalarımız &lt;code&gt;git&lt;/code&gt; sisteminde otomatik olarak yedeklenir. Herhangi bir anda dosya üzerinde o ana kadar yapılan düzeltmeleri (&lt;code&gt;commit&lt;/code&gt;) görebilir (&lt;code&gt;git status&lt;/code&gt;) ve herhangi bir andaki duruma (statüye) dönebilirsiniz. (&lt;code&gt;git reset --hard statü.nosu&lt;/code&gt;)&lt;/p&gt;
 
 &lt;h3 id=&#34;git-repository-depo&#34;&gt;Git : Repository (Depo)&lt;/h3&gt;
 
@@ -71,7 +159,7 @@
 
 &lt;h2 id=&#34;git-bizi-asıl-ilgilendiren-komutlar&#34;&gt;Git : Bizi Asıl İlgilendiren Komutlar&lt;/h2&gt;
 
-&lt;p&gt;Git sistemi gerçekten çook geniş ve başlı başına uzmanlaşılabilecek bir alan. Biz asıl olarak &lt;code&gt;git&lt;/code&gt; ile bir web server&amp;rsquo;a ulaşmak ve oradan birşeyler indirmek (pull - clone), Git sistemini kullanan en önemli sitelerden biri olan Github&amp;rsquo;a dosya yüklemek (push), repo oluşturup (init), repoya yapacağımız son değişiklikleri güncelleyip düzeltmek (commit) gibi işlemler yapacağız.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; sistemi gerçekten çook geniş ve başlı başına uzmanlaşılabilecek bir alan. Biz asıl olarak &lt;code&gt;git&lt;/code&gt; ile bir web server&amp;rsquo;a ulaşmak ve oradan birşeyler indirmek (pull - clone), Git sistemini kullanan en önemli sitelerden biri olan Github&amp;rsquo;a dosya yüklemek (push), repo oluşturup (init), repoya yapacağımız son değişiklikleri güncelleyip düzeltmek (commit) gibi işlemler yapacağız.&lt;/p&gt;
 
 &lt;p&gt;Hadi başlayalım.&lt;/p&gt;
 
@@ -104,7 +192,7 @@
 
 &lt;p&gt;Kayıttan sonra kayıt sırasında verdiğiniz mail adresinize bir teyit maili gelecektir, onu teyit edin.&lt;/p&gt;
 
-&lt;p&gt;Kayıt işlemi tamamlandıysa şimdi ana ekranda Start a project düğmesine tıklayın. Reponuza test adını verin ve Create Repository düğmesine tıklayarak reponuzu oluşturun. (üstteki büyük resim)&lt;/p&gt;
+&lt;p&gt;Kayıt işlemi tamamlandıysa şimdi ana ekranda &lt;code&gt;Start a project&lt;/code&gt; düğmesine tıklayın. Reponuza &lt;em&gt;test&lt;/em&gt; adını verin ve &lt;code&gt;Create Repository&lt;/code&gt; düğmesine tıklayarak reponuzu oluşturun. (üstteki büyük resim)&lt;/p&gt;
 
 &lt;h3 id=&#34;github-a-yükleme-yapalım&#34;&gt;Github&amp;rsquo;a Yükleme Yapalım&lt;/h3&gt;
 

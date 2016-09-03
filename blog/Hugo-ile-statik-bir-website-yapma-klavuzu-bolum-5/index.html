@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Beşinci Bölüm : Sitemizi Github&#39;da Yayınlayalım // Pythonistan
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-5">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@pyhtonistan">
+<meta property="twitter:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Beşinci Bölüm : Sitemizi Github&#39;da Yayınlayalım">
+<meta property="twitter:image" content="/img/blog/hugo-website-yapma-5/create_repo.png">
+<meta property="twitter:description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-5">
+
+  <meta property="og:title" content="Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Beşinci Bölüm : Sitemizi Github&#39;da Yayınlayalım" />
+<meta property="og:description" content="Hugo Statik Site Geliştiricisi ie Website Yapıyoruz-5" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/" />
+
+<meta property="og:image" content="/img/blog/hugo-website-yapma-5/create_repo.png" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://pythonistan.net//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+		<div id="nav-to-top">
+			<span class="decorative-marker">//</span><a href="#top">Başa Dön</a>
+		</div>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://pythonistan.net/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/git/git-github.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Özeti</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#github-hakkında">Github Hakkında</a></li>
+<li><a href="#github-ı-ücretsiz-hosting-servisi-olarak-kullanmak">Github&rsquo;ı Ücretsiz Hosting Servisi Olarak Kullanmak</a>
+<ul>
+<li><a href="#github-a-giriş">Github&rsquo;a Giriş</a></li>
+</ul></li>
+<li><a href="#web-site-dosyalarımızı-hazırlayalım">Web Site Dosyalarımızı Hazırlayalım</a>
+<ul>
+<li><a href="#web-sitemize-de-hadi-git-gari-diyoruz">Web Sitemize &lsquo;de hadi &ldquo;git&rdquo; gari&rsquo; Diyoruz</a></li>
+</ul></li>
+<li><a href="#sitenize-custom-özel-domain-ismi-verme">Sitenize Custom (Özel) Domain İsmi Verme</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/">Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Beşinci Bölüm : Sitemizi Github&#39;da Yayınlayalım</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>1</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Sep</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-hugo" href="http://pythonistan.net//categories/hugo">Hugo</a>
+				
+					<a class="post-category post-category-git" href="http://pythonistan.net//categories/git">git</a>
+				
+					<a class="post-category post-category-website" href="http://pythonistan.net//categories/website">website</a>
+				
+					<a class="post-category post-category-github" href="http://pythonistan.net//categories/github">github</a>
+				
+					<a class="post-category post-category-hosting" href="http://pythonistan.net//categories/hosting">hosting</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-5%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-5%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Hugo%20ile%20Statik%20Bir%20Websitesi%20Nas%c4%b1l%20Yap%c4%b1l%c4%b1r%3f%20-%20Be%c5%9finci%20B%c3%b6l%c3%bcm%20%3a%20Sitemizi%20Github%27da%20Yay%c4%b1nlayal%c4%b1m&url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-5%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/hugo-website-yapma-5/create_repo.png" class="pure-img content-banner-image-inline"
+                                     style="
+                                            " />
+			
+
+            
+
+<p>Nihayet bugün, <strong>Hugo ile statik bir websitesi nasıl yapılır</strong> serimizi <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/">beşinci bölümü</a> ile sonlandırıyoruz.</p>
+
+<p>Birinci bölümde <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/">Hugo kurulumunu</a>, ikinci bölümde <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/">Hugo ile Siteyi Lokal Bilgisayarda Oluşturma</a>&lsquo;yı, üçüncü bölümde <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/">Temamızı Özelleştirme</a>&lsquo;yi, dördüncü bölümde ise <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/">post sayfalarını editleme</a> konusunu işlemiştik.</p>
+
+<p>Bugünkü konumuz, sitemizi ücretsiz olarak <strong>Github</strong>&lsquo;da barındırma ve bu işlemi <a href="/blog/git-ve-github/">git</a> vasıtası ile nasıl yapacağımız.</p>
+
+<h2 id="github-hakkında">Github Hakkında</h2>
+
+<p><strong>Github</strong> yazılım geliştiricilerin kullandığı Dünya&rsquo;nın en önemli ortak - paylaşılan sitelerinden biri (hub). Bu site 5 milyondan fazla açık kaynak kodlu yazılıma ev sahipliği yapıyor.</p>
+
+<p>Özellikle açık kaynak kodlu (<em>open source</em>) yazılımlar <strong>Github</strong>&lsquo;a yükleniyor ve Dünyanın her tarafından programcılar bu yazılımları her an geliştirme ve destekleme şansı elde ediyorlar.</p>
+
+<p>Siz de herhangi bir projeye destek vermek isterseniz yapmanız gereken yazılım projesini bilgisayarınıza indirmek (<code>fork-clone</code>) ve yazılım üzerinde yaptığınız değişiklikleri tekrar Github&rsquo;a yüklemek. (<code>pull request</code>)</p>
+
+<p>Yaptığınız değişikliklerin projeye eklenebilmesi için projeyi sürdürenlerin onaylaması gerekiyor.</p>
+
+<h2 id="github-ı-ücretsiz-hosting-servisi-olarak-kullanmak">Github&rsquo;ı Ücretsiz Hosting Servisi Olarak Kullanmak</h2>
+
+<p><strong>Github</strong> aynı zamanda <a href="/blog/Jekylldan-Hugoya-gecis/">(Jekyll, Hugo)</a> v.s. ssgler ile yapılan statik web sitelerine ücretsiz barındırma servisi (hosting) sağlaması ile göz dolduruyor.</p>
+
+<p>Bu sayede kendi blogunuzu teorik olarak <strong>0</strong> masrafla hayata geçirmeniz mümkün. (Hosting masrafı dışında bir websitenin tek masrafı -eğer alacaksanız- custom domain ücretidir.)</p>
+
+<p>Sitenize özel bir domain ismi almak isterseniz <strong>.com</strong> ve <strong>.net</strong> gibi çok kullanılanlar dışındaki domainleri bedavaya getirebilirsiniz.</p>
+
+<p><strong>Github</strong> görüp görebileceğiniz en sağlam (stabil) hosting servislerinden, site yüzbinlerce geliştiriciye hizmet verdiğinden 365 gün full hizmete açık. Down (hizmet dışı kalma) istisna süresi 0.0001% seviyesinde.</p>
+
+<p><strong>Github</strong> hakkında daha önce oldukça bilgi vermiştim zaten. Lütfen o <a href="/blog/git-ve-github/">makaleme</a> bir göz atın.</p>
+
+<h3 id="github-a-giriş">Github&rsquo;a Giriş</h3>
+
+<p>Github&rsquo;ı kullanmak için üye olmak gerekiyor. <strong>Github</strong> <a href ="https://github.com/" target = "_blank"> ana sayfasında</a> üye olun (Sign Up) ve kendinize bir kullanıcı ismi belirleyin.</p>
+
+<p>Kullanıcı isminiz ile giriş yaptığınızda ana sayfada <code>Start a project</code> düğmesine basın. Projenize <em>kullanıcıisminiz.github.io</em> ismini verin ve <code>Create repository</code> yeşil düğmesine basın. (&#8593;)</p>
+
+<h2 id="web-site-dosyalarımızı-hazırlayalım">Web Site Dosyalarımızı Hazırlayalım</h2>
+
+<p>Sitemizi <a href="/categories/hugo/">yapıp bitirdik</a>, son olarak sitemizin ana klasöründe <code>hugo</code> komutunu verdik ve <strong>Github</strong>&lsquo;a yükleyeceğimiz dosyalar site ana klasörünün altında yeni oluşturulan <em>public</em> klasörümüzün altında hazır. (Foto 1 ve 2)</p>
+
+<p><img src="/img/blog/hugo-website-yapma-5/hugo_generating_website.png" alt="Hugo Websiteyi Oluşturdu - Generate" />
+<img src="/img/blog/hugo-website-yapma-5/hugo_public_klasoru.png" alt="Hugo Public Klasörü Görüntüsü" /> <br><em>&ldquo;Foto1: Hugo Websiteyi Oluşturdu - Generate&rdquo; &mdash; &ldquo;Foto2: Hugo Public Klasörü Görüntüsü&rdquo;</em></p>
+
+<p><strong>ÖNEMLİ NOT</strong>: Siteyi generate etmeden (yani <code>hugo</code> komutunu vermeden önce) konfigürasyon dosyanızdaki (<em>config.toml</em>) baseURL kısmının karşısında &ldquo;<a href="https://kullanıcıadınız.github.io&quot;">https://kullanıcıadınız.github.io&quot;</a> yazdığınızdan emin olun.</p>
+
+<p>Yukarıdaki işlemi yapmadan siteyi oluşturduysanız <em>public</em> klasörünü silin, bu işlemi yapın ve sonrasında siteyi tekrar oluşturun(<code>hugo</code>). Aksi halde Github&rsquo;da tema şablonlarını doğru olarak göremeyebilirsiniz.</p>
+
+<h3 id="web-sitemize-de-hadi-git-gari-diyoruz">Web Sitemize &lsquo;de hadi &ldquo;git&rdquo; gari&rsquo; Diyoruz</h3>
+
+<pre><code>1. Şimdi *public* klasörüne Powershell ile gidin. (D:\siteler\deneme\public)
+2. Github'a yüklemek için bunu bir proje olarak tanıtalım. `git init` komutunu verin.
+3. Klasör içindeki her şeyi komit için eklemek üzere işaretleyin. `git add .`
+4. Dosyaları komitle. `git commit -m &quot;ilk komitimiz&quot;
+5. Şimdi uzak sunucuyu tanıtalım. `git remote add origin https://github.com/kullaniciadiniz/kullaniciadiniz.github.io.git`
+6. Evet, şimdi gidiyoruz: `git push -u origin master`
+</code></pre>
+
+<p><strong>Github</strong> bize kullanıcı adımızı ve parolamızı soracak. Onlara cevap verin ve en geç 3 saniye içinde sitemiz yüklenmiş olacak. 1-2 saniye de sitenin kendine gelmesini bekleyin. Sitenizi tarayıcınızda açtığınızda artık sitenizin webde olduğunu göreceksiniz. Vauv!</p>
+
+<h2 id="sitenize-custom-özel-domain-ismi-verme">Sitenize Custom (Özel) Domain İsmi Verme</h2>
+
+<p>kullanıcıisminiz.github.io ismi herkes için uygun olmayabilir. Siz daha profesyonel görünme adına ornek.net / www.ornek.com gibi bir isim kullanmak isteyebilirsiniz.</p>
+
+<p><strong>Github</strong> özel <em>domain</em> isimleri için destek sağlıyor. İsminizi aldıktan sonra yapmanız gereken <strong>iki</strong> (2) şey var:</p>
+
+<ol>
+<li>Domaini aldığınız şirketin control panelinde bir <strong>CNAME</strong> kaydı (duruma göre <strong>A record</strong>) oluşturup buraya Github&rsquo;ın IP adreslerini vermek.</li>
+<li><strong>CNAME</strong> isimli bir metin dosyası oluşturup bu dosyanın içine <em>domain</em> isminiz ne ise onu yazarak (örnek: www.domainisminiz.com) dosyayı sitenin <em>static</em> klasörünün içine atmak.</li>
+</ol>
+
+<p>Detaylı bilgiye <a href = "https://help.github.com/articles/using-a-custom-domain-with-github-pages/" target = "_blank"> Github destek sayfaları</a>ndan ulaşabilirsiniz.</p>
+
+<p><img src="/img/blog/hugo-website-yapma-5/hugo_sitemiz_githuba_yuklendi.png" alt="Sitemizin Github'a Yüklenmiş Görüntüsü" /></p>
+
+<hr>
+
+<p>Şükür, <strong>Hugo ile statik bir websitesi nasıl yapılır</strong> serimiz burada bitti. Bitmeyeceğini sanmıştım bir an.</p>
+
+<p>Umarım faydalı olmuştur. Seride daha detaylı açıklamaya ihtiyaç duyduğunuz konuları sormaktan çekinmeyin lütfen. İyi çalışmalar&hellip;</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-5%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-5%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="http://twitter.com/share?text=Hugo%20ile%20Statik%20Bir%20Websitesi%20Nas%c4%b1l%20Yap%c4%b1l%c4%b1r%3f%20-%20Be%c5%9finci%20B%c3%b6l%c3%bcm%20%3a%20Sitemizi%20Github%27da%20Yay%c4%b1nlayal%c4%b1m&url=http%3a%2f%2fpythonistan.net%2fblog%2fHugo-ile-statik-bir-website-yapma-klavuzu-bolum-5%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-hugo-ile-website-yapma" href="http://pythonistan.net//tags/hugo-ile-website-yapma">Hugo ile website yapma</a>,
+	                
+	                <a class="post-tag post-tag-github" href="http://pythonistan.net//tags/github">github</a>,
+	                
+	                <a class="post-tag post-tag-website-%C3%BCcretsiz-bar%C4%B1nd%C4%B1rma" href="http://pythonistan.net//tags/website-%C3%BCcretsiz-bar%C4%B1nd%C4%B1rma">website ücretsiz barındırma</a>,
+	                
+	                <a class="post-tag post-tag-githubda-hosting" href="http://pythonistan.net//tags/githubda-hosting">github&#39;da hosting</a>,
+	                
+	                <a class="post-tag post-tag-git-ile-githuba-upload" href="http://pythonistan.net//tags/git-ile-githuba-upload">git ile github&#39;a upload</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/">Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Dördüncü Bölüm : Post Değişiklikleri</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'http:\/\/pythonistan.net\/blog\/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5\/';
+    var disqus_title = 'Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Beşinci Bölüm : Sitemizi Github\x27da Yayınlayalım';
+    var disqus_url = 'http:\/\/pythonistan.net\/blog\/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>&copy; 2016. Python Cumhuriyeti.</p>
+</div>
+    </div>
+  </div>
+	
+		<script type="text/javascript">
+			onscroll = function() {
+			  var toTopVisible = false;
+			  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			  if (scrollTop > 1000) {
+			    if (!toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'block';
+			    }
+			  } else {
+			    if (scrollTop < 1000 || toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'none';
+			    }
+			  }
+			};
+		</script>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>
