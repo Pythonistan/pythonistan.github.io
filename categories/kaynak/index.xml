@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kaynak on Pythonistan</title>
+    <link>http://pythonistan.net/categories/kaynak/</link>
+    <description>Recent content in Kaynak on Pythonistan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Sun, 11 Sep 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="http://pythonistan.net/categories/kaynak/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python ile İlgili Yerli Yabancı Kaynaklar</title>
+      <link>http://pythonistan.net/blog/Python-kaynaklari/</link>
+      <pubDate>Sun, 11 Sep 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Python-kaynaklari/</guid>
+      <description>
+
+&lt;h1 id=&#34;python-kaynakları&#34;&gt;Python Kaynakları&lt;/h1&gt;
+
+&lt;p&gt;Bloguma şöyle bir baktım da &lt;strong&gt;Python&lt;/strong&gt; ile ilgili son yazıyı yayımlayalı bayağı zaman geçmiş. Bu yazıda &lt;strong&gt;Python&lt;/strong&gt; hakkında yararlandığım kaynaklardan bir seçki yapmaya karar verdim.&lt;/p&gt;
+
+&lt;p&gt;Python popülerlik sıralamasında hemen her programlama listesinde ilk &lt;a href = &#34;http://www.tiobe.com/tiobe-index/&#34; target = &#34;_blank&#34;&gt; 5&amp;rsquo;e girdiğinden&lt;/a&gt; kendisiyle ilgili internette yüzbinlerce kaynak bulmak mümkün.&lt;/p&gt;
+
+&lt;p&gt;Online olarak okuyabileceğiniz &lt;strong&gt;kitaplardan&lt;/strong&gt;, alabileceğiniz &lt;strong&gt;online kurslara&lt;/strong&gt;, profesyonel &lt;strong&gt;Pythoncuların bloglarından&lt;/strong&gt; sadece Python&amp;rsquo;a özgü websitelerine kadar binbir çeşit kaynak var.&lt;/p&gt;
+
+&lt;p&gt;Tek başına &lt;a href = &#34;http://stackoverflow.com/questions/tagged/python&#34; target = &#34;_blank&#34;&gt; StackOverFlow&lt;/a&gt; sitesi bile devasa bir kaynak teşkil ediyor. &lt;strong&gt;Stackoverflow&lt;/strong&gt;&amp;lsquo;a ayrı bir yazımda detaylı değinmek istiyorum.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt; kaynaklarının hepsine birden yer vermem imkansız. Ben en çok faydalandığım / kullandığım kaynakları aşağıda vereceğim.&lt;/p&gt;
+
+&lt;p&gt;Sizin faydalandığınız &lt;em&gt;güzel kaynaklar&lt;/em&gt; varsa yorum kısmından bilgilendirip bu listede yer almasını sağlayabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;türkçe-kaynaklar&#34;&gt;Türkçe Kaynaklar&lt;/h2&gt;
+
+&lt;p&gt;Öncelikle &lt;em&gt;Türkçe kaynaklara&lt;/em&gt; bir göz atalım. Bu dalda İngilizce&amp;rsquo;de olduğu kadar bir çeşitlilik ve miktardan söz edemiyoruz. Ancak çok kaliteli kaynakların varlığını göz ardı etmemek lazım.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Türkçe Python kaynak denince Yazar &lt;strong&gt;Fırat Özgül&lt;/strong&gt;&amp;lsquo;ün &lt;strong&gt;Python&lt;/strong&gt; orjinal klavuzlarını Türkçeye çevirdiği &lt;a href = &#34;http://belgeler.istihza.com/py3/&#34; target = &#34;_blank&#34;&gt;Python kitapları&lt;/a&gt; akla geliyor. Motamot çeviri olmadığı için kitaplar oldukça başarılı. Her Paytoncu&amp;rsquo;nun yanından ayırmaması gereken bir başucu kitabı.&lt;/p&gt;
+
+&lt;p&gt;Kitaplar &lt;strong&gt;Pyton 3&lt;/strong&gt; ve &lt;strong&gt;Python 2&lt;/strong&gt; olarak istihza.com adresinde &lt;a href = &#34;http://www.istihza.com/&#34; target = &#34;_blank&#34;&gt;online olarak&lt;/a&gt; kategorilere ayrılmış olarak sunuluyor. Siteden kitaptaki örnekleri kontrol edebilirsiniz. İstihza websitesinin &lt;a href = &#34;http://www.istihza.com/forum/&#34; target = &#34;_blank&#34;&gt;forum kısmı&lt;/a&gt; &lt;em&gt;Türkçe&lt;/em&gt; bir siteye göre nisbeten aktif sayılabilir.&lt;/p&gt;
+
+&lt;p&gt;Kitapları ayrıca bilgisayarınıza  &lt;a href = &#34;http://indir.istihza.com/belgeler/py3/&#34; target = &#34;_blank&#34;&gt;pdf&lt;/a&gt; olarak indirebilir, cep telefonunuzda mobil kitap okuyucu &lt;a href = &#34;http://indir.istihza.com/belgeler/py3/&#34; target = &#34;_blank&#34;&gt;(epub reader)&lt;/a&gt; ile açıp okuyabilir ve içindeki güzel örneklerden gerçekten &lt;strong&gt;çok&lt;/strong&gt; faydalanabilirsiniz. Üzerinde ciddi emek sarf edilmiş bir eser olduğu rahatlıkla söylenebilir.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://www.pythondersleri.com/&#34; target = &#34;_blank&#34;&gt;Pythondersleri&lt;/a&gt;   değişik Python&amp;rsquo;cuların &lt;strong&gt;Python&lt;/strong&gt; hakkında blog yazılarını yayımladıkları bir site. Çok sık güncellenmese de dikkate değer bir site diyebilirim.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;DjangoGirls, Python temelli web framework &lt;a href = &#34;https://www.djangoproject.com/&#34; target = &#34;_blank&#34;&gt;Django&lt;/a&gt;&amp;lsquo;yu kadınlara sevdirmek ve &lt;strong&gt;Django&lt;/strong&gt;&amp;lsquo;nun kullanımını yaygınlaştırmaya çalışan kar amacı gütmeyen bir organizasyon.&lt;/p&gt;
+
+&lt;p&gt;ABD kaynaklı bu organizasyonunun &lt;strong&gt;Django&lt;/strong&gt;&amp;lsquo;yu anlatan klavuzunun &lt;a href = &#34;http://tutorial.djangogirls.org/tr/&#34; target = &#34;_blank&#34;&gt;Türkçe çevirisi&lt;/a&gt; &lt;em&gt;Python ile web geliştirme&lt;/em&gt; yapacak olanlar için kullanılabilir bir kaynak.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;ingilizce-kaynaklar&#34;&gt;İngilizce Kaynaklar&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;İngilizce&lt;/em&gt; kaynaklar hem çeşitlilik hem de hacim olarak &lt;em&gt;Türkçe&lt;/em&gt; kaynaklara göre doğal olarak çok daha geniş. Şimdi kategoriler halinde inceleyelim.&lt;/p&gt;
+
+&lt;h3 id=&#34;ücretsiz-python-kitapları&#34;&gt;Ücretsiz Python Kitapları&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Ücretsiz &lt;strong&gt;Python&lt;/strong&gt; kitapları için aşağıdaki sayfadan ulaşabileceğiniz linklerden faydalanabilirsiniz: &lt;a href = &#34;http://freecomputerbooks.com/langPythonBooks.html&#34; target = &#34;_blank&#34;&gt;FreeComputerBooks / Python&lt;/a&gt; Bu sayfada 50 - 60 adet güzel kitaba referans var. &lt;em&gt;O&amp;rsquo;relly&lt;/em&gt; gibi kaliteli içerik üreten yayınevi kitaplarına ulaşabilirsiniz. Kitapları okuyabileceğiniz linkler her kitabın kendi sayfasında &lt;code&gt;Read and Download Links:&lt;/code&gt; kısmının altında bulunuyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Wikibooks&lt;/em&gt; sitesinde &lt;strong&gt;Python&lt;/strong&gt; üzerine yazılmış özellikle başlangıç seviyede bir çok kitaba erişmeniz mümkün. Bakmanız gereken adres: &lt;a href = &#34;https://en.wikibooks.org/wiki/Subject:Python_programming_language&#34; target = &#34;_blank&#34;&gt;Python Wikibooks&lt;/a&gt; .&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tecrübeli programcı &lt;strong&gt;Zed Shaw&lt;/strong&gt; tarafından yazılan ve içeriği itibarı ile &amp;ldquo;farklı ve sıradışı&amp;rdquo; bir öğretim stratejisi güden &lt;a href = &#34;https://learnpythonthehardway.org/book/index.html&#34; target = &#34;_blank&#34;&gt;Learn Python the Hard Way&lt;/a&gt; kitabına ücretsiz olarak ulaşabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;python-websiteleri&#34;&gt;Python Websiteleri&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt; websitelerine &lt;a href = &#34;https://www.python.org/&#34; target = &#34;_blank&#34;&gt;Python.org&lt;/a&gt; ile başlamamak olmaz heralde. Özellikle  &lt;a href = &#34;https://www.python.org/doc/&#34; target = &#34;_blank&#34;&gt;dokümantasyon bölümünde&lt;/a&gt; binlerce sayfalık kaynak bulacaksınız.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://pythoncentral.io/&#34; target = &#34;_blank&#34;&gt;Python Central&lt;/a&gt; sitesi &lt;strong&gt;Python&lt;/strong&gt; &lt;em&gt;ipuçları&lt;/em&gt;, &lt;em&gt;klavuzları&lt;/em&gt; , &lt;em&gt;kütüphaneleri&lt;/em&gt; , &lt;em&gt;araçları&lt;/em&gt; bölümlerini bulabileceğiniz zengin bir kaynak.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://pythonprogramming.net/&#34; target = &#34;_blank&#34;&gt;Python Programming&lt;/a&gt; &lt;strong&gt;Python&lt;/strong&gt;&amp;lsquo;un gelişmiş kullanımları ile ilgili &lt;em&gt;klavuzlar&lt;/em&gt; ve &lt;em&gt;nasıl yapılır dokümanları&lt;/em&gt; sağlıyor. &lt;strong&gt;Machine Learning&lt;/strong&gt;, &lt;strong&gt;Data Analysis&lt;/strong&gt;, &lt;strong&gt;Robotics&lt;/strong&gt;, v.d. konularda bir kısmı video açıklamalı çok yararlı bilgilere ulaşabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Python ile web geliştirme&lt;/em&gt; ve diğer ayrıntılı konuları açık ve sade bir dille anlatmayı hedefleyen &lt;a href = &#34;https://www.fullstackpython.com/&#34; target = &#34;_blank&#34;&gt;Full Stack Python&lt;/a&gt; sitesi açık bir kitaba (open book) ev sahipliği yapıyor. Özellikle başlangıç seviyesinden orta seviyeye atlamak için faydalı bir kaynak.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;python-interaktif-websiteleri&#34;&gt;Python Interaktif Websiteleri&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://www.learnpython.org/&#34; target = &#34;_blank&#34;&gt;Learn Python&lt;/a&gt;   websitesinde hem &lt;strong&gt;Python&lt;/strong&gt; genel konseptlerine aşinalık sağlayabilir hem de verilen kod örneklerini &lt;em&gt;interaktif olarak&lt;/em&gt; deneyerek görebilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;İlk yazılarımdan &lt;a href=&#34;http://pythonistan.net/blog/peki-nedir-python/&#34;&gt;birinde&lt;/a&gt; &lt;a href = &#34;http://pythontutor.com/&#34; target = &#34;_blank&#34;&gt;Python Tutor&lt;/a&gt; sitesinden  bahsetmiştim. Bu sitede yazdığınız kod parçacıklarını &lt;em&gt;interaktif olarak&lt;/em&gt; deneyebilir ve kodların &lt;em&gt;interaktif haritasını&lt;/em&gt; çıkarabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://interactivepython.org/&#34; target = &#34;_blank&#34;&gt;Interactive Python&lt;/a&gt;  sitesinde bir çok &lt;em&gt;interaktif&lt;/em&gt; &lt;strong&gt;Python&lt;/strong&gt; kitabına ulaşabilir ve test edebilirsiniz. Ücretsiz olarak üye olup içeriğe ulaşabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bazı kod bloklarının nasıl çalıştığını görmek için &lt;a href = &#34;http://introtopython.org/&#34; target = &#34;_blank&#34;&gt;Intro to Python&lt;/a&gt;  sitesine göz atabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;python-üzerine-online-kurs-ve-akademiler&#34;&gt;Python Üzerine Online Kurs ve Akademiler&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://www.codecademy.com/learn/python&#34; target = &#34;_blank&#34;&gt;Code Academy&lt;/a&gt; &lt;em&gt;interaktif&lt;/em&gt; ve adım adım &lt;strong&gt;Python&lt;/strong&gt; kursları ve dersler sunuyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://www.codementor.io/learn-python-online&#34; target = &#34;_blank&#34;&gt;Codementor&lt;/a&gt; sitesi değişik seviyeler için &lt;strong&gt;Python&lt;/strong&gt; kurslarına sahip. Üyelik ücretsiz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://www.udacity.com/&#34; target = &#34;_blank&#34;&gt;Udacity&lt;/a&gt; giriş ve orta seviyeli tüm bilgisayar bilimleri (CS) kurslarında Python kullanmakta. Yüzbin insanın aldığı &lt;strong&gt;Bilgisayar Bilimine Giriş&lt;/strong&gt; (Intro to Computer Science) kursu &lt;strong&gt;Python&lt;/strong&gt; ile işlenmiş, sitede daha üst seviyeli Python kursları da mevcut. Üyelik ücretsiz. Dersleri videolardan takip ediyorsunuz. Video aralarında kısa testlerle anlamanızı pekiştiriyorsunuz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://tr.coursera.org/&#34; target = &#34;_blank&#34;&gt;Coursera&lt;/a&gt; muhtemelen internetin en bilinen &lt;strong&gt;MOOC&lt;/strong&gt;&amp;lsquo;si. (bu kavram çok fazla sayıda kişinin iştirak ettiği &lt;strong&gt;herkese açık internet kurslarını&lt;/strong&gt; ifade etmek için kullanılıyor - &lt;em&gt;Massive Open Online Course&lt;/em&gt;) çok sayıda &lt;strong&gt;Python&lt;/strong&gt; içerikli kursa sahip. İçerik yüksek kalite olarak değerlendiriliyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://www.edx.org/&#34; target = &#34;_blank&#34;&gt;EdX&lt;/a&gt; &lt;strong&gt;Harvard&lt;/strong&gt;, &lt;strong&gt;MIT&lt;/strong&gt;, &lt;strong&gt;Berkeley&lt;/strong&gt; gibi ABD&amp;rsquo;nin saygın birkaç üniversitesinin bir araya gelerek oluşturduğu bir &lt;strong&gt;MOOC&lt;/strong&gt; sitesi. &lt;em&gt;Coursera&lt;/em&gt; gibi burada da yüksek kalitede içerik bulabilirsiniz. İçerikler ücretsiz, ancak sertifika almak isterseniz belli bir ücret karşılığında alabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;python-blogcuları&#34;&gt;Python Blogcuları&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Programcı &lt;a href = &#34;http://treyhunner.com/blog/archives/&#34; target = &#34;_blank&#34;&gt;Trey Hunner&lt;/a&gt;&amp;lsquo;ın blogu &lt;strong&gt;Python&lt;/strong&gt; üzerine ilgi çekici yazılar barındırıyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Daha tecrübeli Paytoncular için &lt;a href = &#34;https://doughellmann.com/blog/&#34; target = &#34;_blank&#34;&gt;Doug Hellman&lt;/a&gt;&amp;lsquo;ın blogu yardımcı olabilir.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Python hakkındaki son haberleri ve Python geliştiricilerini tanıyabileceğiniz bir blog &lt;a href = &#34;http://www.blog.pythonlibrary.org/&#34; target = &#34;_blank&#34;&gt;Python Library&lt;/a&gt; adresinde yer alıyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://planetpython.org/&#34; target = &#34;_blank&#34;&gt;Planet Python&lt;/a&gt; sitesinde bir çok Paytoncunun bloguna tek bir sayfadan ulaşma imkanına sahip olacaksınız.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sonuncu olarak yer vereceğimiz ancak önem olarak diğerlerinden hiç de aşağıda kalmayan &lt;a href = &#34;http://www.pythonweekly.com/&#34; target = &#34;_blank&#34;&gt;Python Weekly&lt;/a&gt; websitesini favorilerinize alın ve bu haftalık online dergiye üye olun. &lt;strong&gt;Python&lt;/strong&gt; ile ilgili en son haberlere erişeceksiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Burada saydığım kaynaklardan çok daha fazlasını &lt;strong&gt;Python&lt;/strong&gt; üzerine yapacağınız &lt;a href = &#34;https://www.google.com.tr/?gfe_rd=cr&amp;ei=BCrUV5HTPKnY8AfKi5WgCA#safe=strict&amp;q=python&#34; target = &#34;_blank&#34;&gt;basit bir Google araması&lt;/a&gt; ile bulabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Sizlere &lt;strong&gt;Python&lt;/strong&gt; ile iyi ve verimli çalışmalar dilerim&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

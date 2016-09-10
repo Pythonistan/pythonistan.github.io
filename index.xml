@@ -6,8 +6,122 @@
     <description>Recent content on Pythonistan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Thu, 01 Sep 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 11 Sep 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="http://pythonistan.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Python ile İlgili Yerli Yabancı Kaynaklar</title>
+      <link>http://pythonistan.net/blog/Python-kaynaklari/</link>
+      <pubDate>Sun, 11 Sep 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Python-kaynaklari/</guid>
+      <description>
+
+&lt;h1 id=&#34;python-kaynakları&#34;&gt;Python Kaynakları&lt;/h1&gt;
+
+&lt;p&gt;Bloguma şöyle bir baktım da &lt;strong&gt;Python&lt;/strong&gt; ile ilgili son yazıyı yayımlayalı bayağı zaman geçmiş. Bu yazıda &lt;strong&gt;Python&lt;/strong&gt; hakkında yararlandığım kaynaklardan bir seçki yapmaya karar verdim.&lt;/p&gt;
+
+&lt;p&gt;Python popülerlik sıralamasında hemen her programlama listesinde ilk &lt;a href = &#34;http://www.tiobe.com/tiobe-index/&#34; target = &#34;_blank&#34;&gt; 5&amp;rsquo;e girdiğinden&lt;/a&gt; kendisiyle ilgili internette yüzbinlerce kaynak bulmak mümkün.&lt;/p&gt;
+
+&lt;p&gt;Online olarak okuyabileceğiniz &lt;strong&gt;kitaplardan&lt;/strong&gt;, alabileceğiniz &lt;strong&gt;online kurslara&lt;/strong&gt;, profesyonel &lt;strong&gt;Pythoncuların bloglarından&lt;/strong&gt; sadece Python&amp;rsquo;a özgü websitelerine kadar binbir çeşit kaynak var.&lt;/p&gt;
+
+&lt;p&gt;Tek başına &lt;a href = &#34;http://stackoverflow.com/questions/tagged/python&#34; target = &#34;_blank&#34;&gt; StackOverFlow&lt;/a&gt; sitesi bile devasa bir kaynak teşkil ediyor. &lt;strong&gt;Stackoverflow&lt;/strong&gt;&amp;lsquo;a ayrı bir yazımda detaylı değinmek istiyorum.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt; kaynaklarının hepsine birden yer vermem imkansız. Ben en çok faydalandığım / kullandığım kaynakları aşağıda vereceğim.&lt;/p&gt;
+
+&lt;p&gt;Sizin faydalandığınız &lt;em&gt;güzel kaynaklar&lt;/em&gt; varsa yorum kısmından bilgilendirip bu listede yer almasını sağlayabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;türkçe-kaynaklar&#34;&gt;Türkçe Kaynaklar&lt;/h2&gt;
+
+&lt;p&gt;Öncelikle &lt;em&gt;Türkçe kaynaklara&lt;/em&gt; bir göz atalım. Bu dalda İngilizce&amp;rsquo;de olduğu kadar bir çeşitlilik ve miktardan söz edemiyoruz. Ancak çok kaliteli kaynakların varlığını göz ardı etmemek lazım.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Türkçe Python kaynak denince Yazar &lt;strong&gt;Fırat Özgül&lt;/strong&gt;&amp;lsquo;ün &lt;strong&gt;Python&lt;/strong&gt; orjinal klavuzlarını Türkçeye çevirdiği &lt;a href = &#34;http://belgeler.istihza.com/py3/&#34; target = &#34;_blank&#34;&gt;Python kitapları&lt;/a&gt; akla geliyor. Motamot çeviri olmadığı için kitaplar oldukça başarılı. Her Paytoncu&amp;rsquo;nun yanından ayırmaması gereken bir başucu kitabı.&lt;/p&gt;
+
+&lt;p&gt;Kitaplar &lt;strong&gt;Pyton 3&lt;/strong&gt; ve &lt;strong&gt;Python 2&lt;/strong&gt; olarak istihza.com adresinde &lt;a href = &#34;http://www.istihza.com/&#34; target = &#34;_blank&#34;&gt;online olarak&lt;/a&gt; kategorilere ayrılmış olarak sunuluyor. Siteden kitaptaki örnekleri kontrol edebilirsiniz. İstihza websitesinin &lt;a href = &#34;http://www.istihza.com/forum/&#34; target = &#34;_blank&#34;&gt;forum kısmı&lt;/a&gt; &lt;em&gt;Türkçe&lt;/em&gt; bir siteye göre nisbeten aktif sayılabilir.&lt;/p&gt;
+
+&lt;p&gt;Kitapları ayrıca bilgisayarınıza  &lt;a href = &#34;http://indir.istihza.com/belgeler/py3/&#34; target = &#34;_blank&#34;&gt;pdf&lt;/a&gt; olarak indirebilir, cep telefonunuzda mobil kitap okuyucu &lt;a href = &#34;http://indir.istihza.com/belgeler/py3/&#34; target = &#34;_blank&#34;&gt;(epub reader)&lt;/a&gt; ile açıp okuyabilir ve içindeki güzel örneklerden gerçekten &lt;strong&gt;çok&lt;/strong&gt; faydalanabilirsiniz. Üzerinde ciddi emek sarf edilmiş bir eser olduğu rahatlıkla söylenebilir.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://www.pythondersleri.com/&#34; target = &#34;_blank&#34;&gt;Pythondersleri&lt;/a&gt;   değişik Python&amp;rsquo;cuların &lt;strong&gt;Python&lt;/strong&gt; hakkında blog yazılarını yayımladıkları bir site. Çok sık güncellenmese de dikkate değer bir site diyebilirim.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;DjangoGirls, Python temelli web framework &lt;a href = &#34;https://www.djangoproject.com/&#34; target = &#34;_blank&#34;&gt;Django&lt;/a&gt;&amp;lsquo;yu kadınlara sevdirmek ve &lt;strong&gt;Django&lt;/strong&gt;&amp;lsquo;nun kullanımını yaygınlaştırmaya çalışan kar amacı gütmeyen bir organizasyon.&lt;/p&gt;
+
+&lt;p&gt;ABD kaynaklı bu organizasyonunun &lt;strong&gt;Django&lt;/strong&gt;&amp;lsquo;yu anlatan klavuzunun &lt;a href = &#34;http://tutorial.djangogirls.org/tr/&#34; target = &#34;_blank&#34;&gt;Türkçe çevirisi&lt;/a&gt; &lt;em&gt;Python ile web geliştirme&lt;/em&gt; yapacak olanlar için kullanılabilir bir kaynak.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;ingilizce-kaynaklar&#34;&gt;İngilizce Kaynaklar&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;İngilizce&lt;/em&gt; kaynaklar hem çeşitlilik hem de hacim olarak &lt;em&gt;Türkçe&lt;/em&gt; kaynaklara göre doğal olarak çok daha geniş. Şimdi kategoriler halinde inceleyelim.&lt;/p&gt;
+
+&lt;h3 id=&#34;ücretsiz-python-kitapları&#34;&gt;Ücretsiz Python Kitapları&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Ücretsiz &lt;strong&gt;Python&lt;/strong&gt; kitapları için aşağıdaki sayfadan ulaşabileceğiniz linklerden faydalanabilirsiniz: &lt;a href = &#34;http://freecomputerbooks.com/langPythonBooks.html&#34; target = &#34;_blank&#34;&gt;FreeComputerBooks / Python&lt;/a&gt; Bu sayfada 50 - 60 adet güzel kitaba referans var. &lt;em&gt;O&amp;rsquo;relly&lt;/em&gt; gibi kaliteli içerik üreten yayınevi kitaplarına ulaşabilirsiniz. Kitapları okuyabileceğiniz linkler her kitabın kendi sayfasında &lt;code&gt;Read and Download Links:&lt;/code&gt; kısmının altında bulunuyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Wikibooks&lt;/em&gt; sitesinde &lt;strong&gt;Python&lt;/strong&gt; üzerine yazılmış özellikle başlangıç seviyede bir çok kitaba erişmeniz mümkün. Bakmanız gereken adres: &lt;a href = &#34;https://en.wikibooks.org/wiki/Subject:Python_programming_language&#34; target = &#34;_blank&#34;&gt;Python Wikibooks&lt;/a&gt; .&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tecrübeli programcı &lt;strong&gt;Zed Shaw&lt;/strong&gt; tarafından yazılan ve içeriği itibarı ile &amp;ldquo;farklı ve sıradışı&amp;rdquo; bir öğretim stratejisi güden &lt;a href = &#34;https://learnpythonthehardway.org/book/index.html&#34; target = &#34;_blank&#34;&gt;Learn Python the Hard Way&lt;/a&gt; kitabına ücretsiz olarak ulaşabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;python-websiteleri&#34;&gt;Python Websiteleri&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt; websitelerine &lt;a href = &#34;https://www.python.org/&#34; target = &#34;_blank&#34;&gt;Python.org&lt;/a&gt; ile başlamamak olmaz heralde. Özellikle  &lt;a href = &#34;https://www.python.org/doc/&#34; target = &#34;_blank&#34;&gt;dokümantasyon bölümünde&lt;/a&gt; binlerce sayfalık kaynak bulacaksınız.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://pythoncentral.io/&#34; target = &#34;_blank&#34;&gt;Python Central&lt;/a&gt; sitesi &lt;strong&gt;Python&lt;/strong&gt; &lt;em&gt;ipuçları&lt;/em&gt;, &lt;em&gt;klavuzları&lt;/em&gt; , &lt;em&gt;kütüphaneleri&lt;/em&gt; , &lt;em&gt;araçları&lt;/em&gt; bölümlerini bulabileceğiniz zengin bir kaynak.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://pythonprogramming.net/&#34; target = &#34;_blank&#34;&gt;Python Programming&lt;/a&gt; &lt;strong&gt;Python&lt;/strong&gt;&amp;lsquo;un gelişmiş kullanımları ile ilgili &lt;em&gt;klavuzlar&lt;/em&gt; ve &lt;em&gt;nasıl yapılır dokümanları&lt;/em&gt; sağlıyor. &lt;strong&gt;Machine Learning&lt;/strong&gt;, &lt;strong&gt;Data Analysis&lt;/strong&gt;, &lt;strong&gt;Robotics&lt;/strong&gt;, v.d. konularda bir kısmı video açıklamalı çok yararlı bilgilere ulaşabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Python ile web geliştirme&lt;/em&gt; ve diğer ayrıntılı konuları açık ve sade bir dille anlatmayı hedefleyen &lt;a href = &#34;https://www.fullstackpython.com/&#34; target = &#34;_blank&#34;&gt;Full Stack Python&lt;/a&gt; sitesi açık bir kitaba (open book) ev sahipliği yapıyor. Özellikle başlangıç seviyesinden orta seviyeye atlamak için faydalı bir kaynak.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;python-interaktif-websiteleri&#34;&gt;Python Interaktif Websiteleri&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://www.learnpython.org/&#34; target = &#34;_blank&#34;&gt;Learn Python&lt;/a&gt;   websitesinde hem &lt;strong&gt;Python&lt;/strong&gt; genel konseptlerine aşinalık sağlayabilir hem de verilen kod örneklerini &lt;em&gt;interaktif olarak&lt;/em&gt; deneyerek görebilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;İlk yazılarımdan &lt;a href=&#34;http://pythonistan.net/blog/peki-nedir-python/&#34;&gt;birinde&lt;/a&gt; &lt;a href = &#34;http://pythontutor.com/&#34; target = &#34;_blank&#34;&gt;Python Tutor&lt;/a&gt; sitesinden  bahsetmiştim. Bu sitede yazdığınız kod parçacıklarını &lt;em&gt;interaktif olarak&lt;/em&gt; deneyebilir ve kodların &lt;em&gt;interaktif haritasını&lt;/em&gt; çıkarabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://interactivepython.org/&#34; target = &#34;_blank&#34;&gt;Interactive Python&lt;/a&gt;  sitesinde bir çok &lt;em&gt;interaktif&lt;/em&gt; &lt;strong&gt;Python&lt;/strong&gt; kitabına ulaşabilir ve test edebilirsiniz. Ücretsiz olarak üye olup içeriğe ulaşabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Bazı kod bloklarının nasıl çalıştığını görmek için &lt;a href = &#34;http://introtopython.org/&#34; target = &#34;_blank&#34;&gt;Intro to Python&lt;/a&gt;  sitesine göz atabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;python-üzerine-online-kurs-ve-akademiler&#34;&gt;Python Üzerine Online Kurs ve Akademiler&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://www.codecademy.com/learn/python&#34; target = &#34;_blank&#34;&gt;Code Academy&lt;/a&gt; &lt;em&gt;interaktif&lt;/em&gt; ve adım adım &lt;strong&gt;Python&lt;/strong&gt; kursları ve dersler sunuyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://www.codementor.io/learn-python-online&#34; target = &#34;_blank&#34;&gt;Codementor&lt;/a&gt; sitesi değişik seviyeler için &lt;strong&gt;Python&lt;/strong&gt; kurslarına sahip. Üyelik ücretsiz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://www.udacity.com/&#34; target = &#34;_blank&#34;&gt;Udacity&lt;/a&gt; giriş ve orta seviyeli tüm bilgisayar bilimleri (CS) kurslarında Python kullanmakta. Yüzbin insanın aldığı &lt;strong&gt;Bilgisayar Bilimine Giriş&lt;/strong&gt; (Intro to Computer Science) kursu &lt;strong&gt;Python&lt;/strong&gt; ile işlenmiş, sitede daha üst seviyeli Python kursları da mevcut. Üyelik ücretsiz. Dersleri videolardan takip ediyorsunuz. Video aralarında kısa testlerle anlamanızı pekiştiriyorsunuz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://tr.coursera.org/&#34; target = &#34;_blank&#34;&gt;Coursera&lt;/a&gt; muhtemelen internetin en bilinen &lt;strong&gt;MOOC&lt;/strong&gt;&amp;lsquo;si. (bu kavram çok fazla sayıda kişinin iştirak ettiği &lt;strong&gt;herkese açık internet kurslarını&lt;/strong&gt; ifade etmek için kullanılıyor - &lt;em&gt;Massive Open Online Course&lt;/em&gt;) çok sayıda &lt;strong&gt;Python&lt;/strong&gt; içerikli kursa sahip. İçerik yüksek kalite olarak değerlendiriliyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;https://www.edx.org/&#34; target = &#34;_blank&#34;&gt;EdX&lt;/a&gt; &lt;strong&gt;Harvard&lt;/strong&gt;, &lt;strong&gt;MIT&lt;/strong&gt;, &lt;strong&gt;Berkeley&lt;/strong&gt; gibi ABD&amp;rsquo;nin saygın birkaç üniversitesinin bir araya gelerek oluşturduğu bir &lt;strong&gt;MOOC&lt;/strong&gt; sitesi. &lt;em&gt;Coursera&lt;/em&gt; gibi burada da yüksek kalitede içerik bulabilirsiniz. İçerikler ücretsiz, ancak sertifika almak isterseniz belli bir ücret karşılığında alabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;python-blogcuları&#34;&gt;Python Blogcuları&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Programcı &lt;a href = &#34;http://treyhunner.com/blog/archives/&#34; target = &#34;_blank&#34;&gt;Trey Hunner&lt;/a&gt;&amp;lsquo;ın blogu &lt;strong&gt;Python&lt;/strong&gt; üzerine ilgi çekici yazılar barındırıyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Daha tecrübeli Paytoncular için &lt;a href = &#34;https://doughellmann.com/blog/&#34; target = &#34;_blank&#34;&gt;Doug Hellman&lt;/a&gt;&amp;lsquo;ın blogu yardımcı olabilir.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Python hakkındaki son haberleri ve Python geliştiricilerini tanıyabileceğiniz bir blog &lt;a href = &#34;http://www.blog.pythonlibrary.org/&#34; target = &#34;_blank&#34;&gt;Python Library&lt;/a&gt; adresinde yer alıyor.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href = &#34;http://planetpython.org/&#34; target = &#34;_blank&#34;&gt;Planet Python&lt;/a&gt; sitesinde bir çok Paytoncunun bloguna tek bir sayfadan ulaşma imkanına sahip olacaksınız.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Sonuncu olarak yer vereceğimiz ancak önem olarak diğerlerinden hiç de aşağıda kalmayan &lt;a href = &#34;http://www.pythonweekly.com/&#34; target = &#34;_blank&#34;&gt;Python Weekly&lt;/a&gt; websitesini favorilerinize alın ve bu haftalık online dergiye üye olun. &lt;strong&gt;Python&lt;/strong&gt; ile ilgili en son haberlere erişeceksiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Burada saydığım kaynaklardan çok daha fazlasını &lt;strong&gt;Python&lt;/strong&gt; üzerine yapacağınız &lt;a href = &#34;https://www.google.com.tr/?gfe_rd=cr&amp;ei=BCrUV5HTPKnY8AfKi5WgCA#safe=strict&amp;q=python&#34; target = &#34;_blank&#34;&gt;basit bir Google araması&lt;/a&gt; ile bulabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Sizlere &lt;strong&gt;Python&lt;/strong&gt; ile iyi ve verimli çalışmalar dilerim&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugo ile Statik Bir Websitesi Nasıl Yapılır? - Beşinci Bölüm : Sitemizi Github&#39;da Yayınlayalım</title>
@@ -1745,84 +1859,6 @@ print len(sayi) # Gerçekten de 10 karakter olduğunu teyit edelim.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:degisken&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:diziler&#34;&gt;Dizi türüne sahip Payton veri tipleri: Karakter Dizileri, Listeler, Demetler, Sözlükler, v.s. Bu konuları ileriki zamanlarda göreceğiz.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:diziler&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Notepad Kullanarak Python Programı Yazalım</title>
-      <link>http://pythonistan.net/blog/python-notepad-ile-program-yazma/</link>
-      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://pythonistan.net/blog/python-notepad-ile-program-yazma/</guid>
-      <description>
-
-&lt;h2 id=&#34;herhangi-bir-metin-editörü&#34;&gt;Herhangi Bir Metin Editörü&lt;/h2&gt;
-
-&lt;p&gt;Evvelsi günkü &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;blog yazımda&lt;/a&gt; bugün için &lt;a target=&#34;blank&#34; href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Sablaym Tekst) ile bir kod yazacağımı söylemiştim. Sublime’ı kurmadan önce kısa bir bilgi vermek istiyorum: &lt;strong&gt;Aslında Sablaym&amp;rsquo;a hiç ihtiyacınız yok!&lt;/strong&gt; :) Programlarınızı herhangi bir metin editörü (notepad, wordpad, hatta ms word, v.d.) ile yazıp .py uzantısı ile kaydederek komut satırında aşağıdaki şekilde basitçe çalıştırabilirsiniz:
-&lt;code&gt;python program_adi.py&lt;/code&gt; &lt;em&gt;.py&lt;/em&gt; uzantısı bize bu dosyanın Python komut dosyası olduğunu belirtmektedir.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Programın çalışabilmesi için; Python sisteminizde &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;kurulu olmalı&lt;/a&gt; ve programınız o anda komut satırının çalıştığı (yani imlecin yanıp söndüğü) dizinin içinde olmalıdır. Bkz. aşağıda 3. adım&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/python-notepad/1_notepad_kod.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Program Yazma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-notepad/1_notepad_kod_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-notepad/2_notepad_kayit.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Notepad ile Programı Masaüstüne Kaydetme&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-notepad/2_notepad_kayit_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-notepad/3_komut_satiri_run.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kabukta Notepad ile Yazılan .py Programı Çalıştırma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-notepad/3_komut_satiri_run_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/python-notepad/4_python_tutor.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Tutorla Programımızı Test Edelim&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-notepad/4_python_tutor_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;adım-adım-uygulama&#34;&gt;Adım Adım Uygulama&lt;/h2&gt;
-
-&lt;p&gt;Şimdi yukarıda görülen işlemleri adım adım gerçekleştirelim.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Notepad’inizi açın ve aşağıdaki kodları notepad’e &lt;strong&gt;yazın&lt;/strong&gt;. (Lütfen kodları kendiniz klavyeden yazın, kopyala yapıştır yapmayın, ayrıca indentation (tab kullanımına) dikkat edin. &lt;em&gt;#&lt;/em&gt; işaretinden sonrakiler yorumlardır&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:hash&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:hash&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Dosya&lt;/strong&gt; menüsünden *Farklı Kaydet*’ e tıklayıp aşağıda &lt;cite&gt;Tüm Dosyalar( &amp;#042;  .   &amp;#042;  )&lt;/cite&gt; seçeneğini aktif hale getirerek dosyayı onEkle.&lt;strong&gt;py&lt;/strong&gt; isim ve uzantısıyla (dosya uzantısına dikkat!!!) masaüstünüze kaydedin.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Şimdi komut satırı programınızı çalıştırın.(Cmd, PowerShell yada Terminal) Masaüstünüzün bulunduğu klasör olan &lt;strong&gt;desktop&lt;/strong&gt; klasörüne gidin. Windows’ta dizin(klasör) değiştirmek için &lt;code&gt;cd..&lt;/code&gt; / &lt;code&gt;cd klasör_adı&lt;/code&gt; komutlarını verdiğimizi biliyor olmalısınız. Artık dosyamızı &lt;code&gt;python onEkle.py&lt;/code&gt; yazarak çalıştırabiliriz. 45 sonucunu başarıyla aldınız, değil mi? Almadıysanız lütfen hata mesajınızı kontrol edin ve hatanın nedenini tespit etmeye çalışın&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:hata&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:hata&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Kodunuzu Python Tutor websitesindeki &lt;a href=&#34;http://pythontutor.com/visualize.html#mode=edit&#34;&gt;interaktif kod görüntüleyisi&lt;/a&gt;&amp;lsquo;ne yapıştırıp görsel olarak test edebilirsiniz. Bu sitede bir hata alırsanız lütfen yorum satırlarını kaldırın. Payton 2.x versiyonu Türkçe karakterler ile maalesef hala problem yaşıyor.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-     # türkçe karakterler için utf-8 desteği
-def onEkle(sayi):           # onEkle isminde bir prosedur tanımla.
-    sayi = sayi + 10        # 10 fazlasını al ve değişkene ata.
-    return sayi             # Değişkeni döndür.
-print onEkle(35)            # Prosedürü çalıştırarak sonucu ekrana yazdır.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;programımızın-işlevi&#34;&gt;Programımızın İşlevi&lt;/h2&gt;
-
-&lt;p&gt;Gördüğünüz gibi Payton yazdığımız programı çalıştırarak hesaplamayı yaptı. Programımızda iki bölüm var. Birinci bölüm argüman olarak verilen sayıyı (bu sayı henüz belli olmadığı için &lt;code&gt;sayi&lt;/code&gt; isimli değişkenle gösteriyoruz) 10 ile toplayıp sonucu bize döndüren prosedürümüz. &lt;em&gt;Programa hangi sayıyı verirsek verelim yapacağı iş o sayıyı 10 ile toplamak&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Prosedürler&lt;/strong&gt;, Python programının en alt birimidir. Genelde bir program birden fazla prosedürün bir araya getirilmesi ile oluşur. Bu konuya sonra genişçe yine döneceğiz. Şimdilik Paytonda prosedür oluştururken &lt;code&gt;def&lt;/code&gt; (&lt;strong&gt;define&lt;/strong&gt;-okunuşu&amp;rdquo;difayn&amp;rdquo;-ing., Türkçe karşılığı: tanımla) kelimesi ile başlanıldığını bilmeniz yeterli.&lt;/p&gt;
-
-&lt;p&gt;Programın ikinci kısmında yazdığımız prosedürü ekrana getirmek için &lt;code&gt;print&lt;/code&gt; komutunu kullanıyoruz. Burada prosedürümüzün tamamı &lt;code&gt;print&lt;/code&gt; fonksiyonun bir argümanı olarak kullanılıyor. Prosedürümüzün parametresi ise verilen sayı yani &lt;code&gt;35&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Prosedürümüz çalıştığında yapılan işlem &lt;code&gt;35 + 10&lt;/code&gt; oluyor ve sonra bu sayı &lt;code&gt;sayi&lt;/code&gt; değişkenine tekrar atanıyor. Prosedürümüzün sonunda &lt;code&gt;sayi&lt;/code&gt; değişkenimizin değeri &lt;code&gt;45&lt;/code&gt; oluyor. Ve bu değer ekrana &lt;code&gt;print&lt;/code&gt; fonksiyonu sayesinde yazdırılıyor.&lt;/p&gt;
-
-&lt;h2 id=&#34;dikkat-edilecek-hususlar&#34;&gt;Dikkat Edilecek Hususlar&lt;/h2&gt;
-
-&lt;p&gt;Programımız basit olmasına rağmen yine de öğrenecek bir çok şey sunuyor. İsterseniz programdaki &lt;code&gt;sayi&lt;/code&gt; değişkenine farklı bir değer verip bu sayının yine 10 ile toplanacağını teyit edebilirsiniz. Yada toplanacak değeri 10&amp;rsquo;dan farklı bir değer yapıp prosedürümüzün ismini değiştirerek deneyebilirsiniz. (Örneğin eklenecek sayıyı 20 yapıp prosedür ismini &lt;code&gt;yirmiEkle&lt;/code&gt; olarak değiştirin.)&lt;/p&gt;
-
-&lt;p&gt;Ayrıca &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program/&#34;&gt;bir önceki blog yazımda&lt;/a&gt; değindiğim Payton kabukta otomatik olarak ekrana yazdırma özelliğinin burada ancak &lt;code&gt;print&lt;/code&gt; fonksiyonu ile gerçekleştiğine lütfen dikkat edin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:kabuk&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:kabuk&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; Yukarıda Notepad&amp;rsquo;e yazdığımız kodda &lt;code&gt;print&lt;/code&gt; olmasaydı prosedürümüz çalışırdı ama sonucunu ekranda göremezdik. O durumda &lt;code&gt;onEkle&lt;/code&gt;prosedürünü çalıştırıp prosedür sonucunu (mesela 45) sadece başka bir prosedürün argümanı(parametresi) olarak kullanabilirdik. Prosedürlerin nasıl diğer prosedürlerin argümanı olarak kullanıldığını ileride göreceğiz.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Bir sonraki yazımızda detaylı başka bir Payton programını beraberce yazmak dileğiyle şimdilik sağlıcakla kalın. Yazımı beğendiyseniz lütfen sosyal medyada paylaşın ve/veya sayfa altında yorum yapın.&lt;/p&gt;
-
-&lt;h2 id=&#34;dipnotlar&#34;&gt;DipNotlar&lt;/h2&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:hash&#34;&gt;# Hash (heş) işareti olarak bilinen bu işaret, Python&amp;rsquo;da özel bir yere sahip olup bu işaret sonrası interpreter tarafından dikkate alınmaz, yürütülmez.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:hash&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:hata&#34;&gt;İlk olarak heş işaretinden sonrasını silmeyi deneyin. Zira bu versiyonda halen Türkçe karakter sorunları oluşabilmektedir.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:hata&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:kabuk&#34;&gt;Bu programı kabukta denemek isterseniz komut satırını(PowerShell, Terminal) çalıştırın. &lt;code&gt;python&lt;/code&gt; yazıp &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; işaretini gördükten sonra 1. &lt;code&gt;def onEkle(sayi):&lt;/code&gt; yazın. 2. &lt;code&gt;enter&lt;/code&gt; tuşuna basın. 3. &lt;code&gt;tab&lt;/code&gt; tuşuna basın 4. &lt;code&gt;sayi = sayi + 10&lt;/code&gt; yazın. 5. &lt;code&gt;enter&lt;/code&gt; tuşuna basın. 6. &lt;code&gt;tab&lt;/code&gt; tuşuna basın. 7. &lt;code&gt;return sayi&lt;/code&gt; yazın. 8. &lt;code&gt;enter&lt;/code&gt; tuşuna basın. 9. &lt;code&gt;onEkle(35)&lt;/code&gt; yazarak programı çalıştırın. Gördüğünüz gibi print kullanmaya gerek kalmadan programımızın sonucunu görebiliyoruz. (sonuç: 45)
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:kabuk&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
