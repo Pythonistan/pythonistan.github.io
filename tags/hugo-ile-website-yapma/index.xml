@@ -225,7 +225,7 @@
 
 &lt;p&gt;Sanırım belli bir fikir edindiniz. Aslında konu benim anlatmaya çalıştığımdan çok daha kolay. Özellikle kullanım klavuzu biraz ingilizce biliyorsanız size çok daha iyi bir fikir verecektir.&lt;/p&gt;
 
-&lt;p&gt;Yarın son bölüm olarak sitemizi Github&amp;rsquo;a yükleyeceğiz artık.&lt;/p&gt;
+&lt;p&gt;Yarın &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/&#34;&gt;son bölüm&lt;/a&gt; olarak sitemizi Github&amp;rsquo;a yükleyeceğiz artık.&lt;/p&gt;
 </description>
     </item>
     
@@ -237,7 +237,7 @@
       <guid>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/</guid>
       <description>
 
-&lt;p&gt;Dört bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimizin &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;üçüncü bölümüne&lt;/a&gt; gelebildik.&lt;/p&gt;
+&lt;p&gt;Beş bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimizin &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;üçüncü bölümüne&lt;/a&gt; gelebildik.&lt;/p&gt;
 
 &lt;p&gt;Birinci bölümde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Hugo kurulumunu&lt;/a&gt;, ikinci bölümde ise &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile Siteyi Lokal Bilgisayarda Oluşturma&lt;/a&gt; konusunu işlemiştik.&lt;/p&gt;
 
@@ -385,7 +385,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;p&gt;Daha da güzeli çoğu web geliştirme aracında olmayan &lt;strong&gt;Live Reload&lt;/strong&gt; (Canlı Önizleme) özelliği &lt;strong&gt;Hugo&lt;/strong&gt; ile varsayılan olarak geliyor. Ekstra bir paket kurmanıza gerek yok.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Live Reload&lt;/strong&gt; ile tarayıcınızda &lt;code&gt;Refresh&lt;/code&gt;&amp;lsquo;e (Yenile / F5) bile basmaya gerek kalmadan yaptığınız değişikliklerin hepsini görebiliyorsunuz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Live Reload&lt;/strong&gt; ile tarayıcınızda &lt;code&gt;Refresh&lt;/code&gt;&amp;lsquo;e (Yenile / F5) basmaya bile gerek kalmadan yaptığınız değişikliklerin hepsini görebiliyorsunuz.&lt;/p&gt;
 
 &lt;h2 id=&#34;yeni-bir-site-için-klasör-düzeni&#34;&gt;Yeni Bir Site İçin Klasör Düzeni&lt;/h2&gt;
 

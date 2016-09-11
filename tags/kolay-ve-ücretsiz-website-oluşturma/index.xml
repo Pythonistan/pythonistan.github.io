@@ -29,7 +29,7 @@
 
 &lt;p&gt;Daha da güzeli çoğu web geliştirme aracında olmayan &lt;strong&gt;Live Reload&lt;/strong&gt; (Canlı Önizleme) özelliği &lt;strong&gt;Hugo&lt;/strong&gt; ile varsayılan olarak geliyor. Ekstra bir paket kurmanıza gerek yok.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Live Reload&lt;/strong&gt; ile tarayıcınızda &lt;code&gt;Refresh&lt;/code&gt;&amp;lsquo;e (Yenile / F5) bile basmaya gerek kalmadan yaptığınız değişikliklerin hepsini görebiliyorsunuz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Live Reload&lt;/strong&gt; ile tarayıcınızda &lt;code&gt;Refresh&lt;/code&gt;&amp;lsquo;e (Yenile / F5) basmaya bile gerek kalmadan yaptığınız değişikliklerin hepsini görebiliyorsunuz.&lt;/p&gt;
 
 &lt;h2 id=&#34;yeni-bir-site-için-klasör-düzeni&#34;&gt;Yeni Bir Site İçin Klasör Düzeni&lt;/h2&gt;
 

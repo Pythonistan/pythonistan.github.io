@@ -137,7 +137,7 @@
 
 &lt;p&gt;Sanırım belli bir fikir edindiniz. Aslında konu benim anlatmaya çalıştığımdan çok daha kolay. Özellikle kullanım klavuzu biraz ingilizce biliyorsanız size çok daha iyi bir fikir verecektir.&lt;/p&gt;
 
-&lt;p&gt;Yarın son bölüm olarak sitemizi Github&amp;rsquo;a yükleyeceğiz artık.&lt;/p&gt;
+&lt;p&gt;Yarın &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/&#34;&gt;son bölüm&lt;/a&gt; olarak sitemizi Github&amp;rsquo;a yükleyeceğiz artık.&lt;/p&gt;
 </description>
     </item>
     
@@ -149,7 +149,7 @@
       <guid>http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/</guid>
       <description>
 
-&lt;p&gt;Dört bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimizin &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;üçüncü bölümüne&lt;/a&gt; gelebildik.&lt;/p&gt;
+&lt;p&gt;Beş bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimizin &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;üçüncü bölümüne&lt;/a&gt; gelebildik.&lt;/p&gt;
 
 &lt;p&gt;Birinci bölümde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/&#34;&gt;Hugo kurulumunu&lt;/a&gt;, ikinci bölümde ise &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile Siteyi Lokal Bilgisayarda Oluşturma&lt;/a&gt; konusunu işlemiştik.&lt;/p&gt;
 
@@ -297,7 +297,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;p&gt;Daha da güzeli çoğu web geliştirme aracında olmayan &lt;strong&gt;Live Reload&lt;/strong&gt; (Canlı Önizleme) özelliği &lt;strong&gt;Hugo&lt;/strong&gt; ile varsayılan olarak geliyor. Ekstra bir paket kurmanıza gerek yok.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Live Reload&lt;/strong&gt; ile tarayıcınızda &lt;code&gt;Refresh&lt;/code&gt;&amp;lsquo;e (Yenile / F5) bile basmaya gerek kalmadan yaptığınız değişikliklerin hepsini görebiliyorsunuz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Live Reload&lt;/strong&gt; ile tarayıcınızda &lt;code&gt;Refresh&lt;/code&gt;&amp;lsquo;e (Yenile / F5) basmaya bile gerek kalmadan yaptığınız değişikliklerin hepsini görebiliyorsunuz.&lt;/p&gt;
 
 &lt;h2 id=&#34;yeni-bir-site-için-klasör-düzeni&#34;&gt;Yeni Bir Site İçin Klasör Düzeni&lt;/h2&gt;
 
@@ -399,7 +399,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;p&gt;Geçen haftaki yazıda aslında &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/&#34;&gt;Hugo kurulumundan&lt;/a&gt; azıcık bahsetmiştim, ama o makale istediğim netlikte olmadı, bu sefer çok daha detaylı bir &lt;strong&gt;nasıl yapılır klavuzu&lt;/strong&gt; hazırlamaya karar verdim.&lt;/p&gt;
 
-&lt;p&gt;Dört bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimin huzurunuzdaki ilk &lt;strong&gt;(1.)&lt;/strong&gt; bölümü &lt;a href = &#34;#hugokur&#34;&gt; Hugo kurulumuna&lt;/a&gt; ayrıldı. Diğer adımlar ise şöyle: &lt;strong&gt;2.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile Siteyi Lokal Bilgisayarda Geliştirme&lt;/a&gt;, &lt;strong&gt;3.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;Geliştirdiğimiz Web Sitesini ve Temayı Özelleştirme&lt;/a&gt;, &lt;strong&gt;4.&lt;/strong&gt;: Geliştirdiğimiz Web Sitesini Github ile Web&amp;rsquo;de Ücretsiz Barındırma (Hosting)&lt;/p&gt;
+&lt;p&gt;Beş bölümlük &lt;strong&gt;Hugo ile statik bir websitesi nasıl yapılır&lt;/strong&gt; serimin huzurunuzdaki ilk &lt;strong&gt;(1.)&lt;/strong&gt; bölümü &lt;a href = &#34;#hugokur&#34;&gt; Hugo kurulumuna&lt;/a&gt; ayrıldı. Diğer adımlar ise şöyle: &lt;strong&gt;2.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-2/&#34;&gt;Hugo ile Siteyi Lokal Bilgisayarda Geliştirme&lt;/a&gt;, &lt;strong&gt;3.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-3/&#34;&gt;Geliştirdiğimiz Web Sitesini ve Temayı Özelleştirme&lt;/a&gt;, &lt;strong&gt;4.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-4/&#34;&gt;Geliştirdiğimiz Web Sitesinin Sayfalarını Düzenleme (Editing)&lt;/a&gt; &lt;strong&gt;5.&lt;/strong&gt;: &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-5/&#34;&gt;Geliştirdiğimiz Web Sitesini Github ile Web&amp;rsquo;de Ücretsiz Barındırma (Hosting)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Evet, fazla uzattık, şimdi hemen aksiyona geçelim&amp;hellip;&lt;/p&gt;
 
@@ -625,7 +625,7 @@ nocomment = true
 
 &lt;p&gt;Adımlar karışık geldiyse ve anlamadıysanız &lt;strong&gt;hiç merak etmeyin!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Bizim gibi tam amatörler için hazırlamakta olduğum &lt;strong&gt;adım adım Hugo ve Jekyll kullanım klavuzunu&lt;/strong&gt; çok yakın zamanda bu sitede bulacaksınız inşallah.&lt;/p&gt;
+&lt;p&gt;Bizim gibi tam amatörler için hazırlamakta olduğum &lt;a href=&#34;http://pythonistan.net/categories/hugo/&#34;&gt;&lt;strong&gt;adım adım Hugo ve Jekyll kullanım klavuzunu&lt;/strong&gt;&lt;/a&gt; çok yakın zamanda bu sitede bulacaksınız inşallah.&lt;/p&gt;
 
 &lt;p&gt;Tek başımıza bir websitesi oluşturup &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;git komutları&lt;/a&gt; vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
 

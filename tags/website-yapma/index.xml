@@ -157,7 +157,7 @@ nocomment = true
 
 &lt;p&gt;Adımlar karışık geldiyse ve anlamadıysanız &lt;strong&gt;hiç merak etmeyin!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Bizim gibi tam amatörler için hazırlamakta olduğum &lt;strong&gt;adım adım Hugo ve Jekyll kullanım klavuzunu&lt;/strong&gt; çok yakın zamanda bu sitede bulacaksınız inşallah.&lt;/p&gt;
+&lt;p&gt;Bizim gibi tam amatörler için hazırlamakta olduğum &lt;a href=&#34;http://pythonistan.net/categories/hugo/&#34;&gt;&lt;strong&gt;adım adım Hugo ve Jekyll kullanım klavuzunu&lt;/strong&gt;&lt;/a&gt; çok yakın zamanda bu sitede bulacaksınız inşallah.&lt;/p&gt;
 
 &lt;p&gt;Tek başımıza bir websitesi oluşturup &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;git komutları&lt;/a&gt; vasıtası ile web&amp;rsquo;e yükleyeceğiz.&lt;/p&gt;
 
