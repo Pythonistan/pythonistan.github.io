@@ -21,7 +21,7 @@
 
 &lt;h3 id=&#34;ilk-önce-kurulum-kontrolü&#34;&gt;İlk Önce Kurulum Kontrolü&lt;/h3&gt;
 
-&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
+&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırında&lt;/a&gt; &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
 
 &lt;h3 id=&#34;karakter-dizilerine-giriş&#34;&gt;Karakter Dizilerine Giriş&lt;/h3&gt;
 

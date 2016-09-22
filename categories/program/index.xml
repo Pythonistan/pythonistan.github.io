@@ -25,7 +25,7 @@
 
 &lt;p&gt;Aksi takdirde insanı aslında kolaylıkla otomatize edilebilecek işleri tekrar tekrar yapmaktan kaynaklanan bir sıkıntı basıyor.&lt;/p&gt;
 
-&lt;p&gt;Komut satırı kullanımı ile ilgili kişisel duygu ve düşüncelerimi &lt;strong&gt;Git&lt;/strong&gt;&amp;lsquo;ten bahsettiğim yazıda &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;dile getirmiştim&lt;/a&gt;. Bir göz atmak isteyebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Komut satırı kullanımı ile ilgili kişisel duygu ve düşüncelerimi &lt;strong&gt;Git&lt;/strong&gt;&amp;lsquo;ten bahsettiğim yazıda &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/#komut-satırı-sistemlerinin-yaşattığı-duygular&#34;&gt;dile getirmiştim&lt;/a&gt;. Bir göz atmak isteyebilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;90&amp;rsquo;larda bilgisayar kullanmaya başlayanlar Windows’un 2000’li yıllarda tamamen &lt;em&gt;grafik arayüze&lt;/em&gt; dönme kararına kadar &lt;strong&gt;Dos komutlarını&lt;/strong&gt; Windows’un &lt;em&gt;grafik arayüzü&lt;/em&gt; ile birlikte kullanmışlardı.&lt;/p&gt;
 
@@ -33,7 +33,7 @@
 
 &lt;p&gt;Windows, Win 7 versiyonundan bu yana eskiden &lt;strong&gt;Dos komutlarını&lt;/strong&gt; uyguladığımız &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;ye  (cmd.exe - çok eskiden command.exe) alternatif başka bir interaktif kabuk (shell) sunuyor.&lt;/p&gt;
 
-&lt;p&gt;Bu güçlü interaktif kabuğun adı &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bu güçlü interaktif kabuğun adı &lt;a href=&#34;#&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;gelelim-powershell-e&#34;&gt;Gelelim Powershell&amp;rsquo;e&lt;/h2&gt;
 
@@ -41,7 +41,28 @@
 
 &lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; komut satırından asla vazgeçemeyecek &lt;strong&gt;Geek&lt;/strong&gt; (usta) bilgisayar kullanıcılarına Windows ortamında çok kullanışlı bir tecrübe sağlıyor.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt;’ye göre çok daha gelişmiş ve güçlü. Öyleki varlığıyla adeta &lt;strong&gt;Linux&lt;/strong&gt; gibi bu işin piri sayılacak &lt;strong&gt;Unix&lt;/strong&gt; tabanlı sistemlere “burada ben de varım” diyor. &lt;em&gt;(Hangisi Unix Tabanlı değil ki, değil mi?)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt;’ye göre çok daha gelişmiş ve güçlü. Öyleki varlığıyla adeta &lt;strong&gt;Linux&lt;/strong&gt; gibi bu işin piri sayılacak &lt;strong&gt;Unix&lt;/strong&gt; tabanlı sistemlere “burada ben de varım” diyor. &lt;em&gt;(Bu arada, hangisi Unix tabanlı değil ki, değil mi?)&lt;/em&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-yonetici-olarak-calistir.png&#34;&gt;
+ &lt;figcaption&gt;Powershell&#39;i Görev Yöneticisinden Çalıştırma&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;öyleyse-powershell-i-açalım&#34;&gt;Öyleyse Powershell&amp;rsquo;i Açalım&lt;/h2&gt;
+
+&lt;p&gt;Windows&amp;rsquo;ta &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i açmanın epey yolu var. Birkaç tanesine değinelim:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Powershell&amp;rsquo;i Başlat menüsünden başlatmak. Bu yolda Başlat menüsünü açtıktan sonra &lt;strong&gt;&amp;lsquo;power&amp;rsquo;&lt;/strong&gt; yazmaya başladığınız an çıkacak olan Powershell kısayolunu açarak başlatabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Görev Yöneticisinden &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i başlatmak. Bu yol şu adımlardan oluşuyor: Ctrl+Alt+Del - Görev Yöneticisi - Dosya Menüsü - Yeni Görevi Çalıştır&amp;rsquo;a tıklayın. Açılan kutuya &lt;code&gt;powershell&lt;/code&gt; yazıp Enter&amp;rsquo;a basın.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Klavyeden Windows tuşu ile birlikte R&amp;rsquo;ye (&lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + &lt;kbd&gt;R&lt;/kbd&gt;) bastıktan sonra çıkacak olan &lt;em&gt;Çalıştır&lt;/em&gt; kutusunda &lt;code&gt;powershell&lt;/code&gt; yazıp Enter&amp;rsquo;a basarak &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i çalıştırabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Yönetici&lt;/strong&gt; hakları gerektiren bazı komut satırı uygulamaları için &lt;strong&gt;Powershell&lt;/strong&gt;’i yönetici olarak çalıştırmak isteyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Yönetici&lt;/strong&gt; olarak çalıştırmak için &lt;em&gt;komut satırında&lt;/em&gt; &lt;code&gt;Start-Process powershell -Verb runAs&lt;/code&gt; komutunu verebilirsiniz. Başka bir yol ise &lt;em&gt;Görev Yöneticisi&lt;/em&gt;&amp;lsquo;nden çalıştırırken &amp;ldquo;Bu görevi yönetici ayrıcalıklarıyla oluştur&amp;rdquo; kutusunu işaretleyerek çalıştırmak.(&amp;#8593;)&lt;/p&gt;
 
 &lt;h2 id=&#34;powershell-cmd-ye-karşı&#34;&gt;Powershell Cmd&amp;rsquo;ye Karşı&lt;/h2&gt;
 
@@ -55,7 +76,7 @@
 
 &lt;p&gt;&lt;strong&gt;Linux&lt;/strong&gt; komut satırı sistemleri &lt;em&gt;pipe&lt;/em&gt; olarak yalnızca karakter (text) kullanırken &lt;strong&gt;Powershell&lt;/strong&gt;’de daha gelişkin &lt;strong&gt;cmdlet objeleri&lt;/strong&gt; kullanılabiliyor.&lt;/p&gt;
 
-&lt;p&gt;Yani bir &lt;strong&gt;cmdlet&lt;/strong&gt; ten aldığımız sonucu (çıktıyı) diğer bir &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;in kullanımına sunabiliyoruz. Böylelikle birden fazla &lt;strong&gt;cmdlet&lt;/strong&gt; sıralı olarak kullanılarak bu &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;lerden gelen çıktılar işleniliyor.&lt;/p&gt;
+&lt;p&gt;Yani bir &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ten aldığımız sonucu (çıktıyı) diğer bir &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;in kullanımına sunabiliyoruz. Böylelikle birden fazla &lt;strong&gt;cmdlet&lt;/strong&gt; sıralı olarak kullanılarak bu &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;lerden gelen çıktılar işleniliyor.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; komut satırından ibaret bir kabuk değil. &lt;strong&gt;Cmd&lt;/strong&gt;’nin aksine onunla aynı zamanda çok kompleks &lt;strong&gt;scriptler&lt;/strong&gt; oluşturarak Windows’unuzu yönetebilirsiniz. &lt;em&gt;(scripting)&lt;/em&gt;&lt;/p&gt;
 
@@ -65,13 +86,18 @@
 
 &lt;p&gt;Yaşları tutanlar eskiden internet bağlantısında sıkıntı çıktığında hemen bir &lt;em&gt;Çalıştır&lt;/em&gt; kutusundan &lt;code&gt;cmd. exe&lt;/code&gt; yapıp &lt;code&gt;ping&lt;/code&gt; yada &lt;code&gt;tracert&lt;/code&gt; komutu verdiklerini hatırlamışlardır.&lt;/p&gt;
 
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/tracert.png&#34;&gt;
+ &lt;figcaption&gt;Cmd Üzerinde Tracert Komutu Kullanımı&lt;/figcaption&gt;
+&lt;/figure&gt;
+
 &lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt; kullanımınızda ayrıca &lt;code&gt;dir&lt;/code&gt; ve &lt;code&gt;cd..&lt;/code&gt; komutlar da yer tutuyordur diye tahmin ediyorum. Sadece bu kadarsa muhtemelen &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;e pek ihtiyaç duymazsınız.&lt;/p&gt;
 
 &lt;p&gt;Ancak gerçekten daha güçlü bir kullanıcı olmak istiyorsanız kendinizi &lt;em&gt;komut satırına&lt;/em&gt; adapte etmelisiniz. Zira &lt;em&gt;komut satırı&lt;/em&gt; aracılığı ile hem çok daha pratik olmak hem de bilgisayara &lt;em&gt;grafik arayüze&lt;/em&gt; göre daha fazla hakim olmak mümkün.&lt;/p&gt;
 
 &lt;p&gt;Mesela birden çok dosyanın adını bir anda değiştirmek gibi normalde &lt;em&gt;3. Parti bir yazılım&lt;/em&gt; yükleyerek yapmak zorunda kalacağınız bir işi &lt;strong&gt;Powershell&lt;/strong&gt; vasıtası ile nisbeten kolay bir şekilde halledebilirsiniz.&lt;/p&gt;
 
-&lt;p&gt;Nisbeten kolay dedim, zira bu tür şeyler ortalama bir kullanıcı için hala belli &lt;em&gt;komutları ezberlemeyi&lt;/em&gt;, &lt;em&gt;araştırmayı&lt;/em&gt;, &lt;em&gt;denemeyi&lt;/em&gt;, &lt;em&gt;pes etmemeyi&lt;/em&gt;, &lt;em&gt;ısrar etmeyi&lt;/em&gt; gerektiriyor. Bu da çoğu kullanıcıya zor gelen bir şey. (Aslında çekinecek hiçbir şey yok, &lt;strong&gt;Stackoverflow&lt;/strong&gt; ne güne duruyor?)&lt;/p&gt;
+&lt;p&gt;Nisbeten kolay dedim, zira bu tür şeyler ortalama bir kullanıcı için hala belli &lt;em&gt;komutları ezberlemeyi&lt;/em&gt;, &lt;em&gt;araştırmayı&lt;/em&gt;, &lt;em&gt;denemeyi&lt;/em&gt;, &lt;em&gt;pes etmemeyi&lt;/em&gt;, &lt;em&gt;ısrar etmeyi&lt;/em&gt; gerektiriyor. Bu da çoğu kullanıcıya zor gelen bir şey. (Aslında çekinecek hiçbir şey yok, &lt;a href=&#34;http://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Stackoverflow&lt;/strong&gt;&lt;/a&gt; ne güne duruyor?)&lt;/p&gt;
 
 &lt;p&gt;Neyse, biz &lt;strong&gt;olmak isteyenler&lt;/strong&gt; için yazalım o halde. &lt;strong&gt;Usta bir bilgisayar kullanıcısı&lt;/strong&gt;, &lt;strong&gt;ağ yöneticisi&lt;/strong&gt;, &lt;strong&gt;sistem yöneticisi&lt;/strong&gt; v.s. olmak için &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i iyi kullanmak çoook büyük bir artı değer sağlar. Sizi temin ederim.&lt;/p&gt;
 
@@ -133,12 +159,17 @@ PowerShell: Stop-process
 
 &lt;h2 id=&#34;diğer-komutlar&#34;&gt;Diğer Komutlar&lt;/h2&gt;
 
-&lt;p&gt;Herhangi bir &lt;strong&gt;Dos&lt;/strong&gt; komutunun &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de karşılığının bulunup bulunmadığını anlamak için &lt;code&gt;get-alias doskomutununadı&lt;/code&gt; komutu verebilirsiniz. Mesela &lt;code&gt;rm&lt;/code&gt; komutunu hatırladıysanız eğer &lt;code&gt;remove file&lt;/code&gt; (dosyayı sil) komutudur. Bu komutun &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;deki karşılığını &lt;code&gt;get-alias rm&lt;/code&gt; yazarak öğrenelim: &lt;strong&gt;remove-item&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Herhangi bir &lt;strong&gt;Dos&lt;/strong&gt; komutunun &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de karşılığının bulunup bulunmadığını anlamak için &lt;code&gt;get-alias doskomutununadı&lt;/code&gt; komutu verebilirsiniz. Mesela &lt;code&gt;rm&lt;/code&gt; komutunu hatırladıysanız eğer &lt;code&gt;remove file&lt;/code&gt; (dosyayı sil) komutudur. Bu komutun &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;deki karşılığını &lt;code&gt;get-alias rm&lt;/code&gt; yazarak öğrenelim: &lt;code&gt;remove-item&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Tüm komutları görmek için ise &lt;code&gt;get-command&lt;/code&gt; yazmanız yeterli. Karşınıza oldukça uzun bir liste gelecek.&lt;/p&gt;
+&lt;p&gt;Tüm &lt;strong&gt;cmdlet&lt;/strong&gt; komutlarını görmek için ise &lt;code&gt;get-command&lt;/code&gt; yazmanız yeterli. Karşınıza oldukça uzun bir liste gelecek.&lt;/p&gt;
 
-&lt;p&gt;Komutları içinde geçen kelimelere göre yada içinde bulunduğu spesifik modüle göre aratabiliriz. Örneğin içinde IP geçen cmdlet leri görmek istersek vereceğimiz komut,
+&lt;p&gt;Komutları içinde geçen kelimelere göre yada içinde bulunduğu spesifik modüle göre aratabiliriz. Örneğin içinde IP geçen komutları görmek istersek vereceğimiz komut,
 &lt;code&gt;Get-Command –Name *IP*&lt;/code&gt; olacaktır.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershellde-komut-arama.png&#34;&gt;
+ &lt;figcaption&gt;Powershell&#39;de Belli Komutları Arama Kelimeleriyle Bulma&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Yada misal olarak yalnızca &lt;strong&gt;netTCPIP&lt;/strong&gt; modülü içindeki IP kelimesi içeren komutları görmek için: &lt;code&gt;Get-Command –Module NetTCPIP –Name *IP*&lt;/code&gt;&lt;/p&gt;
 
@@ -146,28 +177,34 @@ PowerShell: Stop-process
 
 &lt;p&gt;Örneğin &lt;code&gt;Tee-object&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;i hakkında bilgi almak için &lt;code&gt;get-help Tee-object&lt;/code&gt; yazabiliriz. Daha geniş bilgi için &lt;code&gt;get-help Tee-object -online&lt;/code&gt; yazarak internet kaynaklarından yardım alabilirsiniz.&lt;/p&gt;
 
-&lt;h2 id=&#34;komut-satırı-kolaylıkları&#34;&gt;Komut Satırı Kolaylıkları&lt;/h2&gt;
+&lt;h2 id=&#34;powershell-komut-satırı-kolaylıkları&#34;&gt;Powershell Komut Satırı Kolaylıkları&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;64&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son 32&amp;rsquo;sini sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
 
-&lt;p&gt;Ayrıca uzun komutlarınız için &lt;code&gt;alias&lt;/code&gt; kullanabilirsiniz. Nasıl &lt;strong&gt;Cmd&lt;/strong&gt; &lt;em&gt;Dos komutlarını&lt;/em&gt; &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de alias olarak kullanabiliyoruz aynı o şekilde &lt;strong&gt;Powershell&lt;/strong&gt; komutlarını da bu sayede kısaltabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Powershell ortamı varsayılan olarak Cmd&amp;rsquo;ye göre daha renkli ve canlı. Cmd&amp;rsquo;nin ayarları ile oynayarak renklendirmek mümkün olsa da Powershell&amp;rsquo;in sunduğu seçenekler kadar çekici değil.&lt;/p&gt;
 
-&lt;h2 id=&#34;windows-ta-powershell&#34;&gt;Windows&amp;rsquo;ta Powershell&lt;/h2&gt;
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-renk-kullanimi.png&#34;&gt;
+ &lt;figcaption&gt;Powershell&#39;de Farklı Renklerin Kullanımından Faydalanma&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell ISE (bütünleşik scritping ortamı).&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;
+Ayrıca uzun komutlarınız için &lt;code&gt;alias&lt;/code&gt; kullanabilirsiniz. Nasıl &lt;strong&gt;Cmd&lt;/strong&gt; &lt;em&gt;Dos komutlarını&lt;/em&gt; &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de alias olarak kullanabiliyoruz aynı o şekilde &lt;strong&gt;Powershell&lt;/strong&gt; komutlarını da bu sayede kısaltabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;windows-ta-powershell-sürümleri&#34;&gt;Windows&amp;rsquo;ta Powershell Sürümleri&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell &lt;strong&gt;ISE&lt;/strong&gt; (bütünleşik scritping ortamı).&lt;/p&gt;
 
 &lt;figure&gt;
  &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-ise.png&#34;&gt;
  &lt;figcaption&gt;Powershell ISE Ekran Görüntüsü&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;Yönetici&lt;/strong&gt; hakları gerektiren bazı komut satırı uygulamaları için &lt;strong&gt;Powershell&lt;/strong&gt;’i yönetici olarak çalıştırmak isteyebilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Yönetici&lt;/strong&gt; olarak çalıştırmak için &lt;em&gt;komut satırında&lt;/em&gt; &lt;code&gt;Start-Process powershell -Verb runAs&lt;/code&gt; komutunu verebilirsiniz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Powershell ISE&lt;/strong&gt;&amp;lsquo;yi çalıştırmak için yukarıda bahsettiğimiz &lt;strong&gt;Powershell&lt;/strong&gt; &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/#öyleyse-powershell-i-açalım&#34;&gt;başlatma yollarını&lt;/a&gt; aynen kullanabilirsiniz. Sadece isme &amp;ldquo;ISE&amp;rdquo; ekleyeceksiniz. Örneğin bir &lt;strong&gt;Powershell&lt;/strong&gt; kabuğundan hemen şimdi &lt;code&gt;powershell ise&lt;/code&gt; komutu vererek bütünleşik script ortamını açabilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;Windows’da iyi bildiğiniz bazı uygulamaları &lt;code&gt;start-process&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;i ile &lt;em&gt;komut satırından&lt;/em&gt; çalıştırabilirsiniz. Örnegin &lt;code&gt;start-process msconfig&lt;/code&gt; yazarsanız Microsoft konfigürasyon ayar programı açılacaktır. &lt;em&gt;Msconfig&lt;/em&gt; yerine başka bir programı deneyebilirsiniz, mesela &lt;em&gt;notepad&lt;/em&gt;, v.s.&lt;/p&gt;
 
-&lt;p&gt;Aynen &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;de olduğu gibi &lt;strong&gt;Powershell&lt;/strong&gt;’i terketmek için &lt;code&gt;exit&lt;/code&gt; komutunu vermeniz yeterli. Interaktif kabuk komut satırını sona erdirip üstüne ekranı kapatacaktır.&lt;/p&gt;
+&lt;p&gt;Aynen &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;de olduğu gibi &lt;strong&gt;Powershell&lt;/strong&gt;’i terketmek için &lt;code&gt;exit&lt;/code&gt; komutunu vermeniz yeterli. Interaktif kabuk komut satırını sona erecek ve pencere kapatılacaktır. (Diğer Windows programlarını kapatabilen Alt+F4 klavye kısayolu ile kabuk ekranını kapatamazsınız.)&lt;/p&gt;
 
 &lt;hr&gt;
 
@@ -236,7 +273,7 @@ print palindrome(text)
 
 &lt;p&gt;Sublime gördüğünüz üzere Python&amp;rsquo;a has &lt;code&gt;def&lt;/code&gt;, &lt;code&gt;return&lt;/code&gt;, &lt;code&gt;else&lt;/code&gt; gibi kelimeleri özel olarak renklendirdi ve bu durum kodu okumayı kolaylaştırdı. Takdir ettiğinizi sanıyorum. Bendeki renklerden hoşlanmadıysanız değişik renk kombinasyon seçeneklerini Preferences &amp;gt; Color Scheme kısmında bulup size uygun olanını seçin.&lt;/p&gt;
 
-&lt;p&gt;Ancak en önemli ve en güzel özelliği sona sakladım: Artık Python programımızı çalıştırmak için Payton kabuğa (Shell) yada komut satırına gidip komut yazarak programımızı çalıştırmamız &lt;strong&gt;gerekmiyor&lt;/strong&gt;. Sublime otomatik olarak Python&amp;rsquo;u kendi içerisinden çalıştırma fırsatı sunuyor.&lt;strong&gt;(Tabi, Python&amp;rsquo;u bilgisayarınıza çoktan &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;kurdunuz&lt;/a&gt;, öyle değil mi???)&lt;/strong&gt; Kodunuzu yazdıktan sonra çalıştırmak için tek yapmanız gereken &lt;code&gt;Ctrl + B&lt;/code&gt; tuşlarına basmak. (yada Tools &amp;gt; Build &amp;lsquo;e tıklamak ) Python Interpreter açılıyor ve aşağıdaki bölmede bize programın çıktısı(output) veriliyor. (&lt;strong&gt;Hemen Altta Sağdaki Fotoya bakın&lt;/strong&gt;) &lt;cite&gt;Mükemmel!&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Ancak en önemli ve en güzel özelliği sona sakladım: Artık Python programımızı çalıştırmak için Payton kabuğa (Shell) yada &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırına&lt;/a&gt; gidip komut yazarak programımızı çalıştırmamız &lt;strong&gt;gerekmiyor&lt;/strong&gt;. Sublime otomatik olarak Python&amp;rsquo;u kendi içerisinden çalıştırma fırsatı sunuyor.&lt;strong&gt;(Tabi, Python&amp;rsquo;u bilgisayarınıza çoktan &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;kurdunuz&lt;/a&gt;, öyle değil mi???)&lt;/strong&gt; Kodunuzu yazdıktan sonra çalıştırmak için tek yapmanız gereken &lt;code&gt;Ctrl + B&lt;/code&gt; tuşlarına basmak. (yada Tools &amp;gt; Build &amp;lsquo;e tıklamak ) Python Interpreter açılıyor ve aşağıdaki bölmede bize programın çıktısı(output) veriliyor. (&lt;strong&gt;Hemen Altta Sağdaki Fotoya bakın&lt;/strong&gt;) &lt;cite&gt;Mükemmel!&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/sublime-install/sublime_python_ayar.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Sublime&#39;da Python ayarlarını Yapma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/sublime-install/sublime_python_ayar_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;http://pythonistan.net/img/blog/sublime-install/sublime_run_screen.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Interpreter&#39;i Sublime&#39;da Çalıştırma&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/sublime-install/sublime_run_screen_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -284,7 +321,7 @@ print palindrome(text)
 
 &lt;h3 id=&#34;ilk-önce-kurulum-kontrolü&#34;&gt;İlk Önce Kurulum Kontrolü&lt;/h3&gt;
 
-&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
+&lt;p&gt;Evet, bugün Python&amp;rsquo;la ilk programımızı yazıyoruz, hazır mıyız? Tabii, bir önceki &lt;a href=&#34;http://pythonistan.net/blog/python-kurulum/&#34;&gt;makalemde&lt;/a&gt; verdiğim yönergeleri izleyip bilgisayarınıza Paytonu kurdunuz ve oradaki gibi &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırında&lt;/a&gt; &lt;code&gt;python&lt;/code&gt; komutunu verdiğinizde problemsiz bir şekilde Python Kabuğu (Shell) açıldı, öyle değil mi? (Foto 1 yada üstteki büyük foto)&lt;/p&gt;
 
 &lt;h3 id=&#34;karakter-dizilerine-giriş&#34;&gt;Karakter Dizilerine Giriş&lt;/h3&gt;
 
@@ -334,7 +371,7 @@ print palindrome(text)
 
 &lt;p&gt;Bir önceki &lt;a href=&#34;http://pythonistan.net/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
 
-&lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için komut satırı (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
+&lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırı&lt;/a&gt; (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
 
 &lt;p&gt;Ben sitede Payton&amp;rsquo;un 2.x versiyonunu kullanacağım. Zira Payton 3 versiyonunda bariz söz dizimi(syntax) değişiklikleri var, ayrıca bu versiyon henüz tam olarak yaygınlaşmadı. Dolayısıyla 2.x versiyonunu indirmenizi tavsiye ediyorum.&lt;/p&gt;
 
@@ -345,7 +382,7 @@ print palindrome(text)
 &lt;li&gt;Python 2.7.x versiyonunu _(yada yeni bir 2.x versiyonu çıktıysa onu) bilgisayarınıza indirin. (Foto 2)&lt;/li&gt;
 &lt;li&gt;İndirdiğiniz dosyayı çift tıklayarak kurmaya başlayın.&lt;/li&gt;
 &lt;li&gt;Kurulumda çeşitli ekranlar gelecek. Bu ekranları &lt;strong&gt;Next&lt;/strong&gt; diyerek geçebilirsiniz. Ancak Python&amp;rsquo;u ortam değişkenlerine kaydedeceğimiz ekranı hızlı geçmeyin, Python&amp;rsquo;u Path(Ortam) değişkenine eklemeyi unutmayın. Sizdeki ekran farklı olabilir, &lt;strong&gt;PATH&lt;/strong&gt; kelimesine dikkat edin.(Foto 3)&lt;/li&gt;
-&lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse komut satırında (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
+&lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırında&lt;/a&gt; (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;

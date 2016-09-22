@@ -69,7 +69,7 @@
 
 &lt;p&gt;Hugo ile hemen bir deneme sitesi yapalım. Hugoyu indirin ve ortam değişkenine ekleyin.&lt;/p&gt;
 
-&lt;p&gt;Şimdi komut satırında &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;(Powershell)&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yenisite adında bir klasör oluşturuldu.Hemen kontrol edin.&lt;/p&gt;
+&lt;p&gt;Şimdi &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırında&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yenisite adında bir klasör oluşturuldu.Hemen kontrol edin.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/hugo_yeni_site_olusturma.png&#34; alt=&#34;Hugo ile yeni bir site oluşturma&#34; /&gt;&lt;/p&gt;
 

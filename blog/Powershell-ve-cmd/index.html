@@ -152,12 +152,13 @@
 <ul>
 <li><a href="#komut-satırı-ve-biraz-tarih">Komut Satırı ve Biraz Tarih</a></li>
 <li><a href="#gelelim-powershell-e">Gelelim Powershell&rsquo;e</a></li>
+<li><a href="#öyleyse-powershell-i-açalım">Öyleyse Powershell&rsquo;i Açalım</a></li>
 <li><a href="#powershell-cmd-ye-karşı">Powershell Cmd&rsquo;ye Karşı</a></li>
 <li><a href="#powershell-in-bize-katacakları">Powershell&rsquo;in Bize Katacakları</a></li>
 <li><a href="#bazı-powershell-ve-cmd-komutları">Bazı Powershell ve Cmd komutları</a></li>
 <li><a href="#diğer-komutlar">Diğer Komutlar</a></li>
-<li><a href="#komut-satırı-kolaylıkları">Komut Satırı Kolaylıkları</a></li>
-<li><a href="#windows-ta-powershell">Windows&rsquo;ta Powershell</a></li>
+<li><a href="#powershell-komut-satırı-kolaylıkları">Powershell Komut Satırı Kolaylıkları</a></li>
+<li><a href="#windows-ta-powershell-sürümleri">Windows&rsquo;ta Powershell Sürümleri</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -184,13 +185,13 @@
 			
 				<div class="post-categories">
 				
-					<a class="post-category post-category-program" href="http://pythonistan.net//categories/program">program</a>
+					<a class="post-category post-category-program" href="http://pythonistan.net//categories/program">PROGRAM</a>
 				
-					<a class="post-category post-category-komutlar" href="http://pythonistan.net//categories/komutlar">komutlar</a>
+					<a class="post-category post-category-kabuk" href="http://pythonistan.net//categories/kabuk">KABUK</a>
 				
-					<a class="post-category post-category-komut-sat%C4%B1r%C4%B1" href="http://pythonistan.net//categories/komut-sat%C4%B1r%C4%B1">komut satırı</a>
+					<a class="post-category post-category-komut-satiri" href="http://pythonistan.net//categories/komut-satiri">KOMUT SATIRI</a>
 				
-					<a class="post-category post-category-powershell" href="http://pythonistan.net//categories/powershell">powershell</a>
+					<a class="post-category post-category-powershell" href="http://pythonistan.net//categories/powershell">POWERSHELL</a>
 				
 				</div>
 			
@@ -215,7 +216,7 @@
 
 <p>Aksi takdirde insanı aslında kolaylıkla otomatize edilebilecek işleri tekrar tekrar yapmaktan kaynaklanan bir sıkıntı basıyor.</p>
 
-<p>Komut satırı kullanımı ile ilgili kişisel duygu ve düşüncelerimi <strong>Git</strong>&lsquo;ten bahsettiğim yazıda <a href="/blog/git-ve-github/">dile getirmiştim</a>. Bir göz atmak isteyebilirsiniz.</p>
+<p>Komut satırı kullanımı ile ilgili kişisel duygu ve düşüncelerimi <strong>Git</strong>&lsquo;ten bahsettiğim yazıda <a href="/blog/git-ve-github/#komut-satırı-sistemlerinin-yaşattığı-duygular">dile getirmiştim</a>. Bir göz atmak isteyebilirsiniz.</p>
 
 <p>90&rsquo;larda bilgisayar kullanmaya başlayanlar Windows’un 2000’li yıllarda tamamen <em>grafik arayüze</em> dönme kararına kadar <strong>Dos komutlarını</strong> Windows’un <em>grafik arayüzü</em> ile birlikte kullanmışlardı.</p>
 
@@ -223,7 +224,7 @@
 
 <p>Windows, Win 7 versiyonundan bu yana eskiden <strong>Dos komutlarını</strong> uyguladığımız <strong>Cmd</strong>&lsquo;ye  (cmd.exe - çok eskiden command.exe) alternatif başka bir interaktif kabuk (shell) sunuyor.</p>
 
-<p>Bu güçlü interaktif kabuğun adı <a href="/blog/Powershell-ve-cmd/"><strong>Powershell</strong></a>.</p>
+<p>Bu güçlü interaktif kabuğun adı <a href="#"><strong>Powershell</strong></a>.</p>
 
 <h2 id="gelelim-powershell-e">Gelelim Powershell&rsquo;e</h2>
 
@@ -231,7 +232,28 @@
 
 <p><strong>Powershell</strong> komut satırından asla vazgeçemeyecek <strong>Geek</strong> (usta) bilgisayar kullanıcılarına Windows ortamında çok kullanışlı bir tecrübe sağlıyor.</p>
 
-<p><strong>Cmd</strong>’ye göre çok daha gelişmiş ve güçlü. Öyleki varlığıyla adeta <strong>Linux</strong> gibi bu işin piri sayılacak <strong>Unix</strong> tabanlı sistemlere “burada ben de varım” diyor. <em>(Hangisi Unix Tabanlı değil ki, değil mi?)</em></p>
+<p><strong>Cmd</strong>’ye göre çok daha gelişmiş ve güçlü. Öyleki varlığıyla adeta <strong>Linux</strong> gibi bu işin piri sayılacak <strong>Unix</strong> tabanlı sistemlere “burada ben de varım” diyor. <em>(Bu arada, hangisi Unix tabanlı değil ki, değil mi?)</em></p>
+
+<figure>
+ <img src="/img/blog/powershell-cmd/powershell-yonetici-olarak-calistir.png">
+ <figcaption>Powershell'i Görev Yöneticisinden Çalıştırma</figcaption>
+</figure>
+
+<h2 id="öyleyse-powershell-i-açalım">Öyleyse Powershell&rsquo;i Açalım</h2>
+
+<p>Windows&rsquo;ta <strong>Powershell</strong>&lsquo;i açmanın epey yolu var. Birkaç tanesine değinelim:</p>
+
+<ol>
+<li><p>Powershell&rsquo;i Başlat menüsünden başlatmak. Bu yolda Başlat menüsünü açtıktan sonra <strong>&lsquo;power&rsquo;</strong> yazmaya başladığınız an çıkacak olan Powershell kısayolunu açarak başlatabilirsiniz.</p></li>
+
+<li><p>Görev Yöneticisinden <strong>Powershell</strong>&lsquo;i başlatmak. Bu yol şu adımlardan oluşuyor: Ctrl+Alt+Del - Görev Yöneticisi - Dosya Menüsü - Yeni Görevi Çalıştır&rsquo;a tıklayın. Açılan kutuya <code>powershell</code> yazıp Enter&rsquo;a basın.</p></li>
+
+<li><p>Klavyeden Windows tuşu ile birlikte R&rsquo;ye (<i class='fa fa-windows'></i> + <kbd>R</kbd>) bastıktan sonra çıkacak olan <em>Çalıştır</em> kutusunda <code>powershell</code> yazıp Enter&rsquo;a basarak <strong>Powershell</strong>&lsquo;i çalıştırabilirsiniz.</p></li>
+</ol>
+
+<p><strong>Yönetici</strong> hakları gerektiren bazı komut satırı uygulamaları için <strong>Powershell</strong>’i yönetici olarak çalıştırmak isteyebilirsiniz.</p>
+
+<p><strong>Yönetici</strong> olarak çalıştırmak için <em>komut satırında</em> <code>Start-Process powershell -Verb runAs</code> komutunu verebilirsiniz. Başka bir yol ise <em>Görev Yöneticisi</em>&lsquo;nden çalıştırırken &ldquo;Bu görevi yönetici ayrıcalıklarıyla oluştur&rdquo; kutusunu işaretleyerek çalıştırmak.(&#8593;)</p>
 
 <h2 id="powershell-cmd-ye-karşı">Powershell Cmd&rsquo;ye Karşı</h2>
 
@@ -245,7 +267,7 @@
 
 <p><strong>Linux</strong> komut satırı sistemleri <em>pipe</em> olarak yalnızca karakter (text) kullanırken <strong>Powershell</strong>’de daha gelişkin <strong>cmdlet objeleri</strong> kullanılabiliyor.</p>
 
-<p>Yani bir <strong>cmdlet</strong> ten aldığımız sonucu (çıktıyı) diğer bir <strong>cmdlet</strong>&lsquo;in kullanımına sunabiliyoruz. Böylelikle birden fazla <strong>cmdlet</strong> sıralı olarak kullanılarak bu <strong>cmdlet</strong>&lsquo;lerden gelen çıktılar işleniliyor.</p>
+<p>Yani bir <strong>cmdlet</strong>&lsquo;ten aldığımız sonucu (çıktıyı) diğer bir <strong>cmdlet</strong>&lsquo;in kullanımına sunabiliyoruz. Böylelikle birden fazla <strong>cmdlet</strong> sıralı olarak kullanılarak bu <strong>cmdlet</strong>&lsquo;lerden gelen çıktılar işleniliyor.</p>
 
 <p><strong>Powershell</strong> komut satırından ibaret bir kabuk değil. <strong>Cmd</strong>’nin aksine onunla aynı zamanda çok kompleks <strong>scriptler</strong> oluşturarak Windows’unuzu yönetebilirsiniz. <em>(scripting)</em></p>
 
@@ -255,13 +277,18 @@
 
 <p>Yaşları tutanlar eskiden internet bağlantısında sıkıntı çıktığında hemen bir <em>Çalıştır</em> kutusundan <code>cmd. exe</code> yapıp <code>ping</code> yada <code>tracert</code> komutu verdiklerini hatırlamışlardır.</p>
 
+<figure>
+ <img src="/img/blog/powershell-cmd/tracert.png">
+ <figcaption>Cmd Üzerinde Tracert Komutu Kullanımı</figcaption>
+</figure>
+
 <p><strong>Cmd</strong> kullanımınızda ayrıca <code>dir</code> ve <code>cd..</code> komutlar da yer tutuyordur diye tahmin ediyorum. Sadece bu kadarsa muhtemelen <strong>Powershell</strong>&lsquo;e pek ihtiyaç duymazsınız.</p>
 
 <p>Ancak gerçekten daha güçlü bir kullanıcı olmak istiyorsanız kendinizi <em>komut satırına</em> adapte etmelisiniz. Zira <em>komut satırı</em> aracılığı ile hem çok daha pratik olmak hem de bilgisayara <em>grafik arayüze</em> göre daha fazla hakim olmak mümkün.</p>
 
 <p>Mesela birden çok dosyanın adını bir anda değiştirmek gibi normalde <em>3. Parti bir yazılım</em> yükleyerek yapmak zorunda kalacağınız bir işi <strong>Powershell</strong> vasıtası ile nisbeten kolay bir şekilde halledebilirsiniz.</p>
 
-<p>Nisbeten kolay dedim, zira bu tür şeyler ortalama bir kullanıcı için hala belli <em>komutları ezberlemeyi</em>, <em>araştırmayı</em>, <em>denemeyi</em>, <em>pes etmemeyi</em>, <em>ısrar etmeyi</em> gerektiriyor. Bu da çoğu kullanıcıya zor gelen bir şey. (Aslında çekinecek hiçbir şey yok, <strong>Stackoverflow</strong> ne güne duruyor?)</p>
+<p>Nisbeten kolay dedim, zira bu tür şeyler ortalama bir kullanıcı için hala belli <em>komutları ezberlemeyi</em>, <em>araştırmayı</em>, <em>denemeyi</em>, <em>pes etmemeyi</em>, <em>ısrar etmeyi</em> gerektiriyor. Bu da çoğu kullanıcıya zor gelen bir şey. (Aslında çekinecek hiçbir şey yok, <a href="http://stackoverflow.com/" target="_blank"><strong>Stackoverflow</strong></a> ne güne duruyor?)</p>
 
 <p>Neyse, biz <strong>olmak isteyenler</strong> için yazalım o halde. <strong>Usta bir bilgisayar kullanıcısı</strong>, <strong>ağ yöneticisi</strong>, <strong>sistem yöneticisi</strong> v.s. olmak için <strong>Powershell</strong>&lsquo;i iyi kullanmak çoook büyük bir artı değer sağlar. Sizi temin ederim.</p>
 
@@ -323,12 +350,17 @@ PowerShell: Stop-process
 
 <h2 id="diğer-komutlar">Diğer Komutlar</h2>
 
-<p>Herhangi bir <strong>Dos</strong> komutunun <strong>Powershell</strong>&lsquo;de karşılığının bulunup bulunmadığını anlamak için <code>get-alias doskomutununadı</code> komutu verebilirsiniz. Mesela <code>rm</code> komutunu hatırladıysanız eğer <code>remove file</code> (dosyayı sil) komutudur. Bu komutun <strong>Powershell</strong>&lsquo;deki karşılığını <code>get-alias rm</code> yazarak öğrenelim: <strong>remove-item</strong></p>
+<p>Herhangi bir <strong>Dos</strong> komutunun <strong>Powershell</strong>&lsquo;de karşılığının bulunup bulunmadığını anlamak için <code>get-alias doskomutununadı</code> komutu verebilirsiniz. Mesela <code>rm</code> komutunu hatırladıysanız eğer <code>remove file</code> (dosyayı sil) komutudur. Bu komutun <strong>Powershell</strong>&lsquo;deki karşılığını <code>get-alias rm</code> yazarak öğrenelim: <code>remove-item</code></p>
 
-<p>Tüm komutları görmek için ise <code>get-command</code> yazmanız yeterli. Karşınıza oldukça uzun bir liste gelecek.</p>
+<p>Tüm <strong>cmdlet</strong> komutlarını görmek için ise <code>get-command</code> yazmanız yeterli. Karşınıza oldukça uzun bir liste gelecek.</p>
 
-<p>Komutları içinde geçen kelimelere göre yada içinde bulunduğu spesifik modüle göre aratabiliriz. Örneğin içinde IP geçen cmdlet leri görmek istersek vereceğimiz komut,
+<p>Komutları içinde geçen kelimelere göre yada içinde bulunduğu spesifik modüle göre aratabiliriz. Örneğin içinde IP geçen komutları görmek istersek vereceğimiz komut,
 <code>Get-Command –Name *IP*</code> olacaktır.</p>
+
+<figure>
+ <img src="/img/blog/powershell-cmd/powershellde-komut-arama.png">
+ <figcaption>Powershell'de Belli Komutları Arama Kelimeleriyle Bulma</figcaption>
+</figure>
 
 <p>Yada misal olarak yalnızca <strong>netTCPIP</strong> modülü içindeki IP kelimesi içeren komutları görmek için: <code>Get-Command –Module NetTCPIP –Name *IP*</code></p>
 
@@ -336,28 +368,34 @@ PowerShell: Stop-process
 
 <p>Örneğin <code>Tee-object</code> <strong>cmdlet</strong>&lsquo;i hakkında bilgi almak için <code>get-help Tee-object</code> yazabiliriz. Daha geniş bilgi için <code>get-help Tee-object -online</code> yazarak internet kaynaklarından yardım alabilirsiniz.</p>
 
-<h2 id="komut-satırı-kolaylıkları">Komut Satırı Kolaylıkları</h2>
+<h2 id="powershell-komut-satırı-kolaylıkları">Powershell Komut Satırı Kolaylıkları</h2>
 
 <p><strong>Powershell</strong>’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru <strong>64</strong> adet komuta erişebilirsiniz. Bu komutlardan son 32&rsquo;sini sıralı olarak görmek için <code>get-history</code> <strong>cmdlet</strong>&lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.</p>
 
-<p>Ayrıca uzun komutlarınız için <code>alias</code> kullanabilirsiniz. Nasıl <strong>Cmd</strong> <em>Dos komutlarını</em> <strong>Powershell</strong>&lsquo;de alias olarak kullanabiliyoruz aynı o şekilde <strong>Powershell</strong> komutlarını da bu sayede kısaltabilirsiniz.</p>
+<p>Powershell ortamı varsayılan olarak Cmd&rsquo;ye göre daha renkli ve canlı. Cmd&rsquo;nin ayarları ile oynayarak renklendirmek mümkün olsa da Powershell&rsquo;in sunduğu seçenekler kadar çekici değil.</p>
 
-<h2 id="windows-ta-powershell">Windows&rsquo;ta Powershell</h2>
+<figure>
+ <img src="/img/blog/powershell-cmd/powershell-renk-kullanimi.png">
+ <figcaption>Powershell'de Farklı Renklerin Kullanımından Faydalanma</figcaption>
+</figure>
 
-<p><strong>Powershell</strong>’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik <strong>Powershell</strong> ekranı, ikincisi ise Powershell ISE (bütünleşik scritping ortamı).</p>
+<p><br>
+Ayrıca uzun komutlarınız için <code>alias</code> kullanabilirsiniz. Nasıl <strong>Cmd</strong> <em>Dos komutlarını</em> <strong>Powershell</strong>&lsquo;de alias olarak kullanabiliyoruz aynı o şekilde <strong>Powershell</strong> komutlarını da bu sayede kısaltabilirsiniz.</p>
+
+<h2 id="windows-ta-powershell-sürümleri">Windows&rsquo;ta Powershell Sürümleri</h2>
+
+<p><strong>Powershell</strong>’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik <strong>Powershell</strong> ekranı, ikincisi ise Powershell <strong>ISE</strong> (bütünleşik scritping ortamı).</p>
 
 <figure>
  <img src="/img/blog/powershell-cmd/powershell-ise.png">
  <figcaption>Powershell ISE Ekran Görüntüsü</figcaption>
 </figure>
 
-<p><strong>Yönetici</strong> hakları gerektiren bazı komut satırı uygulamaları için <strong>Powershell</strong>’i yönetici olarak çalıştırmak isteyebilirsiniz.</p>
-
-<p><strong>Yönetici</strong> olarak çalıştırmak için <em>komut satırında</em> <code>Start-Process powershell -Verb runAs</code> komutunu verebilirsiniz.</p>
+<p><strong>Powershell ISE</strong>&lsquo;yi çalıştırmak için yukarıda bahsettiğimiz <strong>Powershell</strong> <a href="/blog/Powershell-ve-cmd/#öyleyse-powershell-i-açalım">başlatma yollarını</a> aynen kullanabilirsiniz. Sadece isme &ldquo;ISE&rdquo; ekleyeceksiniz. Örneğin bir <strong>Powershell</strong> kabuğundan hemen şimdi <code>powershell ise</code> komutu vererek bütünleşik script ortamını açabilirsiniz.</p>
 
 <p>Windows’da iyi bildiğiniz bazı uygulamaları <code>start-process</code> <strong>cmdlet</strong>&lsquo;i ile <em>komut satırından</em> çalıştırabilirsiniz. Örnegin <code>start-process msconfig</code> yazarsanız Microsoft konfigürasyon ayar programı açılacaktır. <em>Msconfig</em> yerine başka bir programı deneyebilirsiniz, mesela <em>notepad</em>, v.s.</p>
 
-<p>Aynen <strong>Cmd</strong>&lsquo;de olduğu gibi <strong>Powershell</strong>’i terketmek için <code>exit</code> komutunu vermeniz yeterli. Interaktif kabuk komut satırını sona erdirip üstüne ekranı kapatacaktır.</p>
+<p>Aynen <strong>Cmd</strong>&lsquo;de olduğu gibi <strong>Powershell</strong>’i terketmek için <code>exit</code> komutunu vermeniz yeterli. Interaktif kabuk komut satırını sona erecek ve pencere kapatılacaktır. (Diğer Windows programlarını kapatabilen Alt+F4 klavye kısayolu ile kabuk ekranını kapatamazsınız.)</p>
 
 <hr>
 

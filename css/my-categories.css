@@ -145,3 +145,24 @@
     background: #34495E;
     font-size: 0.85rem;
 }
+.post-category-kabuk {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #FFFFFF;
+    background: #F39C12;
+    font-size: 0.85rem;
+}
+.post-category-komut-satiri {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #FFFFFF;
+    background: #73C6B6;
+    font-size: 0.85rem;
+}
+.post-category-powershell {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #FFFFFF;
+    background: #145A32;
+    font-size: 0.85rem;
+}

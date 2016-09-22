@@ -396,7 +396,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Zaten, Hugo&amp;rsquo;yu &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/#3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;Path&lt;/a&gt;&amp;lsquo;a eklediğimiz için herhangi bir konumdan &lt;code&gt;hugo&lt;/code&gt; yazıp &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya ulaşabiliyorduk. O halde;&lt;/p&gt;
 
-&lt;p&gt;a. Komut satırını açın. (Powershell / Cmd )&lt;/p&gt;
+&lt;p&gt;a. &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Komut satırını&lt;/a&gt; açın. (&lt;strong&gt;Powershell / Cmd&lt;/strong&gt; )&lt;/p&gt;
 
 &lt;p&gt;b. &lt;em&gt;D&lt;/em&gt; sürücümüzün altında siteler adlı bir klasör oluşturalım. Bulunduğunuz konumda &lt;em&gt;D&lt;/em&gt; klasörüne geçmek için &lt;em&gt;D:&lt;/em&gt; yazıp Enter&amp;rsquo;a basın(&amp;#8595;).&lt;/p&gt;
 
@@ -410,7 +410,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 &lt;h2 id=&#34;yeni-bir-site-yaratalım-ve-web-sunucumuzun-çalıştığını-görelim&#34;&gt;Yeni Bir Site Yaratalım ve Web Sunucumuzun Çalıştığını Görelim&lt;/h2&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Şimdi &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;da site oluşturuyoruz ve kontrol ediyoruz. Sitemizdeki değişiklikleri tarayıcı da olduğu kadar komut satırından da izlemek için vereceğimiz komut: &lt;code&gt;hugo server -w&lt;/code&gt;.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Şimdi &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;da site oluşturuyoruz ve kontrol ediyoruz. Sitemizdeki değişiklikleri tarayıcı da olduğu kadar &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Komut satırından&lt;/a&gt; da izlemek için vereceğimiz komut: &lt;code&gt;hugo server -w&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;a. Klasörümüzün içinde &lt;code&gt;hugo new site deneme&lt;/code&gt; komutunu verin. &lt;strong&gt;Hugo&lt;/strong&gt; &lt;em&gt;deneme&lt;/em&gt; adlı bir klasör, yani &lt;strong&gt;deneme websitesini&lt;/strong&gt; oluşturdu. (&amp;#8593;)&lt;/p&gt;
 
@@ -444,9 +444,9 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Temamızı şimdi yerel diskimizdeki tema klasörüne indirip web projemizde kullanabileceğiz. (&lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;Git&lt;/a&gt;&amp;lsquo;i bilgisayarınıza yüklemiştiniz, değil mi?)&lt;/p&gt;
 
-&lt;p&gt;a. Komut satırından &lt;em&gt;themes&lt;/em&gt; adlı klasöre giriş yapın. (&lt;em&gt;D:&lt;/em&gt; klasöründeyken &lt;code&gt;cd siteler&lt;/code&gt; - &lt;code&gt;cd deneme&lt;/code&gt; - &lt;code&gt;cd themes&lt;/code&gt;) (&amp;#8595;)&lt;/p&gt;
+&lt;p&gt;a. &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Komut satırından&lt;/a&gt; &lt;em&gt;themes&lt;/em&gt; adlı klasöre giriş yapın. (&lt;em&gt;D:&lt;/em&gt; klasöründeyken &lt;code&gt;cd siteler&lt;/code&gt; - &lt;code&gt;cd deneme&lt;/code&gt; - &lt;code&gt;cd themes&lt;/code&gt;) (&amp;#8595;)&lt;/p&gt;
 
-&lt;p&gt;b. Kopyaladığımız yukarıdaki komutu komut satırına yapıştırın. (Ctrl + V) Tam komutumuz şöyle idi: &lt;code&gt;git clone https://github.com/yoshiharuyamashita/blackburn.git&lt;/code&gt; ve Enter&amp;rsquo;a basın. (&amp;#8595;)&lt;/p&gt;
+&lt;p&gt;b. Kopyaladığımız yukarıdaki komutu &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırına&lt;/a&gt; yapıştırın. (Ctrl + V) Tam komutumuz şöyle idi: &lt;code&gt;git clone https://github.com/yoshiharuyamashita/blackburn.git&lt;/code&gt; ve Enter&amp;rsquo;a basın. (&amp;#8595;)&lt;/p&gt;
 
 &lt;p&gt;c. İndirmenin başarılı olup olmadığını anlamak için &amp;ldquo;themes&amp;rdquo; klasörünün içini kontrol edebiliriz.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -530,7 +530,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 &lt;h3 id=&#34;3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;3. Hugo&amp;rsquo;yu Ortam Değişkenine (PATH) Ekleme&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Şimdi Hugo&amp;rsquo;yu PATH&amp;rsquo;a ekleyeceğiz, zira öyle yapmazsak &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya komut satırından (Yeni versiyon Windows&amp;rsquo;lar için &lt;strong&gt;Powershell&lt;/strong&gt;, Xp&amp;rsquo;ciler içinse &lt;strong&gt;Cmd&lt;/strong&gt;) rahatlıkla ulaşamayız. Path&amp;rsquo;a ekledikten sonra herhangi bir klasör içinden &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya hemen ulaşabileceğiz.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Şimdi Hugo&amp;rsquo;yu PATH&amp;rsquo;a ekleyeceğiz, zira öyle yapmazsak &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırından&lt;/a&gt; (Yeni versiyon Windows&amp;rsquo;lar için &lt;strong&gt;Powershell&lt;/strong&gt;, Xp&amp;rsquo;ciler içinse &lt;strong&gt;Cmd&lt;/strong&gt;) rahatlıkla ulaşamayız. Path&amp;rsquo;a ekledikten sonra herhangi bir klasör içinden &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya hemen ulaşabileceğiz.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;a)&lt;/strong&gt; Yukarıdaki gibi Masaüstü&amp;rsquo;nüzdeki Bilgisayar simgesine sağ tıklayıp &lt;code&gt;Özellikler&lt;/code&gt; menüsünü tıklayarak açılan pencereden &lt;code&gt;Gelişmiş Sistem Ayarları&lt;/code&gt;&amp;lsquo;nı seçin. [Altta ilk baştaki resim&amp;#8595;]&lt;/p&gt;
 
@@ -552,7 +552,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Şimdi bilgisayarınızı yeniden başlatın. Herşeyin istediğimiz gibi olup olmadığını kontrol edelim.&lt;/p&gt;
 
-&lt;p&gt;a) Powershell&amp;rsquo;i yada Cmd&amp;rsquo;yi açın. Herhangi bir klasör içinde &lt;code&gt;hugo&lt;/code&gt; komutunu yazın ve Enter&amp;rsquo;a basın. Cevap olarak &amp;ldquo;unable to locate config file&amp;rdquo; şeklinde bir mesaj alıyorsak &lt;a name=&#34;hugokur&#34;&gt;Hugo kurulumu başarı ile gerçekleştirildi&lt;/a&gt; demektir.&lt;/p&gt;
+&lt;p&gt;a) &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Powershell&lt;/a&gt;&amp;lsquo;i yada Cmd&amp;rsquo;yi açın. Herhangi bir klasör içinde &lt;code&gt;hugo&lt;/code&gt; komutunu yazın ve Enter&amp;rsquo;a basın. Cevap olarak &amp;ldquo;unable to locate config file&amp;rdquo; şeklinde bir mesaj alıyorsak &lt;a name=&#34;hugokur&#34;&gt;Hugo kurulumu başarı ile gerçekleştirildi&lt;/a&gt; demektir.&lt;/p&gt;
 
 &lt;p&gt;b) Üstteki hatayı alıyoruz zira henüz hiç bir site oluşturmadık. Site oluşturulduğunda config dosyamız otomatik olarak oluşturulacaktır. Site oluşturmayı bir önceki yazımdan hatırlıyor olmalısınız. Hatırlarsanız, &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#hugo-ile-bir-site-yapalım-windows-için&#34;&gt;orada&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutunu vererek bir site oluşturmuştuk.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -589,7 +589,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;p&gt;Bu şekilde çok değerli olan kaynak kodumuza gelecek zararları önleneyebiliriz.&lt;/p&gt;
 
-&lt;p&gt;Git&amp;rsquo;in mucidi Linux&amp;rsquo;un da ilk geliştiricisi olan &lt;a href = &#34;https://tr.wikipedia.org/wiki/Linus_Torvalds&#34; target = &#34;_blank&#34; &gt; Linus Torvalds&lt;a/&gt;.&lt;/p&gt;
+&lt;p&gt;Git&amp;rsquo;in mucidi Linux&amp;rsquo;un da ilk geliştiricisi olan Linus Torvalds.&lt;/p&gt;
 
 &lt;h3 id=&#34;git-bizim-için-anlamı&#34;&gt;Git : Bizim İçin Anlamı&lt;/h3&gt;
 
@@ -637,7 +637,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;p&gt;Önemli: Kurulum sırasında ortam değişkenine (PATH) ekleme seçeneğini ikinci seçenek olarak seçin. Yani &amp;ldquo;Use Git from the Windows Command Prompt&amp;rdquo;. (hemen altta resim 1) Bu şekilde &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;(Powershell)&lt;/a&gt;&amp;lsquo;den sıkıntısız olarak &lt;code&gt;git&lt;/code&gt; komutlarını çalıştıracağız. Diğer seçenekleri varsayılanlar olarak bırakın.&lt;/p&gt;
 
-&lt;p&gt;Git&amp;rsquo;i komut satırından çalıştıracağımız için daha önceki yazılardan aşina olduğunuz &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;(Powershell)&lt;/a&gt;&amp;lsquo;i yine çalıştırın. Kurulumun doğru olup olmadığını anlamak için herhangi bir klasör içinde &lt;code&gt;git&lt;/code&gt; yazıp gelen cevaba bakabilirsiniz. (hemen altta resim 2)&lt;/p&gt;
+&lt;p&gt;Git&amp;rsquo;i &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırından&lt;/a&gt; çalıştıracağımız için daha önceki yazılardan aşina olduğunuz &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/#öyleyse-powershell-i-açalım&#34;&gt;(Powershell)&lt;/a&gt;&amp;lsquo;i yine çalıştırın. Kurulumun doğru olup olmadığını anlamak için herhangi bir klasör içinde &lt;code&gt;git&lt;/code&gt; yazıp gelen cevaba bakabilirsiniz. (hemen altta resim 2)&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/git/git_windows_path_option.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Git&#39;i Powershell&#39;de Kullanmak İçin Ortam Değişkenine Ekliyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/git/git_windows_path_option_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;http://pythonistan.net/img/blog/git/git_kurulum_kontrolu.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Git&#39;in Windows&#39;taki Kurulumunu Kontrol Ediyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/git/git_kurulum_kontrolu_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -664,7 +664,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;h3 id=&#34;github-a-yükleme-yapalım&#34;&gt;Github&amp;rsquo;a Yükleme Yapalım&lt;/h3&gt;
 
-&lt;p&gt;Şimdi Lokalde başlattığımız repomuzun içeriğindeki dosyaları web&amp;rsquo;e yükleyelim. Komut satırı Powershell&amp;rsquo;de vereceğimiz komut: &lt;code&gt;git remote add origin https://github.com/kullaniciadiniz/test.git&lt;/code&gt; (bu komutu &lt;code&gt;git init&lt;/code&gt; komutunu verdiğiniz aynı klasörün içinden çalıştıracaksınız)&lt;/p&gt;
+&lt;p&gt;Şimdi Lokalde başlattığımız repomuzun içeriğindeki dosyaları web&amp;rsquo;e yükleyelim. Komut satırı &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Powershell&lt;/a&gt;&amp;lsquo;de vereceğimiz komut: &lt;code&gt;git remote add origin https://github.com/kullaniciadiniz/test.git&lt;/code&gt; (bu komutu &lt;code&gt;git init&lt;/code&gt; komutunu verdiğiniz aynı klasörün içinden çalıştıracaksınız)&lt;/p&gt;
 
 &lt;p&gt;Son olarak aşağıdaki komutu girin: &lt;code&gt;git push -u origin master&lt;/code&gt;&lt;/p&gt;
 
@@ -680,11 +680,11 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;h2 id=&#34;komut-satırı-sistemlerinin-yaşattığı-duygular&#34;&gt;Komut Satırı Sistemlerinin Yaşattığı Duygular&lt;/h2&gt;
 
-&lt;p&gt;Bizim gibi acemiler için komut satırı kendisinden saygı ile karışık korku beslenen, anlaşılmaz ve hatta biraz mistik bir konu gibi.&lt;/p&gt;
+&lt;p&gt;Bizim gibi acemiler için &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırı&lt;/a&gt; kendisinden saygı ile karışık korku beslenen, anlaşılmaz ve hatta biraz mistik bir konu gibi.&lt;/p&gt;
 
-&lt;p&gt;Her an bir yanlış yapıp sistemi mahvedeceğim duygusu komut satırını kullanırken çok kere aklıma gelmiştir.&lt;/p&gt;
+&lt;p&gt;Her an bir yanlış yapıp sistemi mahvedeceğim duygusu &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırını&lt;/a&gt; kullanırken çok kere aklıma gelmiştir.&lt;/p&gt;
 
-&lt;p&gt;İşletim sistemi olarak Windows ve Mac kullandıysanız siz de bu yazımda bahsettiğim şeylere biraz öyle bakmış olabilirsiniz.&lt;/p&gt;
+&lt;p&gt;İşletim sistemi olarak Windows _(&lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt;) ve Mac (&lt;i class=&#39;fa fa-apple&#39;&gt;&lt;/i&gt;) kullandıysanız siz de bu yazımda bahsettiğim şeylere biraz öyle bakmış olabilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;Ancak meraklanmayın, burada sisteminize zarar verebilecek herhangi bir şey anlatmadım. Bizim için son derece yararlı olacak temel &lt;code&gt;git&lt;/code&gt; komutlarını ele aldık.&lt;/p&gt;
 
@@ -756,7 +756,7 @@ name = &amp;quot;Contact&amp;quot; --&amp;gt; &amp;quot;İletişim&amp;quot;
 
 &lt;p&gt;Hugo ile hemen bir deneme sitesi yapalım. Hugoyu indirin ve ortam değişkenine ekleyin.&lt;/p&gt;
 
-&lt;p&gt;Şimdi komut satırında &lt;a href=&#34;http://pythonistan.net/blog/python-kabukta-ilk-program&#34;&gt;(Powershell)&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yenisite adında bir klasör oluşturuldu.Hemen kontrol edin.&lt;/p&gt;
+&lt;p&gt;Şimdi &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırında&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutu yazıp yeni bir site oluşturalım. Hangi klasördeyseniz o klasörün altına yenisite adında bir klasör oluşturuldu.Hemen kontrol edin.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/ssg/hugo_yeni_site_olusturma.png&#34; alt=&#34;Hugo ile yeni bir site oluşturma&#34; /&gt;&lt;/p&gt;
 

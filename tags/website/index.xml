@@ -80,7 +80,7 @@
 &lt;h3 id=&#34;3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;3. Hugo&amp;rsquo;yu Ortam Değişkenine (PATH) Ekleme&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Şimdi Hugo&amp;rsquo;yu PATH&amp;rsquo;a ekleyeceğiz, zira öyle yapmazsak &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya komut satırından (Yeni versiyon Windows&amp;rsquo;lar için &lt;strong&gt;Powershell&lt;/strong&gt;, Xp&amp;rsquo;ciler içinse &lt;strong&gt;Cmd&lt;/strong&gt;) rahatlıkla ulaşamayız. Path&amp;rsquo;a ekledikten sonra herhangi bir klasör içinden &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya hemen ulaşabileceğiz.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Şimdi Hugo&amp;rsquo;yu PATH&amp;rsquo;a ekleyeceğiz, zira öyle yapmazsak &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırından&lt;/a&gt; (Yeni versiyon Windows&amp;rsquo;lar için &lt;strong&gt;Powershell&lt;/strong&gt;, Xp&amp;rsquo;ciler içinse &lt;strong&gt;Cmd&lt;/strong&gt;) rahatlıkla ulaşamayız. Path&amp;rsquo;a ekledikten sonra herhangi bir klasör içinden &lt;strong&gt;Hugo&lt;/strong&gt;&amp;lsquo;ya hemen ulaşabileceğiz.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;a)&lt;/strong&gt; Yukarıdaki gibi Masaüstü&amp;rsquo;nüzdeki Bilgisayar simgesine sağ tıklayıp &lt;code&gt;Özellikler&lt;/code&gt; menüsünü tıklayarak açılan pencereden &lt;code&gt;Gelişmiş Sistem Ayarları&lt;/code&gt;&amp;lsquo;nı seçin. [Altta ilk baştaki resim&amp;#8595;]&lt;/p&gt;
 
@@ -102,7 +102,7 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Şimdi bilgisayarınızı yeniden başlatın. Herşeyin istediğimiz gibi olup olmadığını kontrol edelim.&lt;/p&gt;
 
-&lt;p&gt;a) Powershell&amp;rsquo;i yada Cmd&amp;rsquo;yi açın. Herhangi bir klasör içinde &lt;code&gt;hugo&lt;/code&gt; komutunu yazın ve Enter&amp;rsquo;a basın. Cevap olarak &amp;ldquo;unable to locate config file&amp;rdquo; şeklinde bir mesaj alıyorsak &lt;a name=&#34;hugokur&#34;&gt;Hugo kurulumu başarı ile gerçekleştirildi&lt;/a&gt; demektir.&lt;/p&gt;
+&lt;p&gt;a) &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Powershell&lt;/a&gt;&amp;lsquo;i yada Cmd&amp;rsquo;yi açın. Herhangi bir klasör içinde &lt;code&gt;hugo&lt;/code&gt; komutunu yazın ve Enter&amp;rsquo;a basın. Cevap olarak &amp;ldquo;unable to locate config file&amp;rdquo; şeklinde bir mesaj alıyorsak &lt;a name=&#34;hugokur&#34;&gt;Hugo kurulumu başarı ile gerçekleştirildi&lt;/a&gt; demektir.&lt;/p&gt;
 
 &lt;p&gt;b) Üstteki hatayı alıyoruz zira henüz hiç bir site oluşturmadık. Site oluşturulduğunda config dosyamız otomatik olarak oluşturulacaktır. Site oluşturmayı bir önceki yazımdan hatırlıyor olmalısınız. Hatırlarsanız, &lt;a href=&#34;http://pythonistan.net/blog/Jekylldan-Hugoya-gecis/#hugo-ile-bir-site-yapalım-windows-için&#34;&gt;orada&lt;/a&gt; &lt;code&gt;hugo new site yenisite&lt;/code&gt; komutunu vererek bir site oluşturmuştuk.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
