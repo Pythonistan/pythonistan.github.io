@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Windows’ta Komut Satırı: Powershell vs Cmd // Pythonistan, Python Cumhuriyeti
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Powershell, güçlü ve modern bir komut satırı kabuğu ve scripting dili ortamı">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@pythonistan">
+<meta property="twitter:title" content="Windows’ta Komut Satırı: Powershell vs Cmd">
+<meta property="twitter:image" content="/img/blog/powershell-cmd/powershell-cmd-banner.png">
+<meta property="twitter:description" content="Powershell, güçlü ve modern bir komut satırı kabuğu ve scripting dili ortamı">
+
+  <meta property="og:title" content="Windows’ta Komut Satırı: Powershell vs Cmd" />
+<meta property="og:description" content="Powershell, güçlü ve modern bir komut satırı kabuğu ve scripting dili ortamı" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:url" content="http://pythonistan.net/blog/Powershell-ve-cmd/" />
+
+<meta property="og:image" content="/img/blog/powershell-cmd/powershell-cmd-banner.png" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://pythonistan.net//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan, Python Cumhuriyeti" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+		<div id="nav-to-top">
+			<span class="decorative-marker">//</span><a href="#top">Başa Dön</a>
+		</div>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://pythonistan.net/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+      
+        
+        <a href="/index.xml" target="_blank"><i class='fa fa-feed'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/powershell-cmd/powershell-cmd-banner.png" class="pure-img" style="" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Başlıkları</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#komut-satırı-ve-biraz-tarih">Komut Satırı ve Biraz Tarih</a></li>
+<li><a href="#gelelim-powershell-e">Gelelim Powershell&rsquo;e</a></li>
+<li><a href="#powershell-cmd-ye-karşı">Powershell Cmd&rsquo;ye Karşı</a></li>
+<li><a href="#powershell-in-bize-katacakları">Powershell&rsquo;in Bize Katacakları</a></li>
+<li><a href="#bazı-powershell-ve-cmd-komutları">Bazı Powershell ve Cmd komutları</a></li>
+<li><a href="#diğer-komutlar">Diğer Komutlar</a></li>
+<li><a href="#komut-satırı-kolaylıkları">Komut Satırı Kolaylıkları</a></li>
+<li><a href="#windows-ta-powershell">Windows&rsquo;ta Powershell</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/Powershell-ve-cmd/">Windows’ta Komut Satırı: Powershell vs Cmd</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>21</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Sep</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-program" href="http://pythonistan.net//categories/program">program</a>
+				
+					<a class="post-category post-category-komutlar" href="http://pythonistan.net//categories/komutlar">komutlar</a>
+				
+					<a class="post-category post-category-komut-sat%C4%B1r%C4%B1" href="http://pythonistan.net//categories/komut-sat%C4%B1r%C4%B1">komut satırı</a>
+				
+					<a class="post-category post-category-powershell" href="http://pythonistan.net//categories/powershell">powershell</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fPowershell-ve-cmd%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fPowershell-ve-cmd%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="https://twitter.com/share?text=Windows%e2%80%99ta%20Komut%20Sat%c4%b1r%c4%b1%3a%20Powershell%20vs%20Cmd&url=http%3a%2f%2fpythonistan.net%2fblog%2fPowershell-ve-cmd%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+
+            
+
+<h2 id="komut-satırı-ve-biraz-tarih">Komut Satırı ve Biraz Tarih</h2>
+
+<p>Çeşitli yazılarımda bir vesileyle <em>komut kullanımına</em> ve <em>komut satırına</em> değiniyorum.</p>
+
+<p>Zaten iyi bir programcının ve bizim gibi bu işe heves eden acemilerin <em>komut satırına</em> belli oranda hakim olması şart.</p>
+
+<p>Aksi takdirde insanı aslında kolaylıkla otomatize edilebilecek işleri tekrar tekrar yapmaktan kaynaklanan bir sıkıntı basıyor.</p>
+
+<p>Komut satırı kullanımı ile ilgili kişisel duygu ve düşüncelerimi <strong>Git</strong>&lsquo;ten bahsettiğim yazıda <a href="/blog/git-ve-github/">dile getirmiştim</a>. Bir göz atmak isteyebilirsiniz.</p>
+
+<p>90&rsquo;larda bilgisayar kullanmaya başlayanlar Windows’un 2000’li yıllarda tamamen <em>grafik arayüze</em> dönme kararına kadar <strong>Dos komutlarını</strong> Windows’un <em>grafik arayüzü</em> ile birlikte kullanmışlardı.</p>
+
+<p>2000 sonrası ortalama bilgisayar kullanıcısının <em>komut kullanımı</em> hayli azalsa da arada bir <em>grafik arayüzden</em> ulaşılamayan bir ayar, yada bir kurulum veya ne bileyim bir antivirus (f-prot, combofix gibi) v.s. için komut kullanımına zaman zaman ihtiyaç duyuldu.</p>
+
+<p>Windows, Win 7 versiyonundan bu yana eskiden <strong>Dos komutlarını</strong> uyguladığımız <strong>Cmd</strong>&lsquo;ye  (cmd.exe - çok eskiden command.exe) alternatif başka bir interaktif kabuk (shell) sunuyor.</p>
+
+<p>Bu güçlü interaktif kabuğun adı <a href="/blog/Powershell-ve-cmd/"><strong>Powershell</strong></a>.</p>
+
+<h2 id="gelelim-powershell-e">Gelelim Powershell&rsquo;e</h2>
+
+<p><strong>Powershell</strong> <strong>Cmd</strong>’ye göre çok daha becerikli bir <em>komut satır kabuğu</em> ve <em>scripting dili</em> içeriyor. (Belki hatırlayacaksınız, <strong>Dos</strong>’da .bat uzantılı primitif scriptler vardı. - batch dosyası )</p>
+
+<p><strong>Powershell</strong> komut satırından asla vazgeçemeyecek <strong>Geek</strong> (usta) bilgisayar kullanıcılarına Windows ortamında çok kullanışlı bir tecrübe sağlıyor.</p>
+
+<p><strong>Cmd</strong>’ye göre çok daha gelişmiş ve güçlü. Öyleki varlığıyla adeta <strong>Linux</strong> gibi bu işin piri sayılacak <strong>Unix</strong> tabanlı sistemlere “burada ben de varım” diyor. <em>(Hangisi Unix Tabanlı değil ki, değil mi?)</em></p>
+
+<h2 id="powershell-cmd-ye-karşı">Powershell Cmd&rsquo;ye Karşı</h2>
+
+<p>O halde gelelim <strong>Powershell</strong>’in <strong>Cmd</strong>’ye olan farklarına, yani üstünlüklerine.</p>
+
+<p>İlk olarak ikisi de <em>komut satırı</em> sistemi olmasına rağmen <strong>Powershell</strong> <strong>Cmd</strong>’de geçerli olan komutlara ek olarak <strong>Cmd</strong>’den farklı komutlar içeriyor. Bu komutlara <strong>cmdlets</strong> deniyor.</p>
+
+<p><strong>Cmdlets</strong>’ler hakkında daha fazla bilgiyi sonraki yazılarımdan birine saklıyorum. Şimdilik bunlara <em>sistem yönetimi için kullanılan görevler</em> diyelim.</p>
+
+<p><strong>Powershell</strong> aynen <strong>Linux</strong>&lsquo;da olduğu gibi <em>pipe</em> (boru haberleşmeleri) kullanımı sağlıyor.</p>
+
+<p><strong>Linux</strong> komut satırı sistemleri <em>pipe</em> olarak yalnızca karakter (text) kullanırken <strong>Powershell</strong>’de daha gelişkin <strong>cmdlet objeleri</strong> kullanılabiliyor.</p>
+
+<p>Yani bir <strong>cmdlet</strong> ten aldığımız sonucu (çıktıyı) diğer bir <strong>cmdlet</strong>&lsquo;in kullanımına sunabiliyoruz. Böylelikle birden fazla <strong>cmdlet</strong> sıralı olarak kullanılarak bu <strong>cmdlet</strong>&lsquo;lerden gelen çıktılar işleniliyor.</p>
+
+<p><strong>Powershell</strong> komut satırından ibaret bir kabuk değil. <strong>Cmd</strong>’nin aksine onunla aynı zamanda çok kompleks <strong>scriptler</strong> oluşturarak Windows’unuzu yönetebilirsiniz. <em>(scripting)</em></p>
+
+<p><strong>Cmd</strong> belki biraz da nostalji olarak Windows’ta halen tutulan, kullanımı malum <strong>Dos komutları</strong> ile sınırlı olan, Windows’un <strong>yönetimsel araçlarına</strong> erişim hakkı bulunmayan ve gelişkin <em>scripting</em>&lsquo;e olanak sağlamayan geleneksel bir ortam olmasına karşın <strong>Powershell</strong> sistem yöneticilerinin <em>Windows’u yönetmek için</em> ihtiyaç duyacağı hemen her şeyi bünyesinde taşıyan modern bir geliştirme ortamı.</p>
+
+<h2 id="powershell-in-bize-katacakları">Powershell&rsquo;in Bize Katacakları</h2>
+
+<p>Yaşları tutanlar eskiden internet bağlantısında sıkıntı çıktığında hemen bir <em>Çalıştır</em> kutusundan <code>cmd. exe</code> yapıp <code>ping</code> yada <code>tracert</code> komutu verdiklerini hatırlamışlardır.</p>
+
+<p><strong>Cmd</strong> kullanımınızda ayrıca <code>dir</code> ve <code>cd..</code> komutlar da yer tutuyordur diye tahmin ediyorum. Sadece bu kadarsa muhtemelen <strong>Powershell</strong>&lsquo;e pek ihtiyaç duymazsınız.</p>
+
+<p>Ancak gerçekten daha güçlü bir kullanıcı olmak istiyorsanız kendinizi <em>komut satırına</em> adapte etmelisiniz. Zira <em>komut satırı</em> aracılığı ile hem çok daha pratik olmak hem de bilgisayara <em>grafik arayüze</em> göre daha fazla hakim olmak mümkün.</p>
+
+<p>Mesela birden çok dosyanın adını bir anda değiştirmek gibi normalde <em>3. Parti bir yazılım</em> yükleyerek yapmak zorunda kalacağınız bir işi <strong>Powershell</strong> vasıtası ile nisbeten kolay bir şekilde halledebilirsiniz.</p>
+
+<p>Nisbeten kolay dedim, zira bu tür şeyler ortalama bir kullanıcı için hala belli <em>komutları ezberlemeyi</em>, <em>araştırmayı</em>, <em>denemeyi</em>, <em>pes etmemeyi</em>, <em>ısrar etmeyi</em> gerektiriyor. Bu da çoğu kullanıcıya zor gelen bir şey. (Aslında çekinecek hiçbir şey yok, <strong>Stackoverflow</strong> ne güne duruyor?)</p>
+
+<p>Neyse, biz <strong>olmak isteyenler</strong> için yazalım o halde. <strong>Usta bir bilgisayar kullanıcısı</strong>, <strong>ağ yöneticisi</strong>, <strong>sistem yöneticisi</strong> v.s. olmak için <strong>Powershell</strong>&lsquo;i iyi kullanmak çoook büyük bir artı değer sağlar. Sizi temin ederim.</p>
+
+<h2 id="bazı-powershell-ve-cmd-komutları">Bazı Powershell ve Cmd komutları</h2>
+
+<p>Tersi geçerli olmasa da <strong>Cmd</strong> komutlarının tamamı <strong>Powershell</strong> ortamında kullanılabiliyor. Bu komutların “aliases” ları yani karşılıkları <strong>Powershell</strong>&lsquo;de tanımlanmış. Aynen <strong>Cmd</strong>&lsquo;de olduğu gibi yazıp bu komutları kullanabilirsiniz.</p>
+
+<p>Aşağıda <strong>Cmd</strong> deki komutların <strong>Powershell</strong>&lsquo;deki gerçek adları var. Bazı basit <strong>Dos</strong> komutlarının işlevini, kullanım şeklini ve karşılıklarını verelim.</p>
+
+<ol>
+<li><p>Dizin Değiştirme</p>
+
+<pre><code>DOS: cd
+PowerShell: Set-Location
+</code></pre></li>
+
+<li><p>Dizindeki dosyaları listeleme</p>
+
+<pre><code>DOS: dir
+PowerShell: Get-ChildItem
+</code></pre></li>
+
+<li><p>Dosya Adını Değiştirme</p>
+
+<pre><code>DOS: rename
+PowerShell: Rename-Item
+</code></pre></li>
+
+<li><p>Ekranı Temizleme</p>
+
+<pre><code>Dos: cls
+Powershell: Clear-Host
+</code></pre></li>
+
+<li><p>Dosya Silme</p>
+
+<pre><code>DOS: rm, remove
+PowerShell: Remove-Item
+</code></pre></li>
+
+<li><p>İki dosyayı karşılaştırma</p>
+
+<pre><code>DOS: diff
+PowerShell: Compare-Object
+</code></pre></li>
+
+<li><p>Ekrana Çıktı Göster</p>
+
+<pre><code>DOS: echo
+PowerShell: Write-Output
+</code></pre></li>
+
+<li><p>Uygulamayı durdur:</p>
+
+<pre><code>DOS: kill
+PowerShell: Stop-process
+</code></pre></li>
+</ol>
+
+<h2 id="diğer-komutlar">Diğer Komutlar</h2>
+
+<p>Herhangi bir <strong>Dos</strong> komutunun <strong>Powershell</strong>&lsquo;de karşılığının bulunup bulunmadığını anlamak için <code>get-alias doskomutununadı</code> komutu verebilirsiniz. Mesela <code>rm</code> komutunu hatırladıysanız eğer <code>remove file</code> (dosyayı sil) komutudur. Bu komutun <strong>Powershell</strong>&lsquo;deki karşılığını <code>get-alias rm</code> yazarak öğrenelim: <strong>remove-item</strong></p>
+
+<p>Tüm komutları görmek için ise <code>get-command</code> yazmanız yeterli. Karşınıza oldukça uzun bir liste gelecek.</p>
+
+<p>Komutları içinde geçen kelimelere göre yada içinde bulunduğu spesifik modüle göre aratabiliriz. Örneğin içinde IP geçen cmdlet leri görmek istersek vereceğimiz komut,
+<code>Get-Command –Name *IP*</code> olacaktır.</p>
+
+<p>Yada misal olarak yalnızca <strong>netTCPIP</strong> modülü içindeki IP kelimesi içeren komutları görmek için: <code>Get-Command –Module NetTCPIP –Name *IP*</code></p>
+
+<p>Tüm bu komutları ezberlemeye gerek kalmadan komut satırında get-help yazarak interaktif <strong>Powershell</strong> <em>Help</em> sistemine girip belli bir konuda yardım almanız mümkün.</p>
+
+<p>Örneğin <code>Tee-object</code> <strong>cmdlet</strong>&lsquo;i hakkında bilgi almak için <code>get-help Tee-object</code> yazabiliriz. Daha geniş bilgi için <code>get-help Tee-object -online</code> yazarak internet kaynaklarından yardım alabilirsiniz.</p>
+
+<h2 id="komut-satırı-kolaylıkları">Komut Satırı Kolaylıkları</h2>
+
+<p><strong>Powershell</strong>’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru <strong>64</strong> adet komuta erişebilirsiniz. Bu komutlardan son 32&rsquo;sini sıralı olarak görmek için <code>get-history</code> <strong>cmdlet</strong>&lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.</p>
+
+<p>Ayrıca uzun komutlarınız için <code>alias</code> kullanabilirsiniz. Nasıl <strong>Cmd</strong> <em>Dos komutlarını</em> <strong>Powershell</strong>&lsquo;de alias olarak kullanabiliyoruz aynı o şekilde <strong>Powershell</strong> komutlarını da bu sayede kısaltabilirsiniz.</p>
+
+<h2 id="windows-ta-powershell">Windows&rsquo;ta Powershell</h2>
+
+<p><strong>Powershell</strong>’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik <strong>Powershell</strong> ekranı, ikincisi ise Powershell ISE (bütünleşik scritping ortamı).</p>
+
+<figure>
+ <img src="/img/blog/powershell-cmd/powershell-ise.png">
+ <figcaption>Powershell ISE Ekran Görüntüsü</figcaption>
+</figure>
+
+<p><strong>Yönetici</strong> hakları gerektiren bazı komut satırı uygulamaları için <strong>Powershell</strong>’i yönetici olarak çalıştırmak isteyebilirsiniz.</p>
+
+<p><strong>Yönetici</strong> olarak çalıştırmak için <em>komut satırında</em> <code>Start-Process powershell -Verb runAs</code> komutunu verebilirsiniz.</p>
+
+<p>Windows’da iyi bildiğiniz bazı uygulamaları <code>start-process</code> <strong>cmdlet</strong>&lsquo;i ile <em>komut satırından</em> çalıştırabilirsiniz. Örnegin <code>start-process msconfig</code> yazarsanız Microsoft konfigürasyon ayar programı açılacaktır. <em>Msconfig</em> yerine başka bir programı deneyebilirsiniz, mesela <em>notepad</em>, v.s.</p>
+
+<p>Aynen <strong>Cmd</strong>&lsquo;de olduğu gibi <strong>Powershell</strong>’i terketmek için <code>exit</code> komutunu vermeniz yeterli. Interaktif kabuk komut satırını sona erdirip üstüne ekranı kapatacaktır.</p>
+
+<hr>
+
+<p>Powershell konusunda yazacak çok şey var. Zaman zaman bu konuya döneceğim. Bol komutlu günler&hellip;</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fPowershell-ve-cmd%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fPowershell-ve-cmd%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="https://twitter.com/share?text=Windows%e2%80%99ta%20Komut%20Sat%c4%b1r%c4%b1%3a%20Powershell%20vs%20Cmd&url=http%3a%2f%2fpythonistan.net%2fblog%2fPowershell-ve-cmd%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-powershell" href="http://pythonistan.net//tags/powershell">Powershell</a>,
+	                
+	                <a class="post-tag post-tag-cmd" href="http://pythonistan.net//tags/cmd">Cmd</a>,
+	                
+	                <a class="post-tag post-tag-windowsda-komut-sat%C4%B1r%C4%B1" href="http://pythonistan.net//tags/windowsda-komut-sat%C4%B1r%C4%B1">Windows&#39;da komut satırı</a>,
+	                
+	                <a class="post-tag post-tag-scripting" href="http://pythonistan.net//tags/scripting">Scripting</a>,
+	                
+	                <a class="post-tag post-tag-komutlar" href="http://pythonistan.net//tags/komutlar">komutlar</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/Python-kaynaklari/">Python ile İlgili Yerli Yabancı Kaynaklar</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'http:\/\/pythonistan.net\/blog\/Powershell-ve-cmd\/';
+    var disqus_title = 'Windows’ta Komut Satırı: Powershell vs Cmd';
+    var disqus_url = 'http:\/\/pythonistan.net\/blog\/Powershell-ve-cmd\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>Made w Hugo, Theme by Shift8Creative - &copy;Python Cumhuriyeti 2016</p>
+</div>
+    </div>
+  </div>
+	
+		<script type="text/javascript">
+			onscroll = function() {
+			  var toTopVisible = false;
+			  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			  if (scrollTop > 1000) {
+			    if (!toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'block';
+			    }
+			  } else {
+			    if (scrollTop < 1000 || toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'none';
+			    }
+			  }
+			};
+		</script>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

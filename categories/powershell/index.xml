@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on Pythonistan, Python Cumhuriyeti</title>
+    <link>http://pythonistan.net/categories/powershell/</link>
+    <description>Recent content in Powershell on Pythonistan, Python Cumhuriyeti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Wed, 21 Sep 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="http://pythonistan.net/categories/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Windows’ta Komut Satırı: Powershell vs Cmd</title>
+      <link>http://pythonistan.net/blog/Powershell-ve-cmd/</link>
+      <pubDate>Wed, 21 Sep 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Powershell-ve-cmd/</guid>
+      <description>
+
+&lt;h2 id=&#34;komut-satırı-ve-biraz-tarih&#34;&gt;Komut Satırı ve Biraz Tarih&lt;/h2&gt;
+
+&lt;p&gt;Çeşitli yazılarımda bir vesileyle &lt;em&gt;komut kullanımına&lt;/em&gt; ve &lt;em&gt;komut satırına&lt;/em&gt; değiniyorum.&lt;/p&gt;
+
+&lt;p&gt;Zaten iyi bir programcının ve bizim gibi bu işe heves eden acemilerin &lt;em&gt;komut satırına&lt;/em&gt; belli oranda hakim olması şart.&lt;/p&gt;
+
+&lt;p&gt;Aksi takdirde insanı aslında kolaylıkla otomatize edilebilecek işleri tekrar tekrar yapmaktan kaynaklanan bir sıkıntı basıyor.&lt;/p&gt;
+
+&lt;p&gt;Komut satırı kullanımı ile ilgili kişisel duygu ve düşüncelerimi &lt;strong&gt;Git&lt;/strong&gt;&amp;lsquo;ten bahsettiğim yazıda &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/&#34;&gt;dile getirmiştim&lt;/a&gt;. Bir göz atmak isteyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;90&amp;rsquo;larda bilgisayar kullanmaya başlayanlar Windows’un 2000’li yıllarda tamamen &lt;em&gt;grafik arayüze&lt;/em&gt; dönme kararına kadar &lt;strong&gt;Dos komutlarını&lt;/strong&gt; Windows’un &lt;em&gt;grafik arayüzü&lt;/em&gt; ile birlikte kullanmışlardı.&lt;/p&gt;
+
+&lt;p&gt;2000 sonrası ortalama bilgisayar kullanıcısının &lt;em&gt;komut kullanımı&lt;/em&gt; hayli azalsa da arada bir &lt;em&gt;grafik arayüzden&lt;/em&gt; ulaşılamayan bir ayar, yada bir kurulum veya ne bileyim bir antivirus (f-prot, combofix gibi) v.s. için komut kullanımına zaman zaman ihtiyaç duyuldu.&lt;/p&gt;
+
+&lt;p&gt;Windows, Win 7 versiyonundan bu yana eskiden &lt;strong&gt;Dos komutlarını&lt;/strong&gt; uyguladığımız &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;ye  (cmd.exe - çok eskiden command.exe) alternatif başka bir interaktif kabuk (shell) sunuyor.&lt;/p&gt;
+
+&lt;p&gt;Bu güçlü interaktif kabuğun adı &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;gelelim-powershell-e&#34;&gt;Gelelim Powershell&amp;rsquo;e&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; &lt;strong&gt;Cmd&lt;/strong&gt;’ye göre çok daha becerikli bir &lt;em&gt;komut satır kabuğu&lt;/em&gt; ve &lt;em&gt;scripting dili&lt;/em&gt; içeriyor. (Belki hatırlayacaksınız, &lt;strong&gt;Dos&lt;/strong&gt;’da .bat uzantılı primitif scriptler vardı. - batch dosyası )&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; komut satırından asla vazgeçemeyecek &lt;strong&gt;Geek&lt;/strong&gt; (usta) bilgisayar kullanıcılarına Windows ortamında çok kullanışlı bir tecrübe sağlıyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt;’ye göre çok daha gelişmiş ve güçlü. Öyleki varlığıyla adeta &lt;strong&gt;Linux&lt;/strong&gt; gibi bu işin piri sayılacak &lt;strong&gt;Unix&lt;/strong&gt; tabanlı sistemlere “burada ben de varım” diyor. &lt;em&gt;(Hangisi Unix Tabanlı değil ki, değil mi?)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;powershell-cmd-ye-karşı&#34;&gt;Powershell Cmd&amp;rsquo;ye Karşı&lt;/h2&gt;
+
+&lt;p&gt;O halde gelelim &lt;strong&gt;Powershell&lt;/strong&gt;’in &lt;strong&gt;Cmd&lt;/strong&gt;’ye olan farklarına, yani üstünlüklerine.&lt;/p&gt;
+
+&lt;p&gt;İlk olarak ikisi de &lt;em&gt;komut satırı&lt;/em&gt; sistemi olmasına rağmen &lt;strong&gt;Powershell&lt;/strong&gt; &lt;strong&gt;Cmd&lt;/strong&gt;’de geçerli olan komutlara ek olarak &lt;strong&gt;Cmd&lt;/strong&gt;’den farklı komutlar içeriyor. Bu komutlara &lt;strong&gt;cmdlets&lt;/strong&gt; deniyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmdlets&lt;/strong&gt;’ler hakkında daha fazla bilgiyi sonraki yazılarımdan birine saklıyorum. Şimdilik bunlara &lt;em&gt;sistem yönetimi için kullanılan görevler&lt;/em&gt; diyelim.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; aynen &lt;strong&gt;Linux&lt;/strong&gt;&amp;lsquo;da olduğu gibi &lt;em&gt;pipe&lt;/em&gt; (boru haberleşmeleri) kullanımı sağlıyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Linux&lt;/strong&gt; komut satırı sistemleri &lt;em&gt;pipe&lt;/em&gt; olarak yalnızca karakter (text) kullanırken &lt;strong&gt;Powershell&lt;/strong&gt;’de daha gelişkin &lt;strong&gt;cmdlet objeleri&lt;/strong&gt; kullanılabiliyor.&lt;/p&gt;
+
+&lt;p&gt;Yani bir &lt;strong&gt;cmdlet&lt;/strong&gt; ten aldığımız sonucu (çıktıyı) diğer bir &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;in kullanımına sunabiliyoruz. Böylelikle birden fazla &lt;strong&gt;cmdlet&lt;/strong&gt; sıralı olarak kullanılarak bu &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;lerden gelen çıktılar işleniliyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; komut satırından ibaret bir kabuk değil. &lt;strong&gt;Cmd&lt;/strong&gt;’nin aksine onunla aynı zamanda çok kompleks &lt;strong&gt;scriptler&lt;/strong&gt; oluşturarak Windows’unuzu yönetebilirsiniz. &lt;em&gt;(scripting)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt; belki biraz da nostalji olarak Windows’ta halen tutulan, kullanımı malum &lt;strong&gt;Dos komutları&lt;/strong&gt; ile sınırlı olan, Windows’un &lt;strong&gt;yönetimsel araçlarına&lt;/strong&gt; erişim hakkı bulunmayan ve gelişkin &lt;em&gt;scripting&lt;/em&gt;&amp;lsquo;e olanak sağlamayan geleneksel bir ortam olmasına karşın &lt;strong&gt;Powershell&lt;/strong&gt; sistem yöneticilerinin &lt;em&gt;Windows’u yönetmek için&lt;/em&gt; ihtiyaç duyacağı hemen her şeyi bünyesinde taşıyan modern bir geliştirme ortamı.&lt;/p&gt;
+
+&lt;h2 id=&#34;powershell-in-bize-katacakları&#34;&gt;Powershell&amp;rsquo;in Bize Katacakları&lt;/h2&gt;
+
+&lt;p&gt;Yaşları tutanlar eskiden internet bağlantısında sıkıntı çıktığında hemen bir &lt;em&gt;Çalıştır&lt;/em&gt; kutusundan &lt;code&gt;cmd. exe&lt;/code&gt; yapıp &lt;code&gt;ping&lt;/code&gt; yada &lt;code&gt;tracert&lt;/code&gt; komutu verdiklerini hatırlamışlardır.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt; kullanımınızda ayrıca &lt;code&gt;dir&lt;/code&gt; ve &lt;code&gt;cd..&lt;/code&gt; komutlar da yer tutuyordur diye tahmin ediyorum. Sadece bu kadarsa muhtemelen &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;e pek ihtiyaç duymazsınız.&lt;/p&gt;
+
+&lt;p&gt;Ancak gerçekten daha güçlü bir kullanıcı olmak istiyorsanız kendinizi &lt;em&gt;komut satırına&lt;/em&gt; adapte etmelisiniz. Zira &lt;em&gt;komut satırı&lt;/em&gt; aracılığı ile hem çok daha pratik olmak hem de bilgisayara &lt;em&gt;grafik arayüze&lt;/em&gt; göre daha fazla hakim olmak mümkün.&lt;/p&gt;
+
+&lt;p&gt;Mesela birden çok dosyanın adını bir anda değiştirmek gibi normalde &lt;em&gt;3. Parti bir yazılım&lt;/em&gt; yükleyerek yapmak zorunda kalacağınız bir işi &lt;strong&gt;Powershell&lt;/strong&gt; vasıtası ile nisbeten kolay bir şekilde halledebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Nisbeten kolay dedim, zira bu tür şeyler ortalama bir kullanıcı için hala belli &lt;em&gt;komutları ezberlemeyi&lt;/em&gt;, &lt;em&gt;araştırmayı&lt;/em&gt;, &lt;em&gt;denemeyi&lt;/em&gt;, &lt;em&gt;pes etmemeyi&lt;/em&gt;, &lt;em&gt;ısrar etmeyi&lt;/em&gt; gerektiriyor. Bu da çoğu kullanıcıya zor gelen bir şey. (Aslında çekinecek hiçbir şey yok, &lt;strong&gt;Stackoverflow&lt;/strong&gt; ne güne duruyor?)&lt;/p&gt;
+
+&lt;p&gt;Neyse, biz &lt;strong&gt;olmak isteyenler&lt;/strong&gt; için yazalım o halde. &lt;strong&gt;Usta bir bilgisayar kullanıcısı&lt;/strong&gt;, &lt;strong&gt;ağ yöneticisi&lt;/strong&gt;, &lt;strong&gt;sistem yöneticisi&lt;/strong&gt; v.s. olmak için &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i iyi kullanmak çoook büyük bir artı değer sağlar. Sizi temin ederim.&lt;/p&gt;
+
+&lt;h2 id=&#34;bazı-powershell-ve-cmd-komutları&#34;&gt;Bazı Powershell ve Cmd komutları&lt;/h2&gt;
+
+&lt;p&gt;Tersi geçerli olmasa da &lt;strong&gt;Cmd&lt;/strong&gt; komutlarının tamamı &lt;strong&gt;Powershell&lt;/strong&gt; ortamında kullanılabiliyor. Bu komutların “aliases” ları yani karşılıkları &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de tanımlanmış. Aynen &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;de olduğu gibi yazıp bu komutları kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Aşağıda &lt;strong&gt;Cmd&lt;/strong&gt; deki komutların &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;deki gerçek adları var. Bazı basit &lt;strong&gt;Dos&lt;/strong&gt; komutlarının işlevini, kullanım şeklini ve karşılıklarını verelim.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Dizin Değiştirme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: cd
+PowerShell: Set-Location
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dizindeki dosyaları listeleme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: dir
+PowerShell: Get-ChildItem
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dosya Adını Değiştirme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: rename
+PowerShell: Rename-Item
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ekranı Temizleme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Dos: cls
+Powershell: Clear-Host
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dosya Silme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: rm, remove
+PowerShell: Remove-Item
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;İki dosyayı karşılaştırma&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: diff
+PowerShell: Compare-Object
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ekrana Çıktı Göster&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: echo
+PowerShell: Write-Output
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Uygulamayı durdur:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: kill
+PowerShell: Stop-process
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;diğer-komutlar&#34;&gt;Diğer Komutlar&lt;/h2&gt;
+
+&lt;p&gt;Herhangi bir &lt;strong&gt;Dos&lt;/strong&gt; komutunun &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de karşılığının bulunup bulunmadığını anlamak için &lt;code&gt;get-alias doskomutununadı&lt;/code&gt; komutu verebilirsiniz. Mesela &lt;code&gt;rm&lt;/code&gt; komutunu hatırladıysanız eğer &lt;code&gt;remove file&lt;/code&gt; (dosyayı sil) komutudur. Bu komutun &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;deki karşılığını &lt;code&gt;get-alias rm&lt;/code&gt; yazarak öğrenelim: &lt;strong&gt;remove-item&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tüm komutları görmek için ise &lt;code&gt;get-command&lt;/code&gt; yazmanız yeterli. Karşınıza oldukça uzun bir liste gelecek.&lt;/p&gt;
+
+&lt;p&gt;Komutları içinde geçen kelimelere göre yada içinde bulunduğu spesifik modüle göre aratabiliriz. Örneğin içinde IP geçen cmdlet leri görmek istersek vereceğimiz komut,
+&lt;code&gt;Get-Command –Name *IP*&lt;/code&gt; olacaktır.&lt;/p&gt;
+
+&lt;p&gt;Yada misal olarak yalnızca &lt;strong&gt;netTCPIP&lt;/strong&gt; modülü içindeki IP kelimesi içeren komutları görmek için: &lt;code&gt;Get-Command –Module NetTCPIP –Name *IP*&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Tüm bu komutları ezberlemeye gerek kalmadan komut satırında get-help yazarak interaktif &lt;strong&gt;Powershell&lt;/strong&gt; &lt;em&gt;Help&lt;/em&gt; sistemine girip belli bir konuda yardım almanız mümkün.&lt;/p&gt;
+
+&lt;p&gt;Örneğin &lt;code&gt;Tee-object&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;i hakkında bilgi almak için &lt;code&gt;get-help Tee-object&lt;/code&gt; yazabiliriz. Daha geniş bilgi için &lt;code&gt;get-help Tee-object -online&lt;/code&gt; yazarak internet kaynaklarından yardım alabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;komut-satırı-kolaylıkları&#34;&gt;Komut Satırı Kolaylıkları&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;64&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son 32&amp;rsquo;sini sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
+
+&lt;p&gt;Ayrıca uzun komutlarınız için &lt;code&gt;alias&lt;/code&gt; kullanabilirsiniz. Nasıl &lt;strong&gt;Cmd&lt;/strong&gt; &lt;em&gt;Dos komutlarını&lt;/em&gt; &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de alias olarak kullanabiliyoruz aynı o şekilde &lt;strong&gt;Powershell&lt;/strong&gt; komutlarını da bu sayede kısaltabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;windows-ta-powershell&#34;&gt;Windows&amp;rsquo;ta Powershell&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell ISE (bütünleşik scritping ortamı).&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-ise.png&#34;&gt;
+ &lt;figcaption&gt;Powershell ISE Ekran Görüntüsü&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Yönetici&lt;/strong&gt; hakları gerektiren bazı komut satırı uygulamaları için &lt;strong&gt;Powershell&lt;/strong&gt;’i yönetici olarak çalıştırmak isteyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Yönetici&lt;/strong&gt; olarak çalıştırmak için &lt;em&gt;komut satırında&lt;/em&gt; &lt;code&gt;Start-Process powershell -Verb runAs&lt;/code&gt; komutunu verebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Windows’da iyi bildiğiniz bazı uygulamaları &lt;code&gt;start-process&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;i ile &lt;em&gt;komut satırından&lt;/em&gt; çalıştırabilirsiniz. Örnegin &lt;code&gt;start-process msconfig&lt;/code&gt; yazarsanız Microsoft konfigürasyon ayar programı açılacaktır. &lt;em&gt;Msconfig&lt;/em&gt; yerine başka bir programı deneyebilirsiniz, mesela &lt;em&gt;notepad&lt;/em&gt;, v.s.&lt;/p&gt;
+
+&lt;p&gt;Aynen &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;de olduğu gibi &lt;strong&gt;Powershell&lt;/strong&gt;’i terketmek için &lt;code&gt;exit&lt;/code&gt; komutunu vermeniz yeterli. Interaktif kabuk komut satırını sona erdirip üstüne ekranı kapatacaktır.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Powershell konusunda yazacak çok şey var. Zaman zaman bu konuya döneceğim. Bol komutlu günler&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
