@@ -179,7 +179,7 @@ PowerShell: Stop-process
 
 &lt;h2 id=&#34;powershell-komut-satırı-kolaylıkları&#34;&gt;Powershell Komut Satırı Kolaylıkları&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;64&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son 32&amp;rsquo;sini sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;4096&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son &lt;strong&gt;Powershell&lt;/strong&gt; oturumunda kullandıklarınızı sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
 
 &lt;p&gt;Powershell ortamı varsayılan olarak Cmd&amp;rsquo;ye göre daha renkli ve canlı. Cmd&amp;rsquo;nin ayarları ile oynayarak renklendirmek mümkün olsa da Powershell&amp;rsquo;in sunduğu seçenekler kadar çekici değil.&lt;/p&gt;
 
@@ -193,7 +193,7 @@ Ayrıca uzun komutlarınız için &lt;code&gt;alias&lt;/code&gt; kullanabilirsin
 
 &lt;h2 id=&#34;windows-ta-powershell-sürümleri&#34;&gt;Windows&amp;rsquo;ta Powershell Sürümleri&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell &lt;strong&gt;ISE&lt;/strong&gt; (bütünleşik scritping ortamı).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell &lt;strong&gt;ISE&lt;/strong&gt; (bütünleşik scripting ortamı).&lt;/p&gt;
 
 &lt;figure&gt;
  &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-ise.png&#34;&gt;

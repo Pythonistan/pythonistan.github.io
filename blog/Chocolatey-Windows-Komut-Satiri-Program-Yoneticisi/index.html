@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title>
+    Chocolatey: Windows Komut Satırında Bir Program Yöneticisi // Pythonistan, Python Cumhuriyeti
+  </title>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="Windows&#39;ta artık programları komut satırından kurup güncelleyebilir ve kaldırabilirsiniz">
+<meta name="keywords" content="">
+<meta name="author" content="Fatih Aydın">
+<meta name="generator" content="Hugo 0.16" />
+
+  <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@pythonistan">
+<meta property="twitter:title" content="Chocolatey: Windows Komut Satırında Bir Program Yöneticisi">
+<meta property="twitter:image" content="/img/blog/powershell-cmd/powershell-cmd-banner.png">
+<meta property="twitter:description" content="Windows&#39;ta artık programları komut satırından kurup güncelleyebilir ve kaldırabilirsiniz">
+
+  <meta property="og:title" content="Chocolatey: Windows Komut Satırında Bir Program Yöneticisi" />
+<meta property="og:description" content="Windows&#39;ta artık programları komut satırından kurup güncelleyebilir ve kaldırabilirsiniz" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:url" content="http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/" />
+
+<meta property="og:image" content="/img/blog/powershell-cmd/powershell-cmd-banner.png" />
+
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://pythonistan.net//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Pythonistan, Python Cumhuriyeti" />
+
+    
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/tomorrow-night-bright.min.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/my-categories.css">
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+		<div id="nav-to-top">
+			<span class="decorative-marker">//</span><a href="#top">Başa Dön</a>
+		</div>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+	
+	  <img src="/img/logo.png" class="sidebarphoto">
+	
+
+    <h1 class="brand-title">Pythonistan</h1>
+    <h2 class="brand-tagline">Python Cumhuriyeti</h2>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://pythonistan.net/">Anasayfa</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/blog/">ARŞİV</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/hakkinda/">HAKKINDA</a></li>
+        
+          <li class="nav-item"><span class="nav-item-separator">//</span><a href="/contact/">İLETİŞİM</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="social-buttons">
+      
+        
+        <a href="http://www.facebook.com/pythonistan" target="_blank"><i class='fa fa-facebook'></i></a>
+        
+      
+        
+        <a href="https://plus.google.com/111268284890156946758/" target="_blank"><i class='fa fa-google'></i></a>
+        
+      
+        
+        <a href="https://www.twitter.com/pythonistan" target="_blank"><i class='fa fa-twitter'></i></a>
+        
+      
+        
+      
+        
+        <a href="/index.xml" target="_blank"><i class='fa fa-feed'></i></a>
+        
+      
+      
+    </div>
+    
+
+  </div>
+</div>
+
+	
+	
+	<div class="content-banner-image pure-u-1 pure-u-md-3-4" style="">
+		<img src="/img/blog/chocolatey/chocolatey-gui.png" class="pure-img" style="width: 100%;" />
+	</div>
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">İçerik Başlıkları</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#windows-ta-farklı-bir-komut-satırı-tecrübesi">Windows&rsquo;ta Farklı Bir Komut Satırı Tecrübesi</a>
+<ul>
+<li><a href="#windows-ta-program-kurulumu">Windows&rsquo;ta Program Kurulumu</a></li>
+<li><a href="#paket-yöneticisi">Paket Yöneticisi</a></li>
+</ul></li>
+<li><a href="#chocolatey">Chocolatey</a>
+<ul>
+<li><a href="#chocolatey-kurulumu">Chocolatey Kurulumu</a></li>
+<li><a href="#chocolatey-de-3-parti-program-kurulumu">Chocolatey&rsquo;de 3. Parti Program Kurulumu</a></li>
+<li><a href="#chocolatey-bazı-komutlar">Chocolatey: Bazı Komutlar</a></li>
+</ul></li>
+<li><a href="#son-notlar">Son Notlar</a></li>
+</ul></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/">Chocolatey: Windows Komut Satırında Bir Program Yöneticisi</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>25</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Sep</span> <span class="post-date-year">2016</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author"  target="">Fatih Aydın</a></span>
+            		
+
+
+
+
+            	
+            
+
+			
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-program" href="http://pythonistan.net//categories/program">PROGRAM</a>
+				
+					<a class="post-category post-category-chocolatey" href="http://pythonistan.net//categories/chocolatey">CHOCOLATEY</a>
+				
+					<a class="post-category post-category-komut-satiri" href="http://pythonistan.net//categories/komut-satiri">KOMUT SATIRI</a>
+				
+					<a class="post-category post-category-powershell" href="http://pythonistan.net//categories/powershell">POWERSHELL</a>
+				
+					<a class="post-category post-category-kurulum" href="http://pythonistan.net//categories/kurulum">KURULUM</a>
+				
+				</div>
+			
+
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fChocolatey-Windows-Komut-Satiri-Program-Yoneticisi%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fChocolatey-Windows-Komut-Satiri-Program-Yoneticisi%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="https://twitter.com/share?text=Chocolatey%3a%20Windows%20Komut%20Sat%c4%b1r%c4%b1nda%20Bir%20Program%20Y%c3%b6neticisi&url=http%3a%2f%2fpythonistan.net%2fblog%2fChocolatey-Windows-Komut-Satiri-Program-Yoneticisi%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<img src="/img/blog/chocolatey/komut_satiri_yonetici_baslat_menu_ve_gorev_yoneticisi.png" class="pure-img content-banner-image-inline"
+                                     style="width: 100%;
+                                            " />
+			
+
+            
+
+<h2 id="windows-ta-farklı-bir-komut-satırı-tecrübesi">Windows&rsquo;ta Farklı Bir Komut Satırı Tecrübesi</h2>
+
+<p>Son <a href="/blog/Powershell-ve-cmd/"><strong>Powershell</strong> yazımda</a> <strong>komut satırı</strong>ndan, komutlarla bilgisayara hakim olmaktan ve komut satırının pratikliği artırdığından bahsetmiştim. <strong>Komut satırı</strong> normalde yapılması çok fazla sayıda &ldquo;tık&rdquo; gerektirecek işleri <strong>otomatik</strong> hale getirmek için harika bir araç.</p>
+
+<p><strong>Komut satırı</strong> deyince hemen akla gelen şeylerden biri de yoğun <strong>klavye kullanımı</strong>. Yani fare kullanımını minimize ederek hemen her işimizi <strong>klavye</strong> üzerinden yapmak.</p>
+
+<p>Peki <em>Windows</em> gibi grafik arayüzün ağırlıklı olduğu işletim sistemlerinde programları indirme nasıl olacak? Kurulu programları <strong>klavye</strong> ile kullanmayı başarsak bile yeni programları nasıl kuracağız?</p>
+
+<p>İşte burada devreye bugün yazı konumuz olan bir <strong>program yükleme - güncelleştirme - kaldırma yöneticisi</strong> diğer bir ifadeyle <strong>paket yöneticisi</strong> olan <em>Chocolatey</em> giriyor.</p>
+
+<h3 id="windows-ta-program-kurulumu">Windows&rsquo;ta Program Kurulumu</h3>
+
+<p>Özellikle <i class='fa fa-windows'></i><em>Windows</em>&lsquo;cular olarak bizler bilgisayarı kullanırken pek <strong>klavye</strong> kullanmayız. Tercihimiz genelde fare olur.</p>
+
+<p><em>Windows</em>&lsquo;ta hiç program kurdunuz mu? Tabiki kurdunuz. O halde başka bir soru? <em>Windows</em>&lsquo;ta bu programları hangi yolla kurdunuz?</p>
+
+<p>Büyük bir ihtimalle herhangi bir ortamdan (Cd, Harici hdd, Usb disk, yada internetten) indirdikten sonra <code>.exe</code> uzantılı dosyaya çift tıklayarak çalıştırdınız ve bir kaç ekran adımında Next, Next(ileri, ileri) yaparak <strong>kurulum</strong>u tamamladınız.</p>
+
+<p>Evet, bu normal yol. Peki ya yeni bir yol olsa? Bir <strong>komut satırı</strong> açsak ve bilgisayara basitçe <code>&quot;bana şu programı indir&quot;</code> desek? Güzel olur, değil mi? İşte <em>Chocolatey</em>&lsquo;in yaptığı tam da bu.</p>
+
+<h3 id="paket-yöneticisi">Paket Yöneticisi</h3>
+
+<p><strong>Paket Yöneticisi</strong> kavramı <em>Linux</em> kullanıcıları için yeni değil. <em>Linux</em> <strong>komut satırı</strong> ile iç içe geçmiş bir işletim sistemi olarak adlandırılabileceğinden kullanıcılar 3. parti programları <strong>komut satırı</strong>ndan kurma, güncelleme, kaldırma işlemini uzun zamandır gerçekleştirebilmekteydiler.</p>
+
+<p><em>Linux</em> sistemlerde esasında çok sayıda olmakla birlikte <code>apt-get</code>, <code>yum</code>, <code>rpm</code>, <code>pacman</code> gibi <strong>paket yöneticileri</strong> sık kullanılanlar arasında.</p>
+
+<p><em>Mac</em> kullanıcıları ise <em>Linux</em> kadar çok olmasa da <code>Homebrew</code> gibi <strong>paket yönetim sistemleri</strong> sayesinde <strong>terminalden</strong> program yükleme, güncelleme gibi nimetlerden istifade edebiliyorlar.</p>
+
+<p><em>Windows</em> ortamında <strong>komut satırı</strong> hep geride kalan (yada kalması istenen) ve pek destek verilmeyen bir kullanım şekli olduğundan bu alanda ciddi bir eksiklik vardı. <em>Chocolatey</em> ile bu eksiklik nisbeten dolmuş oluyor.</p>
+
+<h2 id="chocolatey">Chocolatey</h2>
+
+<blockquote>
+<p><em>Chocolatey</em> <em>Windows</em> <a href="/blog/Powershell-ve-cmd/"><strong>komut satırı</strong></a> ortamında yani kabukta çalışan bir <strong>paket yöneticisi</strong>. İstediğiniz programları indirmenizi, kaldırmanızı, güncellemenizi, kurduğunuz programların loglarını tutmanızı, program konfigürasyonları yapmanızı v.s., v.s. sağlıyor.</p>
+</blockquote>
+
+<p><em>Chocolatey</em>, siz arka planda başka işlerle meşgulken fonksiyonlarını yerine getirebiliyor. Arzu ederseniz ona yapılacak işlerin listesini bir <strong>batch script</strong> (yığın işi) olarak verin ve arkanıza yaslanın. Tüm işleri <strong>otomatik</strong> olarak halledecek.</p>
+
+<p>Eğer yükleyeceğiniz <strong>3. parti program</strong>, çalışma için ek bir paket gerektiriyorsa (mesela bazı Windows uygulamalarının .Net framework paketi gerektirmesi gibi dependency&rsquo;ler) <em>Chocolatey</em> <strong>otomatik olarak</strong> gerekli olan diğer programları indirip kuruyor.</p>
+
+<p>Yeni bir bilgisayar(lar) kurdunuz ve istediğiniz uygulamaları <em>Chocolatey</em> ’e tarif ederek tek bir scriptle tüm bilgisayarlara kurulumunu sağladınız, nasıl lezzetli değil mi?</p>
+
+<h3 id="chocolatey-kurulumu">Chocolatey Kurulumu</h3>
+
+<p>Peki <em>Chocolatey</em>&lsquo;i bilgisayarımıza nasıl kuracağız? Bir önceki yazımda değindiğim <a href="/blog/Powershell-ve-cmd/"><strong>Cmd komut satırı</strong></a> programını <strong>yönetici olarak</strong> çalıştırıp (üstteki foto &#8593;
+) aşağıdaki komutu verin:</p>
+
+<pre><code>@powershell -NoProfile -ExecutionPolicy Bypass -Command &quot;iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))&quot; &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+</code></pre>
+
+<p><strong>Önemli:</strong> Yukarıdaki komutu <strong>yönetici</strong> olarak <strong>Cmd</strong> üzerinde çalıştıracaksınız. Powershell&rsquo;de <strong>değil.</strong></p>
+
+<p><em>Not</em>: Eğer hata alırsanız panik yapmayın, bu script <strong>Cmd</strong> üzerinden bir <strong>Powershell</strong> script&rsquo;i çalıştırmaya çalışıyor. Hata muhtemelen <a href="/blog/Powershell-ve-cmd/"><strong>Powershell</strong></a>&lsquo;in ortam değişkeninde <a href="/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/#3-hugo-yu-ortam-değişkenine-path-ekleme">(PATH)</a> olmamasından kaynaklanmıştır.</p>
+
+<p><strong>Çözüm</strong>: Problemi çözmek için aşağıdaki komutu yine <strong>Cmd</strong>&lsquo;den verip <strong>Powershell</strong>&lsquo;imizi &ldquo;Path&rdquo;&lsquo;a ekleyelim. Komut satırında iken (Cmd)</p>
+
+<pre><code>set PATH=%PATH%;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+</code></pre>
+
+<p>komutunu verin. Şimdi <strong>Cmd</strong>&lsquo;yi kapatın. <code>(exit)</code> Yeni bir <strong>Cmd</strong> ekranı açıp üstteki kurulum scriptini yeniden çalıştırın.</p>
+
+<p>Aşağıdaki görüntü geldiyse kurulum başarıyla tamamlanmıştır.</p>
+
+<figure>
+ <img src="/img/blog/chocolatey/choco-yuklendi.png">
+ <figcaption>Chocolatey Yüklendikten Sonra Ekran Görüntüsü</figcaption>
+</figure>
+
+<h3 id="chocolatey-de-3-parti-program-kurulumu">Chocolatey&rsquo;de 3. Parti Program Kurulumu</h3>
+
+<p>Evet, <em>Chocolatey</em>&lsquo;i bilgisayarımıza kurduk. Şimdi favori komut satırı uygulamamız olan <a href="/blog/Powershell-ve-cmd/">Powershell</a>&lsquo;e geçelim.</p>
+
+<p>Burada <code>chocolatey</code> komutu vererek yüklü olan program versiyonunu görebilirsiniz.</p>
+
+<figure>
+ <img src="/img/blog/chocolatey/choco_install_confirmation.png">
+ <figcaption>Chocolatey Versiyonunu Öğrenme ve Program Yükleme Komutu</figcaption>
+</figure>
+
+<p>Şimdi <em>Chocolatey</em> programımızı kullanarak yeni bir program yükleyelim. Bu hepimizin bildiği bir program olsun. Mesela <em>Vlc</em> programını kurmayı deneyelim.</p>
+
+<p>Vereceğimiz komut: <code>choco install vlc</code>. Program bize uygulamayı kurmak isteyip istemediğimizi soracak, &ldquo;yes&rdquo; deyip onaylayın. (Bu arada eğer eksta teyit sorusundan kurtulmak isterseniz <code>choco feature enable -n=allowGlobalConfirmation</code> komutunu verebilirsiniz.)</p>
+
+<h3 id="chocolatey-bazı-komutlar">Chocolatey: Bazı Komutlar</h3>
+
+<p><em>Vlc</em> programının ismini biliyorsunuz, zaten kısa ve tek bir kelime. Peki ya diğer programları nasıl öğreneceğiz? Bunun için <code>choco search</code> komutundan sonra arama yapacağımız kelimeyi yazacağız.</p>
+
+<figure>
+ <img src="/img/blog/chocolatey/choco-search.png">
+ <figcaption>Chocolatey'de Program İsmi Öğrenme</figcaption>
+</figure>
+
+<p>Örneğin <em>Chrome</em> tarayıcısını kurmak istiyoruz ve programının tam olarak ismini merak ediyoruz. <code>choco search chrome</code> yazarak içinde <code>chrome</code> geçen tüm programların listesini alalım. <code>GoogleChrome</code> olarak programı görmüş olmalısınız. (Program ismi yanındaki rakamlar versiyonları belirtir)</p>
+
+<p>Programları aramanın bir başka yolu da <a href = "https://chocolatey.org/" target = "_blank"> <em>Chocolatey</em>&lsquo;in websitesi</a>nden arama yapmak. Website arama kutusuna istediğiniz program için anahtar kelimeyi yazın ve sonuçlara bakın.</p>
+
+<p>Birden fazla programı aynı anda kurmak için</p>
+
+<pre><code>choco install birinciprgradı ikinciprgadı üçüncüprgadı
+</code></pre>
+
+<p>komutunu verebiliriz. İkinci bir yol olarak aşağıdaki gibi bir <em>xml</em> dosyası oluşturup uzantısını <code>.config</code> olarak kaydedip bu dosyayı <em>Chocolatey</em>&lsquo;de <code>choco install programlar.config</code> olarak kullanabiliriz.</p>
+
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;programlar&gt;
+    &lt;package id=&quot;UTorrent&quot; /&gt;
+    &lt;package id=&quot;notepadplusplus&quot; /&gt;
+    &lt;package id=&quot;IrfanView&quot; /&gt;
+&lt;/programlar&gt;
+</code></pre>
+
+<p>O ana kadar <em>Chocolatey</em> aracılığı ile yüklediğiniz tüm programların listesini almak için <code>choco list -lo</code> komutunu kullanabilirsiniz.</p>
+
+<p>Yüklediğiniz tüm programları aynı anda güncellemek için <code>cup all</code> komutunu verebilirsiniz.</p>
+
+<p>Herhangi bir programı tek başına güncelleme için <code>choco update programadı</code>, programı kaldırmak için <code>choco uninstall programadı</code> komutları kullanılır.</p>
+
+<p>Yardıma ulaşmak için kullanacağınız komut: <code>choco /?</code></p>
+
+<h2 id="son-notlar">Son Notlar</h2>
+
+<p><em>Chocolatey</em> standart olarak sadece güvendiği ve onay verdiği (<strong>trusted packages</strong>) uygulamaları bilgisayara yüklüyor. Yeni ve henüz onaylanmamış paketleri yüklemeniz sisteminiz için virus v.s. gibi muhtemel bazı <strong>riskler</strong> taşıyabilir. Bu konuda <strong>temkinli</strong> olmak gerekiyor.</p>
+
+<p>Son bir not olarak bu yazının ruhuna biraz ters olsa da <em>Chocolatey</em>&lsquo;in bir grafik arayüzü (<strong>GUI</strong> - graphical user interface) olduğunu belirtelim. Kullanıp kullanmamak size kalmış. (En üstteki banner fotosu)</p>
+
+<hr>
+
+<p>Biraz uzun olsada <em>Chocolatey</em> hakkında doyurucu bir yazı olduğu kanaatindeyim. Lütfen gelişterebileceğim noktaları yorum kısmında dile getirmekten çekinmeyin.</p>
+
+	
+			
+		    	<div class="social-sharing">
+	<a class="share-button-facebook" onClick="return popupShare(this.href);" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpythonistan.net%2fblog%2fChocolatey-Windows-Komut-Satiri-Program-Yoneticisi%2f" target="_blank"><i class="fa fa-facebook"><span>Like</span></i></a>
+	<a class="share-button-google-plus" onClick="return popupShare(this.href);" href="https://plus.google.com/share?url=http%3a%2f%2fpythonistan.net%2fblog%2fChocolatey-Windows-Komut-Satiri-Program-Yoneticisi%2f" target="_blank"><i class="fa fa-google-plus"><span>Google +1</span></i></a>
+	<a class="share-button-twitter" onClick="return popupShare(this.href);" href="https://twitter.com/share?text=Chocolatey%3a%20Windows%20Komut%20Sat%c4%b1r%c4%b1nda%20Bir%20Program%20Y%c3%b6neticisi&url=http%3a%2f%2fpythonistan.net%2fblog%2fChocolatey-Windows-Komut-Satiri-Program-Yoneticisi%2f" target="_blank"><i class="fa fa-twitter"><span>Tweet</span></i></a>	
+</div>
+		    
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-windowsda-komut-sat%C4%B1r%C4%B1ndan-program-y%C3%BCkleme" href="http://pythonistan.net//tags/windowsda-komut-sat%C4%B1r%C4%B1ndan-program-y%C3%BCkleme">Windows&#39;da komut satırından program yükleme</a>,
+	                
+	                <a class="post-tag post-tag-chocolatey-paket-y%C3%B6neticisi" href="http://pythonistan.net//tags/chocolatey-paket-y%C3%B6neticisi">Chocolatey paket yöneticisi</a>,
+	                
+	                <a class="post-tag post-tag-programlar%C4%B1-otomatik-y%C3%BCkleme" href="http://pythonistan.net//tags/programlar%C4%B1-otomatik-y%C3%BCkleme">programları otomatik yükleme</a>,
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/Powershell-ve-cmd/">Windows’ta Komut Satırı: Powershell vs Cmd</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'pythonistan';
+    var disqus_identifier = 'http:\/\/pythonistan.net\/blog\/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi\/';
+    var disqus_title = 'Chocolatey: Windows Komut Satırında Bir Program Yöneticisi';
+    var disqus_url = 'http:\/\/pythonistan.net\/blog\/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>Made w Hugo, Theme by Shift8Creative - &copy;Python Cumhuriyeti 2016</p>
+</div>
+    </div>
+  </div>
+	
+		<script type="text/javascript">
+			onscroll = function() {
+			  var toTopVisible = false;
+			  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			  if (scrollTop > 1000) {
+			    if (!toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'block';
+			    }
+			  } else {
+			    if (scrollTop < 1000 || toTopVisible) {
+			      document.getElementById('nav-to-top').style.display = 'none';
+			    }
+			  }
+			};
+		</script>
+	
+
+	
+		<script type="text/javascript">
+			function popupShare(url) {
+				window.open(url, '_blank', 'scrollbars,resizable,height=525,width=600');
+				return false;
+			}
+		</script>
+	
+
+  
+</body>
+</html>

@@ -6,8 +6,147 @@
     <description>Recent content in Blogs on Pythonistan, Python Cumhuriyeti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Wed, 21 Sep 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 25 Sep 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="http://pythonistan.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Chocolatey: Windows Komut Satırında Bir Program Yöneticisi</title>
+      <link>http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/</link>
+      <pubDate>Sun, 25 Sep 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/</guid>
+      <description>
+
+&lt;h2 id=&#34;windows-ta-farklı-bir-komut-satırı-tecrübesi&#34;&gt;Windows&amp;rsquo;ta Farklı Bir Komut Satırı Tecrübesi&lt;/h2&gt;
+
+&lt;p&gt;Son &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt; yazımda&lt;/a&gt; &lt;strong&gt;komut satırı&lt;/strong&gt;ndan, komutlarla bilgisayara hakim olmaktan ve komut satırının pratikliği artırdığından bahsetmiştim. &lt;strong&gt;Komut satırı&lt;/strong&gt; normalde yapılması çok fazla sayıda &amp;ldquo;tık&amp;rdquo; gerektirecek işleri &lt;strong&gt;otomatik&lt;/strong&gt; hale getirmek için harika bir araç.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Komut satırı&lt;/strong&gt; deyince hemen akla gelen şeylerden biri de yoğun &lt;strong&gt;klavye kullanımı&lt;/strong&gt;. Yani fare kullanımını minimize ederek hemen her işimizi &lt;strong&gt;klavye&lt;/strong&gt; üzerinden yapmak.&lt;/p&gt;
+
+&lt;p&gt;Peki &lt;em&gt;Windows&lt;/em&gt; gibi grafik arayüzün ağırlıklı olduğu işletim sistemlerinde programları indirme nasıl olacak? Kurulu programları &lt;strong&gt;klavye&lt;/strong&gt; ile kullanmayı başarsak bile yeni programları nasıl kuracağız?&lt;/p&gt;
+
+&lt;p&gt;İşte burada devreye bugün yazı konumuz olan bir &lt;strong&gt;program yükleme - güncelleştirme - kaldırma yöneticisi&lt;/strong&gt; diğer bir ifadeyle &lt;strong&gt;paket yöneticisi&lt;/strong&gt; olan &lt;em&gt;Chocolatey&lt;/em&gt; giriyor.&lt;/p&gt;
+
+&lt;h3 id=&#34;windows-ta-program-kurulumu&#34;&gt;Windows&amp;rsquo;ta Program Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Özellikle &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt;&lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;cular olarak bizler bilgisayarı kullanırken pek &lt;strong&gt;klavye&lt;/strong&gt; kullanmayız. Tercihimiz genelde fare olur.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;ta hiç program kurdunuz mu? Tabiki kurdunuz. O halde başka bir soru? &lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;ta bu programları hangi yolla kurdunuz?&lt;/p&gt;
+
+&lt;p&gt;Büyük bir ihtimalle herhangi bir ortamdan (Cd, Harici hdd, Usb disk, yada internetten) indirdikten sonra &lt;code&gt;.exe&lt;/code&gt; uzantılı dosyaya çift tıklayarak çalıştırdınız ve bir kaç ekran adımında Next, Next(ileri, ileri) yaparak &lt;strong&gt;kurulum&lt;/strong&gt;u tamamladınız.&lt;/p&gt;
+
+&lt;p&gt;Evet, bu normal yol. Peki ya yeni bir yol olsa? Bir &lt;strong&gt;komut satırı&lt;/strong&gt; açsak ve bilgisayara basitçe &lt;code&gt;&amp;quot;bana şu programı indir&amp;quot;&lt;/code&gt; desek? Güzel olur, değil mi? İşte &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in yaptığı tam da bu.&lt;/p&gt;
+
+&lt;h3 id=&#34;paket-yöneticisi&#34;&gt;Paket Yöneticisi&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Paket Yöneticisi&lt;/strong&gt; kavramı &lt;em&gt;Linux&lt;/em&gt; kullanıcıları için yeni değil. &lt;em&gt;Linux&lt;/em&gt; &lt;strong&gt;komut satırı&lt;/strong&gt; ile iç içe geçmiş bir işletim sistemi olarak adlandırılabileceğinden kullanıcılar 3. parti programları &lt;strong&gt;komut satırı&lt;/strong&gt;ndan kurma, güncelleme, kaldırma işlemini uzun zamandır gerçekleştirebilmekteydiler.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Linux&lt;/em&gt; sistemlerde esasında çok sayıda olmakla birlikte &lt;code&gt;apt-get&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt;, &lt;code&gt;rpm&lt;/code&gt;, &lt;code&gt;pacman&lt;/code&gt; gibi &lt;strong&gt;paket yöneticileri&lt;/strong&gt; sık kullanılanlar arasında.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mac&lt;/em&gt; kullanıcıları ise &lt;em&gt;Linux&lt;/em&gt; kadar çok olmasa da &lt;code&gt;Homebrew&lt;/code&gt; gibi &lt;strong&gt;paket yönetim sistemleri&lt;/strong&gt; sayesinde &lt;strong&gt;terminalden&lt;/strong&gt; program yükleme, güncelleme gibi nimetlerden istifade edebiliyorlar.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Windows&lt;/em&gt; ortamında &lt;strong&gt;komut satırı&lt;/strong&gt; hep geride kalan (yada kalması istenen) ve pek destek verilmeyen bir kullanım şekli olduğundan bu alanda ciddi bir eksiklik vardı. &lt;em&gt;Chocolatey&lt;/em&gt; ile bu eksiklik nisbeten dolmuş oluyor.&lt;/p&gt;
+
+&lt;h2 id=&#34;chocolatey&#34;&gt;Chocolatey&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt; &lt;em&gt;Windows&lt;/em&gt; &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;komut satırı&lt;/strong&gt;&lt;/a&gt; ortamında yani kabukta çalışan bir &lt;strong&gt;paket yöneticisi&lt;/strong&gt;. İstediğiniz programları indirmenizi, kaldırmanızı, güncellemenizi, kurduğunuz programların loglarını tutmanızı, program konfigürasyonları yapmanızı v.s., v.s. sağlıyor.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt;, siz arka planda başka işlerle meşgulken fonksiyonlarını yerine getirebiliyor. Arzu ederseniz ona yapılacak işlerin listesini bir &lt;strong&gt;batch script&lt;/strong&gt; (yığın işi) olarak verin ve arkanıza yaslanın. Tüm işleri &lt;strong&gt;otomatik&lt;/strong&gt; olarak halledecek.&lt;/p&gt;
+
+&lt;p&gt;Eğer yükleyeceğiniz &lt;strong&gt;3. parti program&lt;/strong&gt;, çalışma için ek bir paket gerektiriyorsa (mesela bazı Windows uygulamalarının .Net framework paketi gerektirmesi gibi dependency&amp;rsquo;ler) &lt;em&gt;Chocolatey&lt;/em&gt; &lt;strong&gt;otomatik olarak&lt;/strong&gt; gerekli olan diğer programları indirip kuruyor.&lt;/p&gt;
+
+&lt;p&gt;Yeni bir bilgisayar(lar) kurdunuz ve istediğiniz uygulamaları &lt;em&gt;Chocolatey&lt;/em&gt; ’e tarif ederek tek bir scriptle tüm bilgisayarlara kurulumunu sağladınız, nasıl lezzetli değil mi?&lt;/p&gt;
+
+&lt;h3 id=&#34;chocolatey-kurulumu&#34;&gt;Chocolatey Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Peki &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;i bilgisayarımıza nasıl kuracağız? Bir önceki yazımda değindiğim &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Cmd komut satırı&lt;/strong&gt;&lt;/a&gt; programını &lt;strong&gt;yönetici olarak&lt;/strong&gt; çalıştırıp (üstteki foto &amp;#8593;
+) aşağıdaki komutu verin:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@powershell -NoProfile -ExecutionPolicy Bypass -Command &amp;quot;iex ((new-object net.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&amp;quot; &amp;amp;&amp;amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Yukarıdaki komutu &lt;strong&gt;yönetici&lt;/strong&gt; olarak &lt;strong&gt;Cmd&lt;/strong&gt; üzerinde çalıştıracaksınız. Powershell&amp;rsquo;de &lt;strong&gt;değil.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Not&lt;/em&gt;: Eğer hata alırsanız panik yapmayın, bu script &lt;strong&gt;Cmd&lt;/strong&gt; üzerinden bir &lt;strong&gt;Powershell&lt;/strong&gt; script&amp;rsquo;i çalıştırmaya çalışıyor. Hata muhtemelen &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;&amp;lsquo;in ortam değişkeninde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/#3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;(PATH)&lt;/a&gt; olmamasından kaynaklanmıştır.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Çözüm&lt;/strong&gt;: Problemi çözmek için aşağıdaki komutu yine &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;den verip &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;imizi &amp;ldquo;Path&amp;rdquo;&amp;lsquo;a ekleyelim. Komut satırında iken (Cmd)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set PATH=%PATH%;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;komutunu verin. Şimdi &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;yi kapatın. &lt;code&gt;(exit)&lt;/code&gt; Yeni bir &lt;strong&gt;Cmd&lt;/strong&gt; ekranı açıp üstteki kurulum scriptini yeniden çalıştırın.&lt;/p&gt;
+
+&lt;p&gt;Aşağıdaki görüntü geldiyse kurulum başarıyla tamamlanmıştır.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco-yuklendi.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey Yüklendikten Sonra Ekran Görüntüsü&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;chocolatey-de-3-parti-program-kurulumu&#34;&gt;Chocolatey&amp;rsquo;de 3. Parti Program Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Evet, &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;i bilgisayarımıza kurduk. Şimdi favori komut satırı uygulamamız olan &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Powershell&lt;/a&gt;&amp;lsquo;e geçelim.&lt;/p&gt;
+
+&lt;p&gt;Burada &lt;code&gt;chocolatey&lt;/code&gt; komutu vererek yüklü olan program versiyonunu görebilirsiniz.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco_install_confirmation.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey Versiyonunu Öğrenme ve Program Yükleme Komutu&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Şimdi &lt;em&gt;Chocolatey&lt;/em&gt; programımızı kullanarak yeni bir program yükleyelim. Bu hepimizin bildiği bir program olsun. Mesela &lt;em&gt;Vlc&lt;/em&gt; programını kurmayı deneyelim.&lt;/p&gt;
+
+&lt;p&gt;Vereceğimiz komut: &lt;code&gt;choco install vlc&lt;/code&gt;. Program bize uygulamayı kurmak isteyip istemediğimizi soracak, &amp;ldquo;yes&amp;rdquo; deyip onaylayın. (Bu arada eğer eksta teyit sorusundan kurtulmak isterseniz &lt;code&gt;choco feature enable -n=allowGlobalConfirmation&lt;/code&gt; komutunu verebilirsiniz.)&lt;/p&gt;
+
+&lt;h3 id=&#34;chocolatey-bazı-komutlar&#34;&gt;Chocolatey: Bazı Komutlar&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Vlc&lt;/em&gt; programının ismini biliyorsunuz, zaten kısa ve tek bir kelime. Peki ya diğer programları nasıl öğreneceğiz? Bunun için &lt;code&gt;choco search&lt;/code&gt; komutundan sonra arama yapacağımız kelimeyi yazacağız.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco-search.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey&#39;de Program İsmi Öğrenme&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Örneğin &lt;em&gt;Chrome&lt;/em&gt; tarayıcısını kurmak istiyoruz ve programının tam olarak ismini merak ediyoruz. &lt;code&gt;choco search chrome&lt;/code&gt; yazarak içinde &lt;code&gt;chrome&lt;/code&gt; geçen tüm programların listesini alalım. &lt;code&gt;GoogleChrome&lt;/code&gt; olarak programı görmüş olmalısınız. (Program ismi yanındaki rakamlar versiyonları belirtir)&lt;/p&gt;
+
+&lt;p&gt;Programları aramanın bir başka yolu da &lt;a href = &#34;https://chocolatey.org/&#34; target = &#34;_blank&#34;&gt; &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in websitesi&lt;/a&gt;nden arama yapmak. Website arama kutusuna istediğiniz program için anahtar kelimeyi yazın ve sonuçlara bakın.&lt;/p&gt;
+
+&lt;p&gt;Birden fazla programı aynı anda kurmak için&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;choco install birinciprgradı ikinciprgadı üçüncüprgadı
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;komutunu verebiliriz. İkinci bir yol olarak aşağıdaki gibi bir &lt;em&gt;xml&lt;/em&gt; dosyası oluşturup uzantısını &lt;code&gt;.config&lt;/code&gt; olarak kaydedip bu dosyayı &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;de &lt;code&gt;choco install programlar.config&lt;/code&gt; olarak kullanabiliriz.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;programlar&amp;gt;
+    &amp;lt;package id=&amp;quot;UTorrent&amp;quot; /&amp;gt;
+    &amp;lt;package id=&amp;quot;notepadplusplus&amp;quot; /&amp;gt;
+    &amp;lt;package id=&amp;quot;IrfanView&amp;quot; /&amp;gt;
+&amp;lt;/programlar&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;O ana kadar &lt;em&gt;Chocolatey&lt;/em&gt; aracılığı ile yüklediğiniz tüm programların listesini almak için &lt;code&gt;choco list -lo&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Yüklediğiniz tüm programları aynı anda güncellemek için &lt;code&gt;cup all&lt;/code&gt; komutunu verebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Herhangi bir programı tek başına güncelleme için &lt;code&gt;choco update programadı&lt;/code&gt;, programı kaldırmak için &lt;code&gt;choco uninstall programadı&lt;/code&gt; komutları kullanılır.&lt;/p&gt;
+
+&lt;p&gt;Yardıma ulaşmak için kullanacağınız komut: &lt;code&gt;choco /?&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;son-notlar&#34;&gt;Son Notlar&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt; standart olarak sadece güvendiği ve onay verdiği (&lt;strong&gt;trusted packages&lt;/strong&gt;) uygulamaları bilgisayara yüklüyor. Yeni ve henüz onaylanmamış paketleri yüklemeniz sisteminiz için virus v.s. gibi muhtemel bazı &lt;strong&gt;riskler&lt;/strong&gt; taşıyabilir. Bu konuda &lt;strong&gt;temkinli&lt;/strong&gt; olmak gerekiyor.&lt;/p&gt;
+
+&lt;p&gt;Son bir not olarak bu yazının ruhuna biraz ters olsa da &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in bir grafik arayüzü (&lt;strong&gt;GUI&lt;/strong&gt; - graphical user interface) olduğunu belirtelim. Kullanıp kullanmamak size kalmış. (En üstteki banner fotosu)&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Biraz uzun olsada &lt;em&gt;Chocolatey&lt;/em&gt; hakkında doyurucu bir yazı olduğu kanaatindeyim. Lütfen gelişterebileceğim noktaları yorum kısmında dile getirmekten çekinmeyin.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Windows’ta Komut Satırı: Powershell vs Cmd</title>
@@ -179,7 +318,7 @@ PowerShell: Stop-process
 
 &lt;h2 id=&#34;powershell-komut-satırı-kolaylıkları&#34;&gt;Powershell Komut Satırı Kolaylıkları&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;64&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son 32&amp;rsquo;sini sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;4096&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son &lt;strong&gt;Powershell&lt;/strong&gt; oturumunda kullandıklarınızı sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
 
 &lt;p&gt;Powershell ortamı varsayılan olarak Cmd&amp;rsquo;ye göre daha renkli ve canlı. Cmd&amp;rsquo;nin ayarları ile oynayarak renklendirmek mümkün olsa da Powershell&amp;rsquo;in sunduğu seçenekler kadar çekici değil.&lt;/p&gt;
 
@@ -193,7 +332,7 @@ Ayrıca uzun komutlarınız için &lt;code&gt;alias&lt;/code&gt; kullanabilirsin
 
 &lt;h2 id=&#34;windows-ta-powershell-sürümleri&#34;&gt;Windows&amp;rsquo;ta Powershell Sürümleri&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell &lt;strong&gt;ISE&lt;/strong&gt; (bütünleşik scritping ortamı).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell &lt;strong&gt;ISE&lt;/strong&gt; (bütünleşik scripting ortamı).&lt;/p&gt;
 
 &lt;figure&gt;
  &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-ise.png&#34;&gt;
@@ -1781,144 +1920,6 @@ print palindrome(text)
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:kaynak&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Python&#39;da Stringleri Öğreniyoruz - 2</title>
-      <link>http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-2/</link>
-      <pubDate>Sun, 07 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-2/</guid>
-      <description>
-
-&lt;h2 id=&#34;python-da-stringler-2-bölüm&#34;&gt;Python&amp;rsquo;da Stringler - 2. Bölüm&lt;/h2&gt;
-
-&lt;p&gt;Dün &lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;ilk bölümünü&lt;/a&gt; yayınladığımız karakter dizileri (stringler) konusuna devam ediyoruz.&lt;/p&gt;
-
-&lt;p&gt;İkinci bölümde pratiğe yönelik bazı uygulamalar yapalım. Sizlere sürpriz sorularım olacak.&lt;/p&gt;
-
-&lt;h2 id=&#34;eğlenceli-bir-deneme&#34;&gt;Eğlenceli Bir Deneme&lt;/h2&gt;
-
-&lt;p&gt;Elimizde iki adet değişken var. Değişkenlerimiz &lt;code&gt;a = &amp;quot;Garanti&amp;quot;&lt;/code&gt; ve &lt;code&gt;b = &amp;quot;töre&amp;quot;&lt;/code&gt; olsun.&lt;/p&gt;
-
-&lt;p&gt;Bu iki değişkeni kullanarak -burası önemli!!!- &lt;strong&gt;index değerlerini tek tek saymadan&lt;/strong&gt; nasıl &lt;code&gt;&amp;quot;Garantör&amp;quot;&lt;/code&gt; isimli bir karakter dizisi oluşturup ekrana yazdırabiliriz?&lt;/p&gt;
-
-&lt;p&gt;Cevaba göz atmadan lütfen bir kaç dakika &lt;strong&gt;düşünün&lt;/strong&gt;. Bu sorunun cevabını kolaylıkla bulabileceğinizi sanıyorum.&lt;/p&gt;
-
-&lt;p&gt;İpucu: İki karakter dizisini birleştirmek için &lt;code&gt;+&lt;/code&gt; operatörünü kullanabilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Sorumuzun cevabı sayfanın altında. Hemen alttaki bölümde ise ev ödeviniz var.&lt;/p&gt;
-
-&lt;h2 id=&#34;ev-ödeviniz&#34;&gt;Ev Ödeviniz&lt;/h2&gt;
-
-&lt;p&gt;Bir sonraki blog yazıma kadar çözmeniz için bir soru soracağım. Python interpreter&amp;rsquo;ı bu sorunun cevabını bulmak için kullanabilirsiniz. İnternetten cevabı araştırmak serbest.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;Stringler - 1. bölümde&lt;/a&gt; geçen &lt;code&gt;selam&lt;/code&gt; adlı değişkenin &amp;ldquo;baştan 7. / sondan -15.&amp;rdquo; index değerine haiz olan karakterinin ismi nedir?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;stringler-toplanır-mı&#34;&gt;Stringler Toplanır mı?&lt;/h2&gt;
-
-&lt;p&gt;Üstteki sorudaki ipucunda belirtildiği gibi karakter dizilerini birbirleri ile birleştirip yeni karakter dizileri oluşturabilirsiniz. Bunun için &lt;code&gt;+&lt;/code&gt; operatörünü kullanmalısınız. Burada yapılan işleme, birleştirme (concatenatination) denir.&lt;/p&gt;
-
-&lt;p&gt;Birleştirme yapılırken araya otomatik boşluk girmez, boşluk gerekiyorsa sizin boşluk karakterini birleşen stringlerin arasına koymanız gerekir. (Bkz.aşağıdaki örnek 3.satır &amp;lsquo;merhaba&amp;rsquo;dan sonrası)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Evet boşluk karakteri de diğer herhangi bir karakter gibidir. Basitçe space tuşuna bir kere basmak bir boşluk karakteri vermek demektir.&lt;/p&gt;
-
-&lt;p&gt;Peki bir karakter dizisi ile bir sayı (rakam) birleşebilir mi? Karakter dizilerini bir sayıyla toplamaya kalkarsanız hata alırsınız. Zira sayı ile toplama yada çıkarma tür uyuşmazlığı nedeni ile yapılamaz. Ancak ilginç bir durum olarak karakter dizisini çarpı &lt;code&gt;*&lt;/code&gt; operatörü ile kullanıp aynı karakter dizisini çarpıldığı değer kadar artırabilirsiniz. Bir örnek görelim:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
-
-print &#39;merhaba &#39; + &amp;quot;Fatih&amp;quot; + &amp;quot;!&amp;quot; * 15 # üç adet karakter dizisini birleştir
-        # ünlem karakterini 15 ile çarp, yani 15 adet yap
-        # çıktıyı aşağıda soldaki ekran görüntüsünde görebilirsiniz.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;türkçe-karakter-azizliği&#34;&gt;Türkçe Karakter Azizliği&lt;/h2&gt;
-
-&lt;p&gt;Belki farketmişsinizdir. Bugüne kadarki yazılarımdaki kodlarda Türkçe karakterleri pek kullanmamıştım.(yorum satırları hariç) Stringleri işlediğim iki bölümdeki tüm örnek kodlarda Türkçe kullanmaya çalıştım.&lt;/p&gt;
-
-&lt;p&gt;Python 2 versiyonunun üniversal UTF-8 kümesi ile irtibatı maalesef pek sağlam değil. Birçok kez interpreter(yorumlayıcı)&amp;lsquo;da sürpriz hatalarla karşılaşabiliyorsunuz.&lt;/p&gt;
-
-&lt;p&gt;Örneğin &lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/&#34;&gt;bir önceki yazıda&lt;/a&gt; geçen &lt;code&gt;len&lt;/code&gt; built-in (hazır) fonksiyona bakalım. &lt;code&gt;print len &amp;quot;tesadüfi&amp;quot;&lt;/code&gt; komutunu verdiğinizde çok şaşırtıcı bir biçimde &lt;code&gt;9&lt;/code&gt; sonucunu alıyorsunuz. Kelimemizde 8 karakter olduğu aşikar! UTF-8, &amp;ldquo;ü&amp;rdquo; gibi özel karakter setleri için birden fazla byte kullandığı için karakter dizimizin değeri Python&amp;rsquo;ca yanlış hesaplanıyor.&lt;/p&gt;
-
-&lt;p&gt;Allahtan bunu önlemenin nispeten kolay bir yolu var. Karakterimizi unicode&amp;rsquo;a göre decode etmek(çözmek) ve o şekilde &lt;code&gt;len&lt;/code&gt; fonksiyonunu çalıştırmak. &lt;code&gt;print len (u&amp;quot;tesadüfi&amp;quot;)&lt;/code&gt; şeklinde kullandığımızda doğru sonuç olan &lt;code&gt;8&lt;/code&gt; döndürülüyor. Burada &lt;code&gt;u&lt;/code&gt; karakter dizimizi unicode&amp;rsquo;a çeviriyor.&lt;/p&gt;
-
-&lt;p&gt;Tuhaf olan yukarıdaki aynı kodu Windows&amp;rsquo;da Komut Satırı &amp;gt; Python yazarak açtığımız Python kabuğunda(Shell) çalıştırdığınızda herhangi bir hata almadan doğru sonucu(8) veriyor. Kafa karıştıran bir durum!&lt;/p&gt;
-
-&lt;p&gt;Yine aynı şekilde &lt;a href=&#34;http://pythonistan.net/blog/pythonda-stringleri-ogreniyoruz-1/#karakter-dizisi-sras-string-index&#34;&gt;bir önceki bölümde&lt;/a&gt; &lt;code&gt;print selam[-5:-1]  # 5. örnek -&amp;gt; &amp;quot;lsın&amp;quot; olmalı&lt;/code&gt; kodu Sublime&amp;rsquo;da Python tarafından yanlış sonuç döndürüyor. Bu kez yine &amp;ldquo;ı&amp;rdquo; karakteri interpreter tarafından işlenirken hata oluşuyor.&lt;/p&gt;
-
-&lt;p&gt;Gördüğünüz gibi Python&amp;rsquo;da bazen Türkçe karakterlerle yada standart latin harfleri dışındaki bazı özel karakter setleri ile problemler yaşayabilirsiniz. Bu tür durumlarda önerim Google&amp;rsquo;dan probleminizi (tercihen ingilizce olarak) yazıp aratmanız. Google sizi genelde &lt;a target=&#34;blank&#34; href=&#34;http://stackoverflow.com/&#34;&gt;stackoverflow&lt;/a&gt; gibi sitelere yönlendiriyor ve bir şekilde probleminizi çözüyorsunuz. Tabi her zaman için ilk kural: Panik yapmayın!&lt;/p&gt;
-
-&lt;h2 id=&#34;eğlenceli-bir-deneme-çözümü&#34;&gt;Eğlenceli Bir Deneme Çözümü&lt;/h2&gt;
-
-&lt;p&gt;Eksi (-) indeks değerlerini kullanarak karakter dizisinde istemediğimiz kısımları çıkartıp istediğimiz alt dizileri oluşturarak bu soruyu çözebiliriz.&lt;/p&gt;
-
-&lt;p&gt;İlk karakter dizimiz &lt;code&gt;&amp;quot;Garanti&amp;quot;&lt;/code&gt;idi. Burada istemediğimiz karakterler son iki karakter: &lt;code&gt;&amp;quot;ti&amp;quot;&lt;/code&gt;.Son iki karakteri istemediğimizi bildiğimizden basitçe a[:-2] bize &lt;code&gt;&amp;quot;Garan&amp;quot;&lt;/code&gt; alt dizisini verir.&lt;/p&gt;
-
-&lt;p&gt;İkinci karakter dizimiz &lt;code&gt;&amp;quot;töre&amp;quot;&lt;/code&gt; idi. Burada istemediğimiz karakter sadece en son karakter: &lt;code&gt;&amp;quot;e&amp;quot;&lt;/code&gt; Yine aynı şekilde b[:-1] kullanımı bize &lt;code&gt;&amp;quot;tör&amp;quot;&lt;/code&gt; alt dizisini (substring) verecektir.&lt;/p&gt;
-
-&lt;p&gt;Artı &lt;code&gt;(+)&lt;/code&gt; operatörünün stringler için kullanıldığında birleştirmeye (concetination) yaradığını biliyoruz. Bu iki karakter dizisini birleştirmek için şimdi bu operatörü kullanalım. &lt;code&gt;a[:-2] + b[:-1]&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Son olarak ekrana yazdırma komutumuzu biliyorsunuz. &lt;code&gt;print a[:-2] + b[:-1]&lt;/code&gt; -&amp;gt; Bize &lt;code&gt;&amp;quot;Garantör&amp;quot;&lt;/code&gt;  çıktısını verecektir.&lt;/p&gt;
-
-&lt;p&gt;Programımızın toplu görünüşü:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
-a = &amp;quot;Garanti&amp;quot;
-b = &amp;quot;töre&amp;quot;
-
-print a[0:-2] + b[0:-1]  # print a[:-2] + b[:-1] kullanımı da geçerlidir
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Alternatif Kullanım:&lt;/strong&gt; Yukarıda son yorum satırında değinildiği gibi başlangıç indexinde 0 kullanmayabilirsiniz. Değer yazılmadığında Python varsayılan değer olarak 0 kullanır.&lt;/p&gt;
-
-&lt;figure class=&#34;half&#34;&gt;
-    &lt;a href=&#34;http://pythonistan.net/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/pythonda-stringler/karakter_dizileri_carpim_operatoru.png&#34; alt=&#34;Paytonda karakter dizileri çarpılabilir&#34;&gt;&lt;/a&gt;
-    &lt;figcaption&gt;Paytonda karakter dizileri çarpılabilir&lt;/figcaption&gt;
-
-    &lt;a href=&#34;http://pythonistan.net/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/pythonda-stringler/birebir_saymadan_alt_dizi_olusturma.png&#34; alt=&#34;Birebir index değeri saymadan substring alt dizi oluşturma&#34;&gt;&lt;/a&gt;
-    &lt;figcaption&gt;Birebir İndex Değeri Saymadan Substring Alt Dizi Oluşturma&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h2 id=&#34;web-sitesi-adreslerini-python-la-ayıklama&#34;&gt;Web Sitesi Adreslerini Python&amp;rsquo;la Ayıklama&lt;/h2&gt;
-
-&lt;p&gt;Hepiniz şimdiye değin muhakkak bir website kodu ile karşılaşmışsınızdır. Web tarayıcısında bir websitenin içindeyken sağ tıklayıp açılan menüden &amp;ldquo;Kaynağı Göster&amp;rdquo;e tıkladığımızda gelen source(kaynak) kodlarında en sık görülen kod satırlarından biri hyperlink gösterimidir.&lt;/p&gt;
-
-&lt;p&gt;Web demek zaten hiper linklerin bir toplamı değil mi? O yüzden hemen her sayfa onlarca hyperlink barındırmaktadır.&lt;/p&gt;
-
-&lt;p&gt;Bahsettiğimiz linklerin web sitelerinin kaynak kodlarında genel gösterimi şu şekildedir: &lt;code&gt;&amp;lt;a href = &amp;quot; http://www.ornekwebsitesi.com &amp;quot; &amp;gt;&lt;/code&gt; Şimdi diyelim ki biz bu koddan sadece &lt;code&gt;http://www.ornekwebsitesi.com&lt;/code&gt; olan kısmı çekip almak (extract) istiyoruz. Şu ana kadar öğrendiğimiz metodlarla bunu çok kolay gerçekleştirebileceğimizi biliyorsunuz.&lt;/p&gt;
-
-&lt;p&gt;Öğrenmiş olduğumuz baş ve son (diğer bir ifadeyle pozitif ve negatif) index değerlerini kullanarak bu problemi çözelim.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;http://www.ornekwebsitesi.com&amp;quot;&amp;gt;&lt;/code&gt; ifadesinde http&amp;rsquo;nin ilk harfi olan &amp;ldquo;h&amp;rdquo; karakterinin pozitif index değeri ne olursa olsun değişmeyecek: &lt;code&gt;9&lt;/code&gt;. (Bkz. Aşağıda Soldaki Ekran Görüntüsü)&lt;/p&gt;
-
-&lt;p&gt;Aynı şekilde linkin sonuna bakarsak linkin uzunluğu ne olursa olsun son iki karakterin (çift tırnak ve büyüktür karakterleri) dışarıda bırakacağımızı görebiliyoruz. Dolayısıyla linkimizin son karakterinin pozitif indeks değeri değişse bile negatif indeks değeri hiç bir zaman değişmez.&lt;/p&gt;
-
-&lt;p&gt;Negatif index değeri linkin son karakterine kadar her zaman için -2 dir. (Üstteki örneğimizi hatırlayın, son 2 karakteri almak istemiyoruz. -2.inci karakter (bu durumda &amp;lsquo;&amp;ldquo;&amp;rsquo;) alınacak alt diziye dahil olmayacaktır, unutmayın.) Aşağıda soldaki ekran alıntısında bu durumu detaylı görebilirsiniz.&lt;/p&gt;
-
-&lt;p&gt;Dolayısıyla bizim istediğimiz kısım [9&amp;rsquo;dan:-2&amp;rsquo;ye] kadar olan kısımdır.(-2. dahil değil) Şimdi bunu kodumuzda görelim.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# -*- coding: utf-8 -*-   #türkçe karakterlerle sorun yaşamamak için
-link_1 = &#39;&amp;lt;a href=&amp;quot;http://www.python.org&amp;quot;&amp;gt;&#39; # dışarıda tek tırnak kullanımına dikkat
-link_2 = &#39;&amp;lt;a href=&amp;quot;http://www.pythonistan.net&amp;quot;&amp;gt;&#39; #çünkü içeride çift tırnak var...
-link_3 = &#39;&amp;lt;a href=&amp;quot;http://www.pythoncentral.io&amp;quot;&amp;gt;&#39;
-
-print link_1[9:-2]  # gördüğünüz gibi karakter dizilerimizin uzunluğu
-print link_2[9:-2]  # farklı olsa bile hepsi için aynı index değerleri
-print link_3[9:-2]  # kullanarak istediğimiz bölümü seçebildik.
-# programın çıktısını (output) hemen alt sağdaki ekran görüntüsünde görebilirsiniz.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Paytonda hiper link görece string index pozisyon tablo karşılaştırması&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/pythonda-stringler/hyperlink_goreceli_string_index_pozisyonu_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://pythonistan.net/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;da Karakter Dizisi İndeksi ile Hiper Link Ayıklıyoruz&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/pythonda-stringler/string_indexing_ile_hyperlink_ayiklamak_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Karakter dizileri üzerine dün ve bugün yaptığımız detaylı açıklamalardan sonra artık &lt;a href=&#34;http://pythonistan.net/blog/palindrome-programi/&#34;&gt;palindrom&lt;/a&gt; programımıza geçebiliriz. Bekleyin beni anacım!&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Her türlü görüş ve önerileriniz için lütfen sayfa altındaki yorumlar bölümünü kullanın. Yazımı paylaşmak için sosyal medya linkleri aşağıdaki menüde mevcut. Teşekkürler.&lt;/p&gt;
 </description>
     </item>
     

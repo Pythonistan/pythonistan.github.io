@@ -6,8 +6,147 @@
     <description>Recent content in Komut Satiri on Pythonistan, Python Cumhuriyeti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
-    <lastBuildDate>Wed, 21 Sep 2016 00:17:50 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 25 Sep 2016 00:17:50 -0400</lastBuildDate>
     <atom:link href="http://pythonistan.net/categories/komut-satiri/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Chocolatey: Windows Komut Satırında Bir Program Yöneticisi</title>
+      <link>http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/</link>
+      <pubDate>Sun, 25 Sep 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/</guid>
+      <description>
+
+&lt;h2 id=&#34;windows-ta-farklı-bir-komut-satırı-tecrübesi&#34;&gt;Windows&amp;rsquo;ta Farklı Bir Komut Satırı Tecrübesi&lt;/h2&gt;
+
+&lt;p&gt;Son &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt; yazımda&lt;/a&gt; &lt;strong&gt;komut satırı&lt;/strong&gt;ndan, komutlarla bilgisayara hakim olmaktan ve komut satırının pratikliği artırdığından bahsetmiştim. &lt;strong&gt;Komut satırı&lt;/strong&gt; normalde yapılması çok fazla sayıda &amp;ldquo;tık&amp;rdquo; gerektirecek işleri &lt;strong&gt;otomatik&lt;/strong&gt; hale getirmek için harika bir araç.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Komut satırı&lt;/strong&gt; deyince hemen akla gelen şeylerden biri de yoğun &lt;strong&gt;klavye kullanımı&lt;/strong&gt;. Yani fare kullanımını minimize ederek hemen her işimizi &lt;strong&gt;klavye&lt;/strong&gt; üzerinden yapmak.&lt;/p&gt;
+
+&lt;p&gt;Peki &lt;em&gt;Windows&lt;/em&gt; gibi grafik arayüzün ağırlıklı olduğu işletim sistemlerinde programları indirme nasıl olacak? Kurulu programları &lt;strong&gt;klavye&lt;/strong&gt; ile kullanmayı başarsak bile yeni programları nasıl kuracağız?&lt;/p&gt;
+
+&lt;p&gt;İşte burada devreye bugün yazı konumuz olan bir &lt;strong&gt;program yükleme - güncelleştirme - kaldırma yöneticisi&lt;/strong&gt; diğer bir ifadeyle &lt;strong&gt;paket yöneticisi&lt;/strong&gt; olan &lt;em&gt;Chocolatey&lt;/em&gt; giriyor.&lt;/p&gt;
+
+&lt;h3 id=&#34;windows-ta-program-kurulumu&#34;&gt;Windows&amp;rsquo;ta Program Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Özellikle &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt;&lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;cular olarak bizler bilgisayarı kullanırken pek &lt;strong&gt;klavye&lt;/strong&gt; kullanmayız. Tercihimiz genelde fare olur.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;ta hiç program kurdunuz mu? Tabiki kurdunuz. O halde başka bir soru? &lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;ta bu programları hangi yolla kurdunuz?&lt;/p&gt;
+
+&lt;p&gt;Büyük bir ihtimalle herhangi bir ortamdan (Cd, Harici hdd, Usb disk, yada internetten) indirdikten sonra &lt;code&gt;.exe&lt;/code&gt; uzantılı dosyaya çift tıklayarak çalıştırdınız ve bir kaç ekran adımında Next, Next(ileri, ileri) yaparak &lt;strong&gt;kurulum&lt;/strong&gt;u tamamladınız.&lt;/p&gt;
+
+&lt;p&gt;Evet, bu normal yol. Peki ya yeni bir yol olsa? Bir &lt;strong&gt;komut satırı&lt;/strong&gt; açsak ve bilgisayara basitçe &lt;code&gt;&amp;quot;bana şu programı indir&amp;quot;&lt;/code&gt; desek? Güzel olur, değil mi? İşte &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in yaptığı tam da bu.&lt;/p&gt;
+
+&lt;h3 id=&#34;paket-yöneticisi&#34;&gt;Paket Yöneticisi&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Paket Yöneticisi&lt;/strong&gt; kavramı &lt;em&gt;Linux&lt;/em&gt; kullanıcıları için yeni değil. &lt;em&gt;Linux&lt;/em&gt; &lt;strong&gt;komut satırı&lt;/strong&gt; ile iç içe geçmiş bir işletim sistemi olarak adlandırılabileceğinden kullanıcılar 3. parti programları &lt;strong&gt;komut satırı&lt;/strong&gt;ndan kurma, güncelleme, kaldırma işlemini uzun zamandır gerçekleştirebilmekteydiler.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Linux&lt;/em&gt; sistemlerde esasında çok sayıda olmakla birlikte &lt;code&gt;apt-get&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt;, &lt;code&gt;rpm&lt;/code&gt;, &lt;code&gt;pacman&lt;/code&gt; gibi &lt;strong&gt;paket yöneticileri&lt;/strong&gt; sık kullanılanlar arasında.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mac&lt;/em&gt; kullanıcıları ise &lt;em&gt;Linux&lt;/em&gt; kadar çok olmasa da &lt;code&gt;Homebrew&lt;/code&gt; gibi &lt;strong&gt;paket yönetim sistemleri&lt;/strong&gt; sayesinde &lt;strong&gt;terminalden&lt;/strong&gt; program yükleme, güncelleme gibi nimetlerden istifade edebiliyorlar.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Windows&lt;/em&gt; ortamında &lt;strong&gt;komut satırı&lt;/strong&gt; hep geride kalan (yada kalması istenen) ve pek destek verilmeyen bir kullanım şekli olduğundan bu alanda ciddi bir eksiklik vardı. &lt;em&gt;Chocolatey&lt;/em&gt; ile bu eksiklik nisbeten dolmuş oluyor.&lt;/p&gt;
+
+&lt;h2 id=&#34;chocolatey&#34;&gt;Chocolatey&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt; &lt;em&gt;Windows&lt;/em&gt; &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;komut satırı&lt;/strong&gt;&lt;/a&gt; ortamında yani kabukta çalışan bir &lt;strong&gt;paket yöneticisi&lt;/strong&gt;. İstediğiniz programları indirmenizi, kaldırmanızı, güncellemenizi, kurduğunuz programların loglarını tutmanızı, program konfigürasyonları yapmanızı v.s., v.s. sağlıyor.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt;, siz arka planda başka işlerle meşgulken fonksiyonlarını yerine getirebiliyor. Arzu ederseniz ona yapılacak işlerin listesini bir &lt;strong&gt;batch script&lt;/strong&gt; (yığın işi) olarak verin ve arkanıza yaslanın. Tüm işleri &lt;strong&gt;otomatik&lt;/strong&gt; olarak halledecek.&lt;/p&gt;
+
+&lt;p&gt;Eğer yükleyeceğiniz &lt;strong&gt;3. parti program&lt;/strong&gt;, çalışma için ek bir paket gerektiriyorsa (mesela bazı Windows uygulamalarının .Net framework paketi gerektirmesi gibi dependency&amp;rsquo;ler) &lt;em&gt;Chocolatey&lt;/em&gt; &lt;strong&gt;otomatik olarak&lt;/strong&gt; gerekli olan diğer programları indirip kuruyor.&lt;/p&gt;
+
+&lt;p&gt;Yeni bir bilgisayar(lar) kurdunuz ve istediğiniz uygulamaları &lt;em&gt;Chocolatey&lt;/em&gt; ’e tarif ederek tek bir scriptle tüm bilgisayarlara kurulumunu sağladınız, nasıl lezzetli değil mi?&lt;/p&gt;
+
+&lt;h3 id=&#34;chocolatey-kurulumu&#34;&gt;Chocolatey Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Peki &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;i bilgisayarımıza nasıl kuracağız? Bir önceki yazımda değindiğim &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Cmd komut satırı&lt;/strong&gt;&lt;/a&gt; programını &lt;strong&gt;yönetici olarak&lt;/strong&gt; çalıştırıp (üstteki foto &amp;#8593;
+) aşağıdaki komutu verin:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@powershell -NoProfile -ExecutionPolicy Bypass -Command &amp;quot;iex ((new-object net.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&amp;quot; &amp;amp;&amp;amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Yukarıdaki komutu &lt;strong&gt;yönetici&lt;/strong&gt; olarak &lt;strong&gt;Cmd&lt;/strong&gt; üzerinde çalıştıracaksınız. Powershell&amp;rsquo;de &lt;strong&gt;değil.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Not&lt;/em&gt;: Eğer hata alırsanız panik yapmayın, bu script &lt;strong&gt;Cmd&lt;/strong&gt; üzerinden bir &lt;strong&gt;Powershell&lt;/strong&gt; script&amp;rsquo;i çalıştırmaya çalışıyor. Hata muhtemelen &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;&amp;lsquo;in ortam değişkeninde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/#3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;(PATH)&lt;/a&gt; olmamasından kaynaklanmıştır.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Çözüm&lt;/strong&gt;: Problemi çözmek için aşağıdaki komutu yine &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;den verip &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;imizi &amp;ldquo;Path&amp;rdquo;&amp;lsquo;a ekleyelim. Komut satırında iken (Cmd)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set PATH=%PATH%;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;komutunu verin. Şimdi &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;yi kapatın. &lt;code&gt;(exit)&lt;/code&gt; Yeni bir &lt;strong&gt;Cmd&lt;/strong&gt; ekranı açıp üstteki kurulum scriptini yeniden çalıştırın.&lt;/p&gt;
+
+&lt;p&gt;Aşağıdaki görüntü geldiyse kurulum başarıyla tamamlanmıştır.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco-yuklendi.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey Yüklendikten Sonra Ekran Görüntüsü&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;chocolatey-de-3-parti-program-kurulumu&#34;&gt;Chocolatey&amp;rsquo;de 3. Parti Program Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Evet, &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;i bilgisayarımıza kurduk. Şimdi favori komut satırı uygulamamız olan &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Powershell&lt;/a&gt;&amp;lsquo;e geçelim.&lt;/p&gt;
+
+&lt;p&gt;Burada &lt;code&gt;chocolatey&lt;/code&gt; komutu vererek yüklü olan program versiyonunu görebilirsiniz.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco_install_confirmation.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey Versiyonunu Öğrenme ve Program Yükleme Komutu&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Şimdi &lt;em&gt;Chocolatey&lt;/em&gt; programımızı kullanarak yeni bir program yükleyelim. Bu hepimizin bildiği bir program olsun. Mesela &lt;em&gt;Vlc&lt;/em&gt; programını kurmayı deneyelim.&lt;/p&gt;
+
+&lt;p&gt;Vereceğimiz komut: &lt;code&gt;choco install vlc&lt;/code&gt;. Program bize uygulamayı kurmak isteyip istemediğimizi soracak, &amp;ldquo;yes&amp;rdquo; deyip onaylayın. (Bu arada eğer eksta teyit sorusundan kurtulmak isterseniz &lt;code&gt;choco feature enable -n=allowGlobalConfirmation&lt;/code&gt; komutunu verebilirsiniz.)&lt;/p&gt;
+
+&lt;h3 id=&#34;chocolatey-bazı-komutlar&#34;&gt;Chocolatey: Bazı Komutlar&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Vlc&lt;/em&gt; programının ismini biliyorsunuz, zaten kısa ve tek bir kelime. Peki ya diğer programları nasıl öğreneceğiz? Bunun için &lt;code&gt;choco search&lt;/code&gt; komutundan sonra arama yapacağımız kelimeyi yazacağız.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco-search.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey&#39;de Program İsmi Öğrenme&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Örneğin &lt;em&gt;Chrome&lt;/em&gt; tarayıcısını kurmak istiyoruz ve programının tam olarak ismini merak ediyoruz. &lt;code&gt;choco search chrome&lt;/code&gt; yazarak içinde &lt;code&gt;chrome&lt;/code&gt; geçen tüm programların listesini alalım. &lt;code&gt;GoogleChrome&lt;/code&gt; olarak programı görmüş olmalısınız. (Program ismi yanındaki rakamlar versiyonları belirtir)&lt;/p&gt;
+
+&lt;p&gt;Programları aramanın bir başka yolu da &lt;a href = &#34;https://chocolatey.org/&#34; target = &#34;_blank&#34;&gt; &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in websitesi&lt;/a&gt;nden arama yapmak. Website arama kutusuna istediğiniz program için anahtar kelimeyi yazın ve sonuçlara bakın.&lt;/p&gt;
+
+&lt;p&gt;Birden fazla programı aynı anda kurmak için&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;choco install birinciprgradı ikinciprgadı üçüncüprgadı
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;komutunu verebiliriz. İkinci bir yol olarak aşağıdaki gibi bir &lt;em&gt;xml&lt;/em&gt; dosyası oluşturup uzantısını &lt;code&gt;.config&lt;/code&gt; olarak kaydedip bu dosyayı &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;de &lt;code&gt;choco install programlar.config&lt;/code&gt; olarak kullanabiliriz.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;programlar&amp;gt;
+    &amp;lt;package id=&amp;quot;UTorrent&amp;quot; /&amp;gt;
+    &amp;lt;package id=&amp;quot;notepadplusplus&amp;quot; /&amp;gt;
+    &amp;lt;package id=&amp;quot;IrfanView&amp;quot; /&amp;gt;
+&amp;lt;/programlar&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;O ana kadar &lt;em&gt;Chocolatey&lt;/em&gt; aracılığı ile yüklediğiniz tüm programların listesini almak için &lt;code&gt;choco list -lo&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Yüklediğiniz tüm programları aynı anda güncellemek için &lt;code&gt;cup all&lt;/code&gt; komutunu verebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Herhangi bir programı tek başına güncelleme için &lt;code&gt;choco update programadı&lt;/code&gt;, programı kaldırmak için &lt;code&gt;choco uninstall programadı&lt;/code&gt; komutları kullanılır.&lt;/p&gt;
+
+&lt;p&gt;Yardıma ulaşmak için kullanacağınız komut: &lt;code&gt;choco /?&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;son-notlar&#34;&gt;Son Notlar&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt; standart olarak sadece güvendiği ve onay verdiği (&lt;strong&gt;trusted packages&lt;/strong&gt;) uygulamaları bilgisayara yüklüyor. Yeni ve henüz onaylanmamış paketleri yüklemeniz sisteminiz için virus v.s. gibi muhtemel bazı &lt;strong&gt;riskler&lt;/strong&gt; taşıyabilir. Bu konuda &lt;strong&gt;temkinli&lt;/strong&gt; olmak gerekiyor.&lt;/p&gt;
+
+&lt;p&gt;Son bir not olarak bu yazının ruhuna biraz ters olsa da &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in bir grafik arayüzü (&lt;strong&gt;GUI&lt;/strong&gt; - graphical user interface) olduğunu belirtelim. Kullanıp kullanmamak size kalmış. (En üstteki banner fotosu)&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Biraz uzun olsada &lt;em&gt;Chocolatey&lt;/em&gt; hakkında doyurucu bir yazı olduğu kanaatindeyim. Lütfen gelişterebileceğim noktaları yorum kısmında dile getirmekten çekinmeyin.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Windows’ta Komut Satırı: Powershell vs Cmd</title>
@@ -179,7 +318,7 @@ PowerShell: Stop-process
 
 &lt;h2 id=&#34;powershell-komut-satırı-kolaylıkları&#34;&gt;Powershell Komut Satırı Kolaylıkları&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;64&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son 32&amp;rsquo;sini sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;4096&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son &lt;strong&gt;Powershell&lt;/strong&gt; oturumunda kullandıklarınızı sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
 
 &lt;p&gt;Powershell ortamı varsayılan olarak Cmd&amp;rsquo;ye göre daha renkli ve canlı. Cmd&amp;rsquo;nin ayarları ile oynayarak renklendirmek mümkün olsa da Powershell&amp;rsquo;in sunduğu seçenekler kadar çekici değil.&lt;/p&gt;
 
@@ -193,7 +332,7 @@ Ayrıca uzun komutlarınız için &lt;code&gt;alias&lt;/code&gt; kullanabilirsin
 
 &lt;h2 id=&#34;windows-ta-powershell-sürümleri&#34;&gt;Windows&amp;rsquo;ta Powershell Sürümleri&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell &lt;strong&gt;ISE&lt;/strong&gt; (bütünleşik scritping ortamı).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell &lt;strong&gt;ISE&lt;/strong&gt; (bütünleşik scripting ortamı).&lt;/p&gt;
 
 &lt;figure&gt;
  &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-ise.png&#34;&gt;
