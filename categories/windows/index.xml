@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Pythonistan, Python Cumhuriyeti</title>
+    <link>http://pythonistan.net/categories/windows/</link>
+    <description>Recent content in Windows on Pythonistan, Python Cumhuriyeti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Sun, 02 Oct 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="http://pythonistan.net/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Windows&#39;ta &#39;Sihirli Kısayollar&#39; ile Programları Hızlıca Başlatmanın Yolu: SlickRun</title>
+      <link>http://pythonistan.net/blog/SlickRun-Windowsta-klavyeden-hizli-program-baslatma/</link>
+      <pubDate>Sun, 02 Oct 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/SlickRun-Windowsta-klavyeden-hizli-program-baslatma/</guid>
+      <description>
+
+&lt;p&gt;Geçen yazımda &lt;a href=&#34;http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/&#34;&gt;&lt;strong&gt;Komut satırı&lt;/strong&gt;&lt;/a&gt;nın normalde yapılması çok fazla sayıda &amp;ldquo;tık&amp;rdquo; gerektiren işleri &lt;strong&gt;otomatize&lt;/strong&gt; ettiğinden bahsetmiştim.&lt;/p&gt;
+
+&lt;p&gt;Ayrıca *klavye kullanımı*nın bizi daha iyi bir bilgisayar kullanıcısı yapacağından söz etmiştim.&lt;/p&gt;
+
+&lt;p&gt;Aynı mantıkdan hareketle *klavye kullanımı*nı artırıp &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;u çok daha etkin kullanmanın yolunu açacak bir programı bugün size tanıtmak istiyorum, programın ismi &lt;strong&gt;SlickRun&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;slickrun-hareketli-bir-komut-satırı-servisi&#34;&gt;SlickRun: Hareketli Bir Komut Satırı Servisi&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt;, programı geliştirenin tarifine göre hareketli bir komut satırı servisi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt; aynı zamanda herhangi bir programa yada web sitesine &lt;strong&gt;sihirli kelimeler&lt;/strong&gt;i vasıtasıyla anında erişim sağlayan bir &lt;em&gt;hızlı program başlatma yardımcısı&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Verimliliğinizi en üst düzeye çıkaracak ve hızınıza hız katacak bir araç &lt;strong&gt;SlickRun&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;slickrun-yakından-bakış&#34;&gt;SlickRun: Yakından Bakış&lt;/h3&gt;
+
+&lt;p&gt;Tarifleri geçip &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;a yakından bakalım.&lt;/p&gt;
+
+&lt;p&gt;Öncelikle bu programı mutlaka bilgisayarınıza kurmanızı tavsiye ederim. &lt;strong&gt;Windows&lt;/strong&gt; bilgisayarlar için olmazsa olmaz tarzı bir program.&lt;/p&gt;
+
+&lt;p&gt;Üstelik &lt;strong&gt;SlickRun&lt;/strong&gt; bilgisayarınızda çok fazla yer kaplayan / başlangıcı aşırı yavaşlatan programlardan değil. Oldukça kompakt sayılabilir.&lt;/p&gt;
+
+&lt;p&gt;Programın 32 / 64 bit için versiyonlarına yukarıdaki linkten erişip indirebilirsiniz. Bilgisayarımıza kurduktan sonra programın ayarlarını optimize edeceğiz.&lt;/p&gt;
+
+&lt;h2 id=&#34;slickrun-ın-orjinal-ayarlarını-değiştirilelim&#34;&gt;SlickRun&amp;rsquo;ın Orjinal Ayarlarını Değiştirilelim&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ın varsayılan ayarları ve program ile birlikte gelen &amp;ldquo;&lt;strong&gt;sihirli kelimeler&lt;/strong&gt;i&amp;rdquo; (Magicwords) beklentilerimizi karşılamadan uzak. Kısayolların çoğu tarihten kalma gibi.&lt;/p&gt;
+
+&lt;p&gt;Biz Peter Seale&amp;rsquo;nin &lt;a href=&#34;http://www.pseale.com/slickrun-protips&#34; target=&#34;_blank&#34;&gt;blogunda verdiği ayarları&lt;/a&gt; uygulayarak &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ı kullanacağız.&lt;/p&gt;
+
+&lt;p&gt;Bu arada programı ilk seferinde gerekirse &amp;ldquo;Başlat&amp;rdquo; menüsünden açarak çalıştırabilirsiniz. Çalıştırdıktan sonra &lt;code&gt;setup&lt;/code&gt; yazıp Enter&amp;rsquo;a basarak ayarlara ulaşabiliriyoruz.&lt;/p&gt;
+
+&lt;h3 id=&#34;programı-klavyeden-çalıştırma-ayarı&#34;&gt;Programı Klavyeden Çalıştırma Ayarı&lt;/h3&gt;
+
+&lt;p&gt;Programı kurduktan sonra ilk iş olarak programın kendisine bir klavye kısayolu atayalım. Normalde varsayılan klavye kısayolu değeri &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + Q.&lt;/p&gt;
+
+&lt;p&gt;Bu tuş kombinasyonu çalışmıyorsa (nedense bende çalışmadı) &lt;strong&gt;&amp;ldquo;Alt + S&amp;rdquo;&lt;/strong&gt; tuş kombinasyonunu atayın ve programı kapatıp bu kısayolla açın. Şu anda &lt;strong&gt;Alt + S&lt;/strong&gt;&amp;lsquo;e  bastığınızda programınız çalışıyor olmalı.&lt;/p&gt;
+
+&lt;p&gt;Güzel. Bundan sonra &lt;strong&gt;Alt+S&lt;/strong&gt;&amp;lsquo;e basarak (yada orjinalini değiştirmediyseniz &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + Q) programı çalıştıracağız. Böyle yapalım zira *klavye kullanımı*nı artırmaz fare ile programları çalıştırmaya devam edersek &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;dan istediğimiz verimi alamayız.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt; çok sık kullandığınız programlar ve website adresleri için gerekli bir araç. Her tür programı bu programa &lt;strong&gt;sihirli kısayol&lt;/strong&gt; olarak atamak verimli olmayacaktır, zira bu kısayolların hepsini daha sonra akılda tutamazsınız.&lt;/p&gt;
+
+&lt;p&gt;En sık kullandığınız ve sizi en çok uğraştıran adresleri / programları kısayol olarak atamalısınız.&lt;/p&gt;
+
+&lt;h2 id=&#34;slickrun-la-birlikte-gelen-sihirli-kısayollar&#34;&gt;SlickRun&amp;rsquo;la Birlikte Gelen Sihirli Kısayollar&lt;/h2&gt;
+
+&lt;p&gt;Evet, &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ı çalıştırdınız (tabiki klavye kısayolunuz ile!) ve gelen kutuda &lt;code&gt;setup&lt;/code&gt; yazıp Enter&amp;rsquo;a bastınız. &amp;ldquo;Options&amp;rdquo; (Seçenekler) tab sayfasını açtınız.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_ayarlar.png&#34;&gt;
+ &lt;figcaption&gt;SlickRun Temel Ayar Konfigürasyonu&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Soldaki başlatma kısayolumuzu zaten belirlemiştik. Ortadaki işaret kutularından 1.(&lt;code&gt;Başlangıçta Çalıştır - Start Startup&lt;/code&gt;) ve 3. (&lt;code&gt;Otomatik Gizle - AutoHide&lt;/code&gt;) işaretli bırakıp diğerlerinin işaretlerini kaldıralım.&lt;/p&gt;
+
+&lt;p&gt;En sağda yer alan seçenekler &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ın otomatik tamamla özelliğinin hangi alanlarda aktif olacağını gösteriyor. Bu seçenek gerçekten faydalı, bu sayede 1 harften fazla olan kısayollarınız tek harfe basarak ulaşılabilir hale geliyor. Aynen tarayıcılarda adres yazmaya başlayınca tam adresin gelmesi gibi.&lt;/p&gt;
+
+&lt;p&gt;Daha Sonra &amp;ldquo;Library&amp;rdquo; tab sayfasından &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ın kendisiyle gelen &lt;strong&gt;sihirli kısayolları&lt;/strong&gt;ndan &lt;em&gt;google hariç hepsini&lt;/em&gt; siliyoruz. Silmek için kısayolu seçip Alt + D yaparak silme teyidine Evet (Yes) dememiz gerekiyor.&lt;/p&gt;
+
+&lt;p&gt;Son ayarımız büyüklükle alakalı. &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ı yapabildiğiniz kadar büyütün, bunun için &amp;ldquo;Appearance&amp;rdquo; kısmında &amp;ldquo;Font&amp;rdquo;&amp;lsquo;a tıklayarak ekran çözünürlüğünüze uygun en büyük değeri girin. Akabinde &lt;strong&gt;SlickRun&lt;/strong&gt; program kutusunun sağ yanındaki oku çekip büyüterek tüm yazıların görünür hale geldiğine emin olun. (Bkz. en üstteki banner imaj)&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_font_buyut.png&#34;&gt;
+ &lt;figcaption&gt;SlickRun Font Ayarları&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;slickrun-kullanımı-o-halde-gelsin-sihirli-kısayollar&#34;&gt;SlickRun Kullanımı: O Halde Gelsin Sihirli Kısayollar&lt;/h2&gt;
+
+&lt;p&gt;Şimdi artık programın ana fonksiyonlarını ve kullanımını görebiliriz.&lt;/p&gt;
+
+&lt;h3 id=&#34;google-araması&#34;&gt;Google Araması&lt;/h3&gt;
+
+&lt;p&gt;Yukarıda &lt;a href=&#34;http://www.google.com&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Google&lt;/strong&gt;&lt;/a&gt;  dedik, &lt;em&gt;google araması&lt;/em&gt; program içinde zaten yapılandırılmış durumda. Ancak &lt;strong&gt;sihirli kısayol&lt;/strong&gt; olarak uzun bir kelime olan &lt;code&gt;google&lt;/code&gt; kullanılmış. Bunu değiştirip sadece &lt;code&gt;g&lt;/code&gt; yapalım. Şimdi programı tekrar açıp &lt;code&gt;g python kaynakları&lt;/code&gt; yazıp Enter&amp;rsquo;a bastığımızda tarayıcımız (varsayılan olan) açılacak ve aramayı gerçekleştirecektir.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/google_arama_ayar.png&#34;&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/google_aramasi_slickrun.png&#34;&gt;
+ &lt;figcaption&gt;Google Sihirli Kısayol Kelimesini Ayarlardan Kısalttık / SlickRun&#39;dan Hızlı Google Araması Yapmak&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;windows-ta-yerleşik-ve-çok-bilinen-programlar&#34;&gt;Windows&amp;rsquo;ta Yerleşik ve Çok Bilinen Programlar&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ın güzel özelliklerinden biri de &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;un iyi bilinen, alameti farikası olmuş programlarını &lt;strong&gt;sihirli kısayol&lt;/strong&gt; atamaya gerek duymadan çalıştırması.&lt;/p&gt;
+
+&lt;p&gt;Tabi bunun için programın &lt;code&gt;.exe&lt;/code&gt; uzantılı dosyasının ismini bilmeniz gerekiyor. Örneğin &amp;ldquo;Notepad&amp;rdquo; programı. Yada &amp;ldquo;Wordpad&amp;rdquo;. &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;da bu isimleri direk yazıp Enter&amp;rsquo;a basarak o programı çalıştırabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Eğer program ismi &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;un meşhur boyama programı &lt;code&gt;mspaint&lt;/code&gt;&amp;lsquo;te olduğu gibi hatırlamakta zorluk çekebileceğiniz türden ise programa sihirli kısayol oluşturup kolay bir isim verebilirsiniz. Misal &amp;ldquo;boyama&amp;rdquo; gibi.&lt;/p&gt;
+
+&lt;p&gt;Bilemeyeceğiniz türden kısayolları ise Google&amp;rsquo;dan araştırma yapıp bulduktan sonra kullanabilirsiniz. Örneğin Windows&amp;rsquo;un yerleşik &amp;ldquo;Program Ekle/Kaldır&amp;rdquo; programının dosya ismi &lt;code&gt;appwiz.cpl&lt;/code&gt;. EkleKal ismiyle &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;da kısayol oluşturabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;u hızlı kapatma komutu &lt;code&gt;shutdown -p&lt;/code&gt; &amp;lsquo;dir. İster direk olarak isterseniz uygun bir kısayol ismi vererek (&amp;ldquo;kapa&amp;rdquo; v.b. gibi) &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;dan hızlı kapama gerçekleştirebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Son olarak komut satırı programlarımızı analım. &lt;strong&gt;Cmd&lt;/strong&gt; ve &lt;strong&gt;Powershell&lt;/strong&gt; gibi yerleşik Windows komut satırı kabuklarına isimlerini direk yazarak ulaşabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;slickrun-da-argüman-parametre-kullanımı&#34;&gt;SlickRun&amp;rsquo;da Argüman (parametre) Kullanımı&lt;/h2&gt;
+
+&lt;p&gt;Yukarıdaki gibi program açmayı  &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + R tuşu üzerinden &amp;ldquo;Çalıştır&amp;rdquo; kutusunu kullanarak yapabilirsiniz. Yada doğrudan &amp;ldquo;Başlat&amp;rdquo; menüsünü kullanabilirsiniz. Bu yüzden şu ana kadarki anlattığım şeyler pek etkileyici gelmemiş olabilir.&lt;/p&gt;
+
+&lt;p&gt;Haklısınız, ancak &lt;a href=&#34;http://pythonistan.net/blog/SlickRun-Windowsta-klavyeden-hizli-program-baslatma&#34;&gt;&lt;strong&gt;SlickRun&lt;/strong&gt;&lt;/a&gt;&amp;lsquo;ın esas farkı, açtığı programı belirli bir &lt;em&gt;parametre&lt;/em&gt; (argüman) ile çalıştırabilmesinde yada belli klasörün içinde ve/veya yolunda açmasında yatıyor.&lt;/p&gt;
+
+&lt;h3 id=&#34;tarayıcıyı-adres-parametresi-vererek-belirli-bir-sayfadan-başlatma&#34;&gt;Tarayıcıyı Adres Parametresi Vererek Belirli Bir Sayfadan Başlatma&lt;/h3&gt;
+
+&lt;p&gt;Bir örnek vereyim. Geçenki yazılarımdan birinden hatırlayabileceğiniz üzere &lt;a href=&#34;http://pythonistan.net/categories/hugo/&#34;&gt;&lt;strong&gt;Hugo&lt;/strong&gt; ile bir site&lt;/a&gt; yapmıştık ve bu siteyi lokal bilgisayarda görüntülemek için tarayıcı penceresi açıp &lt;code&gt;http://localhost:4000/&lt;/code&gt; adresinden Hugo Server&amp;rsquo;a ulaşıyorduk.&lt;/p&gt;
+
+&lt;p&gt;Bu işlemi şimdi kolay hale getirelim. Öyleki sitemizin ismini (mesela payton) yazdığımızda anında bize yukarıdaki adresi açsın.&lt;/p&gt;
+
+&lt;p&gt;Yeni bir &lt;strong&gt;sihirli kısayol&lt;/strong&gt; oluşturup (New Magicword) ismimizi veriyoruz, daha sonra tarayıcımızın yolunu gösterip &lt;em&gt;parametre&lt;/em&gt; olarak websitenin adresini (&lt;code&gt;http://localhost:4000/&lt;/code&gt;) veriyoruz.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img style=&#34;float: left;&#34; src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_dosya_yolu_gosterme.gif&#34;&gt;
+ &lt;figcaption&gt; &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;pre&gt;&lt;code&gt;*Not*: Yanda Chrome.exe&#39;nin tam yolunu kutuya girmek için Slickrun açıkken Chrome&#39;u açın. SlickRun&#39;da gördüğünüz renk seçicisine benzer simgeye tıklayıp seçin. Daha sonra Chrome penceresine geçip renk seçici araç ile üzerine tıklayın. Chrome&#39;un dosya yolu kutuya otomatik eklenecektir.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aşağıda yaptığımız ayarları ve sonucu detaylı olarak görebilirsiniz.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_parametre_kullanma.png&#34;&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/localhost_arguman_slickrun.png&#34;&gt;
+ &lt;figcaption&gt;Tarayıcı Parametresini SlickRun&#39;da Yapılandırma/Sihirli Kelime ile Tarayıcımızı Özel Sayfadan Başlatma&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;komut-satırını-klasör-parametresi-vererek-belirli-bir-dizinden-başlatma&#34;&gt;Komut Satırını Klasör Parametresi Vererek Belirli Bir Dizinden Başlatma&lt;/h3&gt;
+
+&lt;p&gt;Evet, şimdi de &lt;em&gt;argüman&lt;/em&gt; olarak klasör lokasyonu belirleyelim. Diyelim ki D: sabit diskinizin altında &amp;ldquo;websitem&amp;rdquo; dizininin içinde tuttuğunuz bir website var. Buradaki dosyalara hem &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd&#34;&gt;&lt;strong&gt;komut satırı&lt;/strong&gt;&lt;/a&gt;ndan hem Windows Gezgininden sıklıkla erişip üzerinde işlemler yapıyorsunuz.&lt;/p&gt;
+
+&lt;p&gt;Bu durumda klasör açma programı (&lt;code&gt;explorer.exe&lt;/code&gt;) ve komut satırı (&lt;code&gt;cmd&lt;/code&gt;, &lt;code&gt;powershell&lt;/code&gt;) programlarını istediğiniz klasör yolu ile birlikte kullanacaksınız. Aşağıdaki gibi. Aynı örneği gezgin (&lt;code&gt;explorer.exe&lt;/code&gt;)  için kendiniz yapılandırmayı deneyin.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/klasore_komut_satirindan_hizli_ulasim.png&#34;&gt;
+ &lt;figcaption&gt;SlickRun ile Belirli Bir Klasör Lokasyonundan Komut Satırını Açma&lt;/figcaption&gt;
+&lt;/figure&gt; 
+
+&lt;h3 id=&#34;bonus-tek-kısayolla-uac-ye-takılmadan-powershell-açma&#34;&gt;Bonus: Tek Kısayolla UAC&amp;rsquo;ye Takılmadan Powershell Açma&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/#öyleyse-powershell-i-açalım&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;&amp;lsquo;i nasıl açacağımızı ve kullanacağımızı daha önceki yazımdan hatırlıyor olmalısınız.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img style=&#34;float: right;&#34; src=&#34;http://pythonistan.net/img/blog/slickrun/kullanici_hesabi_denetimi.jpg&#34;&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Powershell&amp;rsquo;i yönetici modunda açmak bazen uğraştırıcı olabiliyor, özellikle bazı sistemlerde yönetici olarak çalıştır kutusunu işaretlense bile ekstra güvenlik sorusuna (Uac) Evet dememiz gerekiyor. (aynı şey cmd için de geçerli)&lt;/p&gt;
+
+&lt;p&gt;Tüm bu gereksiz güvenlik soruşturmalarını atlatıp &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i yönetici olarak kısa bir komutla açmaya ne dersiniz?&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Görev Zamanlayıcı&amp;rsquo;yı Açın.&lt;/li&gt;
+&lt;li&gt;Yeni Görev Oluştur&amp;rsquo;u tıklayın.&lt;/li&gt;
+&lt;li&gt;Göreve kısa bir isim verin ve en alttaki &amp;ldquo;En yüksek ayrıcalıklarla çalıştır&amp;rdquo;&amp;lsquo;ı tıklatın.&lt;/li&gt;
+&lt;li&gt;Eylemler kısmında Program Başlat&amp;rsquo;ı seçip yol olarak Powershell&amp;rsquo;in yolunu gösterin. &amp;ldquo;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Şimdi Görev Zamanlayıcısı&amp;rsquo;nda oluşturduğunuz kısayol ismini &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;da kullanacaksınız. Benim örneğimde kısayolum &lt;code&gt;adm&lt;/code&gt; idi. Bu ismi &lt;code&gt;schtasks.exe&lt;/code&gt;&amp;lsquo;nin parametresinde kullanıyorum.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/powershell_admin_olarak_acma_slickrun.png&#34;&gt;
+ &lt;figcaption&gt;1. Görev Zamanlayıcısında Powershell&#39;i Yönetici Olarak Yapılandırma 2. SlickRun&#39;da Görev Zamanlayıcısı Görevine Kısayol Atama&lt;/figcaption&gt;
+&lt;/figure&gt; 
+
+&lt;p&gt;Şimdi yaptığımız işlemin sonucunu görelim. Başarılı!!!
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/powershell_slickrun_calistirma.png&#34;&gt;
+ &lt;figcaption&gt;Powershell&amp;rsquo;i 1 Saniyede Yönetici Olarak Çalıştırdık&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&#34;slickrun-ı-seveceksiniz&#34;&gt;SlickRun&amp;rsquo;ı Seveceksiniz&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Klavye kullanımı&lt;/em&gt; arttıkça &lt;strong&gt;SlickRun&lt;/strong&gt; türü programlar ilaç gibi geliyor. Özellikle alışma safhasını atlattıktan sonra programın verimliliğinizi kat kat arttırdığını fark edeceksiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt; ile ultra-verimli ve faydalı çalışmalar yapmanız dileğiyle&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Chocolatey: Windows Komut Satırında Bir Program Yöneticisi</title>
+      <link>http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/</link>
+      <pubDate>Sun, 25 Sep 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/</guid>
+      <description>
+
+&lt;h2 id=&#34;windows-ta-farklı-bir-komut-satırı-tecrübesi&#34;&gt;Windows&amp;rsquo;ta Farklı Bir Komut Satırı Tecrübesi&lt;/h2&gt;
+
+&lt;p&gt;Son &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt; yazımda&lt;/a&gt; &lt;strong&gt;komut satırı&lt;/strong&gt;ndan, komutlarla bilgisayara hakim olmaktan ve komut satırının pratikliği artırdığından bahsetmiştim. &lt;strong&gt;Komut satırı&lt;/strong&gt; normalde yapılması çok fazla sayıda &amp;ldquo;tık&amp;rdquo; gerektirecek işleri &lt;strong&gt;otomatik&lt;/strong&gt; hale getirmek için harika bir araç.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Komut satırı&lt;/strong&gt; deyince hemen akla gelen şeylerden biri de yoğun &lt;strong&gt;klavye kullanımı&lt;/strong&gt;. Yani fare kullanımını minimize ederek hemen her işimizi &lt;strong&gt;klavye&lt;/strong&gt; üzerinden yapmak.&lt;/p&gt;
+
+&lt;p&gt;Peki &lt;em&gt;Windows&lt;/em&gt; gibi grafik arayüzün ağırlıklı olduğu işletim sistemlerinde programları indirme nasıl olacak? Kurulu programları &lt;strong&gt;klavye&lt;/strong&gt; ile kullanmayı başarsak bile yeni programları nasıl kuracağız?&lt;/p&gt;
+
+&lt;p&gt;İşte burada devreye bugün yazı konumuz olan bir &lt;strong&gt;program yükleme - güncelleştirme - kaldırma yöneticisi&lt;/strong&gt; diğer bir ifadeyle &lt;strong&gt;paket yöneticisi&lt;/strong&gt; olan &lt;em&gt;Chocolatey&lt;/em&gt; giriyor.&lt;/p&gt;
+
+&lt;h3 id=&#34;windows-ta-program-kurulumu&#34;&gt;Windows&amp;rsquo;ta Program Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Özellikle &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt;&lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;cular olarak bizler bilgisayarı kullanırken pek &lt;strong&gt;klavye&lt;/strong&gt; kullanmayız. Tercihimiz genelde fare olur.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;ta hiç program kurdunuz mu? Tabiki kurdunuz. O halde başka bir soru? &lt;em&gt;Windows&lt;/em&gt;&amp;lsquo;ta bu programları hangi yolla kurdunuz?&lt;/p&gt;
+
+&lt;p&gt;Büyük bir ihtimalle herhangi bir ortamdan (Cd, Harici hdd, Usb disk, yada internetten) indirdikten sonra &lt;code&gt;.exe&lt;/code&gt; uzantılı dosyaya çift tıklayarak çalıştırdınız ve bir kaç ekran adımında Next, Next(ileri, ileri) yaparak &lt;strong&gt;kurulum&lt;/strong&gt;u tamamladınız.&lt;/p&gt;
+
+&lt;p&gt;Evet, bu normal yol. Peki ya yeni bir yol olsa? Bir &lt;strong&gt;komut satırı&lt;/strong&gt; açsak ve bilgisayara basitçe &lt;code&gt;&amp;quot;bana şu programı indir&amp;quot;&lt;/code&gt; desek? Güzel olur, değil mi? İşte &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in yaptığı tam da bu.&lt;/p&gt;
+
+&lt;h3 id=&#34;paket-yöneticisi&#34;&gt;Paket Yöneticisi&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Paket Yöneticisi&lt;/strong&gt; kavramı &lt;em&gt;Linux&lt;/em&gt; kullanıcıları için yeni değil. &lt;em&gt;Linux&lt;/em&gt; &lt;strong&gt;komut satırı&lt;/strong&gt; ile iç içe geçmiş bir işletim sistemi olarak adlandırılabileceğinden kullanıcılar 3. parti programları &lt;strong&gt;komut satırı&lt;/strong&gt;ndan kurma, güncelleme, kaldırma işlemini uzun zamandır gerçekleştirebilmekteydiler.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Linux&lt;/em&gt; sistemlerde esasında çok sayıda olmakla birlikte &lt;code&gt;apt-get&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt;, &lt;code&gt;rpm&lt;/code&gt;, &lt;code&gt;pacman&lt;/code&gt; gibi &lt;strong&gt;paket yöneticileri&lt;/strong&gt; sık kullanılanlar arasında.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mac&lt;/em&gt; kullanıcıları ise &lt;em&gt;Linux&lt;/em&gt; kadar çok olmasa da &lt;code&gt;Homebrew&lt;/code&gt; gibi &lt;strong&gt;paket yönetim sistemleri&lt;/strong&gt; sayesinde &lt;strong&gt;terminalden&lt;/strong&gt; program yükleme, güncelleme gibi nimetlerden istifade edebiliyorlar.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Windows&lt;/em&gt; ortamında &lt;strong&gt;komut satırı&lt;/strong&gt; hep geride kalan (yada kalması istenen) ve pek destek verilmeyen bir kullanım şekli olduğundan bu alanda ciddi bir eksiklik vardı. &lt;em&gt;Chocolatey&lt;/em&gt; ile bu eksiklik nisbeten dolmuş oluyor.&lt;/p&gt;
+
+&lt;h2 id=&#34;chocolatey&#34;&gt;Chocolatey&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt; &lt;em&gt;Windows&lt;/em&gt; &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;komut satırı&lt;/strong&gt;&lt;/a&gt; ortamında yani kabukta çalışan bir &lt;strong&gt;paket yöneticisi&lt;/strong&gt;. İstediğiniz programları indirmenizi, kaldırmanızı, güncellemenizi, kurduğunuz programların loglarını tutmanızı, program konfigürasyonları yapmanızı v.s., v.s. sağlıyor.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt;, siz arka planda başka işlerle meşgulken fonksiyonlarını yerine getirebiliyor. Arzu ederseniz ona yapılacak işlerin listesini bir &lt;strong&gt;batch script&lt;/strong&gt; (yığın işi) olarak verin ve arkanıza yaslanın. Tüm işleri &lt;strong&gt;otomatik&lt;/strong&gt; olarak halledecek.&lt;/p&gt;
+
+&lt;p&gt;Eğer yükleyeceğiniz &lt;strong&gt;3. parti program&lt;/strong&gt;, çalışma için ek bir paket gerektiriyorsa (mesela bazı Windows uygulamalarının .Net framework paketi gerektirmesi gibi dependency&amp;rsquo;ler) &lt;em&gt;Chocolatey&lt;/em&gt; &lt;strong&gt;otomatik olarak&lt;/strong&gt; gerekli olan diğer programları indirip kuruyor.&lt;/p&gt;
+
+&lt;p&gt;Yeni bir bilgisayar(lar) kurdunuz ve istediğiniz uygulamaları &lt;em&gt;Chocolatey&lt;/em&gt; ’e tarif ederek tek bir scriptle tüm bilgisayarlara kurulumunu sağladınız, nasıl lezzetli değil mi?&lt;/p&gt;
+
+&lt;h3 id=&#34;chocolatey-kurulumu&#34;&gt;Chocolatey Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Peki &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;i bilgisayarımıza nasıl kuracağız? Bir önceki yazımda değindiğim &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Cmd komut satırı&lt;/strong&gt;&lt;/a&gt; programını &lt;strong&gt;yönetici olarak&lt;/strong&gt; çalıştırıp (üstteki foto &amp;#8593;
+) aşağıdaki komutu verin:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@powershell -NoProfile -ExecutionPolicy Bypass -Command &amp;quot;iex ((new-object net.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&amp;quot; &amp;amp;&amp;amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Önemli:&lt;/strong&gt; Yukarıdaki komutu &lt;strong&gt;yönetici&lt;/strong&gt; olarak &lt;strong&gt;Cmd&lt;/strong&gt; üzerinde çalıştıracaksınız. Powershell&amp;rsquo;de &lt;strong&gt;değil.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Not&lt;/em&gt;: Eğer hata alırsanız panik yapmayın, bu script &lt;strong&gt;Cmd&lt;/strong&gt; üzerinden bir &lt;strong&gt;Powershell&lt;/strong&gt; script&amp;rsquo;i çalıştırmaya çalışıyor. Hata muhtemelen &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;&amp;lsquo;in ortam değişkeninde &lt;a href=&#34;http://pythonistan.net/blog/Hugo-ile-statik-bir-website-yapma-klavuzu-bolum-1/#3-hugo-yu-ortam-değişkenine-path-ekleme&#34;&gt;(PATH)&lt;/a&gt; olmamasından kaynaklanmıştır.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Çözüm&lt;/strong&gt;: Problemi çözmek için aşağıdaki komutu yine &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;den verip &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;imizi &amp;ldquo;Path&amp;rdquo;&amp;lsquo;a ekleyelim. Komut satırında iken (Cmd)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set PATH=%PATH%;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;komutunu verin. Şimdi &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;yi kapatın. &lt;code&gt;(exit)&lt;/code&gt; Yeni bir &lt;strong&gt;Cmd&lt;/strong&gt; ekranı açıp üstteki kurulum scriptini yeniden çalıştırın.&lt;/p&gt;
+
+&lt;p&gt;Aşağıdaki görüntü geldiyse kurulum başarıyla tamamlanmıştır.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco-yuklendi.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey Yüklendikten Sonra Ekran Görüntüsü&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;chocolatey-de-3-parti-program-kurulumu&#34;&gt;Chocolatey&amp;rsquo;de 3. Parti Program Kurulumu&lt;/h3&gt;
+
+&lt;p&gt;Evet, &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;i bilgisayarımıza kurduk. Şimdi favori komut satırı uygulamamız olan &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;Powershell&lt;/a&gt;&amp;lsquo;e geçelim.&lt;/p&gt;
+
+&lt;p&gt;Burada &lt;code&gt;chocolatey&lt;/code&gt; komutu vererek yüklü olan program versiyonunu görebilirsiniz.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco_install_confirmation.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey Versiyonunu Öğrenme ve Program Yükleme Komutu&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Şimdi &lt;em&gt;Chocolatey&lt;/em&gt; programımızı kullanarak yeni bir program yükleyelim. Bu hepimizin bildiği bir program olsun. Mesela &lt;em&gt;Vlc&lt;/em&gt; programını kurmayı deneyelim.&lt;/p&gt;
+
+&lt;p&gt;Vereceğimiz komut: &lt;code&gt;choco install vlc&lt;/code&gt;. Program bize uygulamayı kurmak isteyip istemediğimizi soracak, &amp;ldquo;yes&amp;rdquo; deyip onaylayın. (Bu arada eğer eksta teyit sorusundan kurtulmak isterseniz &lt;code&gt;choco feature enable -n=allowGlobalConfirmation&lt;/code&gt; komutunu verebilirsiniz.)&lt;/p&gt;
+
+&lt;h3 id=&#34;chocolatey-bazı-komutlar&#34;&gt;Chocolatey: Bazı Komutlar&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Vlc&lt;/em&gt; programının ismini biliyorsunuz, zaten kısa ve tek bir kelime. Peki ya diğer programları nasıl öğreneceğiz? Bunun için &lt;code&gt;choco search&lt;/code&gt; komutundan sonra arama yapacağımız kelimeyi yazacağız.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/chocolatey/choco-search.png&#34;&gt;
+ &lt;figcaption&gt;Chocolatey&#39;de Program İsmi Öğrenme&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Örneğin &lt;em&gt;Chrome&lt;/em&gt; tarayıcısını kurmak istiyoruz ve programının tam olarak ismini merak ediyoruz. &lt;code&gt;choco search chrome&lt;/code&gt; yazarak içinde &lt;code&gt;chrome&lt;/code&gt; geçen tüm programların listesini alalım. &lt;code&gt;GoogleChrome&lt;/code&gt; olarak programı görmüş olmalısınız. (Program ismi yanındaki rakamlar versiyonları belirtir)&lt;/p&gt;
+
+&lt;p&gt;Programları aramanın bir başka yolu da &lt;a href = &#34;https://chocolatey.org/&#34; target = &#34;_blank&#34;&gt; &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in websitesi&lt;/a&gt;nden arama yapmak. Website arama kutusuna istediğiniz program için anahtar kelimeyi yazın ve sonuçlara bakın.&lt;/p&gt;
+
+&lt;p&gt;Birden fazla programı aynı anda kurmak için&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;choco install birinciprgradı ikinciprgadı üçüncüprgadı
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;komutunu verebiliriz. İkinci bir yol olarak aşağıdaki gibi bir &lt;em&gt;xml&lt;/em&gt; dosyası oluşturup uzantısını &lt;code&gt;.config&lt;/code&gt; olarak kaydedip bu dosyayı &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;de &lt;code&gt;choco install programlar.config&lt;/code&gt; olarak kullanabiliriz.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;programlar&amp;gt;
+    &amp;lt;package id=&amp;quot;UTorrent&amp;quot; /&amp;gt;
+    &amp;lt;package id=&amp;quot;notepadplusplus&amp;quot; /&amp;gt;
+    &amp;lt;package id=&amp;quot;IrfanView&amp;quot; /&amp;gt;
+&amp;lt;/programlar&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;O ana kadar &lt;em&gt;Chocolatey&lt;/em&gt; aracılığı ile yüklediğiniz tüm programların listesini almak için &lt;code&gt;choco list -lo&lt;/code&gt; komutunu kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Yüklediğiniz tüm programları aynı anda güncellemek için &lt;code&gt;cup all&lt;/code&gt; komutunu verebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Herhangi bir programı tek başına güncelleme için &lt;code&gt;choco update programadı&lt;/code&gt;, programı kaldırmak için &lt;code&gt;choco uninstall programadı&lt;/code&gt; komutları kullanılır.&lt;/p&gt;
+
+&lt;p&gt;Yardıma ulaşmak için kullanacağınız komut: &lt;code&gt;choco /?&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;son-notlar&#34;&gt;Son Notlar&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Chocolatey&lt;/em&gt; standart olarak sadece güvendiği ve onay verdiği (&lt;strong&gt;trusted packages&lt;/strong&gt;) uygulamaları bilgisayara yüklüyor. Yeni ve henüz onaylanmamış paketleri yüklemeniz sisteminiz için virus v.s. gibi muhtemel bazı &lt;strong&gt;riskler&lt;/strong&gt; taşıyabilir. Bu konuda &lt;strong&gt;temkinli&lt;/strong&gt; olmak gerekiyor.&lt;/p&gt;
+
+&lt;p&gt;Son bir not olarak bu yazının ruhuna biraz ters olsa da &lt;em&gt;Chocolatey&lt;/em&gt;&amp;lsquo;in bir grafik arayüzü (&lt;strong&gt;GUI&lt;/strong&gt; - graphical user interface) olduğunu belirtelim. Kullanıp kullanmamak size kalmış. (En üstteki banner fotosu)&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Biraz uzun olsada &lt;em&gt;Chocolatey&lt;/em&gt; hakkında doyurucu bir yazı olduğu kanaatindeyim. Lütfen gelişterebileceğim noktaları yorum kısmında dile getirmekten çekinmeyin.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows’ta Komut Satırı: Powershell vs Cmd</title>
+      <link>http://pythonistan.net/blog/Powershell-ve-cmd/</link>
+      <pubDate>Wed, 21 Sep 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/Powershell-ve-cmd/</guid>
+      <description>
+
+&lt;h2 id=&#34;komut-satırı-ve-biraz-tarih&#34;&gt;Komut Satırı ve Biraz Tarih&lt;/h2&gt;
+
+&lt;p&gt;Çeşitli yazılarımda bir vesileyle &lt;em&gt;komut kullanımına&lt;/em&gt; ve &lt;em&gt;komut satırına&lt;/em&gt; değiniyorum.&lt;/p&gt;
+
+&lt;p&gt;Zaten iyi bir programcının ve bizim gibi bu işe heves eden acemilerin &lt;em&gt;komut satırına&lt;/em&gt; belli oranda hakim olması şart.&lt;/p&gt;
+
+&lt;p&gt;Aksi takdirde insanı aslında kolaylıkla otomatize edilebilecek işleri tekrar tekrar yapmaktan kaynaklanan bir sıkıntı basıyor.&lt;/p&gt;
+
+&lt;p&gt;Komut satırı kullanımı ile ilgili kişisel duygu ve düşüncelerimi &lt;strong&gt;Git&lt;/strong&gt;&amp;lsquo;ten bahsettiğim yazıda &lt;a href=&#34;http://pythonistan.net/blog/git-ve-github/#komut-satırı-sistemlerinin-yaşattığı-duygular&#34;&gt;dile getirmiştim&lt;/a&gt;. Bir göz atmak isteyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;90&amp;rsquo;larda bilgisayar kullanmaya başlayanlar Windows’un 2000’li yıllarda tamamen &lt;em&gt;grafik arayüze&lt;/em&gt; dönme kararına kadar &lt;strong&gt;Dos komutlarını&lt;/strong&gt; Windows’un &lt;em&gt;grafik arayüzü&lt;/em&gt; ile birlikte kullanmışlardı.&lt;/p&gt;
+
+&lt;p&gt;2000 sonrası ortalama bilgisayar kullanıcısının &lt;em&gt;komut kullanımı&lt;/em&gt; hayli azalsa da arada bir &lt;em&gt;grafik arayüzden&lt;/em&gt; ulaşılamayan bir ayar, yada bir kurulum veya ne bileyim bir antivirus (f-prot, combofix gibi) v.s. için komut kullanımına zaman zaman ihtiyaç duyuldu.&lt;/p&gt;
+
+&lt;p&gt;Windows, Win 7 versiyonundan bu yana eskiden &lt;strong&gt;Dos komutlarını&lt;/strong&gt; uyguladığımız &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;ye  (cmd.exe - çok eskiden command.exe) alternatif başka bir interaktif kabuk (shell) sunuyor.&lt;/p&gt;
+
+&lt;p&gt;Bu güçlü interaktif kabuğun adı &lt;a href=&#34;#&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;gelelim-powershell-e&#34;&gt;Gelelim Powershell&amp;rsquo;e&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; &lt;strong&gt;Cmd&lt;/strong&gt;’ye göre çok daha becerikli bir &lt;em&gt;komut satır kabuğu&lt;/em&gt; ve &lt;em&gt;scripting dili&lt;/em&gt; içeriyor. (Belki hatırlayacaksınız, &lt;strong&gt;Dos&lt;/strong&gt;’da .bat uzantılı primitif scriptler vardı. - batch dosyası )&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; komut satırından asla vazgeçemeyecek &lt;strong&gt;Geek&lt;/strong&gt; (usta) bilgisayar kullanıcılarına Windows ortamında çok kullanışlı bir tecrübe sağlıyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt;’ye göre çok daha gelişmiş ve güçlü. Öyleki varlığıyla adeta &lt;strong&gt;Linux&lt;/strong&gt; gibi bu işin piri sayılacak &lt;strong&gt;Unix&lt;/strong&gt; tabanlı sistemlere “burada ben de varım” diyor. &lt;em&gt;(Bu arada, hangisi Unix tabanlı değil ki, değil mi?)&lt;/em&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-yonetici-olarak-calistir.png&#34;&gt;
+ &lt;figcaption&gt;Powershell&#39;i Görev Yöneticisinden Çalıştırma&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;öyleyse-powershell-i-açalım&#34;&gt;Öyleyse Powershell&amp;rsquo;i Açalım&lt;/h2&gt;
+
+&lt;p&gt;Windows&amp;rsquo;ta &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i açmanın epey yolu var. Birkaç tanesine değinelim:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Powershell&amp;rsquo;i Başlat menüsünden başlatmak. Bu yolda Başlat menüsünü açtıktan sonra &lt;strong&gt;&amp;lsquo;power&amp;rsquo;&lt;/strong&gt; yazmaya başladığınız an çıkacak olan Powershell kısayolunu açarak başlatabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Görev Yöneticisinden &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i başlatmak. Bu yol şu adımlardan oluşuyor: Ctrl+Alt+Del - Görev Yöneticisi - Dosya Menüsü - Yeni Görevi Çalıştır&amp;rsquo;a tıklayın. Açılan kutuya &lt;code&gt;powershell&lt;/code&gt; yazıp Enter&amp;rsquo;a basın.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Klavyeden Windows tuşu ile birlikte R&amp;rsquo;ye (&lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + &lt;kbd&gt;R&lt;/kbd&gt;) bastıktan sonra çıkacak olan &lt;em&gt;Çalıştır&lt;/em&gt; kutusunda &lt;code&gt;powershell&lt;/code&gt; yazıp Enter&amp;rsquo;a basarak &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i çalıştırabilirsiniz.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Yönetici&lt;/strong&gt; hakları gerektiren bazı komut satırı uygulamaları için &lt;strong&gt;Powershell&lt;/strong&gt;’i yönetici olarak çalıştırmak isteyebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Yönetici&lt;/strong&gt; olarak çalıştırmak için &lt;em&gt;komut satırında&lt;/em&gt; &lt;code&gt;Start-Process powershell -Verb runAs&lt;/code&gt; komutunu verebilirsiniz. Başka bir yol ise &lt;em&gt;Görev Yöneticisi&lt;/em&gt;&amp;lsquo;nden çalıştırırken &amp;ldquo;Bu görevi yönetici ayrıcalıklarıyla oluştur&amp;rdquo; kutusunu işaretleyerek çalıştırmak.(&amp;#8593;)&lt;/p&gt;
+
+&lt;h2 id=&#34;powershell-cmd-ye-karşı&#34;&gt;Powershell Cmd&amp;rsquo;ye Karşı&lt;/h2&gt;
+
+&lt;p&gt;O halde gelelim &lt;strong&gt;Powershell&lt;/strong&gt;’in &lt;strong&gt;Cmd&lt;/strong&gt;’ye olan farklarına, yani üstünlüklerine.&lt;/p&gt;
+
+&lt;p&gt;İlk olarak ikisi de &lt;em&gt;komut satırı&lt;/em&gt; sistemi olmasına rağmen &lt;strong&gt;Powershell&lt;/strong&gt; &lt;strong&gt;Cmd&lt;/strong&gt;’de geçerli olan komutlara ek olarak &lt;strong&gt;Cmd&lt;/strong&gt;’den farklı komutlar içeriyor. Bu komutlara &lt;strong&gt;cmdlets&lt;/strong&gt; deniyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmdlets&lt;/strong&gt;’ler hakkında daha fazla bilgiyi sonraki yazılarımdan birine saklıyorum. Şimdilik bunlara &lt;em&gt;sistem yönetimi için kullanılan görevler&lt;/em&gt; diyelim.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; aynen &lt;strong&gt;Linux&lt;/strong&gt;&amp;lsquo;da olduğu gibi &lt;em&gt;pipe&lt;/em&gt; (boru haberleşmeleri) kullanımı sağlıyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Linux&lt;/strong&gt; komut satırı sistemleri &lt;em&gt;pipe&lt;/em&gt; olarak yalnızca karakter (text) kullanırken &lt;strong&gt;Powershell&lt;/strong&gt;’de daha gelişkin &lt;strong&gt;cmdlet objeleri&lt;/strong&gt; kullanılabiliyor.&lt;/p&gt;
+
+&lt;p&gt;Yani bir &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ten aldığımız sonucu (çıktıyı) diğer bir &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;in kullanımına sunabiliyoruz. Böylelikle birden fazla &lt;strong&gt;cmdlet&lt;/strong&gt; sıralı olarak kullanılarak bu &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;lerden gelen çıktılar işleniliyor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt; komut satırından ibaret bir kabuk değil. &lt;strong&gt;Cmd&lt;/strong&gt;’nin aksine onunla aynı zamanda çok kompleks &lt;strong&gt;scriptler&lt;/strong&gt; oluşturarak Windows’unuzu yönetebilirsiniz. &lt;em&gt;(scripting)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt; belki biraz da nostalji olarak Windows’ta halen tutulan, kullanımı malum &lt;strong&gt;Dos komutları&lt;/strong&gt; ile sınırlı olan, Windows’un &lt;strong&gt;yönetimsel araçlarına&lt;/strong&gt; erişim hakkı bulunmayan ve gelişkin &lt;em&gt;scripting&lt;/em&gt;&amp;lsquo;e olanak sağlamayan geleneksel bir ortam olmasına karşın &lt;strong&gt;Powershell&lt;/strong&gt; sistem yöneticilerinin &lt;em&gt;Windows’u yönetmek için&lt;/em&gt; ihtiyaç duyacağı hemen her şeyi bünyesinde taşıyan modern bir geliştirme ortamı.&lt;/p&gt;
+
+&lt;h2 id=&#34;powershell-in-bize-katacakları&#34;&gt;Powershell&amp;rsquo;in Bize Katacakları&lt;/h2&gt;
+
+&lt;p&gt;Yaşları tutanlar eskiden internet bağlantısında sıkıntı çıktığında hemen bir &lt;em&gt;Çalıştır&lt;/em&gt; kutusundan &lt;code&gt;cmd. exe&lt;/code&gt; yapıp &lt;code&gt;ping&lt;/code&gt; yada &lt;code&gt;tracert&lt;/code&gt; komutu verdiklerini hatırlamışlardır.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/tracert.png&#34;&gt;
+ &lt;figcaption&gt;Cmd Üzerinde Tracert Komutu Kullanımı&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Cmd&lt;/strong&gt; kullanımınızda ayrıca &lt;code&gt;dir&lt;/code&gt; ve &lt;code&gt;cd..&lt;/code&gt; komutlar da yer tutuyordur diye tahmin ediyorum. Sadece bu kadarsa muhtemelen &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;e pek ihtiyaç duymazsınız.&lt;/p&gt;
+
+&lt;p&gt;Ancak gerçekten daha güçlü bir kullanıcı olmak istiyorsanız kendinizi &lt;em&gt;komut satırına&lt;/em&gt; adapte etmelisiniz. Zira &lt;em&gt;komut satırı&lt;/em&gt; aracılığı ile hem çok daha pratik olmak hem de bilgisayara &lt;em&gt;grafik arayüze&lt;/em&gt; göre daha fazla hakim olmak mümkün.&lt;/p&gt;
+
+&lt;p&gt;Mesela birden çok dosyanın adını bir anda değiştirmek gibi normalde &lt;em&gt;3. Parti bir yazılım&lt;/em&gt; yükleyerek yapmak zorunda kalacağınız bir işi &lt;strong&gt;Powershell&lt;/strong&gt; vasıtası ile nisbeten kolay bir şekilde halledebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Nisbeten kolay dedim, zira bu tür şeyler ortalama bir kullanıcı için hala belli &lt;em&gt;komutları ezberlemeyi&lt;/em&gt;, &lt;em&gt;araştırmayı&lt;/em&gt;, &lt;em&gt;denemeyi&lt;/em&gt;, &lt;em&gt;pes etmemeyi&lt;/em&gt;, &lt;em&gt;ısrar etmeyi&lt;/em&gt; gerektiriyor. Bu da çoğu kullanıcıya zor gelen bir şey. (Aslında çekinecek hiçbir şey yok, &lt;a href=&#34;http://stackoverflow.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Stackoverflow&lt;/strong&gt;&lt;/a&gt; ne güne duruyor?)&lt;/p&gt;
+
+&lt;p&gt;Neyse, biz &lt;strong&gt;olmak isteyenler&lt;/strong&gt; için yazalım o halde. &lt;strong&gt;Usta bir bilgisayar kullanıcısı&lt;/strong&gt;, &lt;strong&gt;ağ yöneticisi&lt;/strong&gt;, &lt;strong&gt;sistem yöneticisi&lt;/strong&gt; v.s. olmak için &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i iyi kullanmak çoook büyük bir artı değer sağlar. Sizi temin ederim.&lt;/p&gt;
+
+&lt;h2 id=&#34;bazı-powershell-ve-cmd-komutları&#34;&gt;Bazı Powershell ve Cmd komutları&lt;/h2&gt;
+
+&lt;p&gt;Tersi geçerli olmasa da &lt;strong&gt;Cmd&lt;/strong&gt; komutlarının tamamı &lt;strong&gt;Powershell&lt;/strong&gt; ortamında kullanılabiliyor. Bu komutların “aliases” ları yani karşılıkları &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de tanımlanmış. Aynen &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;de olduğu gibi yazıp bu komutları kullanabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Aşağıda &lt;strong&gt;Cmd&lt;/strong&gt; deki komutların &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;deki gerçek adları var. Bazı basit &lt;strong&gt;Dos&lt;/strong&gt; komutlarının işlevini, kullanım şeklini ve karşılıklarını verelim.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Dizin Değiştirme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: cd
+PowerShell: Set-Location
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dizindeki dosyaları listeleme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: dir
+PowerShell: Get-ChildItem
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dosya Adını Değiştirme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: rename
+PowerShell: Rename-Item
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ekranı Temizleme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Dos: cls
+Powershell: Clear-Host
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dosya Silme&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: rm, remove
+PowerShell: Remove-Item
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;İki dosyayı karşılaştırma&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: diff
+PowerShell: Compare-Object
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ekrana Çıktı Göster&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: echo
+PowerShell: Write-Output
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Uygulamayı durdur:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DOS: kill
+PowerShell: Stop-process
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;diğer-komutlar&#34;&gt;Diğer Komutlar&lt;/h2&gt;
+
+&lt;p&gt;Herhangi bir &lt;strong&gt;Dos&lt;/strong&gt; komutunun &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de karşılığının bulunup bulunmadığını anlamak için &lt;code&gt;get-alias doskomutununadı&lt;/code&gt; komutu verebilirsiniz. Mesela &lt;code&gt;rm&lt;/code&gt; komutunu hatırladıysanız eğer &lt;code&gt;remove file&lt;/code&gt; (dosyayı sil) komutudur. Bu komutun &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;deki karşılığını &lt;code&gt;get-alias rm&lt;/code&gt; yazarak öğrenelim: &lt;code&gt;remove-item&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Tüm &lt;strong&gt;cmdlet&lt;/strong&gt; komutlarını görmek için ise &lt;code&gt;get-command&lt;/code&gt; yazmanız yeterli. Karşınıza oldukça uzun bir liste gelecek.&lt;/p&gt;
+
+&lt;p&gt;Komutları içinde geçen kelimelere göre yada içinde bulunduğu spesifik modüle göre aratabiliriz. Örneğin içinde IP geçen komutları görmek istersek vereceğimiz komut,
+&lt;code&gt;Get-Command –Name *IP*&lt;/code&gt; olacaktır.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershellde-komut-arama.png&#34;&gt;
+ &lt;figcaption&gt;Powershell&#39;de Belli Komutları Arama Kelimeleriyle Bulma&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Yada misal olarak yalnızca &lt;strong&gt;netTCPIP&lt;/strong&gt; modülü içindeki IP kelimesi içeren komutları görmek için: &lt;code&gt;Get-Command –Module NetTCPIP –Name *IP*&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Tüm bu komutları ezberlemeye gerek kalmadan komut satırında get-help yazarak interaktif &lt;strong&gt;Powershell&lt;/strong&gt; &lt;em&gt;Help&lt;/em&gt; sistemine girip belli bir konuda yardım almanız mümkün.&lt;/p&gt;
+
+&lt;p&gt;Örneğin &lt;code&gt;Tee-object&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;i hakkında bilgi almak için &lt;code&gt;get-help Tee-object&lt;/code&gt; yazabiliriz. Daha geniş bilgi için &lt;code&gt;get-help Tee-object -online&lt;/code&gt; yazarak internet kaynaklarından yardım alabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;powershell-komut-satırı-kolaylıkları&#34;&gt;Powershell Komut Satırı Kolaylıkları&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’in geriye doğru komutları hafızada tutma seçeneği geliştirildi. Üst ok tuşuna basarak geçmişe doğru &lt;strong&gt;4096&lt;/strong&gt; adet komuta erişebilirsiniz. Bu komutlardan son &lt;strong&gt;Powershell&lt;/strong&gt; oturumunda kullandıklarınızı sıralı olarak görmek için &lt;code&gt;get-history&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;ini kullanabilirsiniz. Komutları tekrar tekrar yazmamak için oldukça faydalı bir özellik.&lt;/p&gt;
+
+&lt;p&gt;Powershell ortamı varsayılan olarak Cmd&amp;rsquo;ye göre daha renkli ve canlı. Cmd&amp;rsquo;nin ayarları ile oynayarak renklendirmek mümkün olsa da Powershell&amp;rsquo;in sunduğu seçenekler kadar çekici değil.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-renk-kullanimi.png&#34;&gt;
+ &lt;figcaption&gt;Powershell&#39;de Farklı Renklerin Kullanımından Faydalanma&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;br&gt;
+Ayrıca uzun komutlarınız için &lt;code&gt;alias&lt;/code&gt; kullanabilirsiniz. Nasıl &lt;strong&gt;Cmd&lt;/strong&gt; &lt;em&gt;Dos komutlarını&lt;/em&gt; &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;de alias olarak kullanabiliyoruz aynı o şekilde &lt;strong&gt;Powershell&lt;/strong&gt; komutlarını da bu sayede kısaltabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;windows-ta-powershell-sürümleri&#34;&gt;Windows&amp;rsquo;ta Powershell Sürümleri&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell&lt;/strong&gt;’i Windows’da iki şekilde kullanabilirsiniz. Birincisi bu yazının başından beri anlattığımız klasik &lt;strong&gt;Powershell&lt;/strong&gt; ekranı, ikincisi ise Powershell &lt;strong&gt;ISE&lt;/strong&gt; (bütünleşik scripting ortamı).&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/powershell-cmd/powershell-ise.png&#34;&gt;
+ &lt;figcaption&gt;Powershell ISE Ekran Görüntüsü&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Powershell ISE&lt;/strong&gt;&amp;lsquo;yi çalıştırmak için yukarıda bahsettiğimiz &lt;strong&gt;Powershell&lt;/strong&gt; &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/#öyleyse-powershell-i-açalım&#34;&gt;başlatma yollarını&lt;/a&gt; aynen kullanabilirsiniz. Sadece isme &amp;ldquo;ISE&amp;rdquo; ekleyeceksiniz. Örneğin bir &lt;strong&gt;Powershell&lt;/strong&gt; kabuğundan hemen şimdi &lt;code&gt;powershell ise&lt;/code&gt; komutu vererek bütünleşik script ortamını açabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Windows’da iyi bildiğiniz bazı uygulamaları &lt;code&gt;start-process&lt;/code&gt; &lt;strong&gt;cmdlet&lt;/strong&gt;&amp;lsquo;i ile &lt;em&gt;komut satırından&lt;/em&gt; çalıştırabilirsiniz. Örnegin &lt;code&gt;start-process msconfig&lt;/code&gt; yazarsanız Microsoft konfigürasyon ayar programı açılacaktır. &lt;em&gt;Msconfig&lt;/em&gt; yerine başka bir programı deneyebilirsiniz, mesela &lt;em&gt;notepad&lt;/em&gt;, v.s.&lt;/p&gt;
+
+&lt;p&gt;Aynen &lt;strong&gt;Cmd&lt;/strong&gt;&amp;lsquo;de olduğu gibi &lt;strong&gt;Powershell&lt;/strong&gt;’i terketmek için &lt;code&gt;exit&lt;/code&gt; komutunu vermeniz yeterli. Interaktif kabuk komut satırını sona erecek ve pencere kapatılacaktır. (Diğer Windows programlarını kapatabilen Alt+F4 klavye kısayolu ile kabuk ekranını kapatamazsınız.)&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Powershell konusunda yazacak çok şey var. Zaman zaman bu konuya döneceğim. Bol komutlu günler&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows&#39;ta Python Kurulumu</title>
+      <link>http://pythonistan.net/blog/python-kurulum/</link>
+      <pubDate>Mon, 03 Aug 2015 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/python-kurulum/</guid>
+      <description>
+
+&lt;p&gt;Bir önceki &lt;a href=&#34;http://pythonistan.net/blog/peki-nedir-python/&#34;&gt;blog yazımda&lt;/a&gt; belirttiğim gibi Python&amp;rsquo;u bilgisayarınıza kurmadan Payton kodlarını bazı internet sitelerinde çalıştırabilirsiniz. Programlama yolculuğunun bir noktasında bu yaklaşım yetersiz hale geleceğinden ben şimdiden Payton&amp;rsquo;u kurmanızı tavsiye ediyorum.&lt;/p&gt;
+
+&lt;p&gt;Şimdi &lt;strong&gt;Python&lt;/strong&gt; (2.7 versiyonunu) bilgisayarımıza kuralım. Sisteminizin &lt;strong&gt;Windows&lt;/strong&gt; olduğunu varsayıyorum. &lt;strong&gt;Macintosh&lt;/strong&gt; ve &lt;strong&gt;Linux&lt;/strong&gt; sistemlerin çoğunda &lt;strong&gt;Python&lt;/strong&gt; ön kurulu olarak gelmektedir. Sisteminizde Payton&amp;rsquo;un kurulu olup olmadığını anlamak için &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırı&lt;/a&gt; (terminal olarak da geçer) programınızı açıp &lt;code&gt;python&lt;/code&gt; komutunu yazmanız yeterli. Cevap olarak Python yazısı ve versiyonu çıkıyorsa (Foto 4) Payton kurulu demektir. Mesela &lt;em&gt;Python 2.7.11&lt;/em&gt; gibi.&lt;/p&gt;
+
+&lt;p&gt;Ben sitede Payton&amp;rsquo;un 2.x versiyonunu kullanacağım. Zira Payton 3 versiyonunda bariz söz dizimi(syntax) değişiklikleri var, ayrıca bu versiyon henüz tam olarak yaygınlaşmadı. Dolayısıyla 2.x versiyonunu indirmenizi tavsiye ediyorum.&lt;/p&gt;
+
+&lt;h2 id=&#34;python-2-7&#34;&gt;Python 2.7&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Python.org sitesine gidin -&amp;gt; &lt;a target=&#34;_blank&#34; href=&#34;http://www.python.org&#34; class=&#34;btn&#34;&gt;Python Org&lt;/a&gt; ve Downloads kısmına girin. (Foto 1)&lt;/li&gt;
+&lt;li&gt;Python 2.7.x versiyonunu _(yada yeni bir 2.x versiyonu çıktıysa onu) bilgisayarınıza indirin. (Foto 2)&lt;/li&gt;
+&lt;li&gt;İndirdiğiniz dosyayı çift tıklayarak kurmaya başlayın.&lt;/li&gt;
+&lt;li&gt;Kurulumda çeşitli ekranlar gelecek. Bu ekranları &lt;strong&gt;Next&lt;/strong&gt; diyerek geçebilirsiniz. Ancak Python&amp;rsquo;u ortam değişkenlerine kaydedeceğimiz ekranı hızlı geçmeyin, Python&amp;rsquo;u Path(Ortam) değişkenine eklemeyi unutmayın. Sizdeki ekran farklı olabilir, &lt;strong&gt;PATH&lt;/strong&gt; kelimesine dikkat edin.(Foto 3)&lt;/li&gt;
+&lt;li&gt;Sorunsuz şekilde kurulum gerçekleşmişse &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/&#34;&gt;komut satırında&lt;/a&gt; (Windows&amp;rsquo;ta, Başlat-Çalıştır-Cmd yada Başlat-Windows PowerShell, Mac ve Linux&amp;rsquo;ta Terminal) &lt;code&gt;python&lt;/code&gt; yada &lt;code&gt;python -V&lt;/code&gt; (Payton versiyonunu öğrenmek için kullanılır) komutlarına hatasız cevap almanız gerekir. (Foto 4)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_1.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Birinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_1_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_2.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python İkinci Kurulum Ekranı&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python_kurulum_2_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python-installer-add-path.png&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python&#39;u PATH (Ortam Degişkenine) Ekleme&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python-installer-add-path_thumb.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://pythonistan.net/img/blog/python-kurulum/python_version.jpg&#34; title=&#34;&#34; data-lightbox=&#34;set1&#34; data-title=&#34;Python Kurulumunu Test Ediyoruz.&#34;&gt;&lt;img src=&#34;http://pythonistan.net/img/blog/python-kurulum/python_version_thumb.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Şimdi artık bilgisayarımızda &lt;strong&gt;Python&lt;/strong&gt;&amp;lsquo;u kullanabiliriz. Bir sonraki blog postumda sizinle beraber komut satırından çok basit bir program yazacağız. O zamana kadar hoşçakalın.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

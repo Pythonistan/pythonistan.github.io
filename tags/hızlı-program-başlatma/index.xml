@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hızlı Program Başlatma on Pythonistan, Python Cumhuriyeti</title>
+    <link>http://pythonistan.net/tags/h%C4%B1zl%C4%B1-program-ba%C5%9Flatma/</link>
+    <description>Recent content in Hızlı Program Başlatma on Pythonistan, Python Cumhuriyeti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    <lastBuildDate>Sun, 02 Oct 2016 00:17:50 -0400</lastBuildDate>
+    <atom:link href="http://pythonistan.net/tags/h%C4%B1zl%C4%B1-program-ba%C5%9Flatma/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Windows&#39;ta &#39;Sihirli Kısayollar&#39; ile Programları Hızlıca Başlatmanın Yolu: SlickRun</title>
+      <link>http://pythonistan.net/blog/SlickRun-Windowsta-klavyeden-hizli-program-baslatma/</link>
+      <pubDate>Sun, 02 Oct 2016 00:17:50 -0400</pubDate>
+      
+      <guid>http://pythonistan.net/blog/SlickRun-Windowsta-klavyeden-hizli-program-baslatma/</guid>
+      <description>
+
+&lt;p&gt;Geçen yazımda &lt;a href=&#34;http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/&#34;&gt;&lt;strong&gt;Komut satırı&lt;/strong&gt;&lt;/a&gt;nın normalde yapılması çok fazla sayıda &amp;ldquo;tık&amp;rdquo; gerektiren işleri &lt;strong&gt;otomatize&lt;/strong&gt; ettiğinden bahsetmiştim.&lt;/p&gt;
+
+&lt;p&gt;Ayrıca *klavye kullanımı*nın bizi daha iyi bir bilgisayar kullanıcısı yapacağından söz etmiştim.&lt;/p&gt;
+
+&lt;p&gt;Aynı mantıkdan hareketle *klavye kullanımı*nı artırıp &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;u çok daha etkin kullanmanın yolunu açacak bir programı bugün size tanıtmak istiyorum, programın ismi &lt;strong&gt;SlickRun&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;slickrun-hareketli-bir-komut-satırı-servisi&#34;&gt;SlickRun: Hareketli Bir Komut Satırı Servisi&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt;, programı geliştirenin tarifine göre hareketli bir komut satırı servisi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt; aynı zamanda herhangi bir programa yada web sitesine &lt;strong&gt;sihirli kelimeler&lt;/strong&gt;i vasıtasıyla anında erişim sağlayan bir &lt;em&gt;hızlı program başlatma yardımcısı&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Verimliliğinizi en üst düzeye çıkaracak ve hızınıza hız katacak bir araç &lt;strong&gt;SlickRun&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;slickrun-yakından-bakış&#34;&gt;SlickRun: Yakından Bakış&lt;/h3&gt;
+
+&lt;p&gt;Tarifleri geçip &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;a yakından bakalım.&lt;/p&gt;
+
+&lt;p&gt;Öncelikle bu programı mutlaka bilgisayarınıza kurmanızı tavsiye ederim. &lt;strong&gt;Windows&lt;/strong&gt; bilgisayarlar için olmazsa olmaz tarzı bir program.&lt;/p&gt;
+
+&lt;p&gt;Üstelik &lt;strong&gt;SlickRun&lt;/strong&gt; bilgisayarınızda çok fazla yer kaplayan / başlangıcı aşırı yavaşlatan programlardan değil. Oldukça kompakt sayılabilir.&lt;/p&gt;
+
+&lt;p&gt;Programın 32 / 64 bit için versiyonlarına yukarıdaki linkten erişip indirebilirsiniz. Bilgisayarımıza kurduktan sonra programın ayarlarını optimize edeceğiz.&lt;/p&gt;
+
+&lt;h2 id=&#34;slickrun-ın-orjinal-ayarlarını-değiştirilelim&#34;&gt;SlickRun&amp;rsquo;ın Orjinal Ayarlarını Değiştirilelim&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ın varsayılan ayarları ve program ile birlikte gelen &amp;ldquo;&lt;strong&gt;sihirli kelimeler&lt;/strong&gt;i&amp;rdquo; (Magicwords) beklentilerimizi karşılamadan uzak. Kısayolların çoğu tarihten kalma gibi.&lt;/p&gt;
+
+&lt;p&gt;Biz Peter Seale&amp;rsquo;nin &lt;a href=&#34;http://www.pseale.com/slickrun-protips&#34; target=&#34;_blank&#34;&gt;blogunda verdiği ayarları&lt;/a&gt; uygulayarak &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ı kullanacağız.&lt;/p&gt;
+
+&lt;p&gt;Bu arada programı ilk seferinde gerekirse &amp;ldquo;Başlat&amp;rdquo; menüsünden açarak çalıştırabilirsiniz. Çalıştırdıktan sonra &lt;code&gt;setup&lt;/code&gt; yazıp Enter&amp;rsquo;a basarak ayarlara ulaşabiliriyoruz.&lt;/p&gt;
+
+&lt;h3 id=&#34;programı-klavyeden-çalıştırma-ayarı&#34;&gt;Programı Klavyeden Çalıştırma Ayarı&lt;/h3&gt;
+
+&lt;p&gt;Programı kurduktan sonra ilk iş olarak programın kendisine bir klavye kısayolu atayalım. Normalde varsayılan klavye kısayolu değeri &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + Q.&lt;/p&gt;
+
+&lt;p&gt;Bu tuş kombinasyonu çalışmıyorsa (nedense bende çalışmadı) &lt;strong&gt;&amp;ldquo;Alt + S&amp;rdquo;&lt;/strong&gt; tuş kombinasyonunu atayın ve programı kapatıp bu kısayolla açın. Şu anda &lt;strong&gt;Alt + S&lt;/strong&gt;&amp;lsquo;e  bastığınızda programınız çalışıyor olmalı.&lt;/p&gt;
+
+&lt;p&gt;Güzel. Bundan sonra &lt;strong&gt;Alt+S&lt;/strong&gt;&amp;lsquo;e basarak (yada orjinalini değiştirmediyseniz &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + Q) programı çalıştıracağız. Böyle yapalım zira *klavye kullanımı*nı artırmaz fare ile programları çalıştırmaya devam edersek &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;dan istediğimiz verimi alamayız.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt; çok sık kullandığınız programlar ve website adresleri için gerekli bir araç. Her tür programı bu programa &lt;strong&gt;sihirli kısayol&lt;/strong&gt; olarak atamak verimli olmayacaktır, zira bu kısayolların hepsini daha sonra akılda tutamazsınız.&lt;/p&gt;
+
+&lt;p&gt;En sık kullandığınız ve sizi en çok uğraştıran adresleri / programları kısayol olarak atamalısınız.&lt;/p&gt;
+
+&lt;h2 id=&#34;slickrun-la-birlikte-gelen-sihirli-kısayollar&#34;&gt;SlickRun&amp;rsquo;la Birlikte Gelen Sihirli Kısayollar&lt;/h2&gt;
+
+&lt;p&gt;Evet, &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ı çalıştırdınız (tabiki klavye kısayolunuz ile!) ve gelen kutuda &lt;code&gt;setup&lt;/code&gt; yazıp Enter&amp;rsquo;a bastınız. &amp;ldquo;Options&amp;rdquo; (Seçenekler) tab sayfasını açtınız.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_ayarlar.png&#34;&gt;
+ &lt;figcaption&gt;SlickRun Temel Ayar Konfigürasyonu&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Soldaki başlatma kısayolumuzu zaten belirlemiştik. Ortadaki işaret kutularından 1.(&lt;code&gt;Başlangıçta Çalıştır - Start Startup&lt;/code&gt;) ve 3. (&lt;code&gt;Otomatik Gizle - AutoHide&lt;/code&gt;) işaretli bırakıp diğerlerinin işaretlerini kaldıralım.&lt;/p&gt;
+
+&lt;p&gt;En sağda yer alan seçenekler &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ın otomatik tamamla özelliğinin hangi alanlarda aktif olacağını gösteriyor. Bu seçenek gerçekten faydalı, bu sayede 1 harften fazla olan kısayollarınız tek harfe basarak ulaşılabilir hale geliyor. Aynen tarayıcılarda adres yazmaya başlayınca tam adresin gelmesi gibi.&lt;/p&gt;
+
+&lt;p&gt;Daha Sonra &amp;ldquo;Library&amp;rdquo; tab sayfasından &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ın kendisiyle gelen &lt;strong&gt;sihirli kısayolları&lt;/strong&gt;ndan &lt;em&gt;google hariç hepsini&lt;/em&gt; siliyoruz. Silmek için kısayolu seçip Alt + D yaparak silme teyidine Evet (Yes) dememiz gerekiyor.&lt;/p&gt;
+
+&lt;p&gt;Son ayarımız büyüklükle alakalı. &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ı yapabildiğiniz kadar büyütün, bunun için &amp;ldquo;Appearance&amp;rdquo; kısmında &amp;ldquo;Font&amp;rdquo;&amp;lsquo;a tıklayarak ekran çözünürlüğünüze uygun en büyük değeri girin. Akabinde &lt;strong&gt;SlickRun&lt;/strong&gt; program kutusunun sağ yanındaki oku çekip büyüterek tüm yazıların görünür hale geldiğine emin olun. (Bkz. en üstteki banner imaj)&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_font_buyut.png&#34;&gt;
+ &lt;figcaption&gt;SlickRun Font Ayarları&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;slickrun-kullanımı-o-halde-gelsin-sihirli-kısayollar&#34;&gt;SlickRun Kullanımı: O Halde Gelsin Sihirli Kısayollar&lt;/h2&gt;
+
+&lt;p&gt;Şimdi artık programın ana fonksiyonlarını ve kullanımını görebiliriz.&lt;/p&gt;
+
+&lt;h3 id=&#34;google-araması&#34;&gt;Google Araması&lt;/h3&gt;
+
+&lt;p&gt;Yukarıda &lt;a href=&#34;http://www.google.com&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Google&lt;/strong&gt;&lt;/a&gt;  dedik, &lt;em&gt;google araması&lt;/em&gt; program içinde zaten yapılandırılmış durumda. Ancak &lt;strong&gt;sihirli kısayol&lt;/strong&gt; olarak uzun bir kelime olan &lt;code&gt;google&lt;/code&gt; kullanılmış. Bunu değiştirip sadece &lt;code&gt;g&lt;/code&gt; yapalım. Şimdi programı tekrar açıp &lt;code&gt;g python kaynakları&lt;/code&gt; yazıp Enter&amp;rsquo;a bastığımızda tarayıcımız (varsayılan olan) açılacak ve aramayı gerçekleştirecektir.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/google_arama_ayar.png&#34;&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/google_aramasi_slickrun.png&#34;&gt;
+ &lt;figcaption&gt;Google Sihirli Kısayol Kelimesini Ayarlardan Kısalttık / SlickRun&#39;dan Hızlı Google Araması Yapmak&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;windows-ta-yerleşik-ve-çok-bilinen-programlar&#34;&gt;Windows&amp;rsquo;ta Yerleşik ve Çok Bilinen Programlar&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;ın güzel özelliklerinden biri de &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;un iyi bilinen, alameti farikası olmuş programlarını &lt;strong&gt;sihirli kısayol&lt;/strong&gt; atamaya gerek duymadan çalıştırması.&lt;/p&gt;
+
+&lt;p&gt;Tabi bunun için programın &lt;code&gt;.exe&lt;/code&gt; uzantılı dosyasının ismini bilmeniz gerekiyor. Örneğin &amp;ldquo;Notepad&amp;rdquo; programı. Yada &amp;ldquo;Wordpad&amp;rdquo;. &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;da bu isimleri direk yazıp Enter&amp;rsquo;a basarak o programı çalıştırabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Eğer program ismi &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;un meşhur boyama programı &lt;code&gt;mspaint&lt;/code&gt;&amp;lsquo;te olduğu gibi hatırlamakta zorluk çekebileceğiniz türden ise programa sihirli kısayol oluşturup kolay bir isim verebilirsiniz. Misal &amp;ldquo;boyama&amp;rdquo; gibi.&lt;/p&gt;
+
+&lt;p&gt;Bilemeyeceğiniz türden kısayolları ise Google&amp;rsquo;dan araştırma yapıp bulduktan sonra kullanabilirsiniz. Örneğin Windows&amp;rsquo;un yerleşik &amp;ldquo;Program Ekle/Kaldır&amp;rdquo; programının dosya ismi &lt;code&gt;appwiz.cpl&lt;/code&gt;. EkleKal ismiyle &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;da kısayol oluşturabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;u hızlı kapatma komutu &lt;code&gt;shutdown -p&lt;/code&gt; &amp;lsquo;dir. İster direk olarak isterseniz uygun bir kısayol ismi vererek (&amp;ldquo;kapa&amp;rdquo; v.b. gibi) &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;dan hızlı kapama gerçekleştirebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Son olarak komut satırı programlarımızı analım. &lt;strong&gt;Cmd&lt;/strong&gt; ve &lt;strong&gt;Powershell&lt;/strong&gt; gibi yerleşik Windows komut satırı kabuklarına isimlerini direk yazarak ulaşabilirsiniz.&lt;/p&gt;
+
+&lt;h2 id=&#34;slickrun-da-argüman-parametre-kullanımı&#34;&gt;SlickRun&amp;rsquo;da Argüman (parametre) Kullanımı&lt;/h2&gt;
+
+&lt;p&gt;Yukarıdaki gibi program açmayı  &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + R tuşu üzerinden &amp;ldquo;Çalıştır&amp;rdquo; kutusunu kullanarak yapabilirsiniz. Yada doğrudan &amp;ldquo;Başlat&amp;rdquo; menüsünü kullanabilirsiniz. Bu yüzden şu ana kadarki anlattığım şeyler pek etkileyici gelmemiş olabilir.&lt;/p&gt;
+
+&lt;p&gt;Haklısınız, ancak &lt;a href=&#34;http://pythonistan.net/blog/SlickRun-Windowsta-klavyeden-hizli-program-baslatma&#34;&gt;&lt;strong&gt;SlickRun&lt;/strong&gt;&lt;/a&gt;&amp;lsquo;ın esas farkı, açtığı programı belirli bir &lt;em&gt;parametre&lt;/em&gt; (argüman) ile çalıştırabilmesinde yada belli klasörün içinde ve/veya yolunda açmasında yatıyor.&lt;/p&gt;
+
+&lt;h3 id=&#34;tarayıcıyı-adres-parametresi-vererek-belirli-bir-sayfadan-başlatma&#34;&gt;Tarayıcıyı Adres Parametresi Vererek Belirli Bir Sayfadan Başlatma&lt;/h3&gt;
+
+&lt;p&gt;Bir örnek vereyim. Geçenki yazılarımdan birinden hatırlayabileceğiniz üzere &lt;a href=&#34;http://pythonistan.net/categories/hugo/&#34;&gt;&lt;strong&gt;Hugo&lt;/strong&gt; ile bir site&lt;/a&gt; yapmıştık ve bu siteyi lokal bilgisayarda görüntülemek için tarayıcı penceresi açıp &lt;code&gt;http://localhost:4000/&lt;/code&gt; adresinden Hugo Server&amp;rsquo;a ulaşıyorduk.&lt;/p&gt;
+
+&lt;p&gt;Bu işlemi şimdi kolay hale getirelim. Öyleki sitemizin ismini (mesela payton) yazdığımızda anında bize yukarıdaki adresi açsın.&lt;/p&gt;
+
+&lt;p&gt;Yeni bir &lt;strong&gt;sihirli kısayol&lt;/strong&gt; oluşturup (New Magicword) ismimizi veriyoruz, daha sonra tarayıcımızın yolunu gösterip &lt;em&gt;parametre&lt;/em&gt; olarak websitenin adresini (&lt;code&gt;http://localhost:4000/&lt;/code&gt;) veriyoruz.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img style=&#34;float: left;&#34; src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_dosya_yolu_gosterme.gif&#34;&gt;
+ &lt;figcaption&gt; &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;pre&gt;&lt;code&gt;*Not*: Yanda Chrome.exe&#39;nin tam yolunu kutuya girmek için Slickrun açıkken Chrome&#39;u açın. SlickRun&#39;da gördüğünüz renk seçicisine benzer simgeye tıklayıp seçin. Daha sonra Chrome penceresine geçip renk seçici araç ile üzerine tıklayın. Chrome&#39;un dosya yolu kutuya otomatik eklenecektir.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aşağıda yaptığımız ayarları ve sonucu detaylı olarak görebilirsiniz.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_parametre_kullanma.png&#34;&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/localhost_arguman_slickrun.png&#34;&gt;
+ &lt;figcaption&gt;Tarayıcı Parametresini SlickRun&#39;da Yapılandırma/Sihirli Kelime ile Tarayıcımızı Özel Sayfadan Başlatma&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;komut-satırını-klasör-parametresi-vererek-belirli-bir-dizinden-başlatma&#34;&gt;Komut Satırını Klasör Parametresi Vererek Belirli Bir Dizinden Başlatma&lt;/h3&gt;
+
+&lt;p&gt;Evet, şimdi de &lt;em&gt;argüman&lt;/em&gt; olarak klasör lokasyonu belirleyelim. Diyelim ki D: sabit diskinizin altında &amp;ldquo;websitem&amp;rdquo; dizininin içinde tuttuğunuz bir website var. Buradaki dosyalara hem &lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd&#34;&gt;&lt;strong&gt;komut satırı&lt;/strong&gt;&lt;/a&gt;ndan hem Windows Gezgininden sıklıkla erişip üzerinde işlemler yapıyorsunuz.&lt;/p&gt;
+
+&lt;p&gt;Bu durumda klasör açma programı (&lt;code&gt;explorer.exe&lt;/code&gt;) ve komut satırı (&lt;code&gt;cmd&lt;/code&gt;, &lt;code&gt;powershell&lt;/code&gt;) programlarını istediğiniz klasör yolu ile birlikte kullanacaksınız. Aşağıdaki gibi. Aynı örneği gezgin (&lt;code&gt;explorer.exe&lt;/code&gt;)  için kendiniz yapılandırmayı deneyin.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/klasore_komut_satirindan_hizli_ulasim.png&#34;&gt;
+ &lt;figcaption&gt;SlickRun ile Belirli Bir Klasör Lokasyonundan Komut Satırını Açma&lt;/figcaption&gt;
+&lt;/figure&gt; 
+
+&lt;h3 id=&#34;bonus-tek-kısayolla-uac-ye-takılmadan-powershell-açma&#34;&gt;Bonus: Tek Kısayolla UAC&amp;rsquo;ye Takılmadan Powershell Açma&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://pythonistan.net/blog/Powershell-ve-cmd/#öyleyse-powershell-i-açalım&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/a&gt;&amp;lsquo;i nasıl açacağımızı ve kullanacağımızı daha önceki yazımdan hatırlıyor olmalısınız.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img style=&#34;float: right;&#34; src=&#34;http://pythonistan.net/img/blog/slickrun/kullanici_hesabi_denetimi.jpg&#34;&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Powershell&amp;rsquo;i yönetici modunda açmak bazen uğraştırıcı olabiliyor, özellikle bazı sistemlerde yönetici olarak çalıştır kutusunu işaretlense bile ekstra güvenlik sorusuna (Uac) Evet dememiz gerekiyor. (aynı şey cmd için de geçerli)&lt;/p&gt;
+
+&lt;p&gt;Tüm bu gereksiz güvenlik soruşturmalarını atlatıp &lt;strong&gt;Powershell&lt;/strong&gt;&amp;lsquo;i yönetici olarak kısa bir komutla açmaya ne dersiniz?&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Görev Zamanlayıcı&amp;rsquo;yı Açın.&lt;/li&gt;
+&lt;li&gt;Yeni Görev Oluştur&amp;rsquo;u tıklayın.&lt;/li&gt;
+&lt;li&gt;Göreve kısa bir isim verin ve en alttaki &amp;ldquo;En yüksek ayrıcalıklarla çalıştır&amp;rdquo;&amp;lsquo;ı tıklatın.&lt;/li&gt;
+&lt;li&gt;Eylemler kısmında Program Başlat&amp;rsquo;ı seçip yol olarak Powershell&amp;rsquo;in yolunu gösterin. &amp;ldquo;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Şimdi Görev Zamanlayıcısı&amp;rsquo;nda oluşturduğunuz kısayol ismini &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;da kullanacaksınız. Benim örneğimde kısayolum &lt;code&gt;adm&lt;/code&gt; idi. Bu ismi &lt;code&gt;schtasks.exe&lt;/code&gt;&amp;lsquo;nin parametresinde kullanıyorum.&lt;/p&gt;
+
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/powershell_admin_olarak_acma_slickrun.png&#34;&gt;
+ &lt;figcaption&gt;1. Görev Zamanlayıcısında Powershell&#39;i Yönetici Olarak Yapılandırma 2. SlickRun&#39;da Görev Zamanlayıcısı Görevine Kısayol Atama&lt;/figcaption&gt;
+&lt;/figure&gt; 
+
+&lt;p&gt;Şimdi yaptığımız işlemin sonucunu görelim. Başarılı!!!
+&lt;figure&gt;
+ &lt;img src=&#34;http://pythonistan.net/img/blog/slickrun/powershell_slickrun_calistirma.png&#34;&gt;
+ &lt;figcaption&gt;Powershell&amp;rsquo;i 1 Saniyede Yönetici Olarak Çalıştırdık&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&#34;slickrun-ı-seveceksiniz&#34;&gt;SlickRun&amp;rsquo;ı Seveceksiniz&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Klavye kullanımı&lt;/em&gt; arttıkça &lt;strong&gt;SlickRun&lt;/strong&gt; türü programlar ilaç gibi geliyor. Özellikle alışma safhasını atlattıktan sonra programın verimliliğinizi kat kat arttırdığını fark edeceksiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt; ile ultra-verimli ve faydalı çalışmalar yapmanız dileğiyle&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

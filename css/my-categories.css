@@ -173,3 +173,17 @@
     background: #45B39D;
     font-size: 0.85rem;
 }
+.post-category-windows {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #FFFFFF;
+    background: #3498DB;
+    font-size: 0.85rem;
+}
+.post-category-slickrun {
+    margin: 0 0.1rem;
+    padding: 0.2rem 0.5rem;
+    color: #FFFFFF;
+    background: #6C3483;
+    font-size: 0.85rem;
+}
