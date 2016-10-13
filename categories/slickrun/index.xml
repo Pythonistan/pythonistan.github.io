@@ -10,7 +10,7 @@
     <atom:link href="http://pythonistan.net/categories/slickrun/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Windows&#39;ta &#39;Sihirli Kısayollar&#39; ile Programları Hızlıca Başlatmanın Yolu: SlickRun</title>
+      <title>Windows&#39;ta &#39;Sihirli Kelimeler&#39; ile Programları Hızlıca Başlatmanın Yolu: SlickRun</title>
       <link>http://pythonistan.net/blog/SlickRun-Windowsta-klavyeden-hizli-program-baslatma/</link>
       <pubDate>Sun, 02 Oct 2016 00:17:50 -0400</pubDate>
       
@@ -19,9 +19,9 @@
 
 &lt;p&gt;Geçen yazımda &lt;a href=&#34;http://pythonistan.net/blog/Chocolatey-Windows-Komut-Satiri-Program-Yoneticisi/&#34;&gt;&lt;strong&gt;Komut satırı&lt;/strong&gt;&lt;/a&gt;nın normalde yapılması çok fazla sayıda &amp;ldquo;tık&amp;rdquo; gerektiren işleri &lt;strong&gt;otomatize&lt;/strong&gt; ettiğinden bahsetmiştim.&lt;/p&gt;
 
-&lt;p&gt;Ayrıca *klavye kullanımı*nın bizi daha iyi bir bilgisayar kullanıcısı yapacağından söz etmiştim.&lt;/p&gt;
+&lt;p&gt;Ayrıca &lt;strong&gt;klavye kullanımı&lt;/strong&gt;nın bizi daha iyi bir bilgisayar kullanıcısı yapacağından söz etmiştim.&lt;/p&gt;
 
-&lt;p&gt;Aynı mantıkdan hareketle *klavye kullanımı*nı artırıp &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;u çok daha etkin kullanmanın yolunu açacak bir programı bugün size tanıtmak istiyorum, programın ismi &lt;strong&gt;SlickRun&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Aynı mantıkdan hareketle &lt;strong&gt;klavye kullanımı&lt;/strong&gt;nı artırıp &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;u çok daha etkin kullanmanın yolunu açacak bir programı bugün size tanıtmak istiyorum, programın ismi &lt;strong&gt;SlickRun&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;slickrun-hareketli-bir-komut-satırı-servisi&#34;&gt;SlickRun: Hareketli Bir Komut Satırı Servisi&lt;/h2&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;p&gt;Bu tuş kombinasyonu çalışmıyorsa (nedense bende çalışmadı) &lt;strong&gt;&amp;ldquo;Alt + S&amp;rdquo;&lt;/strong&gt; tuş kombinasyonunu atayın ve programı kapatıp bu kısayolla açın. Şu anda &lt;strong&gt;Alt + S&lt;/strong&gt;&amp;lsquo;e  bastığınızda programınız çalışıyor olmalı.&lt;/p&gt;
 
-&lt;p&gt;Güzel. Bundan sonra &lt;strong&gt;Alt+S&lt;/strong&gt;&amp;lsquo;e basarak (yada orjinalini değiştirmediyseniz &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + Q) programı çalıştıracağız. Böyle yapalım zira *klavye kullanımı*nı artırmaz fare ile programları çalıştırmaya devam edersek &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;dan istediğimiz verimi alamayız.&lt;/p&gt;
+&lt;p&gt;Güzel. Bundan sonra &lt;strong&gt;Alt+S&lt;/strong&gt;&amp;lsquo;e basarak (yada orjinalini değiştirmediyseniz &lt;i class=&#39;fa fa-windows&#39;&gt;&lt;/i&gt; + Q) programı çalıştıracağız. Böyle yapalım zira &lt;strong&gt;klavye kullanımı&lt;/strong&gt;nı artırmaz fare ile programları çalıştırmaya devam edersek &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;dan istediğimiz verimi alamayız.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;SlickRun&lt;/strong&gt; çok sık kullandığınız programlar ve website adresleri için gerekli bir araç. Her tür programı bu programa &lt;strong&gt;sihirli kısayol&lt;/strong&gt; olarak atamak verimli olmayacaktır, zira bu kısayolların hepsini daha sonra akılda tutamazsınız.&lt;/p&gt;
 
@@ -107,7 +107,7 @@
 
 &lt;p&gt;Eğer program ismi &lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;un meşhur boyama programı &lt;code&gt;mspaint&lt;/code&gt;&amp;lsquo;te olduğu gibi hatırlamakta zorluk çekebileceğiniz türden ise programa sihirli kısayol oluşturup kolay bir isim verebilirsiniz. Misal &amp;ldquo;boyama&amp;rdquo; gibi.&lt;/p&gt;
 
-&lt;p&gt;Bilemeyeceğiniz türden kısayolları ise Google&amp;rsquo;dan araştırma yapıp bulduktan sonra kullanabilirsiniz. Örneğin Windows&amp;rsquo;un yerleşik &amp;ldquo;Program Ekle/Kaldır&amp;rdquo; programının dosya ismi &lt;code&gt;appwiz.cpl&lt;/code&gt;. EkleKal ismiyle &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;da kısayol oluşturabilirsiniz.&lt;/p&gt;
+&lt;p&gt;Bilemeyeceğiniz türden kısayolları ise Google&amp;rsquo;dan araştırma yapıp bulduktan sonra kullanabilirsiniz. Örneğin Windows&amp;rsquo;un yerleşik &amp;ldquo;Program Ekle/Kaldır&amp;rdquo; programının dosya ismi &lt;code&gt;appwiz.cpl&lt;/code&gt;. EkleKaldır ismiyle &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;da kısayol oluşturabilirsiniz.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt;&amp;lsquo;u hızlı kapatma komutu &lt;code&gt;shutdown -p&lt;/code&gt; &amp;lsquo;dir. İster direk olarak isterseniz uygun bir kısayol ismi vererek (&amp;ldquo;kapa&amp;rdquo; v.b. gibi) &lt;strong&gt;SlickRun&lt;/strong&gt;&amp;lsquo;dan hızlı kapama gerçekleştirebilirsiniz.&lt;/p&gt;
 
@@ -121,11 +121,11 @@
 
 &lt;h3 id=&#34;tarayıcıyı-adres-parametresi-vererek-belirli-bir-sayfadan-başlatma&#34;&gt;Tarayıcıyı Adres Parametresi Vererek Belirli Bir Sayfadan Başlatma&lt;/h3&gt;
 
-&lt;p&gt;Bir örnek vereyim. Geçenki yazılarımdan birinden hatırlayabileceğiniz üzere &lt;a href=&#34;http://pythonistan.net/categories/hugo/&#34;&gt;&lt;strong&gt;Hugo&lt;/strong&gt; ile bir site&lt;/a&gt; yapmıştık ve bu siteyi lokal bilgisayarda görüntülemek için tarayıcı penceresi açıp &lt;code&gt;http://localhost:4000/&lt;/code&gt; adresinden Hugo Server&amp;rsquo;a ulaşıyorduk.&lt;/p&gt;
+&lt;p&gt;Bir örnek vereyim. Geçenki yazılarımdan birinden hatırlayabileceğiniz üzere &lt;a href=&#34;http://pythonistan.net/categories/hugo/&#34;&gt;&lt;strong&gt;Hugo&lt;/strong&gt; ile bir site&lt;/a&gt; yapmıştık ve bu siteyi lokal bilgisayarda görüntülemek için tarayıcı penceresi açıp &lt;code&gt;http://localhost:1313/&lt;/code&gt; adresinden Hugo Server&amp;rsquo;a ulaşıyorduk.&lt;/p&gt;
 
 &lt;p&gt;Bu işlemi şimdi kolay hale getirelim. Öyleki sitemizin ismini (mesela payton) yazdığımızda anında bize yukarıdaki adresi açsın.&lt;/p&gt;
 
-&lt;p&gt;Yeni bir &lt;strong&gt;sihirli kısayol&lt;/strong&gt; oluşturup (New Magicword) ismimizi veriyoruz, daha sonra tarayıcımızın yolunu gösterip &lt;em&gt;parametre&lt;/em&gt; olarak websitenin adresini (&lt;code&gt;http://localhost:4000/&lt;/code&gt;) veriyoruz.&lt;/p&gt;
+&lt;p&gt;Yeni bir &lt;strong&gt;sihirli kısayol&lt;/strong&gt; oluşturup (New Magicword) ismimizi veriyoruz, daha sonra tarayıcımızın yolunu gösterip &lt;em&gt;parametre&lt;/em&gt; olarak websitenin adresini (&lt;code&gt;http://localhost:1313/&lt;/code&gt;) veriyoruz.&lt;/p&gt;
 
 &lt;figure&gt;
  &lt;img style=&#34;float: left;&#34; src=&#34;http://pythonistan.net/img/blog/slickrun/slickrun_dosya_yolu_gosterme.gif&#34;&gt;
